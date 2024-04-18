@@ -1,0 +1,18 @@
+<mat-sidenav-container autosize class="publish-content-layout">
+  <mat-sidenav
+>
+    <cl-publish-sidebar  [navList]="navList"></cl-publish-sidebar>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- <div
+      class="collapse-button vertical-shadow"
+      (click)="sidebarEl.collapsed = !sidebarEl.collapsed">
+      <i
+        class="far"
+        [class.fa-chevron-right]="sidebarEl.collapsed"
+        [class.fa-chevron-left]="!sidebarEl.collapsed"></i>
+    </div> -->
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,15 @@
+.publish-content-layout {
+  height: 100%;
+}
+.publish-layout-sidebar {
+  z-index: 9 !important;
+  // ::ng-deep {
+  //   .mat-drawer-inner-container {
+  //     @include scroll-bar(
+  //       $scrollbar-track-primary-color,
+  //       $scrollbar-thumb-primary-color
+  //     );
+  //     scrollbar-width: thin;
+  //   }
+  // }
+}
