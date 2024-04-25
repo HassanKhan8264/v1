@@ -1,25 +1,29 @@
 const mongoose = require("mongoose");
 const EventEmitter = require("events");
-const config = require("../config");
+
+
+require('dotenv').config();
+
+const uri = process.env.MONGODB_URI;
+
 
 const dbOption = {
-  // useNewUrlParser: true,
-  // useUnifiedTopology: true,
-  // useCreateIndex: true,
-  // useFindAndModify: false,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
 };
-// MONGO: {
-//   URI: process.env.MONGODB_URI,
-const db = mongoose.createConnection(config.MONGO.URI, dbOption);
+
+const db = mongoose.createConnection(uri, dbOption);
 
 let isConnected;
 const dbEvents = new EventEmitter();
-
 db.on("connected", () => {
   isConnected = true;
   dbEvents.emit("connected");
-  console.log("Mongoose successfully connected");
+  console.log("Mongoose successfully connected"); // Add this line
 });
+
 
 db.on("error", (err) => {
   dbEvents.emit("disconnected");
@@ -54,3 +58,4 @@ exports.onConnect = () => {
 };
 
 exports.events = dbEvents;
+

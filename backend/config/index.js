@@ -21,19 +21,19 @@
 
 // module.exports = all;
 
-const path = require("path");
-const dotenv = require("dotenv");
+// const path = require("path");
+// require('dotenv').config();
 
-// Load environment variables from .env file
-dotenv.config({ path: path.resolve(__dirname, "../config/.env") });
+// // Load environment variables from .env file
+// // dotenv.config({ path: path.resolve(__dirname, "../config/.env") });
 
-const all = {
-  PORT: process.env.PORT || 5001,
-  MONGO: {
-    URI: process.env.MONGODB_URI, // Use environment variable directly
-    AGENDA_URI: process.env.AGENDA_URI,
-    LOGS_URI: process.env.MONGODB_LOGS_URI,
-  },
-};
+// const all = {
+//   PORT: process.env.PORT || 5001,
+//   MONGO: {
+//     URI: process.env.MONGODB_URI, // Use environment variable directly
+//     AGENDA_URI: process.env.AGENDA_URI,
+//     LOGS_URI: process.env.MONGODB_LOGS_URI,
+//   },
+// };
 
-module.exports = all;
+// module.exports = all;

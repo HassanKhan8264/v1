@@ -1,42 +1,28 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+node_modules
+public
+.tmp
+.sass-cache
+.idea
+client/bower_components
+landingPageDist
+featureLandingPageDist
+dist
+/server/config/local.env.js
+/server/config/.env
+server/logs/
+backend/config/.env
+clientNew
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
-
-# Node
-/node_modules
+/server/ecosystem.config.js
+/server/logs
+uploads
 npm-debug.log
+*.map
+
+.ebstuff/.elasticbeanstalk/config.yml
+launch.json
 yarn-error.log
-
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
-
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
-
-# System files
-.DS_Store
-Thumbs.db
+package-lock.json
+/yarn.lock
+newrelic_agent.log
+.vscode/launch.json
