@@ -1,50 +1,48 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+const express = require("express");
+const http = require("http");
+const config = require("./config");
+const mongoose = require("mongoose");
 const app = express();
-// const userRoutes = require('./routes/usersRoutes')
-// const productRoutes = require('./routes/productsRoutes')
-const cors = require('cors');
-const mongoose = require('mongoose');
-const url = "mongodb://Hassan8264:hassan8264@ac-j3d9hjc-shard-00-00.hwnbzfk.mongodb.net:27017,ac-j3d9hjc-shard-00-01.hwnbzfk.mongodb.net:27017,ac-j3d9hjc-shard-00-02.hwnbzfk.mongodb.net:27017/?replicaSet=atlas-tu1j8n-shard-0&ssl=true&authSource=admin"
-mongoose.connect(url)
-
-app.use(cors());
-// app.use('/api', userRoutes)
-// app.use('/api', productRoutes)
-// app.use('/api', imgRoutes)
-
-
+const server = http.createServer(app);
+// API endpoint to insert data into MongoDB
 app.use(express.json());
-app.use(bodyParser.json());
 
+const productSchema = new mongoose.Schema({
+  name: String,
+  description: String
+});
+const productModel = mongoose.model('product', productSchema);
 
+// Express route for adding a product
+app.post('/product', (req, res) => {
+  const { name, description } = req.body;
+  const newProduct = new productModel({ name, description });
 
-const Schema = mongoose.Schema;
-const dataSchema = new Schema({
-    name: String,
-    age: Number,
+  newProduct.save((err, savedProduct) => {
+    if (err) {
+      console.error('Error saving product:', err);
+      return res.status(500).send({ message: 'Server error' });
+    }
+    console.log('Product saved successfully:', savedProduct);
+    res.status(201).send({ message: 'Product added successfully' });
+  });
 });
 
-// Create a model based on the schema
-const Data = mongoose.model('Data', dataSchema);
-
-// Route to fetch all data
-app.get('/data', async (req, res) => {
-  try {
-    // Fetch all data from the collection
-    const allData = await Data.find();
-    res.status(200).json({ message: 'All data fetched successfully', data: allData });
-} catch (error) {
-    console.error('Error fetching data:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
-}
-
+server.listen(config.PORT, () => {
+  console.log(`Server is running on port ${config.PORT}`);
 });
 
+// const Product = mongoose.model('Product', ProductSchema);
 
-
-const port = 3000; // Port should be a number, not a URL
-app.listen(port, () => {
-  console.log('this app is running perfectly');
-  console.log(`Port is running on http://localhost:${port}`);
-});
+// app.use(express.json());
+// app.get('/api/products', async (req, res) => {
+//   try {
+//     // Fetch all products from the database
+//     // const products = await Product.find();
+//     res.status(200).json({ mes: 'all products found' });
+//     // res.json(products);
+//   } catch (err) {
+//     res.status(500).json({ error: err.message });
+//   }
+// });
+// // app.use('/api', routes);
