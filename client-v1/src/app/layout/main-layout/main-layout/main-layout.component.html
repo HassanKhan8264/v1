@@ -1,13 +1,50 @@
-<!-- <router-outlet *ngIf="welcomeState; else mainApp"></router-outlet> -->
+<div class="app-viewport" id="app-viewport">
+  <mat-sidenav-container class="main-layout-position">
+    <!-- <mat-sidenav
+      id="main-layout-sidebar"
+      #sidenav
+      [mode]="sidebar.mode"
+      [opened]="sidebar.opened"
+      class="sc-scrollbar vertical-shadow main-layout-sidebar"
+      disableClose="true">
+      <cl-sidenav-primary></cl-sidenav-primary>
+    </mat-sidenav> -->
+    <mat-sidenav>
+      <cl-sidenav-primary></cl-sidenav-primary>
+    </mat-sidenav>
 
-<div class="header">
-  <cl-header></cl-header>
-</div>
-<div class="sidebar">
-  <cl-sidenav-primary></cl-sidenav-primary>
-</div>
-
-<!-- // Content Layout -->
-<div class="router-layout">
-  <router-outlet></router-outlet>
+    <mat-sidenav-content>
+      <div class="app-content-wrap">
+        <div class="app-content-header">
+          <!-- // Header  -->
+          <!-- <s-header (callback)="headerCallback($event)"> </s-header> -->
+          <cl-header> </cl-header>
+          <!-- // Hello Bar -->
+          <div class="app-notification-wrap">
+            <!-- <sc-notification-bar
+              [scNotification]="scNotification"
+              (closeScNotification)="
+                scNotificationFunctions.closeScNotification()
+              "
+              [verifiedEmailAlert]="verifiedEmailAlert"
+              (resendEmailAlert)="
+                scNotificationFunctions.resendEmail()
+              "></sc-notification-bar> -->
+          </div>
+          <!-- // Progress Bar -->
+          <!-- <div class="app-progress-bar">
+            <sc-app-progress-bar></sc-app-progress-bar>
+          </div> -->
+        </div>
+        <!-- // Content Layout -->
+        <div class="router-layout">
+          <router-outlet></router-outlet>
+        </div>
+        <!-- <sc-feature-announcement
+          *ngIf="showFeatureAnnoucement"
+          (closeFeatureAnnoucement)="closeFeatureAnnoucement($event)"
+          [data]="featureData"></sc-feature-announcement> -->
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>

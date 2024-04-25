@@ -1,13 +1,32 @@
-.header{
-  border: 1px solid red;
-  height: 40px;
-}
-.sidebar{
-  border: 1px solid red;
-  height: 200px;
-  width: 200px;
-}
-
-.router-layout{
+.app-viewport {
+  position: relative;
   height: 100%;
+  .main-layout-position {
+    height: 100%;
+    .main-layout-sidebar {
+      z-index: 10 !important;
+      background: #303c6c 0% 0% no-repeat padding-box;
+    }
+    .app-content-wrap {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .app-content-header {
+        position: relative;
+        .app-progress-bar {
+          position: absolute;
+          // top: 68px;
+          z-index: 1000;
+          width: 100%;
+        }
+        .app-notification-wrap {
+          z-index: 11;
+        }
+      }
+      .router-layout {
+        overflow: hidden;
+        flex: 1;
+      }
+    }
+  }
 }
