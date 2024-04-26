@@ -1,13 +1,13 @@
 
-# # Dependency directories
-# node_modules/
-# dist/
-# .cache/
-# npm-debug.log
-# yarn-error.log
+# Dependency directories
+node_modules/
+dist/
+.cache/
+npm-debug.log
+yarn-error.log
 
-# # Environment variables
-# .env
+# Environment variables
+.env
 
-# # Build artifacts
-# /build
+# Build artifacts
+/build
