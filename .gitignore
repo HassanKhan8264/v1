@@ -1,28 +1,8 @@
-node_modules
-public
-.tmp
-.sass-cache
-.idea
-client/bower_components
-landingPageDist
-featureLandingPageDist
-dist
-/server/config/local.env.js
-/server/config/.env
-server/logs/
-backend/config/.env
-clientNew
+# Dependency directories
+node_modules/
 
-/server/ecosystem.config.js
-/server/logs
-uploads
-npm-debug.log
-*.map
+# Environment variables
+.env
 
-.ebstuff/.elasticbeanstalk/config.yml
-launch.json
-yarn-error.log
-package-lock.json
-/yarn.lock
-newrelic_agent.log
-.vscode/launch.json
+# Database files
+/backend/db/
