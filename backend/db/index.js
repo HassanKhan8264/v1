@@ -2,57 +2,42 @@ const mongoose = require("mongoose");
 const EventEmitter = require("events");
 const config = require("./../config");
 
-
-
-
 const dbOption = {
   // useNewUrlParser: true,
   // useUnifiedTopology: true,
   // mongodb+srv://Hassan8264:<password>@cluster0.hwnbzfk.mongodb.net/
-  
 };
-
-const db = mongoose.createConnection(config.MONGO.uri, dbOption);
 
 let isConnected;
 const dbEvents = new EventEmitter();
 
-db.on("connected", () => {
-  isConnected = true;
-  dbEvents.emit("connected");
-  console.log("Mongoose successfully connected");
-});
-
-db.on("error", (err) => {
-  dbEvents.emit("disconnected");
-  console.log(`Mongoose connection error: ${err}`);
-});
-
-db.on("disconnected", () => {
-  dbEvents.emit("disconnected");
-  console.log("Mongoose connection disconnected");
-});
-
-// Close the Mongoose connection If the Node process ends
-process.on("SIGINT", () => {
-  db.close(() => {
-    console.log("Mongoose connection closed");
-    process.exit(0);
-  });
-});
-
-// eslint-disable-next-line no-multi-assign
-exports = module.exports = db;
-
-exports.onConnect = () => {
-  return new Promise((resolve) => {
-    if (isConnected) {
-      resolve(db);
-    }
-    db.on("connected", () => {
-      resolve(db);
-    });
-  });
+// Define an asynchronous function to connect to MongoDB
+const connectToMongoDB = async () => {
+  try {
+    await mongoose.connect(config.MONGO.uri, dbOption);
+    isConnected = true;
+    dbEvents.emit("connected");
+    console.log("Mongoose is connected");
+  } catch (err) {
+    dbEvents.emit("disconnected");
+    console.error("Error connecting to MongoDB:", err);
+    throw err;
+  }
 };
 
+// Call the asynchronous function to connect to MongoDB
+connectToMongoDB();
+
+// Define a function to handle operations that require the database connection
+const handleOnConnect = async () => {
+  if (!isConnected) {
+    await new Promise((resolve) => {
+      dbEvents.once("connected", resolve);
+    });
+  }
+  console.log("Database connection is established. Perform other tasks here.");
+  // Perform other tasks that require the database connection here
+};
+
+exports.onConnect = handleOnConnect;
 exports.events = dbEvents;
