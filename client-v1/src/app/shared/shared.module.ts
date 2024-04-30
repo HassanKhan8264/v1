@@ -1,6 +1,7 @@
 import { ModuleWithProviders, NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
+import { FormsModule } from "@angular/forms";
 // import { FullCalendarModule } from "@fullcalendar/angular";
 // import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
 // import { CapitalizePipe } from "./pipes/capitalize.pipe";
@@ -304,6 +305,7 @@ const services: any[] = [];
     // MaterialModule,
     // NewellModule,
     RouterModule,
+    FormsModule
     // FormsModule,
     // ReactiveFormsModule,
     // MaterialFileInputModule,
@@ -323,6 +325,7 @@ const services: any[] = [];
     // MaterialModule,
     // NewellModule,
     RouterModule,
+    FormsModule
     // FormsModule,
     // ReactiveFormsModule,
     // MaterialFileInputModule,

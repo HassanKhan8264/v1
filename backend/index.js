@@ -8,12 +8,13 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 app.use(express.json());
 app.use(cors())
-
+const userRoute = require("./api/user/index");
 // const path = require("path");
 
-const routes = require("./routes/router");
+app.use('/api', userRoute);
 
-app.use("/api", routes);
+
+
 
 db.onConnect()
   .then((_db) => {

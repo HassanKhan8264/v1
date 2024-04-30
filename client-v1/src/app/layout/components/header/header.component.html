@@ -1,1 +1,16 @@
 <p>header works!</p>
+<!-- Get User by ID Button -->
+<button (click)="getUserById(userId)">Get User by ID</button>
+
+<!-- Update User Form -->
+<form (ngSubmit)="updateUser()">
+  <input type="text" [(ngModel)]="username" name="username" placeholder="Username">
+  <input type="password" [(ngModel)]="password" name="password" placeholder="Password">
+  <button type="submit">Update User</button>
+</form>
+
+<div class="users" *ngFor="let user of users">
+  <p>Username: {{ user.username }}</p>
+  <p>Email: {{ user.email }}</p>
+  <button (click)="getUserById(user)">Get User by ID</button>
+</div>

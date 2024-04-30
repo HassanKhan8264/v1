@@ -5,13 +5,11 @@ const config = require("./../config");
 const dbOption = {
   // useNewUrlParser: true,
   // useUnifiedTopology: true,
-  // mongodb+srv://Hassan8264:<password>@cluster0.hwnbzfk.mongodb.net/
 };
 
 let isConnected;
 const dbEvents = new EventEmitter();
 
-// Define an asynchronous function to connect to MongoDB
 const connectToMongoDB = async () => {
   try {
     await mongoose.connect(config.MONGO.uri, dbOption);
@@ -25,10 +23,8 @@ const connectToMongoDB = async () => {
   }
 };
 
-// Call the asynchronous function to connect to MongoDB
 connectToMongoDB();
 
-// Define a function to handle operations that require the database connection
 const handleOnConnect = async () => {
   if (!isConnected) {
     await new Promise((resolve) => {
@@ -36,7 +32,6 @@ const handleOnConnect = async () => {
     });
   }
   console.log("Database connection is established. Perform other tasks here.");
-  // Perform other tasks that require the database connection here
 };
 
 exports.onConnect = handleOnConnect;
