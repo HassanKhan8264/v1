@@ -1,50 +1,59 @@
-import mongoose from "mongoose";
-import { EventEmitter } from "events";
-import config from "../config";
+// import mongoose from "mongoose";
+// import config from "../config";
 
+// (mongoose as any).Promise = Promise;
 
+// const dbOption = {
+//   autoReconnect: true,
+//   useNewUrlParser: true,
+//   poolSize: 5
+// };
 
+// const db = mongoose.createConnection(config.MONGO.URI);
 
-// Define custom properties
-interface CustomEventEmitter extends EventEmitter {
-  onConnect: () => void;
-}
+// // Define custom properties
+// let isConnected: boolean;
 
-const dbEvents = new EventEmitter() as CustomEventEmitter;
+// db.once("connected", () => {
+//   isConnected = true;
+//   // tslint:disable-next-line
+//   console.log('Mongoose successfully connected');
+// });
 
+// db.on("reconnected", () => {
+//   // tslint:disable-next-line
+//   console.log('Mongoose reconnected');
+// });
 
+// db.on("error", (err) => {
+//   // tslint:disable-next-line
+//   console.log('Mongoose connection error: ' + err);
+// });
 
-const dbOption = {
-  // useNewUrlParser: true,
-  // useUnifiedTopology: true,
-};
+// db.on("disconnected", () => {
+//   // tslint:disable-next-line
+//   console.log('Mongoose connection disconnected');
+// });
 
-let isConnected: boolean;
-export const db = new EventEmitter();
+// // Close the Mongoose connection If the Node process ends
+// // process.on("SIGINT", () => {
+// //   db.close(() => {
+// //     // tslint:disable-next-line
+// //     console.log('Mongoose connection closed');
+// //     process.exit(0);
+// //   });
+// //   setTimeout(() => process.exit(0), 1000);
+// // });
 
-const connectToMongoDB = async (): Promise<void> => {
-  try {
-    await mongoose.connect(config.MONGO.uri, dbOption);
-    isConnected = true;
-    db.emit("connected");
-    console.log("Mongoose is connected");
-  } catch (err) {
-    db.emit("disconnected");
-    console.error("Error connecting to MongoDB:", err);
-    throw err;
-  }
-};
+// export default db;
 
-connectToMongoDB();
-
-const handleOnConnect = async (): Promise<void> => {
-  if (!isConnected) {
-    await new Promise<void>((resolve) => {
-      db.once("connected", resolve);
-    });
-  }
-  console.log("Database connection is established. Perform other tasks here.");
-};
-
-export const onConnect = handleOnConnect;
-export const events = dbEvents;
+// export function onConnect() {
+//   return new Promise((resolve) => {
+//     if (isConnected) {
+//       resolve(db);
+//     }
+//     db.once("connected", () => {
+//       resolve(db);
+//     });
+//   });
+// }

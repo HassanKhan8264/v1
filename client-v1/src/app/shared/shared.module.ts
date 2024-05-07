@@ -2,6 +2,7 @@ import { ModuleWithProviders, NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
+import { MaterialModule } from "./modules/material.module";
 // import { FullCalendarModule } from "@fullcalendar/angular";
 // import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
 // import { CapitalizePipe } from "./pipes/capitalize.pipe";
@@ -302,7 +303,7 @@ const services: any[] = [];
   declarations: [...pipes, ...components, ...directives],
   imports: [
     CommonModule,
-    // MaterialModule,
+    MaterialModule,
     // NewellModule,
     RouterModule,
     FormsModule
@@ -322,7 +323,7 @@ const services: any[] = [];
     ...pipes,
     ...components,
     ...directives,
-    // MaterialModule,
+    MaterialModule,
     // NewellModule,
     RouterModule,
     FormsModule

@@ -4,7 +4,8 @@
   "main": "backend/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./backend/index.js"
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc --watch && --ignore client-v1/"
   },
   "author": "",
   "license": "ISC",
