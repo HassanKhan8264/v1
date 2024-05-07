@@ -1,10 +1,11 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "backend/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./backend/index.js"
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc --watch && --ignore client-v1/"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +20,8 @@
     "mongoose": "^8.3.2",
     "nodemon": "^3.1.0"
   },
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.12.10"
+  }
 }

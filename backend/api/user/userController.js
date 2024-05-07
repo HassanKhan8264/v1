@@ -36,7 +36,7 @@ let UserCtrl = (function () {
         .find()
         .then((users) => {
           console.log(users);
-          res.json( users);
+          res.json(users);
         })
         .catch((err) => {
           console.log(err);
@@ -83,7 +83,7 @@ let UserCtrl = (function () {
           userFound.password = password;
           await userFound.save();
           console.log("user updated successfully");
-          return res.status(200).json({ message: "User updated successfully" });
+          res.json(userFound);
         })
         .catch((err) => {
           console.log(err);

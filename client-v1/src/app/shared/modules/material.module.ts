@@ -52,11 +52,11 @@ import { MatTableModule } from "@angular/material/table";
 import { MatSortModule } from "@angular/material/sort";
 
 // Other material Dependent Modules
-import {
-  NgxMatDatetimePickerModule,
-  NgxMatNativeDateModule,
-  NgxMatTimepickerModule,
-} from "@angular-material-components/datetime-picker";
+// import {
+//   NgxMatDatetimePickerModule,
+//   NgxMatNativeDateModule,
+//   NgxMatTimepickerModule,
+// } from "@angular-material-components/datetime-picker";
 
 import { MatChipsModule } from "@angular/material/chips";
 import { OverlayModule } from "@angular/cdk/overlay";
@@ -86,9 +86,9 @@ const componentModules = [
   MatDatepickerModule,
   MatNativeDateModule,
   MatSelectModule,
-  NgxMatDatetimePickerModule,
-  NgxMatTimepickerModule,
-  NgxMatNativeDateModule,
+  // NgxMatDatetimePickerModule,
+  // NgxMatTimepickerModule,
+  // NgxMatNativeDateModule,
   MatToolbarModule,
   MatRadioModule,
   MatTooltipModule,
