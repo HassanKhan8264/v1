@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './content-view.component.scss'
 })
 export class ContentViewComponent {
-  data:any
 
 }

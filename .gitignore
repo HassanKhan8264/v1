@@ -1,8 +1,17 @@
 # Dependency directories
 node_modules/
+.cache/
+npm-debug.log
+yarn-error.log
 
 # Environment variables
 .env
 
-# Database files
-/backend/db/
+# Build artifacts
+/build
+
+# Ignore dist folder in the client directory
+client/dist/
+
+# Ignore dist folder in the root directory
+/dist/

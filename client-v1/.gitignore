@@ -1,7 +1,5 @@
-
 # Dependency directories
 node_modules/
-dist/
 .cache/
 npm-debug.log
 yarn-error.log
@@ -11,3 +9,6 @@ yarn-error.log
 
 # Build artifacts
 /build
+
+# Ignore dist folder in the client directory
+client-v1/dist/
