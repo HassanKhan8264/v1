@@ -2,32 +2,38 @@
 // const mongoose = require("mongoose");
 // const { ObjectId } = require("mongoose").Types;
 // const db = require("./../../db");
+import { UserModel } from "../../models/userSchema";
+import db from './../../db'
+import mongoose, { ObjectId } from "mongoose";
+export class UserCtrl {
 
+     public createUser = async (req, res) => {
+        console.log("API is working");
+        try {
+            const { username, password, email } = req.body;
+            const data = new UserModel({
+                username,
+                password,
+                email,
+            });
+            await data.save();
+            res
+                .status(201)
+                .json({ message: "User created successfully", user: data });
+        } catch (err) {
+            console.error(err);
+            if (err.name === "ValidationError") {
+                res
+                    .status(400)
+                    .json({ error: "Validation Error", message: err.message });
+            } else {
+                res.status(500).json({ error: "Internal Server Error" });
+            }
+        }
+    };
+
+}
 // let UserCtrl = (function () {
-//   const createUser = async (req, res) => {
-//     console.log("API is working");
-//     try {
-//       const { username, password, email } = req.body;
-//       const data = new userModel({
-//         username,
-//         password,
-//         email,
-//       });
-//       await data.save();
-//       res
-//         .status(201)
-//         .json({ message: "User created successfully", user: data });
-//     } catch (err) {
-//       console.error(err);
-//       if (err.name === "ValidationError") {
-//         res
-//           .status(400)
-//           .json({ error: "Validation Error", message: err.message });
-//       } else {
-//         res.status(500).json({ error: "Internal Server Error" });
-//       }
-//     }
-//   };
 
 //   const getAll = async (req, res) => {
 //     console.log("getting...");

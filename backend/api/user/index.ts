@@ -1,9 +1,10 @@
-// const UserCtrl = require('./userController')
+import { UserCtrl } from './userController'
 // const express = require('express')
+import express  from 'express'
 
-// const router = express.Router();
+const router = express.Router();
 
-// // router.post('/', UserCtrl.createUser)
+// router.post('/', UserCtrl.createUser)
 // router.post('/createUser', UserCtrl.createUser);
 // router.delete('/deleteAll', UserCtrl.deleteAll);
 // router.get('/getAll', UserCtrl.getAll);
