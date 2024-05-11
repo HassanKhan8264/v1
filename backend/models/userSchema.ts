@@ -12,7 +12,7 @@ export interface IUserModel extends mongoose.Document {
     data?: [string]
 }
 
-export const UserModelName = 'user'
+export const UserModelName = 'users'
 
 const UserSchema = new Schema({
     name: {
@@ -37,4 +37,4 @@ const UserSchema = new Schema({
     }]
 })
 
-export const UserModel = db.model<IUserModel>(UserModelName, UserSchema as any)
+export const model = db.model<IUserModel>(UserModelName, UserSchema as any)

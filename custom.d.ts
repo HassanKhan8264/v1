@@ -1,7 +1,7 @@
 // Import necessary modules
 import express from "express";
 
-declare module "express" {
+export declare module "express" {
     export interface Request {
         // Common properties for CRUD operations
         userId?: string; // Optional, for identifying the user making the request

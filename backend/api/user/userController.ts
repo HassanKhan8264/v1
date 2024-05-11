@@ -1,25 +1,30 @@
+import { Request, Response } from 'express';
 // const userModel = require("./../../models/schema");
 // const mongoose = require("mongoose");
 // const { ObjectId } = require("mongoose").Types;
 // const db = require("./../../db");
-import { UserModel } from "../../models/userSchema";
+import { model } from "../../models/userSchema";
 import db from './../../db'
 import mongoose, { ObjectId } from "mongoose";
+// import {Request, Response} from 'express'
 export class UserCtrl {
 
-     public createUser = async (req, res) => {
+     public createUser = async (req:Request, res:Response) => {
         console.log("API is working");
         try {
-            const { username, password, email } = req.body;
-            const data = new UserModel({
-                username,
-                password,
+            const { name, email, phone, password, data } = req.body;
+            const userData = new model({
+                name,
                 email,
+                phone,
+                password,
+                data
+           
             });
-            await data.save();
+            await userData.save();
             res
                 .status(201)
-                .json({ message: "User created successfully", user: data });
+                .json({ message: "User created successfully", user: userData });
         } catch (err) {
             console.error(err);
             if (err.name === "ValidationError") {

@@ -1,10 +1,12 @@
 import { UserCtrl } from './userController'
 // const express = require('express')
-import express  from 'express'
+import express from 'express'
 
 const router = express.Router();
+const userController = new UserCtrl()
 
-// router.post('/', UserCtrl.createUser)
+
+router.post('/createUser', userController.createUser)
 // router.post('/createUser', UserCtrl.createUser);
 // router.delete('/deleteAll', UserCtrl.deleteAll);
 // router.get('/getAll', UserCtrl.getAll);
@@ -13,4 +15,5 @@ const router = express.Router();
 // router.delete('/user/:id', UserCtrl.deleteOne);
 
 
-// module.exports = router
+
+export default router
