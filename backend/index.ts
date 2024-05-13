@@ -1,11 +1,13 @@
 import express from "express";
 import http from "http";
-import db from './db';
 import config from "./config";
 import cors from "cors";
 import bodyParser from 'body-parser';
 import router from './api/user';
 const app = express();
+
+
+
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());

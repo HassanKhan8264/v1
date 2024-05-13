@@ -1,159 +1,118 @@
 import { Request, Response } from 'express';
-// const userModel = require("./../../models/schema");
-// const mongoose = require("mongoose");
-// const { ObjectId } = require("mongoose").Types;
-// const db = require("./../../db");
-import { model } from "../../models/userSchema";
-import db from './../../db'
+import { userModel } from "../../models/userSchema";
 import mongoose, { ObjectId } from "mongoose";
-// import {Request, Response} from 'express'
-export class UserCtrl {
+import { userSchema } from './validators';
+import { BaseController } from '../baseController';
 
-     public createUser = async (req:Request, res:Response) => {
+export class UserCtrl extends BaseController {
+
+    createUser = async (req: Request, res: Response) => {
         console.log("API is working");
         try {
+            const { error } = userSchema.validate(req.body);
+            if (error) {
+                return super.response(res, 400, false, error.message);
+            }
             const { name, email, phone, password, data } = req.body;
-            const userData = new model({
+            const userData = new userModel({
                 name,
                 email,
                 phone,
                 password,
                 data
-           
             });
             await userData.save();
-            res
-                .status(201)
-                .json({ message: "User created successfully", user: userData });
+            return super.response(res, 200, true, null, userData);
+
+
         } catch (err) {
             console.error(err);
             if (err.name === "ValidationError") {
-                res
-                    .status(400)
-                    .json({ error: "Validation Error", message: err.message });
+                return super.response(res, 400, false, 'Validation failed');
             } else {
-                res.status(500).json({ error: "Internal Server Error" });
+                return super.response(res, 500, true, 'Internal Server Error');
             }
         }
     };
 
+    deleteAll = async (req, res) => {
+        try {
+            let allUsers = await userModel.deleteMany({});
+            if (allUsers.deletedCount === 0) {
+                return super.response(res, 400, false, 'User not found');
+            }
+            super.response(res, 200, true, 'user deleted successfully');
+
+        } catch (err) {
+            return super.response(res, 500, true, 'Internal Server Error');
+        }
+    }
+    getAll = async (req, res) => {
+        try {
+            let allUser = await userModel.find()
+            res.json(allUser)
+        }
+        catch (err) {
+            return super.response(res, 500, true, 'Internal Server Error');
+        }
+
+    }
+    getOneByUsername = async (req, res) => {
+        try {
+            let { email } = req.body
+
+            let user = await userModel.findOne({ email: email })
+            if (!user) {
+                return super.response(res, 400, false, 'User not found');
+            }
+            res.json({ message: 'user found', user: user })
+
+        }
+        catch (err) {
+            return super.response(res, 500, true, 'Internal Server Error');
+
+        }
+    }
+    updateUser = async (req, res) => {
+        try {
+            let userId = req.query.user_id;
+            if (!mongoose.Types.ObjectId.isValid(userId)) {
+                // return res.status(400).json({ message: "Invalid user ID" });
+                return super.response(res, 400, false, 'Invalid user ID');
+
+            }
+            const { name, email } = req.body;
+            let user = await userModel.findById({ _id: userId });
+
+            if (!user) {
+                return super.response(res, 400, false, 'User not found');
+            }
+            if (!name && !email) {
+                return super.response(res, 400, false, 'Both name and email are required');
+            } else {
+                user.name = name || user.name;
+                user.email = email || user.email;
+                let updatedUser = await user.save();
+                // res.json({ user: updatedUser });
+                return super.response(res, 200, true, 'User Updated', { user: updatedUser });
+            }
+        } catch (err) {
+            return super.response(res, 500, true, 'Internal Server Error');
+        }
+    }
+    deleteUser = async (req, res) => {
+        try {
+            let userId = req.query.user_id;
+            let user = await userModel.deleteOne({ _id: userId })
+            if (user.deletedCount === 0) {
+                return super.response(res, 400, false, 'User not found');
+            } else {
+                return super.response(res, 200, true, 'delete user');
+            }
+        } catch (err) {
+            return super.response(res, 500, true, 'Internal Server Error');
+        }
+
+    }
+
 }
-// let UserCtrl = (function () {
-
-//   const getAll = async (req, res) => {
-//     console.log("getting...");
-//     try {
-//       userModel
-//         .find()
-//         .then((users) => {
-//           console.log(users);
-//           res.json( users);
-//         })
-//         .catch((err) => {
-//           console.log(err);
-//           res.status(500).json({ error: "Internal Server Error" });
-//         });
-//     } catch (err) {
-//       res.status(500).json({ error: "Internal Server Error" });
-//     }
-//   };
-
-//   const getUser = async (req, res) => {
-//     let id = req.params.id;
-//     console.log("getting...");
-//     try {
-//       userModel
-//         .findOne({ _id: id })
-//         .then((user) => {
-//           console.log("got it", user);
-//           res.json(user);
-//         })
-//         .catch((err) => {
-//           console.log(err);
-//           res.status(500).json({ error: "Internal Server Error" });
-//         });
-//     } catch (err) {
-//       console.error(err);
-//       res.status(500).json({ error: "Internal Server Error" });
-//     }
-//   };
-
-//   const updateUser = async (req, res) => {
-//     const userId = req.params.id;
-//     const { username, password } = req.body;
-//     console.log("finding...");
-//     try {
-//       userModel
-//         .findById(userId)
-//         .then(async (userFound) => {
-//           console.log(userFound);
-//           if (!userFound) {
-//             return res.status(404).json({ error: "User not found" });
-//           }
-//           userFound.username = username;
-//           userFound.password = password;
-//           await userFound.save();
-//           console.log("user updated successfully");
-//           return res.status(200).json({ message: "User updated successfully" });
-//         })
-//         .catch((err) => {
-//           console.log(err);
-//           res.status(500).json({ error: "Internal Server Error" });
-//         });
-//     } catch (err) {
-//       console.error(err);
-//       return res.status(500).json({ error: "Internal Server Error" });
-//     }
-//   };
-
-//   const deleteOne = async (req, res) => {
-//     let id = req.params.id;
-//     console.log("deleting...");
-//     try {
-//       userModel
-//         .findOneAndDelete({ _id: id })
-//         .then(async (userFound) => {
-//           console.log(userFound);
-//           if (!userFound) {
-//             return res.status(404).json({ error: "User not found" });
-//           }
-//           console.log("user updated successfully");
-//           return res.status(200).json({ mes: "Delete Success" });
-//         })
-//         .catch((err) => {
-//           console.log(err);
-//           res.status(500).json({ error: "Internal Server Error" });
-//         });
-//     } catch (err) {
-//       console.error(err);
-//       return res.status(500).json({ error: "Internal Server Error" });
-//     }
-//   };
-
-//   const deleteAll = async (req, res) => {
-//     console.log("deleting...");
-//     try {
-//       let allusers = await userModel.deleteMany({});
-//       if (allusers.deletedCount === 0) {
-//         return res
-//           .status(400)
-//           .json({ error: "No users found in the database" });
-//       }
-//       console.log("deleted");
-//       res.status(200).json({ message: "Deleted all users" });
-//     } catch (err) {
-//       res.status(500).json({ error: "Internal Server Error" });
-//     }
-//   };
-
-//   return {
-//     createUser,
-//     deleteAll,
-//     getAll,
-//     getUser,
-//     updateUser,
-//     deleteOne,
-//   };
-// })();
-
-// module.exports = UserCtrl;
