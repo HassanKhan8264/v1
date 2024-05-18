@@ -77,7 +77,6 @@ export class UserCtrl extends BaseController {
         try {
             let userId = req.query.user_id;
             if (!mongoose.Types.ObjectId.isValid(userId)) {
-                // return res.status(400).json({ message: "Invalid user ID" });
                 return super.response(res, 400, false, 'Invalid user ID');
 
             }
