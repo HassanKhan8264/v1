@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { userModel } from "../../models/userSchema";
 import mongoose, { ObjectId } from "mongoose";
 import { userSchema } from './validators';
-import { BaseController } from '../baseController';
+import { BaseController } from '../../baseController';
 
 export class UserCtrl extends BaseController {
 
