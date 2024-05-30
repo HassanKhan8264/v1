@@ -4,10 +4,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UserCtrl = void 0;
-const userSchema_1 = require("../../models/userSchema");
+const userCrudSchema_1 = require("../../models/userCrudSchema");
 const mongoose_1 = __importDefault(require("mongoose"));
 const validators_1 = require("./validators");
-const baseController_1 = require("../baseController");
+const baseController_1 = require("../../baseController");
 class UserCtrl extends baseController_1.BaseController {
     constructor() {
         super(...arguments);
@@ -19,14 +19,13 @@ class UserCtrl extends baseController_1.BaseController {
                     return super.response(res, 400, false, error.message);
                 }
                 const { name, email, phone, password, data } = req.body;
-                const userData = new userSchema_1.userModel({
+                const userData = await userCrudSchema_1.userModel.create({
                     name,
                     email,
                     phone,
                     password,
                     data
                 });
-                await userData.save();
                 return super.response(res, 200, true, null, userData);
             }
             catch (err) {
@@ -41,7 +40,7 @@ class UserCtrl extends baseController_1.BaseController {
         };
         this.deleteAll = async (req, res) => {
             try {
-                let allUsers = await userSchema_1.userModel.deleteMany({});
+                let allUsers = await userCrudSchema_1.userModel.deleteMany({});
                 if (allUsers.deletedCount === 0) {
                     return super.response(res, 400, false, 'User not found');
                 }
@@ -53,7 +52,7 @@ class UserCtrl extends baseController_1.BaseController {
         };
         this.getAll = async (req, res) => {
             try {
-                let allUser = await userSchema_1.userModel.find();
+                let allUser = await userCrudSchema_1.userModel.find();
                 res.json(allUser);
             }
             catch (err) {
@@ -63,7 +62,7 @@ class UserCtrl extends baseController_1.BaseController {
         this.getOneByUsername = async (req, res) => {
             try {
                 let { email } = req.body;
-                let user = await userSchema_1.userModel.findOne({ email: email });
+                let user = await userCrudSchema_1.userModel.findOne({ email: email });
                 if (!user) {
                     return super.response(res, 400, false, 'User not found');
                 }
@@ -80,7 +79,7 @@ class UserCtrl extends baseController_1.BaseController {
                     return super.response(res, 400, false, 'Invalid user ID');
                 }
                 const { name, email } = req.body;
-                let user = await userSchema_1.userModel.findById({ _id: userId });
+                let user = await userCrudSchema_1.userModel.findById({ _id: userId });
                 if (!user) {
                     return super.response(res, 400, false, 'User not found');
                 }
@@ -101,7 +100,7 @@ class UserCtrl extends baseController_1.BaseController {
         this.deleteUser = async (req, res) => {
             try {
                 let userId = req.query.user_id;
-                let user = await userSchema_1.userModel.deleteOne({ _id: userId });
+                let user = await userCrudSchema_1.userModel.deleteOne({ _id: userId });
                 if (user.deletedCount === 0) {
                     return super.response(res, 400, false, 'User not found');
                 }

@@ -14,4 +14,4 @@ router.get('/getAllUsers', userController.getAll);
 router.delete('/deleteAll', userController.deleteAll);
 router.delete('/user', userController.deleteUser);
 exports.default = router;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=routes.js.map

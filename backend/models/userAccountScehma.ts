@@ -1,5 +1,5 @@
 import * as mongoose from "mongoose";
-import db from './../db'
+import db from '../db'
 
 const { Schema } = mongoose;
 const { Types } = Schema
@@ -9,7 +9,7 @@ export interface IUserModel extends mongoose.Document {
     email: string;
     phone: number
     password: string;
-    data?: [string]
+
 }
 
 
@@ -30,11 +30,12 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
-    data: [{
-        type: Types.Mixed,
-        default: []
-    }]
-})
+    createdOn: {
+        type: Date,
+        default: Date.now
+    }
+ 
+});
 
-export const UserModelName = 'users'
+export const UserModelName = 'userAccount'
 export const userModel = db.model<IUserModel>(UserModelName, UserSchema as any)

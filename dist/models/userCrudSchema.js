@@ -28,7 +28,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.userModel = exports.UserModelName = void 0;
 const mongoose = __importStar(require("mongoose"));
-const db_1 = __importDefault(require("./../db"));
+const db_1 = __importDefault(require("../db"));
 const { Schema } = mongoose;
 const { Types } = Schema;
 const UserSchema = new Schema({
@@ -48,6 +48,10 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
+    createdOn: {
+        type: Date,
+        default: Date.now
+    },
     data: [{
             type: Types.Mixed,
             default: []
@@ -55,4 +59,4 @@ const UserSchema = new Schema({
 });
 exports.UserModelName = 'user';
 exports.userModel = db_1.default.model(exports.UserModelName, UserSchema);
-//# sourceMappingURL=userSchema.js.map
+//# sourceMappingURL=userCrudSchema.js.map

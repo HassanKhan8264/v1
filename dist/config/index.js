@@ -26,9 +26,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const dotenv = __importStar(require("dotenv"));
 dotenv.config();
 const config = {
-    PORT: process.env.ENV || 5001,
+    Jwt_Secret: process.env.SECRET,
+    PORT: process.env.ENV || process.env.LOCALPORT,
     MONGO: {
-        URI: `${process.env.MONGODB_URI}/${process.env.DB_NAME}`,
+        URI: `${process.env.MONGODB_URI}`,
     },
 };
 exports.default = config;

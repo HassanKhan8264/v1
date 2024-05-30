@@ -1,8 +1,9 @@
 import {
   MatIcon,
   MatIconModule
-} from "./chunk-CJXLFRHC.js";
+} from "./chunk-XEELRTDS.js";
 import "./chunk-BQD3D3FD.js";
+import "./chunk-EIV36KLU.js";
 import {
   animate,
   animateChild,
@@ -23,7 +24,6 @@ import {
   FocusKeyManager,
   FocusMonitor
 } from "./chunk-JR5M4PHK.js";
-import "./chunk-EIV36KLU.js";
 import {
   CdkPortalOutlet,
   PortalModule,

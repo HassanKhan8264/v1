@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { userModel } from "../../models/userSchema";
+import { userModel } from "../../models/userCrudSchema";
 import mongoose, { ObjectId } from "mongoose";
 import { userSchema } from './validators';
 import { BaseController } from '../../baseController';
@@ -14,16 +14,14 @@ export class UserCtrl extends BaseController {
                 return super.response(res, 400, false, error.message);
             }
             const { name, email, phone, password, data } = req.body;
-            const userData = new userModel({
+            const userData = await userModel.create({
                 name,
                 email,
                 phone,
                 password,
                 data
             });
-            await userData.save();
             return super.response(res, 200, true, null, userData);
-
 
         } catch (err) {
             console.error(err);
