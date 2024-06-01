@@ -11,7 +11,7 @@ yarn-error.log
 /build
 
 # Ignore dist folder in the client directory
-client/dist/
+client-v1/dist/
 
 # Ignore dist folder in the root directory
-/dist/
+# /dist/

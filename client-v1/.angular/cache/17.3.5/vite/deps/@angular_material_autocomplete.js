@@ -1,7 +1,7 @@
 import {
   MAT_FORM_FIELD,
   MatFormField
-} from "./chunk-2KFZGUAH.js";
+} from "./chunk-XHBAGFMQ.js";
 import {
   animate,
   group,
@@ -9,7 +9,7 @@ import {
   style,
   transition,
   trigger
-} from "./chunk-ZGLNX5QT.js";
+} from "./chunk-D5VDYUOU.js";
 import {
   MAT_OPTGROUP,
   MAT_OPTION_PARENT_COMPONENT,
@@ -20,20 +20,20 @@ import {
   MatOptionSelectionChange,
   _countGroupLabelsBeforeOption,
   _getOptionScrollPosition
-} from "./chunk-GXTCEKNU.js";
+} from "./chunk-Z5DUCAAR.js";
 import {
   ActiveDescendantKeyManager,
   addAriaReferencedId,
   removeAriaReferencedId
-} from "./chunk-AVUT5NWT.js";
+} from "./chunk-JR5M4PHK.js";
 import {
   Overlay,
   OverlayConfig,
   OverlayModule
-} from "./chunk-6XEHJLKK.js";
+} from "./chunk-BWAWQOZ4.js";
 import {
   TemplatePortal
-} from "./chunk-J37YNQGY.js";
+} from "./chunk-BLCPA2F6.js";
 import {
   DOWN_ARROW,
   ENTER,
@@ -45,20 +45,20 @@ import {
 import {
   CdkScrollableModule,
   ViewportRuler
-} from "./chunk-UPVZ4X2E.js";
-import "./chunk-5IGO7ZVJ.js";
+} from "./chunk-VCMUHK75.js";
+import "./chunk-5O5QX3PG.js";
 import {
   Directionality,
   Platform,
   _getEventTarget
-} from "./chunk-4KPEECJZ.js";
+} from "./chunk-7OBXTRYY.js";
 import {
   NG_VALUE_ACCESSOR
-} from "./chunk-LBSHUANH.js";
+} from "./chunk-LJ4YP55G.js";
 import {
   CommonModule,
   DOCUMENT
-} from "./chunk-NKF7BGZJ.js";
+} from "./chunk-DNIPCOIB.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -76,27 +76,14 @@ import {
   NgZone,
   Optional,
   Output,
-  Subject,
-  Subscription,
   TemplateRef,
   ViewChild,
   ViewContainerRef,
   ViewEncapsulation$1,
   booleanAttribute,
-  defer,
-  delay,
-  filter,
   forwardRef,
-  fromEvent,
   inject,
-  map,
-  merge,
-  of,
   setClassMetadata,
-  startWith,
-  switchMap,
-  take,
-  tap,
   ɵɵInputTransformsFeature,
   ɵɵNgOnChangesFeature,
   ɵɵProvidersFeature,
@@ -124,7 +111,22 @@ import {
   ɵɵrestoreView,
   ɵɵtemplate,
   ɵɵviewQuery
-} from "./chunk-LBXCMUWC.js";
+} from "./chunk-UC6QHQD3.js";
+import {
+  Subject,
+  Subscription,
+  defer,
+  delay,
+  filter,
+  fromEvent,
+  map,
+  merge,
+  of,
+  startWith,
+  switchMap,
+  take,
+  tap
+} from "./chunk-SXIXOCJ4.js";
 
 // node_modules/@angular/material/fesm2022/autocomplete.mjs
 var _c0 = ["panel"];

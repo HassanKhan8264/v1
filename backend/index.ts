@@ -1,21 +1,21 @@
 import express from "express";
-import http from "http";
 import config from "./config";
+import bodyParser from "body-parser";
 import cors from "cors";
-import bodyParser from 'body-parser';
-import router from './api/user';
+import router from "./routes";
+import cookieParser from "cookie-parser";
+import testCookie from "./middleware";
 const app = express();
 
-
-
+app.use(cookieParser());
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());
-const server = http.createServer(app);
-app.use('/api', router)
+app.use("/api", router);
 
+// testTokenMiddleware
+app.use(testCookie);
 
-
-server.listen(config.PORT, () => {
+app.listen(config.PORT, () => {
   console.log(`Server is running on port ${config.PORT}`);
 });
