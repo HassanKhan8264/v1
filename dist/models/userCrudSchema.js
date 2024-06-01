@@ -34,29 +34,31 @@ const { Types } = Schema;
 const UserSchema = new Schema({
     name: {
         type: String,
-        required: true
+        required: true,
     },
     email: {
         type: String,
-        required: true
+        required: true,
     },
     phone: {
         type: Number,
-        required: true
+        required: true,
     },
     password: {
         type: String,
-        required: true
+        required: true,
     },
     createdOn: {
         type: Date,
-        default: Date.now
+        default: Date.now,
     },
-    data: [{
+    data: [
+        {
             type: Types.Mixed,
-            default: []
-        }]
+            default: [],
+        },
+    ],
 });
-exports.UserModelName = 'user';
+exports.UserModelName = "crudUser";
 exports.userModel = db_1.default.model(exports.UserModelName, UserSchema);
 //# sourceMappingURL=userCrudSchema.js.map

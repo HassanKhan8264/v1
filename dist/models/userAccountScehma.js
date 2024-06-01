@@ -34,25 +34,25 @@ const { Types } = Schema;
 const UserSchema = new Schema({
     name: {
         type: String,
-        required: true
+        required: true,
     },
     email: {
         type: String,
-        required: true
+        required: true,
     },
     phone: {
         type: Number,
-        required: true
+        required: true,
     },
     password: {
         type: String,
-        required: true
+        required: true,
     },
     createdOn: {
         type: Date,
-        default: Date.now
-    }
+        default: Date.now,
+    },
 });
-exports.UserModelName = 'userAccount';
+exports.UserModelName = "userAccount";
 exports.userModel = db_1.default.model(exports.UserModelName, UserSchema);
 //# sourceMappingURL=userAccountScehma.js.map

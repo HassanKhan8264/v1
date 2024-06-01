@@ -9,16 +9,16 @@ function testCookie(req, res, next) {
     try {
         if (!req?.cookies?.Token) {
             res.status(401).send({
-                message: "include http-only credentials with every request"
+                message: "include http-only credentials with every request",
             });
             return;
         }
         jsonwebtoken_1.default.verify(req.cookies.Token, config_1.default.Jwt_Secret, function (err, decodedData) {
             let nowDate = new Date().getTime() / 1000;
             if (decodedData.exp < nowDate) {
-                res.cookie('Token', '', {
+                res.cookie("Token", "", {
                     maxAge: 1,
-                    httpOnly: true
+                    httpOnly: true,
                 });
                 res.send({ message: "token expired" });
             }

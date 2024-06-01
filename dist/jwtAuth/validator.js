@@ -10,30 +10,31 @@ exports.userSchema = joi_1.default.object({
         "any.required": "Name is required.",
         "string.empty": "Name cannot be empty.",
         "string.min": "Name should be at least 2 characters long.",
-        "string.max": "Name should not exceed 50 characters."
+        "string.max": "Name should not exceed 50 characters.",
     }),
     email: joi_1.default.string()
-        .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } })
+        .email({ minDomainSegments: 2, tlds: { allow: ["com", "net"] } })
         .min(5)
         .max(255)
         .required()
         .messages({
         "any.required": "Email is required.",
         "string.empty": "Email cannot be empty.",
-        "string.email": "Invalid email format."
+        "string.email": "Invalid email format.",
     })
         .regex(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)
         .message("Email does not match the allowed pattern."),
     phone: joi_1.default.number().integer().required().messages({
         "any.required": "Phone number is required.",
         "string.empty": "Phone number cannot be empty.",
-        "string.pattern.base": "Phone number is invalid."
+        "string.pattern.base": "Phone number is invalid.",
     }),
-    password: joi_1.default.string().pattern(new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$'))
+    password: joi_1.default.string()
+        .pattern(new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$"))
         .required()
         .messages({
-        'string.pattern.base': `Password must contain at least one lowercase letter, one uppercase letter, one digit, and be at least 8 characters long.`,
-        'any.required': `A password is required.`,
+        "string.pattern.base": `Password must contain at least one lowercase letter, one uppercase letter, one digit, and be at least 8 characters long.`,
+        "any.required": `A password is required.`,
     }),
 });
 //# sourceMappingURL=validator.js.map

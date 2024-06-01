@@ -6,27 +6,36 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.userSchema = void 0;
 const joi_1 = __importDefault(require("joi"));
 exports.userSchema = joi_1.default.object({
-    name: joi_1.default.string().alphanum().min(2).max(30).required().messages({
-        'string.empty': `A name is required.`,
-        'any.only': `Invalid name.`,
+    name: joi_1.default.string().min(2).max(50).required().messages({
+        "any.required": "Name is required.",
+        "string.empty": "Name cannot be empty.",
+        "string.min": "Name should be at least 2 characters long.",
+        "string.max": "Name should not exceed 50 characters.",
     }),
-    email: joi_1.default.string().email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } })
+    email: joi_1.default.string()
+        .email({ minDomainSegments: 2, tlds: { allow: ["com", "net"] } })
+        .min(5)
+        .max(255)
         .required()
         .messages({
-        'string.email': `Invalid email format.`,
-        'any.required': `An email is required.`,
+        "any.required": "Email is required.",
+        "string.empty": "Email cannot be empty.",
+        "string.email": "Invalid email format.",
+    })
+        .regex(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)
+        .message("Email does not match the allowed pattern."),
+    phone: joi_1.default.number().integer().required().messages({
+        "any.required": "Phone number is required.",
+        "string.empty": "Phone number cannot be empty.",
+        "string.pattern.base": "Phone number is invalid.",
     }),
-    phone: joi_1.default.number().integer().min(1000000000).max(9999999999).required().messages({
-        'number.base': `Phone number must be a number.`,
-        'number.integer': `Phone number must be an integer.`,
-        'any.required': `A phone number is required.`,
-    }),
-    password: joi_1.default.string().pattern(new RegExp('^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$'))
+    password: joi_1.default.string()
+        .pattern(new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$"))
         .required()
         .messages({
-        'string.pattern.base': `Password must contain at least one lowercase letter, one uppercase letter, one digit, and be at least 8 characters long.`,
-        'any.required': `A password is required.`,
+        "string.pattern.base": `Password must contain at least one lowercase letter, one uppercase letter, one digit, and be at least 8 characters long.`,
+        "any.required": `A password is required.`,
     }),
-    data: joi_1.default.array().optional()
+    data: joi_1.default.array().optional(),
 });
 //# sourceMappingURL=validators.js.map

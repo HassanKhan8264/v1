@@ -7,14 +7,14 @@ const mongoose_1 = __importDefault(require("mongoose"));
 const config_1 = __importDefault(require("../config"));
 mongoose_1.default.Promise = Promise;
 const db = mongoose_1.default.createConnection(config_1.default.MONGO.URI);
-db.on('connected', () => {
-    console.log('MongoDB connected successfully');
+db.on("connected", () => {
+    console.log("MongoDB connected successfully");
 });
-db.on('error', (error) => {
-    console.error('MongoDB connection error:', error);
+db.on("error", (error) => {
+    console.error("MongoDB connection error:", error);
 });
-db.on('disconnected', () => {
-    console.log('Database connection lost, attempting to reconnect...');
+db.on("disconnected", () => {
+    console.log("Database connection lost, attempting to reconnect...");
 });
 exports.default = db;
 //# sourceMappingURL=index.js.map
