@@ -66,11 +66,7 @@ class authController extends baseController_1.BaseController {
                         httpOnly: true,
                     });
                     return super.response(res, 200, true, "login success", {
-                        profile: {
-                            _id: user._id,
-                            name: user.name,
-                            email: user.email,
-                        },
+                        token: token,
                     });
                 }
                 else {

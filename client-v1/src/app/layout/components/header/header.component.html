@@ -1,16 +1,17 @@
-<p>header works!</p>
-<!-- Get User by ID Button -->
-<button (click)="getUserById(userId)">Get User by ID</button>
+<button [routerLink]="['/publish']" routerLinkActive="router-link-active">
+  publish
+</button>
+<button
+  button
+  [routerLink]="['/calender']"
+  routerLinkActive="router-link-active"
+>
+  caledner
+</button>
 
-<!-- Update User Form -->
-<form (ngSubmit)="updateUser()">
-  <input type="text" [(ngModel)]="username" name="username" placeholder="Username">
-  <input type="password" [(ngModel)]="password" name="password" placeholder="Password">
-  <button type="submit">Update User</button>
-</form>
-
-<div class="users" *ngFor="let user of users">
-  <p>Username: {{ user.username }}</p>
-  <p>Email: {{ user.email }}</p>
-  <button (click)="getUserById(user)">Get User by ID</button>
-</div>
+<button [routerLink]="['/login']" routerLinkActive="router-link-active">
+  login
+</button>
+<button button [routerLink]="['/signup']" routerLinkActive="router-link-active">
+  signup
+</button>

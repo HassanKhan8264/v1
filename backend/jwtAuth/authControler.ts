@@ -71,11 +71,7 @@ export class authController extends BaseController {
         });
 
         return super.response(res, 200, true, "login success", {
-          profile: {
-            _id: user._id,
-            name: user.name,
-            email: user.email,
-          },
+          token: token,
         });
       } else {
         return super.response(res, 401, false, "Invalid credentials");
