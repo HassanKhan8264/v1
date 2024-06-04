@@ -9,6 +9,7 @@ const authControler = new authController();
 // authentication
 router.post("/signUp", authControler.signUp);
 router.post("/login", authControler.login);
+router.post("/logout", authControler.logout);
 
 // Crud Operation
 router.post("/addUser", userController.addUser);

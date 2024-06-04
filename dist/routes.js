@@ -12,6 +12,7 @@ const userController = new userController_1.UserCtrl();
 const authControler = new authControler_1.authController();
 router.post("/signUp", authControler.signUp);
 router.post("/login", authControler.login);
+router.post("/logout", authControler.logout);
 router.post("/addUser", userController.addUser);
 router.put("/user", userController.updateUser);
 router.get("/getUserByUsername", userController.getOneByUsername);

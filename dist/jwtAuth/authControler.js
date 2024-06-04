@@ -54,24 +54,35 @@ class authController extends baseController_1.BaseController {
                 if (!email || !password) {
                     return super.response(res, 400, false, "Fields Missing");
                 }
-                const user = await userAccountScehma_1.userModel.findOne({ email: email }).exec();
-                if (user && (await bcrypt_1.default.compare(password, user.password))) {
-                    const token = jsonwebtoken_1.default.sign({
-                        _id: user._id,
-                        email: user.email,
-                        exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24,
-                    }, config_1.default.Jwt_Secret);
-                    res.cookie("Token", token, {
-                        maxAge: 86_400_000,
-                        httpOnly: true,
-                    });
-                    return super.response(res, 200, true, "login success", {
-                        token: token,
-                    });
+                const user = await userAccountScehma_1.userModel
+                    .findOne({ email: email }, { name: 1, phone: 1, email: 1, password: 1 })
+                    .exec();
+                if (!user) {
+                    return super.response(res, 404, false, "User not found");
                 }
-                else {
+                const isValidPassword = await bcrypt_1.default.compare(password, user.password);
+                if (!isValidPassword) {
                     return super.response(res, 401, false, "Invalid credentials");
                 }
+                const token = jsonwebtoken_1.default.sign({
+                    _id: user._id,
+                    email: user.email,
+                    exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24,
+                }, config_1.default.Jwt_Secret);
+                res.cookie("Token", token, {
+                    maxAge: 86_400_000,
+                    httpOnly: true,
+                    sameSite: "none",
+                    secure: true,
+                });
+                return super.response(res, 200, true, "Login successful", {
+                    token: token,
+                    user: {
+                        name: user.name,
+                        phone: user.phone,
+                        email: user.email,
+                    },
+                });
             }
             catch (error) {
                 console.error(error);
@@ -79,9 +90,10 @@ class authController extends baseController_1.BaseController {
             }
         };
         this.logout = async (req, res) => {
-            req.cookie("Token", "", {
-                maxAge: 1,
+            res.clearCookie("Token", {
                 httpOnly: true,
+                sameSite: "none",
+                secure: true,
             });
             return super.response(res, 200, true, "Logout successful");
         };
