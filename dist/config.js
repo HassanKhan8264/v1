@@ -28,7 +28,6 @@ if (process.env.NODE_ENV === "production") {
     envFile = ".env.production";
 }
 dotenv.config({ path: envFile });
-console.log(dotenv);
 if (!process.env.MONGODB) {
     throw new Error("Missing MONGODB environment variable");
 }
