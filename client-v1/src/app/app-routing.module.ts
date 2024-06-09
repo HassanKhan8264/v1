@@ -38,6 +38,7 @@ const routes: Routes = [
       {
         path: "publish",
         // data: { feature: "PUBLISH" },
+          canActivate: [AuthGuard],
         loadChildren: () =>
           import("./modules/publish/publish.module").then(
             (m) => m.PublishModule,
@@ -45,7 +46,6 @@ const routes: Routes = [
       },
       {
         path: "calender",
-        canActivate: [AuthGuard],
         loadChildren: () =>
           import("./modules/calender/calender.module").then(
             (m) => m.CalenderModule,

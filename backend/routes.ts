@@ -11,11 +11,14 @@ router.post("/signUp", authControler.signUp);
 router.post("/login", authControler.login);
 router.post("/logout", authControler.logout);
 
+// userAuthentication
+router.get("/verifyUserToken",authenticateToken)
+
 // Crud Operation
 router.post("/addUser", userController.addUser);
 router.put("/user", userController.updateUser);
 router.get("/getUserByUsername", userController.getOneByUsername);
-router.get("/getAllUsers", authenticateToken, userController.getAll);
+router.get("/getAllUsers",userController.getAll);
 router.delete("/deleteAll", userController.deleteAll);
 router.delete("/user", userController.deleteUser);
 

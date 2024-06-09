@@ -22,9 +22,7 @@ export class HeaderComponent {
   ) {
     // this.userId = 2
   }
-  ngOnInit() {
-    this.getAllUser();
-  }
+
 
   logout() {
     this.http
@@ -35,8 +33,7 @@ export class HeaderComponent {
         (res) => {
           if (res) {
             console.log("Successfully logged in", res);
-            // localStorage.removeItem("token");
-            // this.router.navigate(["login"]);
+            this.router.navigate(["login"]);
           } else {
             alert("User not found");
           }
@@ -47,13 +44,10 @@ export class HeaderComponent {
       );
   }
   getAllUser() {
-    this.EndpointService.getAll()
-      .pipe(take(1))
-      .subscribe((data) => {
-        {
-          console.log(data);
-        }
-      });
+    this.EndpointService.getAll().subscribe((response => {
+      console.log('res = ' + response);
+
+    }))
   }
   getUserById(userId: any) {}
 

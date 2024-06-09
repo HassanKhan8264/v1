@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.http
-      .post<any>("http://localhost:5001/api/login", this.loginForm.value)
+      .post<any>("http://localhost:5001/api/v1/login", this.loginForm.value)
       .subscribe(
         (res) => {
           if (res) {

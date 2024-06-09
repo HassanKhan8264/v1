@@ -13,24 +13,24 @@ export class CalenderLayoutComponent implements OnInit {
     private http: HttpClient,
   ) {}
   ngOnInit() {
-    this.login();
+    // this.login();
   }
-  login() {
-    this.http.get<any>("http://localhost:5001/api/getAllUsers").subscribe(
-      (res) => {
-        if (res) {
-          console.log("Successfully logged in", res);
-        } else {
-          alert("User not found");
-        }
-      },
-      (err) => {
-        if (err instanceof HttpErrorResponse) {
-          if (err.status === 401) {
-            this.router.navigate(["/login"]);
-          }
-        }
-      },
-    );
-  }
+  // login() {
+  //   this.http.get<any>("http://localhost:5001/api/getAllUsers").subscribe(
+  //     (res) => {
+  //       if (res) {
+  //         console.log("Successfully logged in", res);
+  //       } else {
+  //         alert("User not found");
+  //       }
+  //     },
+  //     (err) => {
+  //       if (err instanceof HttpErrorResponse) {
+  //         if (err.status === 401) {
+  //           this.router.navigate(["/login"]);
+  //         }
+  //       }
+  //     },
+  //   );
+  // }
 }
