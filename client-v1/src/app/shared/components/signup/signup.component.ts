@@ -14,7 +14,7 @@ export class SignupComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private http: HttpClient,
-    private router: Router
+    private router: Router,
   ) {}
 
   ngOnInit(): void {
@@ -39,7 +39,7 @@ export class SignupComponent implements OnInit {
         },
         (err) => {
           alert("Something went wrong");
-        }
+        },
       );
   }
 }

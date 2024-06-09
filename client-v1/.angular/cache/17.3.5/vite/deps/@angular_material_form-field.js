@@ -15,7 +15,7 @@ import {
   getMatFormFieldDuplicatedHintError,
   getMatFormFieldMissingControlError,
   getMatFormFieldPlaceholderConflictError,
-  matFormFieldAnimations
+  matFormFieldAnimations,
 } from "./chunk-XHBAGFMQ.js";
 import "./chunk-D5VDYUOU.js";
 import "./chunk-Z5DUCAAR.js";
@@ -42,6 +42,6 @@ export {
   getMatFormFieldDuplicatedHintError,
   getMatFormFieldMissingControlError,
   getMatFormFieldPlaceholderConflictError,
-  matFormFieldAnimations
+  matFormFieldAnimations,
 };
 //# sourceMappingURL=@angular_material_form-field.js.map

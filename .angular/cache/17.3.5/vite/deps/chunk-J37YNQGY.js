@@ -1,6 +1,4 @@
-import {
-  DOCUMENT
-} from "./chunk-NKF7BGZJ.js";
+import { DOCUMENT } from "./chunk-NKF7BGZJ.js";
 import {
   ComponentFactoryResolver$1,
   Directive,
@@ -21,7 +19,7 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵdirectiveInject,
-  ɵɵgetInheritedFactory
+  ɵɵgetInheritedFactory,
 } from "./chunk-LBXCMUWC.js";
 
 // node_modules/@angular/cdk/fesm2022/portal.mjs
@@ -35,7 +33,9 @@ function throwPortalOutletAlreadyDisposedError() {
   throw Error("This PortalOutlet has already been disposed");
 }
 function throwUnknownPortalTypeError() {
-  throw Error("Attempting to attach an unknown Portal type. BasePortalOutlet accepts either a ComponentPortal or a TemplatePortal.");
+  throw Error(
+    "Attempting to attach an unknown Portal type. BasePortalOutlet accepts either a ComponentPortal or a TemplatePortal.",
+  );
 }
 function throwNullPortalOutletError() {
   throw Error("Attempting to attach a portal to a null PortalOutlet");
@@ -80,7 +80,13 @@ var Portal = class {
   }
 };
 var ComponentPortal = class extends Portal {
-  constructor(component, viewContainerRef, injector, componentFactoryResolver, projectableNodes) {
+  constructor(
+    component,
+    viewContainerRef,
+    injector,
+    componentFactoryResolver,
+    projectableNodes,
+  ) {
     super();
     this.component = component;
     this.viewContainerRef = viewContainerRef;
@@ -117,7 +123,8 @@ var TemplatePortal = class extends Portal {
 var DomPortal = class extends Portal {
   constructor(element) {
     super();
-    this.element = element instanceof ElementRef ? element.nativeElement : element;
+    this.element =
+      element instanceof ElementRef ? element.nativeElement : element;
   }
 };
 var BasePortalOutlet = class {
@@ -195,7 +202,13 @@ var DomPortalOutlet = class extends BasePortalOutlet {
    * @param _document Reference to the document. Used when attaching a DOM portal. Will eventually
    *   become a required parameter.
    */
-  constructor(outletElement, _componentFactoryResolver, _appRef, _defaultInjector, _document) {
+  constructor(
+    outletElement,
+    _componentFactoryResolver,
+    _appRef,
+    _defaultInjector,
+    _document,
+  ) {
     super();
     this.outletElement = outletElement;
     this._componentFactoryResolver = _componentFactoryResolver;
@@ -203,10 +216,15 @@ var DomPortalOutlet = class extends BasePortalOutlet {
     this._defaultInjector = _defaultInjector;
     this.attachDomPortal = (portal) => {
       if (!this._document && (typeof ngDevMode === "undefined" || ngDevMode)) {
-        throw Error("Cannot attach DOM portal without _document constructor parameter");
+        throw Error(
+          "Cannot attach DOM portal without _document constructor parameter",
+        );
       }
       const element = portal.element;
-      if (!element.parentNode && (typeof ngDevMode === "undefined" || ngDevMode)) {
+      if (
+        !element.parentNode &&
+        (typeof ngDevMode === "undefined" || ngDevMode)
+      ) {
         throw Error("DOM portal content must be attached to a parent node.");
       }
       const anchorNode = this._document.createComment("dom-portal");
@@ -227,20 +245,32 @@ var DomPortalOutlet = class extends BasePortalOutlet {
    * @returns Reference to the created component.
    */
   attachComponentPortal(portal) {
-    const resolver = portal.componentFactoryResolver || this._componentFactoryResolver;
+    const resolver =
+      portal.componentFactoryResolver || this._componentFactoryResolver;
     if ((typeof ngDevMode === "undefined" || ngDevMode) && !resolver) {
-      throw Error("Cannot attach component portal to outlet without a ComponentFactoryResolver.");
+      throw Error(
+        "Cannot attach component portal to outlet without a ComponentFactoryResolver.",
+      );
     }
     const componentFactory = resolver.resolveComponentFactory(portal.component);
     let componentRef;
     if (portal.viewContainerRef) {
-      componentRef = portal.viewContainerRef.createComponent(componentFactory, portal.viewContainerRef.length, portal.injector || portal.viewContainerRef.injector, portal.projectableNodes || void 0);
+      componentRef = portal.viewContainerRef.createComponent(
+        componentFactory,
+        portal.viewContainerRef.length,
+        portal.injector || portal.viewContainerRef.injector,
+        portal.projectableNodes || void 0,
+      );
       this.setDisposeFn(() => componentRef.destroy());
     } else {
       if ((typeof ngDevMode === "undefined" || ngDevMode) && !this._appRef) {
-        throw Error("Cannot attach component portal to outlet without an ApplicationRef.");
+        throw Error(
+          "Cannot attach component portal to outlet without an ApplicationRef.",
+        );
       }
-      componentRef = componentFactory.create(portal.injector || this._defaultInjector || Injector.NULL);
+      componentRef = componentFactory.create(
+        portal.injector || this._defaultInjector || Injector.NULL,
+      );
       this._appRef.attachView(componentRef.hostView);
       this.setDisposeFn(() => {
         if (this._appRef.viewCount > 0) {
@@ -260,10 +290,16 @@ var DomPortalOutlet = class extends BasePortalOutlet {
    */
   attachTemplatePortal(portal) {
     let viewContainer = portal.viewContainerRef;
-    let viewRef = viewContainer.createEmbeddedView(portal.templateRef, portal.context, {
-      injector: portal.injector
-    });
-    viewRef.rootNodes.forEach((rootNode) => this.outletElement.appendChild(rootNode));
+    let viewRef = viewContainer.createEmbeddedView(
+      portal.templateRef,
+      portal.context,
+      {
+        injector: portal.injector,
+      },
+    );
+    viewRef.rootNodes.forEach((rootNode) =>
+      this.outletElement.appendChild(rootNode),
+    );
     viewRef.detectChanges();
     this.setDisposeFn(() => {
       let index = viewContainer.indexOf(viewRef);
@@ -292,62 +328,102 @@ var _CdkPortal = class _CdkPortal extends TemplatePortal {
   }
 };
 _CdkPortal.ɵfac = function CdkPortal_Factory(t) {
-  return new (t || _CdkPortal)(ɵɵdirectiveInject(TemplateRef), ɵɵdirectiveInject(ViewContainerRef));
+  return new (t || _CdkPortal)(
+    ɵɵdirectiveInject(TemplateRef),
+    ɵɵdirectiveInject(ViewContainerRef),
+  );
 };
 _CdkPortal.ɵdir = ɵɵdefineDirective({
   type: _CdkPortal,
   selectors: [["", "cdkPortal", ""]],
   exportAs: ["cdkPortal"],
   standalone: true,
-  features: [ɵɵInheritDefinitionFeature]
+  features: [ɵɵInheritDefinitionFeature],
 });
 var CdkPortal = _CdkPortal;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkPortal, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkPortal]",
-      exportAs: "cdkPortal",
-      standalone: true
-    }]
-  }], () => [{
-    type: TemplateRef
-  }, {
-    type: ViewContainerRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkPortal,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[cdkPortal]",
+              exportAs: "cdkPortal",
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: TemplateRef,
+        },
+        {
+          type: ViewContainerRef,
+        },
+      ],
+      null,
+    );
 })();
-var _TemplatePortalDirective = class _TemplatePortalDirective extends CdkPortal {
-};
+var _TemplatePortalDirective = class _TemplatePortalDirective extends CdkPortal {};
 _TemplatePortalDirective.ɵfac = /* @__PURE__ */ (() => {
   let ɵTemplatePortalDirective_BaseFactory;
   return function TemplatePortalDirective_Factory(t) {
-    return (ɵTemplatePortalDirective_BaseFactory || (ɵTemplatePortalDirective_BaseFactory = ɵɵgetInheritedFactory(_TemplatePortalDirective)))(t || _TemplatePortalDirective);
+    return (
+      ɵTemplatePortalDirective_BaseFactory ||
+      (ɵTemplatePortalDirective_BaseFactory = ɵɵgetInheritedFactory(
+        _TemplatePortalDirective,
+      ))
+    )(t || _TemplatePortalDirective);
   };
 })();
 _TemplatePortalDirective.ɵdir = ɵɵdefineDirective({
   type: _TemplatePortalDirective,
-  selectors: [["", "cdk-portal", ""], ["", "portal", ""]],
+  selectors: [
+    ["", "cdk-portal", ""],
+    ["", "portal", ""],
+  ],
   exportAs: ["cdkPortal"],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: CdkPortal,
-    useExisting: _TemplatePortalDirective
-  }]), ɵɵInheritDefinitionFeature]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkPortal,
+        useExisting: _TemplatePortalDirective,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
 });
 var TemplatePortalDirective = _TemplatePortalDirective;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(TemplatePortalDirective, [{
-    type: Directive,
-    args: [{
-      selector: "[cdk-portal], [portal]",
-      exportAs: "cdkPortal",
-      providers: [{
-        provide: CdkPortal,
-        useExisting: TemplatePortalDirective
-      }],
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      TemplatePortalDirective,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[cdk-portal], [portal]",
+              exportAs: "cdkPortal",
+              providers: [
+                {
+                  provide: CdkPortal,
+                  useExisting: TemplatePortalDirective,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var _CdkPortalOutlet = class _CdkPortalOutlet extends BasePortalOutlet {
   constructor(_componentFactoryResolver, _viewContainerRef, _document) {
@@ -358,10 +434,15 @@ var _CdkPortalOutlet = class _CdkPortalOutlet extends BasePortalOutlet {
     this.attached = new EventEmitter();
     this.attachDomPortal = (portal) => {
       if (!this._document && (typeof ngDevMode === "undefined" || ngDevMode)) {
-        throw Error("Cannot attach DOM portal without _document constructor parameter");
+        throw Error(
+          "Cannot attach DOM portal without _document constructor parameter",
+        );
       }
       const element = portal.element;
-      if (!element.parentNode && (typeof ngDevMode === "undefined" || ngDevMode)) {
+      if (
+        !element.parentNode &&
+        (typeof ngDevMode === "undefined" || ngDevMode)
+      ) {
         throw Error("DOM portal content must be attached to a parent node.");
       }
       const anchorNode = this._document.createComment("dom-portal");
@@ -412,10 +493,19 @@ var _CdkPortalOutlet = class _CdkPortalOutlet extends BasePortalOutlet {
    */
   attachComponentPortal(portal) {
     portal.setAttachedHost(this);
-    const viewContainerRef = portal.viewContainerRef != null ? portal.viewContainerRef : this._viewContainerRef;
-    const resolver = portal.componentFactoryResolver || this._componentFactoryResolver;
+    const viewContainerRef =
+      portal.viewContainerRef != null
+        ? portal.viewContainerRef
+        : this._viewContainerRef;
+    const resolver =
+      portal.componentFactoryResolver || this._componentFactoryResolver;
     const componentFactory = resolver.resolveComponentFactory(portal.component);
-    const ref = viewContainerRef.createComponent(componentFactory, viewContainerRef.length, portal.injector || viewContainerRef.injector, portal.projectableNodes || void 0);
+    const ref = viewContainerRef.createComponent(
+      componentFactory,
+      viewContainerRef.length,
+      portal.injector || viewContainerRef.injector,
+      portal.projectableNodes || void 0,
+    );
     if (viewContainerRef !== this._viewContainerRef) {
       this._getRootNode().appendChild(ref.hostView.rootNodes[0]);
     }
@@ -432,9 +522,13 @@ var _CdkPortalOutlet = class _CdkPortalOutlet extends BasePortalOutlet {
    */
   attachTemplatePortal(portal) {
     portal.setAttachedHost(this);
-    const viewRef = this._viewContainerRef.createEmbeddedView(portal.templateRef, portal.context, {
-      injector: portal.injector
-    });
+    const viewRef = this._viewContainerRef.createEmbeddedView(
+      portal.templateRef,
+      portal.context,
+      {
+        injector: portal.injector,
+      },
+    );
     super.setDisposeFn(() => this._viewContainerRef.clear());
     this._attachedPortal = portal;
     this._attachedRef = viewRef;
@@ -444,114 +538,194 @@ var _CdkPortalOutlet = class _CdkPortalOutlet extends BasePortalOutlet {
   /** Gets the root node of the portal outlet. */
   _getRootNode() {
     const nativeElement = this._viewContainerRef.element.nativeElement;
-    return nativeElement.nodeType === nativeElement.ELEMENT_NODE ? nativeElement : nativeElement.parentNode;
+    return nativeElement.nodeType === nativeElement.ELEMENT_NODE
+      ? nativeElement
+      : nativeElement.parentNode;
   }
 };
 _CdkPortalOutlet.ɵfac = function CdkPortalOutlet_Factory(t) {
-  return new (t || _CdkPortalOutlet)(ɵɵdirectiveInject(ComponentFactoryResolver$1), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(DOCUMENT));
+  return new (t || _CdkPortalOutlet)(
+    ɵɵdirectiveInject(ComponentFactoryResolver$1),
+    ɵɵdirectiveInject(ViewContainerRef),
+    ɵɵdirectiveInject(DOCUMENT),
+  );
 };
 _CdkPortalOutlet.ɵdir = ɵɵdefineDirective({
   type: _CdkPortalOutlet,
   selectors: [["", "cdkPortalOutlet", ""]],
   inputs: {
-    portal: [InputFlags.None, "cdkPortalOutlet", "portal"]
+    portal: [InputFlags.None, "cdkPortalOutlet", "portal"],
   },
   outputs: {
-    attached: "attached"
+    attached: "attached",
   },
   exportAs: ["cdkPortalOutlet"],
   standalone: true,
-  features: [ɵɵInheritDefinitionFeature]
+  features: [ɵɵInheritDefinitionFeature],
 });
 var CdkPortalOutlet = _CdkPortalOutlet;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkPortalOutlet, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkPortalOutlet]",
-      exportAs: "cdkPortalOutlet",
-      standalone: true
-    }]
-  }], () => [{
-    type: ComponentFactoryResolver$1
-  }, {
-    type: ViewContainerRef
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [DOCUMENT]
-    }]
-  }], {
-    portal: [{
-      type: Input,
-      args: ["cdkPortalOutlet"]
-    }],
-    attached: [{
-      type: Output
-    }]
-  });
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkPortalOutlet,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[cdkPortalOutlet]",
+              exportAs: "cdkPortalOutlet",
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ComponentFactoryResolver$1,
+        },
+        {
+          type: ViewContainerRef,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [DOCUMENT],
+            },
+          ],
+        },
+      ],
+      {
+        portal: [
+          {
+            type: Input,
+            args: ["cdkPortalOutlet"],
+          },
+        ],
+        attached: [
+          {
+            type: Output,
+          },
+        ],
+      },
+    );
 })();
-var _PortalHostDirective = class _PortalHostDirective extends CdkPortalOutlet {
-};
+var _PortalHostDirective = class _PortalHostDirective extends CdkPortalOutlet {};
 _PortalHostDirective.ɵfac = /* @__PURE__ */ (() => {
   let ɵPortalHostDirective_BaseFactory;
   return function PortalHostDirective_Factory(t) {
-    return (ɵPortalHostDirective_BaseFactory || (ɵPortalHostDirective_BaseFactory = ɵɵgetInheritedFactory(_PortalHostDirective)))(t || _PortalHostDirective);
+    return (
+      ɵPortalHostDirective_BaseFactory ||
+      (ɵPortalHostDirective_BaseFactory =
+        ɵɵgetInheritedFactory(_PortalHostDirective))
+    )(t || _PortalHostDirective);
   };
 })();
 _PortalHostDirective.ɵdir = ɵɵdefineDirective({
   type: _PortalHostDirective,
-  selectors: [["", "cdkPortalHost", ""], ["", "portalHost", ""]],
+  selectors: [
+    ["", "cdkPortalHost", ""],
+    ["", "portalHost", ""],
+  ],
   inputs: {
-    portal: [InputFlags.None, "cdkPortalHost", "portal"]
+    portal: [InputFlags.None, "cdkPortalHost", "portal"],
   },
   exportAs: ["cdkPortalHost"],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: CdkPortalOutlet,
-    useExisting: _PortalHostDirective
-  }]), ɵɵInheritDefinitionFeature]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkPortalOutlet,
+        useExisting: _PortalHostDirective,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
 });
 var PortalHostDirective = _PortalHostDirective;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PortalHostDirective, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkPortalHost], [portalHost]",
-      exportAs: "cdkPortalHost",
-      inputs: [{
-        name: "portal",
-        alias: "cdkPortalHost"
-      }],
-      providers: [{
-        provide: CdkPortalOutlet,
-        useExisting: PortalHostDirective
-      }],
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      PortalHostDirective,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[cdkPortalHost], [portalHost]",
+              exportAs: "cdkPortalHost",
+              inputs: [
+                {
+                  name: "portal",
+                  alias: "cdkPortalHost",
+                },
+              ],
+              providers: [
+                {
+                  provide: CdkPortalOutlet,
+                  useExisting: PortalHostDirective,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var _PortalModule = class _PortalModule {
-};
+var _PortalModule = class _PortalModule {};
 _PortalModule.ɵfac = function PortalModule_Factory(t) {
   return new (t || _PortalModule)();
 };
 _PortalModule.ɵmod = ɵɵdefineNgModule({
   type: _PortalModule,
-  imports: [CdkPortal, CdkPortalOutlet, TemplatePortalDirective, PortalHostDirective],
-  exports: [CdkPortal, CdkPortalOutlet, TemplatePortalDirective, PortalHostDirective]
+  imports: [
+    CdkPortal,
+    CdkPortalOutlet,
+    TemplatePortalDirective,
+    PortalHostDirective,
+  ],
+  exports: [
+    CdkPortal,
+    CdkPortalOutlet,
+    TemplatePortalDirective,
+    PortalHostDirective,
+  ],
 });
 _PortalModule.ɵinj = ɵɵdefineInjector({});
 var PortalModule = _PortalModule;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(PortalModule, [{
-    type: NgModule,
-    args: [{
-      imports: [CdkPortal, CdkPortalOutlet, TemplatePortalDirective, PortalHostDirective],
-      exports: [CdkPortal, CdkPortalOutlet, TemplatePortalDirective, PortalHostDirective]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      PortalModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [
+                CdkPortal,
+                CdkPortalOutlet,
+                TemplatePortalDirective,
+                PortalHostDirective,
+              ],
+              exports: [
+                CdkPortal,
+                CdkPortalOutlet,
+                TemplatePortalDirective,
+                PortalHostDirective,
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 
 export {
@@ -561,6 +735,6 @@ export {
   DomPortalOutlet,
   CdkPortal,
   CdkPortalOutlet,
-  PortalModule
+  PortalModule,
 };
 //# sourceMappingURL=chunk-J37YNQGY.js.map

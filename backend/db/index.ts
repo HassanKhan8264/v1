@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import config from "../config";
+import config from "../../config";
 mongoose.Promise = Promise;
 
 const db = mongoose.createConnection(config.MONGO.URI);

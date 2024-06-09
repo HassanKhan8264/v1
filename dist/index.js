@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const config_1 = __importDefault(require("./config"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const cors_1 = __importDefault(require("cors"));
-const routes_1 = __importDefault(require("./routes"));
+const routes_1 = __importDefault(require("./backend/routes"));
 const cookie_parser_1 = __importDefault(require("cookie-parser"));
 const app = (0, express_1.default)();
 app.use((0, cookie_parser_1.default)());

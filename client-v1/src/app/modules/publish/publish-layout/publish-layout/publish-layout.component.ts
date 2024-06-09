@@ -1,15 +1,12 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'cl-publish-layout',
-  templateUrl: './publish-layout.component.html',
-  styleUrl: './publish-layout.component.scss'
+  selector: "cl-publish-layout",
+  templateUrl: "./publish-layout.component.html",
+  styleUrl: "./publish-layout.component.scss",
 })
 export class PublishLayoutComponent {
-
-constructor(){
-
-}
+  constructor() {}
 
   public navList = [
     {

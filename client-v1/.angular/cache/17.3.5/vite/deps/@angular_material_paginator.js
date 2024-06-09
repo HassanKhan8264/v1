@@ -1,22 +1,9 @@
-import {
-  MatTooltip,
-  MatTooltipModule
-} from "./chunk-D6PNDSAE.js";
-import {
-  MatSelect,
-  MatSelectModule
-} from "./chunk-5ZYWJTCF.js";
-import {
-  MatButtonModule,
-  MatIconButton
-} from "./chunk-NGHZWOFL.js";
-import {
-  MatFormField
-} from "./chunk-XHBAGFMQ.js";
+import { MatTooltip, MatTooltipModule } from "./chunk-D6PNDSAE.js";
+import { MatSelect, MatSelectModule } from "./chunk-5ZYWJTCF.js";
+import { MatButtonModule, MatIconButton } from "./chunk-NGHZWOFL.js";
+import { MatFormField } from "./chunk-XHBAGFMQ.js";
 import "./chunk-D5VDYUOU.js";
-import {
-  MatOption
-} from "./chunk-Z5DUCAAR.js";
+import { MatOption } from "./chunk-Z5DUCAAR.js";
 import "./chunk-JR5M4PHK.js";
 import "./chunk-BWAWQOZ4.js";
 import "./chunk-BLCPA2F6.js";
@@ -71,12 +58,9 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate,
-  ɵɵtextInterpolate1
+  ɵɵtextInterpolate1,
 } from "./chunk-UC6QHQD3.js";
-import {
-  ReplaySubject,
-  Subject
-} from "./chunk-SXIXOCJ4.js";
+import { ReplaySubject, Subject } from "./chunk-SXIXOCJ4.js";
 
 // node_modules/@angular/material/fesm2022/paginator.mjs
 function MatPaginator_Conditional_2_Conditional_3_For_3_Template(rf, ctx) {
@@ -96,19 +80,41 @@ function MatPaginator_Conditional_2_Conditional_3_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-form-field", 13)(1, "mat-select", 15);
-    ɵɵlistener("selectionChange", function MatPaginator_Conditional_2_Conditional_3_Template_mat_select_selectionChange_1_listener($event) {
-      ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1._changePageSize($event.value));
-    });
-    ɵɵrepeaterCreate(2, MatPaginator_Conditional_2_Conditional_3_For_3_Template, 2, 2, "mat-option", 16, ɵɵrepeaterTrackByIdentity);
+    ɵɵlistener(
+      "selectionChange",
+      function MatPaginator_Conditional_2_Conditional_3_Template_mat_select_selectionChange_1_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r1);
+        const ctx_r1 = ɵɵnextContext(2);
+        return ɵɵresetView(ctx_r1._changePageSize($event.value));
+      },
+    );
+    ɵɵrepeaterCreate(
+      2,
+      MatPaginator_Conditional_2_Conditional_3_For_3_Template,
+      2,
+      2,
+      "mat-option",
+      16,
+      ɵɵrepeaterTrackByIdentity,
+    );
     ɵɵelementEnd()();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext(2);
-    ɵɵproperty("appearance", ctx_r1._formFieldAppearance)("color", ctx_r1.color);
+    ɵɵproperty("appearance", ctx_r1._formFieldAppearance)(
+      "color",
+      ctx_r1.color,
+    );
     ɵɵadvance();
-    ɵɵproperty("value", ctx_r1.pageSize)("disabled", ctx_r1.disabled)("aria-labelledby", ctx_r1._pageSizeLabelId)("panelClass", ctx_r1.selectConfig.panelClass || "")("disableOptionCentering", ctx_r1.selectConfig.disableOptionCentering);
+    ɵɵproperty("value", ctx_r1.pageSize)("disabled", ctx_r1.disabled)(
+      "aria-labelledby",
+      ctx_r1._pageSizeLabelId,
+    )("panelClass", ctx_r1.selectConfig.panelClass || "")(
+      "disableOptionCentering",
+      ctx_r1.selectConfig.disableOptionCentering,
+    );
     ɵɵadvance();
     ɵɵrepeater(ctx_r1._displayedPageSizeOptions);
   }
@@ -130,7 +136,14 @@ function MatPaginator_Conditional_2_Template(rf, ctx) {
     ɵɵelementStart(0, "div", 2)(1, "div", 12);
     ɵɵtext(2);
     ɵɵelementEnd();
-    ɵɵtemplate(3, MatPaginator_Conditional_2_Conditional_3_Template, 4, 7, "mat-form-field", 13)(4, MatPaginator_Conditional_2_Conditional_4_Template, 2, 1, "div", 14);
+    ɵɵtemplate(
+      3,
+      MatPaginator_Conditional_2_Conditional_3_Template,
+      4,
+      7,
+      "mat-form-field",
+      13,
+    )(4, MatPaginator_Conditional_2_Conditional_4_Template, 2, 1, "div", 14);
     ɵɵelementEnd();
   }
   if (rf & 2) {
@@ -149,11 +162,14 @@ function MatPaginator_Conditional_6_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "button", 17);
-    ɵɵlistener("click", function MatPaginator_Conditional_6_Template_button_click_0_listener() {
-      ɵɵrestoreView(_r4);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.firstPage());
-    });
+    ɵɵlistener(
+      "click",
+      function MatPaginator_Conditional_6_Template_button_click_0_listener() {
+        ɵɵrestoreView(_r4);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1.firstPage());
+      },
+    );
     ɵɵnamespaceSVG();
     ɵɵelementStart(1, "svg", 7);
     ɵɵelement(2, "path", 18);
@@ -161,7 +177,13 @@ function MatPaginator_Conditional_6_Template(rf, ctx) {
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
-    ɵɵproperty("matTooltip", ctx_r1._intl.firstPageLabel)("matTooltipDisabled", ctx_r1._previousButtonsDisabled())("matTooltipPosition", "above")("disabled", ctx_r1._previousButtonsDisabled());
+    ɵɵproperty("matTooltip", ctx_r1._intl.firstPageLabel)(
+      "matTooltipDisabled",
+      ctx_r1._previousButtonsDisabled(),
+    )("matTooltipPosition", "above")(
+      "disabled",
+      ctx_r1._previousButtonsDisabled(),
+    );
     ɵɵattribute("aria-label", ctx_r1._intl.firstPageLabel);
   }
 }
@@ -169,11 +191,14 @@ function MatPaginator_Conditional_13_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "button", 19);
-    ɵɵlistener("click", function MatPaginator_Conditional_13_Template_button_click_0_listener() {
-      ɵɵrestoreView(_r5);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.lastPage());
-    });
+    ɵɵlistener(
+      "click",
+      function MatPaginator_Conditional_13_Template_button_click_0_listener() {
+        ɵɵrestoreView(_r5);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1.lastPage());
+      },
+    );
     ɵɵnamespaceSVG();
     ɵɵelementStart(1, "svg", 7);
     ɵɵelement(2, "path", 20);
@@ -181,7 +206,10 @@ function MatPaginator_Conditional_13_Template(rf, ctx) {
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
-    ɵɵproperty("matTooltip", ctx_r1._intl.lastPageLabel)("matTooltipDisabled", ctx_r1._nextButtonsDisabled())("matTooltipPosition", "above")("disabled", ctx_r1._nextButtonsDisabled());
+    ɵɵproperty("matTooltip", ctx_r1._intl.lastPageLabel)(
+      "matTooltipDisabled",
+      ctx_r1._nextButtonsDisabled(),
+    )("matTooltipPosition", "above")("disabled", ctx_r1._nextButtonsDisabled());
     ɵɵattribute("aria-label", ctx_r1._intl.lastPageLabel);
   }
 }
@@ -199,7 +227,10 @@ var _MatPaginatorIntl = class _MatPaginatorIntl {
       }
       length = Math.max(length, 0);
       const startIndex = page * pageSize;
-      const endIndex = startIndex < length ? Math.min(startIndex + pageSize, length) : startIndex + pageSize;
+      const endIndex =
+        startIndex < length
+          ? Math.min(startIndex + pageSize, length)
+          : startIndex + pageSize;
       return `${startIndex + 1} – ${endIndex} of ${length}`;
     };
   }
@@ -210,16 +241,26 @@ _MatPaginatorIntl.ɵfac = function MatPaginatorIntl_Factory(t) {
 _MatPaginatorIntl.ɵprov = ɵɵdefineInjectable({
   token: _MatPaginatorIntl,
   factory: _MatPaginatorIntl.ɵfac,
-  providedIn: "root"
+  providedIn: "root",
 });
 var MatPaginatorIntl = _MatPaginatorIntl;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatPaginatorIntl, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatPaginatorIntl,
+      [
+        {
+          type: Injectable,
+          args: [
+            {
+              providedIn: "root",
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 function MAT_PAGINATOR_INTL_PROVIDER_FACTORY(parentIntl) {
   return parentIntl || new MatPaginatorIntl();
@@ -228,12 +269,13 @@ var MAT_PAGINATOR_INTL_PROVIDER = {
   // If there is already an MatPaginatorIntl available, use that. Otherwise, provide a new one.
   provide: MatPaginatorIntl,
   deps: [[new Optional(), new SkipSelf(), MatPaginatorIntl]],
-  useFactory: MAT_PAGINATOR_INTL_PROVIDER_FACTORY
+  useFactory: MAT_PAGINATOR_INTL_PROVIDER_FACTORY,
 };
 var DEFAULT_PAGE_SIZE = 50;
-var PageEvent = class {
-};
-var MAT_PAGINATOR_DEFAULT_OPTIONS = new InjectionToken("MAT_PAGINATOR_DEFAULT_OPTIONS");
+var PageEvent = class {};
+var MAT_PAGINATOR_DEFAULT_OPTIONS = new InjectionToken(
+  "MAT_PAGINATOR_DEFAULT_OPTIONS",
+);
 var nextUniqueId = 0;
 var _MatPaginator = class _MatPaginator {
   /** The zero-based page index of the displayed list of items. Defaulted to 0. */
@@ -283,14 +325,12 @@ var _MatPaginator = class _MatPaginator {
     this.disabled = false;
     this.page = new EventEmitter();
     this.initialized = this._initializedStream;
-    this._intlChanges = _intl.changes.subscribe(() => this._changeDetectorRef.markForCheck());
+    this._intlChanges = _intl.changes.subscribe(() =>
+      this._changeDetectorRef.markForCheck(),
+    );
     if (defaults) {
-      const {
-        pageSize,
-        pageSizeOptions,
-        hidePageSize,
-        showFirstLastButtons
-      } = defaults;
+      const { pageSize, pageSizeOptions, hidePageSize, showFirstLastButtons } =
+        defaults;
       if (pageSize != null) {
         this._pageSize = pageSize;
       }
@@ -399,7 +439,10 @@ var _MatPaginator = class _MatPaginator {
       return;
     }
     if (!this.pageSize) {
-      this._pageSize = this.pageSizeOptions.length != 0 ? this.pageSizeOptions[0] : DEFAULT_PAGE_SIZE;
+      this._pageSize =
+        this.pageSizeOptions.length != 0
+          ? this.pageSizeOptions[0]
+          : DEFAULT_PAGE_SIZE;
     }
     this._displayedPageSizeOptions = this.pageSizeOptions.slice();
     if (this._displayedPageSizeOptions.indexOf(this.pageSize) === -1) {
@@ -414,12 +457,16 @@ var _MatPaginator = class _MatPaginator {
       previousPageIndex,
       pageIndex: this.pageIndex,
       pageSize: this.pageSize,
-      length: this.length
+      length: this.length,
     });
   }
 };
 _MatPaginator.ɵfac = function MatPaginator_Factory(t) {
-  return new (t || _MatPaginator)(ɵɵdirectiveInject(MatPaginatorIntl), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(MAT_PAGINATOR_DEFAULT_OPTIONS, 8));
+  return new (t || _MatPaginator)(
+    ɵɵdirectiveInject(MatPaginatorIntl),
+    ɵɵdirectiveInject(ChangeDetectorRef),
+    ɵɵdirectiveInject(MAT_PAGINATOR_DEFAULT_OPTIONS, 8),
+  );
 };
 _MatPaginator.ɵcmp = ɵɵdefineComponent({
   type: _MatPaginator,
@@ -427,24 +474,171 @@ _MatPaginator.ɵcmp = ɵɵdefineComponent({
   hostAttrs: ["role", "group", 1, "mat-mdc-paginator"],
   inputs: {
     color: "color",
-    pageIndex: [InputFlags.HasDecoratorInputTransform, "pageIndex", "pageIndex", numberAttribute],
-    length: [InputFlags.HasDecoratorInputTransform, "length", "length", numberAttribute],
-    pageSize: [InputFlags.HasDecoratorInputTransform, "pageSize", "pageSize", numberAttribute],
+    pageIndex: [
+      InputFlags.HasDecoratorInputTransform,
+      "pageIndex",
+      "pageIndex",
+      numberAttribute,
+    ],
+    length: [
+      InputFlags.HasDecoratorInputTransform,
+      "length",
+      "length",
+      numberAttribute,
+    ],
+    pageSize: [
+      InputFlags.HasDecoratorInputTransform,
+      "pageSize",
+      "pageSize",
+      numberAttribute,
+    ],
     pageSizeOptions: "pageSizeOptions",
-    hidePageSize: [InputFlags.HasDecoratorInputTransform, "hidePageSize", "hidePageSize", booleanAttribute],
-    showFirstLastButtons: [InputFlags.HasDecoratorInputTransform, "showFirstLastButtons", "showFirstLastButtons", booleanAttribute],
+    hidePageSize: [
+      InputFlags.HasDecoratorInputTransform,
+      "hidePageSize",
+      "hidePageSize",
+      booleanAttribute,
+    ],
+    showFirstLastButtons: [
+      InputFlags.HasDecoratorInputTransform,
+      "showFirstLastButtons",
+      "showFirstLastButtons",
+      booleanAttribute,
+    ],
     selectConfig: "selectConfig",
-    disabled: [InputFlags.HasDecoratorInputTransform, "disabled", "disabled", booleanAttribute]
+    disabled: [
+      InputFlags.HasDecoratorInputTransform,
+      "disabled",
+      "disabled",
+      booleanAttribute,
+    ],
   },
   outputs: {
-    page: "page"
+    page: "page",
   },
   exportAs: ["matPaginator"],
   standalone: true,
   features: [ɵɵInputTransformsFeature, ɵɵStandaloneFeature],
   decls: 14,
   vars: 14,
-  consts: [[1, "mat-mdc-paginator-outer-container"], [1, "mat-mdc-paginator-container"], [1, "mat-mdc-paginator-page-size"], [1, "mat-mdc-paginator-range-actions"], ["aria-live", "polite", 1, "mat-mdc-paginator-range-label"], ["mat-icon-button", "", "type", "button", 1, "mat-mdc-paginator-navigation-first", 3, "matTooltip", "matTooltipDisabled", "matTooltipPosition", "disabled"], ["mat-icon-button", "", "type", "button", 1, "mat-mdc-paginator-navigation-previous", 3, "click", "matTooltip", "matTooltipDisabled", "matTooltipPosition", "disabled"], ["viewBox", "0 0 24 24", "focusable", "false", "aria-hidden", "true", 1, "mat-mdc-paginator-icon"], ["d", "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"], ["mat-icon-button", "", "type", "button", 1, "mat-mdc-paginator-navigation-next", 3, "click", "matTooltip", "matTooltipDisabled", "matTooltipPosition", "disabled"], ["d", "M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"], ["mat-icon-button", "", "type", "button", 1, "mat-mdc-paginator-navigation-last", 3, "matTooltip", "matTooltipDisabled", "matTooltipPosition", "disabled"], [1, "mat-mdc-paginator-page-size-label"], [1, "mat-mdc-paginator-page-size-select", 3, "appearance", "color"], [1, "mat-mdc-paginator-page-size-value"], ["hideSingleSelectionIndicator", "", 3, "selectionChange", "value", "disabled", "aria-labelledby", "panelClass", "disableOptionCentering"], [3, "value"], ["mat-icon-button", "", "type", "button", 1, "mat-mdc-paginator-navigation-first", 3, "click", "matTooltip", "matTooltipDisabled", "matTooltipPosition", "disabled"], ["d", "M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"], ["mat-icon-button", "", "type", "button", 1, "mat-mdc-paginator-navigation-last", 3, "click", "matTooltip", "matTooltipDisabled", "matTooltipPosition", "disabled"], ["d", "M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"]],
+  consts: [
+    [1, "mat-mdc-paginator-outer-container"],
+    [1, "mat-mdc-paginator-container"],
+    [1, "mat-mdc-paginator-page-size"],
+    [1, "mat-mdc-paginator-range-actions"],
+    ["aria-live", "polite", 1, "mat-mdc-paginator-range-label"],
+    [
+      "mat-icon-button",
+      "",
+      "type",
+      "button",
+      1,
+      "mat-mdc-paginator-navigation-first",
+      3,
+      "matTooltip",
+      "matTooltipDisabled",
+      "matTooltipPosition",
+      "disabled",
+    ],
+    [
+      "mat-icon-button",
+      "",
+      "type",
+      "button",
+      1,
+      "mat-mdc-paginator-navigation-previous",
+      3,
+      "click",
+      "matTooltip",
+      "matTooltipDisabled",
+      "matTooltipPosition",
+      "disabled",
+    ],
+    [
+      "viewBox",
+      "0 0 24 24",
+      "focusable",
+      "false",
+      "aria-hidden",
+      "true",
+      1,
+      "mat-mdc-paginator-icon",
+    ],
+    ["d", "M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"],
+    [
+      "mat-icon-button",
+      "",
+      "type",
+      "button",
+      1,
+      "mat-mdc-paginator-navigation-next",
+      3,
+      "click",
+      "matTooltip",
+      "matTooltipDisabled",
+      "matTooltipPosition",
+      "disabled",
+    ],
+    ["d", "M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"],
+    [
+      "mat-icon-button",
+      "",
+      "type",
+      "button",
+      1,
+      "mat-mdc-paginator-navigation-last",
+      3,
+      "matTooltip",
+      "matTooltipDisabled",
+      "matTooltipPosition",
+      "disabled",
+    ],
+    [1, "mat-mdc-paginator-page-size-label"],
+    [1, "mat-mdc-paginator-page-size-select", 3, "appearance", "color"],
+    [1, "mat-mdc-paginator-page-size-value"],
+    [
+      "hideSingleSelectionIndicator",
+      "",
+      3,
+      "selectionChange",
+      "value",
+      "disabled",
+      "aria-labelledby",
+      "panelClass",
+      "disableOptionCentering",
+    ],
+    [3, "value"],
+    [
+      "mat-icon-button",
+      "",
+      "type",
+      "button",
+      1,
+      "mat-mdc-paginator-navigation-first",
+      3,
+      "click",
+      "matTooltip",
+      "matTooltipDisabled",
+      "matTooltipPosition",
+      "disabled",
+    ],
+    ["d", "M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"],
+    [
+      "mat-icon-button",
+      "",
+      "type",
+      "button",
+      1,
+      "mat-mdc-paginator-navigation-last",
+      3,
+      "click",
+      "matTooltip",
+      "matTooltipDisabled",
+      "matTooltipPosition",
+      "disabled",
+    ],
+    ["d", "M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"],
+  ],
   template: function MatPaginator_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵelementStart(0, "div", 0)(1, "div", 1);
@@ -454,18 +648,24 @@ _MatPaginator.ɵcmp = ɵɵdefineComponent({
       ɵɵelementEnd();
       ɵɵtemplate(6, MatPaginator_Conditional_6_Template, 3, 5, "button", 5);
       ɵɵelementStart(7, "button", 6);
-      ɵɵlistener("click", function MatPaginator_Template_button_click_7_listener() {
-        return ctx.previousPage();
-      });
+      ɵɵlistener(
+        "click",
+        function MatPaginator_Template_button_click_7_listener() {
+          return ctx.previousPage();
+        },
+      );
       ɵɵnamespaceSVG();
       ɵɵelementStart(8, "svg", 7);
       ɵɵelement(9, "path", 8);
       ɵɵelementEnd()();
       ɵɵnamespaceHTML();
       ɵɵelementStart(10, "button", 9);
-      ɵɵlistener("click", function MatPaginator_Template_button_click_10_listener() {
-        return ctx.nextPage();
-      });
+      ɵɵlistener(
+        "click",
+        function MatPaginator_Template_button_click_10_listener() {
+          return ctx.nextPage();
+        },
+      );
       ɵɵnamespaceSVG();
       ɵɵelementStart(11, "svg", 7);
       ɵɵelement(12, "path", 10);
@@ -477,40 +677,66 @@ _MatPaginator.ɵcmp = ɵɵdefineComponent({
       ɵɵadvance(2);
       ɵɵconditional(2, !ctx.hidePageSize ? 2 : -1);
       ɵɵadvance(3);
-      ɵɵtextInterpolate1(" ", ctx._intl.getRangeLabel(ctx.pageIndex, ctx.pageSize, ctx.length), " ");
+      ɵɵtextInterpolate1(
+        " ",
+        ctx._intl.getRangeLabel(ctx.pageIndex, ctx.pageSize, ctx.length),
+        " ",
+      );
       ɵɵadvance();
       ɵɵconditional(6, ctx.showFirstLastButtons ? 6 : -1);
       ɵɵadvance();
-      ɵɵproperty("matTooltip", ctx._intl.previousPageLabel)("matTooltipDisabled", ctx._previousButtonsDisabled())("matTooltipPosition", "above")("disabled", ctx._previousButtonsDisabled());
+      ɵɵproperty("matTooltip", ctx._intl.previousPageLabel)(
+        "matTooltipDisabled",
+        ctx._previousButtonsDisabled(),
+      )("matTooltipPosition", "above")(
+        "disabled",
+        ctx._previousButtonsDisabled(),
+      );
       ɵɵattribute("aria-label", ctx._intl.previousPageLabel);
       ɵɵadvance(3);
-      ɵɵproperty("matTooltip", ctx._intl.nextPageLabel)("matTooltipDisabled", ctx._nextButtonsDisabled())("matTooltipPosition", "above")("disabled", ctx._nextButtonsDisabled());
+      ɵɵproperty("matTooltip", ctx._intl.nextPageLabel)(
+        "matTooltipDisabled",
+        ctx._nextButtonsDisabled(),
+      )("matTooltipPosition", "above")("disabled", ctx._nextButtonsDisabled());
       ɵɵattribute("aria-label", ctx._intl.nextPageLabel);
       ɵɵadvance(3);
       ɵɵconditional(13, ctx.showFirstLastButtons ? 13 : -1);
     }
   },
   dependencies: [MatFormField, MatSelect, MatOption, MatIconButton, MatTooltip],
-  styles: [".mat-mdc-paginator{display:block;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;color:var(--mat-paginator-container-text-color);background-color:var(--mat-paginator-container-background-color);font-family:var(--mat-paginator-container-text-font);line-height:var(--mat-paginator-container-text-line-height);font-size:var(--mat-paginator-container-text-size);font-weight:var(--mat-paginator-container-text-weight);letter-spacing:var(--mat-paginator-container-text-tracking);--mat-form-field-container-height:var(--mat-paginator-form-field-container-height);--mat-form-field-container-vertical-padding:var(--mat-paginator-form-field-container-vertical-padding)}.mat-mdc-paginator .mat-mdc-select-value{font-size:var(--mat-paginator-select-trigger-text-size)}.mat-mdc-paginator .mat-mdc-form-field-subscript-wrapper{display:none}.mat-mdc-paginator .mat-mdc-select{line-height:1.5}.mat-mdc-paginator-outer-container{display:flex}.mat-mdc-paginator-container{display:flex;align-items:center;justify-content:flex-end;padding:0 8px;flex-wrap:wrap;width:100%;min-height:var(--mat-paginator-container-size)}.mat-mdc-paginator-page-size{display:flex;align-items:baseline;margin-right:8px}[dir=rtl] .mat-mdc-paginator-page-size{margin-right:0;margin-left:8px}.mat-mdc-paginator-page-size-label{margin:0 4px}.mat-mdc-paginator-page-size-select{margin:0 4px;width:84px}.mat-mdc-paginator-range-label{margin:0 32px 0 24px}.mat-mdc-paginator-range-actions{display:flex;align-items:center}.mat-mdc-paginator-icon{display:inline-block;width:28px;fill:var(--mat-paginator-enabled-icon-color)}.mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon{fill:var(--mat-paginator-disabled-icon-color)}[dir=rtl] .mat-mdc-paginator-icon{transform:rotate(180deg)}.cdk-high-contrast-active .mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon,.cdk-high-contrast-active .mat-mdc-paginator-icon{fill:currentColor;fill:CanvasText}.cdk-high-contrast-active .mat-mdc-paginator-range-actions .mat-mdc-icon-button{outline:solid 1px}"],
+  styles: [
+    ".mat-mdc-paginator{display:block;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;color:var(--mat-paginator-container-text-color);background-color:var(--mat-paginator-container-background-color);font-family:var(--mat-paginator-container-text-font);line-height:var(--mat-paginator-container-text-line-height);font-size:var(--mat-paginator-container-text-size);font-weight:var(--mat-paginator-container-text-weight);letter-spacing:var(--mat-paginator-container-text-tracking);--mat-form-field-container-height:var(--mat-paginator-form-field-container-height);--mat-form-field-container-vertical-padding:var(--mat-paginator-form-field-container-vertical-padding)}.mat-mdc-paginator .mat-mdc-select-value{font-size:var(--mat-paginator-select-trigger-text-size)}.mat-mdc-paginator .mat-mdc-form-field-subscript-wrapper{display:none}.mat-mdc-paginator .mat-mdc-select{line-height:1.5}.mat-mdc-paginator-outer-container{display:flex}.mat-mdc-paginator-container{display:flex;align-items:center;justify-content:flex-end;padding:0 8px;flex-wrap:wrap;width:100%;min-height:var(--mat-paginator-container-size)}.mat-mdc-paginator-page-size{display:flex;align-items:baseline;margin-right:8px}[dir=rtl] .mat-mdc-paginator-page-size{margin-right:0;margin-left:8px}.mat-mdc-paginator-page-size-label{margin:0 4px}.mat-mdc-paginator-page-size-select{margin:0 4px;width:84px}.mat-mdc-paginator-range-label{margin:0 32px 0 24px}.mat-mdc-paginator-range-actions{display:flex;align-items:center}.mat-mdc-paginator-icon{display:inline-block;width:28px;fill:var(--mat-paginator-enabled-icon-color)}.mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon{fill:var(--mat-paginator-disabled-icon-color)}[dir=rtl] .mat-mdc-paginator-icon{transform:rotate(180deg)}.cdk-high-contrast-active .mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon,.cdk-high-contrast-active .mat-mdc-paginator-icon{fill:currentColor;fill:CanvasText}.cdk-high-contrast-active .mat-mdc-paginator-range-actions .mat-mdc-icon-button{outline:solid 1px}",
+  ],
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 var MatPaginator = _MatPaginator;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatPaginator, [{
-    type: Component,
-    args: [{
-      selector: "mat-paginator",
-      exportAs: "matPaginator",
-      host: {
-        "class": "mat-mdc-paginator",
-        "role": "group"
-      },
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None,
-      standalone: true,
-      imports: [MatFormField, MatSelect, MatOption, MatIconButton, MatTooltip],
-      template: `<div class="mat-mdc-paginator-outer-container">
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatPaginator,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "mat-paginator",
+              exportAs: "matPaginator",
+              host: {
+                class: "mat-mdc-paginator",
+                role: "group",
+              },
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              encapsulation: ViewEncapsulation$1.None,
+              standalone: true,
+              imports: [
+                MatFormField,
+                MatSelect,
+                MatOption,
+                MatIconButton,
+                MatTooltip,
+              ],
+              template: `<div class="mat-mdc-paginator-outer-container">
   <div class="mat-mdc-paginator-container">
     @if (!hidePageSize) {
       <div class="mat-mdc-paginator-page-size">
@@ -619,95 +845,155 @@ var MatPaginator = _MatPaginator;
   </div>
 </div>
 `,
-      styles: [".mat-mdc-paginator{display:block;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;color:var(--mat-paginator-container-text-color);background-color:var(--mat-paginator-container-background-color);font-family:var(--mat-paginator-container-text-font);line-height:var(--mat-paginator-container-text-line-height);font-size:var(--mat-paginator-container-text-size);font-weight:var(--mat-paginator-container-text-weight);letter-spacing:var(--mat-paginator-container-text-tracking);--mat-form-field-container-height:var(--mat-paginator-form-field-container-height);--mat-form-field-container-vertical-padding:var(--mat-paginator-form-field-container-vertical-padding)}.mat-mdc-paginator .mat-mdc-select-value{font-size:var(--mat-paginator-select-trigger-text-size)}.mat-mdc-paginator .mat-mdc-form-field-subscript-wrapper{display:none}.mat-mdc-paginator .mat-mdc-select{line-height:1.5}.mat-mdc-paginator-outer-container{display:flex}.mat-mdc-paginator-container{display:flex;align-items:center;justify-content:flex-end;padding:0 8px;flex-wrap:wrap;width:100%;min-height:var(--mat-paginator-container-size)}.mat-mdc-paginator-page-size{display:flex;align-items:baseline;margin-right:8px}[dir=rtl] .mat-mdc-paginator-page-size{margin-right:0;margin-left:8px}.mat-mdc-paginator-page-size-label{margin:0 4px}.mat-mdc-paginator-page-size-select{margin:0 4px;width:84px}.mat-mdc-paginator-range-label{margin:0 32px 0 24px}.mat-mdc-paginator-range-actions{display:flex;align-items:center}.mat-mdc-paginator-icon{display:inline-block;width:28px;fill:var(--mat-paginator-enabled-icon-color)}.mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon{fill:var(--mat-paginator-disabled-icon-color)}[dir=rtl] .mat-mdc-paginator-icon{transform:rotate(180deg)}.cdk-high-contrast-active .mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon,.cdk-high-contrast-active .mat-mdc-paginator-icon{fill:currentColor;fill:CanvasText}.cdk-high-contrast-active .mat-mdc-paginator-range-actions .mat-mdc-icon-button{outline:solid 1px}"]
-    }]
-  }], () => [{
-    type: MatPaginatorIntl
-  }, {
-    type: ChangeDetectorRef
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [MAT_PAGINATOR_DEFAULT_OPTIONS]
-    }]
-  }], {
-    color: [{
-      type: Input
-    }],
-    pageIndex: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    length: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    pageSize: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    pageSizeOptions: [{
-      type: Input
-    }],
-    hidePageSize: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    showFirstLastButtons: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    selectConfig: [{
-      type: Input
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    page: [{
-      type: Output
-    }]
-  });
+              styles: [
+                ".mat-mdc-paginator{display:block;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;color:var(--mat-paginator-container-text-color);background-color:var(--mat-paginator-container-background-color);font-family:var(--mat-paginator-container-text-font);line-height:var(--mat-paginator-container-text-line-height);font-size:var(--mat-paginator-container-text-size);font-weight:var(--mat-paginator-container-text-weight);letter-spacing:var(--mat-paginator-container-text-tracking);--mat-form-field-container-height:var(--mat-paginator-form-field-container-height);--mat-form-field-container-vertical-padding:var(--mat-paginator-form-field-container-vertical-padding)}.mat-mdc-paginator .mat-mdc-select-value{font-size:var(--mat-paginator-select-trigger-text-size)}.mat-mdc-paginator .mat-mdc-form-field-subscript-wrapper{display:none}.mat-mdc-paginator .mat-mdc-select{line-height:1.5}.mat-mdc-paginator-outer-container{display:flex}.mat-mdc-paginator-container{display:flex;align-items:center;justify-content:flex-end;padding:0 8px;flex-wrap:wrap;width:100%;min-height:var(--mat-paginator-container-size)}.mat-mdc-paginator-page-size{display:flex;align-items:baseline;margin-right:8px}[dir=rtl] .mat-mdc-paginator-page-size{margin-right:0;margin-left:8px}.mat-mdc-paginator-page-size-label{margin:0 4px}.mat-mdc-paginator-page-size-select{margin:0 4px;width:84px}.mat-mdc-paginator-range-label{margin:0 32px 0 24px}.mat-mdc-paginator-range-actions{display:flex;align-items:center}.mat-mdc-paginator-icon{display:inline-block;width:28px;fill:var(--mat-paginator-enabled-icon-color)}.mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon{fill:var(--mat-paginator-disabled-icon-color)}[dir=rtl] .mat-mdc-paginator-icon{transform:rotate(180deg)}.cdk-high-contrast-active .mat-mdc-icon-button[disabled] .mat-mdc-paginator-icon,.cdk-high-contrast-active .mat-mdc-paginator-icon{fill:currentColor;fill:CanvasText}.cdk-high-contrast-active .mat-mdc-paginator-range-actions .mat-mdc-icon-button{outline:solid 1px}",
+              ],
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: MatPaginatorIntl,
+        },
+        {
+          type: ChangeDetectorRef,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Optional,
+            },
+            {
+              type: Inject,
+              args: [MAT_PAGINATOR_DEFAULT_OPTIONS],
+            },
+          ],
+        },
+      ],
+      {
+        color: [
+          {
+            type: Input,
+          },
+        ],
+        pageIndex: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: numberAttribute,
+              },
+            ],
+          },
+        ],
+        length: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: numberAttribute,
+              },
+            ],
+          },
+        ],
+        pageSize: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: numberAttribute,
+              },
+            ],
+          },
+        ],
+        pageSizeOptions: [
+          {
+            type: Input,
+          },
+        ],
+        hidePageSize: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        showFirstLastButtons: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        selectConfig: [
+          {
+            type: Input,
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        page: [
+          {
+            type: Output,
+          },
+        ],
+      },
+    );
 })();
-var _MatPaginatorModule = class _MatPaginatorModule {
-};
+var _MatPaginatorModule = class _MatPaginatorModule {};
 _MatPaginatorModule.ɵfac = function MatPaginatorModule_Factory(t) {
   return new (t || _MatPaginatorModule)();
 };
 _MatPaginatorModule.ɵmod = ɵɵdefineNgModule({
   type: _MatPaginatorModule,
   imports: [MatButtonModule, MatSelectModule, MatTooltipModule, MatPaginator],
-  exports: [MatPaginator]
+  exports: [MatPaginator],
 });
 _MatPaginatorModule.ɵinj = ɵɵdefineInjector({
   providers: [MAT_PAGINATOR_INTL_PROVIDER],
-  imports: [MatButtonModule, MatSelectModule, MatTooltipModule, MatPaginator]
+  imports: [MatButtonModule, MatSelectModule, MatTooltipModule, MatPaginator],
 });
 var MatPaginatorModule = _MatPaginatorModule;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatPaginatorModule, [{
-    type: NgModule,
-    args: [{
-      imports: [MatButtonModule, MatSelectModule, MatTooltipModule, MatPaginator],
-      exports: [MatPaginator],
-      providers: [MAT_PAGINATOR_INTL_PROVIDER]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatPaginatorModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [
+                MatButtonModule,
+                MatSelectModule,
+                MatTooltipModule,
+                MatPaginator,
+              ],
+              exports: [MatPaginator],
+              providers: [MAT_PAGINATOR_INTL_PROVIDER],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 export {
   MAT_PAGINATOR_DEFAULT_OPTIONS,
@@ -716,6 +1002,6 @@ export {
   MatPaginator,
   MatPaginatorIntl,
   MatPaginatorModule,
-  PageEvent
+  PageEvent,
 };
 //# sourceMappingURL=@angular_material_paginator.js.map

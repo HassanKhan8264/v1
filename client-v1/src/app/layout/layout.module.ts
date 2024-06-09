@@ -1,5 +1,5 @@
-import { MaterialModule } from './../shared/modules/material.module';
-import { FeatureAnnouncmentComponent } from './components/feature-announcment/feature-announcment.component';
+import { MaterialModule } from "./../shared/modules/material.module";
+import { FeatureAnnouncmentComponent } from "./components/feature-announcment/feature-announcment.component";
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 // import { MainLayoutComponent } from "./main-layout/main-layout.component";
@@ -26,6 +26,6 @@ import { SidenavPrimaryComponent } from "./components/sidenav-primary/sidenav-pr
     FeatureAnnouncmentComponent,
   ],
   // imports: [CommonModule, SharedModule, NotificationsModule],
-  imports: [CommonModule, SharedModule,MaterialModule],
+  imports: [CommonModule, SharedModule, MaterialModule],
 })
-export class LayoutModule { }
+export class LayoutModule {}

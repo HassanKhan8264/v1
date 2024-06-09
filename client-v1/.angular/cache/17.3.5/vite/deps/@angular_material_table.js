@@ -1,28 +1,17 @@
-import {
-  MatCommonModule
-} from "./chunk-Z5DUCAAR.js";
+import { MatCommonModule } from "./chunk-Z5DUCAAR.js";
 import "./chunk-JR5M4PHK.js";
 import "./chunk-237XUEJ5.js";
-import {
-  ScrollingModule,
-  ViewportRuler
-} from "./chunk-VCMUHK75.js";
+import { ScrollingModule, ViewportRuler } from "./chunk-VCMUHK75.js";
 import {
   DataSource,
   _DisposeViewRepeaterStrategy,
   _RecycleViewRepeaterStrategy,
   _VIEW_REPEATER_STRATEGY,
   _ViewRepeaterOperation,
-  isDataSource
+  isDataSource,
 } from "./chunk-5O5QX3PG.js";
-import {
-  Directionality,
-  Platform,
-  _isNumberValue
-} from "./chunk-7OBXTRYY.js";
-import {
-  DOCUMENT
-} from "./chunk-DNIPCOIB.js";
+import { Directionality, Platform, _isNumberValue } from "./chunk-7OBXTRYY.js";
+import { DOCUMENT } from "./chunk-DNIPCOIB.js";
 import {
   Attribute,
   ChangeDetectionStrategy,
@@ -83,7 +72,7 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate1,
-  ɵɵviewQuery
+  ɵɵviewQuery,
 } from "./chunk-UC6QHQD3.js";
 import {
   BehaviorSubject,
@@ -95,7 +84,7 @@ import {
   merge,
   of,
   take,
-  takeUntil
+  takeUntil,
 } from "./chunk-SXIXOCJ4.js";
 
 // node_modules/@angular/cdk/fesm2022/table.mjs
@@ -164,19 +153,31 @@ _CdkCellDef.ɵfac = function CdkCellDef_Factory(t) {
 _CdkCellDef.ɵdir = ɵɵdefineDirective({
   type: _CdkCellDef,
   selectors: [["", "cdkCellDef", ""]],
-  standalone: true
+  standalone: true,
 });
 var CdkCellDef = _CdkCellDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkCellDef, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkCellDef]",
-      standalone: true
-    }]
-  }], () => [{
-    type: TemplateRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkCellDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[cdkCellDef]",
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: TemplateRef,
+        },
+      ],
+      null,
+    );
 })();
 var _CdkHeaderCellDef = class _CdkHeaderCellDef {
   constructor(template) {
@@ -189,19 +190,31 @@ _CdkHeaderCellDef.ɵfac = function CdkHeaderCellDef_Factory(t) {
 _CdkHeaderCellDef.ɵdir = ɵɵdefineDirective({
   type: _CdkHeaderCellDef,
   selectors: [["", "cdkHeaderCellDef", ""]],
-  standalone: true
+  standalone: true,
 });
 var CdkHeaderCellDef = _CdkHeaderCellDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkHeaderCellDef, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkHeaderCellDef]",
-      standalone: true
-    }]
-  }], () => [{
-    type: TemplateRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkHeaderCellDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[cdkHeaderCellDef]",
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: TemplateRef,
+        },
+      ],
+      null,
+    );
 })();
 var _CdkFooterCellDef = class _CdkFooterCellDef {
   constructor(template) {
@@ -214,19 +227,31 @@ _CdkFooterCellDef.ɵfac = function CdkFooterCellDef_Factory(t) {
 _CdkFooterCellDef.ɵdir = ɵɵdefineDirective({
   type: _CdkFooterCellDef,
   selectors: [["", "cdkFooterCellDef", ""]],
-  standalone: true
+  standalone: true,
 });
 var CdkFooterCellDef = _CdkFooterCellDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkFooterCellDef, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkFooterCellDef]",
-      standalone: true
-    }]
-  }], () => [{
-    type: TemplateRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkFooterCellDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[cdkFooterCellDef]",
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: TemplateRef,
+        },
+      ],
+      null,
+    );
 })();
 var _CdkColumnDef = class _CdkColumnDef {
   /** Unique name for this column. */
@@ -314,72 +339,120 @@ _CdkColumnDef.ɵdir = ɵɵdefineDirective({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.cell = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headerCell = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.footerCell = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.cell = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.headerCell = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.footerCell = _t.first);
     }
   },
   inputs: {
     name: [InputFlags.None, "cdkColumnDef", "name"],
-    sticky: [InputFlags.HasDecoratorInputTransform, "sticky", "sticky", booleanAttribute],
-    stickyEnd: [InputFlags.HasDecoratorInputTransform, "stickyEnd", "stickyEnd", booleanAttribute]
+    sticky: [
+      InputFlags.HasDecoratorInputTransform,
+      "sticky",
+      "sticky",
+      booleanAttribute,
+    ],
+    stickyEnd: [
+      InputFlags.HasDecoratorInputTransform,
+      "stickyEnd",
+      "stickyEnd",
+      booleanAttribute,
+    ],
   },
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: "MAT_SORT_HEADER_COLUMN_DEF",
-    useExisting: _CdkColumnDef
-  }]), ɵɵInputTransformsFeature]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: "MAT_SORT_HEADER_COLUMN_DEF",
+        useExisting: _CdkColumnDef,
+      },
+    ]),
+    ɵɵInputTransformsFeature,
+  ],
 });
 var CdkColumnDef = _CdkColumnDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkColumnDef, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkColumnDef]",
-      providers: [{
-        provide: "MAT_SORT_HEADER_COLUMN_DEF",
-        useExisting: CdkColumnDef
-      }],
-      standalone: true
-    }]
-  }], () => [{
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [CDK_TABLE]
-    }, {
-      type: Optional
-    }]
-  }], {
-    name: [{
-      type: Input,
-      args: ["cdkColumnDef"]
-    }],
-    sticky: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    stickyEnd: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    cell: [{
-      type: ContentChild,
-      args: [CdkCellDef]
-    }],
-    headerCell: [{
-      type: ContentChild,
-      args: [CdkHeaderCellDef]
-    }],
-    footerCell: [{
-      type: ContentChild,
-      args: [CdkFooterCellDef]
-    }]
-  });
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkColumnDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[cdkColumnDef]",
+              providers: [
+                {
+                  provide: "MAT_SORT_HEADER_COLUMN_DEF",
+                  useExisting: CdkColumnDef,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [CDK_TABLE],
+            },
+            {
+              type: Optional,
+            },
+          ],
+        },
+      ],
+      {
+        name: [
+          {
+            type: Input,
+            args: ["cdkColumnDef"],
+          },
+        ],
+        sticky: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        stickyEnd: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        cell: [
+          {
+            type: ContentChild,
+            args: [CdkCellDef],
+          },
+        ],
+        headerCell: [
+          {
+            type: ContentChild,
+            args: [CdkHeaderCellDef],
+          },
+        ],
+        footerCell: [
+          {
+            type: ContentChild,
+            args: [CdkFooterCellDef],
+          },
+        ],
+      },
+    );
 })();
 var BaseCdkCell = class {
   constructor(columnDef, elementRef) {
@@ -392,32 +465,48 @@ var _CdkHeaderCell = class _CdkHeaderCell extends BaseCdkCell {
   }
 };
 _CdkHeaderCell.ɵfac = function CdkHeaderCell_Factory(t) {
-  return new (t || _CdkHeaderCell)(ɵɵdirectiveInject(CdkColumnDef), ɵɵdirectiveInject(ElementRef));
+  return new (t || _CdkHeaderCell)(
+    ɵɵdirectiveInject(CdkColumnDef),
+    ɵɵdirectiveInject(ElementRef),
+  );
 };
 _CdkHeaderCell.ɵdir = ɵɵdefineDirective({
   type: _CdkHeaderCell,
   selectors: [["cdk-header-cell"], ["th", "cdk-header-cell", ""]],
   hostAttrs: ["role", "columnheader", 1, "cdk-header-cell"],
   standalone: true,
-  features: [ɵɵInheritDefinitionFeature]
+  features: [ɵɵInheritDefinitionFeature],
 });
 var CdkHeaderCell = _CdkHeaderCell;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkHeaderCell, [{
-    type: Directive,
-    args: [{
-      selector: "cdk-header-cell, th[cdk-header-cell]",
-      host: {
-        "class": "cdk-header-cell",
-        "role": "columnheader"
-      },
-      standalone: true
-    }]
-  }], () => [{
-    type: CdkColumnDef
-  }, {
-    type: ElementRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkHeaderCell,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "cdk-header-cell, th[cdk-header-cell]",
+              host: {
+                class: "cdk-header-cell",
+                role: "columnheader",
+              },
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: CdkColumnDef,
+        },
+        {
+          type: ElementRef,
+        },
+      ],
+      null,
+    );
 })();
 var _CdkFooterCell = class _CdkFooterCell extends BaseCdkCell {
   constructor(columnDef, elementRef) {
@@ -429,31 +518,47 @@ var _CdkFooterCell = class _CdkFooterCell extends BaseCdkCell {
   }
 };
 _CdkFooterCell.ɵfac = function CdkFooterCell_Factory(t) {
-  return new (t || _CdkFooterCell)(ɵɵdirectiveInject(CdkColumnDef), ɵɵdirectiveInject(ElementRef));
+  return new (t || _CdkFooterCell)(
+    ɵɵdirectiveInject(CdkColumnDef),
+    ɵɵdirectiveInject(ElementRef),
+  );
 };
 _CdkFooterCell.ɵdir = ɵɵdefineDirective({
   type: _CdkFooterCell,
   selectors: [["cdk-footer-cell"], ["td", "cdk-footer-cell", ""]],
   hostAttrs: [1, "cdk-footer-cell"],
   standalone: true,
-  features: [ɵɵInheritDefinitionFeature]
+  features: [ɵɵInheritDefinitionFeature],
 });
 var CdkFooterCell = _CdkFooterCell;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkFooterCell, [{
-    type: Directive,
-    args: [{
-      selector: "cdk-footer-cell, td[cdk-footer-cell]",
-      host: {
-        "class": "cdk-footer-cell"
-      },
-      standalone: true
-    }]
-  }], () => [{
-    type: CdkColumnDef
-  }, {
-    type: ElementRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkFooterCell,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "cdk-footer-cell, td[cdk-footer-cell]",
+              host: {
+                class: "cdk-footer-cell",
+              },
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: CdkColumnDef,
+        },
+        {
+          type: ElementRef,
+        },
+      ],
+      null,
+    );
 })();
 var _CdkCell = class _CdkCell extends BaseCdkCell {
   constructor(columnDef, elementRef) {
@@ -465,31 +570,47 @@ var _CdkCell = class _CdkCell extends BaseCdkCell {
   }
 };
 _CdkCell.ɵfac = function CdkCell_Factory(t) {
-  return new (t || _CdkCell)(ɵɵdirectiveInject(CdkColumnDef), ɵɵdirectiveInject(ElementRef));
+  return new (t || _CdkCell)(
+    ɵɵdirectiveInject(CdkColumnDef),
+    ɵɵdirectiveInject(ElementRef),
+  );
 };
 _CdkCell.ɵdir = ɵɵdefineDirective({
   type: _CdkCell,
   selectors: [["cdk-cell"], ["td", "cdk-cell", ""]],
   hostAttrs: [1, "cdk-cell"],
   standalone: true,
-  features: [ɵɵInheritDefinitionFeature]
+  features: [ɵɵInheritDefinitionFeature],
 });
 var CdkCell = _CdkCell;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkCell, [{
-    type: Directive,
-    args: [{
-      selector: "cdk-cell, td[cdk-cell]",
-      host: {
-        "class": "cdk-cell"
-      },
-      standalone: true
-    }]
-  }], () => [{
-    type: CdkColumnDef
-  }, {
-    type: ElementRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkCell,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "cdk-cell, td[cdk-cell]",
+              host: {
+                class: "cdk-cell",
+              },
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: CdkColumnDef,
+        },
+        {
+          type: ElementRef,
+        },
+      ],
+      null,
+    );
 })();
 var _Schedule = class {
   constructor() {
@@ -497,7 +618,9 @@ var _Schedule = class {
     this.endTasks = [];
   }
 };
-var _COALESCED_STYLE_SCHEDULER = new InjectionToken("_COALESCED_STYLE_SCHEDULER");
+var _COALESCED_STYLE_SCHEDULER = new InjectionToken(
+  "_COALESCED_STYLE_SCHEDULER",
+);
 var __CoalescedStyleScheduler = class __CoalescedStyleScheduler {
   constructor(_ngZone) {
     this._ngZone = _ngZone;
@@ -529,22 +652,29 @@ var __CoalescedStyleScheduler = class __CoalescedStyleScheduler {
       return;
     }
     this._currentSchedule = new _Schedule();
-    this._getScheduleObservable().pipe(takeUntil(this._destroyed)).subscribe(() => {
-      while (this._currentSchedule.tasks.length || this._currentSchedule.endTasks.length) {
-        const schedule = this._currentSchedule;
-        this._currentSchedule = new _Schedule();
-        for (const task of schedule.tasks) {
-          task();
+    this._getScheduleObservable()
+      .pipe(takeUntil(this._destroyed))
+      .subscribe(() => {
+        while (
+          this._currentSchedule.tasks.length ||
+          this._currentSchedule.endTasks.length
+        ) {
+          const schedule = this._currentSchedule;
+          this._currentSchedule = new _Schedule();
+          for (const task of schedule.tasks) {
+            task();
+          }
+          for (const task of schedule.endTasks) {
+            task();
+          }
         }
-        for (const task of schedule.endTasks) {
-          task();
-        }
-      }
-      this._currentSchedule = null;
-    });
+        this._currentSchedule = null;
+      });
   }
   _getScheduleObservable() {
-    return this._ngZone.isStable ? from(Promise.resolve(void 0)) : this._ngZone.onStable.pipe(take(1));
+    return this._ngZone.isStable
+      ? from(Promise.resolve(void 0))
+      : this._ngZone.onStable.pipe(take(1));
   }
 };
 __CoalescedStyleScheduler.ɵfac = function _CoalescedStyleScheduler_Factory(t) {
@@ -552,15 +682,25 @@ __CoalescedStyleScheduler.ɵfac = function _CoalescedStyleScheduler_Factory(t) {
 };
 __CoalescedStyleScheduler.ɵprov = ɵɵdefineInjectable({
   token: __CoalescedStyleScheduler,
-  factory: __CoalescedStyleScheduler.ɵfac
+  factory: __CoalescedStyleScheduler.ɵfac,
 });
 var _CoalescedStyleScheduler = __CoalescedStyleScheduler;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(_CoalescedStyleScheduler, [{
-    type: Injectable
-  }], () => [{
-    type: NgZone
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      _CoalescedStyleScheduler,
+      [
+        {
+          type: Injectable,
+        },
+      ],
+      () => [
+        {
+          type: NgZone,
+        },
+      ],
+      null,
+    );
 })();
 var CDK_ROW_TEMPLATE = `<ng-container cdkCellOutlet></ng-container>`;
 var _BaseRowDef = class _BaseRowDef {
@@ -570,7 +710,8 @@ var _BaseRowDef = class _BaseRowDef {
   }
   ngOnChanges(changes) {
     if (!this._columnsDiffer) {
-      const columns = changes["columns"] && changes["columns"].currentValue || [];
+      const columns =
+        (changes["columns"] && changes["columns"].currentValue) || [];
       this._columnsDiffer = this._differs.find(columns).create();
       this._columnsDiffer.diff(columns);
     }
@@ -595,21 +736,35 @@ var _BaseRowDef = class _BaseRowDef {
   }
 };
 _BaseRowDef.ɵfac = function BaseRowDef_Factory(t) {
-  return new (t || _BaseRowDef)(ɵɵdirectiveInject(TemplateRef), ɵɵdirectiveInject(IterableDiffers));
+  return new (t || _BaseRowDef)(
+    ɵɵdirectiveInject(TemplateRef),
+    ɵɵdirectiveInject(IterableDiffers),
+  );
 };
 _BaseRowDef.ɵdir = ɵɵdefineDirective({
   type: _BaseRowDef,
-  features: [ɵɵNgOnChangesFeature]
+  features: [ɵɵNgOnChangesFeature],
 });
 var BaseRowDef = _BaseRowDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(BaseRowDef, [{
-    type: Directive
-  }], () => [{
-    type: TemplateRef
-  }, {
-    type: IterableDiffers
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      BaseRowDef,
+      [
+        {
+          type: Directive,
+        },
+      ],
+      () => [
+        {
+          type: TemplateRef,
+        },
+        {
+          type: IterableDiffers,
+        },
+      ],
+      null,
+    );
 })();
 var _CdkHeaderRowDef = class _CdkHeaderRowDef extends BaseRowDef {
   /** Whether the row is sticky. */
@@ -645,51 +800,87 @@ var _CdkHeaderRowDef = class _CdkHeaderRowDef extends BaseRowDef {
   }
 };
 _CdkHeaderRowDef.ɵfac = function CdkHeaderRowDef_Factory(t) {
-  return new (t || _CdkHeaderRowDef)(ɵɵdirectiveInject(TemplateRef), ɵɵdirectiveInject(IterableDiffers), ɵɵdirectiveInject(CDK_TABLE, 8));
+  return new (t || _CdkHeaderRowDef)(
+    ɵɵdirectiveInject(TemplateRef),
+    ɵɵdirectiveInject(IterableDiffers),
+    ɵɵdirectiveInject(CDK_TABLE, 8),
+  );
 };
 _CdkHeaderRowDef.ɵdir = ɵɵdefineDirective({
   type: _CdkHeaderRowDef,
   selectors: [["", "cdkHeaderRowDef", ""]],
   inputs: {
     columns: [InputFlags.None, "cdkHeaderRowDef", "columns"],
-    sticky: [InputFlags.HasDecoratorInputTransform, "cdkHeaderRowDefSticky", "sticky", booleanAttribute]
+    sticky: [
+      InputFlags.HasDecoratorInputTransform,
+      "cdkHeaderRowDefSticky",
+      "sticky",
+      booleanAttribute,
+    ],
   },
   standalone: true,
-  features: [ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature]
+  features: [
+    ɵɵInputTransformsFeature,
+    ɵɵInheritDefinitionFeature,
+    ɵɵNgOnChangesFeature,
+  ],
 });
 var CdkHeaderRowDef = _CdkHeaderRowDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkHeaderRowDef, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkHeaderRowDef]",
-      inputs: [{
-        name: "columns",
-        alias: "cdkHeaderRowDef"
-      }],
-      standalone: true
-    }]
-  }], () => [{
-    type: TemplateRef
-  }, {
-    type: IterableDiffers
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [CDK_TABLE]
-    }, {
-      type: Optional
-    }]
-  }], {
-    sticky: [{
-      type: Input,
-      args: [{
-        alias: "cdkHeaderRowDefSticky",
-        transform: booleanAttribute
-      }]
-    }]
-  });
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkHeaderRowDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[cdkHeaderRowDef]",
+              inputs: [
+                {
+                  name: "columns",
+                  alias: "cdkHeaderRowDef",
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: TemplateRef,
+        },
+        {
+          type: IterableDiffers,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [CDK_TABLE],
+            },
+            {
+              type: Optional,
+            },
+          ],
+        },
+      ],
+      {
+        sticky: [
+          {
+            type: Input,
+            args: [
+              {
+                alias: "cdkHeaderRowDefSticky",
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+      },
+    );
 })();
 var _CdkFooterRowDef = class _CdkFooterRowDef extends BaseRowDef {
   /** Whether the row is sticky. */
@@ -725,51 +916,87 @@ var _CdkFooterRowDef = class _CdkFooterRowDef extends BaseRowDef {
   }
 };
 _CdkFooterRowDef.ɵfac = function CdkFooterRowDef_Factory(t) {
-  return new (t || _CdkFooterRowDef)(ɵɵdirectiveInject(TemplateRef), ɵɵdirectiveInject(IterableDiffers), ɵɵdirectiveInject(CDK_TABLE, 8));
+  return new (t || _CdkFooterRowDef)(
+    ɵɵdirectiveInject(TemplateRef),
+    ɵɵdirectiveInject(IterableDiffers),
+    ɵɵdirectiveInject(CDK_TABLE, 8),
+  );
 };
 _CdkFooterRowDef.ɵdir = ɵɵdefineDirective({
   type: _CdkFooterRowDef,
   selectors: [["", "cdkFooterRowDef", ""]],
   inputs: {
     columns: [InputFlags.None, "cdkFooterRowDef", "columns"],
-    sticky: [InputFlags.HasDecoratorInputTransform, "cdkFooterRowDefSticky", "sticky", booleanAttribute]
+    sticky: [
+      InputFlags.HasDecoratorInputTransform,
+      "cdkFooterRowDefSticky",
+      "sticky",
+      booleanAttribute,
+    ],
   },
   standalone: true,
-  features: [ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature]
+  features: [
+    ɵɵInputTransformsFeature,
+    ɵɵInheritDefinitionFeature,
+    ɵɵNgOnChangesFeature,
+  ],
 });
 var CdkFooterRowDef = _CdkFooterRowDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkFooterRowDef, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkFooterRowDef]",
-      inputs: [{
-        name: "columns",
-        alias: "cdkFooterRowDef"
-      }],
-      standalone: true
-    }]
-  }], () => [{
-    type: TemplateRef
-  }, {
-    type: IterableDiffers
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [CDK_TABLE]
-    }, {
-      type: Optional
-    }]
-  }], {
-    sticky: [{
-      type: Input,
-      args: [{
-        alias: "cdkFooterRowDefSticky",
-        transform: booleanAttribute
-      }]
-    }]
-  });
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkFooterRowDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[cdkFooterRowDef]",
+              inputs: [
+                {
+                  name: "columns",
+                  alias: "cdkFooterRowDef",
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: TemplateRef,
+        },
+        {
+          type: IterableDiffers,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [CDK_TABLE],
+            },
+            {
+              type: Optional,
+            },
+          ],
+        },
+      ],
+      {
+        sticky: [
+          {
+            type: Input,
+            args: [
+              {
+                alias: "cdkFooterRowDefSticky",
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+      },
+    );
 })();
 var _CdkRowDef = class _CdkRowDef extends BaseRowDef {
   // TODO(andrewseguin): Add an input for providing a switch function to determine
@@ -780,46 +1007,70 @@ var _CdkRowDef = class _CdkRowDef extends BaseRowDef {
   }
 };
 _CdkRowDef.ɵfac = function CdkRowDef_Factory(t) {
-  return new (t || _CdkRowDef)(ɵɵdirectiveInject(TemplateRef), ɵɵdirectiveInject(IterableDiffers), ɵɵdirectiveInject(CDK_TABLE, 8));
+  return new (t || _CdkRowDef)(
+    ɵɵdirectiveInject(TemplateRef),
+    ɵɵdirectiveInject(IterableDiffers),
+    ɵɵdirectiveInject(CDK_TABLE, 8),
+  );
 };
 _CdkRowDef.ɵdir = ɵɵdefineDirective({
   type: _CdkRowDef,
   selectors: [["", "cdkRowDef", ""]],
   inputs: {
     columns: [InputFlags.None, "cdkRowDefColumns", "columns"],
-    when: [InputFlags.None, "cdkRowDefWhen", "when"]
+    when: [InputFlags.None, "cdkRowDefWhen", "when"],
   },
   standalone: true,
-  features: [ɵɵInheritDefinitionFeature]
+  features: [ɵɵInheritDefinitionFeature],
 });
 var CdkRowDef = _CdkRowDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkRowDef, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkRowDef]",
-      inputs: [{
-        name: "columns",
-        alias: "cdkRowDefColumns"
-      }, {
-        name: "when",
-        alias: "cdkRowDefWhen"
-      }],
-      standalone: true
-    }]
-  }], () => [{
-    type: TemplateRef
-  }, {
-    type: IterableDiffers
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [CDK_TABLE]
-    }, {
-      type: Optional
-    }]
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkRowDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[cdkRowDef]",
+              inputs: [
+                {
+                  name: "columns",
+                  alias: "cdkRowDefColumns",
+                },
+                {
+                  name: "when",
+                  alias: "cdkRowDefWhen",
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: TemplateRef,
+        },
+        {
+          type: IterableDiffers,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [CDK_TABLE],
+            },
+            {
+              type: Optional,
+            },
+          ],
+        },
+      ],
+      null,
+    );
 })();
 var _CdkCellOutlet = class _CdkCellOutlet {
   constructor(_viewContainer) {
@@ -839,22 +1090,33 @@ _CdkCellOutlet.ɵfac = function CdkCellOutlet_Factory(t) {
 _CdkCellOutlet.ɵdir = ɵɵdefineDirective({
   type: _CdkCellOutlet,
   selectors: [["", "cdkCellOutlet", ""]],
-  standalone: true
+  standalone: true,
 });
 var CdkCellOutlet = _CdkCellOutlet;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkCellOutlet, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkCellOutlet]",
-      standalone: true
-    }]
-  }], () => [{
-    type: ViewContainerRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkCellOutlet,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[cdkCellOutlet]",
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ViewContainerRef,
+        },
+      ],
+      null,
+    );
 })();
-var _CdkHeaderRow = class _CdkHeaderRow {
-};
+var _CdkHeaderRow = class _CdkHeaderRow {};
 _CdkHeaderRow.ɵfac = function CdkHeaderRow_Factory(t) {
   return new (t || _CdkHeaderRow)();
 };
@@ -873,30 +1135,39 @@ _CdkHeaderRow.ɵcmp = ɵɵdefineComponent({
     }
   },
   dependencies: [CdkCellOutlet],
-  encapsulation: 2
+  encapsulation: 2,
 });
 var CdkHeaderRow = _CdkHeaderRow;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkHeaderRow, [{
-    type: Component,
-    args: [{
-      selector: "cdk-header-row, tr[cdk-header-row]",
-      template: CDK_ROW_TEMPLATE,
-      host: {
-        "class": "cdk-header-row",
-        "role": "row"
-      },
-      // See note on CdkTable for explanation on why this uses the default change detection strategy.
-      // tslint:disable-next-line:validate-decorators
-      changeDetection: ChangeDetectionStrategy.Default,
-      encapsulation: ViewEncapsulation$1.None,
-      standalone: true,
-      imports: [CdkCellOutlet]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkHeaderRow,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "cdk-header-row, tr[cdk-header-row]",
+              template: CDK_ROW_TEMPLATE,
+              host: {
+                class: "cdk-header-row",
+                role: "row",
+              },
+              // See note on CdkTable for explanation on why this uses the default change detection strategy.
+              // tslint:disable-next-line:validate-decorators
+              changeDetection: ChangeDetectionStrategy.Default,
+              encapsulation: ViewEncapsulation$1.None,
+              standalone: true,
+              imports: [CdkCellOutlet],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var _CdkFooterRow = class _CdkFooterRow {
-};
+var _CdkFooterRow = class _CdkFooterRow {};
 _CdkFooterRow.ɵfac = function CdkFooterRow_Factory(t) {
   return new (t || _CdkFooterRow)();
 };
@@ -915,30 +1186,39 @@ _CdkFooterRow.ɵcmp = ɵɵdefineComponent({
     }
   },
   dependencies: [CdkCellOutlet],
-  encapsulation: 2
+  encapsulation: 2,
 });
 var CdkFooterRow = _CdkFooterRow;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkFooterRow, [{
-    type: Component,
-    args: [{
-      selector: "cdk-footer-row, tr[cdk-footer-row]",
-      template: CDK_ROW_TEMPLATE,
-      host: {
-        "class": "cdk-footer-row",
-        "role": "row"
-      },
-      // See note on CdkTable for explanation on why this uses the default change detection strategy.
-      // tslint:disable-next-line:validate-decorators
-      changeDetection: ChangeDetectionStrategy.Default,
-      encapsulation: ViewEncapsulation$1.None,
-      standalone: true,
-      imports: [CdkCellOutlet]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkFooterRow,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "cdk-footer-row, tr[cdk-footer-row]",
+              template: CDK_ROW_TEMPLATE,
+              host: {
+                class: "cdk-footer-row",
+                role: "row",
+              },
+              // See note on CdkTable for explanation on why this uses the default change detection strategy.
+              // tslint:disable-next-line:validate-decorators
+              changeDetection: ChangeDetectionStrategy.Default,
+              encapsulation: ViewEncapsulation$1.None,
+              standalone: true,
+              imports: [CdkCellOutlet],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var _CdkRow = class _CdkRow {
-};
+var _CdkRow = class _CdkRow {};
 _CdkRow.ɵfac = function CdkRow_Factory(t) {
   return new (t || _CdkRow)();
 };
@@ -957,27 +1237,37 @@ _CdkRow.ɵcmp = ɵɵdefineComponent({
     }
   },
   dependencies: [CdkCellOutlet],
-  encapsulation: 2
+  encapsulation: 2,
 });
 var CdkRow = _CdkRow;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkRow, [{
-    type: Component,
-    args: [{
-      selector: "cdk-row, tr[cdk-row]",
-      template: CDK_ROW_TEMPLATE,
-      host: {
-        "class": "cdk-row",
-        "role": "row"
-      },
-      // See note on CdkTable for explanation on why this uses the default change detection strategy.
-      // tslint:disable-next-line:validate-decorators
-      changeDetection: ChangeDetectionStrategy.Default,
-      encapsulation: ViewEncapsulation$1.None,
-      standalone: true,
-      imports: [CdkCellOutlet]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkRow,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "cdk-row, tr[cdk-row]",
+              template: CDK_ROW_TEMPLATE,
+              host: {
+                class: "cdk-row",
+                role: "row",
+              },
+              // See note on CdkTable for explanation on why this uses the default change detection strategy.
+              // tslint:disable-next-line:validate-decorators
+              changeDetection: ChangeDetectionStrategy.Default,
+              encapsulation: ViewEncapsulation$1.None,
+              standalone: true,
+              imports: [CdkCellOutlet],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var _CdkNoDataRow = class _CdkNoDataRow {
   constructor(templateRef) {
@@ -991,19 +1281,31 @@ _CdkNoDataRow.ɵfac = function CdkNoDataRow_Factory(t) {
 _CdkNoDataRow.ɵdir = ɵɵdefineDirective({
   type: _CdkNoDataRow,
   selectors: [["ng-template", "cdkNoDataRow", ""]],
-  standalone: true
+  standalone: true,
 });
 var CdkNoDataRow = _CdkNoDataRow;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkNoDataRow, [{
-    type: Directive,
-    args: [{
-      selector: "ng-template[cdkNoDataRow]",
-      standalone: true
-    }]
-  }], () => [{
-    type: TemplateRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkNoDataRow,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "ng-template[cdkNoDataRow]",
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: TemplateRef,
+        },
+      ],
+      null,
+    );
 })();
 var STICKY_DIRECTIONS = ["top", "bottom", "left", "right"];
 var StickyStyler = class {
@@ -1021,7 +1323,15 @@ var StickyStyler = class {
    * @param _positionListener A listener that is notified of changes to sticky rows/columns
    *     and their dimensions.
    */
-  constructor(_isNativeHtmlTable, _stickCellCss, direction, _coalescedStyleScheduler, _isBrowser = true, _needsPositionStickyOnElement = true, _positionListener) {
+  constructor(
+    _isNativeHtmlTable,
+    _stickCellCss,
+    direction,
+    _coalescedStyleScheduler,
+    _isBrowser = true,
+    _needsPositionStickyOnElement = true,
+    _positionListener,
+  ) {
     this._isNativeHtmlTable = _isNativeHtmlTable;
     this._stickCellCss = _stickCellCss;
     this.direction = direction;
@@ -1031,10 +1341,10 @@ var StickyStyler = class {
     this._positionListener = _positionListener;
     this._cachedCellWidths = [];
     this._borderCellCss = {
-      "top": `${_stickCellCss}-border-elem-top`,
-      "bottom": `${_stickCellCss}-border-elem-bottom`,
-      "left": `${_stickCellCss}-border-elem-left`,
-      "right": `${_stickCellCss}-border-elem-right`
+      top: `${_stickCellCss}-border-elem-top`,
+      bottom: `${_stickCellCss}-border-elem-bottom`,
+      left: `${_stickCellCss}-border-elem-left`,
+      right: `${_stickCellCss}-border-elem-right`,
     };
   }
   /**
@@ -1071,14 +1381,26 @@ var StickyStyler = class {
    * @param recalculateCellWidths Whether the sticky styler should recalculate the width of each
    *     column cell. If `false` cached widths will be used instead.
    */
-  updateStickyColumns(rows, stickyStartStates, stickyEndStates, recalculateCellWidths = true) {
-    if (!rows.length || !this._isBrowser || !(stickyStartStates.some((state) => state) || stickyEndStates.some((state) => state))) {
+  updateStickyColumns(
+    rows,
+    stickyStartStates,
+    stickyEndStates,
+    recalculateCellWidths = true,
+  ) {
+    if (
+      !rows.length ||
+      !this._isBrowser ||
+      !(
+        stickyStartStates.some((state) => state) ||
+        stickyEndStates.some((state) => state)
+      )
+    ) {
       if (this._positionListener) {
         this._positionListener.stickyColumnsUpdated({
-          sizes: []
+          sizes: [],
         });
         this._positionListener.stickyEndColumnsUpdated({
-          sizes: []
+          sizes: [],
         });
       }
       return;
@@ -1087,8 +1409,14 @@ var StickyStyler = class {
       const firstRow = rows[0];
       const numCells = firstRow.children.length;
       const cellWidths = this._getCellWidths(firstRow, recalculateCellWidths);
-      const startPositions = this._getStickyStartColumnPositions(cellWidths, stickyStartStates);
-      const endPositions = this._getStickyEndColumnPositions(cellWidths, stickyEndStates);
+      const startPositions = this._getStickyStartColumnPositions(
+        cellWidths,
+        stickyStartStates,
+      );
+      const endPositions = this._getStickyEndColumnPositions(
+        cellWidths,
+        stickyEndStates,
+      );
       const lastStickyStart = stickyStartStates.lastIndexOf(true);
       const firstStickyEnd = stickyEndStates.indexOf(true);
       const isRtl = this.direction === "rtl";
@@ -1098,19 +1426,44 @@ var StickyStyler = class {
         for (let i = 0; i < numCells; i++) {
           const cell = row.children[i];
           if (stickyStartStates[i]) {
-            this._addStickyStyle(cell, start, startPositions[i], i === lastStickyStart);
+            this._addStickyStyle(
+              cell,
+              start,
+              startPositions[i],
+              i === lastStickyStart,
+            );
           }
           if (stickyEndStates[i]) {
-            this._addStickyStyle(cell, end, endPositions[i], i === firstStickyEnd);
+            this._addStickyStyle(
+              cell,
+              end,
+              endPositions[i],
+              i === firstStickyEnd,
+            );
           }
         }
       }
       if (this._positionListener) {
         this._positionListener.stickyColumnsUpdated({
-          sizes: lastStickyStart === -1 ? [] : cellWidths.slice(0, lastStickyStart + 1).map((width, index) => stickyStartStates[index] ? width : null)
+          sizes:
+            lastStickyStart === -1
+              ? []
+              : cellWidths
+                  .slice(0, lastStickyStart + 1)
+                  .map((width, index) =>
+                    stickyStartStates[index] ? width : null,
+                  ),
         });
         this._positionListener.stickyEndColumnsUpdated({
-          sizes: firstStickyEnd === -1 ? [] : cellWidths.slice(firstStickyEnd).map((width, index) => stickyEndStates[index + firstStickyEnd] ? width : null).reverse()
+          sizes:
+            firstStickyEnd === -1
+              ? []
+              : cellWidths
+                  .slice(firstStickyEnd)
+                  .map((width, index) =>
+                    stickyEndStates[index + firstStickyEnd] ? width : null,
+                  )
+                  .reverse(),
         });
       }
     });
@@ -1131,18 +1484,26 @@ var StickyStyler = class {
       return;
     }
     this._coalescedStyleScheduler.schedule(() => {
-      const rows = position === "bottom" ? rowsToStick.slice().reverse() : rowsToStick;
-      const states = position === "bottom" ? stickyStates.slice().reverse() : stickyStates;
+      const rows =
+        position === "bottom" ? rowsToStick.slice().reverse() : rowsToStick;
+      const states =
+        position === "bottom" ? stickyStates.slice().reverse() : stickyStates;
       const stickyOffsets = [];
       const stickyCellHeights = [];
       const elementsToStick = [];
-      for (let rowIndex = 0, stickyOffset = 0; rowIndex < rows.length; rowIndex++) {
+      for (
+        let rowIndex = 0, stickyOffset = 0;
+        rowIndex < rows.length;
+        rowIndex++
+      ) {
         if (!states[rowIndex]) {
           continue;
         }
         stickyOffsets[rowIndex] = stickyOffset;
         const row = rows[rowIndex];
-        elementsToStick[rowIndex] = this._isNativeHtmlTable ? Array.from(row.children) : [row];
+        elementsToStick[rowIndex] = this._isNativeHtmlTable
+          ? Array.from(row.children)
+          : [row];
         const height = row.getBoundingClientRect().height;
         stickyOffset += height;
         stickyCellHeights[rowIndex] = height;
@@ -1162,13 +1523,13 @@ var StickyStyler = class {
         this._positionListener?.stickyHeaderRowsUpdated({
           sizes: stickyCellHeights,
           offsets: stickyOffsets,
-          elements: elementsToStick
+          elements: elementsToStick,
         });
       } else {
         this._positionListener?.stickyFooterRowsUpdated({
           sizes: stickyCellHeights,
           offsets: stickyOffsets,
-          elements: elementsToStick
+          elements: elementsToStick,
         });
       }
     });
@@ -1204,7 +1565,9 @@ var StickyStyler = class {
       element.style[dir] = "";
       element.classList.remove(this._borderCellCss[dir]);
     }
-    const hasDirection = STICKY_DIRECTIONS.some((dir) => stickyDirections.indexOf(dir) === -1 && element.style[dir]);
+    const hasDirection = STICKY_DIRECTIONS.some(
+      (dir) => stickyDirections.indexOf(dir) === -1 && element.style[dir],
+    );
     if (hasDirection) {
       element.style.zIndex = this._getCalculatedZIndex(element);
     } else {
@@ -1247,7 +1610,7 @@ var StickyStyler = class {
       top: 100,
       bottom: 10,
       left: 1,
-      right: 1
+      right: 1,
     };
     let zIndex = 0;
     for (const dir of STICKY_DIRECTIONS) {
@@ -1311,16 +1674,24 @@ function getTableDuplicateColumnNameError(name) {
   return Error(`Duplicate column definition name provided: "${name}".`);
 }
 function getTableMultipleDefaultRowDefsError() {
-  return Error(`There can only be one default row without a when predicate function.`);
+  return Error(
+    `There can only be one default row without a when predicate function.`,
+  );
 }
 function getTableMissingMatchingRowDefError(data) {
-  return Error(`Could not find a matching row definition for theprovided row data: ${JSON.stringify(data)}`);
+  return Error(
+    `Could not find a matching row definition for theprovided row data: ${JSON.stringify(data)}`,
+  );
 }
 function getTableMissingRowDefsError() {
-  return Error("Missing definitions for header, footer, and row; cannot determine which columns should be rendered.");
+  return Error(
+    "Missing definitions for header, footer, and row; cannot determine which columns should be rendered.",
+  );
 }
 function getTableUnknownDataSourceError() {
-  return Error(`Provided data source did not match an array, Observable, or DataSource`);
+  return Error(
+    `Provided data source did not match an array, Observable, or DataSource`,
+  );
 }
 function getTableTextColumnMissingParentTableError() {
   return Error(`Text column could not find a parent table for registration.`);
@@ -1329,33 +1700,51 @@ function getTableTextColumnMissingNameError() {
   return Error(`Table text column must have a name.`);
 }
 var STICKY_POSITIONING_LISTENER = new InjectionToken("CDK_SPL");
-var _CdkRecycleRows = class _CdkRecycleRows {
-};
+var _CdkRecycleRows = class _CdkRecycleRows {};
 _CdkRecycleRows.ɵfac = function CdkRecycleRows_Factory(t) {
   return new (t || _CdkRecycleRows)();
 };
 _CdkRecycleRows.ɵdir = ɵɵdefineDirective({
   type: _CdkRecycleRows,
-  selectors: [["cdk-table", "recycleRows", ""], ["table", "cdk-table", "", "recycleRows", ""]],
+  selectors: [
+    ["cdk-table", "recycleRows", ""],
+    ["table", "cdk-table", "", "recycleRows", ""],
+  ],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: _VIEW_REPEATER_STRATEGY,
-    useClass: _RecycleViewRepeaterStrategy
-  }])]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: _VIEW_REPEATER_STRATEGY,
+        useClass: _RecycleViewRepeaterStrategy,
+      },
+    ]),
+  ],
 });
 var CdkRecycleRows = _CdkRecycleRows;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkRecycleRows, [{
-    type: Directive,
-    args: [{
-      selector: "cdk-table[recycleRows], table[cdk-table][recycleRows]",
-      providers: [{
-        provide: _VIEW_REPEATER_STRATEGY,
-        useClass: _RecycleViewRepeaterStrategy
-      }],
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkRecycleRows,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "cdk-table[recycleRows], table[cdk-table][recycleRows]",
+              providers: [
+                {
+                  provide: _VIEW_REPEATER_STRATEGY,
+                  useClass: _RecycleViewRepeaterStrategy,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var _DataRowOutlet = class _DataRowOutlet {
   constructor(viewContainer, elementRef) {
@@ -1367,26 +1756,42 @@ var _DataRowOutlet = class _DataRowOutlet {
   }
 };
 _DataRowOutlet.ɵfac = function DataRowOutlet_Factory(t) {
-  return new (t || _DataRowOutlet)(ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(ElementRef));
+  return new (t || _DataRowOutlet)(
+    ɵɵdirectiveInject(ViewContainerRef),
+    ɵɵdirectiveInject(ElementRef),
+  );
 };
 _DataRowOutlet.ɵdir = ɵɵdefineDirective({
   type: _DataRowOutlet,
   selectors: [["", "rowOutlet", ""]],
-  standalone: true
+  standalone: true,
 });
 var DataRowOutlet = _DataRowOutlet;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DataRowOutlet, [{
-    type: Directive,
-    args: [{
-      selector: "[rowOutlet]",
-      standalone: true
-    }]
-  }], () => [{
-    type: ViewContainerRef
-  }, {
-    type: ElementRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      DataRowOutlet,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[rowOutlet]",
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ViewContainerRef,
+        },
+        {
+          type: ElementRef,
+        },
+      ],
+      null,
+    );
 })();
 var _HeaderRowOutlet = class _HeaderRowOutlet {
   constructor(viewContainer, elementRef) {
@@ -1398,26 +1803,42 @@ var _HeaderRowOutlet = class _HeaderRowOutlet {
   }
 };
 _HeaderRowOutlet.ɵfac = function HeaderRowOutlet_Factory(t) {
-  return new (t || _HeaderRowOutlet)(ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(ElementRef));
+  return new (t || _HeaderRowOutlet)(
+    ɵɵdirectiveInject(ViewContainerRef),
+    ɵɵdirectiveInject(ElementRef),
+  );
 };
 _HeaderRowOutlet.ɵdir = ɵɵdefineDirective({
   type: _HeaderRowOutlet,
   selectors: [["", "headerRowOutlet", ""]],
-  standalone: true
+  standalone: true,
 });
 var HeaderRowOutlet = _HeaderRowOutlet;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(HeaderRowOutlet, [{
-    type: Directive,
-    args: [{
-      selector: "[headerRowOutlet]",
-      standalone: true
-    }]
-  }], () => [{
-    type: ViewContainerRef
-  }, {
-    type: ElementRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      HeaderRowOutlet,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[headerRowOutlet]",
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ViewContainerRef,
+        },
+        {
+          type: ElementRef,
+        },
+      ],
+      null,
+    );
 })();
 var _FooterRowOutlet = class _FooterRowOutlet {
   constructor(viewContainer, elementRef) {
@@ -1429,26 +1850,42 @@ var _FooterRowOutlet = class _FooterRowOutlet {
   }
 };
 _FooterRowOutlet.ɵfac = function FooterRowOutlet_Factory(t) {
-  return new (t || _FooterRowOutlet)(ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(ElementRef));
+  return new (t || _FooterRowOutlet)(
+    ɵɵdirectiveInject(ViewContainerRef),
+    ɵɵdirectiveInject(ElementRef),
+  );
 };
 _FooterRowOutlet.ɵdir = ɵɵdefineDirective({
   type: _FooterRowOutlet,
   selectors: [["", "footerRowOutlet", ""]],
-  standalone: true
+  standalone: true,
 });
 var FooterRowOutlet = _FooterRowOutlet;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(FooterRowOutlet, [{
-    type: Directive,
-    args: [{
-      selector: "[footerRowOutlet]",
-      standalone: true
-    }]
-  }], () => [{
-    type: ViewContainerRef
-  }, {
-    type: ElementRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      FooterRowOutlet,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[footerRowOutlet]",
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ViewContainerRef,
+        },
+        {
+          type: ElementRef,
+        },
+      ],
+      null,
+    );
 })();
 var _NoDataRowOutlet = class _NoDataRowOutlet {
   constructor(viewContainer, elementRef) {
@@ -1460,28 +1897,44 @@ var _NoDataRowOutlet = class _NoDataRowOutlet {
   }
 };
 _NoDataRowOutlet.ɵfac = function NoDataRowOutlet_Factory(t) {
-  return new (t || _NoDataRowOutlet)(ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(ElementRef));
+  return new (t || _NoDataRowOutlet)(
+    ɵɵdirectiveInject(ViewContainerRef),
+    ɵɵdirectiveInject(ElementRef),
+  );
 };
 _NoDataRowOutlet.ɵdir = ɵɵdefineDirective({
   type: _NoDataRowOutlet,
   selectors: [["", "noDataRowOutlet", ""]],
-  standalone: true
+  standalone: true,
 });
 var NoDataRowOutlet = _NoDataRowOutlet;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NoDataRowOutlet, [{
-    type: Directive,
-    args: [{
-      selector: "[noDataRowOutlet]",
-      standalone: true
-    }]
-  }], () => [{
-    type: ViewContainerRef
-  }, {
-    type: ElementRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NoDataRowOutlet,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[noDataRowOutlet]",
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ViewContainerRef,
+        },
+        {
+          type: ElementRef,
+        },
+      ],
+      null,
+    );
 })();
-var CDK_TABLE_TEMPLATE = (
+var CDK_TABLE_TEMPLATE =
   // Note that according to MDN, the `caption` element has to be projected as the **first**
   // element in the table. See https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption
   `
@@ -1513,15 +1966,16 @@ var CDK_TABLE_TEMPLATE = (
     <ng-container noDataRowOutlet/>
     <ng-container footerRowOutlet/>
   }
-`
-);
+`;
 var _CdkTable = class _CdkTable {
   /** Aria role to apply to the table's cells based on the table's own role. */
   _getCellRole() {
     if (this._cellRoleInternal === void 0) {
       const role = this._elementRef.nativeElement.getAttribute("role");
-      const cellRole = role === "grid" || role === "treegrid" ? "gridcell" : "cell";
-      this._cellRoleInternal = this._isNativeHtmlTable && cellRole === "cell" ? null : cellRole;
+      const cellRole =
+        role === "grid" || role === "treegrid" ? "gridcell" : "cell";
+      this._cellRoleInternal =
+        this._isNativeHtmlTable && cellRole === "cell" ? null : cellRole;
     }
     return this._cellRoleInternal;
   }
@@ -1535,8 +1989,14 @@ var _CdkTable = class _CdkTable {
     return this._trackByFn;
   }
   set trackBy(fn) {
-    if ((typeof ngDevMode === "undefined" || ngDevMode) && fn != null && typeof fn !== "function") {
-      console.warn(`trackBy must be a function, but received ${JSON.stringify(fn)}.`);
+    if (
+      (typeof ngDevMode === "undefined" || ngDevMode) &&
+      fn != null &&
+      typeof fn !== "function"
+    ) {
+      console.warn(
+        `trackBy must be a function, but received ${JSON.stringify(fn)}.`,
+      );
     }
     this._trackByFn = fn;
   }
@@ -1596,7 +2056,20 @@ var _CdkTable = class _CdkTable {
     this._forceRecalculateCellWidths = true;
     this._stickyColumnStylesNeedReset = true;
   }
-  constructor(_differs, _changeDetectorRef, _elementRef, role, _dir, _document, _platform, _viewRepeater, _coalescedStyleScheduler, _viewportRuler, _stickyPositioningListener, _ngZone) {
+  constructor(
+    _differs,
+    _changeDetectorRef,
+    _elementRef,
+    role,
+    _dir,
+    _document,
+    _platform,
+    _viewRepeater,
+    _coalescedStyleScheduler,
+    _viewportRuler,
+    _stickyPositioningListener,
+    _ngZone,
+  ) {
     this._differs = _differs;
     this._changeDetectorRef = _changeDetectorRef;
     this._elementRef = _elementRef;
@@ -1629,7 +2102,7 @@ var _CdkTable = class _CdkTable {
     this.contentChanged = new EventEmitter();
     this.viewChange = new BehaviorSubject({
       start: 0,
-      end: Number.MAX_VALUE
+      end: Number.MAX_VALUE,
     });
     if (!role) {
       _elementRef.nativeElement.setAttribute("role", "table");
@@ -1641,11 +2114,16 @@ var _CdkTable = class _CdkTable {
   ngOnInit() {
     this._setupStickyStyler();
     this._dataDiffer = this._differs.find([]).create((_i, dataRow) => {
-      return this.trackBy ? this.trackBy(dataRow.dataIndex, dataRow.data) : dataRow;
+      return this.trackBy
+        ? this.trackBy(dataRow.dataIndex, dataRow.data)
+        : dataRow;
     });
-    this._viewportRuler.change().pipe(takeUntil(this._onDestroy)).subscribe(() => {
-      this._forceRecalculateCellWidths = true;
-    });
+    this._viewportRuler
+      .change()
+      .pipe(takeUntil(this._onDestroy))
+      .subscribe(() => {
+        this._forceRecalculateCellWidths = true;
+      });
   }
   ngAfterContentInit() {
     this._hasInitialized = true;
@@ -1656,7 +2134,17 @@ var _CdkTable = class _CdkTable {
     }
   }
   ngOnDestroy() {
-    [this._rowOutlet?.viewContainer, this._headerRowOutlet?.viewContainer, this._footerRowOutlet?.viewContainer, this._cachedRenderRowsMap, this._customColumnDefs, this._customRowDefs, this._customHeaderRowDefs, this._customFooterRowDefs, this._columnDefsByName].forEach((def) => {
+    [
+      this._rowOutlet?.viewContainer,
+      this._headerRowOutlet?.viewContainer,
+      this._footerRowOutlet?.viewContainer,
+      this._cachedRenderRowsMap,
+      this._customColumnDefs,
+      this._customRowDefs,
+      this._customHeaderRowDefs,
+      this._customFooterRowDefs,
+      this._columnDefsByName,
+    ].forEach((def) => {
       def?.clear();
     });
     this._headerRowDefs = [];
@@ -1687,11 +2175,24 @@ var _CdkTable = class _CdkTable {
       return;
     }
     const viewContainer = this._rowOutlet.viewContainer;
-    this._viewRepeater.applyChanges(changes, viewContainer, (record, _adjustedPreviousIndex, currentIndex) => this._getEmbeddedViewArgs(record.item, currentIndex), (record) => record.item.data, (change) => {
-      if (change.operation === _ViewRepeaterOperation.INSERTED && change.context) {
-        this._renderCellTemplateForItem(change.record.item.rowDef, change.context);
-      }
-    });
+    this._viewRepeater.applyChanges(
+      changes,
+      viewContainer,
+      (record, _adjustedPreviousIndex, currentIndex) =>
+        this._getEmbeddedViewArgs(record.item, currentIndex),
+      (record) => record.item.data,
+      (change) => {
+        if (
+          change.operation === _ViewRepeaterOperation.INSERTED &&
+          change.context
+        ) {
+          this._renderCellTemplateForItem(
+            change.record.item.rowDef,
+            change.context,
+          );
+        }
+      },
+    );
     this._updateRowIndexContext();
     changes.forEachIdentityChange((record) => {
       const rowView = viewContainer.get(record.currentIndex);
@@ -1699,9 +2200,11 @@ var _CdkTable = class _CdkTable {
     });
     this._updateNoDataRow();
     if (this._ngZone && NgZone.isInAngularZone()) {
-      this._ngZone.onStable.pipe(take(1), takeUntil(this._onDestroy)).subscribe(() => {
-        this.updateStickyColumnStyles();
-      });
+      this._ngZone.onStable
+        .pipe(take(1), takeUntil(this._onDestroy))
+        .subscribe(() => {
+          this.updateStickyColumnStyles();
+        });
     } else {
       this.updateStickyColumnStyles();
     }
@@ -1785,7 +2288,10 @@ var _CdkTable = class _CdkTable {
     const stickyStates = this._footerRowDefs.map((def) => def.sticky);
     this._stickyStyler.clearStickyPositioning(footerRows, ["bottom"]);
     this._stickyStyler.stickRows(footerRows, stickyStates, "bottom");
-    this._stickyStyler.updateStickyFooterContainer(this._elementRef.nativeElement, stickyStates);
+    this._stickyStyler.updateStickyFooterContainer(
+      this._elementRef.nativeElement,
+      stickyStates,
+    );
     this._footerRowDefs.forEach((def) => def.resetStickyChanged());
   }
   /**
@@ -1799,8 +2305,14 @@ var _CdkTable = class _CdkTable {
     const headerRows = this._getRenderedRows(this._headerRowOutlet);
     const dataRows = this._getRenderedRows(this._rowOutlet);
     const footerRows = this._getRenderedRows(this._footerRowOutlet);
-    if (this._isNativeHtmlTable && !this._fixedLayout || this._stickyColumnStylesNeedReset) {
-      this._stickyStyler.clearStickyPositioning([...headerRows, ...dataRows, ...footerRows], ["left", "right"]);
+    if (
+      (this._isNativeHtmlTable && !this._fixedLayout) ||
+      this._stickyColumnStylesNeedReset
+    ) {
+      this._stickyStyler.clearStickyPositioning(
+        [...headerRows, ...dataRows, ...footerRows],
+        ["left", "right"],
+      );
       this._stickyColumnStylesNeedReset = false;
     }
     headerRows.forEach((headerRow, i) => {
@@ -1818,11 +2330,19 @@ var _CdkTable = class _CdkTable {
     footerRows.forEach((footerRow, i) => {
       this._addStickyColumnStyles([footerRow], this._footerRowDefs[i]);
     });
-    Array.from(this._columnDefsByName.values()).forEach((def) => def.resetStickyChanged());
+    Array.from(this._columnDefsByName.values()).forEach((def) =>
+      def.resetStickyChanged(),
+    );
   }
   /** Invoked whenever an outlet is created and has been assigned to the table. */
   _outletAssigned() {
-    if (!this._hasAllOutlets && this._rowOutlet && this._headerRowOutlet && this._footerRowOutlet && this._noDataRowOutlet) {
+    if (
+      !this._hasAllOutlets &&
+      this._rowOutlet &&
+      this._headerRowOutlet &&
+      this._footerRowOutlet &&
+      this._noDataRowOutlet
+    ) {
       this._hasAllOutlets = true;
       if (this._canRender()) {
         this._render();
@@ -1837,12 +2357,19 @@ var _CdkTable = class _CdkTable {
   _render() {
     this._cacheRowDefs();
     this._cacheColumnDefs();
-    if (!this._headerRowDefs.length && !this._footerRowDefs.length && !this._rowDefs.length && (typeof ngDevMode === "undefined" || ngDevMode)) {
+    if (
+      !this._headerRowDefs.length &&
+      !this._footerRowDefs.length &&
+      !this._rowDefs.length &&
+      (typeof ngDevMode === "undefined" || ngDevMode)
+    ) {
       throw getTableMissingRowDefsError();
     }
     const columnsChanged = this._renderUpdatedColumns();
-    const rowDefsChanged = columnsChanged || this._headerRowDefChanged || this._footerRowDefChanged;
-    this._stickyColumnStylesNeedReset = this._stickyColumnStylesNeedReset || rowDefsChanged;
+    const rowDefsChanged =
+      columnsChanged || this._headerRowDefChanged || this._footerRowDefChanged;
+    this._stickyColumnStylesNeedReset =
+      this._stickyColumnStylesNeedReset || rowDefsChanged;
     this._forceRecalculateCellWidths = rowDefsChanged;
     if (this._headerRowDefChanged) {
       this._forceRenderHeaderRows();
@@ -1852,7 +2379,11 @@ var _CdkTable = class _CdkTable {
       this._forceRenderFooterRows();
       this._footerRowDefChanged = false;
     }
-    if (this.dataSource && this._rowDefs.length > 0 && !this._renderChangeSubscription) {
+    if (
+      this.dataSource &&
+      this._rowDefs.length > 0 &&
+      !this._renderChangeSubscription
+    ) {
       this._observeRenderChanges();
     } else if (this._stickyColumnStylesNeedReset) {
       this.updateStickyColumnStyles();
@@ -1870,7 +2401,11 @@ var _CdkTable = class _CdkTable {
     this._cachedRenderRowsMap = /* @__PURE__ */ new Map();
     for (let i = 0; i < this._data.length; i++) {
       let data = this._data[i];
-      const renderRowsForData = this._getRenderRowsForData(data, i, prevCachedRenderRows.get(data));
+      const renderRowsForData = this._getRenderRowsForData(
+        data,
+        i,
+        prevCachedRenderRows.get(data),
+      );
       if (!this._cachedRenderRowsMap.has(data)) {
         this._cachedRenderRowsMap.set(data, /* @__PURE__ */ new WeakMap());
       }
@@ -1895,7 +2430,8 @@ var _CdkTable = class _CdkTable {
   _getRenderRowsForData(data, dataIndex, cache) {
     const rowDefs = this._getRowDefs(data, dataIndex);
     return rowDefs.map((rowDef) => {
-      const cachedRenderRows = cache && cache.has(rowDef) ? cache.get(rowDef) : [];
+      const cachedRenderRows =
+        cache && cache.has(rowDef) ? cache.get(rowDef) : [];
       if (cachedRenderRows.length) {
         const dataRow = cachedRenderRows.shift();
         dataRow.dataIndex = dataIndex;
@@ -1904,7 +2440,7 @@ var _CdkTable = class _CdkTable {
         return {
           data,
           rowDef,
-          dataIndex
+          dataIndex,
         };
       }
     });
@@ -1912,9 +2448,15 @@ var _CdkTable = class _CdkTable {
   /** Update the map containing the content's column definitions. */
   _cacheColumnDefs() {
     this._columnDefsByName.clear();
-    const columnDefs = mergeArrayAndSet(this._getOwnDefs(this._contentColumnDefs), this._customColumnDefs);
+    const columnDefs = mergeArrayAndSet(
+      this._getOwnDefs(this._contentColumnDefs),
+      this._customColumnDefs,
+    );
     columnDefs.forEach((columnDef) => {
-      if (this._columnDefsByName.has(columnDef.name) && (typeof ngDevMode === "undefined" || ngDevMode)) {
+      if (
+        this._columnDefsByName.has(columnDef.name) &&
+        (typeof ngDevMode === "undefined" || ngDevMode)
+      ) {
         throw getTableDuplicateColumnNameError(columnDef.name);
       }
       this._columnDefsByName.set(columnDef.name, columnDef);
@@ -1922,11 +2464,24 @@ var _CdkTable = class _CdkTable {
   }
   /** Update the list of all available row definitions that can be used. */
   _cacheRowDefs() {
-    this._headerRowDefs = mergeArrayAndSet(this._getOwnDefs(this._contentHeaderRowDefs), this._customHeaderRowDefs);
-    this._footerRowDefs = mergeArrayAndSet(this._getOwnDefs(this._contentFooterRowDefs), this._customFooterRowDefs);
-    this._rowDefs = mergeArrayAndSet(this._getOwnDefs(this._contentRowDefs), this._customRowDefs);
+    this._headerRowDefs = mergeArrayAndSet(
+      this._getOwnDefs(this._contentHeaderRowDefs),
+      this._customHeaderRowDefs,
+    );
+    this._footerRowDefs = mergeArrayAndSet(
+      this._getOwnDefs(this._contentFooterRowDefs),
+      this._customFooterRowDefs,
+    );
+    this._rowDefs = mergeArrayAndSet(
+      this._getOwnDefs(this._contentRowDefs),
+      this._customRowDefs,
+    );
     const defaultRowDefs = this._rowDefs.filter((def) => !def.when);
-    if (!this.multiTemplateDataRows && defaultRowDefs.length > 1 && (typeof ngDevMode === "undefined" || ngDevMode)) {
+    if (
+      !this.multiTemplateDataRows &&
+      defaultRowDefs.length > 1 &&
+      (typeof ngDevMode === "undefined" || ngDevMode)
+    ) {
       throw getTableMultipleDefaultRowDefsError();
     }
     this._defaultRowDef = defaultRowDefs[0];
@@ -1942,11 +2497,17 @@ var _CdkTable = class _CdkTable {
     if (dataColumnsChanged) {
       this._forceRenderDataRows();
     }
-    const headerColumnsChanged = this._headerRowDefs.reduce(columnsDiffReducer, false);
+    const headerColumnsChanged = this._headerRowDefs.reduce(
+      columnsDiffReducer,
+      false,
+    );
     if (headerColumnsChanged) {
       this._forceRenderHeaderRows();
     }
-    const footerColumnsChanged = this._footerRowDefs.reduce(columnsDiffReducer, false);
+    const footerColumnsChanged = this._footerRowDefs.reduce(
+      columnsDiffReducer,
+      false,
+    );
     if (footerColumnsChanged) {
       this._forceRenderFooterRows();
     }
@@ -1989,13 +2550,18 @@ var _CdkTable = class _CdkTable {
     } else if (Array.isArray(this.dataSource)) {
       dataStream = of(this.dataSource);
     }
-    if (dataStream === void 0 && (typeof ngDevMode === "undefined" || ngDevMode)) {
+    if (
+      dataStream === void 0 &&
+      (typeof ngDevMode === "undefined" || ngDevMode)
+    ) {
       throw getTableUnknownDataSourceError();
     }
-    this._renderChangeSubscription = dataStream.pipe(takeUntil(this._onDestroy)).subscribe((data) => {
-      this._data = data || [];
-      this.renderRows();
-    });
+    this._renderChangeSubscription = dataStream
+      .pipe(takeUntil(this._onDestroy))
+      .subscribe((data) => {
+        this._data = data || [];
+        this.renderRows();
+      });
   }
   /**
    * Clears any existing content in the header row outlet and creates a new embedded view
@@ -2005,7 +2571,9 @@ var _CdkTable = class _CdkTable {
     if (this._headerRowOutlet.viewContainer.length > 0) {
       this._headerRowOutlet.viewContainer.clear();
     }
-    this._headerRowDefs.forEach((def, i) => this._renderRow(this._headerRowOutlet, def, i));
+    this._headerRowDefs.forEach((def, i) =>
+      this._renderRow(this._headerRowOutlet, def, i),
+    );
     this.updateStickyHeaderRowStyles();
   }
   /**
@@ -2016,7 +2584,9 @@ var _CdkTable = class _CdkTable {
     if (this._footerRowOutlet.viewContainer.length > 0) {
       this._footerRowOutlet.viewContainer.clear();
     }
-    this._footerRowDefs.forEach((def, i) => this._renderRow(this._footerRowOutlet, def, i));
+    this._footerRowDefs.forEach((def, i) =>
+      this._renderRow(this._footerRowOutlet, def, i),
+    );
     this.updateStickyFooterRowStyles();
   }
   /** Adds the sticky column styles for the rows according to the columns' stick states. */
@@ -2030,7 +2600,12 @@ var _CdkTable = class _CdkTable {
     });
     const stickyStartStates = columnDefs.map((columnDef) => columnDef.sticky);
     const stickyEndStates = columnDefs.map((columnDef) => columnDef.stickyEnd);
-    this._stickyStyler.updateStickyColumns(rows, stickyStartStates, stickyEndStates, !this._fixedLayout || this._forceRecalculateCellWidths);
+    this._stickyStyler.updateStickyColumns(
+      rows,
+      stickyStartStates,
+      stickyEndStates,
+      !this._fixedLayout || this._forceRecalculateCellWidths,
+    );
   }
   /** Gets the list of rows that have been rendered in the row outlet. */
   _getRenderedRows(rowOutlet) {
@@ -2053,9 +2628,13 @@ var _CdkTable = class _CdkTable {
     }
     let rowDefs = [];
     if (this.multiTemplateDataRows) {
-      rowDefs = this._rowDefs.filter((def) => !def.when || def.when(dataIndex, data));
+      rowDefs = this._rowDefs.filter(
+        (def) => !def.when || def.when(dataIndex, data),
+      );
     } else {
-      let rowDef = this._rowDefs.find((def) => def.when && def.when(dataIndex, data)) || this._defaultRowDef;
+      let rowDef =
+        this._rowDefs.find((def) => def.when && def.when(dataIndex, data)) ||
+        this._defaultRowDef;
       if (rowDef) {
         rowDefs.push(rowDef);
       }
@@ -2068,12 +2647,12 @@ var _CdkTable = class _CdkTable {
   _getEmbeddedViewArgs(renderRow, index) {
     const rowDef = renderRow.rowDef;
     const context = {
-      $implicit: renderRow.data
+      $implicit: renderRow.data,
     };
     return {
       templateRef: rowDef.template,
       context,
-      index
+      index,
     };
   }
   /**
@@ -2082,14 +2661,21 @@ var _CdkTable = class _CdkTable {
    * of where to place the new row template in the outlet.
    */
   _renderRow(outlet, rowDef, index, context = {}) {
-    const view = outlet.viewContainer.createEmbeddedView(rowDef.template, context, index);
+    const view = outlet.viewContainer.createEmbeddedView(
+      rowDef.template,
+      context,
+      index,
+    );
     this._renderCellTemplateForItem(rowDef, context);
     return view;
   }
   _renderCellTemplateForItem(rowDef, context) {
     for (let cellTemplate of this._getCellTemplates(rowDef)) {
       if (CdkCellOutlet.mostRecentCellOutlet) {
-        CdkCellOutlet.mostRecentCellOutlet._viewContainer.createEmbeddedView(cellTemplate, context);
+        CdkCellOutlet.mostRecentCellOutlet._viewContainer.createEmbeddedView(
+          cellTemplate,
+          context,
+        );
       }
     }
     this._changeDetectorRef.markForCheck();
@@ -2100,7 +2686,11 @@ var _CdkTable = class _CdkTable {
    */
   _updateRowIndexContext() {
     const viewContainer = this._rowOutlet.viewContainer;
-    for (let renderIndex = 0, count = viewContainer.length; renderIndex < count; renderIndex++) {
+    for (
+      let renderIndex = 0, count = viewContainer.length;
+      renderIndex < count;
+      renderIndex++
+    ) {
       const viewRef = viewContainer.get(renderIndex);
       const context = viewRef.context;
       context.count = count;
@@ -2154,7 +2744,12 @@ var _CdkTable = class _CdkTable {
     if (this._footerRowDefs.reduce(stickyCheckReducer, false)) {
       this.updateStickyFooterRowStyles();
     }
-    if (Array.from(this._columnDefsByName.values()).reduce(stickyCheckReducer, false)) {
+    if (
+      Array.from(this._columnDefsByName.values()).reduce(
+        stickyCheckReducer,
+        false,
+      )
+    ) {
       this._stickyColumnStylesNeedReset = true;
       this.updateStickyColumnStyles();
     }
@@ -2166,11 +2761,21 @@ var _CdkTable = class _CdkTable {
    */
   _setupStickyStyler() {
     const direction = this._dir ? this._dir.value : "ltr";
-    this._stickyStyler = new StickyStyler(this._isNativeHtmlTable, this.stickyCssClass, direction, this._coalescedStyleScheduler, this._platform.isBrowser, this.needsPositionStickyOnElement, this._stickyPositioningListener);
-    (this._dir ? this._dir.change : of()).pipe(takeUntil(this._onDestroy)).subscribe((value) => {
-      this._stickyStyler.direction = value;
-      this.updateStickyColumnStyles();
-    });
+    this._stickyStyler = new StickyStyler(
+      this._isNativeHtmlTable,
+      this.stickyCssClass,
+      direction,
+      this._coalescedStyleScheduler,
+      this._platform.isBrowser,
+      this.needsPositionStickyOnElement,
+      this._stickyPositioningListener,
+    );
+    (this._dir ? this._dir.change : of())
+      .pipe(takeUntil(this._onDestroy))
+      .subscribe((value) => {
+        this._stickyStyler.direction = value;
+        this.updateStickyColumnStyles();
+      });
   }
   /** Filters definitions that belong to this table from a QueryList. */
   _getOwnDefs(items) {
@@ -2190,7 +2795,10 @@ var _CdkTable = class _CdkTable {
     if (shouldShow) {
       const view = container.createEmbeddedView(noDataRow.templateRef);
       const rootNode = view.rootNodes[0];
-      if (view.rootNodes.length === 1 && rootNode?.nodeType === this._document.ELEMENT_NODE) {
+      if (
+        view.rootNodes.length === 1 &&
+        rootNode?.nodeType === this._document.ELEMENT_NODE
+      ) {
         rootNode.setAttribute("role", "row");
         rootNode.classList.add(noDataRow._contentClassName);
       }
@@ -2202,7 +2810,20 @@ var _CdkTable = class _CdkTable {
   }
 };
 _CdkTable.ɵfac = function CdkTable_Factory(t) {
-  return new (t || _CdkTable)(ɵɵdirectiveInject(IterableDiffers), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵinjectAttribute("role"), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(_VIEW_REPEATER_STRATEGY), ɵɵdirectiveInject(_COALESCED_STYLE_SCHEDULER), ɵɵdirectiveInject(ViewportRuler), ɵɵdirectiveInject(STICKY_POSITIONING_LISTENER, 12), ɵɵdirectiveInject(NgZone, 8));
+  return new (t || _CdkTable)(
+    ɵɵdirectiveInject(IterableDiffers),
+    ɵɵdirectiveInject(ChangeDetectorRef),
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵinjectAttribute("role"),
+    ɵɵdirectiveInject(Directionality, 8),
+    ɵɵdirectiveInject(DOCUMENT),
+    ɵɵdirectiveInject(Platform),
+    ɵɵdirectiveInject(_VIEW_REPEATER_STRATEGY),
+    ɵɵdirectiveInject(_COALESCED_STYLE_SCHEDULER),
+    ɵɵdirectiveInject(ViewportRuler),
+    ɵɵdirectiveInject(STICKY_POSITIONING_LISTENER, 12),
+    ɵɵdirectiveInject(NgZone, 8),
+  );
 };
 _CdkTable.ɵcmp = ɵɵdefineComponent({
   type: _CdkTable,
@@ -2217,11 +2838,11 @@ _CdkTable.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._noDataRow = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._contentColumnDefs = _t);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._contentRowDefs = _t);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._contentHeaderRowDefs = _t);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._contentFooterRowDefs = _t);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._noDataRow = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._contentColumnDefs = _t);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._contentRowDefs = _t);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._contentHeaderRowDefs = _t);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._contentFooterRowDefs = _t);
     }
   },
   hostAttrs: [1, "cdk-table"],
@@ -2234,43 +2855,68 @@ _CdkTable.ɵcmp = ɵɵdefineComponent({
   inputs: {
     trackBy: "trackBy",
     dataSource: "dataSource",
-    multiTemplateDataRows: [InputFlags.HasDecoratorInputTransform, "multiTemplateDataRows", "multiTemplateDataRows", booleanAttribute],
-    fixedLayout: [InputFlags.HasDecoratorInputTransform, "fixedLayout", "fixedLayout", booleanAttribute]
+    multiTemplateDataRows: [
+      InputFlags.HasDecoratorInputTransform,
+      "multiTemplateDataRows",
+      "multiTemplateDataRows",
+      booleanAttribute,
+    ],
+    fixedLayout: [
+      InputFlags.HasDecoratorInputTransform,
+      "fixedLayout",
+      "fixedLayout",
+      booleanAttribute,
+    ],
   },
   outputs: {
-    contentChanged: "contentChanged"
+    contentChanged: "contentChanged",
   },
   exportAs: ["cdkTable"],
   standalone: true,
-  features: [ɵɵProvidersFeature([
-    {
-      provide: CDK_TABLE,
-      useExisting: _CdkTable
-    },
-    {
-      provide: _VIEW_REPEATER_STRATEGY,
-      useClass: _DisposeViewRepeaterStrategy
-    },
-    {
-      provide: _COALESCED_STYLE_SCHEDULER,
-      useClass: _CoalescedStyleScheduler
-    },
-    // Prevent nested tables from seeing this table's StickyPositioningListener.
-    {
-      provide: STICKY_POSITIONING_LISTENER,
-      useValue: null
-    }
-  ]), ɵɵInputTransformsFeature, ɵɵStandaloneFeature],
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CDK_TABLE,
+        useExisting: _CdkTable,
+      },
+      {
+        provide: _VIEW_REPEATER_STRATEGY,
+        useClass: _DisposeViewRepeaterStrategy,
+      },
+      {
+        provide: _COALESCED_STYLE_SCHEDULER,
+        useClass: _CoalescedStyleScheduler,
+      },
+      // Prevent nested tables from seeing this table's StickyPositioningListener.
+      {
+        provide: STICKY_POSITIONING_LISTENER,
+        useValue: null,
+      },
+    ]),
+    ɵɵInputTransformsFeature,
+    ɵɵStandaloneFeature,
+  ],
   ngContentSelectors: _c1,
   decls: 5,
   vars: 2,
-  consts: [["role", "rowgroup"], ["headerRowOutlet", ""], ["rowOutlet", ""], ["noDataRowOutlet", ""], ["footerRowOutlet", ""]],
+  consts: [
+    ["role", "rowgroup"],
+    ["headerRowOutlet", ""],
+    ["rowOutlet", ""],
+    ["noDataRowOutlet", ""],
+    ["footerRowOutlet", ""],
+  ],
   template: function CdkTable_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵprojectionDef(_c0);
       ɵɵprojection(0);
       ɵɵprojection(1, 1);
-      ɵɵtemplate(2, CdkTable_Conditional_2_Template, 1, 0)(3, CdkTable_Conditional_3_Template, 7, 0)(4, CdkTable_Conditional_4_Template, 4, 0);
+      ɵɵtemplate(2, CdkTable_Conditional_2_Template, 1, 0)(
+        3,
+        CdkTable_Conditional_3_Template,
+        7,
+        0,
+      )(4, CdkTable_Conditional_4_Template, 4, 0);
     }
     if (rf & 2) {
       ɵɵadvance(2);
@@ -2279,152 +2925,237 @@ _CdkTable.ɵcmp = ɵɵdefineComponent({
       ɵɵconditional(3, ctx._isNativeHtmlTable ? 3 : 4);
     }
   },
-  dependencies: [HeaderRowOutlet, DataRowOutlet, NoDataRowOutlet, FooterRowOutlet],
+  dependencies: [
+    HeaderRowOutlet,
+    DataRowOutlet,
+    NoDataRowOutlet,
+    FooterRowOutlet,
+  ],
   styles: [".cdk-table-fixed-layout{table-layout:fixed}"],
-  encapsulation: 2
+  encapsulation: 2,
 });
 var CdkTable = _CdkTable;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkTable, [{
-    type: Component,
-    args: [{
-      selector: "cdk-table, table[cdk-table]",
-      exportAs: "cdkTable",
-      template: CDK_TABLE_TEMPLATE,
-      host: {
-        "class": "cdk-table",
-        "[class.cdk-table-fixed-layout]": "fixedLayout"
-      },
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.Default,
-      providers: [
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkTable,
+      [
         {
-          provide: CDK_TABLE,
-          useExisting: CdkTable
+          type: Component,
+          args: [
+            {
+              selector: "cdk-table, table[cdk-table]",
+              exportAs: "cdkTable",
+              template: CDK_TABLE_TEMPLATE,
+              host: {
+                class: "cdk-table",
+                "[class.cdk-table-fixed-layout]": "fixedLayout",
+              },
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.Default,
+              providers: [
+                {
+                  provide: CDK_TABLE,
+                  useExisting: CdkTable,
+                },
+                {
+                  provide: _VIEW_REPEATER_STRATEGY,
+                  useClass: _DisposeViewRepeaterStrategy,
+                },
+                {
+                  provide: _COALESCED_STYLE_SCHEDULER,
+                  useClass: _CoalescedStyleScheduler,
+                },
+                // Prevent nested tables from seeing this table's StickyPositioningListener.
+                {
+                  provide: STICKY_POSITIONING_LISTENER,
+                  useValue: null,
+                },
+              ],
+              standalone: true,
+              imports: [
+                HeaderRowOutlet,
+                DataRowOutlet,
+                NoDataRowOutlet,
+                FooterRowOutlet,
+              ],
+              styles: [".cdk-table-fixed-layout{table-layout:fixed}"],
+            },
+          ],
         },
-        {
-          provide: _VIEW_REPEATER_STRATEGY,
-          useClass: _DisposeViewRepeaterStrategy
-        },
-        {
-          provide: _COALESCED_STYLE_SCHEDULER,
-          useClass: _CoalescedStyleScheduler
-        },
-        // Prevent nested tables from seeing this table's StickyPositioningListener.
-        {
-          provide: STICKY_POSITIONING_LISTENER,
-          useValue: null
-        }
       ],
-      standalone: true,
-      imports: [HeaderRowOutlet, DataRowOutlet, NoDataRowOutlet, FooterRowOutlet],
-      styles: [".cdk-table-fixed-layout{table-layout:fixed}"]
-    }]
-  }], () => [{
-    type: IterableDiffers
-  }, {
-    type: ChangeDetectorRef
-  }, {
-    type: ElementRef
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Attribute,
-      args: ["role"]
-    }]
-  }, {
-    type: Directionality,
-    decorators: [{
-      type: Optional
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [DOCUMENT]
-    }]
-  }, {
-    type: Platform
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [_VIEW_REPEATER_STRATEGY]
-    }]
-  }, {
-    type: _CoalescedStyleScheduler,
-    decorators: [{
-      type: Inject,
-      args: [_COALESCED_STYLE_SCHEDULER]
-    }]
-  }, {
-    type: ViewportRuler
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: SkipSelf
-    }, {
-      type: Inject,
-      args: [STICKY_POSITIONING_LISTENER]
-    }]
-  }, {
-    type: NgZone,
-    decorators: [{
-      type: Optional
-    }]
-  }], {
-    trackBy: [{
-      type: Input
-    }],
-    dataSource: [{
-      type: Input
-    }],
-    multiTemplateDataRows: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    fixedLayout: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    contentChanged: [{
-      type: Output
-    }],
-    _contentColumnDefs: [{
-      type: ContentChildren,
-      args: [CdkColumnDef, {
-        descendants: true
-      }]
-    }],
-    _contentRowDefs: [{
-      type: ContentChildren,
-      args: [CdkRowDef, {
-        descendants: true
-      }]
-    }],
-    _contentHeaderRowDefs: [{
-      type: ContentChildren,
-      args: [CdkHeaderRowDef, {
-        descendants: true
-      }]
-    }],
-    _contentFooterRowDefs: [{
-      type: ContentChildren,
-      args: [CdkFooterRowDef, {
-        descendants: true
-      }]
-    }],
-    _noDataRow: [{
-      type: ContentChild,
-      args: [CdkNoDataRow]
-    }]
-  });
+      () => [
+        {
+          type: IterableDiffers,
+        },
+        {
+          type: ChangeDetectorRef,
+        },
+        {
+          type: ElementRef,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Attribute,
+              args: ["role"],
+            },
+          ],
+        },
+        {
+          type: Directionality,
+          decorators: [
+            {
+              type: Optional,
+            },
+          ],
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [DOCUMENT],
+            },
+          ],
+        },
+        {
+          type: Platform,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [_VIEW_REPEATER_STRATEGY],
+            },
+          ],
+        },
+        {
+          type: _CoalescedStyleScheduler,
+          decorators: [
+            {
+              type: Inject,
+              args: [_COALESCED_STYLE_SCHEDULER],
+            },
+          ],
+        },
+        {
+          type: ViewportRuler,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Optional,
+            },
+            {
+              type: SkipSelf,
+            },
+            {
+              type: Inject,
+              args: [STICKY_POSITIONING_LISTENER],
+            },
+          ],
+        },
+        {
+          type: NgZone,
+          decorators: [
+            {
+              type: Optional,
+            },
+          ],
+        },
+      ],
+      {
+        trackBy: [
+          {
+            type: Input,
+          },
+        ],
+        dataSource: [
+          {
+            type: Input,
+          },
+        ],
+        multiTemplateDataRows: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        fixedLayout: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        contentChanged: [
+          {
+            type: Output,
+          },
+        ],
+        _contentColumnDefs: [
+          {
+            type: ContentChildren,
+            args: [
+              CdkColumnDef,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        _contentRowDefs: [
+          {
+            type: ContentChildren,
+            args: [
+              CdkRowDef,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        _contentHeaderRowDefs: [
+          {
+            type: ContentChildren,
+            args: [
+              CdkHeaderRowDef,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        _contentFooterRowDefs: [
+          {
+            type: ContentChildren,
+            args: [
+              CdkFooterRowDef,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        _noDataRow: [
+          {
+            type: ContentChild,
+            args: [CdkNoDataRow],
+          },
+        ],
+      },
+    );
 })();
 function mergeArrayAndSet(array, set) {
   return array.concat(Array.from(set));
@@ -2464,7 +3195,8 @@ var _CdkTextColumn = class _CdkTextColumn {
       this.headerText = this._createDefaultHeaderText();
     }
     if (!this.dataAccessor) {
-      this.dataAccessor = this._options.defaultDataAccessor || ((data, name) => data[name]);
+      this.dataAccessor =
+        this._options.defaultDataAccessor || ((data, name) => data[name]);
     }
     if (this._table) {
       this.columnDef.cell = this.cell;
@@ -2501,7 +3233,10 @@ var _CdkTextColumn = class _CdkTextColumn {
   }
 };
 _CdkTextColumn.ɵfac = function CdkTextColumn_Factory(t) {
-  return new (t || _CdkTextColumn)(ɵɵdirectiveInject(CdkTable, 8), ɵɵdirectiveInject(TEXT_COLUMN_OPTIONS, 8));
+  return new (t || _CdkTextColumn)(
+    ɵɵdirectiveInject(CdkTable, 8),
+    ɵɵdirectiveInject(TEXT_COLUMN_OPTIONS, 8),
+  );
 };
 _CdkTextColumn.ɵcmp = ɵɵdefineComponent({
   type: _CdkTextColumn,
@@ -2514,39 +3249,63 @@ _CdkTextColumn.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.columnDef = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.cell = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.headerCell = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.columnDef = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.cell = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.headerCell = _t.first);
     }
   },
   inputs: {
     name: "name",
     headerText: "headerText",
     dataAccessor: "dataAccessor",
-    justify: "justify"
+    justify: "justify",
   },
   standalone: true,
   features: [ɵɵStandaloneFeature],
   decls: 3,
   vars: 0,
-  consts: [["cdkColumnDef", ""], ["cdk-header-cell", "", 3, "text-align", 4, "cdkHeaderCellDef"], ["cdk-cell", "", 3, "text-align", 4, "cdkCellDef"], ["cdk-header-cell", ""], ["cdk-cell", ""]],
+  consts: [
+    ["cdkColumnDef", ""],
+    ["cdk-header-cell", "", 3, "text-align", 4, "cdkHeaderCellDef"],
+    ["cdk-cell", "", 3, "text-align", 4, "cdkCellDef"],
+    ["cdk-header-cell", ""],
+    ["cdk-cell", ""],
+  ],
   template: function CdkTextColumn_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵelementContainerStart(0, 0);
-      ɵɵtemplate(1, CdkTextColumn_th_1_Template, 2, 3, "th", 1)(2, CdkTextColumn_td_2_Template, 2, 3, "td", 2);
+      ɵɵtemplate(1, CdkTextColumn_th_1_Template, 2, 3, "th", 1)(
+        2,
+        CdkTextColumn_td_2_Template,
+        2,
+        3,
+        "td",
+        2,
+      );
       ɵɵelementContainerEnd();
     }
   },
-  dependencies: [CdkColumnDef, CdkHeaderCellDef, CdkHeaderCell, CdkCellDef, CdkCell],
-  encapsulation: 2
+  dependencies: [
+    CdkColumnDef,
+    CdkHeaderCellDef,
+    CdkHeaderCell,
+    CdkCellDef,
+    CdkCell,
+  ],
+  encapsulation: 2,
 });
 var CdkTextColumn = _CdkTextColumn;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkTextColumn, [{
-    type: Component,
-    args: [{
-      selector: "cdk-text-column",
-      template: `
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkTextColumn,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "cdk-text-column",
+              template: `
     <ng-container cdkColumnDef>
       <th cdk-header-cell *cdkHeaderCellDef [style.text-align]="justify">
         {{headerText}}
@@ -2556,86 +3315,207 @@ var CdkTextColumn = _CdkTextColumn;
       </td>
     </ng-container>
   `,
-      encapsulation: ViewEncapsulation$1.None,
-      // Change detection is intentionally not set to OnPush. This component's template will be provided
-      // to the table to be inserted into its view. This is problematic when change detection runs since
-      // the bindings in this template will be evaluated _after_ the table's view is evaluated, which
-      // mean's the template in the table's view will not have the updated value (and in fact will cause
-      // an ExpressionChangedAfterItHasBeenCheckedError).
-      // tslint:disable-next-line:validate-decorators
-      changeDetection: ChangeDetectionStrategy.Default,
-      standalone: true,
-      imports: [CdkColumnDef, CdkHeaderCellDef, CdkHeaderCell, CdkCellDef, CdkCell]
-    }]
-  }], () => [{
-    type: CdkTable,
-    decorators: [{
-      type: Optional
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [TEXT_COLUMN_OPTIONS]
-    }]
-  }], {
-    name: [{
-      type: Input
-    }],
-    headerText: [{
-      type: Input
-    }],
-    dataAccessor: [{
-      type: Input
-    }],
-    justify: [{
-      type: Input
-    }],
-    columnDef: [{
-      type: ViewChild,
-      args: [CdkColumnDef, {
-        static: true
-      }]
-    }],
-    cell: [{
-      type: ViewChild,
-      args: [CdkCellDef, {
-        static: true
-      }]
-    }],
-    headerCell: [{
-      type: ViewChild,
-      args: [CdkHeaderCellDef, {
-        static: true
-      }]
-    }]
-  });
+              encapsulation: ViewEncapsulation$1.None,
+              // Change detection is intentionally not set to OnPush. This component's template will be provided
+              // to the table to be inserted into its view. This is problematic when change detection runs since
+              // the bindings in this template will be evaluated _after_ the table's view is evaluated, which
+              // mean's the template in the table's view will not have the updated value (and in fact will cause
+              // an ExpressionChangedAfterItHasBeenCheckedError).
+              // tslint:disable-next-line:validate-decorators
+              changeDetection: ChangeDetectionStrategy.Default,
+              standalone: true,
+              imports: [
+                CdkColumnDef,
+                CdkHeaderCellDef,
+                CdkHeaderCell,
+                CdkCellDef,
+                CdkCell,
+              ],
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: CdkTable,
+          decorators: [
+            {
+              type: Optional,
+            },
+          ],
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Optional,
+            },
+            {
+              type: Inject,
+              args: [TEXT_COLUMN_OPTIONS],
+            },
+          ],
+        },
+      ],
+      {
+        name: [
+          {
+            type: Input,
+          },
+        ],
+        headerText: [
+          {
+            type: Input,
+          },
+        ],
+        dataAccessor: [
+          {
+            type: Input,
+          },
+        ],
+        justify: [
+          {
+            type: Input,
+          },
+        ],
+        columnDef: [
+          {
+            type: ViewChild,
+            args: [
+              CdkColumnDef,
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
+        cell: [
+          {
+            type: ViewChild,
+            args: [
+              CdkCellDef,
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
+        headerCell: [
+          {
+            type: ViewChild,
+            args: [
+              CdkHeaderCellDef,
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
+      },
+    );
 })();
-var EXPORTED_DECLARATIONS = [CdkTable, CdkRowDef, CdkCellDef, CdkCellOutlet, CdkHeaderCellDef, CdkFooterCellDef, CdkColumnDef, CdkCell, CdkRow, CdkHeaderCell, CdkFooterCell, CdkHeaderRow, CdkHeaderRowDef, CdkFooterRow, CdkFooterRowDef, DataRowOutlet, HeaderRowOutlet, FooterRowOutlet, CdkTextColumn, CdkNoDataRow, CdkRecycleRows, NoDataRowOutlet];
-var _CdkTableModule = class _CdkTableModule {
-};
+var EXPORTED_DECLARATIONS = [
+  CdkTable,
+  CdkRowDef,
+  CdkCellDef,
+  CdkCellOutlet,
+  CdkHeaderCellDef,
+  CdkFooterCellDef,
+  CdkColumnDef,
+  CdkCell,
+  CdkRow,
+  CdkHeaderCell,
+  CdkFooterCell,
+  CdkHeaderRow,
+  CdkHeaderRowDef,
+  CdkFooterRow,
+  CdkFooterRowDef,
+  DataRowOutlet,
+  HeaderRowOutlet,
+  FooterRowOutlet,
+  CdkTextColumn,
+  CdkNoDataRow,
+  CdkRecycleRows,
+  NoDataRowOutlet,
+];
+var _CdkTableModule = class _CdkTableModule {};
 _CdkTableModule.ɵfac = function CdkTableModule_Factory(t) {
   return new (t || _CdkTableModule)();
 };
 _CdkTableModule.ɵmod = ɵɵdefineNgModule({
   type: _CdkTableModule,
-  imports: [ScrollingModule, CdkTable, CdkRowDef, CdkCellDef, CdkCellOutlet, CdkHeaderCellDef, CdkFooterCellDef, CdkColumnDef, CdkCell, CdkRow, CdkHeaderCell, CdkFooterCell, CdkHeaderRow, CdkHeaderRowDef, CdkFooterRow, CdkFooterRowDef, DataRowOutlet, HeaderRowOutlet, FooterRowOutlet, CdkTextColumn, CdkNoDataRow, CdkRecycleRows, NoDataRowOutlet],
-  exports: [CdkTable, CdkRowDef, CdkCellDef, CdkCellOutlet, CdkHeaderCellDef, CdkFooterCellDef, CdkColumnDef, CdkCell, CdkRow, CdkHeaderCell, CdkFooterCell, CdkHeaderRow, CdkHeaderRowDef, CdkFooterRow, CdkFooterRowDef, DataRowOutlet, HeaderRowOutlet, FooterRowOutlet, CdkTextColumn, CdkNoDataRow, CdkRecycleRows, NoDataRowOutlet]
+  imports: [
+    ScrollingModule,
+    CdkTable,
+    CdkRowDef,
+    CdkCellDef,
+    CdkCellOutlet,
+    CdkHeaderCellDef,
+    CdkFooterCellDef,
+    CdkColumnDef,
+    CdkCell,
+    CdkRow,
+    CdkHeaderCell,
+    CdkFooterCell,
+    CdkHeaderRow,
+    CdkHeaderRowDef,
+    CdkFooterRow,
+    CdkFooterRowDef,
+    DataRowOutlet,
+    HeaderRowOutlet,
+    FooterRowOutlet,
+    CdkTextColumn,
+    CdkNoDataRow,
+    CdkRecycleRows,
+    NoDataRowOutlet,
+  ],
+  exports: [
+    CdkTable,
+    CdkRowDef,
+    CdkCellDef,
+    CdkCellOutlet,
+    CdkHeaderCellDef,
+    CdkFooterCellDef,
+    CdkColumnDef,
+    CdkCell,
+    CdkRow,
+    CdkHeaderCell,
+    CdkFooterCell,
+    CdkHeaderRow,
+    CdkHeaderRowDef,
+    CdkFooterRow,
+    CdkFooterRowDef,
+    DataRowOutlet,
+    HeaderRowOutlet,
+    FooterRowOutlet,
+    CdkTextColumn,
+    CdkNoDataRow,
+    CdkRecycleRows,
+    NoDataRowOutlet,
+  ],
 });
 _CdkTableModule.ɵinj = ɵɵdefineInjector({
-  imports: [ScrollingModule]
+  imports: [ScrollingModule],
 });
 var CdkTableModule = _CdkTableModule;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkTableModule, [{
-    type: NgModule,
-    args: [{
-      exports: EXPORTED_DECLARATIONS,
-      imports: [ScrollingModule, ...EXPORTED_DECLARATIONS]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkTableModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              exports: EXPORTED_DECLARATIONS,
+              imports: [ScrollingModule, ...EXPORTED_DECLARATIONS],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 
 // node_modules/@angular/material/fesm2022/table.mjs
@@ -2691,33 +3571,51 @@ function MatTextColumn_td_2_Template(rf, ctx) {
     ɵɵtextInterpolate1(" ", ctx_r0.dataAccessor(data_r2, ctx_r0.name), " ");
   }
 }
-var _MatRecycleRows = class _MatRecycleRows {
-};
+var _MatRecycleRows = class _MatRecycleRows {};
 _MatRecycleRows.ɵfac = function MatRecycleRows_Factory(t) {
   return new (t || _MatRecycleRows)();
 };
 _MatRecycleRows.ɵdir = ɵɵdefineDirective({
   type: _MatRecycleRows,
-  selectors: [["mat-table", "recycleRows", ""], ["table", "mat-table", "", "recycleRows", ""]],
+  selectors: [
+    ["mat-table", "recycleRows", ""],
+    ["table", "mat-table", "", "recycleRows", ""],
+  ],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: _VIEW_REPEATER_STRATEGY,
-    useClass: _RecycleViewRepeaterStrategy
-  }])]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: _VIEW_REPEATER_STRATEGY,
+        useClass: _RecycleViewRepeaterStrategy,
+      },
+    ]),
+  ],
 });
 var MatRecycleRows = _MatRecycleRows;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatRecycleRows, [{
-    type: Directive,
-    args: [{
-      selector: "mat-table[recycleRows], table[mat-table][recycleRows]",
-      providers: [{
-        provide: _VIEW_REPEATER_STRATEGY,
-        useClass: _RecycleViewRepeaterStrategy
-      }],
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatRecycleRows,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "mat-table[recycleRows], table[mat-table][recycleRows]",
+              providers: [
+                {
+                  provide: _VIEW_REPEATER_STRATEGY,
+                  useClass: _RecycleViewRepeaterStrategy,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var _MatTable = class _MatTable extends CdkTable {
   constructor() {
@@ -2729,7 +3627,10 @@ var _MatTable = class _MatTable extends CdkTable {
 _MatTable.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatTable_BaseFactory;
   return function MatTable_Factory(t) {
-    return (ɵMatTable_BaseFactory || (ɵMatTable_BaseFactory = ɵɵgetInheritedFactory(_MatTable)))(t || _MatTable);
+    return (
+      ɵMatTable_BaseFactory ||
+      (ɵMatTable_BaseFactory = ɵɵgetInheritedFactory(_MatTable))
+    )(t || _MatTable);
   };
 })();
 _MatTable.ɵcmp = ɵɵdefineComponent({
@@ -2744,41 +3645,57 @@ _MatTable.ɵcmp = ɵɵdefineComponent({
   },
   exportAs: ["matTable"],
   standalone: true,
-  features: [ɵɵProvidersFeature([
-    {
-      provide: CdkTable,
-      useExisting: _MatTable
-    },
-    {
-      provide: CDK_TABLE,
-      useExisting: _MatTable
-    },
-    {
-      provide: _COALESCED_STYLE_SCHEDULER,
-      useClass: _CoalescedStyleScheduler
-    },
-    // TODO(michaeljamesparsons) Abstract the view repeater strategy to a directive API so this code
-    //  is only included in the build if used.
-    {
-      provide: _VIEW_REPEATER_STRATEGY,
-      useClass: _DisposeViewRepeaterStrategy
-    },
-    // Prevent nested tables from seeing this table's StickyPositioningListener.
-    {
-      provide: STICKY_POSITIONING_LISTENER,
-      useValue: null
-    }
-  ]), ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkTable,
+        useExisting: _MatTable,
+      },
+      {
+        provide: CDK_TABLE,
+        useExisting: _MatTable,
+      },
+      {
+        provide: _COALESCED_STYLE_SCHEDULER,
+        useClass: _CoalescedStyleScheduler,
+      },
+      // TODO(michaeljamesparsons) Abstract the view repeater strategy to a directive API so this code
+      //  is only included in the build if used.
+      {
+        provide: _VIEW_REPEATER_STRATEGY,
+        useClass: _DisposeViewRepeaterStrategy,
+      },
+      // Prevent nested tables from seeing this table's StickyPositioningListener.
+      {
+        provide: STICKY_POSITIONING_LISTENER,
+        useValue: null,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+    ɵɵStandaloneFeature,
+  ],
   ngContentSelectors: _c12,
   decls: 5,
   vars: 2,
-  consts: [["role", "rowgroup"], ["headerRowOutlet", ""], ["role", "rowgroup", 1, "mdc-data-table__content"], ["rowOutlet", ""], ["noDataRowOutlet", ""], ["footerRowOutlet", ""]],
+  consts: [
+    ["role", "rowgroup"],
+    ["headerRowOutlet", ""],
+    ["role", "rowgroup", 1, "mdc-data-table__content"],
+    ["rowOutlet", ""],
+    ["noDataRowOutlet", ""],
+    ["footerRowOutlet", ""],
+  ],
   template: function MatTable_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵprojectionDef(_c02);
       ɵɵprojection(0);
       ɵɵprojection(1, 1);
-      ɵɵtemplate(2, MatTable_Conditional_2_Template, 1, 0)(3, MatTable_Conditional_3_Template, 7, 0)(4, MatTable_Conditional_4_Template, 4, 0);
+      ɵɵtemplate(2, MatTable_Conditional_2_Template, 1, 0)(
+        3,
+        MatTable_Conditional_3_Template,
+        7,
+        0,
+      )(4, MatTable_Conditional_4_Template, 4, 0);
     }
     if (rf & 2) {
       ɵɵadvance(2);
@@ -2787,18 +3704,30 @@ _MatTable.ɵcmp = ɵɵdefineComponent({
       ɵɵconditional(3, ctx._isNativeHtmlTable ? 3 : 4);
     }
   },
-  dependencies: [HeaderRowOutlet, DataRowOutlet, NoDataRowOutlet, FooterRowOutlet],
-  styles: [".mat-mdc-table-sticky{position:sticky !important}.mdc-data-table{-webkit-overflow-scrolling:touch;display:inline-flex;flex-direction:column;box-sizing:border-box;position:relative}.mdc-data-table__table-container{-webkit-overflow-scrolling:touch;overflow-x:auto;width:100%}.mdc-data-table__table{min-width:100%;border:0;white-space:nowrap;border-spacing:0;table-layout:fixed}.mdc-data-table__cell{box-sizing:border-box;overflow:hidden;text-align:left;text-overflow:ellipsis}[dir=rtl] .mdc-data-table__cell,.mdc-data-table__cell[dir=rtl]{text-align:right}.mdc-data-table__cell--numeric{text-align:right}[dir=rtl] .mdc-data-table__cell--numeric,.mdc-data-table__cell--numeric[dir=rtl]{text-align:left}.mdc-data-table__header-cell{box-sizing:border-box;text-overflow:ellipsis;overflow:hidden;outline:none;text-align:left}[dir=rtl] .mdc-data-table__header-cell,.mdc-data-table__header-cell[dir=rtl]{text-align:right}.mdc-data-table__header-cell--numeric{text-align:right}[dir=rtl] .mdc-data-table__header-cell--numeric,.mdc-data-table__header-cell--numeric[dir=rtl]{text-align:left}.mdc-data-table__header-cell-wrapper{align-items:center;display:inline-flex;vertical-align:middle}.mdc-data-table__cell,.mdc-data-table__header-cell{padding:0 16px 0 16px}.mdc-data-table__header-cell--checkbox,.mdc-data-table__cell--checkbox{padding-left:4px;padding-right:0}[dir=rtl] .mdc-data-table__header-cell--checkbox,[dir=rtl] .mdc-data-table__cell--checkbox,.mdc-data-table__header-cell--checkbox[dir=rtl],.mdc-data-table__cell--checkbox[dir=rtl]{padding-left:0;padding-right:4px}mat-table{display:block}mat-header-row{min-height:56px}mat-row,mat-footer-row{min-height:48px}mat-row,mat-header-row,mat-footer-row{display:flex;border-width:0;border-bottom-width:1px;border-style:solid;align-items:center;box-sizing:border-box}mat-cell:first-of-type,mat-header-cell:first-of-type,mat-footer-cell:first-of-type{padding-left:24px}[dir=rtl] mat-cell:first-of-type:not(:only-of-type),[dir=rtl] mat-header-cell:first-of-type:not(:only-of-type),[dir=rtl] mat-footer-cell:first-of-type:not(:only-of-type){padding-left:0;padding-right:24px}mat-cell:last-of-type,mat-header-cell:last-of-type,mat-footer-cell:last-of-type{padding-right:24px}[dir=rtl] mat-cell:last-of-type:not(:only-of-type),[dir=rtl] mat-header-cell:last-of-type:not(:only-of-type),[dir=rtl] mat-footer-cell:last-of-type:not(:only-of-type){padding-right:0;padding-left:24px}mat-cell,mat-header-cell,mat-footer-cell{flex:1;display:flex;align-items:center;overflow:hidden;word-wrap:break-word;min-height:inherit}.mat-mdc-table{table-layout:auto;white-space:normal;background-color:var(--mat-table-background-color)}.mat-mdc-header-row{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;height:var(--mat-table-header-container-height, 56px);color:var(--mat-table-header-headline-color, rgba(0, 0, 0, 0.87));font-family:var(--mat-table-header-headline-font, Roboto, sans-serif);line-height:var(--mat-table-header-headline-line-height);font-size:var(--mat-table-header-headline-size, 14px);font-weight:var(--mat-table-header-headline-weight, 500)}.mat-mdc-row{height:var(--mat-table-row-item-container-height, 52px);color:var(--mat-table-row-item-label-text-color, rgba(0, 0, 0, 0.87))}.mat-mdc-row,.mdc-data-table__content{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:var(--mat-table-row-item-label-text-font, Roboto, sans-serif);line-height:var(--mat-table-row-item-label-text-line-height);font-size:var(--mat-table-row-item-label-text-size, 14px);font-weight:var(--mat-table-row-item-label-text-weight)}.mat-mdc-footer-row{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;height:var(--mat-table-footer-container-height, 52px);color:var(--mat-table-row-item-label-text-color, rgba(0, 0, 0, 0.87));font-family:var(--mat-table-footer-supporting-text-font, Roboto, sans-serif);line-height:var(--mat-table-footer-supporting-text-line-height);font-size:var(--mat-table-footer-supporting-text-size, 14px);font-weight:var(--mat-table-footer-supporting-text-weight);letter-spacing:var(--mat-table-footer-supporting-text-tracking)}.mat-mdc-header-cell{border-bottom-color:var(--mat-table-row-item-outline-color, rgba(0, 0, 0, 0.12));border-bottom-width:var(--mat-table-row-item-outline-width, 1px);border-bottom-style:solid;letter-spacing:var(--mat-table-header-headline-tracking);font-weight:inherit;line-height:inherit}.mat-mdc-cell{border-bottom-color:var(--mat-table-row-item-outline-color, rgba(0, 0, 0, 0.12));border-bottom-width:var(--mat-table-row-item-outline-width, 1px);border-bottom-style:solid;letter-spacing:var(--mat-table-row-item-label-text-tracking);line-height:inherit}.mdc-data-table__row:last-child .mat-mdc-cell{border-bottom:none}.mat-mdc-footer-cell{letter-spacing:var(--mat-table-row-item-label-text-tracking)}mat-row.mat-mdc-row,mat-header-row.mat-mdc-header-row,mat-footer-row.mat-mdc-footer-row{border-bottom:none}.mat-mdc-table tbody,.mat-mdc-table tfoot,.mat-mdc-table thead,.mat-mdc-cell,.mat-mdc-footer-cell,.mat-mdc-header-row,.mat-mdc-row,.mat-mdc-footer-row,.mat-mdc-table .mat-mdc-header-cell{background:inherit}.mat-mdc-table mat-header-row.mat-mdc-header-row,.mat-mdc-table mat-row.mat-mdc-row,.mat-mdc-table mat-footer-row.mat-mdc-footer-cell{height:unset}mat-header-cell.mat-mdc-header-cell,mat-cell.mat-mdc-cell,mat-footer-cell.mat-mdc-footer-cell{align-self:stretch}"],
-  encapsulation: 2
+  dependencies: [
+    HeaderRowOutlet,
+    DataRowOutlet,
+    NoDataRowOutlet,
+    FooterRowOutlet,
+  ],
+  styles: [
+    ".mat-mdc-table-sticky{position:sticky !important}.mdc-data-table{-webkit-overflow-scrolling:touch;display:inline-flex;flex-direction:column;box-sizing:border-box;position:relative}.mdc-data-table__table-container{-webkit-overflow-scrolling:touch;overflow-x:auto;width:100%}.mdc-data-table__table{min-width:100%;border:0;white-space:nowrap;border-spacing:0;table-layout:fixed}.mdc-data-table__cell{box-sizing:border-box;overflow:hidden;text-align:left;text-overflow:ellipsis}[dir=rtl] .mdc-data-table__cell,.mdc-data-table__cell[dir=rtl]{text-align:right}.mdc-data-table__cell--numeric{text-align:right}[dir=rtl] .mdc-data-table__cell--numeric,.mdc-data-table__cell--numeric[dir=rtl]{text-align:left}.mdc-data-table__header-cell{box-sizing:border-box;text-overflow:ellipsis;overflow:hidden;outline:none;text-align:left}[dir=rtl] .mdc-data-table__header-cell,.mdc-data-table__header-cell[dir=rtl]{text-align:right}.mdc-data-table__header-cell--numeric{text-align:right}[dir=rtl] .mdc-data-table__header-cell--numeric,.mdc-data-table__header-cell--numeric[dir=rtl]{text-align:left}.mdc-data-table__header-cell-wrapper{align-items:center;display:inline-flex;vertical-align:middle}.mdc-data-table__cell,.mdc-data-table__header-cell{padding:0 16px 0 16px}.mdc-data-table__header-cell--checkbox,.mdc-data-table__cell--checkbox{padding-left:4px;padding-right:0}[dir=rtl] .mdc-data-table__header-cell--checkbox,[dir=rtl] .mdc-data-table__cell--checkbox,.mdc-data-table__header-cell--checkbox[dir=rtl],.mdc-data-table__cell--checkbox[dir=rtl]{padding-left:0;padding-right:4px}mat-table{display:block}mat-header-row{min-height:56px}mat-row,mat-footer-row{min-height:48px}mat-row,mat-header-row,mat-footer-row{display:flex;border-width:0;border-bottom-width:1px;border-style:solid;align-items:center;box-sizing:border-box}mat-cell:first-of-type,mat-header-cell:first-of-type,mat-footer-cell:first-of-type{padding-left:24px}[dir=rtl] mat-cell:first-of-type:not(:only-of-type),[dir=rtl] mat-header-cell:first-of-type:not(:only-of-type),[dir=rtl] mat-footer-cell:first-of-type:not(:only-of-type){padding-left:0;padding-right:24px}mat-cell:last-of-type,mat-header-cell:last-of-type,mat-footer-cell:last-of-type{padding-right:24px}[dir=rtl] mat-cell:last-of-type:not(:only-of-type),[dir=rtl] mat-header-cell:last-of-type:not(:only-of-type),[dir=rtl] mat-footer-cell:last-of-type:not(:only-of-type){padding-right:0;padding-left:24px}mat-cell,mat-header-cell,mat-footer-cell{flex:1;display:flex;align-items:center;overflow:hidden;word-wrap:break-word;min-height:inherit}.mat-mdc-table{table-layout:auto;white-space:normal;background-color:var(--mat-table-background-color)}.mat-mdc-header-row{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;height:var(--mat-table-header-container-height, 56px);color:var(--mat-table-header-headline-color, rgba(0, 0, 0, 0.87));font-family:var(--mat-table-header-headline-font, Roboto, sans-serif);line-height:var(--mat-table-header-headline-line-height);font-size:var(--mat-table-header-headline-size, 14px);font-weight:var(--mat-table-header-headline-weight, 500)}.mat-mdc-row{height:var(--mat-table-row-item-container-height, 52px);color:var(--mat-table-row-item-label-text-color, rgba(0, 0, 0, 0.87))}.mat-mdc-row,.mdc-data-table__content{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:var(--mat-table-row-item-label-text-font, Roboto, sans-serif);line-height:var(--mat-table-row-item-label-text-line-height);font-size:var(--mat-table-row-item-label-text-size, 14px);font-weight:var(--mat-table-row-item-label-text-weight)}.mat-mdc-footer-row{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;height:var(--mat-table-footer-container-height, 52px);color:var(--mat-table-row-item-label-text-color, rgba(0, 0, 0, 0.87));font-family:var(--mat-table-footer-supporting-text-font, Roboto, sans-serif);line-height:var(--mat-table-footer-supporting-text-line-height);font-size:var(--mat-table-footer-supporting-text-size, 14px);font-weight:var(--mat-table-footer-supporting-text-weight);letter-spacing:var(--mat-table-footer-supporting-text-tracking)}.mat-mdc-header-cell{border-bottom-color:var(--mat-table-row-item-outline-color, rgba(0, 0, 0, 0.12));border-bottom-width:var(--mat-table-row-item-outline-width, 1px);border-bottom-style:solid;letter-spacing:var(--mat-table-header-headline-tracking);font-weight:inherit;line-height:inherit}.mat-mdc-cell{border-bottom-color:var(--mat-table-row-item-outline-color, rgba(0, 0, 0, 0.12));border-bottom-width:var(--mat-table-row-item-outline-width, 1px);border-bottom-style:solid;letter-spacing:var(--mat-table-row-item-label-text-tracking);line-height:inherit}.mdc-data-table__row:last-child .mat-mdc-cell{border-bottom:none}.mat-mdc-footer-cell{letter-spacing:var(--mat-table-row-item-label-text-tracking)}mat-row.mat-mdc-row,mat-header-row.mat-mdc-header-row,mat-footer-row.mat-mdc-footer-row{border-bottom:none}.mat-mdc-table tbody,.mat-mdc-table tfoot,.mat-mdc-table thead,.mat-mdc-cell,.mat-mdc-footer-cell,.mat-mdc-header-row,.mat-mdc-row,.mat-mdc-footer-row,.mat-mdc-table .mat-mdc-header-cell{background:inherit}.mat-mdc-table mat-header-row.mat-mdc-header-row,.mat-mdc-table mat-row.mat-mdc-row,.mat-mdc-table mat-footer-row.mat-mdc-footer-cell{height:unset}mat-header-cell.mat-mdc-header-cell,mat-cell.mat-mdc-cell,mat-footer-cell.mat-mdc-footer-cell{align-self:stretch}",
+  ],
+  encapsulation: 2,
 });
 var MatTable = _MatTable;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTable, [{
-    type: Component,
-    args: [{
-      selector: "mat-table, table[mat-table]",
-      exportAs: "matTable",
-      template: `
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTable,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "mat-table, table[mat-table]",
+              exportAs: "matTable",
+              template: `
     <ng-content select="caption"/>
     <ng-content select="colgroup, col"/>
 
@@ -2828,135 +3757,204 @@ var MatTable = _MatTable;
       <ng-container footerRowOutlet/>
     }
   `,
-      host: {
-        "class": "mat-mdc-table mdc-data-table__table",
-        "[class.mdc-table-fixed-layout]": "fixedLayout"
-      },
-      providers: [
-        {
-          provide: CdkTable,
-          useExisting: MatTable
+              host: {
+                class: "mat-mdc-table mdc-data-table__table",
+                "[class.mdc-table-fixed-layout]": "fixedLayout",
+              },
+              providers: [
+                {
+                  provide: CdkTable,
+                  useExisting: MatTable,
+                },
+                {
+                  provide: CDK_TABLE,
+                  useExisting: MatTable,
+                },
+                {
+                  provide: _COALESCED_STYLE_SCHEDULER,
+                  useClass: _CoalescedStyleScheduler,
+                },
+                // TODO(michaeljamesparsons) Abstract the view repeater strategy to a directive API so this code
+                //  is only included in the build if used.
+                {
+                  provide: _VIEW_REPEATER_STRATEGY,
+                  useClass: _DisposeViewRepeaterStrategy,
+                },
+                // Prevent nested tables from seeing this table's StickyPositioningListener.
+                {
+                  provide: STICKY_POSITIONING_LISTENER,
+                  useValue: null,
+                },
+              ],
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.Default,
+              standalone: true,
+              imports: [
+                HeaderRowOutlet,
+                DataRowOutlet,
+                NoDataRowOutlet,
+                FooterRowOutlet,
+              ],
+              styles: [
+                ".mat-mdc-table-sticky{position:sticky !important}.mdc-data-table{-webkit-overflow-scrolling:touch;display:inline-flex;flex-direction:column;box-sizing:border-box;position:relative}.mdc-data-table__table-container{-webkit-overflow-scrolling:touch;overflow-x:auto;width:100%}.mdc-data-table__table{min-width:100%;border:0;white-space:nowrap;border-spacing:0;table-layout:fixed}.mdc-data-table__cell{box-sizing:border-box;overflow:hidden;text-align:left;text-overflow:ellipsis}[dir=rtl] .mdc-data-table__cell,.mdc-data-table__cell[dir=rtl]{text-align:right}.mdc-data-table__cell--numeric{text-align:right}[dir=rtl] .mdc-data-table__cell--numeric,.mdc-data-table__cell--numeric[dir=rtl]{text-align:left}.mdc-data-table__header-cell{box-sizing:border-box;text-overflow:ellipsis;overflow:hidden;outline:none;text-align:left}[dir=rtl] .mdc-data-table__header-cell,.mdc-data-table__header-cell[dir=rtl]{text-align:right}.mdc-data-table__header-cell--numeric{text-align:right}[dir=rtl] .mdc-data-table__header-cell--numeric,.mdc-data-table__header-cell--numeric[dir=rtl]{text-align:left}.mdc-data-table__header-cell-wrapper{align-items:center;display:inline-flex;vertical-align:middle}.mdc-data-table__cell,.mdc-data-table__header-cell{padding:0 16px 0 16px}.mdc-data-table__header-cell--checkbox,.mdc-data-table__cell--checkbox{padding-left:4px;padding-right:0}[dir=rtl] .mdc-data-table__header-cell--checkbox,[dir=rtl] .mdc-data-table__cell--checkbox,.mdc-data-table__header-cell--checkbox[dir=rtl],.mdc-data-table__cell--checkbox[dir=rtl]{padding-left:0;padding-right:4px}mat-table{display:block}mat-header-row{min-height:56px}mat-row,mat-footer-row{min-height:48px}mat-row,mat-header-row,mat-footer-row{display:flex;border-width:0;border-bottom-width:1px;border-style:solid;align-items:center;box-sizing:border-box}mat-cell:first-of-type,mat-header-cell:first-of-type,mat-footer-cell:first-of-type{padding-left:24px}[dir=rtl] mat-cell:first-of-type:not(:only-of-type),[dir=rtl] mat-header-cell:first-of-type:not(:only-of-type),[dir=rtl] mat-footer-cell:first-of-type:not(:only-of-type){padding-left:0;padding-right:24px}mat-cell:last-of-type,mat-header-cell:last-of-type,mat-footer-cell:last-of-type{padding-right:24px}[dir=rtl] mat-cell:last-of-type:not(:only-of-type),[dir=rtl] mat-header-cell:last-of-type:not(:only-of-type),[dir=rtl] mat-footer-cell:last-of-type:not(:only-of-type){padding-right:0;padding-left:24px}mat-cell,mat-header-cell,mat-footer-cell{flex:1;display:flex;align-items:center;overflow:hidden;word-wrap:break-word;min-height:inherit}.mat-mdc-table{table-layout:auto;white-space:normal;background-color:var(--mat-table-background-color)}.mat-mdc-header-row{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;height:var(--mat-table-header-container-height, 56px);color:var(--mat-table-header-headline-color, rgba(0, 0, 0, 0.87));font-family:var(--mat-table-header-headline-font, Roboto, sans-serif);line-height:var(--mat-table-header-headline-line-height);font-size:var(--mat-table-header-headline-size, 14px);font-weight:var(--mat-table-header-headline-weight, 500)}.mat-mdc-row{height:var(--mat-table-row-item-container-height, 52px);color:var(--mat-table-row-item-label-text-color, rgba(0, 0, 0, 0.87))}.mat-mdc-row,.mdc-data-table__content{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:var(--mat-table-row-item-label-text-font, Roboto, sans-serif);line-height:var(--mat-table-row-item-label-text-line-height);font-size:var(--mat-table-row-item-label-text-size, 14px);font-weight:var(--mat-table-row-item-label-text-weight)}.mat-mdc-footer-row{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;height:var(--mat-table-footer-container-height, 52px);color:var(--mat-table-row-item-label-text-color, rgba(0, 0, 0, 0.87));font-family:var(--mat-table-footer-supporting-text-font, Roboto, sans-serif);line-height:var(--mat-table-footer-supporting-text-line-height);font-size:var(--mat-table-footer-supporting-text-size, 14px);font-weight:var(--mat-table-footer-supporting-text-weight);letter-spacing:var(--mat-table-footer-supporting-text-tracking)}.mat-mdc-header-cell{border-bottom-color:var(--mat-table-row-item-outline-color, rgba(0, 0, 0, 0.12));border-bottom-width:var(--mat-table-row-item-outline-width, 1px);border-bottom-style:solid;letter-spacing:var(--mat-table-header-headline-tracking);font-weight:inherit;line-height:inherit}.mat-mdc-cell{border-bottom-color:var(--mat-table-row-item-outline-color, rgba(0, 0, 0, 0.12));border-bottom-width:var(--mat-table-row-item-outline-width, 1px);border-bottom-style:solid;letter-spacing:var(--mat-table-row-item-label-text-tracking);line-height:inherit}.mdc-data-table__row:last-child .mat-mdc-cell{border-bottom:none}.mat-mdc-footer-cell{letter-spacing:var(--mat-table-row-item-label-text-tracking)}mat-row.mat-mdc-row,mat-header-row.mat-mdc-header-row,mat-footer-row.mat-mdc-footer-row{border-bottom:none}.mat-mdc-table tbody,.mat-mdc-table tfoot,.mat-mdc-table thead,.mat-mdc-cell,.mat-mdc-footer-cell,.mat-mdc-header-row,.mat-mdc-row,.mat-mdc-footer-row,.mat-mdc-table .mat-mdc-header-cell{background:inherit}.mat-mdc-table mat-header-row.mat-mdc-header-row,.mat-mdc-table mat-row.mat-mdc-row,.mat-mdc-table mat-footer-row.mat-mdc-footer-cell{height:unset}mat-header-cell.mat-mdc-header-cell,mat-cell.mat-mdc-cell,mat-footer-cell.mat-mdc-footer-cell{align-self:stretch}",
+              ],
+            },
+          ],
         },
-        {
-          provide: CDK_TABLE,
-          useExisting: MatTable
-        },
-        {
-          provide: _COALESCED_STYLE_SCHEDULER,
-          useClass: _CoalescedStyleScheduler
-        },
-        // TODO(michaeljamesparsons) Abstract the view repeater strategy to a directive API so this code
-        //  is only included in the build if used.
-        {
-          provide: _VIEW_REPEATER_STRATEGY,
-          useClass: _DisposeViewRepeaterStrategy
-        },
-        // Prevent nested tables from seeing this table's StickyPositioningListener.
-        {
-          provide: STICKY_POSITIONING_LISTENER,
-          useValue: null
-        }
       ],
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.Default,
-      standalone: true,
-      imports: [HeaderRowOutlet, DataRowOutlet, NoDataRowOutlet, FooterRowOutlet],
-      styles: [".mat-mdc-table-sticky{position:sticky !important}.mdc-data-table{-webkit-overflow-scrolling:touch;display:inline-flex;flex-direction:column;box-sizing:border-box;position:relative}.mdc-data-table__table-container{-webkit-overflow-scrolling:touch;overflow-x:auto;width:100%}.mdc-data-table__table{min-width:100%;border:0;white-space:nowrap;border-spacing:0;table-layout:fixed}.mdc-data-table__cell{box-sizing:border-box;overflow:hidden;text-align:left;text-overflow:ellipsis}[dir=rtl] .mdc-data-table__cell,.mdc-data-table__cell[dir=rtl]{text-align:right}.mdc-data-table__cell--numeric{text-align:right}[dir=rtl] .mdc-data-table__cell--numeric,.mdc-data-table__cell--numeric[dir=rtl]{text-align:left}.mdc-data-table__header-cell{box-sizing:border-box;text-overflow:ellipsis;overflow:hidden;outline:none;text-align:left}[dir=rtl] .mdc-data-table__header-cell,.mdc-data-table__header-cell[dir=rtl]{text-align:right}.mdc-data-table__header-cell--numeric{text-align:right}[dir=rtl] .mdc-data-table__header-cell--numeric,.mdc-data-table__header-cell--numeric[dir=rtl]{text-align:left}.mdc-data-table__header-cell-wrapper{align-items:center;display:inline-flex;vertical-align:middle}.mdc-data-table__cell,.mdc-data-table__header-cell{padding:0 16px 0 16px}.mdc-data-table__header-cell--checkbox,.mdc-data-table__cell--checkbox{padding-left:4px;padding-right:0}[dir=rtl] .mdc-data-table__header-cell--checkbox,[dir=rtl] .mdc-data-table__cell--checkbox,.mdc-data-table__header-cell--checkbox[dir=rtl],.mdc-data-table__cell--checkbox[dir=rtl]{padding-left:0;padding-right:4px}mat-table{display:block}mat-header-row{min-height:56px}mat-row,mat-footer-row{min-height:48px}mat-row,mat-header-row,mat-footer-row{display:flex;border-width:0;border-bottom-width:1px;border-style:solid;align-items:center;box-sizing:border-box}mat-cell:first-of-type,mat-header-cell:first-of-type,mat-footer-cell:first-of-type{padding-left:24px}[dir=rtl] mat-cell:first-of-type:not(:only-of-type),[dir=rtl] mat-header-cell:first-of-type:not(:only-of-type),[dir=rtl] mat-footer-cell:first-of-type:not(:only-of-type){padding-left:0;padding-right:24px}mat-cell:last-of-type,mat-header-cell:last-of-type,mat-footer-cell:last-of-type{padding-right:24px}[dir=rtl] mat-cell:last-of-type:not(:only-of-type),[dir=rtl] mat-header-cell:last-of-type:not(:only-of-type),[dir=rtl] mat-footer-cell:last-of-type:not(:only-of-type){padding-right:0;padding-left:24px}mat-cell,mat-header-cell,mat-footer-cell{flex:1;display:flex;align-items:center;overflow:hidden;word-wrap:break-word;min-height:inherit}.mat-mdc-table{table-layout:auto;white-space:normal;background-color:var(--mat-table-background-color)}.mat-mdc-header-row{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;height:var(--mat-table-header-container-height, 56px);color:var(--mat-table-header-headline-color, rgba(0, 0, 0, 0.87));font-family:var(--mat-table-header-headline-font, Roboto, sans-serif);line-height:var(--mat-table-header-headline-line-height);font-size:var(--mat-table-header-headline-size, 14px);font-weight:var(--mat-table-header-headline-weight, 500)}.mat-mdc-row{height:var(--mat-table-row-item-container-height, 52px);color:var(--mat-table-row-item-label-text-color, rgba(0, 0, 0, 0.87))}.mat-mdc-row,.mdc-data-table__content{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:var(--mat-table-row-item-label-text-font, Roboto, sans-serif);line-height:var(--mat-table-row-item-label-text-line-height);font-size:var(--mat-table-row-item-label-text-size, 14px);font-weight:var(--mat-table-row-item-label-text-weight)}.mat-mdc-footer-row{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;height:var(--mat-table-footer-container-height, 52px);color:var(--mat-table-row-item-label-text-color, rgba(0, 0, 0, 0.87));font-family:var(--mat-table-footer-supporting-text-font, Roboto, sans-serif);line-height:var(--mat-table-footer-supporting-text-line-height);font-size:var(--mat-table-footer-supporting-text-size, 14px);font-weight:var(--mat-table-footer-supporting-text-weight);letter-spacing:var(--mat-table-footer-supporting-text-tracking)}.mat-mdc-header-cell{border-bottom-color:var(--mat-table-row-item-outline-color, rgba(0, 0, 0, 0.12));border-bottom-width:var(--mat-table-row-item-outline-width, 1px);border-bottom-style:solid;letter-spacing:var(--mat-table-header-headline-tracking);font-weight:inherit;line-height:inherit}.mat-mdc-cell{border-bottom-color:var(--mat-table-row-item-outline-color, rgba(0, 0, 0, 0.12));border-bottom-width:var(--mat-table-row-item-outline-width, 1px);border-bottom-style:solid;letter-spacing:var(--mat-table-row-item-label-text-tracking);line-height:inherit}.mdc-data-table__row:last-child .mat-mdc-cell{border-bottom:none}.mat-mdc-footer-cell{letter-spacing:var(--mat-table-row-item-label-text-tracking)}mat-row.mat-mdc-row,mat-header-row.mat-mdc-header-row,mat-footer-row.mat-mdc-footer-row{border-bottom:none}.mat-mdc-table tbody,.mat-mdc-table tfoot,.mat-mdc-table thead,.mat-mdc-cell,.mat-mdc-footer-cell,.mat-mdc-header-row,.mat-mdc-row,.mat-mdc-footer-row,.mat-mdc-table .mat-mdc-header-cell{background:inherit}.mat-mdc-table mat-header-row.mat-mdc-header-row,.mat-mdc-table mat-row.mat-mdc-row,.mat-mdc-table mat-footer-row.mat-mdc-footer-cell{height:unset}mat-header-cell.mat-mdc-header-cell,mat-cell.mat-mdc-cell,mat-footer-cell.mat-mdc-footer-cell{align-self:stretch}"]
-    }]
-  }], null, null);
+      null,
+      null,
+    );
 })();
-var _MatCellDef = class _MatCellDef extends CdkCellDef {
-};
+var _MatCellDef = class _MatCellDef extends CdkCellDef {};
 _MatCellDef.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatCellDef_BaseFactory;
   return function MatCellDef_Factory(t) {
-    return (ɵMatCellDef_BaseFactory || (ɵMatCellDef_BaseFactory = ɵɵgetInheritedFactory(_MatCellDef)))(t || _MatCellDef);
+    return (
+      ɵMatCellDef_BaseFactory ||
+      (ɵMatCellDef_BaseFactory = ɵɵgetInheritedFactory(_MatCellDef))
+    )(t || _MatCellDef);
   };
 })();
 _MatCellDef.ɵdir = ɵɵdefineDirective({
   type: _MatCellDef,
   selectors: [["", "matCellDef", ""]],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: CdkCellDef,
-    useExisting: _MatCellDef
-  }]), ɵɵInheritDefinitionFeature]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkCellDef,
+        useExisting: _MatCellDef,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
 });
 var MatCellDef = _MatCellDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatCellDef, [{
-    type: Directive,
-    args: [{
-      selector: "[matCellDef]",
-      providers: [{
-        provide: CdkCellDef,
-        useExisting: MatCellDef
-      }],
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatCellDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[matCellDef]",
+              providers: [
+                {
+                  provide: CdkCellDef,
+                  useExisting: MatCellDef,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var _MatHeaderCellDef = class _MatHeaderCellDef extends CdkHeaderCellDef {
-};
+var _MatHeaderCellDef = class _MatHeaderCellDef extends CdkHeaderCellDef {};
 _MatHeaderCellDef.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatHeaderCellDef_BaseFactory;
   return function MatHeaderCellDef_Factory(t) {
-    return (ɵMatHeaderCellDef_BaseFactory || (ɵMatHeaderCellDef_BaseFactory = ɵɵgetInheritedFactory(_MatHeaderCellDef)))(t || _MatHeaderCellDef);
+    return (
+      ɵMatHeaderCellDef_BaseFactory ||
+      (ɵMatHeaderCellDef_BaseFactory = ɵɵgetInheritedFactory(_MatHeaderCellDef))
+    )(t || _MatHeaderCellDef);
   };
 })();
 _MatHeaderCellDef.ɵdir = ɵɵdefineDirective({
   type: _MatHeaderCellDef,
   selectors: [["", "matHeaderCellDef", ""]],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: CdkHeaderCellDef,
-    useExisting: _MatHeaderCellDef
-  }]), ɵɵInheritDefinitionFeature]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkHeaderCellDef,
+        useExisting: _MatHeaderCellDef,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
 });
 var MatHeaderCellDef = _MatHeaderCellDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatHeaderCellDef, [{
-    type: Directive,
-    args: [{
-      selector: "[matHeaderCellDef]",
-      providers: [{
-        provide: CdkHeaderCellDef,
-        useExisting: MatHeaderCellDef
-      }],
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatHeaderCellDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[matHeaderCellDef]",
+              providers: [
+                {
+                  provide: CdkHeaderCellDef,
+                  useExisting: MatHeaderCellDef,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var _MatFooterCellDef = class _MatFooterCellDef extends CdkFooterCellDef {
-};
+var _MatFooterCellDef = class _MatFooterCellDef extends CdkFooterCellDef {};
 _MatFooterCellDef.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatFooterCellDef_BaseFactory;
   return function MatFooterCellDef_Factory(t) {
-    return (ɵMatFooterCellDef_BaseFactory || (ɵMatFooterCellDef_BaseFactory = ɵɵgetInheritedFactory(_MatFooterCellDef)))(t || _MatFooterCellDef);
+    return (
+      ɵMatFooterCellDef_BaseFactory ||
+      (ɵMatFooterCellDef_BaseFactory = ɵɵgetInheritedFactory(_MatFooterCellDef))
+    )(t || _MatFooterCellDef);
   };
 })();
 _MatFooterCellDef.ɵdir = ɵɵdefineDirective({
   type: _MatFooterCellDef,
   selectors: [["", "matFooterCellDef", ""]],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: CdkFooterCellDef,
-    useExisting: _MatFooterCellDef
-  }]), ɵɵInheritDefinitionFeature]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkFooterCellDef,
+        useExisting: _MatFooterCellDef,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
 });
 var MatFooterCellDef = _MatFooterCellDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatFooterCellDef, [{
-    type: Directive,
-    args: [{
-      selector: "[matFooterCellDef]",
-      providers: [{
-        provide: CdkFooterCellDef,
-        useExisting: MatFooterCellDef
-      }],
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatFooterCellDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[matFooterCellDef]",
+              providers: [
+                {
+                  provide: CdkFooterCellDef,
+                  useExisting: MatFooterCellDef,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var _MatColumnDef = class _MatColumnDef extends CdkColumnDef {
   /** Unique name for this column. */
@@ -2980,81 +3978,125 @@ var _MatColumnDef = class _MatColumnDef extends CdkColumnDef {
 _MatColumnDef.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatColumnDef_BaseFactory;
   return function MatColumnDef_Factory(t) {
-    return (ɵMatColumnDef_BaseFactory || (ɵMatColumnDef_BaseFactory = ɵɵgetInheritedFactory(_MatColumnDef)))(t || _MatColumnDef);
+    return (
+      ɵMatColumnDef_BaseFactory ||
+      (ɵMatColumnDef_BaseFactory = ɵɵgetInheritedFactory(_MatColumnDef))
+    )(t || _MatColumnDef);
   };
 })();
 _MatColumnDef.ɵdir = ɵɵdefineDirective({
   type: _MatColumnDef,
   selectors: [["", "matColumnDef", ""]],
   inputs: {
-    name: [InputFlags.None, "matColumnDef", "name"]
+    name: [InputFlags.None, "matColumnDef", "name"],
   },
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: CdkColumnDef,
-    useExisting: _MatColumnDef
-  }, {
-    provide: "MAT_SORT_HEADER_COLUMN_DEF",
-    useExisting: _MatColumnDef
-  }]), ɵɵInheritDefinitionFeature]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkColumnDef,
+        useExisting: _MatColumnDef,
+      },
+      {
+        provide: "MAT_SORT_HEADER_COLUMN_DEF",
+        useExisting: _MatColumnDef,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
 });
 var MatColumnDef = _MatColumnDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatColumnDef, [{
-    type: Directive,
-    args: [{
-      selector: "[matColumnDef]",
-      providers: [{
-        provide: CdkColumnDef,
-        useExisting: MatColumnDef
-      }, {
-        provide: "MAT_SORT_HEADER_COLUMN_DEF",
-        useExisting: MatColumnDef
-      }],
-      standalone: true
-    }]
-  }], null, {
-    name: [{
-      type: Input,
-      args: ["matColumnDef"]
-    }]
-  });
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatColumnDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[matColumnDef]",
+              providers: [
+                {
+                  provide: CdkColumnDef,
+                  useExisting: MatColumnDef,
+                },
+                {
+                  provide: "MAT_SORT_HEADER_COLUMN_DEF",
+                  useExisting: MatColumnDef,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      {
+        name: [
+          {
+            type: Input,
+            args: ["matColumnDef"],
+          },
+        ],
+      },
+    );
 })();
-var _MatHeaderCell = class _MatHeaderCell extends CdkHeaderCell {
-};
+var _MatHeaderCell = class _MatHeaderCell extends CdkHeaderCell {};
 _MatHeaderCell.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatHeaderCell_BaseFactory;
   return function MatHeaderCell_Factory(t) {
-    return (ɵMatHeaderCell_BaseFactory || (ɵMatHeaderCell_BaseFactory = ɵɵgetInheritedFactory(_MatHeaderCell)))(t || _MatHeaderCell);
+    return (
+      ɵMatHeaderCell_BaseFactory ||
+      (ɵMatHeaderCell_BaseFactory = ɵɵgetInheritedFactory(_MatHeaderCell))
+    )(t || _MatHeaderCell);
   };
 })();
 _MatHeaderCell.ɵdir = ɵɵdefineDirective({
   type: _MatHeaderCell,
   selectors: [["mat-header-cell"], ["th", "mat-header-cell", ""]],
-  hostAttrs: ["role", "columnheader", 1, "mat-mdc-header-cell", "mdc-data-table__header-cell"],
+  hostAttrs: [
+    "role",
+    "columnheader",
+    1,
+    "mat-mdc-header-cell",
+    "mdc-data-table__header-cell",
+  ],
   standalone: true,
-  features: [ɵɵInheritDefinitionFeature]
+  features: [ɵɵInheritDefinitionFeature],
 });
 var MatHeaderCell = _MatHeaderCell;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatHeaderCell, [{
-    type: Directive,
-    args: [{
-      selector: "mat-header-cell, th[mat-header-cell]",
-      host: {
-        "class": "mat-mdc-header-cell mdc-data-table__header-cell",
-        "role": "columnheader"
-      },
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatHeaderCell,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "mat-header-cell, th[mat-header-cell]",
+              host: {
+                class: "mat-mdc-header-cell mdc-data-table__header-cell",
+                role: "columnheader",
+              },
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var _MatFooterCell = class _MatFooterCell extends CdkFooterCell {
-};
+var _MatFooterCell = class _MatFooterCell extends CdkFooterCell {};
 _MatFooterCell.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatFooterCell_BaseFactory;
   return function MatFooterCell_Factory(t) {
-    return (ɵMatFooterCell_BaseFactory || (ɵMatFooterCell_BaseFactory = ɵɵgetInheritedFactory(_MatFooterCell)))(t || _MatFooterCell);
+    return (
+      ɵMatFooterCell_BaseFactory ||
+      (ɵMatFooterCell_BaseFactory = ɵɵgetInheritedFactory(_MatFooterCell))
+    )(t || _MatFooterCell);
   };
 })();
 _MatFooterCell.ɵdir = ɵɵdefineDirective({
@@ -3062,27 +4104,39 @@ _MatFooterCell.ɵdir = ɵɵdefineDirective({
   selectors: [["mat-footer-cell"], ["td", "mat-footer-cell", ""]],
   hostAttrs: [1, "mat-mdc-footer-cell", "mdc-data-table__cell"],
   standalone: true,
-  features: [ɵɵInheritDefinitionFeature]
+  features: [ɵɵInheritDefinitionFeature],
 });
 var MatFooterCell = _MatFooterCell;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatFooterCell, [{
-    type: Directive,
-    args: [{
-      selector: "mat-footer-cell, td[mat-footer-cell]",
-      host: {
-        "class": "mat-mdc-footer-cell mdc-data-table__cell"
-      },
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatFooterCell,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "mat-footer-cell, td[mat-footer-cell]",
+              host: {
+                class: "mat-mdc-footer-cell mdc-data-table__cell",
+              },
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var _MatCell = class _MatCell extends CdkCell {
-};
+var _MatCell = class _MatCell extends CdkCell {};
 _MatCell.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatCell_BaseFactory;
   return function MatCell_Factory(t) {
-    return (ɵMatCell_BaseFactory || (ɵMatCell_BaseFactory = ɵɵgetInheritedFactory(_MatCell)))(t || _MatCell);
+    return (
+      ɵMatCell_BaseFactory ||
+      (ɵMatCell_BaseFactory = ɵɵgetInheritedFactory(_MatCell))
+    )(t || _MatCell);
   };
 })();
 _MatCell.ɵdir = ɵɵdefineDirective({
@@ -3090,28 +4144,40 @@ _MatCell.ɵdir = ɵɵdefineDirective({
   selectors: [["mat-cell"], ["td", "mat-cell", ""]],
   hostAttrs: [1, "mat-mdc-cell", "mdc-data-table__cell"],
   standalone: true,
-  features: [ɵɵInheritDefinitionFeature]
+  features: [ɵɵInheritDefinitionFeature],
 });
 var MatCell = _MatCell;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatCell, [{
-    type: Directive,
-    args: [{
-      selector: "mat-cell, td[mat-cell]",
-      host: {
-        "class": "mat-mdc-cell mdc-data-table__cell"
-      },
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatCell,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "mat-cell, td[mat-cell]",
+              host: {
+                class: "mat-mdc-cell mdc-data-table__cell",
+              },
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var ROW_TEMPLATE = `<ng-container cdkCellOutlet></ng-container>`;
-var _MatHeaderRowDef = class _MatHeaderRowDef extends CdkHeaderRowDef {
-};
+var _MatHeaderRowDef = class _MatHeaderRowDef extends CdkHeaderRowDef {};
 _MatHeaderRowDef.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatHeaderRowDef_BaseFactory;
   return function MatHeaderRowDef_Factory(t) {
-    return (ɵMatHeaderRowDef_BaseFactory || (ɵMatHeaderRowDef_BaseFactory = ɵɵgetInheritedFactory(_MatHeaderRowDef)))(t || _MatHeaderRowDef);
+    return (
+      ɵMatHeaderRowDef_BaseFactory ||
+      (ɵMatHeaderRowDef_BaseFactory = ɵɵgetInheritedFactory(_MatHeaderRowDef))
+    )(t || _MatHeaderRowDef);
   };
 })();
 _MatHeaderRowDef.ɵdir = ɵɵdefineDirective({
@@ -3119,42 +4185,70 @@ _MatHeaderRowDef.ɵdir = ɵɵdefineDirective({
   selectors: [["", "matHeaderRowDef", ""]],
   inputs: {
     columns: [InputFlags.None, "matHeaderRowDef", "columns"],
-    sticky: [InputFlags.HasDecoratorInputTransform, "matHeaderRowDefSticky", "sticky", booleanAttribute]
+    sticky: [
+      InputFlags.HasDecoratorInputTransform,
+      "matHeaderRowDefSticky",
+      "sticky",
+      booleanAttribute,
+    ],
   },
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: CdkHeaderRowDef,
-    useExisting: _MatHeaderRowDef
-  }]), ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkHeaderRowDef,
+        useExisting: _MatHeaderRowDef,
+      },
+    ]),
+    ɵɵInputTransformsFeature,
+    ɵɵInheritDefinitionFeature,
+  ],
 });
 var MatHeaderRowDef = _MatHeaderRowDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatHeaderRowDef, [{
-    type: Directive,
-    args: [{
-      selector: "[matHeaderRowDef]",
-      providers: [{
-        provide: CdkHeaderRowDef,
-        useExisting: MatHeaderRowDef
-      }],
-      inputs: [{
-        name: "columns",
-        alias: "matHeaderRowDef"
-      }, {
-        name: "sticky",
-        alias: "matHeaderRowDefSticky",
-        transform: booleanAttribute
-      }],
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatHeaderRowDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[matHeaderRowDef]",
+              providers: [
+                {
+                  provide: CdkHeaderRowDef,
+                  useExisting: MatHeaderRowDef,
+                },
+              ],
+              inputs: [
+                {
+                  name: "columns",
+                  alias: "matHeaderRowDef",
+                },
+                {
+                  name: "sticky",
+                  alias: "matHeaderRowDefSticky",
+                  transform: booleanAttribute,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var _MatFooterRowDef = class _MatFooterRowDef extends CdkFooterRowDef {
-};
+var _MatFooterRowDef = class _MatFooterRowDef extends CdkFooterRowDef {};
 _MatFooterRowDef.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatFooterRowDef_BaseFactory;
   return function MatFooterRowDef_Factory(t) {
-    return (ɵMatFooterRowDef_BaseFactory || (ɵMatFooterRowDef_BaseFactory = ɵɵgetInheritedFactory(_MatFooterRowDef)))(t || _MatFooterRowDef);
+    return (
+      ɵMatFooterRowDef_BaseFactory ||
+      (ɵMatFooterRowDef_BaseFactory = ɵɵgetInheritedFactory(_MatFooterRowDef))
+    )(t || _MatFooterRowDef);
   };
 })();
 _MatFooterRowDef.ɵdir = ɵɵdefineDirective({
@@ -3162,42 +4256,70 @@ _MatFooterRowDef.ɵdir = ɵɵdefineDirective({
   selectors: [["", "matFooterRowDef", ""]],
   inputs: {
     columns: [InputFlags.None, "matFooterRowDef", "columns"],
-    sticky: [InputFlags.HasDecoratorInputTransform, "matFooterRowDefSticky", "sticky", booleanAttribute]
+    sticky: [
+      InputFlags.HasDecoratorInputTransform,
+      "matFooterRowDefSticky",
+      "sticky",
+      booleanAttribute,
+    ],
   },
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: CdkFooterRowDef,
-    useExisting: _MatFooterRowDef
-  }]), ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkFooterRowDef,
+        useExisting: _MatFooterRowDef,
+      },
+    ]),
+    ɵɵInputTransformsFeature,
+    ɵɵInheritDefinitionFeature,
+  ],
 });
 var MatFooterRowDef = _MatFooterRowDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatFooterRowDef, [{
-    type: Directive,
-    args: [{
-      selector: "[matFooterRowDef]",
-      providers: [{
-        provide: CdkFooterRowDef,
-        useExisting: MatFooterRowDef
-      }],
-      inputs: [{
-        name: "columns",
-        alias: "matFooterRowDef"
-      }, {
-        name: "sticky",
-        alias: "matFooterRowDefSticky",
-        transform: booleanAttribute
-      }],
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatFooterRowDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[matFooterRowDef]",
+              providers: [
+                {
+                  provide: CdkFooterRowDef,
+                  useExisting: MatFooterRowDef,
+                },
+              ],
+              inputs: [
+                {
+                  name: "columns",
+                  alias: "matFooterRowDef",
+                },
+                {
+                  name: "sticky",
+                  alias: "matFooterRowDefSticky",
+                  transform: booleanAttribute,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var _MatRowDef = class _MatRowDef extends CdkRowDef {
-};
+var _MatRowDef = class _MatRowDef extends CdkRowDef {};
 _MatRowDef.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatRowDef_BaseFactory;
   return function MatRowDef_Factory(t) {
-    return (ɵMatRowDef_BaseFactory || (ɵMatRowDef_BaseFactory = ɵɵgetInheritedFactory(_MatRowDef)))(t || _MatRowDef);
+    return (
+      ɵMatRowDef_BaseFactory ||
+      (ɵMatRowDef_BaseFactory = ɵɵgetInheritedFactory(_MatRowDef))
+    )(t || _MatRowDef);
   };
 })();
 _MatRowDef.ɵdir = ɵɵdefineDirective({
@@ -3205,53 +4327,87 @@ _MatRowDef.ɵdir = ɵɵdefineDirective({
   selectors: [["", "matRowDef", ""]],
   inputs: {
     columns: [InputFlags.None, "matRowDefColumns", "columns"],
-    when: [InputFlags.None, "matRowDefWhen", "when"]
+    when: [InputFlags.None, "matRowDefWhen", "when"],
   },
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: CdkRowDef,
-    useExisting: _MatRowDef
-  }]), ɵɵInheritDefinitionFeature]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkRowDef,
+        useExisting: _MatRowDef,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
 });
 var MatRowDef = _MatRowDef;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatRowDef, [{
-    type: Directive,
-    args: [{
-      selector: "[matRowDef]",
-      providers: [{
-        provide: CdkRowDef,
-        useExisting: MatRowDef
-      }],
-      inputs: [{
-        name: "columns",
-        alias: "matRowDefColumns"
-      }, {
-        name: "when",
-        alias: "matRowDefWhen"
-      }],
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatRowDef,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[matRowDef]",
+              providers: [
+                {
+                  provide: CdkRowDef,
+                  useExisting: MatRowDef,
+                },
+              ],
+              inputs: [
+                {
+                  name: "columns",
+                  alias: "matRowDefColumns",
+                },
+                {
+                  name: "when",
+                  alias: "matRowDefWhen",
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var _MatHeaderRow = class _MatHeaderRow extends CdkHeaderRow {
-};
+var _MatHeaderRow = class _MatHeaderRow extends CdkHeaderRow {};
 _MatHeaderRow.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatHeaderRow_BaseFactory;
   return function MatHeaderRow_Factory(t) {
-    return (ɵMatHeaderRow_BaseFactory || (ɵMatHeaderRow_BaseFactory = ɵɵgetInheritedFactory(_MatHeaderRow)))(t || _MatHeaderRow);
+    return (
+      ɵMatHeaderRow_BaseFactory ||
+      (ɵMatHeaderRow_BaseFactory = ɵɵgetInheritedFactory(_MatHeaderRow))
+    )(t || _MatHeaderRow);
   };
 })();
 _MatHeaderRow.ɵcmp = ɵɵdefineComponent({
   type: _MatHeaderRow,
   selectors: [["mat-header-row"], ["tr", "mat-header-row", ""]],
-  hostAttrs: ["role", "row", 1, "mat-mdc-header-row", "mdc-data-table__header-row"],
+  hostAttrs: [
+    "role",
+    "row",
+    1,
+    "mat-mdc-header-row",
+    "mdc-data-table__header-row",
+  ],
   exportAs: ["matHeaderRow"],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: CdkHeaderRow,
-    useExisting: _MatHeaderRow
-  }]), ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkHeaderRow,
+        useExisting: _MatHeaderRow,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+    ɵɵStandaloneFeature,
+  ],
   decls: 1,
   vars: 0,
   consts: [["cdkCellOutlet", ""]],
@@ -3261,39 +4417,53 @@ _MatHeaderRow.ɵcmp = ɵɵdefineComponent({
     }
   },
   dependencies: [CdkCellOutlet],
-  encapsulation: 2
+  encapsulation: 2,
 });
 var MatHeaderRow = _MatHeaderRow;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatHeaderRow, [{
-    type: Component,
-    args: [{
-      selector: "mat-header-row, tr[mat-header-row]",
-      template: ROW_TEMPLATE,
-      host: {
-        "class": "mat-mdc-header-row mdc-data-table__header-row",
-        "role": "row"
-      },
-      // See note on CdkTable for explanation on why this uses the default change detection strategy.
-      // tslint:disable-next-line:validate-decorators
-      changeDetection: ChangeDetectionStrategy.Default,
-      encapsulation: ViewEncapsulation$1.None,
-      exportAs: "matHeaderRow",
-      providers: [{
-        provide: CdkHeaderRow,
-        useExisting: MatHeaderRow
-      }],
-      standalone: true,
-      imports: [CdkCellOutlet]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatHeaderRow,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "mat-header-row, tr[mat-header-row]",
+              template: ROW_TEMPLATE,
+              host: {
+                class: "mat-mdc-header-row mdc-data-table__header-row",
+                role: "row",
+              },
+              // See note on CdkTable for explanation on why this uses the default change detection strategy.
+              // tslint:disable-next-line:validate-decorators
+              changeDetection: ChangeDetectionStrategy.Default,
+              encapsulation: ViewEncapsulation$1.None,
+              exportAs: "matHeaderRow",
+              providers: [
+                {
+                  provide: CdkHeaderRow,
+                  useExisting: MatHeaderRow,
+                },
+              ],
+              standalone: true,
+              imports: [CdkCellOutlet],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var _MatFooterRow = class _MatFooterRow extends CdkFooterRow {
-};
+var _MatFooterRow = class _MatFooterRow extends CdkFooterRow {};
 _MatFooterRow.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatFooterRow_BaseFactory;
   return function MatFooterRow_Factory(t) {
-    return (ɵMatFooterRow_BaseFactory || (ɵMatFooterRow_BaseFactory = ɵɵgetInheritedFactory(_MatFooterRow)))(t || _MatFooterRow);
+    return (
+      ɵMatFooterRow_BaseFactory ||
+      (ɵMatFooterRow_BaseFactory = ɵɵgetInheritedFactory(_MatFooterRow))
+    )(t || _MatFooterRow);
   };
 })();
 _MatFooterRow.ɵcmp = ɵɵdefineComponent({
@@ -3302,10 +4472,16 @@ _MatFooterRow.ɵcmp = ɵɵdefineComponent({
   hostAttrs: ["role", "row", 1, "mat-mdc-footer-row", "mdc-data-table__row"],
   exportAs: ["matFooterRow"],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: CdkFooterRow,
-    useExisting: _MatFooterRow
-  }]), ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkFooterRow,
+        useExisting: _MatFooterRow,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+    ɵɵStandaloneFeature,
+  ],
   decls: 1,
   vars: 0,
   consts: [["cdkCellOutlet", ""]],
@@ -3315,39 +4491,53 @@ _MatFooterRow.ɵcmp = ɵɵdefineComponent({
     }
   },
   dependencies: [CdkCellOutlet],
-  encapsulation: 2
+  encapsulation: 2,
 });
 var MatFooterRow = _MatFooterRow;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatFooterRow, [{
-    type: Component,
-    args: [{
-      selector: "mat-footer-row, tr[mat-footer-row]",
-      template: ROW_TEMPLATE,
-      host: {
-        "class": "mat-mdc-footer-row mdc-data-table__row",
-        "role": "row"
-      },
-      // See note on CdkTable for explanation on why this uses the default change detection strategy.
-      // tslint:disable-next-line:validate-decorators
-      changeDetection: ChangeDetectionStrategy.Default,
-      encapsulation: ViewEncapsulation$1.None,
-      exportAs: "matFooterRow",
-      providers: [{
-        provide: CdkFooterRow,
-        useExisting: MatFooterRow
-      }],
-      standalone: true,
-      imports: [CdkCellOutlet]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatFooterRow,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "mat-footer-row, tr[mat-footer-row]",
+              template: ROW_TEMPLATE,
+              host: {
+                class: "mat-mdc-footer-row mdc-data-table__row",
+                role: "row",
+              },
+              // See note on CdkTable for explanation on why this uses the default change detection strategy.
+              // tslint:disable-next-line:validate-decorators
+              changeDetection: ChangeDetectionStrategy.Default,
+              encapsulation: ViewEncapsulation$1.None,
+              exportAs: "matFooterRow",
+              providers: [
+                {
+                  provide: CdkFooterRow,
+                  useExisting: MatFooterRow,
+                },
+              ],
+              standalone: true,
+              imports: [CdkCellOutlet],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var _MatRow = class _MatRow extends CdkRow {
-};
+var _MatRow = class _MatRow extends CdkRow {};
 _MatRow.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatRow_BaseFactory;
   return function MatRow_Factory(t) {
-    return (ɵMatRow_BaseFactory || (ɵMatRow_BaseFactory = ɵɵgetInheritedFactory(_MatRow)))(t || _MatRow);
+    return (
+      ɵMatRow_BaseFactory ||
+      (ɵMatRow_BaseFactory = ɵɵgetInheritedFactory(_MatRow))
+    )(t || _MatRow);
   };
 })();
 _MatRow.ɵcmp = ɵɵdefineComponent({
@@ -3356,10 +4546,16 @@ _MatRow.ɵcmp = ɵɵdefineComponent({
   hostAttrs: ["role", "row", 1, "mat-mdc-row", "mdc-data-table__row"],
   exportAs: ["matRow"],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: CdkRow,
-    useExisting: _MatRow
-  }]), ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkRow,
+        useExisting: _MatRow,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+    ɵɵStandaloneFeature,
+  ],
   decls: 1,
   vars: 0,
   consts: [["cdkCellOutlet", ""]],
@@ -3369,32 +4565,44 @@ _MatRow.ɵcmp = ɵɵdefineComponent({
     }
   },
   dependencies: [CdkCellOutlet],
-  encapsulation: 2
+  encapsulation: 2,
 });
 var MatRow = _MatRow;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatRow, [{
-    type: Component,
-    args: [{
-      selector: "mat-row, tr[mat-row]",
-      template: ROW_TEMPLATE,
-      host: {
-        "class": "mat-mdc-row mdc-data-table__row",
-        "role": "row"
-      },
-      // See note on CdkTable for explanation on why this uses the default change detection strategy.
-      // tslint:disable-next-line:validate-decorators
-      changeDetection: ChangeDetectionStrategy.Default,
-      encapsulation: ViewEncapsulation$1.None,
-      exportAs: "matRow",
-      providers: [{
-        provide: CdkRow,
-        useExisting: MatRow
-      }],
-      standalone: true,
-      imports: [CdkCellOutlet]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatRow,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "mat-row, tr[mat-row]",
+              template: ROW_TEMPLATE,
+              host: {
+                class: "mat-mdc-row mdc-data-table__row",
+                role: "row",
+              },
+              // See note on CdkTable for explanation on why this uses the default change detection strategy.
+              // tslint:disable-next-line:validate-decorators
+              changeDetection: ChangeDetectionStrategy.Default,
+              encapsulation: ViewEncapsulation$1.None,
+              exportAs: "matRow",
+              providers: [
+                {
+                  provide: CdkRow,
+                  useExisting: MatRow,
+                },
+              ],
+              standalone: true,
+              imports: [CdkCellOutlet],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var _MatNoDataRow = class _MatNoDataRow extends CdkNoDataRow {
   constructor() {
@@ -3405,38 +4613,60 @@ var _MatNoDataRow = class _MatNoDataRow extends CdkNoDataRow {
 _MatNoDataRow.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatNoDataRow_BaseFactory;
   return function MatNoDataRow_Factory(t) {
-    return (ɵMatNoDataRow_BaseFactory || (ɵMatNoDataRow_BaseFactory = ɵɵgetInheritedFactory(_MatNoDataRow)))(t || _MatNoDataRow);
+    return (
+      ɵMatNoDataRow_BaseFactory ||
+      (ɵMatNoDataRow_BaseFactory = ɵɵgetInheritedFactory(_MatNoDataRow))
+    )(t || _MatNoDataRow);
   };
 })();
 _MatNoDataRow.ɵdir = ɵɵdefineDirective({
   type: _MatNoDataRow,
   selectors: [["ng-template", "matNoDataRow", ""]],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: CdkNoDataRow,
-    useExisting: _MatNoDataRow
-  }]), ɵɵInheritDefinitionFeature]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: CdkNoDataRow,
+        useExisting: _MatNoDataRow,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
 });
 var MatNoDataRow = _MatNoDataRow;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatNoDataRow, [{
-    type: Directive,
-    args: [{
-      selector: "ng-template[matNoDataRow]",
-      providers: [{
-        provide: CdkNoDataRow,
-        useExisting: MatNoDataRow
-      }],
-      standalone: true
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatNoDataRow,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "ng-template[matNoDataRow]",
+              providers: [
+                {
+                  provide: CdkNoDataRow,
+                  useExisting: MatNoDataRow,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var _MatTextColumn = class _MatTextColumn extends CdkTextColumn {
-};
+var _MatTextColumn = class _MatTextColumn extends CdkTextColumn {};
 _MatTextColumn.ɵfac = /* @__PURE__ */ (() => {
   let ɵMatTextColumn_BaseFactory;
   return function MatTextColumn_Factory(t) {
-    return (ɵMatTextColumn_BaseFactory || (ɵMatTextColumn_BaseFactory = ɵɵgetInheritedFactory(_MatTextColumn)))(t || _MatTextColumn);
+    return (
+      ɵMatTextColumn_BaseFactory ||
+      (ɵMatTextColumn_BaseFactory = ɵɵgetInheritedFactory(_MatTextColumn))
+    )(t || _MatTextColumn);
   };
 })();
 _MatTextColumn.ɵcmp = ɵɵdefineComponent({
@@ -3446,24 +4676,48 @@ _MatTextColumn.ɵcmp = ɵɵdefineComponent({
   features: [ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
   decls: 3,
   vars: 0,
-  consts: [["matColumnDef", ""], ["mat-header-cell", "", 3, "text-align", 4, "matHeaderCellDef"], ["mat-cell", "", 3, "text-align", 4, "matCellDef"], ["mat-header-cell", ""], ["mat-cell", ""]],
+  consts: [
+    ["matColumnDef", ""],
+    ["mat-header-cell", "", 3, "text-align", 4, "matHeaderCellDef"],
+    ["mat-cell", "", 3, "text-align", 4, "matCellDef"],
+    ["mat-header-cell", ""],
+    ["mat-cell", ""],
+  ],
   template: function MatTextColumn_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵelementContainerStart(0, 0);
-      ɵɵtemplate(1, MatTextColumn_th_1_Template, 2, 3, "th", 1)(2, MatTextColumn_td_2_Template, 2, 3, "td", 2);
+      ɵɵtemplate(1, MatTextColumn_th_1_Template, 2, 3, "th", 1)(
+        2,
+        MatTextColumn_td_2_Template,
+        2,
+        3,
+        "td",
+        2,
+      );
       ɵɵelementContainerEnd();
     }
   },
-  dependencies: [MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell],
-  encapsulation: 2
+  dependencies: [
+    MatColumnDef,
+    MatHeaderCellDef,
+    MatHeaderCell,
+    MatCellDef,
+    MatCell,
+  ],
+  encapsulation: 2,
 });
 var MatTextColumn = _MatTextColumn;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTextColumn, [{
-    type: Component,
-    args: [{
-      selector: "mat-text-column",
-      template: `
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTextColumn,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "mat-text-column",
+              template: `
     <ng-container matColumnDef>
       <th mat-header-cell *matHeaderCellDef [style.text-align]="justify">
         {{headerText}}
@@ -3473,18 +4727,29 @@ var MatTextColumn = _MatTextColumn;
       </td>
     </ng-container>
   `,
-      encapsulation: ViewEncapsulation$1.None,
-      // Change detection is intentionally not set to OnPush. This component's template will be provided
-      // to the table to be inserted into its view. This is problematic when change detection runs since
-      // the bindings in this template will be evaluated _after_ the table's view is evaluated, which
-      // mean's the template in the table's view will not have the updated value (and in fact will cause
-      // an ExpressionChangedAfterItHasBeenCheckedError).
-      // tslint:disable-next-line:validate-decorators
-      changeDetection: ChangeDetectionStrategy.Default,
-      standalone: true,
-      imports: [MatColumnDef, MatHeaderCellDef, MatHeaderCell, MatCellDef, MatCell]
-    }]
-  }], null, null);
+              encapsulation: ViewEncapsulation$1.None,
+              // Change detection is intentionally not set to OnPush. This component's template will be provided
+              // to the table to be inserted into its view. This is problematic when change detection runs since
+              // the bindings in this template will be evaluated _after_ the table's view is evaluated, which
+              // mean's the template in the table's view will not have the updated value (and in fact will cause
+              // an ExpressionChangedAfterItHasBeenCheckedError).
+              // tslint:disable-next-line:validate-decorators
+              changeDetection: ChangeDetectionStrategy.Default,
+              standalone: true,
+              imports: [
+                MatColumnDef,
+                MatHeaderCellDef,
+                MatHeaderCell,
+                MatCellDef,
+                MatCell,
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var EXPORTED_DECLARATIONS2 = [
   // Table
@@ -3507,10 +4772,9 @@ var EXPORTED_DECLARATIONS2 = [
   MatRow,
   MatFooterRow,
   MatNoDataRow,
-  MatTextColumn
+  MatTextColumn,
 ];
-var _MatTableModule = class _MatTableModule {
-};
+var _MatTableModule = class _MatTableModule {};
 _MatTableModule.ɵfac = function MatTableModule_Factory(t) {
   return new (t || _MatTableModule)();
 };
@@ -3539,7 +4803,7 @@ _MatTableModule.ɵmod = ɵɵdefineNgModule({
     MatRow,
     MatFooterRow,
     MatNoDataRow,
-    MatTextColumn
+    MatTextColumn,
   ],
   exports: [
     MatCommonModule,
@@ -3563,21 +4827,35 @@ _MatTableModule.ɵmod = ɵɵdefineNgModule({
     MatRow,
     MatFooterRow,
     MatNoDataRow,
-    MatTextColumn
-  ]
+    MatTextColumn,
+  ],
 });
 _MatTableModule.ɵinj = ɵɵdefineInjector({
-  imports: [MatCommonModule, CdkTableModule, MatCommonModule]
+  imports: [MatCommonModule, CdkTableModule, MatCommonModule],
 });
 var MatTableModule = _MatTableModule;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTableModule, [{
-    type: NgModule,
-    args: [{
-      imports: [MatCommonModule, CdkTableModule, ...EXPORTED_DECLARATIONS2],
-      exports: [MatCommonModule, EXPORTED_DECLARATIONS2]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTableModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [
+                MatCommonModule,
+                CdkTableModule,
+                ...EXPORTED_DECLARATIONS2,
+              ],
+              exports: [MatCommonModule, EXPORTED_DECLARATIONS2],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var MAX_SAFE_INTEGER = 9007199254740991;
 var MatTableDataSource = class extends DataSource {
@@ -3682,9 +4960,11 @@ var MatTableDataSource = class extends DataSource {
       });
     };
     this.filterPredicate = (data, filter) => {
-      const dataStr = Object.keys(data).reduce((currentTerm, key) => {
-        return currentTerm + data[key] + "◬";
-      }, "").toLowerCase();
+      const dataStr = Object.keys(data)
+        .reduce((currentTerm, key) => {
+          return currentTerm + data[key] + "◬";
+        }, "")
+        .toLowerCase();
       const transformedFilter = filter.trim().toLowerCase();
       return dataStr.indexOf(transformedFilter) != -1;
     };
@@ -3697,14 +4977,30 @@ var MatTableDataSource = class extends DataSource {
    * the provided base data and send it to the table for rendering.
    */
   _updateChangeSubscription() {
-    const sortChange = this._sort ? merge(this._sort.sortChange, this._sort.initialized) : of(null);
-    const pageChange = this._paginator ? merge(this._paginator.page, this._internalPageChanges, this._paginator.initialized) : of(null);
+    const sortChange = this._sort
+      ? merge(this._sort.sortChange, this._sort.initialized)
+      : of(null);
+    const pageChange = this._paginator
+      ? merge(
+          this._paginator.page,
+          this._internalPageChanges,
+          this._paginator.initialized,
+        )
+      : of(null);
     const dataStream = this._data;
-    const filteredData = combineLatest([dataStream, this._filter]).pipe(map(([data]) => this._filterData(data)));
-    const orderedData = combineLatest([filteredData, sortChange]).pipe(map(([data]) => this._orderData(data)));
-    const paginatedData = combineLatest([orderedData, pageChange]).pipe(map(([data]) => this._pageData(data)));
+    const filteredData = combineLatest([dataStream, this._filter]).pipe(
+      map(([data]) => this._filterData(data)),
+    );
+    const orderedData = combineLatest([filteredData, sortChange]).pipe(
+      map(([data]) => this._orderData(data)),
+    );
+    const paginatedData = combineLatest([orderedData, pageChange]).pipe(
+      map(([data]) => this._pageData(data)),
+    );
     this._renderChangesSubscription?.unsubscribe();
-    this._renderChangesSubscription = paginatedData.subscribe((data) => this._renderData.next(data));
+    this._renderChangesSubscription = paginatedData.subscribe((data) =>
+      this._renderData.next(data),
+    );
   }
   /**
    * Returns a filtered data array where each filter object contains the filter string within
@@ -3712,7 +5008,10 @@ var MatTableDataSource = class extends DataSource {
    * as provided.
    */
   _filterData(data) {
-    this.filteredData = this.filter == null || this.filter === "" ? data : data.filter((obj) => this.filterPredicate(obj, this.filter));
+    this.filteredData =
+      this.filter == null || this.filter === ""
+        ? data
+        : data.filter((obj) => this.filterPredicate(obj, this.filter));
     if (this.paginator) {
       this._updatePaginator(this.filteredData.length);
     }
@@ -3753,7 +5052,8 @@ var MatTableDataSource = class extends DataSource {
       }
       paginator.length = filteredDataLength;
       if (paginator.pageIndex > 0) {
-        const lastPageIndex = Math.ceil(paginator.length / paginator.pageSize) - 1 || 0;
+        const lastPageIndex =
+          Math.ceil(paginator.length / paginator.pageSize) - 1 || 0;
         const newPageIndex = Math.min(paginator.pageIndex, lastPageIndex);
         if (newPageIndex !== paginator.pageIndex) {
           paginator.pageIndex = newPageIndex;
@@ -3800,6 +5100,6 @@ export {
   MatTable,
   MatTableDataSource,
   MatTableModule,
-  MatTextColumn
+  MatTextColumn,
 };
 //# sourceMappingURL=@angular_material_table.js.map

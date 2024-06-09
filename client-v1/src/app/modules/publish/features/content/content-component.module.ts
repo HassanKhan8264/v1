@@ -46,7 +46,7 @@ import { MaterialModule } from "../../../../shared/modules/material.module";
 // import { FirstCommentComponent } from "./components/first-comment/first-comment.component";
 // import { HashTagSuggestionDialogComponent } from "./components/hash-tag-suggestion-dialog/hash-tag-suggestion-dialog.component";
 
-const components :any[]= [
+const components: any[] = [
   ContentLayoutComponent,
   // PostEditorComponent,
   // ContentScreenComponent,

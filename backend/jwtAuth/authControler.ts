@@ -1,12 +1,11 @@
 import { Response, Request } from "express";
 import jwt from "jsonwebtoken";
-import bcrypt from "bcrypt"; // Import bcrypt here
+import bcrypt from "bcrypt";
 import { userModel } from "../models/userAccountScehma";
 import { userSchema } from "./validator";
 import { BaseController } from "../baseController";
 import { resolve } from "path";
-import config from "../config";
-// import { Request, Response } from "../../custom";
+import config from "../../config";
 
 export class authController extends BaseController {
   signUp = async (req: Request, res: Response) => {
@@ -77,7 +76,7 @@ export class authController extends BaseController {
           email: user.email,
           exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24, // Token expires after 24 hours
         },
-        config.Jwt_Secret
+        config.Jwt_Secret,
       );
 
       // Set cookie with the token

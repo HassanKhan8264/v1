@@ -40,7 +40,7 @@ const routes: Routes = [
         // data: { feature: "PUBLISH" },
         loadChildren: () =>
           import("./modules/publish/publish.module").then(
-            (m) => m.PublishModule
+            (m) => m.PublishModule,
           ),
       },
       {
@@ -48,7 +48,7 @@ const routes: Routes = [
         canActivate: [AuthGuard],
         loadChildren: () =>
           import("./modules/calender/calender.module").then(
-            (m) => m.CalenderModule
+            (m) => m.CalenderModule,
           ),
       },
       // Other routes...

@@ -3,8 +3,6 @@ import { CommonModule } from "@angular/common";
 // Ensure that tslib is imported correctly
 // Ensure that tslib is imported correctly
 
-
-
 import { PublishRoutingModule } from "./publish-routing.module";
 // import { SharedModule } from "../shared/shared.module";
 import { PublishSidebarComponent } from "./publish-sidebar/publish-sidebar/publish-sidebar.component";
@@ -32,8 +30,6 @@ import { MaterialModule } from "../../shared/modules/material.module";
   // providers: [...services, { provide: CDK_DRAG_CONFIG, useValue: DragConfig }],
   // providers: [...services, { provide: CDK_DRAG_CONFIG, useValue: DragConfig }],
 })
-
-
 export class PublishModule {
-  constructor() { }
+  constructor() {}
 }

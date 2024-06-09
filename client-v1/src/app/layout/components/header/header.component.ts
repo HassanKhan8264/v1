@@ -18,7 +18,7 @@ export class HeaderComponent {
   constructor(
     private EndpointService: EndpointService,
     private http: HttpClient,
-    private router: Router
+    private router: Router,
   ) {
     // this.userId = 2
   }
@@ -43,7 +43,7 @@ export class HeaderComponent {
         },
         (err) => {
           alert("Something went wrong");
-        }
+        },
       );
   }
   getAllUser() {

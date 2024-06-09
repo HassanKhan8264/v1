@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private http: HttpClient,
-    private router: Router
+    private router: Router,
   ) {}
 
   ngOnInit(): void {
@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
         },
         (err) => {
           alert("Something went wrong");
-        }
+        },
       );
   }
 }

@@ -16,7 +16,7 @@ export class TokenInterceptorService implements HttpInterceptor {
 
   intercept(
     req: HttpRequest<any>,
-    next: HttpHandler
+    next: HttpHandler,
   ): Observable<HttpEvent<any>> {
     let tokenizeReq = req.clone({
       setHeaders: {

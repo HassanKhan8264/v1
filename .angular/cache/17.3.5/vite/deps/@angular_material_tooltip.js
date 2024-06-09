@@ -10,7 +10,7 @@ import {
   TOOLTIP_PANEL_CLASS,
   TooltipComponent,
   getMatTooltipInvalidPositionError,
-  matTooltipAnimations
+  matTooltipAnimations,
 } from "./chunk-C6C7YQM6.js";
 import "./chunk-ZGLNX5QT.js";
 import "./chunk-ETKHRJO3.js";
@@ -35,6 +35,6 @@ export {
   TOOLTIP_PANEL_CLASS,
   TooltipComponent,
   getMatTooltipInvalidPositionError,
-  matTooltipAnimations
+  matTooltipAnimations,
 };
 //# sourceMappingURL=@angular_material_tooltip.js.map

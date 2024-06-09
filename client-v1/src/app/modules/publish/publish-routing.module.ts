@@ -21,7 +21,7 @@ const routes: Routes = [
         // resolve: APP_VERSION === "1" ? { url: ExternalAppResolver } : {},
         loadChildren: () =>
           import("./features/content/content.module").then(
-            (m) => m.ContentModule
+            (m) => m.ContentModule,
           ),
       },
       //   {

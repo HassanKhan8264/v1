@@ -43,7 +43,7 @@ import {
   mixinInitialized,
   mixinTabIndex,
   provideNativeDateAdapter,
-  setLines
+  setLines,
 } from "./chunk-Z5DUCAAR.js";
 import "./chunk-JR5M4PHK.js";
 import "./chunk-237XUEJ5.js";
@@ -96,6 +96,6 @@ export {
   mixinInitialized,
   mixinTabIndex,
   provideNativeDateAdapter,
-  setLines
+  setLines,
 };
 //# sourceMappingURL=@angular_material_core.js.map

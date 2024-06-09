@@ -8,7 +8,10 @@ import { Component, OnInit } from "@angular/core";
   styleUrl: "./calender-layout.component.scss",
 })
 export class CalenderLayoutComponent implements OnInit {
-  constructor(private router: Router, private http: HttpClient) {}
+  constructor(
+    private router: Router,
+    private http: HttpClient,
+  ) {}
   ngOnInit() {
     this.login();
   }
@@ -27,7 +30,7 @@ export class CalenderLayoutComponent implements OnInit {
             this.router.navigate(["/login"]);
           }
         }
-      }
+      },
     );
   }
 }

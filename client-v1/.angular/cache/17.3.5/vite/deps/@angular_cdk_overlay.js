@@ -23,14 +23,14 @@ import {
   ScrollStrategyOptions,
   ScrollingVisibility,
   validateHorizontalPosition,
-  validateVerticalPosition
+  validateVerticalPosition,
 } from "./chunk-BWAWQOZ4.js";
 import "./chunk-BLCPA2F6.js";
 import "./chunk-237XUEJ5.js";
 import {
   CdkScrollable,
   ScrollDispatcher,
-  ViewportRuler
+  ViewportRuler,
 } from "./chunk-VCMUHK75.js";
 import "./chunk-5O5QX3PG.js";
 import "./chunk-7OBXTRYY.js";
@@ -65,6 +65,6 @@ export {
   ScrollingVisibility,
   ViewportRuler,
   validateHorizontalPosition,
-  validateVerticalPosition
+  validateVerticalPosition,
 };
 //# sourceMappingURL=@angular_cdk_overlay.js.map

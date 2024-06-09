@@ -6,14 +6,17 @@ import {
   isObservable,
   of,
   setClassMetadata,
-  ɵɵdefineInjectable
+  ɵɵdefineInjectable,
 } from "./chunk-LBXCMUWC.js";
 
 // node_modules/@angular/cdk/fesm2022/collections.mjs
-var DataSource = class {
-};
+var DataSource = class {};
 function isDataSource(value) {
-  return value && typeof value.connect === "function" && !(value instanceof ConnectableObservable);
+  return (
+    value &&
+    typeof value.connect === "function" &&
+    !(value instanceof ConnectableObservable)
+  );
 }
 var ArrayDataSource = class extends DataSource {
   constructor(_data) {
@@ -23,25 +26,40 @@ var ArrayDataSource = class extends DataSource {
   connect() {
     return isObservable(this._data) ? this._data : of(this._data);
   }
-  disconnect() {
-  }
+  disconnect() {}
 };
 var _ViewRepeaterOperation;
-(function(_ViewRepeaterOperation2) {
-  _ViewRepeaterOperation2[_ViewRepeaterOperation2["REPLACED"] = 0] = "REPLACED";
-  _ViewRepeaterOperation2[_ViewRepeaterOperation2["INSERTED"] = 1] = "INSERTED";
-  _ViewRepeaterOperation2[_ViewRepeaterOperation2["MOVED"] = 2] = "MOVED";
-  _ViewRepeaterOperation2[_ViewRepeaterOperation2["REMOVED"] = 3] = "REMOVED";
+(function (_ViewRepeaterOperation2) {
+  _ViewRepeaterOperation2[(_ViewRepeaterOperation2["REPLACED"] = 0)] =
+    "REPLACED";
+  _ViewRepeaterOperation2[(_ViewRepeaterOperation2["INSERTED"] = 1)] =
+    "INSERTED";
+  _ViewRepeaterOperation2[(_ViewRepeaterOperation2["MOVED"] = 2)] = "MOVED";
+  _ViewRepeaterOperation2[(_ViewRepeaterOperation2["REMOVED"] = 3)] = "REMOVED";
 })(_ViewRepeaterOperation || (_ViewRepeaterOperation = {}));
 var _VIEW_REPEATER_STRATEGY = new InjectionToken("_ViewRepeater");
 var _DisposeViewRepeaterStrategy = class {
-  applyChanges(changes, viewContainerRef, itemContextFactory, itemValueResolver, itemViewChanged) {
+  applyChanges(
+    changes,
+    viewContainerRef,
+    itemContextFactory,
+    itemValueResolver,
+    itemViewChanged,
+  ) {
     changes.forEachOperation((record, adjustedPreviousIndex, currentIndex) => {
       let view;
       let operation;
       if (record.previousIndex == null) {
-        const insertContext = itemContextFactory(record, adjustedPreviousIndex, currentIndex);
-        view = viewContainerRef.createEmbeddedView(insertContext.templateRef, insertContext.context, insertContext.index);
+        const insertContext = itemContextFactory(
+          record,
+          adjustedPreviousIndex,
+          currentIndex,
+        );
+        view = viewContainerRef.createEmbeddedView(
+          insertContext.templateRef,
+          insertContext.context,
+          insertContext.index,
+        );
         operation = _ViewRepeaterOperation.INSERTED;
       } else if (currentIndex == null) {
         viewContainerRef.remove(adjustedPreviousIndex);
@@ -55,13 +73,12 @@ var _DisposeViewRepeaterStrategy = class {
         itemViewChanged({
           context: view?.context,
           operation,
-          record
+          record,
         });
       }
     });
   }
-  detach() {
-  }
+  detach() {}
 };
 var _RecycleViewRepeaterStrategy = class {
   constructor() {
@@ -69,26 +86,45 @@ var _RecycleViewRepeaterStrategy = class {
     this._viewCache = [];
   }
   /** Apply changes to the DOM. */
-  applyChanges(changes, viewContainerRef, itemContextFactory, itemValueResolver, itemViewChanged) {
+  applyChanges(
+    changes,
+    viewContainerRef,
+    itemContextFactory,
+    itemValueResolver,
+    itemViewChanged,
+  ) {
     changes.forEachOperation((record, adjustedPreviousIndex, currentIndex) => {
       let view;
       let operation;
       if (record.previousIndex == null) {
-        const viewArgsFactory = () => itemContextFactory(record, adjustedPreviousIndex, currentIndex);
-        view = this._insertView(viewArgsFactory, currentIndex, viewContainerRef, itemValueResolver(record));
-        operation = view ? _ViewRepeaterOperation.INSERTED : _ViewRepeaterOperation.REPLACED;
+        const viewArgsFactory = () =>
+          itemContextFactory(record, adjustedPreviousIndex, currentIndex);
+        view = this._insertView(
+          viewArgsFactory,
+          currentIndex,
+          viewContainerRef,
+          itemValueResolver(record),
+        );
+        operation = view
+          ? _ViewRepeaterOperation.INSERTED
+          : _ViewRepeaterOperation.REPLACED;
       } else if (currentIndex == null) {
         this._detachAndCacheView(adjustedPreviousIndex, viewContainerRef);
         operation = _ViewRepeaterOperation.REMOVED;
       } else {
-        view = this._moveView(adjustedPreviousIndex, currentIndex, viewContainerRef, itemValueResolver(record));
+        view = this._moveView(
+          adjustedPreviousIndex,
+          currentIndex,
+          viewContainerRef,
+          itemValueResolver(record),
+        );
         operation = _ViewRepeaterOperation.MOVED;
       }
       if (itemViewChanged) {
         itemViewChanged({
           context: view?.context,
           operation,
-          record
+          record,
         });
       }
     });
@@ -104,13 +140,20 @@ var _RecycleViewRepeaterStrategy = class {
    * one. Returns `undefined` if the item was inserted into a cached view.
    */
   _insertView(viewArgsFactory, currentIndex, viewContainerRef, value) {
-    const cachedView = this._insertViewFromCache(currentIndex, viewContainerRef);
+    const cachedView = this._insertViewFromCache(
+      currentIndex,
+      viewContainerRef,
+    );
     if (cachedView) {
       cachedView.context.$implicit = value;
       return void 0;
     }
     const viewArgs = viewArgsFactory();
-    return viewContainerRef.createEmbeddedView(viewArgs.templateRef, viewArgs.context, viewArgs.index);
+    return viewContainerRef.createEmbeddedView(
+      viewArgs.templateRef,
+      viewArgs.context,
+      viewArgs.index,
+    );
   }
   /** Detaches the view at the given index and inserts into the view cache. */
   _detachAndCacheView(index, viewContainerRef) {
@@ -157,7 +200,12 @@ var SelectionModel = class {
     }
     return this._selected;
   }
-  constructor(_multiple = false, initiallySelectedValues, _emitChanges = true, compareWith) {
+  constructor(
+    _multiple = false,
+    initiallySelectedValues,
+    _emitChanges = true,
+    compareWith,
+  ) {
     this._multiple = _multiple;
     this._emitChanges = _emitChanges;
     this.compareWith = compareWith;
@@ -211,7 +259,12 @@ var SelectionModel = class {
     const oldValues = this.selected;
     const newSelectedSet = new Set(values);
     values.forEach((value) => this._markSelected(value));
-    oldValues.filter((value) => !newSelectedSet.has(this._getConcreteValue(value, newSelectedSet))).forEach((value) => this._unmarkSelected(value));
+    oldValues
+      .filter(
+        (value) =>
+          !newSelectedSet.has(this._getConcreteValue(value, newSelectedSet)),
+      )
+      .forEach((value) => this._unmarkSelected(value));
     const changed = this._hasQueuedChanges();
     this._emitChangeEvent();
     return changed;
@@ -279,7 +332,7 @@ var SelectionModel = class {
       this.changed.next({
         source: this,
         added: this._selectedToEmit,
-        removed: this._deselectedToEmit
+        removed: this._deselectedToEmit,
       });
       this._deselectedToEmit = [];
       this._selectedToEmit = [];
@@ -321,7 +374,11 @@ var SelectionModel = class {
    * including multiple values while the selection model is not supporting multiple values.
    */
   _verifyValueAssignment(values) {
-    if (values.length > 1 && !this._multiple && (typeof ngDevMode === "undefined" || ngDevMode)) {
+    if (
+      values.length > 1 &&
+      !this._multiple &&
+      (typeof ngDevMode === "undefined" || ngDevMode)
+    ) {
       throw getMultipleValuesInSingleSelectionError();
     }
   }
@@ -345,7 +402,9 @@ var SelectionModel = class {
   }
 };
 function getMultipleValuesInSingleSelectionError() {
-  return Error("Cannot pass multiple values into SelectionModel with single-value mode.");
+  return Error(
+    "Cannot pass multiple values into SelectionModel with single-value mode.",
+  );
 }
 var _UniqueSelectionDispatcher = class _UniqueSelectionDispatcher {
   constructor() {
@@ -377,22 +436,34 @@ var _UniqueSelectionDispatcher = class _UniqueSelectionDispatcher {
     this._listeners = [];
   }
 };
-_UniqueSelectionDispatcher.ɵfac = function UniqueSelectionDispatcher_Factory(t) {
+_UniqueSelectionDispatcher.ɵfac = function UniqueSelectionDispatcher_Factory(
+  t,
+) {
   return new (t || _UniqueSelectionDispatcher)();
 };
 _UniqueSelectionDispatcher.ɵprov = ɵɵdefineInjectable({
   token: _UniqueSelectionDispatcher,
   factory: _UniqueSelectionDispatcher.ɵfac,
-  providedIn: "root"
+  providedIn: "root",
 });
 var UniqueSelectionDispatcher = _UniqueSelectionDispatcher;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(UniqueSelectionDispatcher, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      UniqueSelectionDispatcher,
+      [
+        {
+          type: Injectable,
+          args: [
+            {
+              providedIn: "root",
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 
 export {
@@ -404,6 +475,6 @@ export {
   _DisposeViewRepeaterStrategy,
   _RecycleViewRepeaterStrategy,
   SelectionModel,
-  UniqueSelectionDispatcher
+  UniqueSelectionDispatcher,
 };
 //# sourceMappingURL=chunk-5IGO7ZVJ.js.map

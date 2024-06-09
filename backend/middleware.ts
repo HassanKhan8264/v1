@@ -1,6 +1,6 @@
 import { Response, Request, NextFunction } from "express";
 import jwt from "jsonwebtoken";
-import config from "./config";
+import config from "../config";
 
 export function testCookie(req: Request, res: Response, next: NextFunction) {
   try {
@@ -10,22 +10,23 @@ export function testCookie(req: Request, res: Response, next: NextFunction) {
       });
       return;
     }
-    jwt.verify(req.cookies.Token, config.Jwt_Secret, function (
-      err,
-      decodedData
-    ) {
-      let nowDate = new Date().getTime() / 1000;
-      if (decodedData.exp < nowDate) {
-        res.cookie("Token", "", {
-          maxAge: 1,
-          httpOnly: true,
-        });
-        res.send({ message: "token expired" });
-      } else {
-        req.body.token = decodedData;
-        next();
-      }
-    });
+    jwt.verify(
+      req.cookies.Token,
+      config.Jwt_Secret,
+      function (err, decodedData) {
+        let nowDate = new Date().getTime() / 1000;
+        if (decodedData.exp < nowDate) {
+          res.cookie("Token", "", {
+            maxAge: 1,
+            httpOnly: true,
+          });
+          res.send({ message: "token expired" });
+        } else {
+          req.body.token = decodedData;
+          next();
+        }
+      },
+    );
   } catch (err) {
     res.status(401).send("invalid token");
   }
@@ -34,7 +35,7 @@ export function testCookie(req: Request, res: Response, next: NextFunction) {
 export function authenticateToken(
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ) {
   const authHeader = req.headers.authorization;
   const token = authHeader && authHeader.split(" ")[1]; // Bearer <token>
