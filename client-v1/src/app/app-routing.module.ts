@@ -38,7 +38,7 @@ const routes: Routes = [
       {
         path: "publish",
         // data: { feature: "PUBLISH" },
-          canActivate: [AuthGuard],
+        canActivate: [AuthGuard],
         loadChildren: () =>
           import("./modules/publish/publish.module").then(
             (m) => m.PublishModule,

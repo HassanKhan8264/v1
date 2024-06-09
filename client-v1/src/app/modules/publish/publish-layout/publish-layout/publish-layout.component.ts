@@ -6,19 +6,16 @@ import { EndpointService } from "../../../../core/http/endpoint.service";
   styleUrl: "./publish-layout.component.scss",
 })
 export class PublishLayoutComponent {
-   constructor(
-    private EndpointService: EndpointService,
-  ) {
+  constructor(private EndpointService: EndpointService) {
     // this.userId = 2
   }
-    ngOnInit() {
+  ngOnInit() {
     this.getAllUser();
   }
   getAllUser() {
-    this.EndpointService.getAll().subscribe((response => {
-      console.log('res = ' + response);
-
-    }))
+    this.EndpointService.getAll().subscribe((response) => {
+      console.log("res = " + response);
+    });
   }
   public navList = [
     {

@@ -23,11 +23,11 @@ export class EndpointService {
 
   loggedIn() {
     return this.checkTokenStatus().pipe(
-      map(response => response),
-      catchError(error => {
-        console.error('Error checking authentication status:', error);
+      map((response) => response),
+      catchError((error) => {
+        console.error("Error checking authentication status:", error);
         return of(false);
-      })
+      }),
     );
   }
 }

@@ -23,7 +23,6 @@ export class HeaderComponent {
     // this.userId = 2
   }
 
-
   logout() {
     this.http
       .post<any>("http://localhost:5001/api/logout", {
@@ -44,10 +43,9 @@ export class HeaderComponent {
       );
   }
   getAllUser() {
-    this.EndpointService.getAll().subscribe((response => {
-      console.log('res = ' + response);
-
-    }))
+    this.EndpointService.getAll().subscribe((response) => {
+      console.log("res = " + response);
+    });
   }
   getUserById(userId: any) {}
 
