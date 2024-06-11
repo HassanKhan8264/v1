@@ -1,12 +1,11 @@
 import { Response, Request } from "express";
 import jwt from "jsonwebtoken";
-import bcrypt from "bcrypt"; // Import bcrypt here
+import bcrypt from "bcrypt";
 import { userModel } from "../models/userAccountScehma";
 import { userSchema } from "./validator";
 import { BaseController } from "../baseController";
 import { resolve } from "path";
-import config from "../config";
-// import { Request, Response } from "../../custom";
+import config from "../../config";
 
 export class authController extends BaseController {
   signUp = async (req: Request, res: Response) => {
@@ -53,33 +52,50 @@ export class authController extends BaseController {
       if (!email || !password) {
         return super.response(res, 400, false, "Fields Missing");
       }
-      const user = await userModel.findOne({ email: email }).exec();
 
-      if (user && (await bcrypt.compare(password, user.password))) {
-        const token = jwt.sign(
-          {
-            _id: user._id,
-            email: user.email,
-            exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24,
-          },
-          config.Jwt_Secret
-        );
+      // Find user by email and select only the required fields
+      const user = await userModel
+        .findOne({ email: email }, { name: 1, phone: 1, email: 1, password: 1 })
+        .exec();
 
-        res.cookie("Token", token, {
-          maxAge: 86_400_000,
-          httpOnly: true,
-        });
+      if (!user) {
+        return super.response(res, 404, false, "User not found");
+      }
 
-        return super.response(res, 200, true, "login success", {
-          profile: {
-            _id: user._id,
-            name: user.name,
-            email: user.email,
-          },
-        });
-      } else {
+      // Compare the provided password with the hashed password stored in the database
+      const isValidPassword = await bcrypt.compare(password, user.password);
+
+      if (!isValidPassword) {
         return super.response(res, 401, false, "Invalid credentials");
       }
+
+      // Generate JWT token
+      const token = jwt.sign(
+        {
+          _id: user._id,
+          email: user.email,
+          exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24, // Token expires after 24 hours
+        },
+        config.Jwt_Secret,
+      );
+
+      // Set cookie with the token
+      res.cookie("Token", token, {
+        maxAge: 86_400_000, // Cookie expires after 24 hours
+        httpOnly: true,
+        sameSite: "none",
+        secure: true,
+      });
+
+      // Send successful login response
+      return super.response(res, 200, true, "Login successful", {
+        token: token,
+        user: {
+          name: user.name,
+          phone: user.phone,
+          email: user.email,
+        },
+      });
     } catch (error) {
       console.error(error);
       return super.response(res, 500, false, "Internal Server Error");
@@ -87,9 +103,10 @@ export class authController extends BaseController {
   };
 
   logout = async (req: Request, res: Response) => {
-    req.cookie("Token", "", {
-      maxAge: 1,
+    res.clearCookie("Token", {
       httpOnly: true,
+      sameSite: "none",
+      secure: true,
     });
     return super.response(res, 200, true, "Logout successful");
   };

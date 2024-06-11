@@ -15,7 +15,7 @@ import {
   VIRTUAL_SCROLLABLE,
   VIRTUAL_SCROLL_STRATEGY,
   ViewportRuler,
-  _fixedSizeVirtualScrollStrategyFactory
+  _fixedSizeVirtualScrollStrategyFactory,
 } from "./chunk-VCMUHK75.js";
 import "./chunk-5O5QX3PG.js";
 import "./chunk-7OBXTRYY.js";
@@ -39,6 +39,6 @@ export {
   VIRTUAL_SCROLLABLE,
   VIRTUAL_SCROLL_STRATEGY,
   ViewportRuler,
-  _fixedSizeVirtualScrollStrategyFactory
+  _fixedSizeVirtualScrollStrategyFactory,
 };
 //# sourceMappingURL=@angular_cdk_scrolling.js.map

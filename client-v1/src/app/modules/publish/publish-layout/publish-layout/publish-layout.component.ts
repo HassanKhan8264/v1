@@ -1,16 +1,22 @@
-import { Component } from '@angular/core';
-
+import { Component } from "@angular/core";
+import { EndpointService } from "../../../../core/http/endpoint.service";
 @Component({
-  selector: 'cl-publish-layout',
-  templateUrl: './publish-layout.component.html',
-  styleUrl: './publish-layout.component.scss'
+  selector: "cl-publish-layout",
+  templateUrl: "./publish-layout.component.html",
+  styleUrl: "./publish-layout.component.scss",
 })
 export class PublishLayoutComponent {
-
-constructor(){
-
-}
-
+  constructor(private EndpointService: EndpointService) {
+    // this.userId = 2
+  }
+  ngOnInit() {
+    this.getAllUser();
+  }
+  getAllUser() {
+    this.EndpointService.getAll().subscribe((response) => {
+      console.log("res = " + response);
+    });
+  }
   public navList = [
     {
       id: 0,

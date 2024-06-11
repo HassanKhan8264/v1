@@ -80,7 +80,7 @@ export class UserCtrl extends BaseController {
           res,
           400,
           false,
-          "Both name and email are required"
+          "Both name and email are required",
         );
       } else {
         user.name = name || user.name;

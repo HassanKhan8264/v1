@@ -1,23 +1,16 @@
-import {
-  MatIcon,
-  MatIconModule
-} from "./chunk-E2PFONTR.js";
+import { MatIcon, MatIconModule } from "./chunk-E2PFONTR.js";
 import "./chunk-Q2N6UVGS.js";
 import {
   MAT_INPUT_VALUE_ACCESSOR,
   MatInput,
-  MatInputModule
+  MatInputModule,
 } from "./chunk-EG7RI6FH.js";
-import {
-  MatButton,
-  MatButtonModule,
-  MatIconButton
-} from "./chunk-QH3XTYY2.js";
+import { MatButton, MatButtonModule, MatIconButton } from "./chunk-QH3XTYY2.js";
 import "./chunk-V74BEASD.js";
 import {
   MAT_FORM_FIELD,
   MatFormField,
-  MatFormFieldControl
+  MatFormFieldControl,
 } from "./chunk-ABUN6SR6.js";
 import {
   ControlContainer,
@@ -36,7 +29,7 @@ import {
   NgModel,
   ReactiveFormsModule,
   Validators,
-  ɵNgNoValidate
+  ɵNgNoValidate,
 } from "./chunk-TFPBYGKK.js";
 import {
   animate,
@@ -44,7 +37,7 @@ import {
   state,
   style,
   transition,
-  trigger
+  trigger,
 } from "./chunk-ZGLNX5QT.js";
 import {
   DateAdapter,
@@ -52,25 +45,21 @@ import {
   MAT_DATE_LOCALE,
   MatCommonModule,
   mixinColor,
-  mixinErrorState
+  mixinErrorState,
 } from "./chunk-ETKHRJO3.js";
 import {
   FlexibleConnectedPositionStrategy,
   Overlay,
   OverlayConfig,
-  OverlayModule
+  OverlayModule,
 } from "./chunk-CM65KMUF.js";
 import {
   CdkPortalOutlet,
   ComponentPortal,
   PortalModule,
-  TemplatePortal
+  TemplatePortal,
 } from "./chunk-J37YNQGY.js";
-import {
-  A11yModule,
-  CdkMonitorFocus,
-  CdkTrapFocus
-} from "./chunk-BJSKPAN7.js";
+import { A11yModule, CdkMonitorFocus, CdkTrapFocus } from "./chunk-BJSKPAN7.js";
 import {
   BACKSPACE,
   DOWN_ARROW,
@@ -84,11 +73,9 @@ import {
   RIGHT_ARROW,
   SPACE,
   UP_ARROW,
-  hasModifierKey
+  hasModifierKey,
 } from "./chunk-237XUEJ5.js";
-import {
-  CdkScrollableModule
-} from "./chunk-QFVG6FFE.js";
+import { CdkScrollableModule } from "./chunk-QFVG6FFE.js";
 import "./chunk-5IGO7ZVJ.js";
 import {
   Directionality,
@@ -96,7 +83,7 @@ import {
   PlatformModule,
   _getFocusedElementPierceShadowDom,
   coerceBooleanProperty,
-  coerceStringArray
+  coerceStringArray,
 } from "./chunk-YI6EFZ52.js";
 import {
   CommonModule,
@@ -105,7 +92,7 @@ import {
   NgForOf,
   NgIf,
   NgSwitch,
-  NgSwitchCase
+  NgSwitchCase,
 } from "./chunk-NKF7BGZJ.js";
 import {
   Attribute,
@@ -191,7 +178,7 @@ import {
   ɵɵtwoWayBindingSet,
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty,
-  ɵɵviewQuery
+  ɵɵviewQuery,
 } from "./chunk-LBXCMUWC.js";
 
 // node_modules/@angular-material-components/datetime-picker/fesm2020/angular-material-components-datetime-picker.mjs
@@ -205,7 +192,10 @@ function NgxMatCalendarBody_tr_0_Template(rf, ctx) {
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext();
     ɵɵadvance();
-    ɵɵstyleProp("padding-top", ctx_r0._cellPadding)("padding-bottom", ctx_r0._cellPadding);
+    ɵɵstyleProp("padding-top", ctx_r0._cellPadding)(
+      "padding-bottom",
+      ctx_r0._cellPadding,
+    );
     ɵɵattribute("colspan", ctx_r0.numCols);
     ɵɵadvance();
     ɵɵtextInterpolate1(" ", ctx_r0.label, " ");
@@ -219,25 +209,44 @@ function NgxMatCalendarBody_tr_1_td_1_Template(rf, ctx) {
   }
   if (rf & 2) {
     const ctx_r0 = ɵɵnextContext(2);
-    ɵɵstyleProp("padding-top", ctx_r0._cellPadding)("padding-bottom", ctx_r0._cellPadding);
+    ɵɵstyleProp("padding-top", ctx_r0._cellPadding)(
+      "padding-bottom",
+      ctx_r0._cellPadding,
+    );
     ɵɵattribute("colspan", ctx_r0._firstRowOffset);
     ɵɵadvance();
-    ɵɵtextInterpolate1(" ", ctx_r0._firstRowOffset >= ctx_r0.labelMinRequiredCells ? ctx_r0.label : "", " ");
+    ɵɵtextInterpolate1(
+      " ",
+      ctx_r0._firstRowOffset >= ctx_r0.labelMinRequiredCells
+        ? ctx_r0.label
+        : "",
+      " ",
+    );
   }
 }
 function NgxMatCalendarBody_tr_1_td_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r2 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "td", 8)(1, "button", 9);
-    ɵɵlistener("click", function NgxMatCalendarBody_tr_1_td_2_Template_button_click_1_listener($event) {
-      const item_r3 = ɵɵrestoreView(_r2).$implicit;
-      const ctx_r0 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r0._cellClicked(item_r3, $event));
-    })("focus", function NgxMatCalendarBody_tr_1_td_2_Template_button_focus_1_listener($event) {
-      const item_r3 = ɵɵrestoreView(_r2).$implicit;
-      const ctx_r0 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r0._emitActiveDateChange(item_r3, $event));
-    });
+    ɵɵlistener(
+      "click",
+      function NgxMatCalendarBody_tr_1_td_2_Template_button_click_1_listener(
+        $event,
+      ) {
+        const item_r3 = ɵɵrestoreView(_r2).$implicit;
+        const ctx_r0 = ɵɵnextContext(2);
+        return ɵɵresetView(ctx_r0._cellClicked(item_r3, $event));
+      },
+    )(
+      "focus",
+      function NgxMatCalendarBody_tr_1_td_2_Template_button_focus_1_listener(
+        $event,
+      ) {
+        const item_r3 = ɵɵrestoreView(_r2).$implicit;
+        const ctx_r0 = ɵɵnextContext(2);
+        return ɵɵresetView(ctx_r0._emitActiveDateChange(item_r3, $event));
+      },
+    );
     ɵɵelementStart(2, "span", 10);
     ɵɵtext(3);
     ɵɵelementEnd();
@@ -249,14 +258,73 @@ function NgxMatCalendarBody_tr_1_td_2_Template(rf, ctx) {
     const colIndex_r4 = ctx.index;
     const rowIndex_r5 = ɵɵnextContext().index;
     const ctx_r0 = ɵɵnextContext();
-    ɵɵstyleProp("width", ctx_r0._cellWidth)("padding-top", ctx_r0._cellPadding)("padding-bottom", ctx_r0._cellPadding);
+    ɵɵstyleProp("width", ctx_r0._cellWidth)("padding-top", ctx_r0._cellPadding)(
+      "padding-bottom",
+      ctx_r0._cellPadding,
+    );
     ɵɵattribute("data-mat-row", rowIndex_r5)("data-mat-col", colIndex_r4);
     ɵɵadvance();
-    ɵɵclassProp("mat-calendar-body-disabled", !item_r3.enabled)("mat-calendar-body-active", ctx_r0._isActiveCell(rowIndex_r5, colIndex_r4))("mat-calendar-body-range-start", ctx_r0._isRangeStart(item_r3.compareValue))("mat-calendar-body-range-end", ctx_r0._isRangeEnd(item_r3.compareValue))("mat-calendar-body-in-range", ctx_r0._isInRange(item_r3.compareValue))("mat-calendar-body-comparison-bridge-start", ctx_r0._isComparisonBridgeStart(item_r3.compareValue, rowIndex_r5, colIndex_r4))("mat-calendar-body-comparison-bridge-end", ctx_r0._isComparisonBridgeEnd(item_r3.compareValue, rowIndex_r5, colIndex_r4))("mat-calendar-body-comparison-start", ctx_r0._isComparisonStart(item_r3.compareValue))("mat-calendar-body-comparison-end", ctx_r0._isComparisonEnd(item_r3.compareValue))("mat-calendar-body-in-comparison-range", ctx_r0._isInComparisonRange(item_r3.compareValue))("mat-calendar-body-preview-start", ctx_r0._isPreviewStart(item_r3.compareValue))("mat-calendar-body-preview-end", ctx_r0._isPreviewEnd(item_r3.compareValue))("mat-calendar-body-in-preview", ctx_r0._isInPreview(item_r3.compareValue));
-    ɵɵproperty("ngClass", item_r3.cssClasses)("tabindex", ctx_r0._isActiveCell(rowIndex_r5, colIndex_r4) ? 0 : -1);
-    ɵɵattribute("aria-label", item_r3.ariaLabel)("aria-disabled", !item_r3.enabled || null)("aria-pressed", ctx_r0._isSelected(item_r3.compareValue))("aria-current", ctx_r0.todayValue === item_r3.compareValue ? "date" : null)("aria-describedby", ctx_r0._getDescribedby(item_r3.compareValue));
+    ɵɵclassProp("mat-calendar-body-disabled", !item_r3.enabled)(
+      "mat-calendar-body-active",
+      ctx_r0._isActiveCell(rowIndex_r5, colIndex_r4),
+    )(
+      "mat-calendar-body-range-start",
+      ctx_r0._isRangeStart(item_r3.compareValue),
+    )("mat-calendar-body-range-end", ctx_r0._isRangeEnd(item_r3.compareValue))(
+      "mat-calendar-body-in-range",
+      ctx_r0._isInRange(item_r3.compareValue),
+    )(
+      "mat-calendar-body-comparison-bridge-start",
+      ctx_r0._isComparisonBridgeStart(
+        item_r3.compareValue,
+        rowIndex_r5,
+        colIndex_r4,
+      ),
+    )(
+      "mat-calendar-body-comparison-bridge-end",
+      ctx_r0._isComparisonBridgeEnd(
+        item_r3.compareValue,
+        rowIndex_r5,
+        colIndex_r4,
+      ),
+    )(
+      "mat-calendar-body-comparison-start",
+      ctx_r0._isComparisonStart(item_r3.compareValue),
+    )(
+      "mat-calendar-body-comparison-end",
+      ctx_r0._isComparisonEnd(item_r3.compareValue),
+    )(
+      "mat-calendar-body-in-comparison-range",
+      ctx_r0._isInComparisonRange(item_r3.compareValue),
+    )(
+      "mat-calendar-body-preview-start",
+      ctx_r0._isPreviewStart(item_r3.compareValue),
+    )(
+      "mat-calendar-body-preview-end",
+      ctx_r0._isPreviewEnd(item_r3.compareValue),
+    )(
+      "mat-calendar-body-in-preview",
+      ctx_r0._isInPreview(item_r3.compareValue),
+    );
+    ɵɵproperty("ngClass", item_r3.cssClasses)(
+      "tabindex",
+      ctx_r0._isActiveCell(rowIndex_r5, colIndex_r4) ? 0 : -1,
+    );
+    ɵɵattribute("aria-label", item_r3.ariaLabel)(
+      "aria-disabled",
+      !item_r3.enabled || null,
+    )("aria-pressed", ctx_r0._isSelected(item_r3.compareValue))(
+      "aria-current",
+      ctx_r0.todayValue === item_r3.compareValue ? "date" : null,
+    )("aria-describedby", ctx_r0._getDescribedby(item_r3.compareValue));
     ɵɵadvance();
-    ɵɵclassProp("mat-calendar-body-selected", ctx_r0._isSelected(item_r3.compareValue))("mat-calendar-body-comparison-identical", ctx_r0._isComparisonIdentical(item_r3.compareValue))("mat-calendar-body-today", ctx_r0.todayValue === item_r3.compareValue);
+    ɵɵclassProp(
+      "mat-calendar-body-selected",
+      ctx_r0._isSelected(item_r3.compareValue),
+    )(
+      "mat-calendar-body-comparison-identical",
+      ctx_r0._isComparisonIdentical(item_r3.compareValue),
+    )("mat-calendar-body-today", ctx_r0.todayValue === item_r3.compareValue);
     ɵɵadvance();
     ɵɵtextInterpolate1(" ", item_r3.displayValue, " ");
   }
@@ -264,7 +332,14 @@ function NgxMatCalendarBody_tr_1_td_2_Template(rf, ctx) {
 function NgxMatCalendarBody_tr_1_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementStart(0, "tr", 5);
-    ɵɵtemplate(1, NgxMatCalendarBody_tr_1_td_1_Template, 2, 6, "td", 6)(2, NgxMatCalendarBody_tr_1_td_2_Template, 5, 48, "td", 7);
+    ɵɵtemplate(1, NgxMatCalendarBody_tr_1_td_1_Template, 2, 6, "td", 6)(
+      2,
+      NgxMatCalendarBody_tr_1_td_2_Template,
+      5,
+      48,
+      "td",
+      7,
+    );
     ɵɵelementEnd();
   }
   if (rf & 2) {
@@ -295,91 +370,161 @@ function NgxMatMonthView_th_3_Template(rf, ctx) {
   }
 }
 var _c1 = ["*"];
-function NgxMatCalendar_ng_template_0_Template(rf, ctx) {
-}
+function NgxMatCalendar_ng_template_0_Template(rf, ctx) {}
 function NgxMatCalendar_ngx_mat_month_view_2_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "ngx-mat-month-view", 5);
-    ɵɵtwoWayListener("activeDateChange", function NgxMatCalendar_ngx_mat_month_view_2_Template_ngx_mat_month_view_activeDateChange_0_listener($event) {
-      ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext();
-      ɵɵtwoWayBindingSet(ctx_r1.activeDate, $event) || (ctx_r1.activeDate = $event);
-      return ɵɵresetView($event);
-    });
-    ɵɵlistener("_userSelection", function NgxMatCalendar_ngx_mat_month_view_2_Template_ngx_mat_month_view__userSelection_0_listener($event) {
-      ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1._dateSelected($event));
-    })("dragStarted", function NgxMatCalendar_ngx_mat_month_view_2_Template_ngx_mat_month_view_dragStarted_0_listener($event) {
-      ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1._dragStarted($event));
-    })("dragEnded", function NgxMatCalendar_ngx_mat_month_view_2_Template_ngx_mat_month_view_dragEnded_0_listener($event) {
-      ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1._dragEnded($event));
-    });
+    ɵɵtwoWayListener(
+      "activeDateChange",
+      function NgxMatCalendar_ngx_mat_month_view_2_Template_ngx_mat_month_view_activeDateChange_0_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r1);
+        const ctx_r1 = ɵɵnextContext();
+        ɵɵtwoWayBindingSet(ctx_r1.activeDate, $event) ||
+          (ctx_r1.activeDate = $event);
+        return ɵɵresetView($event);
+      },
+    );
+    ɵɵlistener(
+      "_userSelection",
+      function NgxMatCalendar_ngx_mat_month_view_2_Template_ngx_mat_month_view__userSelection_0_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r1);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1._dateSelected($event));
+      },
+    )(
+      "dragStarted",
+      function NgxMatCalendar_ngx_mat_month_view_2_Template_ngx_mat_month_view_dragStarted_0_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r1);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1._dragStarted($event));
+      },
+    )(
+      "dragEnded",
+      function NgxMatCalendar_ngx_mat_month_view_2_Template_ngx_mat_month_view_dragEnded_0_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r1);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1._dragEnded($event));
+      },
+    );
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵtwoWayProperty("activeDate", ctx_r1.activeDate);
-    ɵɵproperty("selected", ctx_r1.selected)("dateFilter", ctx_r1.dateFilter)("maxDate", ctx_r1.maxDate)("minDate", ctx_r1.minDate)("dateClass", ctx_r1.dateClass)("comparisonStart", ctx_r1.comparisonStart)("comparisonEnd", ctx_r1.comparisonEnd)("startDateAccessibleName", ctx_r1.startDateAccessibleName)("endDateAccessibleName", ctx_r1.endDateAccessibleName)("activeDrag", ctx_r1._activeDrag);
+    ɵɵproperty("selected", ctx_r1.selected)("dateFilter", ctx_r1.dateFilter)(
+      "maxDate",
+      ctx_r1.maxDate,
+    )("minDate", ctx_r1.minDate)("dateClass", ctx_r1.dateClass)(
+      "comparisonStart",
+      ctx_r1.comparisonStart,
+    )("comparisonEnd", ctx_r1.comparisonEnd)(
+      "startDateAccessibleName",
+      ctx_r1.startDateAccessibleName,
+    )("endDateAccessibleName", ctx_r1.endDateAccessibleName)(
+      "activeDrag",
+      ctx_r1._activeDrag,
+    );
   }
 }
 function NgxMatCalendar_ngx_mat_year_view_3_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "ngx-mat-year-view", 6);
-    ɵɵtwoWayListener("activeDateChange", function NgxMatCalendar_ngx_mat_year_view_3_Template_ngx_mat_year_view_activeDateChange_0_listener($event) {
-      ɵɵrestoreView(_r3);
-      const ctx_r1 = ɵɵnextContext();
-      ɵɵtwoWayBindingSet(ctx_r1.activeDate, $event) || (ctx_r1.activeDate = $event);
-      return ɵɵresetView($event);
-    });
-    ɵɵlistener("monthSelected", function NgxMatCalendar_ngx_mat_year_view_3_Template_ngx_mat_year_view_monthSelected_0_listener($event) {
-      ɵɵrestoreView(_r3);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1._monthSelectedInYearView($event));
-    })("selectedChange", function NgxMatCalendar_ngx_mat_year_view_3_Template_ngx_mat_year_view_selectedChange_0_listener($event) {
-      ɵɵrestoreView(_r3);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1._goToDateInView($event, "month"));
-    });
+    ɵɵtwoWayListener(
+      "activeDateChange",
+      function NgxMatCalendar_ngx_mat_year_view_3_Template_ngx_mat_year_view_activeDateChange_0_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r3);
+        const ctx_r1 = ɵɵnextContext();
+        ɵɵtwoWayBindingSet(ctx_r1.activeDate, $event) ||
+          (ctx_r1.activeDate = $event);
+        return ɵɵresetView($event);
+      },
+    );
+    ɵɵlistener(
+      "monthSelected",
+      function NgxMatCalendar_ngx_mat_year_view_3_Template_ngx_mat_year_view_monthSelected_0_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r3);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1._monthSelectedInYearView($event));
+      },
+    )(
+      "selectedChange",
+      function NgxMatCalendar_ngx_mat_year_view_3_Template_ngx_mat_year_view_selectedChange_0_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r3);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1._goToDateInView($event, "month"));
+      },
+    );
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵtwoWayProperty("activeDate", ctx_r1.activeDate);
-    ɵɵproperty("selected", ctx_r1.selected)("dateFilter", ctx_r1.dateFilter)("maxDate", ctx_r1.maxDate)("minDate", ctx_r1.minDate)("dateClass", ctx_r1.dateClass);
+    ɵɵproperty("selected", ctx_r1.selected)("dateFilter", ctx_r1.dateFilter)(
+      "maxDate",
+      ctx_r1.maxDate,
+    )("minDate", ctx_r1.minDate)("dateClass", ctx_r1.dateClass);
   }
 }
 function NgxMatCalendar_ngx_mat_multi_year_view_4_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "ngx-mat-multi-year-view", 7);
-    ɵɵtwoWayListener("activeDateChange", function NgxMatCalendar_ngx_mat_multi_year_view_4_Template_ngx_mat_multi_year_view_activeDateChange_0_listener($event) {
-      ɵɵrestoreView(_r4);
-      const ctx_r1 = ɵɵnextContext();
-      ɵɵtwoWayBindingSet(ctx_r1.activeDate, $event) || (ctx_r1.activeDate = $event);
-      return ɵɵresetView($event);
-    });
-    ɵɵlistener("yearSelected", function NgxMatCalendar_ngx_mat_multi_year_view_4_Template_ngx_mat_multi_year_view_yearSelected_0_listener($event) {
-      ɵɵrestoreView(_r4);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1._yearSelectedInMultiYearView($event));
-    })("selectedChange", function NgxMatCalendar_ngx_mat_multi_year_view_4_Template_ngx_mat_multi_year_view_selectedChange_0_listener($event) {
-      ɵɵrestoreView(_r4);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1._goToDateInView($event, "year"));
-    });
+    ɵɵtwoWayListener(
+      "activeDateChange",
+      function NgxMatCalendar_ngx_mat_multi_year_view_4_Template_ngx_mat_multi_year_view_activeDateChange_0_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r4);
+        const ctx_r1 = ɵɵnextContext();
+        ɵɵtwoWayBindingSet(ctx_r1.activeDate, $event) ||
+          (ctx_r1.activeDate = $event);
+        return ɵɵresetView($event);
+      },
+    );
+    ɵɵlistener(
+      "yearSelected",
+      function NgxMatCalendar_ngx_mat_multi_year_view_4_Template_ngx_mat_multi_year_view_yearSelected_0_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r4);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1._yearSelectedInMultiYearView($event));
+      },
+    )(
+      "selectedChange",
+      function NgxMatCalendar_ngx_mat_multi_year_view_4_Template_ngx_mat_multi_year_view_selectedChange_0_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r4);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1._goToDateInView($event, "year"));
+      },
+    );
     ɵɵelementEnd();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext();
     ɵɵtwoWayProperty("activeDate", ctx_r1.activeDate);
-    ɵɵproperty("selected", ctx_r1.selected)("dateFilter", ctx_r1.dateFilter)("maxDate", ctx_r1.maxDate)("minDate", ctx_r1.minDate)("dateClass", ctx_r1.dateClass);
+    ɵɵproperty("selected", ctx_r1.selected)("dateFilter", ctx_r1.dateFilter)(
+      "maxDate",
+      ctx_r1.maxDate,
+    )("minDate", ctx_r1.minDate)("dateClass", ctx_r1.dateClass);
   }
 }
 var _c2 = [[["input", "matStartDate", ""]], [["input", "matEndDate", ""]]];
@@ -388,11 +533,14 @@ function NgxMatTimepickerComponent_tr_3_td_11_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "td")(1, "button", 10);
-    ɵɵlistener("click", function NgxMatTimepickerComponent_tr_3_td_11_Template_button_click_1_listener() {
-      ɵɵrestoreView(_r3);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.change("second", true));
-    });
+    ɵɵlistener(
+      "click",
+      function NgxMatTimepickerComponent_tr_3_td_11_Template_button_click_1_listener() {
+        ɵɵrestoreView(_r3);
+        const ctx_r1 = ɵɵnextContext(2);
+        return ɵɵresetView(ctx_r1.change("second", true));
+      },
+    );
     ɵɵelementStart(2, "mat-icon");
     ɵɵtext(3, "expand_less");
     ɵɵelementEnd()()();
@@ -417,26 +565,46 @@ function NgxMatTimepickerComponent_tr_3_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "tr")(1, "td")(2, "button", 10);
-    ɵɵlistener("click", function NgxMatTimepickerComponent_tr_3_Template_button_click_2_listener() {
-      ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.change("hour", true));
-    });
+    ɵɵlistener(
+      "click",
+      function NgxMatTimepickerComponent_tr_3_Template_button_click_2_listener() {
+        ɵɵrestoreView(_r1);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1.change("hour", true));
+      },
+    );
     ɵɵelementStart(3, "mat-icon");
     ɵɵtext(4, "expand_less");
     ɵɵelementEnd()()();
     ɵɵelement(5, "td");
     ɵɵelementStart(6, "td")(7, "button", 10);
-    ɵɵlistener("click", function NgxMatTimepickerComponent_tr_3_Template_button_click_7_listener() {
-      ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.change("minute", true));
-    });
+    ɵɵlistener(
+      "click",
+      function NgxMatTimepickerComponent_tr_3_Template_button_click_7_listener() {
+        ɵɵrestoreView(_r1);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1.change("minute", true));
+      },
+    );
     ɵɵelementStart(8, "mat-icon");
     ɵɵtext(9, "expand_less");
     ɵɵelementEnd()()();
     ɵɵelement(10, "td");
-    ɵɵtemplate(11, NgxMatTimepickerComponent_tr_3_td_11_Template, 4, 1, "td", 3)(12, NgxMatTimepickerComponent_tr_3_td_12_Template, 1, 0, "td", 8)(13, NgxMatTimepickerComponent_tr_3_td_13_Template, 1, 0, "td", 3);
+    ɵɵtemplate(
+      11,
+      NgxMatTimepickerComponent_tr_3_td_11_Template,
+      4,
+      1,
+      "td",
+      3,
+    )(12, NgxMatTimepickerComponent_tr_3_td_12_Template, 1, 0, "td", 8)(
+      13,
+      NgxMatTimepickerComponent_tr_3_td_13_Template,
+      1,
+      0,
+      "td",
+      3,
+    );
     ɵɵelementEnd();
   }
   if (rf & 2) {
@@ -464,25 +632,43 @@ function NgxMatTimepickerComponent_td_14_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "td")(1, "mat-form-field", 4)(2, "input", 11);
-    ɵɵlistener("input", function NgxMatTimepickerComponent_td_14_Template_input_input_2_listener($event) {
-      ɵɵrestoreView(_r4);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.formatInput($event.target));
-    })("keydown.ArrowUp", function NgxMatTimepickerComponent_td_14_Template_input_keydown_ArrowUp_2_listener($event) {
-      ɵɵrestoreView(_r4);
-      const ctx_r1 = ɵɵnextContext();
-      ctx_r1.change("second", true);
-      return ɵɵresetView($event.preventDefault());
-    })("keydown.ArrowDown", function NgxMatTimepickerComponent_td_14_Template_input_keydown_ArrowDown_2_listener($event) {
-      ɵɵrestoreView(_r4);
-      const ctx_r1 = ɵɵnextContext();
-      ctx_r1.change("second", false);
-      return ɵɵresetView($event.preventDefault());
-    })("blur", function NgxMatTimepickerComponent_td_14_Template_input_blur_2_listener() {
-      ɵɵrestoreView(_r4);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.change("second"));
-    });
+    ɵɵlistener(
+      "input",
+      function NgxMatTimepickerComponent_td_14_Template_input_input_2_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r4);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1.formatInput($event.target));
+      },
+    )(
+      "keydown.ArrowUp",
+      function NgxMatTimepickerComponent_td_14_Template_input_keydown_ArrowUp_2_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r4);
+        const ctx_r1 = ɵɵnextContext();
+        ctx_r1.change("second", true);
+        return ɵɵresetView($event.preventDefault());
+      },
+    )(
+      "keydown.ArrowDown",
+      function NgxMatTimepickerComponent_td_14_Template_input_keydown_ArrowDown_2_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r4);
+        const ctx_r1 = ɵɵnextContext();
+        ctx_r1.change("second", false);
+        return ɵɵresetView($event.preventDefault());
+      },
+    )(
+      "blur",
+      function NgxMatTimepickerComponent_td_14_Template_input_blur_2_listener() {
+        ɵɵrestoreView(_r4);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1.change("second"));
+      },
+    );
     ɵɵelementEnd()()();
   }
   if (rf & 2) {
@@ -500,11 +686,14 @@ function NgxMatTimepickerComponent_td_16_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "td", 12)(1, "button", 13);
-    ɵɵlistener("click", function NgxMatTimepickerComponent_td_16_Template_button_click_1_listener() {
-      ɵɵrestoreView(_r5);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.toggleMeridian());
-    });
+    ɵɵlistener(
+      "click",
+      function NgxMatTimepickerComponent_td_16_Template_button_click_1_listener() {
+        ɵɵrestoreView(_r5);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1.toggleMeridian());
+      },
+    );
     ɵɵtext(2);
     ɵɵelementEnd()();
   }
@@ -525,11 +714,14 @@ function NgxMatTimepickerComponent_tr_17_td_11_Template(rf, ctx) {
   if (rf & 1) {
     const _r7 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "td")(1, "button", 14);
-    ɵɵlistener("click", function NgxMatTimepickerComponent_tr_17_td_11_Template_button_click_1_listener() {
-      ɵɵrestoreView(_r7);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.change("second", false));
-    });
+    ɵɵlistener(
+      "click",
+      function NgxMatTimepickerComponent_tr_17_td_11_Template_button_click_1_listener() {
+        ɵɵrestoreView(_r7);
+        const ctx_r1 = ɵɵnextContext(2);
+        return ɵɵresetView(ctx_r1.change("second", false));
+      },
+    );
     ɵɵelementStart(2, "mat-icon");
     ɵɵtext(3, "expand_more");
     ɵɵelementEnd()()();
@@ -554,25 +746,45 @@ function NgxMatTimepickerComponent_tr_17_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "tr")(1, "td")(2, "button", 14);
-    ɵɵlistener("click", function NgxMatTimepickerComponent_tr_17_Template_button_click_2_listener() {
-      ɵɵrestoreView(_r6);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.change("hour", false));
-    });
+    ɵɵlistener(
+      "click",
+      function NgxMatTimepickerComponent_tr_17_Template_button_click_2_listener() {
+        ɵɵrestoreView(_r6);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1.change("hour", false));
+      },
+    );
     ɵɵelementStart(3, "mat-icon");
     ɵɵtext(4, "expand_more");
     ɵɵelementEnd()()();
     ɵɵelement(5, "td");
     ɵɵelementStart(6, "td")(7, "button", 14);
-    ɵɵlistener("click", function NgxMatTimepickerComponent_tr_17_Template_button_click_7_listener() {
-      ɵɵrestoreView(_r6);
-      const ctx_r1 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r1.change("minute", false));
-    });
+    ɵɵlistener(
+      "click",
+      function NgxMatTimepickerComponent_tr_17_Template_button_click_7_listener() {
+        ɵɵrestoreView(_r6);
+        const ctx_r1 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r1.change("minute", false));
+      },
+    );
     ɵɵelementStart(8, "mat-icon");
     ɵɵtext(9, "expand_more");
     ɵɵelementEnd()()();
-    ɵɵtemplate(10, NgxMatTimepickerComponent_tr_17_td_10_Template, 1, 0, "td", 3)(11, NgxMatTimepickerComponent_tr_17_td_11_Template, 4, 1, "td", 3)(12, NgxMatTimepickerComponent_tr_17_td_12_Template, 1, 0, "td", 8)(13, NgxMatTimepickerComponent_tr_17_td_13_Template, 1, 0, "td", 3);
+    ɵɵtemplate(
+      10,
+      NgxMatTimepickerComponent_tr_17_td_10_Template,
+      1,
+      0,
+      "td",
+      3,
+    )(11, NgxMatTimepickerComponent_tr_17_td_11_Template, 4, 1, "td", 3)(
+      12,
+      NgxMatTimepickerComponent_tr_17_td_12_Template,
+      1,
+      0,
+      "td",
+      8,
+    )(13, NgxMatTimepickerComponent_tr_17_td_13_Template, 1, 0, "td", 3);
     ɵɵelementEnd();
   }
   if (rf & 2) {
@@ -595,32 +807,62 @@ function NgxMatDatepickerContent_ng_container_2_div_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 6)(1, "ngx-mat-timepicker", 7);
-    ɵɵtwoWayListener("ngModelChange", function NgxMatDatepickerContent_ng_container_2_div_1_Template_ngx_mat_timepicker_ngModelChange_1_listener($event) {
-      ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext(2);
-      ɵɵtwoWayBindingSet(ctx_r1._modelTime, $event) || (ctx_r1._modelTime = $event);
-      return ɵɵresetView($event);
-    });
-    ɵɵlistener("ngModelChange", function NgxMatDatepickerContent_ng_container_2_div_1_Template_ngx_mat_timepicker_ngModelChange_1_listener($event) {
-      ɵɵrestoreView(_r1);
-      const ctx_r1 = ɵɵnextContext(2);
-      return ɵɵresetView(ctx_r1.onTimeChanged($event));
-    });
+    ɵɵtwoWayListener(
+      "ngModelChange",
+      function NgxMatDatepickerContent_ng_container_2_div_1_Template_ngx_mat_timepicker_ngModelChange_1_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r1);
+        const ctx_r1 = ɵɵnextContext(2);
+        ɵɵtwoWayBindingSet(ctx_r1._modelTime, $event) ||
+          (ctx_r1._modelTime = $event);
+        return ɵɵresetView($event);
+      },
+    );
+    ɵɵlistener(
+      "ngModelChange",
+      function NgxMatDatepickerContent_ng_container_2_div_1_Template_ngx_mat_timepicker_ngModelChange_1_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r1);
+        const ctx_r1 = ɵɵnextContext(2);
+        return ɵɵresetView(ctx_r1.onTimeChanged($event));
+      },
+    );
     ɵɵelementEnd()();
   }
   if (rf & 2) {
     const ctx_r1 = ɵɵnextContext(2);
     ɵɵclassProp("disable-seconds", !ctx_r1.datepicker._showSeconds);
     ɵɵadvance();
-    ɵɵproperty("showSpinners", ctx_r1.datepicker._showSpinners)("showSeconds", ctx_r1.datepicker._showSeconds)("disabled", ctx_r1.datepicker._disabled || !ctx_r1._modelTime)("stepHour", ctx_r1.datepicker._stepHour)("stepMinute", ctx_r1.datepicker._stepMinute)("stepSecond", ctx_r1.datepicker._stepSecond);
+    ɵɵproperty("showSpinners", ctx_r1.datepicker._showSpinners)(
+      "showSeconds",
+      ctx_r1.datepicker._showSeconds,
+    )("disabled", ctx_r1.datepicker._disabled || !ctx_r1._modelTime)(
+      "stepHour",
+      ctx_r1.datepicker._stepHour,
+    )("stepMinute", ctx_r1.datepicker._stepMinute)(
+      "stepSecond",
+      ctx_r1.datepicker._stepSecond,
+    );
     ɵɵtwoWayProperty("ngModel", ctx_r1._modelTime);
-    ɵɵproperty("color", ctx_r1.datepicker._color)("enableMeridian", ctx_r1.datepicker._enableMeridian)("disableMinute", ctx_r1.datepicker._disableMinute);
+    ɵɵproperty("color", ctx_r1.datepicker._color)(
+      "enableMeridian",
+      ctx_r1.datepicker._enableMeridian,
+    )("disableMinute", ctx_r1.datepicker._disableMinute);
   }
 }
 function NgxMatDatepickerContent_ng_container_2_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, NgxMatDatepickerContent_ng_container_2_div_1_Template, 2, 12, "div", 5);
+    ɵɵtemplate(
+      1,
+      NgxMatDatepickerContent_ng_container_2_div_1_Template,
+      2,
+      12,
+      "div",
+      5,
+    );
     ɵɵelementContainerEnd();
   }
   if (rf & 2) {
@@ -629,8 +871,7 @@ function NgxMatDatepickerContent_ng_container_2_Template(rf, ctx) {
     ɵɵproperty("ngIf", !ctx_r1.datepicker._hideTime);
   }
 }
-function NgxMatDatepickerContent_ng_template_3_Template(rf, ctx) {
-}
+function NgxMatDatepickerContent_ng_template_3_Template(rf, ctx) {}
 function NgxMatDatepickerActions_ng_template_0_Template(rf, ctx) {
   if (rf & 1) {
     ɵɵelementStart(0, "div", 0);
@@ -657,9 +898,12 @@ var NgxMatDateAdapter = class extends DateAdapter {
    * @param b Date 2
    */
   isSameTime(a, b) {
-    if (a == null || b == null)
-      return true;
-    return this.getHour(a) === this.getHour(b) && this.getMinute(a) === this.getMinute(b) && this.getSecond(a) === this.getSecond(b);
+    if (a == null || b == null) return true;
+    return (
+      this.getHour(a) === this.getHour(b) &&
+      this.getMinute(a) === this.getMinute(b) &&
+      this.getSecond(a) === this.getSecond(b)
+    );
   }
   /**
    * Copy time from a date to a another date
@@ -672,14 +916,17 @@ var NgxMatDateAdapter = class extends DateAdapter {
     this.setSecond(toDate, this.getSecond(fromDate));
   }
   /**
-  * Compares two dates.
-  * @param first The first date to compare.
-  * @param second The second date to compare.
-  * @returns 0 if the dates are equal, a number less than 0 if the first date is earlier,
-  *     a number greater than 0 if the first date is later.
-  */
+   * Compares two dates.
+   * @param first The first date to compare.
+   * @param second The second date to compare.
+   * @returns 0 if the dates are equal, a number less than 0 if the first date is earlier,
+   *     a number greater than 0 if the first date is later.
+   */
   compareDateWithTime(first, second, showSeconds) {
-    let res = super.compareDate(first, second) || this.getHour(first) - this.getHour(second) || this.getMinute(first) - this.getMinute(second);
+    let res =
+      super.compareDate(first, second) ||
+      this.getHour(first) - this.getHour(second) ||
+      this.getMinute(first) - this.getMinute(second);
     if (showSeconds) {
       res = res || this.getSecond(first) - this.getSecond(second);
     }
@@ -723,7 +970,7 @@ var NgxMatDateSelectionModel = class {
     this._selectionChanged.next({
       selection: value,
       source,
-      oldValue
+      oldValue,
     });
   }
   ngOnDestroy() {
@@ -738,18 +985,29 @@ NgxMatDateSelectionModel.ɵfac = function NgxMatDateSelectionModel_Factory(t) {
 };
 NgxMatDateSelectionModel.ɵprov = ɵɵdefineInjectable({
   token: NgxMatDateSelectionModel,
-  factory: NgxMatDateSelectionModel.ɵfac
+  factory: NgxMatDateSelectionModel.ɵfac,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDateSelectionModel, [{
-    type: Injectable
-  }], function() {
-    return [{
-      type: void 0
-    }, {
-      type: NgxMatDateAdapter
-    }];
-  }, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDateSelectionModel,
+      [
+        {
+          type: Injectable,
+        },
+      ],
+      function () {
+        return [
+          {
+            type: void 0,
+          },
+          {
+            type: NgxMatDateAdapter,
+          },
+        ];
+      },
+      null,
+    );
 })();
 var NgxMatSingleDateSelectionModel = class _NgxMatSingleDateSelectionModel extends NgxMatDateSelectionModel {
   constructor(adapter) {
@@ -780,21 +1038,34 @@ var NgxMatSingleDateSelectionModel = class _NgxMatSingleDateSelectionModel exten
     return clone;
   }
 };
-NgxMatSingleDateSelectionModel.ɵfac = function NgxMatSingleDateSelectionModel_Factory(t) {
-  return new (t || NgxMatSingleDateSelectionModel)(ɵɵinject(NgxMatDateAdapter));
-};
+NgxMatSingleDateSelectionModel.ɵfac =
+  function NgxMatSingleDateSelectionModel_Factory(t) {
+    return new (t || NgxMatSingleDateSelectionModel)(
+      ɵɵinject(NgxMatDateAdapter),
+    );
+  };
 NgxMatSingleDateSelectionModel.ɵprov = ɵɵdefineInjectable({
   token: NgxMatSingleDateSelectionModel,
-  factory: NgxMatSingleDateSelectionModel.ɵfac
+  factory: NgxMatSingleDateSelectionModel.ɵfac,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatSingleDateSelectionModel, [{
-    type: Injectable
-  }], function() {
-    return [{
-      type: NgxMatDateAdapter
-    }];
-  }, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatSingleDateSelectionModel,
+      [
+        {
+          type: Injectable,
+        },
+      ],
+      function () {
+        return [
+          {
+            type: NgxMatDateAdapter,
+          },
+        ];
+      },
+      null,
+    );
 })();
 var NgxMatRangeDateSelectionModel = class _NgxMatRangeDateSelectionModel extends NgxMatDateSelectionModel {
   constructor(adapter) {
@@ -806,10 +1077,7 @@ var NgxMatRangeDateSelectionModel = class _NgxMatRangeDateSelectionModel extends
    * the selection is reset so that the given date is the new `start` and the `end` is null.
    */
   add(date) {
-    let {
-      start,
-      end
-    } = this.selection;
+    let { start, end } = this.selection;
     if (start == null) {
       start = date;
     } else if (end == null) {
@@ -822,17 +1090,21 @@ var NgxMatRangeDateSelectionModel = class _NgxMatRangeDateSelectionModel extends
   }
   /** Checks whether the current selection is valid. */
   isValid() {
-    const {
-      start,
-      end
-    } = this.selection;
+    const { start, end } = this.selection;
     if (start == null && end == null) {
       return true;
     }
     if (start != null && end != null) {
-      return this._isValidDateInstance(start) && this._isValidDateInstance(end) && this._adapter.compareDate(start, end) <= 0;
+      return (
+        this._isValidDateInstance(start) &&
+        this._isValidDateInstance(end) &&
+        this._adapter.compareDate(start, end) <= 0
+      );
     }
-    return (start == null || this._isValidDateInstance(start)) && (end == null || this._isValidDateInstance(end));
+    return (
+      (start == null || this._isValidDateInstance(start)) &&
+      (end == null || this._isValidDateInstance(end))
+    );
   }
   /**
    * Checks whether the current selection is complete. In the case of a date range selection, this
@@ -848,43 +1120,72 @@ var NgxMatRangeDateSelectionModel = class _NgxMatRangeDateSelectionModel extends
     return clone;
   }
 };
-NgxMatRangeDateSelectionModel.ɵfac = function NgxMatRangeDateSelectionModel_Factory(t) {
-  return new (t || NgxMatRangeDateSelectionModel)(ɵɵinject(NgxMatDateAdapter));
-};
+NgxMatRangeDateSelectionModel.ɵfac =
+  function NgxMatRangeDateSelectionModel_Factory(t) {
+    return new (t || NgxMatRangeDateSelectionModel)(
+      ɵɵinject(NgxMatDateAdapter),
+    );
+  };
 NgxMatRangeDateSelectionModel.ɵprov = ɵɵdefineInjectable({
   token: NgxMatRangeDateSelectionModel,
-  factory: NgxMatRangeDateSelectionModel.ɵfac
+  factory: NgxMatRangeDateSelectionModel.ɵfac,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatRangeDateSelectionModel, [{
-    type: Injectable
-  }], function() {
-    return [{
-      type: NgxMatDateAdapter
-    }];
-  }, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatRangeDateSelectionModel,
+      [
+        {
+          type: Injectable,
+        },
+      ],
+      function () {
+        return [
+          {
+            type: NgxMatDateAdapter,
+          },
+        ];
+      },
+      null,
+    );
 })();
 function NGX_MAT_SINGLE_DATE_SELECTION_MODEL_FACTORY(parent, adapter) {
   return parent || new NgxMatSingleDateSelectionModel(adapter);
 }
 var NGX_MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER = {
   provide: NgxMatDateSelectionModel,
-  deps: [[new Optional(), new SkipSelf(), NgxMatDateSelectionModel], NgxMatDateAdapter],
-  useFactory: NGX_MAT_SINGLE_DATE_SELECTION_MODEL_FACTORY
+  deps: [
+    [new Optional(), new SkipSelf(), NgxMatDateSelectionModel],
+    NgxMatDateAdapter,
+  ],
+  useFactory: NGX_MAT_SINGLE_DATE_SELECTION_MODEL_FACTORY,
 };
 function NGX_MAT_RANGE_DATE_SELECTION_MODEL_FACTORY(parent, adapter) {
   return parent || new NgxMatRangeDateSelectionModel(adapter);
 }
 var NGX_MAT_RANGE_DATE_SELECTION_MODEL_PROVIDER = {
   provide: NgxMatDateSelectionModel,
-  deps: [[new Optional(), new SkipSelf(), NgxMatDateSelectionModel], NgxMatDateAdapter],
-  useFactory: NGX_MAT_RANGE_DATE_SELECTION_MODEL_FACTORY
+  deps: [
+    [new Optional(), new SkipSelf(), NgxMatDateSelectionModel],
+    NgxMatDateAdapter,
+  ],
+  useFactory: NGX_MAT_RANGE_DATE_SELECTION_MODEL_FACTORY,
 };
 function createMissingDateImplError$1(provider) {
-  return Error(`NgxMatDatetimePicker: No provider found for ${provider}. You must import one of the following modules at your application root: NgxMatNativeDateModule, NgxMatMomentDateModule, or provide a custom implementation.`);
+  return Error(
+    `NgxMatDatetimePicker: No provider found for ${provider}. You must import one of the following modules at your application root: NgxMatNativeDateModule, NgxMatMomentDateModule, or provide a custom implementation.`,
+  );
 }
 var NgxMatCalendarCell = class {
-  constructor(value, displayValue, ariaLabel, enabled, cssClasses = {}, compareValue = value, rawValue) {
+  constructor(
+    value,
+    displayValue,
+    ariaLabel,
+    enabled,
+    cssClasses = {},
+    compareValue = value,
+    rawValue,
+  ) {
     this.value = value;
     this.displayValue = displayValue;
     this.ariaLabel = ariaLabel;
@@ -921,16 +1222,17 @@ var NgxMatCalendarBody = class {
       if (event.target && this.isRange) {
         const cell = this._getCellFromElement(event.target);
         if (cell) {
-          this._ngZone.run(() => this.previewChange.emit({
-            value: cell.enabled ? cell : null,
-            event
-          }));
+          this._ngZone.run(() =>
+            this.previewChange.emit({
+              value: cell.enabled ? cell : null,
+              event,
+            }),
+          );
         }
       }
     };
     this._touchmoveHandler = (event) => {
-      if (!this.isRange)
-        return;
+      if (!this.isRange) return;
       const target = getActualTouchTarget(event);
       const cell = target ? this._getCellFromElement(target) : null;
       if (target !== event.target) {
@@ -939,27 +1241,36 @@ var NgxMatCalendarBody = class {
       if (getCellElement(event.target)) {
         event.preventDefault();
       }
-      this._ngZone.run(() => this.previewChange.emit({
-        value: cell?.enabled ? cell : null,
-        event
-      }));
+      this._ngZone.run(() =>
+        this.previewChange.emit({
+          value: cell?.enabled ? cell : null,
+          event,
+        }),
+      );
     };
     this._leaveHandler = (event) => {
       if (this.previewEnd !== null && this.isRange) {
         if (event.type !== "blur") {
           this._didDragSinceMouseDown = true;
         }
-        if (event.target && this._getCellFromElement(event.target) && !(event.relatedTarget && this._getCellFromElement(event.relatedTarget))) {
-          this._ngZone.run(() => this.previewChange.emit({
-            value: null,
-            event
-          }));
+        if (
+          event.target &&
+          this._getCellFromElement(event.target) &&
+          !(
+            event.relatedTarget && this._getCellFromElement(event.relatedTarget)
+          )
+        ) {
+          this._ngZone.run(() =>
+            this.previewChange.emit({
+              value: null,
+              event,
+            }),
+          );
         }
       }
     };
     this._mousedownHandler = (event) => {
-      if (!this.isRange)
-        return;
+      if (!this.isRange) return;
       this._didDragSinceMouseDown = false;
       const cell = event.target && this._getCellFromElement(event.target);
       if (!cell || !this._isInRange(cell.rawValue)) {
@@ -968,31 +1279,33 @@ var NgxMatCalendarBody = class {
       this._ngZone.run(() => {
         this.dragStarted.emit({
           value: cell.rawValue,
-          event
+          event,
         });
       });
     };
     this._mouseupHandler = (event) => {
-      if (!this.isRange)
-        return;
+      if (!this.isRange) return;
       const cellElement = getCellElement(event.target);
       if (!cellElement) {
         this._ngZone.run(() => {
           this.dragEnded.emit({
             value: null,
-            event
+            event,
           });
         });
         return;
       }
-      if (cellElement.closest(".mat-calendar-body") !== this._elementRef.nativeElement) {
+      if (
+        cellElement.closest(".mat-calendar-body") !==
+        this._elementRef.nativeElement
+      ) {
         return;
       }
       this._ngZone.run(() => {
         const cell = this._getCellFromElement(cellElement);
         this.dragEnded.emit({
           value: cell?.rawValue ?? null,
-          event
+          event,
         });
       });
     };
@@ -1000,7 +1313,7 @@ var NgxMatCalendarBody = class {
       const target = getActualTouchTarget(event);
       if (target) {
         this._mouseupHandler({
-          target
+          target,
         });
       }
     };
@@ -1036,7 +1349,7 @@ var NgxMatCalendarBody = class {
     if (cell.enabled) {
       this.selectedValueChange.emit({
         value: cell.value,
-        event
+        event,
       });
     }
   }
@@ -1044,7 +1357,7 @@ var NgxMatCalendarBody = class {
     if (cell.enabled) {
       this.activeDateChange.emit({
         value: cell.value,
-        event
+        event,
       });
     }
   }
@@ -1054,15 +1367,13 @@ var NgxMatCalendarBody = class {
   }
   ngOnChanges(changes) {
     const columnChanges = changes["numCols"];
-    const {
-      rows,
-      numCols
-    } = this;
+    const { rows, numCols } = this;
     if (changes["rows"] || columnChanges) {
-      this._firstRowOffset = rows && rows.length && rows[0].length ? numCols - rows[0].length : 0;
+      this._firstRowOffset =
+        rows && rows.length && rows[0].length ? numCols - rows[0].length : 0;
     }
     if (changes["cellAspectRatio"] || columnChanges || !this._cellPadding) {
-      this._cellPadding = `${50 * this.cellAspectRatio / numCols}%`;
+      this._cellPadding = `${(50 * this.cellAspectRatio) / numCols}%`;
     }
     if (columnChanges || !this._cellWidth) {
       this._cellWidth = `${100 / numCols}%`;
@@ -1094,7 +1405,9 @@ var NgxMatCalendarBody = class {
     this._ngZone.runOutsideAngular(() => {
       this._ngZone.onStable.pipe(take(1)).subscribe(() => {
         setTimeout(() => {
-          const activeCell = this._elementRef.nativeElement.querySelector(".mat-calendar-body-active");
+          const activeCell = this._elementRef.nativeElement.querySelector(
+            ".mat-calendar-body-active",
+          );
           if (activeCell) {
             if (!movePreview) {
               this._skipNextFocus = true;
@@ -1127,7 +1440,11 @@ var NgxMatCalendarBody = class {
   }
   /** Whether the cell is a start bridge cell between the main and comparison ranges. */
   _isComparisonBridgeStart(value, rowIndex, colIndex) {
-    if (!this._isComparisonStart(value) || this._isRangeStart(value) || !this._isInRange(value)) {
+    if (
+      !this._isComparisonStart(value) ||
+      this._isRangeStart(value) ||
+      !this._isInRange(value)
+    ) {
       return false;
     }
     let previousCell = this.rows[rowIndex][colIndex - 1];
@@ -1139,7 +1456,11 @@ var NgxMatCalendarBody = class {
   }
   /** Whether the cell is an end bridge cell between the main and comparison ranges. */
   _isComparisonBridgeEnd(value, rowIndex, colIndex) {
-    if (!this._isComparisonEnd(value) || this._isRangeEnd(value) || !this._isInRange(value)) {
+    if (
+      !this._isComparisonEnd(value) ||
+      this._isRangeEnd(value) ||
+      !this._isInRange(value)
+    ) {
       return false;
     }
     let nextCell = this.rows[rowIndex][colIndex + 1];
@@ -1155,10 +1476,18 @@ var NgxMatCalendarBody = class {
   }
   /** Gets whether a value is within the current comparison range. */
   _isInComparisonRange(value) {
-    return isInRange(value, this.comparisonStart, this.comparisonEnd, this.isRange);
+    return isInRange(
+      value,
+      this.comparisonStart,
+      this.comparisonEnd,
+      this.isRange,
+    );
   }
   _isComparisonIdentical(value) {
-    return this.comparisonStart === this.comparisonEnd && value === this.comparisonStart;
+    return (
+      this.comparisonStart === this.comparisonEnd &&
+      value === this.comparisonStart
+    );
   }
   /** Gets whether a value is the start of the preview range. */
   _isPreviewStart(value) {
@@ -1200,7 +1529,10 @@ var NgxMatCalendarBody = class {
   }
 };
 NgxMatCalendarBody.ɵfac = function NgxMatCalendarBody_Factory(t) {
-  return new (t || NgxMatCalendarBody)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgZone));
+  return new (t || NgxMatCalendarBody)(
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵdirectiveInject(NgZone),
+  );
 };
 NgxMatCalendarBody.ɵcmp = ɵɵdefineComponent({
   type: NgxMatCalendarBody,
@@ -1222,24 +1554,74 @@ NgxMatCalendarBody.ɵcmp = ɵɵdefineComponent({
     previewStart: "previewStart",
     previewEnd: "previewEnd",
     startDateAccessibleName: "startDateAccessibleName",
-    endDateAccessibleName: "endDateAccessibleName"
+    endDateAccessibleName: "endDateAccessibleName",
   },
   outputs: {
     selectedValueChange: "selectedValueChange",
     previewChange: "previewChange",
     activeDateChange: "activeDateChange",
     dragStarted: "dragStarted",
-    dragEnded: "dragEnded"
+    dragEnded: "dragEnded",
   },
   exportAs: ["matCalendarBody"],
   features: [ɵɵNgOnChangesFeature],
   attrs: _c0,
   decls: 6,
   vars: 6,
-  consts: [["aria-hidden", "true", 4, "ngIf"], ["role", "row", 4, "ngFor", "ngForOf"], [1, "mat-calendar-body-hidden-label", 3, "id"], ["aria-hidden", "true"], [1, "mat-calendar-body-label"], ["role", "row"], ["class", "mat-calendar-body-label", 3, "paddingTop", "paddingBottom", 4, "ngIf"], ["role", "gridcell", "class", "mat-calendar-body-cell-container", 3, "width", "paddingTop", "paddingBottom", 4, "ngFor", "ngForOf"], ["role", "gridcell", 1, "mat-calendar-body-cell-container"], ["type", "button", 1, "mat-calendar-body-cell", 3, "click", "focus", "ngClass", "tabindex"], [1, "mat-calendar-body-cell-content", "mat-focus-indicator"], ["aria-hidden", "true", 1, "mat-calendar-body-cell-preview"]],
+  consts: [
+    ["aria-hidden", "true", 4, "ngIf"],
+    ["role", "row", 4, "ngFor", "ngForOf"],
+    [1, "mat-calendar-body-hidden-label", 3, "id"],
+    ["aria-hidden", "true"],
+    [1, "mat-calendar-body-label"],
+    ["role", "row"],
+    [
+      "class",
+      "mat-calendar-body-label",
+      3,
+      "paddingTop",
+      "paddingBottom",
+      4,
+      "ngIf",
+    ],
+    [
+      "role",
+      "gridcell",
+      "class",
+      "mat-calendar-body-cell-container",
+      3,
+      "width",
+      "paddingTop",
+      "paddingBottom",
+      4,
+      "ngFor",
+      "ngForOf",
+    ],
+    ["role", "gridcell", 1, "mat-calendar-body-cell-container"],
+    [
+      "type",
+      "button",
+      1,
+      "mat-calendar-body-cell",
+      3,
+      "click",
+      "focus",
+      "ngClass",
+      "tabindex",
+    ],
+    [1, "mat-calendar-body-cell-content", "mat-focus-indicator"],
+    ["aria-hidden", "true", 1, "mat-calendar-body-cell-preview"],
+  ],
   template: function NgxMatCalendarBody_Template(rf, ctx) {
     if (rf & 1) {
-      ɵɵtemplate(0, NgxMatCalendarBody_tr_0_Template, 3, 6, "tr", 0)(1, NgxMatCalendarBody_tr_1_Template, 3, 2, "tr", 1);
+      ɵɵtemplate(0, NgxMatCalendarBody_tr_0_Template, 3, 6, "tr", 0)(
+        1,
+        NgxMatCalendarBody_tr_1_Template,
+        3,
+        2,
+        "tr",
+        1,
+      );
       ɵɵelementStart(2, "label", 2);
       ɵɵtext(3);
       ɵɵelementEnd();
@@ -1262,22 +1644,29 @@ NgxMatCalendarBody.ɵcmp = ɵɵdefineComponent({
     }
   },
   dependencies: [NgClass, NgForOf, NgIf],
-  styles: ['.mat-calendar-body{min-width:224px}.mat-calendar-body-label{height:0;line-height:0;text-align:left;padding-left:4.7142857143%;padding-right:4.7142857143%}.mat-calendar-body-hidden-label{display:none}.mat-calendar-body-cell-container{position:relative;height:0;line-height:0}.mat-calendar-body-cell{-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;border:none;-webkit-tap-highlight-color:transparent;position:absolute;top:0;left:0;width:100%;height:100%;background:none;text-align:center;outline:none;font-family:inherit;margin:0}.mat-calendar-body-cell::-moz-focus-inner{border:0}.mat-calendar-body-cell:before,.mat-calendar-body-cell:after,.mat-calendar-body-cell-preview{content:"";position:absolute;top:5%;left:0;z-index:0;box-sizing:border-box;display:block;height:90%;width:100%}.mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range):before,.mat-calendar-body-range-start:after,.mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start):before,.mat-calendar-body-comparison-start:after,.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:5%;width:95%;border-top-left-radius:999px;border-bottom-left-radius:999px}[dir=rtl] .mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range):before,[dir=rtl] .mat-calendar-body-range-start:after,[dir=rtl] .mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start):before,[dir=rtl] .mat-calendar-body-comparison-start:after,[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:0;border-radius:0 999px 999px 0}.mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range):before,.mat-calendar-body-range-end:after,.mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end):before,.mat-calendar-body-comparison-end:after,.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}[dir=rtl] .mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range):before,[dir=rtl] .mat-calendar-body-range-end:after,[dir=rtl] .mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end):before,[dir=rtl] .mat-calendar-body-comparison-end:after,[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{left:5%;border-radius:999px 0 0 999px}[dir=rtl] .mat-calendar-body-comparison-bridge-start.mat-calendar-body-range-end:after,[dir=rtl] .mat-calendar-body-comparison-bridge-end.mat-calendar-body-range-start:after{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}.mat-calendar-body-comparison-start.mat-calendar-body-range-end:after,[dir=rtl] .mat-calendar-body-comparison-start.mat-calendar-body-range-end:after,.mat-calendar-body-comparison-end.mat-calendar-body-range-start:after,[dir=rtl] .mat-calendar-body-comparison-end.mat-calendar-body-range-start:after{width:90%}.mat-calendar-body-in-preview .mat-calendar-body-cell-preview{border-top:dashed 1px;border-bottom:dashed 1px}.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:dashed 1px}[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:0;border-right:dashed 1px}.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:dashed 1px}[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:0;border-left:dashed 1px}.mat-calendar-body-disabled{cursor:default}.cdk-high-contrast-active .mat-calendar-body-disabled{opacity:.5}.mat-calendar-body-cell-content{top:5%;left:5%;z-index:1;display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:90%;height:90%;line-height:1;border-width:1px;border-style:solid;border-radius:999px}.mat-calendar-body-cell-content.mat-focus-indicator{position:absolute}.cdk-high-contrast-active .mat-calendar-body-cell-content{border:none}.cdk-high-contrast-active .mat-datepicker-popup:not(:empty),.cdk-high-contrast-active .mat-calendar-body-cell:not(.mat-calendar-body-in-range) .mat-calendar-body-selected{outline:solid 1px}.cdk-high-contrast-active .mat-calendar-body-today{outline:dotted 1px}.cdk-high-contrast-active .mat-calendar-body-cell:before,.cdk-high-contrast-active .mat-calendar-body-cell:after,.cdk-high-contrast-active .mat-calendar-body-selected{background:none}.cdk-high-contrast-active .mat-calendar-body-in-range:before,.cdk-high-contrast-active .mat-calendar-body-comparison-bridge-start:before,.cdk-high-contrast-active .mat-calendar-body-comparison-bridge-end:before{border-top:solid 1px;border-bottom:solid 1px}.cdk-high-contrast-active .mat-calendar-body-range-start:before{border-left:solid 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-range-start:before{border-left:0;border-right:solid 1px}.cdk-high-contrast-active .mat-calendar-body-range-end:before{border-right:solid 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-range-end:before{border-right:0;border-left:solid 1px}.cdk-high-contrast-active .mat-calendar-body-in-comparison-range:before{border-top:dashed 1px;border-bottom:dashed 1px}.cdk-high-contrast-active .mat-calendar-body-comparison-start:before{border-left:dashed 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-comparison-start:before{border-left:0;border-right:dashed 1px}.cdk-high-contrast-active .mat-calendar-body-comparison-end:before{border-right:dashed 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-comparison-end:before{border-right:0;border-left:dashed 1px}[dir=rtl] .mat-calendar-body-label{text-align:right}\n'],
+  styles: [
+    '.mat-calendar-body{min-width:224px}.mat-calendar-body-label{height:0;line-height:0;text-align:left;padding-left:4.7142857143%;padding-right:4.7142857143%}.mat-calendar-body-hidden-label{display:none}.mat-calendar-body-cell-container{position:relative;height:0;line-height:0}.mat-calendar-body-cell{-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;border:none;-webkit-tap-highlight-color:transparent;position:absolute;top:0;left:0;width:100%;height:100%;background:none;text-align:center;outline:none;font-family:inherit;margin:0}.mat-calendar-body-cell::-moz-focus-inner{border:0}.mat-calendar-body-cell:before,.mat-calendar-body-cell:after,.mat-calendar-body-cell-preview{content:"";position:absolute;top:5%;left:0;z-index:0;box-sizing:border-box;display:block;height:90%;width:100%}.mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range):before,.mat-calendar-body-range-start:after,.mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start):before,.mat-calendar-body-comparison-start:after,.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:5%;width:95%;border-top-left-radius:999px;border-bottom-left-radius:999px}[dir=rtl] .mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range):before,[dir=rtl] .mat-calendar-body-range-start:after,[dir=rtl] .mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start):before,[dir=rtl] .mat-calendar-body-comparison-start:after,[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:0;border-radius:0 999px 999px 0}.mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range):before,.mat-calendar-body-range-end:after,.mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end):before,.mat-calendar-body-comparison-end:after,.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}[dir=rtl] .mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range):before,[dir=rtl] .mat-calendar-body-range-end:after,[dir=rtl] .mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end):before,[dir=rtl] .mat-calendar-body-comparison-end:after,[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{left:5%;border-radius:999px 0 0 999px}[dir=rtl] .mat-calendar-body-comparison-bridge-start.mat-calendar-body-range-end:after,[dir=rtl] .mat-calendar-body-comparison-bridge-end.mat-calendar-body-range-start:after{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}.mat-calendar-body-comparison-start.mat-calendar-body-range-end:after,[dir=rtl] .mat-calendar-body-comparison-start.mat-calendar-body-range-end:after,.mat-calendar-body-comparison-end.mat-calendar-body-range-start:after,[dir=rtl] .mat-calendar-body-comparison-end.mat-calendar-body-range-start:after{width:90%}.mat-calendar-body-in-preview .mat-calendar-body-cell-preview{border-top:dashed 1px;border-bottom:dashed 1px}.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:dashed 1px}[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:0;border-right:dashed 1px}.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:dashed 1px}[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:0;border-left:dashed 1px}.mat-calendar-body-disabled{cursor:default}.cdk-high-contrast-active .mat-calendar-body-disabled{opacity:.5}.mat-calendar-body-cell-content{top:5%;left:5%;z-index:1;display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:90%;height:90%;line-height:1;border-width:1px;border-style:solid;border-radius:999px}.mat-calendar-body-cell-content.mat-focus-indicator{position:absolute}.cdk-high-contrast-active .mat-calendar-body-cell-content{border:none}.cdk-high-contrast-active .mat-datepicker-popup:not(:empty),.cdk-high-contrast-active .mat-calendar-body-cell:not(.mat-calendar-body-in-range) .mat-calendar-body-selected{outline:solid 1px}.cdk-high-contrast-active .mat-calendar-body-today{outline:dotted 1px}.cdk-high-contrast-active .mat-calendar-body-cell:before,.cdk-high-contrast-active .mat-calendar-body-cell:after,.cdk-high-contrast-active .mat-calendar-body-selected{background:none}.cdk-high-contrast-active .mat-calendar-body-in-range:before,.cdk-high-contrast-active .mat-calendar-body-comparison-bridge-start:before,.cdk-high-contrast-active .mat-calendar-body-comparison-bridge-end:before{border-top:solid 1px;border-bottom:solid 1px}.cdk-high-contrast-active .mat-calendar-body-range-start:before{border-left:solid 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-range-start:before{border-left:0;border-right:solid 1px}.cdk-high-contrast-active .mat-calendar-body-range-end:before{border-right:solid 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-range-end:before{border-right:0;border-left:solid 1px}.cdk-high-contrast-active .mat-calendar-body-in-comparison-range:before{border-top:dashed 1px;border-bottom:dashed 1px}.cdk-high-contrast-active .mat-calendar-body-comparison-start:before{border-left:dashed 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-comparison-start:before{border-left:0;border-right:dashed 1px}.cdk-high-contrast-active .mat-calendar-body-comparison-end:before{border-right:dashed 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-comparison-end:before{border-right:0;border-left:dashed 1px}[dir=rtl] .mat-calendar-body-label{text-align:right}\n',
+  ],
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatCalendarBody, [{
-    type: Component,
-    args: [{
-      selector: "[ngx-mat-calendar-body]",
-      host: {
-        "class": "ngx-mat-calendar-body"
-      },
-      exportAs: "matCalendarBody",
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      template: `<!--\r
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatCalendarBody,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "[ngx-mat-calendar-body]",
+              host: {
+                class: "ngx-mat-calendar-body",
+              },
+              exportAs: "matCalendarBody",
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              template: `<!--\r
   If there's not enough space in the first row, create a separate label row. We mark this row as\r
   aria-hidden because we don't want it to be read out as one of the weeks in the month.\r
 -->\r
@@ -1363,79 +1752,131 @@ NgxMatCalendarBody.ɵcmp = ɵɵdefineComponent({
   {{endDateAccessibleName}}\r
 </label>\r
 `,
-      styles: ['.mat-calendar-body{min-width:224px}.mat-calendar-body-label{height:0;line-height:0;text-align:left;padding-left:4.7142857143%;padding-right:4.7142857143%}.mat-calendar-body-hidden-label{display:none}.mat-calendar-body-cell-container{position:relative;height:0;line-height:0}.mat-calendar-body-cell{-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;border:none;-webkit-tap-highlight-color:transparent;position:absolute;top:0;left:0;width:100%;height:100%;background:none;text-align:center;outline:none;font-family:inherit;margin:0}.mat-calendar-body-cell::-moz-focus-inner{border:0}.mat-calendar-body-cell:before,.mat-calendar-body-cell:after,.mat-calendar-body-cell-preview{content:"";position:absolute;top:5%;left:0;z-index:0;box-sizing:border-box;display:block;height:90%;width:100%}.mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range):before,.mat-calendar-body-range-start:after,.mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start):before,.mat-calendar-body-comparison-start:after,.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:5%;width:95%;border-top-left-radius:999px;border-bottom-left-radius:999px}[dir=rtl] .mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range):before,[dir=rtl] .mat-calendar-body-range-start:after,[dir=rtl] .mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start):before,[dir=rtl] .mat-calendar-body-comparison-start:after,[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:0;border-radius:0 999px 999px 0}.mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range):before,.mat-calendar-body-range-end:after,.mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end):before,.mat-calendar-body-comparison-end:after,.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}[dir=rtl] .mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range):before,[dir=rtl] .mat-calendar-body-range-end:after,[dir=rtl] .mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end):before,[dir=rtl] .mat-calendar-body-comparison-end:after,[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{left:5%;border-radius:999px 0 0 999px}[dir=rtl] .mat-calendar-body-comparison-bridge-start.mat-calendar-body-range-end:after,[dir=rtl] .mat-calendar-body-comparison-bridge-end.mat-calendar-body-range-start:after{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}.mat-calendar-body-comparison-start.mat-calendar-body-range-end:after,[dir=rtl] .mat-calendar-body-comparison-start.mat-calendar-body-range-end:after,.mat-calendar-body-comparison-end.mat-calendar-body-range-start:after,[dir=rtl] .mat-calendar-body-comparison-end.mat-calendar-body-range-start:after{width:90%}.mat-calendar-body-in-preview .mat-calendar-body-cell-preview{border-top:dashed 1px;border-bottom:dashed 1px}.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:dashed 1px}[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:0;border-right:dashed 1px}.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:dashed 1px}[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:0;border-left:dashed 1px}.mat-calendar-body-disabled{cursor:default}.cdk-high-contrast-active .mat-calendar-body-disabled{opacity:.5}.mat-calendar-body-cell-content{top:5%;left:5%;z-index:1;display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:90%;height:90%;line-height:1;border-width:1px;border-style:solid;border-radius:999px}.mat-calendar-body-cell-content.mat-focus-indicator{position:absolute}.cdk-high-contrast-active .mat-calendar-body-cell-content{border:none}.cdk-high-contrast-active .mat-datepicker-popup:not(:empty),.cdk-high-contrast-active .mat-calendar-body-cell:not(.mat-calendar-body-in-range) .mat-calendar-body-selected{outline:solid 1px}.cdk-high-contrast-active .mat-calendar-body-today{outline:dotted 1px}.cdk-high-contrast-active .mat-calendar-body-cell:before,.cdk-high-contrast-active .mat-calendar-body-cell:after,.cdk-high-contrast-active .mat-calendar-body-selected{background:none}.cdk-high-contrast-active .mat-calendar-body-in-range:before,.cdk-high-contrast-active .mat-calendar-body-comparison-bridge-start:before,.cdk-high-contrast-active .mat-calendar-body-comparison-bridge-end:before{border-top:solid 1px;border-bottom:solid 1px}.cdk-high-contrast-active .mat-calendar-body-range-start:before{border-left:solid 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-range-start:before{border-left:0;border-right:solid 1px}.cdk-high-contrast-active .mat-calendar-body-range-end:before{border-right:solid 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-range-end:before{border-right:0;border-left:solid 1px}.cdk-high-contrast-active .mat-calendar-body-in-comparison-range:before{border-top:dashed 1px;border-bottom:dashed 1px}.cdk-high-contrast-active .mat-calendar-body-comparison-start:before{border-left:dashed 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-comparison-start:before{border-left:0;border-right:dashed 1px}.cdk-high-contrast-active .mat-calendar-body-comparison-end:before{border-right:dashed 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-comparison-end:before{border-right:0;border-left:dashed 1px}[dir=rtl] .mat-calendar-body-label{text-align:right}\n']
-    }]
-  }], function() {
-    return [{
-      type: ElementRef
-    }, {
-      type: NgZone
-    }];
-  }, {
-    label: [{
-      type: Input
-    }],
-    rows: [{
-      type: Input
-    }],
-    todayValue: [{
-      type: Input
-    }],
-    startValue: [{
-      type: Input
-    }],
-    endValue: [{
-      type: Input
-    }],
-    labelMinRequiredCells: [{
-      type: Input
-    }],
-    numCols: [{
-      type: Input
-    }],
-    activeCell: [{
-      type: Input
-    }],
-    isRange: [{
-      type: Input
-    }],
-    cellAspectRatio: [{
-      type: Input
-    }],
-    comparisonStart: [{
-      type: Input
-    }],
-    comparisonEnd: [{
-      type: Input
-    }],
-    previewStart: [{
-      type: Input
-    }],
-    previewEnd: [{
-      type: Input
-    }],
-    startDateAccessibleName: [{
-      type: Input
-    }],
-    endDateAccessibleName: [{
-      type: Input
-    }],
-    selectedValueChange: [{
-      type: Output
-    }],
-    previewChange: [{
-      type: Output
-    }],
-    activeDateChange: [{
-      type: Output
-    }],
-    dragStarted: [{
-      type: Output
-    }],
-    dragEnded: [{
-      type: Output
-    }]
-  });
+              styles: [
+                '.mat-calendar-body{min-width:224px}.mat-calendar-body-label{height:0;line-height:0;text-align:left;padding-left:4.7142857143%;padding-right:4.7142857143%}.mat-calendar-body-hidden-label{display:none}.mat-calendar-body-cell-container{position:relative;height:0;line-height:0}.mat-calendar-body-cell{-webkit-user-select:none;-moz-user-select:none;user-select:none;cursor:pointer;border:none;-webkit-tap-highlight-color:transparent;position:absolute;top:0;left:0;width:100%;height:100%;background:none;text-align:center;outline:none;font-family:inherit;margin:0}.mat-calendar-body-cell::-moz-focus-inner{border:0}.mat-calendar-body-cell:before,.mat-calendar-body-cell:after,.mat-calendar-body-cell-preview{content:"";position:absolute;top:5%;left:0;z-index:0;box-sizing:border-box;display:block;height:90%;width:100%}.mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range):before,.mat-calendar-body-range-start:after,.mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start):before,.mat-calendar-body-comparison-start:after,.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:5%;width:95%;border-top-left-radius:999px;border-bottom-left-radius:999px}[dir=rtl] .mat-calendar-body-range-start:not(.mat-calendar-body-in-comparison-range):before,[dir=rtl] .mat-calendar-body-range-start:after,[dir=rtl] .mat-calendar-body-comparison-start:not(.mat-calendar-body-comparison-bridge-start):before,[dir=rtl] .mat-calendar-body-comparison-start:after,[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{left:0;border-radius:0 999px 999px 0}.mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range):before,.mat-calendar-body-range-end:after,.mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end):before,.mat-calendar-body-comparison-end:after,.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}[dir=rtl] .mat-calendar-body-range-end:not(.mat-calendar-body-in-comparison-range):before,[dir=rtl] .mat-calendar-body-range-end:after,[dir=rtl] .mat-calendar-body-comparison-end:not(.mat-calendar-body-comparison-bridge-end):before,[dir=rtl] .mat-calendar-body-comparison-end:after,[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{left:5%;border-radius:999px 0 0 999px}[dir=rtl] .mat-calendar-body-comparison-bridge-start.mat-calendar-body-range-end:after,[dir=rtl] .mat-calendar-body-comparison-bridge-end.mat-calendar-body-range-start:after{width:95%;border-top-right-radius:999px;border-bottom-right-radius:999px}.mat-calendar-body-comparison-start.mat-calendar-body-range-end:after,[dir=rtl] .mat-calendar-body-comparison-start.mat-calendar-body-range-end:after,.mat-calendar-body-comparison-end.mat-calendar-body-range-start:after,[dir=rtl] .mat-calendar-body-comparison-end.mat-calendar-body-range-start:after{width:90%}.mat-calendar-body-in-preview .mat-calendar-body-cell-preview{border-top:dashed 1px;border-bottom:dashed 1px}.mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:dashed 1px}[dir=rtl] .mat-calendar-body-preview-start .mat-calendar-body-cell-preview{border-left:0;border-right:dashed 1px}.mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:dashed 1px}[dir=rtl] .mat-calendar-body-preview-end .mat-calendar-body-cell-preview{border-right:0;border-left:dashed 1px}.mat-calendar-body-disabled{cursor:default}.cdk-high-contrast-active .mat-calendar-body-disabled{opacity:.5}.mat-calendar-body-cell-content{top:5%;left:5%;z-index:1;display:flex;align-items:center;justify-content:center;box-sizing:border-box;width:90%;height:90%;line-height:1;border-width:1px;border-style:solid;border-radius:999px}.mat-calendar-body-cell-content.mat-focus-indicator{position:absolute}.cdk-high-contrast-active .mat-calendar-body-cell-content{border:none}.cdk-high-contrast-active .mat-datepicker-popup:not(:empty),.cdk-high-contrast-active .mat-calendar-body-cell:not(.mat-calendar-body-in-range) .mat-calendar-body-selected{outline:solid 1px}.cdk-high-contrast-active .mat-calendar-body-today{outline:dotted 1px}.cdk-high-contrast-active .mat-calendar-body-cell:before,.cdk-high-contrast-active .mat-calendar-body-cell:after,.cdk-high-contrast-active .mat-calendar-body-selected{background:none}.cdk-high-contrast-active .mat-calendar-body-in-range:before,.cdk-high-contrast-active .mat-calendar-body-comparison-bridge-start:before,.cdk-high-contrast-active .mat-calendar-body-comparison-bridge-end:before{border-top:solid 1px;border-bottom:solid 1px}.cdk-high-contrast-active .mat-calendar-body-range-start:before{border-left:solid 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-range-start:before{border-left:0;border-right:solid 1px}.cdk-high-contrast-active .mat-calendar-body-range-end:before{border-right:solid 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-range-end:before{border-right:0;border-left:solid 1px}.cdk-high-contrast-active .mat-calendar-body-in-comparison-range:before{border-top:dashed 1px;border-bottom:dashed 1px}.cdk-high-contrast-active .mat-calendar-body-comparison-start:before{border-left:dashed 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-comparison-start:before{border-left:0;border-right:dashed 1px}.cdk-high-contrast-active .mat-calendar-body-comparison-end:before{border-right:dashed 1px}[dir=rtl] .cdk-high-contrast-active .mat-calendar-body-comparison-end:before{border-right:0;border-left:dashed 1px}[dir=rtl] .mat-calendar-body-label{text-align:right}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: ElementRef,
+          },
+          {
+            type: NgZone,
+          },
+        ];
+      },
+      {
+        label: [
+          {
+            type: Input,
+          },
+        ],
+        rows: [
+          {
+            type: Input,
+          },
+        ],
+        todayValue: [
+          {
+            type: Input,
+          },
+        ],
+        startValue: [
+          {
+            type: Input,
+          },
+        ],
+        endValue: [
+          {
+            type: Input,
+          },
+        ],
+        labelMinRequiredCells: [
+          {
+            type: Input,
+          },
+        ],
+        numCols: [
+          {
+            type: Input,
+          },
+        ],
+        activeCell: [
+          {
+            type: Input,
+          },
+        ],
+        isRange: [
+          {
+            type: Input,
+          },
+        ],
+        cellAspectRatio: [
+          {
+            type: Input,
+          },
+        ],
+        comparisonStart: [
+          {
+            type: Input,
+          },
+        ],
+        comparisonEnd: [
+          {
+            type: Input,
+          },
+        ],
+        previewStart: [
+          {
+            type: Input,
+          },
+        ],
+        previewEnd: [
+          {
+            type: Input,
+          },
+        ],
+        startDateAccessibleName: [
+          {
+            type: Input,
+          },
+        ],
+        endDateAccessibleName: [
+          {
+            type: Input,
+          },
+        ],
+        selectedValueChange: [
+          {
+            type: Output,
+          },
+        ],
+        previewChange: [
+          {
+            type: Output,
+          },
+        ],
+        activeDateChange: [
+          {
+            type: Output,
+          },
+        ],
+        dragStarted: [
+          {
+            type: Output,
+          },
+        ],
+        dragEnded: [
+          {
+            type: Output,
+          },
+        ],
+      },
+    );
 })();
 function isTableCell(node) {
   return node?.nodeName === "TD";
@@ -1458,25 +1899,38 @@ function isEnd(value, start, end) {
   return start !== null && start !== end && value >= start && value === end;
 }
 function isInRange(value, start, end, rangeEnabled) {
-  return rangeEnabled && start !== null && end !== null && start !== end && value >= start && value <= end;
+  return (
+    rangeEnabled &&
+    start !== null &&
+    end !== null &&
+    start !== end &&
+    value >= start &&
+    value <= end
+  );
 }
 function getActualTouchTarget(event) {
   const touchLocation = event.changedTouches[0];
-  return document.elementFromPoint(touchLocation.clientX, touchLocation.clientY);
+  return document.elementFromPoint(
+    touchLocation.clientX,
+    touchLocation.clientY,
+  );
 }
-var NGX_MAT_DATE_RANGE_SELECTION_STRATEGY = new InjectionToken("NGX_MAT_DATE_RANGE_SELECTION_STRATEGY");
+var NGX_MAT_DATE_RANGE_SELECTION_STRATEGY = new InjectionToken(
+  "NGX_MAT_DATE_RANGE_SELECTION_STRATEGY",
+);
 var DefaultNgxMatCalendarRangeStrategy = class {
   constructor(_dateAdapter) {
     this._dateAdapter = _dateAdapter;
   }
   selectionFinished(date, currentRange) {
-    let {
-      start,
-      end
-    } = currentRange;
+    let { start, end } = currentRange;
     if (start == null) {
       start = date;
-    } else if (end == null && date && this._dateAdapter.compareDate(date, start) >= 0) {
+    } else if (
+      end == null &&
+      date &&
+      this._dateAdapter.compareDate(date, start) >= 0
+    ) {
       end = date;
     } else {
       start = date;
@@ -1529,33 +1983,55 @@ var DefaultNgxMatCalendarRangeStrategy = class {
     return new NgxDateRange(start, end);
   }
 };
-DefaultNgxMatCalendarRangeStrategy.ɵfac = function DefaultNgxMatCalendarRangeStrategy_Factory(t) {
-  return new (t || DefaultNgxMatCalendarRangeStrategy)(ɵɵinject(NgxMatDateAdapter));
-};
+DefaultNgxMatCalendarRangeStrategy.ɵfac =
+  function DefaultNgxMatCalendarRangeStrategy_Factory(t) {
+    return new (t || DefaultNgxMatCalendarRangeStrategy)(
+      ɵɵinject(NgxMatDateAdapter),
+    );
+  };
 DefaultNgxMatCalendarRangeStrategy.ɵprov = ɵɵdefineInjectable({
   token: DefaultNgxMatCalendarRangeStrategy,
-  factory: DefaultNgxMatCalendarRangeStrategy.ɵfac
+  factory: DefaultNgxMatCalendarRangeStrategy.ɵfac,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(DefaultNgxMatCalendarRangeStrategy, [{
-    type: Injectable
-  }], function() {
-    return [{
-      type: NgxMatDateAdapter
-    }];
-  }, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      DefaultNgxMatCalendarRangeStrategy,
+      [
+        {
+          type: Injectable,
+        },
+      ],
+      function () {
+        return [
+          {
+            type: NgxMatDateAdapter,
+          },
+        ];
+      },
+      null,
+    );
 })();
 function NGX_MAT_CALENDAR_RANGE_STRATEGY_PROVIDER_FACTORY(parent, adapter) {
   return parent || new DefaultNgxMatCalendarRangeStrategy(adapter);
 }
 var NGX_MAT_CALENDAR_RANGE_STRATEGY_PROVIDER = {
   provide: NGX_MAT_DATE_RANGE_SELECTION_STRATEGY,
-  deps: [[new Optional(), new SkipSelf(), NGX_MAT_DATE_RANGE_SELECTION_STRATEGY], NgxMatDateAdapter],
-  useFactory: NGX_MAT_CALENDAR_RANGE_STRATEGY_PROVIDER_FACTORY
+  deps: [
+    [new Optional(), new SkipSelf(), NGX_MAT_DATE_RANGE_SELECTION_STRATEGY],
+    NgxMatDateAdapter,
+  ],
+  useFactory: NGX_MAT_CALENDAR_RANGE_STRATEGY_PROVIDER_FACTORY,
 };
 var DAYS_PER_WEEK = 7;
 var NgxMatMonthView = class {
-  constructor(_changeDetectorRef, _dateFormats, _dateAdapter, _dir, _rangeStrategy) {
+  constructor(
+    _changeDetectorRef,
+    _dateFormats,
+    _dateAdapter,
+    _dir,
+    _rangeStrategy,
+  ) {
     this._changeDetectorRef = _changeDetectorRef;
     this._dateFormats = _dateFormats;
     this._dateAdapter = _dateAdapter;
@@ -1584,8 +2060,15 @@ var NgxMatMonthView = class {
   }
   set activeDate(value) {
     const oldActiveDate = this._activeDate;
-    const validDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value)) || this._dateAdapter.today();
-    this._activeDate = this._dateAdapter.clampDate(validDate, this.minDate, this.maxDate);
+    const validDate =
+      this._dateAdapter.getValidDateOrNull(
+        this._dateAdapter.deserialize(value),
+      ) || this._dateAdapter.today();
+    this._activeDate = this._dateAdapter.clampDate(
+      validDate,
+      this.minDate,
+      this.maxDate,
+    );
     if (!this._hasSameMonthAndYear(oldActiveDate, this._activeDate)) {
       this._init();
     }
@@ -1598,7 +2081,9 @@ var NgxMatMonthView = class {
     if (value instanceof NgxDateRange) {
       this._selected = value;
     } else {
-      this._selected = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+      this._selected = this._dateAdapter.getValidDateOrNull(
+        this._dateAdapter.deserialize(value),
+      );
     }
     this._setRanges(this._selected);
   }
@@ -1607,20 +2092,27 @@ var NgxMatMonthView = class {
     return this._minDate;
   }
   set minDate(value) {
-    this._minDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    this._minDate = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
   }
   /** The maximum selectable date. */
   get maxDate() {
     return this._maxDate;
   }
   set maxDate(value) {
-    this._maxDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    this._maxDate = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
   }
   ngAfterContentInit() {
-    this._rerenderSubscription = this._dateAdapter.localeChanges.pipe(startWith(null)).subscribe(() => this._init());
+    this._rerenderSubscription = this._dateAdapter.localeChanges
+      .pipe(startWith(null))
+      .subscribe(() => this._init());
   }
   ngOnChanges(changes) {
-    const comparisonChange = changes["comparisonStart"] || changes["comparisonEnd"];
+    const comparisonChange =
+      changes["comparisonStart"] || changes["comparisonEnd"];
     if (comparisonChange && !comparisonChange.firstChange) {
       this._setRanges(this.selected);
     }
@@ -1641,14 +2133,16 @@ var NgxMatMonthView = class {
       rangeStartDate = this._getDateInCurrentMonth(this._selected.start);
       rangeEndDate = this._getDateInCurrentMonth(this._selected.end);
     } else {
-      rangeStartDate = rangeEndDate = this._getDateInCurrentMonth(this._selected);
+      rangeStartDate = rangeEndDate = this._getDateInCurrentMonth(
+        this._selected,
+      );
     }
     if (rangeStartDate !== date || rangeEndDate !== date) {
       this.selectedChange.emit(selectedDate);
     }
     this._userSelection.emit({
       value: selectedDate,
-      event: event.event
+      event: event.event,
     });
     this._clearPreview();
     this._changeDetectorRef.markForCheck();
@@ -1677,28 +2171,51 @@ var NgxMatMonthView = class {
     const isRtl = this._isRtl();
     switch (event.keyCode) {
       case LEFT_ARROW:
-        this.activeDate = this._dateAdapter.addCalendarDays(this._activeDate, isRtl ? 1 : -1);
+        this.activeDate = this._dateAdapter.addCalendarDays(
+          this._activeDate,
+          isRtl ? 1 : -1,
+        );
         break;
       case RIGHT_ARROW:
-        this.activeDate = this._dateAdapter.addCalendarDays(this._activeDate, isRtl ? -1 : 1);
+        this.activeDate = this._dateAdapter.addCalendarDays(
+          this._activeDate,
+          isRtl ? -1 : 1,
+        );
         break;
       case UP_ARROW:
-        this.activeDate = this._dateAdapter.addCalendarDays(this._activeDate, -7);
+        this.activeDate = this._dateAdapter.addCalendarDays(
+          this._activeDate,
+          -7,
+        );
         break;
       case DOWN_ARROW:
-        this.activeDate = this._dateAdapter.addCalendarDays(this._activeDate, 7);
+        this.activeDate = this._dateAdapter.addCalendarDays(
+          this._activeDate,
+          7,
+        );
         break;
       case HOME:
-        this.activeDate = this._dateAdapter.addCalendarDays(this._activeDate, 1 - this._dateAdapter.getDate(this._activeDate));
+        this.activeDate = this._dateAdapter.addCalendarDays(
+          this._activeDate,
+          1 - this._dateAdapter.getDate(this._activeDate),
+        );
         break;
       case END:
-        this.activeDate = this._dateAdapter.addCalendarDays(this._activeDate, this._dateAdapter.getNumDaysInMonth(this._activeDate) - this._dateAdapter.getDate(this._activeDate));
+        this.activeDate = this._dateAdapter.addCalendarDays(
+          this._activeDate,
+          this._dateAdapter.getNumDaysInMonth(this._activeDate) -
+            this._dateAdapter.getDate(this._activeDate),
+        );
         break;
       case PAGE_UP:
-        this.activeDate = event.altKey ? this._dateAdapter.addCalendarYears(this._activeDate, -1) : this._dateAdapter.addCalendarMonths(this._activeDate, -1);
+        this.activeDate = event.altKey
+          ? this._dateAdapter.addCalendarYears(this._activeDate, -1)
+          : this._dateAdapter.addCalendarMonths(this._activeDate, -1);
         break;
       case PAGE_DOWN:
-        this.activeDate = event.altKey ? this._dateAdapter.addCalendarYears(this._activeDate, 1) : this._dateAdapter.addCalendarMonths(this._activeDate, 1);
+        this.activeDate = event.altKey
+          ? this._dateAdapter.addCalendarYears(this._activeDate, 1)
+          : this._dateAdapter.addCalendarMonths(this._activeDate, 1);
         break;
       case ENTER:
       case SPACE:
@@ -1713,13 +2230,13 @@ var NgxMatMonthView = class {
           if (this.activeDrag) {
             this.dragEnded.emit({
               value: null,
-              event
+              event,
             });
           } else {
             this.selectedChange.emit(null);
             this._userSelection.emit({
               value: null,
-              event
+              event,
             });
           }
           event.preventDefault();
@@ -1741,7 +2258,7 @@ var NgxMatMonthView = class {
       if (this._selectionKeyPressed && this._canSelect(this._activeDate)) {
         this._dateSelected({
           value: this._dateAdapter.getDate(this._activeDate),
-          event
+          event,
         });
       }
       this._selectionKeyPressed = false;
@@ -1751,9 +2268,24 @@ var NgxMatMonthView = class {
   _init() {
     this._setRanges(this.selected);
     this._todayDate = this._getCellCompareValue(this._dateAdapter.today());
-    this._monthLabel = this._dateFormats.display.monthLabel ? this._dateAdapter.format(this.activeDate, this._dateFormats.display.monthLabel) : this._dateAdapter.getMonthNames("short")[this._dateAdapter.getMonth(this.activeDate)].toLocaleUpperCase();
-    let firstOfMonth = this._dateAdapter.createDate(this._dateAdapter.getYear(this.activeDate), this._dateAdapter.getMonth(this.activeDate), 1);
-    this._firstWeekOffset = (DAYS_PER_WEEK + this._dateAdapter.getDayOfWeek(firstOfMonth) - this._dateAdapter.getFirstDayOfWeek()) % DAYS_PER_WEEK;
+    this._monthLabel = this._dateFormats.display.monthLabel
+      ? this._dateAdapter.format(
+          this.activeDate,
+          this._dateFormats.display.monthLabel,
+        )
+      : this._dateAdapter
+          .getMonthNames("short")
+          [this._dateAdapter.getMonth(this.activeDate)].toLocaleUpperCase();
+    let firstOfMonth = this._dateAdapter.createDate(
+      this._dateAdapter.getYear(this.activeDate),
+      this._dateAdapter.getMonth(this.activeDate),
+      1,
+    );
+    this._firstWeekOffset =
+      (DAYS_PER_WEEK +
+        this._dateAdapter.getDayOfWeek(firstOfMonth) -
+        this._dateAdapter.getFirstDayOfWeek()) %
+      DAYS_PER_WEEK;
     this._initWeekdays();
     this._createWeekCells();
     this._changeDetectorRef.markForCheck();
@@ -1767,17 +2299,23 @@ var NgxMatMonthView = class {
     this._matCalendarBody._scheduleFocusActiveCellAfterViewChecked();
   }
   /** Called when the user has activated a new cell and the preview needs to be updated. */
-  _previewChanged({
-    event,
-    value: cell
-  }) {
+  _previewChanged({ event, value: cell }) {
     if (this._rangeStrategy) {
       const value = cell ? cell.rawValue : null;
-      const previewRange = this._rangeStrategy.createPreview(value, this.selected, event);
+      const previewRange = this._rangeStrategy.createPreview(
+        value,
+        this.selected,
+        event,
+      );
       this._previewStart = this._getCellCompareValue(previewRange.start);
       this._previewEnd = this._getCellCompareValue(previewRange.end);
       if (this.activeDrag && value) {
-        const dragRange = this._rangeStrategy.createDrag?.(this.activeDrag.value, this.selected, value, event);
+        const dragRange = this._rangeStrategy.createDrag?.(
+          this.activeDrag.value,
+          this.selected,
+          value,
+          event,
+        );
         if (dragRange) {
           this._previewStart = this._getCellCompareValue(dragRange.start);
           this._previewEnd = this._getCellCompareValue(dragRange.end);
@@ -1791,18 +2329,22 @@ var NgxMatMonthView = class {
    * computes and emits the new range selection.
    */
   _dragEnded(event) {
-    if (!this.activeDrag)
-      return;
+    if (!this.activeDrag) return;
     if (event.value) {
-      const dragDropResult = this._rangeStrategy?.createDrag?.(this.activeDrag.value, this.selected, event.value, event.event);
+      const dragDropResult = this._rangeStrategy?.createDrag?.(
+        this.activeDrag.value,
+        this.selected,
+        event.value,
+        event.event,
+      );
       this.dragEnded.emit({
         value: dragDropResult ?? null,
-        event: event.event
+        event: event.event,
       });
     } else {
       this.dragEnded.emit({
         value: null,
-        event: event.event
+        event: event.event,
       });
     }
   }
@@ -1811,7 +2353,11 @@ var NgxMatMonthView = class {
    *  active date. The returned date will have the same day of the month as the argument date.
    */
   _getDateFromDayOfMonth(dayOfMonth) {
-    return this._dateAdapter.createDate(this._dateAdapter.getYear(this.activeDate), this._dateAdapter.getMonth(this.activeDate), dayOfMonth);
+    return this._dateAdapter.createDate(
+      this._dateAdapter.getYear(this.activeDate),
+      this._dateAdapter.getMonth(this.activeDate),
+      dayOfMonth,
+    );
   }
   /** Initializes the weekdays. */
   _initWeekdays() {
@@ -1821,42 +2367,81 @@ var NgxMatMonthView = class {
     let weekdays = longWeekdays.map((long, i) => {
       return {
         long,
-        narrow: narrowWeekdays[i]
+        narrow: narrowWeekdays[i],
       };
     });
-    this._weekdays = weekdays.slice(firstDayOfWeek).concat(weekdays.slice(0, firstDayOfWeek));
+    this._weekdays = weekdays
+      .slice(firstDayOfWeek)
+      .concat(weekdays.slice(0, firstDayOfWeek));
   }
   /** Creates MatCalendarCells for the dates in this month. */
   _createWeekCells() {
     const daysInMonth = this._dateAdapter.getNumDaysInMonth(this.activeDate);
     const dateNames = this._dateAdapter.getDateNames();
     this._weeks = [[]];
-    for (let i = 0, cell = this._firstWeekOffset; i < daysInMonth; i++, cell++) {
+    for (
+      let i = 0, cell = this._firstWeekOffset;
+      i < daysInMonth;
+      i++, cell++
+    ) {
       if (cell == DAYS_PER_WEEK) {
         this._weeks.push([]);
         cell = 0;
       }
-      const date = this._dateAdapter.createDate(this._dateAdapter.getYear(this.activeDate), this._dateAdapter.getMonth(this.activeDate), i + 1);
+      const date = this._dateAdapter.createDate(
+        this._dateAdapter.getYear(this.activeDate),
+        this._dateAdapter.getMonth(this.activeDate),
+        i + 1,
+      );
       const enabled = this._shouldEnableDate(date);
-      const ariaLabel = this._dateAdapter.format(date, this._dateFormats.display.dateA11yLabel);
-      const cellClasses = this.dateClass ? this.dateClass(date, "month") : void 0;
-      this._weeks[this._weeks.length - 1].push(new NgxMatCalendarCell(i + 1, dateNames[i], ariaLabel, enabled, cellClasses, this._getCellCompareValue(date), date));
+      const ariaLabel = this._dateAdapter.format(
+        date,
+        this._dateFormats.display.dateA11yLabel,
+      );
+      const cellClasses = this.dateClass
+        ? this.dateClass(date, "month")
+        : void 0;
+      this._weeks[this._weeks.length - 1].push(
+        new NgxMatCalendarCell(
+          i + 1,
+          dateNames[i],
+          ariaLabel,
+          enabled,
+          cellClasses,
+          this._getCellCompareValue(date),
+          date,
+        ),
+      );
     }
   }
   /** Date filter for the month */
   _shouldEnableDate(date) {
-    return !!date && (!this.minDate || this._dateAdapter.compareDate(date, this.minDate) >= 0) && (!this.maxDate || this._dateAdapter.compareDate(date, this.maxDate) <= 0) && (!this.dateFilter || this.dateFilter(date));
+    return (
+      !!date &&
+      (!this.minDate ||
+        this._dateAdapter.compareDate(date, this.minDate) >= 0) &&
+      (!this.maxDate ||
+        this._dateAdapter.compareDate(date, this.maxDate) <= 0) &&
+      (!this.dateFilter || this.dateFilter(date))
+    );
   }
   /**
    * Gets the date in this month that the given Date falls on.
    * Returns null if the given Date is in another month.
    */
   _getDateInCurrentMonth(date) {
-    return date && this._hasSameMonthAndYear(date, this.activeDate) ? this._dateAdapter.getDate(date) : null;
+    return date && this._hasSameMonthAndYear(date, this.activeDate)
+      ? this._dateAdapter.getDate(date)
+      : null;
   }
   /** Checks whether the 2 dates are non-null and fall within the same month of the same year. */
   _hasSameMonthAndYear(d1, d2) {
-    return !!(d1 && d2 && this._dateAdapter.getMonth(d1) == this._dateAdapter.getMonth(d2) && this._dateAdapter.getYear(d1) == this._dateAdapter.getYear(d2));
+    return !!(
+      d1 &&
+      d2 &&
+      this._dateAdapter.getMonth(d1) == this._dateAdapter.getMonth(d2) &&
+      this._dateAdapter.getYear(d1) == this._dateAdapter.getYear(d2)
+    );
   }
   /** Gets the value that will be used to one cell to another. */
   _getCellCompareValue(date) {
@@ -1879,10 +2464,13 @@ var NgxMatMonthView = class {
       this._rangeEnd = this._getCellCompareValue(selectedValue.end);
       this._isRange = true;
     } else {
-      this._rangeStart = this._rangeEnd = this._getCellCompareValue(selectedValue);
+      this._rangeStart = this._rangeEnd =
+        this._getCellCompareValue(selectedValue);
       this._isRange = false;
     }
-    this._comparisonRangeStart = this._getCellCompareValue(this.comparisonStart);
+    this._comparisonRangeStart = this._getCellCompareValue(
+      this.comparisonStart,
+    );
     this._comparisonRangeEnd = this._getCellCompareValue(this.comparisonEnd);
   }
   /** Gets whether a date can be selected in the month view. */
@@ -1895,7 +2483,13 @@ var NgxMatMonthView = class {
   }
 };
 NgxMatMonthView.ɵfac = function NgxMatMonthView_Factory(t) {
-  return new (t || NgxMatMonthView)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8), ɵɵdirectiveInject(NgxMatDateAdapter, 8), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(NGX_MAT_DATE_RANGE_SELECTION_STRATEGY, 8));
+  return new (t || NgxMatMonthView)(
+    ɵɵdirectiveInject(ChangeDetectorRef),
+    ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8),
+    ɵɵdirectiveInject(NgxMatDateAdapter, 8),
+    ɵɵdirectiveInject(Directionality, 8),
+    ɵɵdirectiveInject(NGX_MAT_DATE_RANGE_SELECTION_STRATEGY, 8),
+  );
 };
 NgxMatMonthView.ɵcmp = ɵɵdefineComponent({
   type: NgxMatMonthView,
@@ -1906,7 +2500,7 @@ NgxMatMonthView.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._matCalendarBody = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._matCalendarBody = _t.first);
     }
   },
   inputs: {
@@ -1920,20 +2514,61 @@ NgxMatMonthView.ɵcmp = ɵɵdefineComponent({
     comparisonEnd: "comparisonEnd",
     startDateAccessibleName: "startDateAccessibleName",
     endDateAccessibleName: "endDateAccessibleName",
-    activeDrag: "activeDrag"
+    activeDrag: "activeDrag",
   },
   outputs: {
     selectedChange: "selectedChange",
     _userSelection: "_userSelection",
     dragStarted: "dragStarted",
     dragEnded: "dragEnded",
-    activeDateChange: "activeDateChange"
+    activeDateChange: "activeDateChange",
   },
   exportAs: ["ngxMatMonthView"],
   features: [ɵɵNgOnChangesFeature],
   decls: 7,
   vars: 15,
-  consts: [["role", "grid", 1, "mat-calendar-table"], [1, "mat-calendar-table-header"], ["scope", "col", 4, "ngFor", "ngForOf"], ["aria-hidden", "true", "colspan", "7", 1, "mat-calendar-table-header-divider"], ["ngx-mat-calendar-body", "", 3, "selectedValueChange", "activeDateChange", "previewChange", "dragStarted", "dragEnded", "keyup", "keydown", "label", "rows", "todayValue", "startValue", "endValue", "comparisonStart", "comparisonEnd", "previewStart", "previewEnd", "isRange", "labelMinRequiredCells", "activeCell", "startDateAccessibleName", "endDateAccessibleName"], ["scope", "col"], [1, "cdk-visually-hidden"], ["aria-hidden", "true"]],
+  consts: [
+    ["role", "grid", 1, "mat-calendar-table"],
+    [1, "mat-calendar-table-header"],
+    ["scope", "col", 4, "ngFor", "ngForOf"],
+    [
+      "aria-hidden",
+      "true",
+      "colspan",
+      "7",
+      1,
+      "mat-calendar-table-header-divider",
+    ],
+    [
+      "ngx-mat-calendar-body",
+      "",
+      3,
+      "selectedValueChange",
+      "activeDateChange",
+      "previewChange",
+      "dragStarted",
+      "dragEnded",
+      "keyup",
+      "keydown",
+      "label",
+      "rows",
+      "todayValue",
+      "startValue",
+      "endValue",
+      "comparisonStart",
+      "comparisonEnd",
+      "previewStart",
+      "previewEnd",
+      "isRange",
+      "labelMinRequiredCells",
+      "activeCell",
+      "startDateAccessibleName",
+      "endDateAccessibleName",
+    ],
+    ["scope", "col"],
+    [1, "cdk-visually-hidden"],
+    ["aria-hidden", "true"],
+  ],
   template: function NgxMatMonthView_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵelementStart(0, "table", 0)(1, "thead", 1)(2, "tr");
@@ -1943,128 +2578,231 @@ NgxMatMonthView.ɵcmp = ɵɵdefineComponent({
       ɵɵelement(5, "th", 3);
       ɵɵelementEnd()();
       ɵɵelementStart(6, "tbody", 4);
-      ɵɵlistener("selectedValueChange", function NgxMatMonthView_Template_tbody_selectedValueChange_6_listener($event) {
-        return ctx._dateSelected($event);
-      })("activeDateChange", function NgxMatMonthView_Template_tbody_activeDateChange_6_listener($event) {
-        return ctx._updateActiveDate($event);
-      })("previewChange", function NgxMatMonthView_Template_tbody_previewChange_6_listener($event) {
-        return ctx._previewChanged($event);
-      })("dragStarted", function NgxMatMonthView_Template_tbody_dragStarted_6_listener($event) {
-        return ctx.dragStarted.emit($event);
-      })("dragEnded", function NgxMatMonthView_Template_tbody_dragEnded_6_listener($event) {
-        return ctx._dragEnded($event);
-      })("keyup", function NgxMatMonthView_Template_tbody_keyup_6_listener($event) {
-        return ctx._handleCalendarBodyKeyup($event);
-      })("keydown", function NgxMatMonthView_Template_tbody_keydown_6_listener($event) {
-        return ctx._handleCalendarBodyKeydown($event);
-      });
+      ɵɵlistener(
+        "selectedValueChange",
+        function NgxMatMonthView_Template_tbody_selectedValueChange_6_listener(
+          $event,
+        ) {
+          return ctx._dateSelected($event);
+        },
+      )(
+        "activeDateChange",
+        function NgxMatMonthView_Template_tbody_activeDateChange_6_listener(
+          $event,
+        ) {
+          return ctx._updateActiveDate($event);
+        },
+      )(
+        "previewChange",
+        function NgxMatMonthView_Template_tbody_previewChange_6_listener(
+          $event,
+        ) {
+          return ctx._previewChanged($event);
+        },
+      )(
+        "dragStarted",
+        function NgxMatMonthView_Template_tbody_dragStarted_6_listener($event) {
+          return ctx.dragStarted.emit($event);
+        },
+      )(
+        "dragEnded",
+        function NgxMatMonthView_Template_tbody_dragEnded_6_listener($event) {
+          return ctx._dragEnded($event);
+        },
+      )(
+        "keyup",
+        function NgxMatMonthView_Template_tbody_keyup_6_listener($event) {
+          return ctx._handleCalendarBodyKeyup($event);
+        },
+      )(
+        "keydown",
+        function NgxMatMonthView_Template_tbody_keydown_6_listener($event) {
+          return ctx._handleCalendarBodyKeydown($event);
+        },
+      );
       ɵɵelementEnd()();
     }
     if (rf & 2) {
       ɵɵadvance(3);
       ɵɵproperty("ngForOf", ctx._weekdays);
       ɵɵadvance(3);
-      ɵɵproperty("label", ctx._monthLabel)("rows", ctx._weeks)("todayValue", ctx._todayDate)("startValue", ctx._rangeStart)("endValue", ctx._rangeEnd)("comparisonStart", ctx._comparisonRangeStart)("comparisonEnd", ctx._comparisonRangeEnd)("previewStart", ctx._previewStart)("previewEnd", ctx._previewEnd)("isRange", ctx._isRange)("labelMinRequiredCells", 3)("activeCell", ctx._dateAdapter.getDate(ctx.activeDate) - 1)("startDateAccessibleName", ctx.startDateAccessibleName)("endDateAccessibleName", ctx.endDateAccessibleName);
+      ɵɵproperty("label", ctx._monthLabel)("rows", ctx._weeks)(
+        "todayValue",
+        ctx._todayDate,
+      )("startValue", ctx._rangeStart)("endValue", ctx._rangeEnd)(
+        "comparisonStart",
+        ctx._comparisonRangeStart,
+      )("comparisonEnd", ctx._comparisonRangeEnd)(
+        "previewStart",
+        ctx._previewStart,
+      )("previewEnd", ctx._previewEnd)("isRange", ctx._isRange)(
+        "labelMinRequiredCells",
+        3,
+      )("activeCell", ctx._dateAdapter.getDate(ctx.activeDate) - 1)(
+        "startDateAccessibleName",
+        ctx.startDateAccessibleName,
+      )("endDateAccessibleName", ctx.endDateAccessibleName);
     }
   },
   dependencies: [NgForOf, NgxMatCalendarBody],
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatMonthView, [{
-    type: Component,
-    args: [{
-      selector: "ngx-mat-month-view",
-      exportAs: "ngxMatMonthView",
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      template: '<table class="mat-calendar-table" role="grid">\r\n  <thead class="mat-calendar-table-header">\r\n    <tr>\r\n      <th scope="col" *ngFor="let day of _weekdays">\r\n        <span class="cdk-visually-hidden">{{day.long}}</span>\r\n        <span aria-hidden="true">{{day.narrow}}</span>\r\n      </th>\r\n    </tr>\r\n    <tr><th aria-hidden="true" class="mat-calendar-table-header-divider" colspan="7"></th></tr>\r\n  </thead>\r\n  <tbody ngx-mat-calendar-body\r\n         [label]="_monthLabel"\r\n         [rows]="_weeks"\r\n         [todayValue]="_todayDate!"\r\n         [startValue]="_rangeStart!"\r\n         [endValue]="_rangeEnd!"\r\n         [comparisonStart]="_comparisonRangeStart"\r\n         [comparisonEnd]="_comparisonRangeEnd"\r\n         [previewStart]="_previewStart"\r\n         [previewEnd]="_previewEnd"\r\n         [isRange]="_isRange"\r\n         [labelMinRequiredCells]="3"\r\n         [activeCell]="_dateAdapter.getDate(activeDate) - 1"\r\n         [startDateAccessibleName]="startDateAccessibleName"\r\n         [endDateAccessibleName]="endDateAccessibleName"\r\n         (selectedValueChange)="_dateSelected($event)"\r\n         (activeDateChange)="_updateActiveDate($event)"\r\n         (previewChange)="_previewChanged($event)"\r\n         (dragStarted)="dragStarted.emit($event)"\r\n         (dragEnded)="_dragEnded($event)"\r\n         (keyup)="_handleCalendarBodyKeyup($event)"\r\n         (keydown)="_handleCalendarBodyKeydown($event)">\r\n  </tbody>\r\n</table>\r\n'
-    }]
-  }], function() {
-    return [{
-      type: ChangeDetectorRef
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Inject,
-        args: [NGX_MAT_DATE_FORMATS]
-      }]
-    }, {
-      type: NgxMatDateAdapter,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: Directionality,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Inject,
-        args: [NGX_MAT_DATE_RANGE_SELECTION_STRATEGY]
-      }, {
-        type: Optional
-      }]
-    }];
-  }, {
-    activeDate: [{
-      type: Input
-    }],
-    selected: [{
-      type: Input
-    }],
-    minDate: [{
-      type: Input
-    }],
-    maxDate: [{
-      type: Input
-    }],
-    dateFilter: [{
-      type: Input
-    }],
-    dateClass: [{
-      type: Input
-    }],
-    comparisonStart: [{
-      type: Input
-    }],
-    comparisonEnd: [{
-      type: Input
-    }],
-    startDateAccessibleName: [{
-      type: Input
-    }],
-    endDateAccessibleName: [{
-      type: Input
-    }],
-    activeDrag: [{
-      type: Input
-    }],
-    selectedChange: [{
-      type: Output
-    }],
-    _userSelection: [{
-      type: Output
-    }],
-    dragStarted: [{
-      type: Output
-    }],
-    dragEnded: [{
-      type: Output
-    }],
-    activeDateChange: [{
-      type: Output
-    }],
-    _matCalendarBody: [{
-      type: ViewChild,
-      args: [NgxMatCalendarBody]
-    }]
-  });
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatMonthView,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "ngx-mat-month-view",
+              exportAs: "ngxMatMonthView",
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              template:
+                '<table class="mat-calendar-table" role="grid">\r\n  <thead class="mat-calendar-table-header">\r\n    <tr>\r\n      <th scope="col" *ngFor="let day of _weekdays">\r\n        <span class="cdk-visually-hidden">{{day.long}}</span>\r\n        <span aria-hidden="true">{{day.narrow}}</span>\r\n      </th>\r\n    </tr>\r\n    <tr><th aria-hidden="true" class="mat-calendar-table-header-divider" colspan="7"></th></tr>\r\n  </thead>\r\n  <tbody ngx-mat-calendar-body\r\n         [label]="_monthLabel"\r\n         [rows]="_weeks"\r\n         [todayValue]="_todayDate!"\r\n         [startValue]="_rangeStart!"\r\n         [endValue]="_rangeEnd!"\r\n         [comparisonStart]="_comparisonRangeStart"\r\n         [comparisonEnd]="_comparisonRangeEnd"\r\n         [previewStart]="_previewStart"\r\n         [previewEnd]="_previewEnd"\r\n         [isRange]="_isRange"\r\n         [labelMinRequiredCells]="3"\r\n         [activeCell]="_dateAdapter.getDate(activeDate) - 1"\r\n         [startDateAccessibleName]="startDateAccessibleName"\r\n         [endDateAccessibleName]="endDateAccessibleName"\r\n         (selectedValueChange)="_dateSelected($event)"\r\n         (activeDateChange)="_updateActiveDate($event)"\r\n         (previewChange)="_previewChanged($event)"\r\n         (dragStarted)="dragStarted.emit($event)"\r\n         (dragEnded)="_dragEnded($event)"\r\n         (keyup)="_handleCalendarBodyKeyup($event)"\r\n         (keydown)="_handleCalendarBodyKeydown($event)">\r\n  </tbody>\r\n</table>\r\n',
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: ChangeDetectorRef,
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_FORMATS],
+              },
+            ],
+          },
+          {
+            type: NgxMatDateAdapter,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: Directionality,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_RANGE_SELECTION_STRATEGY],
+              },
+              {
+                type: Optional,
+              },
+            ],
+          },
+        ];
+      },
+      {
+        activeDate: [
+          {
+            type: Input,
+          },
+        ],
+        selected: [
+          {
+            type: Input,
+          },
+        ],
+        minDate: [
+          {
+            type: Input,
+          },
+        ],
+        maxDate: [
+          {
+            type: Input,
+          },
+        ],
+        dateFilter: [
+          {
+            type: Input,
+          },
+        ],
+        dateClass: [
+          {
+            type: Input,
+          },
+        ],
+        comparisonStart: [
+          {
+            type: Input,
+          },
+        ],
+        comparisonEnd: [
+          {
+            type: Input,
+          },
+        ],
+        startDateAccessibleName: [
+          {
+            type: Input,
+          },
+        ],
+        endDateAccessibleName: [
+          {
+            type: Input,
+          },
+        ],
+        activeDrag: [
+          {
+            type: Input,
+          },
+        ],
+        selectedChange: [
+          {
+            type: Output,
+          },
+        ],
+        _userSelection: [
+          {
+            type: Output,
+          },
+        ],
+        dragStarted: [
+          {
+            type: Output,
+          },
+        ],
+        dragEnded: [
+          {
+            type: Output,
+          },
+        ],
+        activeDateChange: [
+          {
+            type: Output,
+          },
+        ],
+        _matCalendarBody: [
+          {
+            type: ViewChild,
+            args: [NgxMatCalendarBody],
+          },
+        ],
+      },
+    );
 })();
 var yearsPerPage = 24;
 var yearsPerRow = 4;
@@ -2088,9 +2826,24 @@ var NgxMatMultiYearView = class {
   }
   set activeDate(value) {
     let oldActiveDate = this._activeDate;
-    const validDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value)) || this._dateAdapter.today();
-    this._activeDate = this._dateAdapter.clampDate(validDate, this.minDate, this.maxDate);
-    if (!isSameMultiYearView(this._dateAdapter, oldActiveDate, this._activeDate, this.minDate, this.maxDate)) {
+    const validDate =
+      this._dateAdapter.getValidDateOrNull(
+        this._dateAdapter.deserialize(value),
+      ) || this._dateAdapter.today();
+    this._activeDate = this._dateAdapter.clampDate(
+      validDate,
+      this.minDate,
+      this.maxDate,
+    );
+    if (
+      !isSameMultiYearView(
+        this._dateAdapter,
+        oldActiveDate,
+        this._activeDate,
+        this.minDate,
+        this.maxDate,
+      )
+    ) {
       this._init();
     }
   }
@@ -2102,7 +2855,9 @@ var NgxMatMultiYearView = class {
     if (value instanceof NgxDateRange) {
       this._selected = value;
     } else {
-      this._selected = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+      this._selected = this._dateAdapter.getValidDateOrNull(
+        this._dateAdapter.deserialize(value),
+      );
     }
     this._setSelectedYear(value);
   }
@@ -2111,17 +2866,23 @@ var NgxMatMultiYearView = class {
     return this._minDate;
   }
   set minDate(value) {
-    this._minDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    this._minDate = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
   }
   /** The maximum selectable date. */
   get maxDate() {
     return this._maxDate;
   }
   set maxDate(value) {
-    this._maxDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    this._maxDate = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
   }
   ngAfterContentInit() {
-    this._rerenderSubscription = this._dateAdapter.localeChanges.pipe(startWith(null)).subscribe(() => this._init());
+    this._rerenderSubscription = this._dateAdapter.localeChanges
+      .pipe(startWith(null))
+      .subscribe(() => this._init());
   }
   ngOnDestroy() {
     this._rerenderSubscription.unsubscribe();
@@ -2130,7 +2891,14 @@ var NgxMatMultiYearView = class {
   _init() {
     this._todayYear = this._dateAdapter.getYear(this._dateAdapter.today());
     const activeYear = this._dateAdapter.getYear(this._activeDate);
-    const minYearOfPage = activeYear - getActiveOffset(this._dateAdapter, this.activeDate, this.minDate, this.maxDate);
+    const minYearOfPage =
+      activeYear -
+      getActiveOffset(
+        this._dateAdapter,
+        this.activeDate,
+        this.minDate,
+        this.maxDate,
+      );
     this._years = [];
     for (let i = 0, row = []; i < yearsPerPage; i++) {
       row.push(minYearOfPage + i);
@@ -2173,28 +2941,64 @@ var NgxMatMultiYearView = class {
     const isRtl = this._isRtl();
     switch (event.keyCode) {
       case LEFT_ARROW:
-        this.activeDate = this._dateAdapter.addCalendarYears(this._activeDate, isRtl ? 1 : -1);
+        this.activeDate = this._dateAdapter.addCalendarYears(
+          this._activeDate,
+          isRtl ? 1 : -1,
+        );
         break;
       case RIGHT_ARROW:
-        this.activeDate = this._dateAdapter.addCalendarYears(this._activeDate, isRtl ? -1 : 1);
+        this.activeDate = this._dateAdapter.addCalendarYears(
+          this._activeDate,
+          isRtl ? -1 : 1,
+        );
         break;
       case UP_ARROW:
-        this.activeDate = this._dateAdapter.addCalendarYears(this._activeDate, -yearsPerRow);
+        this.activeDate = this._dateAdapter.addCalendarYears(
+          this._activeDate,
+          -yearsPerRow,
+        );
         break;
       case DOWN_ARROW:
-        this.activeDate = this._dateAdapter.addCalendarYears(this._activeDate, yearsPerRow);
+        this.activeDate = this._dateAdapter.addCalendarYears(
+          this._activeDate,
+          yearsPerRow,
+        );
         break;
       case HOME:
-        this.activeDate = this._dateAdapter.addCalendarYears(this._activeDate, -getActiveOffset(this._dateAdapter, this.activeDate, this.minDate, this.maxDate));
+        this.activeDate = this._dateAdapter.addCalendarYears(
+          this._activeDate,
+          -getActiveOffset(
+            this._dateAdapter,
+            this.activeDate,
+            this.minDate,
+            this.maxDate,
+          ),
+        );
         break;
       case END:
-        this.activeDate = this._dateAdapter.addCalendarYears(this._activeDate, yearsPerPage - getActiveOffset(this._dateAdapter, this.activeDate, this.minDate, this.maxDate) - 1);
+        this.activeDate = this._dateAdapter.addCalendarYears(
+          this._activeDate,
+          yearsPerPage -
+            getActiveOffset(
+              this._dateAdapter,
+              this.activeDate,
+              this.minDate,
+              this.maxDate,
+            ) -
+            1,
+        );
         break;
       case PAGE_UP:
-        this.activeDate = this._dateAdapter.addCalendarYears(this._activeDate, event.altKey ? -yearsPerPage * 10 : -yearsPerPage);
+        this.activeDate = this._dateAdapter.addCalendarYears(
+          this._activeDate,
+          event.altKey ? -yearsPerPage * 10 : -yearsPerPage,
+        );
         break;
       case PAGE_DOWN:
-        this.activeDate = this._dateAdapter.addCalendarYears(this._activeDate, event.altKey ? yearsPerPage * 10 : yearsPerPage);
+        this.activeDate = this._dateAdapter.addCalendarYears(
+          this._activeDate,
+          event.altKey ? yearsPerPage * 10 : yearsPerPage,
+        );
         break;
       case ENTER:
       case SPACE:
@@ -2215,14 +3019,19 @@ var NgxMatMultiYearView = class {
       if (this._selectionKeyPressed) {
         this._yearSelected({
           value: this._dateAdapter.getYear(this._activeDate),
-          event
+          event,
         });
       }
       this._selectionKeyPressed = false;
     }
   }
   _getActiveCell() {
-    return getActiveOffset(this._dateAdapter, this.activeDate, this.minDate, this.maxDate);
+    return getActiveOffset(
+      this._dateAdapter,
+      this.activeDate,
+      this.minDate,
+      this.maxDate,
+    );
   }
   /** Focuses the active cell after the microtask queue is empty. */
   _focusActiveCell() {
@@ -2238,27 +3047,50 @@ var NgxMatMultiYearView = class {
    */
   _getDateFromYear(year) {
     const activeMonth = this._dateAdapter.getMonth(this.activeDate);
-    const daysInMonth = this._dateAdapter.getNumDaysInMonth(this._dateAdapter.createDate(year, activeMonth, 1));
-    const normalizedDate = this._dateAdapter.createDate(year, activeMonth, Math.min(this._dateAdapter.getDate(this.activeDate), daysInMonth));
+    const daysInMonth = this._dateAdapter.getNumDaysInMonth(
+      this._dateAdapter.createDate(year, activeMonth, 1),
+    );
+    const normalizedDate = this._dateAdapter.createDate(
+      year,
+      activeMonth,
+      Math.min(this._dateAdapter.getDate(this.activeDate), daysInMonth),
+    );
     return normalizedDate;
   }
   /** Creates an MatCalendarCell for the given year. */
   _createCellForYear(year) {
     const date = this._dateAdapter.createDate(year, 0, 1);
     const yearName = this._dateAdapter.getYearName(date);
-    const cellClasses = this.dateClass ? this.dateClass(date, "multi-year") : void 0;
-    return new NgxMatCalendarCell(year, yearName, yearName, this._shouldEnableYear(year), cellClasses);
+    const cellClasses = this.dateClass
+      ? this.dateClass(date, "multi-year")
+      : void 0;
+    return new NgxMatCalendarCell(
+      year,
+      yearName,
+      yearName,
+      this._shouldEnableYear(year),
+      cellClasses,
+    );
   }
   /** Whether the given year is enabled. */
   _shouldEnableYear(year) {
-    if (year === void 0 || year === null || this.maxDate && year > this._dateAdapter.getYear(this.maxDate) || this.minDate && year < this._dateAdapter.getYear(this.minDate)) {
+    if (
+      year === void 0 ||
+      year === null ||
+      (this.maxDate && year > this._dateAdapter.getYear(this.maxDate)) ||
+      (this.minDate && year < this._dateAdapter.getYear(this.minDate))
+    ) {
       return false;
     }
     if (!this.dateFilter) {
       return true;
     }
     const firstOfYear = this._dateAdapter.createDate(year, 0, 1);
-    for (let date = firstOfYear; this._dateAdapter.getYear(date) == year; date = this._dateAdapter.addCalendarDays(date, 1)) {
+    for (
+      let date = firstOfYear;
+      this._dateAdapter.getYear(date) == year;
+      date = this._dateAdapter.addCalendarDays(date, 1)
+    ) {
       if (this.dateFilter(date)) {
         return true;
       }
@@ -2283,7 +3115,11 @@ var NgxMatMultiYearView = class {
   }
 };
 NgxMatMultiYearView.ɵfac = function NgxMatMultiYearView_Factory(t) {
-  return new (t || NgxMatMultiYearView)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NgxMatDateAdapter, 8), ɵɵdirectiveInject(Directionality, 8));
+  return new (t || NgxMatMultiYearView)(
+    ɵɵdirectiveInject(ChangeDetectorRef),
+    ɵɵdirectiveInject(NgxMatDateAdapter, 8),
+    ɵɵdirectiveInject(Directionality, 8),
+  );
 };
 NgxMatMultiYearView.ɵcmp = ɵɵdefineComponent({
   type: NgxMatMultiYearView,
@@ -2294,7 +3130,7 @@ NgxMatMultiYearView.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._matCalendarBody = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._matCalendarBody = _t.first);
     }
   },
   inputs: {
@@ -2303,110 +3139,197 @@ NgxMatMultiYearView.ɵcmp = ɵɵdefineComponent({
     minDate: "minDate",
     maxDate: "maxDate",
     dateFilter: "dateFilter",
-    dateClass: "dateClass"
+    dateClass: "dateClass",
   },
   outputs: {
     selectedChange: "selectedChange",
     yearSelected: "yearSelected",
-    activeDateChange: "activeDateChange"
+    activeDateChange: "activeDateChange",
   },
   exportAs: ["ngxMatMultiYearView"],
   decls: 5,
   vars: 7,
-  consts: [["role", "grid", 1, "mat-calendar-table"], ["aria-hidden", "true", 1, "mat-calendar-table-header"], ["colspan", "4", 1, "mat-calendar-table-header-divider"], ["ngx-mat-calendar-body", "", 3, "selectedValueChange", "activeDateChange", "keyup", "keydown", "rows", "todayValue", "startValue", "endValue", "numCols", "cellAspectRatio", "activeCell"]],
+  consts: [
+    ["role", "grid", 1, "mat-calendar-table"],
+    ["aria-hidden", "true", 1, "mat-calendar-table-header"],
+    ["colspan", "4", 1, "mat-calendar-table-header-divider"],
+    [
+      "ngx-mat-calendar-body",
+      "",
+      3,
+      "selectedValueChange",
+      "activeDateChange",
+      "keyup",
+      "keydown",
+      "rows",
+      "todayValue",
+      "startValue",
+      "endValue",
+      "numCols",
+      "cellAspectRatio",
+      "activeCell",
+    ],
+  ],
   template: function NgxMatMultiYearView_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵelementStart(0, "table", 0)(1, "thead", 1)(2, "tr");
       ɵɵelement(3, "th", 2);
       ɵɵelementEnd()();
       ɵɵelementStart(4, "tbody", 3);
-      ɵɵlistener("selectedValueChange", function NgxMatMultiYearView_Template_tbody_selectedValueChange_4_listener($event) {
-        return ctx._yearSelected($event);
-      })("activeDateChange", function NgxMatMultiYearView_Template_tbody_activeDateChange_4_listener($event) {
-        return ctx._updateActiveDate($event);
-      })("keyup", function NgxMatMultiYearView_Template_tbody_keyup_4_listener($event) {
-        return ctx._handleCalendarBodyKeyup($event);
-      })("keydown", function NgxMatMultiYearView_Template_tbody_keydown_4_listener($event) {
-        return ctx._handleCalendarBodyKeydown($event);
-      });
+      ɵɵlistener(
+        "selectedValueChange",
+        function NgxMatMultiYearView_Template_tbody_selectedValueChange_4_listener(
+          $event,
+        ) {
+          return ctx._yearSelected($event);
+        },
+      )(
+        "activeDateChange",
+        function NgxMatMultiYearView_Template_tbody_activeDateChange_4_listener(
+          $event,
+        ) {
+          return ctx._updateActiveDate($event);
+        },
+      )(
+        "keyup",
+        function NgxMatMultiYearView_Template_tbody_keyup_4_listener($event) {
+          return ctx._handleCalendarBodyKeyup($event);
+        },
+      )(
+        "keydown",
+        function NgxMatMultiYearView_Template_tbody_keydown_4_listener($event) {
+          return ctx._handleCalendarBodyKeydown($event);
+        },
+      );
       ɵɵelementEnd()();
     }
     if (rf & 2) {
       ɵɵadvance(4);
-      ɵɵproperty("rows", ctx._years)("todayValue", ctx._todayYear)("startValue", ctx._selectedYear)("endValue", ctx._selectedYear)("numCols", 4)("cellAspectRatio", 4 / 7)("activeCell", ctx._getActiveCell());
+      ɵɵproperty("rows", ctx._years)("todayValue", ctx._todayYear)(
+        "startValue",
+        ctx._selectedYear,
+      )("endValue", ctx._selectedYear)("numCols", 4)("cellAspectRatio", 4 / 7)(
+        "activeCell",
+        ctx._getActiveCell(),
+      );
     }
   },
   dependencies: [NgxMatCalendarBody],
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatMultiYearView, [{
-    type: Component,
-    args: [{
-      selector: "ngx-mat-multi-year-view",
-      exportAs: "ngxMatMultiYearView",
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      template: '<table class="mat-calendar-table" role="grid">\r\n  <thead aria-hidden="true" class="mat-calendar-table-header">\r\n    <tr><th class="mat-calendar-table-header-divider" colspan="4"></th></tr>\r\n  </thead>\r\n  <tbody ngx-mat-calendar-body\r\n         [rows]="_years"\r\n         [todayValue]="_todayYear"\r\n         [startValue]="_selectedYear!"\r\n         [endValue]="_selectedYear!"\r\n         [numCols]="4"\r\n         [cellAspectRatio]="4 / 7"\r\n         [activeCell]="_getActiveCell()"\r\n         (selectedValueChange)="_yearSelected($event)"\r\n         (activeDateChange)="_updateActiveDate($event)"\r\n         (keyup)="_handleCalendarBodyKeyup($event)"\r\n         (keydown)="_handleCalendarBodyKeydown($event)">\r\n  </tbody>\r\n</table>\r\n'
-    }]
-  }], function() {
-    return [{
-      type: ChangeDetectorRef
-    }, {
-      type: NgxMatDateAdapter,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: Directionality,
-      decorators: [{
-        type: Optional
-      }]
-    }];
-  }, {
-    activeDate: [{
-      type: Input
-    }],
-    selected: [{
-      type: Input
-    }],
-    minDate: [{
-      type: Input
-    }],
-    maxDate: [{
-      type: Input
-    }],
-    dateFilter: [{
-      type: Input
-    }],
-    dateClass: [{
-      type: Input
-    }],
-    selectedChange: [{
-      type: Output
-    }],
-    yearSelected: [{
-      type: Output
-    }],
-    activeDateChange: [{
-      type: Output
-    }],
-    _matCalendarBody: [{
-      type: ViewChild,
-      args: [NgxMatCalendarBody]
-    }]
-  });
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatMultiYearView,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "ngx-mat-multi-year-view",
+              exportAs: "ngxMatMultiYearView",
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              template:
+                '<table class="mat-calendar-table" role="grid">\r\n  <thead aria-hidden="true" class="mat-calendar-table-header">\r\n    <tr><th class="mat-calendar-table-header-divider" colspan="4"></th></tr>\r\n  </thead>\r\n  <tbody ngx-mat-calendar-body\r\n         [rows]="_years"\r\n         [todayValue]="_todayYear"\r\n         [startValue]="_selectedYear!"\r\n         [endValue]="_selectedYear!"\r\n         [numCols]="4"\r\n         [cellAspectRatio]="4 / 7"\r\n         [activeCell]="_getActiveCell()"\r\n         (selectedValueChange)="_yearSelected($event)"\r\n         (activeDateChange)="_updateActiveDate($event)"\r\n         (keyup)="_handleCalendarBodyKeyup($event)"\r\n         (keydown)="_handleCalendarBodyKeydown($event)">\r\n  </tbody>\r\n</table>\r\n',
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: ChangeDetectorRef,
+          },
+          {
+            type: NgxMatDateAdapter,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: Directionality,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+        ];
+      },
+      {
+        activeDate: [
+          {
+            type: Input,
+          },
+        ],
+        selected: [
+          {
+            type: Input,
+          },
+        ],
+        minDate: [
+          {
+            type: Input,
+          },
+        ],
+        maxDate: [
+          {
+            type: Input,
+          },
+        ],
+        dateFilter: [
+          {
+            type: Input,
+          },
+        ],
+        dateClass: [
+          {
+            type: Input,
+          },
+        ],
+        selectedChange: [
+          {
+            type: Output,
+          },
+        ],
+        yearSelected: [
+          {
+            type: Output,
+          },
+        ],
+        activeDateChange: [
+          {
+            type: Output,
+          },
+        ],
+        _matCalendarBody: [
+          {
+            type: ViewChild,
+            args: [NgxMatCalendarBody],
+          },
+        ],
+      },
+    );
 })();
 function isSameMultiYearView(dateAdapter, date1, date2, minDate, maxDate) {
   const year1 = dateAdapter.getYear(date1);
   const year2 = dateAdapter.getYear(date2);
   const startingYear = getStartingYear(dateAdapter, minDate, maxDate);
-  return Math.floor((year1 - startingYear) / yearsPerPage) === Math.floor((year2 - startingYear) / yearsPerPage);
+  return (
+    Math.floor((year1 - startingYear) / yearsPerPage) ===
+    Math.floor((year2 - startingYear) / yearsPerPage)
+  );
 }
 function getActiveOffset(dateAdapter, activeDate, minDate, maxDate) {
   const activeYear = dateAdapter.getYear(activeDate);
-  return euclideanModulo(activeYear - getStartingYear(dateAdapter, minDate, maxDate), yearsPerPage);
+  return euclideanModulo(
+    activeYear - getStartingYear(dateAdapter, minDate, maxDate),
+    yearsPerPage,
+  );
 }
 function getStartingYear(dateAdapter, minDate, maxDate) {
   let startingYear = 0;
@@ -2419,7 +3342,7 @@ function getStartingYear(dateAdapter, minDate, maxDate) {
   return startingYear;
 }
 function euclideanModulo(a, b) {
-  return (a % b + b) % b;
+  return ((a % b) + b) % b;
 }
 var NgxMatYearView = class {
   constructor(_changeDetectorRef, _dateFormats, _dateAdapter, _dir) {
@@ -2445,9 +3368,19 @@ var NgxMatYearView = class {
   }
   set activeDate(value) {
     let oldActiveDate = this._activeDate;
-    const validDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value)) || this._dateAdapter.today();
-    this._activeDate = this._dateAdapter.clampDate(validDate, this.minDate, this.maxDate);
-    if (this._dateAdapter.getYear(oldActiveDate) !== this._dateAdapter.getYear(this._activeDate)) {
+    const validDate =
+      this._dateAdapter.getValidDateOrNull(
+        this._dateAdapter.deserialize(value),
+      ) || this._dateAdapter.today();
+    this._activeDate = this._dateAdapter.clampDate(
+      validDate,
+      this.minDate,
+      this.maxDate,
+    );
+    if (
+      this._dateAdapter.getYear(oldActiveDate) !==
+      this._dateAdapter.getYear(this._activeDate)
+    ) {
       this._init();
     }
   }
@@ -2459,7 +3392,9 @@ var NgxMatYearView = class {
     if (value instanceof NgxDateRange) {
       this._selected = value;
     } else {
-      this._selected = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+      this._selected = this._dateAdapter.getValidDateOrNull(
+        this._dateAdapter.deserialize(value),
+      );
     }
     this._setSelectedMonth(value);
   }
@@ -2468,17 +3403,23 @@ var NgxMatYearView = class {
     return this._minDate;
   }
   set minDate(value) {
-    this._minDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    this._minDate = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
   }
   /** The maximum selectable date. */
   get maxDate() {
     return this._maxDate;
   }
   set maxDate(value) {
-    this._maxDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    this._maxDate = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
   }
   ngAfterContentInit() {
-    this._rerenderSubscription = this._dateAdapter.localeChanges.pipe(startWith(null)).subscribe(() => this._init());
+    this._rerenderSubscription = this._dateAdapter.localeChanges
+      .pipe(startWith(null))
+      .subscribe(() => this._init());
   }
   ngOnDestroy() {
     this._rerenderSubscription.unsubscribe();
@@ -2486,7 +3427,11 @@ var NgxMatYearView = class {
   /** Handles when a new month is selected. */
   _monthSelected(event) {
     const month = event.value;
-    const selectedMonth = this._dateAdapter.createDate(this._dateAdapter.getYear(this.activeDate), month, 1);
+    const selectedMonth = this._dateAdapter.createDate(
+      this._dateAdapter.getYear(this.activeDate),
+      month,
+      1,
+    );
     this.monthSelected.emit(selectedMonth);
     const selectedDate = this._getDateFromMonth(month);
     this.selectedChange.emit(selectedDate);
@@ -2515,28 +3460,52 @@ var NgxMatYearView = class {
     const isRtl = this._isRtl();
     switch (event.keyCode) {
       case LEFT_ARROW:
-        this.activeDate = this._dateAdapter.addCalendarMonths(this._activeDate, isRtl ? 1 : -1);
+        this.activeDate = this._dateAdapter.addCalendarMonths(
+          this._activeDate,
+          isRtl ? 1 : -1,
+        );
         break;
       case RIGHT_ARROW:
-        this.activeDate = this._dateAdapter.addCalendarMonths(this._activeDate, isRtl ? -1 : 1);
+        this.activeDate = this._dateAdapter.addCalendarMonths(
+          this._activeDate,
+          isRtl ? -1 : 1,
+        );
         break;
       case UP_ARROW:
-        this.activeDate = this._dateAdapter.addCalendarMonths(this._activeDate, -4);
+        this.activeDate = this._dateAdapter.addCalendarMonths(
+          this._activeDate,
+          -4,
+        );
         break;
       case DOWN_ARROW:
-        this.activeDate = this._dateAdapter.addCalendarMonths(this._activeDate, 4);
+        this.activeDate = this._dateAdapter.addCalendarMonths(
+          this._activeDate,
+          4,
+        );
         break;
       case HOME:
-        this.activeDate = this._dateAdapter.addCalendarMonths(this._activeDate, -this._dateAdapter.getMonth(this._activeDate));
+        this.activeDate = this._dateAdapter.addCalendarMonths(
+          this._activeDate,
+          -this._dateAdapter.getMonth(this._activeDate),
+        );
         break;
       case END:
-        this.activeDate = this._dateAdapter.addCalendarMonths(this._activeDate, 11 - this._dateAdapter.getMonth(this._activeDate));
+        this.activeDate = this._dateAdapter.addCalendarMonths(
+          this._activeDate,
+          11 - this._dateAdapter.getMonth(this._activeDate),
+        );
         break;
       case PAGE_UP:
-        this.activeDate = this._dateAdapter.addCalendarYears(this._activeDate, event.altKey ? -10 : -1);
+        this.activeDate = this._dateAdapter.addCalendarYears(
+          this._activeDate,
+          event.altKey ? -10 : -1,
+        );
         break;
       case PAGE_DOWN:
-        this.activeDate = this._dateAdapter.addCalendarYears(this._activeDate, event.altKey ? 10 : 1);
+        this.activeDate = this._dateAdapter.addCalendarYears(
+          this._activeDate,
+          event.altKey ? 10 : 1,
+        );
         break;
       case ENTER:
       case SPACE:
@@ -2557,7 +3526,7 @@ var NgxMatYearView = class {
       if (this._selectionKeyPressed) {
         this._monthSelected({
           value: this._dateAdapter.getMonth(this._activeDate),
-          event
+          event,
         });
       }
       this._selectionKeyPressed = false;
@@ -2569,7 +3538,13 @@ var NgxMatYearView = class {
     this._todayMonth = this._getMonthInCurrentYear(this._dateAdapter.today());
     this._yearLabel = this._dateAdapter.getYearName(this.activeDate);
     let monthNames = this._dateAdapter.getMonthNames("short");
-    this._months = [[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11]].map((row) => row.map((month) => this._createCellForMonth(month, monthNames[month])));
+    this._months = [
+      [0, 1, 2, 3],
+      [4, 5, 6, 7],
+      [8, 9, 10, 11],
+    ].map((row) =>
+      row.map((month) => this._createCellForMonth(month, monthNames[month])),
+    );
     this._changeDetectorRef.markForCheck();
   }
   /** Focuses the active cell after the microtask queue is empty. */
@@ -2585,35 +3560,69 @@ var NgxMatYearView = class {
    * Returns null if the given Date is in another year.
    */
   _getMonthInCurrentYear(date) {
-    return date && this._dateAdapter.getYear(date) == this._dateAdapter.getYear(this.activeDate) ? this._dateAdapter.getMonth(date) : null;
+    return date &&
+      this._dateAdapter.getYear(date) ==
+        this._dateAdapter.getYear(this.activeDate)
+      ? this._dateAdapter.getMonth(date)
+      : null;
   }
   /**
    * Takes a month and returns a new date in the same day and year as the currently active date.
    *  The returned date will have the same month as the argument date.
    */
   _getDateFromMonth(month) {
-    const normalizedDate = this._dateAdapter.createDate(this._dateAdapter.getYear(this.activeDate), month, 1);
+    const normalizedDate = this._dateAdapter.createDate(
+      this._dateAdapter.getYear(this.activeDate),
+      month,
+      1,
+    );
     const daysInMonth = this._dateAdapter.getNumDaysInMonth(normalizedDate);
-    return this._dateAdapter.createDate(this._dateAdapter.getYear(this.activeDate), month, Math.min(this._dateAdapter.getDate(this.activeDate), daysInMonth));
+    return this._dateAdapter.createDate(
+      this._dateAdapter.getYear(this.activeDate),
+      month,
+      Math.min(this._dateAdapter.getDate(this.activeDate), daysInMonth),
+    );
   }
   /** Creates an MatCalendarCell for the given month. */
   _createCellForMonth(month, monthName) {
-    const date = this._dateAdapter.createDate(this._dateAdapter.getYear(this.activeDate), month, 1);
-    const ariaLabel = this._dateAdapter.format(date, this._dateFormats.display.monthYearA11yLabel);
+    const date = this._dateAdapter.createDate(
+      this._dateAdapter.getYear(this.activeDate),
+      month,
+      1,
+    );
+    const ariaLabel = this._dateAdapter.format(
+      date,
+      this._dateFormats.display.monthYearA11yLabel,
+    );
     const cellClasses = this.dateClass ? this.dateClass(date, "year") : void 0;
-    return new NgxMatCalendarCell(month, monthName.toLocaleUpperCase(), ariaLabel, this._shouldEnableMonth(month), cellClasses);
+    return new NgxMatCalendarCell(
+      month,
+      monthName.toLocaleUpperCase(),
+      ariaLabel,
+      this._shouldEnableMonth(month),
+      cellClasses,
+    );
   }
   /** Whether the given month is enabled. */
   _shouldEnableMonth(month) {
     const activeYear = this._dateAdapter.getYear(this.activeDate);
-    if (month === void 0 || month === null || this._isYearAndMonthAfterMaxDate(activeYear, month) || this._isYearAndMonthBeforeMinDate(activeYear, month)) {
+    if (
+      month === void 0 ||
+      month === null ||
+      this._isYearAndMonthAfterMaxDate(activeYear, month) ||
+      this._isYearAndMonthBeforeMinDate(activeYear, month)
+    ) {
       return false;
     }
     if (!this.dateFilter) {
       return true;
     }
     const firstOfMonth = this._dateAdapter.createDate(activeYear, month, 1);
-    for (let date = firstOfMonth; this._dateAdapter.getMonth(date) == month; date = this._dateAdapter.addCalendarDays(date, 1)) {
+    for (
+      let date = firstOfMonth;
+      this._dateAdapter.getMonth(date) == month;
+      date = this._dateAdapter.addCalendarDays(date, 1)
+    ) {
       if (this.dateFilter(date)) {
         return true;
       }
@@ -2628,7 +3637,7 @@ var NgxMatYearView = class {
     if (this.maxDate) {
       const maxYear = this._dateAdapter.getYear(this.maxDate);
       const maxMonth = this._dateAdapter.getMonth(this.maxDate);
-      return year > maxYear || year === maxYear && month > maxMonth;
+      return year > maxYear || (year === maxYear && month > maxMonth);
     }
     return false;
   }
@@ -2640,7 +3649,7 @@ var NgxMatYearView = class {
     if (this.minDate) {
       const minYear = this._dateAdapter.getYear(this.minDate);
       const minMonth = this._dateAdapter.getMonth(this.minDate);
-      return year < minYear || year === minYear && month < minMonth;
+      return year < minYear || (year === minYear && month < minMonth);
     }
     return false;
   }
@@ -2651,14 +3660,21 @@ var NgxMatYearView = class {
   /** Sets the currently-selected month based on a model value. */
   _setSelectedMonth(value) {
     if (value instanceof NgxDateRange) {
-      this._selectedMonth = this._getMonthInCurrentYear(value.start) || this._getMonthInCurrentYear(value.end);
+      this._selectedMonth =
+        this._getMonthInCurrentYear(value.start) ||
+        this._getMonthInCurrentYear(value.end);
     } else {
       this._selectedMonth = this._getMonthInCurrentYear(value);
     }
   }
 };
 NgxMatYearView.ɵfac = function NgxMatYearView_Factory(t) {
-  return new (t || NgxMatYearView)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8), ɵɵdirectiveInject(NgxMatDateAdapter, 8), ɵɵdirectiveInject(Directionality, 8));
+  return new (t || NgxMatYearView)(
+    ɵɵdirectiveInject(ChangeDetectorRef),
+    ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8),
+    ɵɵdirectiveInject(NgxMatDateAdapter, 8),
+    ɵɵdirectiveInject(Directionality, 8),
+  );
 };
 NgxMatYearView.ɵcmp = ɵɵdefineComponent({
   type: NgxMatYearView,
@@ -2669,7 +3685,7 @@ NgxMatYearView.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._matCalendarBody = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._matCalendarBody = _t.first);
     }
   },
   inputs: {
@@ -2678,108 +3694,198 @@ NgxMatYearView.ɵcmp = ɵɵdefineComponent({
     minDate: "minDate",
     maxDate: "maxDate",
     dateFilter: "dateFilter",
-    dateClass: "dateClass"
+    dateClass: "dateClass",
   },
   outputs: {
     selectedChange: "selectedChange",
     monthSelected: "monthSelected",
-    activeDateChange: "activeDateChange"
+    activeDateChange: "activeDateChange",
   },
   exportAs: ["ngxMatYearView"],
   decls: 5,
   vars: 9,
-  consts: [["role", "grid", 1, "mat-calendar-table"], ["aria-hidden", "true", 1, "mat-calendar-table-header"], ["colspan", "4", 1, "mat-calendar-table-header-divider"], ["ngx-mat-calendar-body", "", 3, "selectedValueChange", "activeDateChange", "keyup", "keydown", "label", "rows", "todayValue", "startValue", "endValue", "labelMinRequiredCells", "numCols", "cellAspectRatio", "activeCell"]],
+  consts: [
+    ["role", "grid", 1, "mat-calendar-table"],
+    ["aria-hidden", "true", 1, "mat-calendar-table-header"],
+    ["colspan", "4", 1, "mat-calendar-table-header-divider"],
+    [
+      "ngx-mat-calendar-body",
+      "",
+      3,
+      "selectedValueChange",
+      "activeDateChange",
+      "keyup",
+      "keydown",
+      "label",
+      "rows",
+      "todayValue",
+      "startValue",
+      "endValue",
+      "labelMinRequiredCells",
+      "numCols",
+      "cellAspectRatio",
+      "activeCell",
+    ],
+  ],
   template: function NgxMatYearView_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵelementStart(0, "table", 0)(1, "thead", 1)(2, "tr");
       ɵɵelement(3, "th", 2);
       ɵɵelementEnd()();
       ɵɵelementStart(4, "tbody", 3);
-      ɵɵlistener("selectedValueChange", function NgxMatYearView_Template_tbody_selectedValueChange_4_listener($event) {
-        return ctx._monthSelected($event);
-      })("activeDateChange", function NgxMatYearView_Template_tbody_activeDateChange_4_listener($event) {
-        return ctx._updateActiveDate($event);
-      })("keyup", function NgxMatYearView_Template_tbody_keyup_4_listener($event) {
-        return ctx._handleCalendarBodyKeyup($event);
-      })("keydown", function NgxMatYearView_Template_tbody_keydown_4_listener($event) {
-        return ctx._handleCalendarBodyKeydown($event);
-      });
+      ɵɵlistener(
+        "selectedValueChange",
+        function NgxMatYearView_Template_tbody_selectedValueChange_4_listener(
+          $event,
+        ) {
+          return ctx._monthSelected($event);
+        },
+      )(
+        "activeDateChange",
+        function NgxMatYearView_Template_tbody_activeDateChange_4_listener(
+          $event,
+        ) {
+          return ctx._updateActiveDate($event);
+        },
+      )(
+        "keyup",
+        function NgxMatYearView_Template_tbody_keyup_4_listener($event) {
+          return ctx._handleCalendarBodyKeyup($event);
+        },
+      )(
+        "keydown",
+        function NgxMatYearView_Template_tbody_keydown_4_listener($event) {
+          return ctx._handleCalendarBodyKeydown($event);
+        },
+      );
       ɵɵelementEnd()();
     }
     if (rf & 2) {
       ɵɵadvance(4);
-      ɵɵproperty("label", ctx._yearLabel)("rows", ctx._months)("todayValue", ctx._todayMonth)("startValue", ctx._selectedMonth)("endValue", ctx._selectedMonth)("labelMinRequiredCells", 2)("numCols", 4)("cellAspectRatio", 4 / 7)("activeCell", ctx._dateAdapter.getMonth(ctx.activeDate));
+      ɵɵproperty("label", ctx._yearLabel)("rows", ctx._months)(
+        "todayValue",
+        ctx._todayMonth,
+      )("startValue", ctx._selectedMonth)("endValue", ctx._selectedMonth)(
+        "labelMinRequiredCells",
+        2,
+      )("numCols", 4)("cellAspectRatio", 4 / 7)(
+        "activeCell",
+        ctx._dateAdapter.getMonth(ctx.activeDate),
+      );
     }
   },
   dependencies: [NgxMatCalendarBody],
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatYearView, [{
-    type: Component,
-    args: [{
-      selector: "ngx-mat-year-view",
-      exportAs: "ngxMatYearView",
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      template: '<table class="mat-calendar-table" role="grid">\r\n  <thead aria-hidden="true" class="mat-calendar-table-header">\r\n    <tr><th class="mat-calendar-table-header-divider" colspan="4"></th></tr>\r\n  </thead>\r\n  <tbody ngx-mat-calendar-body\r\n         [label]="_yearLabel"\r\n         [rows]="_months"\r\n         [todayValue]="_todayMonth!"\r\n         [startValue]="_selectedMonth!"\r\n         [endValue]="_selectedMonth!"\r\n         [labelMinRequiredCells]="2"\r\n         [numCols]="4"\r\n         [cellAspectRatio]="4 / 7"\r\n         [activeCell]="_dateAdapter.getMonth(activeDate)"\r\n         (selectedValueChange)="_monthSelected($event)"\r\n         (activeDateChange)="_updateActiveDate($event)"\r\n         (keyup)="_handleCalendarBodyKeyup($event)"\r\n         (keydown)="_handleCalendarBodyKeydown($event)">\r\n  </tbody>\r\n</table>\r\n'
-    }]
-  }], function() {
-    return [{
-      type: ChangeDetectorRef
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Inject,
-        args: [NGX_MAT_DATE_FORMATS]
-      }]
-    }, {
-      type: NgxMatDateAdapter,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: Directionality,
-      decorators: [{
-        type: Optional
-      }]
-    }];
-  }, {
-    activeDate: [{
-      type: Input
-    }],
-    selected: [{
-      type: Input
-    }],
-    minDate: [{
-      type: Input
-    }],
-    maxDate: [{
-      type: Input
-    }],
-    dateFilter: [{
-      type: Input
-    }],
-    dateClass: [{
-      type: Input
-    }],
-    selectedChange: [{
-      type: Output
-    }],
-    monthSelected: [{
-      type: Output
-    }],
-    activeDateChange: [{
-      type: Output
-    }],
-    _matCalendarBody: [{
-      type: ViewChild,
-      args: [NgxMatCalendarBody]
-    }]
-  });
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatYearView,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "ngx-mat-year-view",
+              exportAs: "ngxMatYearView",
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              template:
+                '<table class="mat-calendar-table" role="grid">\r\n  <thead aria-hidden="true" class="mat-calendar-table-header">\r\n    <tr><th class="mat-calendar-table-header-divider" colspan="4"></th></tr>\r\n  </thead>\r\n  <tbody ngx-mat-calendar-body\r\n         [label]="_yearLabel"\r\n         [rows]="_months"\r\n         [todayValue]="_todayMonth!"\r\n         [startValue]="_selectedMonth!"\r\n         [endValue]="_selectedMonth!"\r\n         [labelMinRequiredCells]="2"\r\n         [numCols]="4"\r\n         [cellAspectRatio]="4 / 7"\r\n         [activeCell]="_dateAdapter.getMonth(activeDate)"\r\n         (selectedValueChange)="_monthSelected($event)"\r\n         (activeDateChange)="_updateActiveDate($event)"\r\n         (keyup)="_handleCalendarBodyKeyup($event)"\r\n         (keydown)="_handleCalendarBodyKeydown($event)">\r\n  </tbody>\r\n</table>\r\n',
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: ChangeDetectorRef,
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_FORMATS],
+              },
+            ],
+          },
+          {
+            type: NgxMatDateAdapter,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: Directionality,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+        ];
+      },
+      {
+        activeDate: [
+          {
+            type: Input,
+          },
+        ],
+        selected: [
+          {
+            type: Input,
+          },
+        ],
+        minDate: [
+          {
+            type: Input,
+          },
+        ],
+        maxDate: [
+          {
+            type: Input,
+          },
+        ],
+        dateFilter: [
+          {
+            type: Input,
+          },
+        ],
+        dateClass: [
+          {
+            type: Input,
+          },
+        ],
+        selectedChange: [
+          {
+            type: Output,
+          },
+        ],
+        monthSelected: [
+          {
+            type: Output,
+          },
+        ],
+        activeDateChange: [
+          {
+            type: Output,
+          },
+        ],
+        _matCalendarBody: [
+          {
+            type: ViewChild,
+            args: [NgxMatCalendarBody],
+          },
+        ],
+      },
+    );
 })();
 var NgxMatDatepickerIntl = class {
   constructor() {
@@ -2813,15 +3919,25 @@ NgxMatDatepickerIntl.ɵfac = function NgxMatDatepickerIntl_Factory(t) {
 NgxMatDatepickerIntl.ɵprov = ɵɵdefineInjectable({
   token: NgxMatDatepickerIntl,
   factory: NgxMatDatepickerIntl.ɵfac,
-  providedIn: "root"
+  providedIn: "root",
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDatepickerIntl, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDatepickerIntl,
+      [
+        {
+          type: Injectable,
+          args: [
+            {
+              providedIn: "root",
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var calendarHeaderId = 1;
 var NgxMatCalendarHeader = class {
@@ -2832,12 +3948,19 @@ var NgxMatCalendarHeader = class {
     this._dateFormats = _dateFormats;
     this._id = `mat-calendar-header-${calendarHeaderId++}`;
     this._periodButtonLabelId = `${this._id}-period-label`;
-    this.calendar.stateChanges.subscribe(() => changeDetectorRef.markForCheck());
+    this.calendar.stateChanges.subscribe(() =>
+      changeDetectorRef.markForCheck(),
+    );
   }
   /** The display text for the current calendar view. */
   get periodButtonText() {
     if (this.calendar.currentView == "month") {
-      return this._dateAdapter.format(this.calendar.activeDate, this._dateFormats.display.monthYearLabel).toLocaleUpperCase();
+      return this._dateAdapter
+        .format(
+          this.calendar.activeDate,
+          this._dateFormats.display.monthYearLabel,
+        )
+        .toLocaleUpperCase();
     }
     if (this.calendar.currentView == "year") {
       return this._dateAdapter.getYearName(this.calendar.activeDate);
@@ -2847,65 +3970,104 @@ var NgxMatCalendarHeader = class {
   /** The aria description for the current calendar view. */
   get periodButtonDescription() {
     if (this.calendar.currentView == "month") {
-      return this._dateAdapter.format(this.calendar.activeDate, this._dateFormats.display.monthYearLabel).toLocaleUpperCase();
+      return this._dateAdapter
+        .format(
+          this.calendar.activeDate,
+          this._dateFormats.display.monthYearLabel,
+        )
+        .toLocaleUpperCase();
     }
     if (this.calendar.currentView == "year") {
       return this._dateAdapter.getYearName(this.calendar.activeDate);
     }
-    return this._intl.formatYearRangeLabel(...this._formatMinAndMaxYearLabels());
+    return this._intl.formatYearRangeLabel(
+      ...this._formatMinAndMaxYearLabels(),
+    );
   }
   /** The `aria-label` for changing the calendar view. */
   get periodButtonLabel() {
-    return this.calendar.currentView == "month" ? this._intl.switchToMultiYearViewLabel : this._intl.switchToMonthViewLabel;
+    return this.calendar.currentView == "month"
+      ? this._intl.switchToMultiYearViewLabel
+      : this._intl.switchToMonthViewLabel;
   }
   /** The label for the previous button. */
   get prevButtonLabel() {
     return {
-      "month": this._intl.prevMonthLabel,
-      "year": this._intl.prevYearLabel,
-      "multi-year": this._intl.prevMultiYearLabel
+      month: this._intl.prevMonthLabel,
+      year: this._intl.prevYearLabel,
+      "multi-year": this._intl.prevMultiYearLabel,
     }[this.calendar.currentView];
   }
   /** The label for the next button. */
   get nextButtonLabel() {
     return {
-      "month": this._intl.nextMonthLabel,
-      "year": this._intl.nextYearLabel,
-      "multi-year": this._intl.nextMultiYearLabel
+      month: this._intl.nextMonthLabel,
+      year: this._intl.nextYearLabel,
+      "multi-year": this._intl.nextMultiYearLabel,
     }[this.calendar.currentView];
   }
   /** Handles user clicks on the period label. */
   currentPeriodClicked() {
-    this.calendar.currentView = this.calendar.currentView == "month" ? "multi-year" : "month";
+    this.calendar.currentView =
+      this.calendar.currentView == "month" ? "multi-year" : "month";
   }
   /** Handles user clicks on the previous button. */
   previousClicked() {
-    this.calendar.activeDate = this.calendar.currentView == "month" ? this._dateAdapter.addCalendarMonths(this.calendar.activeDate, -1) : this._dateAdapter.addCalendarYears(this.calendar.activeDate, this.calendar.currentView == "year" ? -1 : -yearsPerPage);
+    this.calendar.activeDate =
+      this.calendar.currentView == "month"
+        ? this._dateAdapter.addCalendarMonths(this.calendar.activeDate, -1)
+        : this._dateAdapter.addCalendarYears(
+            this.calendar.activeDate,
+            this.calendar.currentView == "year" ? -1 : -yearsPerPage,
+          );
   }
   /** Handles user clicks on the next button. */
   nextClicked() {
-    this.calendar.activeDate = this.calendar.currentView == "month" ? this._dateAdapter.addCalendarMonths(this.calendar.activeDate, 1) : this._dateAdapter.addCalendarYears(this.calendar.activeDate, this.calendar.currentView == "year" ? 1 : yearsPerPage);
+    this.calendar.activeDate =
+      this.calendar.currentView == "month"
+        ? this._dateAdapter.addCalendarMonths(this.calendar.activeDate, 1)
+        : this._dateAdapter.addCalendarYears(
+            this.calendar.activeDate,
+            this.calendar.currentView == "year" ? 1 : yearsPerPage,
+          );
   }
   /** Whether the previous period button is enabled. */
   previousEnabled() {
     if (!this.calendar.minDate) {
       return true;
     }
-    return !this.calendar.minDate || !this._isSameView(this.calendar.activeDate, this.calendar.minDate);
+    return (
+      !this.calendar.minDate ||
+      !this._isSameView(this.calendar.activeDate, this.calendar.minDate)
+    );
   }
   /** Whether the next period button is enabled. */
   nextEnabled() {
-    return !this.calendar.maxDate || !this._isSameView(this.calendar.activeDate, this.calendar.maxDate);
+    return (
+      !this.calendar.maxDate ||
+      !this._isSameView(this.calendar.activeDate, this.calendar.maxDate)
+    );
   }
   /** Whether the two dates represent the same view in the current view mode (month or year). */
   _isSameView(date1, date2) {
     if (this.calendar.currentView == "month") {
-      return this._dateAdapter.getYear(date1) == this._dateAdapter.getYear(date2) && this._dateAdapter.getMonth(date1) == this._dateAdapter.getMonth(date2);
+      return (
+        this._dateAdapter.getYear(date1) == this._dateAdapter.getYear(date2) &&
+        this._dateAdapter.getMonth(date1) == this._dateAdapter.getMonth(date2)
+      );
     }
     if (this.calendar.currentView == "year") {
-      return this._dateAdapter.getYear(date1) == this._dateAdapter.getYear(date2);
+      return (
+        this._dateAdapter.getYear(date1) == this._dateAdapter.getYear(date2)
+      );
     }
-    return isSameMultiYearView(this._dateAdapter, date1, date2, this.calendar.minDate, this.calendar.maxDate);
+    return isSameMultiYearView(
+      this._dateAdapter,
+      date1,
+      date2,
+      this.calendar.minDate,
+      this.calendar.maxDate,
+    );
   }
   /**
    * Format two individual labels for the minimum year and maximum year available in the multi-year
@@ -2914,15 +4076,32 @@ var NgxMatCalendarHeader = class {
    */
   _formatMinAndMaxYearLabels() {
     const activeYear = this._dateAdapter.getYear(this.calendar.activeDate);
-    const minYearOfPage = activeYear - getActiveOffset(this._dateAdapter, this.calendar.activeDate, this.calendar.minDate, this.calendar.maxDate);
+    const minYearOfPage =
+      activeYear -
+      getActiveOffset(
+        this._dateAdapter,
+        this.calendar.activeDate,
+        this.calendar.minDate,
+        this.calendar.maxDate,
+      );
     const maxYearOfPage = minYearOfPage + yearsPerPage - 1;
-    const minYearLabel = this._dateAdapter.getYearName(this._dateAdapter.createDate(minYearOfPage, 0, 1));
-    const maxYearLabel = this._dateAdapter.getYearName(this._dateAdapter.createDate(maxYearOfPage, 0, 1));
+    const minYearLabel = this._dateAdapter.getYearName(
+      this._dateAdapter.createDate(minYearOfPage, 0, 1),
+    );
+    const maxYearLabel = this._dateAdapter.getYearName(
+      this._dateAdapter.createDate(maxYearOfPage, 0, 1),
+    );
     return [minYearLabel, maxYearLabel];
   }
 };
 NgxMatCalendarHeader.ɵfac = function NgxMatCalendarHeader_Factory(t) {
-  return new (t || NgxMatCalendarHeader)(ɵɵdirectiveInject(NgxMatDatepickerIntl), ɵɵdirectiveInject(forwardRef(() => NgxMatCalendar)), ɵɵdirectiveInject(NgxMatDateAdapter, 8), ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8), ɵɵdirectiveInject(ChangeDetectorRef));
+  return new (t || NgxMatCalendarHeader)(
+    ɵɵdirectiveInject(NgxMatDatepickerIntl),
+    ɵɵdirectiveInject(forwardRef(() => NgxMatCalendar)),
+    ɵɵdirectiveInject(NgxMatDateAdapter, 8),
+    ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8),
+    ɵɵdirectiveInject(ChangeDetectorRef),
+  );
 };
 NgxMatCalendarHeader.ɵcmp = ɵɵdefineComponent({
   type: NgxMatCalendarHeader,
@@ -2931,14 +4110,68 @@ NgxMatCalendarHeader.ɵcmp = ɵɵdefineComponent({
   ngContentSelectors: _c1,
   decls: 13,
   vars: 11,
-  consts: [[1, "mat-calendar-header"], [1, "mat-calendar-controls"], ["mat-button", "", "type", "button", "aria-live", "polite", 1, "mat-calendar-period-button", 3, "click"], ["aria-hidden", "true"], ["viewBox", "0 0 10 5", "focusable", "false", "aria-hidden", "true", 1, "mat-calendar-arrow"], ["points", "0,0 5,5 10,0"], [1, "mat-calendar-spacer"], ["mat-icon-button", "", "type", "button", 1, "mat-calendar-previous-button", 3, "click", "disabled"], ["mat-icon-button", "", "type", "button", 1, "mat-calendar-next-button", 3, "click", "disabled"], [1, "mat-calendar-hidden-label", 3, "id"]],
+  consts: [
+    [1, "mat-calendar-header"],
+    [1, "mat-calendar-controls"],
+    [
+      "mat-button",
+      "",
+      "type",
+      "button",
+      "aria-live",
+      "polite",
+      1,
+      "mat-calendar-period-button",
+      3,
+      "click",
+    ],
+    ["aria-hidden", "true"],
+    [
+      "viewBox",
+      "0 0 10 5",
+      "focusable",
+      "false",
+      "aria-hidden",
+      "true",
+      1,
+      "mat-calendar-arrow",
+    ],
+    ["points", "0,0 5,5 10,0"],
+    [1, "mat-calendar-spacer"],
+    [
+      "mat-icon-button",
+      "",
+      "type",
+      "button",
+      1,
+      "mat-calendar-previous-button",
+      3,
+      "click",
+      "disabled",
+    ],
+    [
+      "mat-icon-button",
+      "",
+      "type",
+      "button",
+      1,
+      "mat-calendar-next-button",
+      3,
+      "click",
+      "disabled",
+    ],
+    [1, "mat-calendar-hidden-label", 3, "id"],
+  ],
   template: function NgxMatCalendarHeader_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵprojectionDef();
       ɵɵelementStart(0, "div", 0)(1, "div", 1)(2, "button", 2);
-      ɵɵlistener("click", function NgxMatCalendarHeader_Template_button_click_2_listener() {
-        return ctx.currentPeriodClicked();
-      });
+      ɵɵlistener(
+        "click",
+        function NgxMatCalendarHeader_Template_button_click_2_listener() {
+          return ctx.currentPeriodClicked();
+        },
+      );
       ɵɵelementStart(3, "span", 3);
       ɵɵtext(4);
       ɵɵelementEnd();
@@ -2950,14 +4183,20 @@ NgxMatCalendarHeader.ɵcmp = ɵɵdefineComponent({
       ɵɵelement(7, "div", 6);
       ɵɵprojection(8);
       ɵɵelementStart(9, "button", 7);
-      ɵɵlistener("click", function NgxMatCalendarHeader_Template_button_click_9_listener() {
-        return ctx.previousClicked();
-      });
+      ɵɵlistener(
+        "click",
+        function NgxMatCalendarHeader_Template_button_click_9_listener() {
+          return ctx.previousClicked();
+        },
+      );
       ɵɵelementEnd();
       ɵɵelementStart(10, "button", 8);
-      ɵɵlistener("click", function NgxMatCalendarHeader_Template_button_click_10_listener() {
-        return ctx.nextClicked();
-      });
+      ɵɵlistener(
+        "click",
+        function NgxMatCalendarHeader_Template_button_click_10_listener() {
+          return ctx.nextClicked();
+        },
+      );
       ɵɵelementEnd()()();
       ɵɵelementStart(11, "label", 9);
       ɵɵtext(12);
@@ -2965,7 +4204,10 @@ NgxMatCalendarHeader.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       ɵɵadvance(2);
-      ɵɵattribute("aria-label", ctx.periodButtonLabel)("aria-describedby", ctx._periodButtonLabelId);
+      ɵɵattribute("aria-label", ctx.periodButtonLabel)(
+        "aria-describedby",
+        ctx._periodButtonLabelId,
+      );
       ɵɵadvance(2);
       ɵɵtextInterpolate(ctx.periodButtonText);
       ɵɵadvance();
@@ -2984,17 +4226,22 @@ NgxMatCalendarHeader.ɵcmp = ɵɵdefineComponent({
   },
   dependencies: [MatButton, MatIconButton],
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatCalendarHeader, [{
-    type: Component,
-    args: [{
-      selector: "ngx-mat-calendar-header",
-      exportAs: "ngxMatCalendarHeader",
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      template: `<div class="mat-calendar-header">\r
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatCalendarHeader,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "ngx-mat-calendar-header",
+              exportAs: "ngxMatCalendarHeader",
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              template: `<div class="mat-calendar-header">\r
   <div class="mat-calendar-controls">\r
     <button mat-button type="button" class="mat-calendar-period-button"\r
             (click)="currentPeriodClicked()" [attr.aria-label]="periodButtonLabel"\r
@@ -3022,34 +4269,52 @@ NgxMatCalendarHeader.ɵcmp = ɵɵdefineComponent({
   </div>\r
 </div>\r
 <label [id]="_periodButtonLabelId" class="mat-calendar-hidden-label">{{periodButtonDescription}}</label>\r
-`
-    }]
-  }], function() {
-    return [{
-      type: NgxMatDatepickerIntl
-    }, {
-      type: NgxMatCalendar,
-      decorators: [{
-        type: Inject,
-        args: [forwardRef(() => NgxMatCalendar)]
-      }]
-    }, {
-      type: NgxMatDateAdapter,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Inject,
-        args: [NGX_MAT_DATE_FORMATS]
-      }]
-    }, {
-      type: ChangeDetectorRef
-    }];
-  }, null);
+`,
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: NgxMatDatepickerIntl,
+          },
+          {
+            type: NgxMatCalendar,
+            decorators: [
+              {
+                type: Inject,
+                args: [forwardRef(() => NgxMatCalendar)],
+              },
+            ],
+          },
+          {
+            type: NgxMatDateAdapter,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_FORMATS],
+              },
+            ],
+          },
+          {
+            type: ChangeDetectorRef,
+          },
+        ];
+      },
+      null,
+    );
 })();
 var NgxMatCalendar = class {
   constructor(_intl, _dateAdapter, _dateFormats, _changeDetectorRef) {
@@ -3082,7 +4347,9 @@ var NgxMatCalendar = class {
     return this._startAt;
   }
   set startAt(value) {
-    this._startAt = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    this._startAt = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
   }
   /** The currently selected date. */
   get selected() {
@@ -3092,7 +4359,9 @@ var NgxMatCalendar = class {
     if (value instanceof NgxDateRange) {
       this._selected = value;
     } else {
-      this._selected = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+      this._selected = this._dateAdapter.getValidDateOrNull(
+        this._dateAdapter.deserialize(value),
+      );
     }
   }
   /** The minimum selectable date. */
@@ -3100,14 +4369,18 @@ var NgxMatCalendar = class {
     return this._minDate;
   }
   set minDate(value) {
-    this._minDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    this._minDate = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
   }
   /** The maximum selectable date. */
   get maxDate() {
     return this._maxDate;
   }
   set maxDate(value) {
-    this._maxDate = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    this._maxDate = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
   }
   /**
    * The current active date. This determines which time period is shown and which date is
@@ -3117,7 +4390,11 @@ var NgxMatCalendar = class {
     return this._clampedActiveDate;
   }
   set activeDate(value) {
-    this._clampedActiveDate = this._dateAdapter.clampDate(value, this.minDate, this.maxDate);
+    this._clampedActiveDate = this._dateAdapter.clampDate(
+      value,
+      this.minDate,
+      this.maxDate,
+    );
     this.stateChanges.next();
     this._changeDetectorRef.markForCheck();
   }
@@ -3135,7 +4412,9 @@ var NgxMatCalendar = class {
     }
   }
   ngAfterContentInit() {
-    this._calendarHeaderPortal = new ComponentPortal(this.headerComponent || NgxMatCalendarHeader);
+    this._calendarHeaderPortal = new ComponentPortal(
+      this.headerComponent || NgxMatCalendarHeader,
+    );
     this.activeDate = this.startAt || this._dateAdapter.today();
     this._currentView = this.startView;
   }
@@ -3150,8 +4429,22 @@ var NgxMatCalendar = class {
     this.stateChanges.complete();
   }
   ngOnChanges(changes) {
-    const minDateChange = changes["minDate"] && !this._dateAdapter.sameDate(changes["minDate"].previousValue, changes["minDate"].currentValue) ? changes["minDate"] : void 0;
-    const maxDateChange = changes["maxDate"] && !this._dateAdapter.sameDate(changes["maxDate"].previousValue, changes["maxDate"].currentValue) ? changes["maxDate"] : void 0;
+    const minDateChange =
+      changes["minDate"] &&
+      !this._dateAdapter.sameDate(
+        changes["minDate"].previousValue,
+        changes["minDate"].currentValue,
+      )
+        ? changes["minDate"]
+        : void 0;
+    const maxDateChange =
+      changes["maxDate"] &&
+      !this._dateAdapter.sameDate(
+        changes["maxDate"].previousValue,
+        changes["maxDate"].currentValue,
+      )
+        ? changes["maxDate"]
+        : void 0;
     const change = minDateChange || maxDateChange || changes["dateFilter"];
     if (change && !change.firstChange) {
       const view = this._getCurrentViewComponent();
@@ -3176,7 +4469,10 @@ var NgxMatCalendar = class {
       this._dateAdapter.copyTime(event.value, this.selected);
     }
     const date = event.value;
-    if (this.selected instanceof NgxDateRange || date && !this._dateAdapter.sameDate(date, this.selected)) {
+    if (
+      this.selected instanceof NgxDateRange ||
+      (date && !this._dateAdapter.sameDate(date, this.selected))
+    ) {
       this.selectedChange.emit(date);
     }
     this._userSelection.emit(event);
@@ -3203,8 +4499,7 @@ var NgxMatCalendar = class {
    * of a new range.
    */
   _dragEnded(event) {
-    if (!this._activeDrag)
-      return;
+    if (!this._activeDrag) return;
     if (event.value) {
       this._userDragDrop.emit(event);
     }
@@ -3216,7 +4511,12 @@ var NgxMatCalendar = class {
   }
 };
 NgxMatCalendar.ɵfac = function NgxMatCalendar_Factory(t) {
-  return new (t || NgxMatCalendar)(ɵɵdirectiveInject(NgxMatDatepickerIntl), ɵɵdirectiveInject(NgxMatDateAdapter, 8), ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8), ɵɵdirectiveInject(ChangeDetectorRef));
+  return new (t || NgxMatCalendar)(
+    ɵɵdirectiveInject(NgxMatDatepickerIntl),
+    ɵɵdirectiveInject(NgxMatDateAdapter, 8),
+    ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8),
+    ɵɵdirectiveInject(ChangeDetectorRef),
+  );
 };
 NgxMatCalendar.ɵcmp = ɵɵdefineComponent({
   type: NgxMatCalendar,
@@ -3229,9 +4529,9 @@ NgxMatCalendar.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.monthView = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.yearView = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.multiYearView = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.monthView = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.yearView = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.multiYearView = _t.first);
     }
   },
   hostAttrs: [1, "mat-calendar"],
@@ -3247,7 +4547,7 @@ NgxMatCalendar.ɵcmp = ɵɵdefineComponent({
     comparisonStart: "comparisonStart",
     comparisonEnd: "comparisonEnd",
     startDateAccessibleName: "startDateAccessibleName",
-    endDateAccessibleName: "endDateAccessibleName"
+    endDateAccessibleName: "endDateAccessibleName",
   },
   outputs: {
     selectedChange: "selectedChange",
@@ -3255,18 +4555,151 @@ NgxMatCalendar.ɵcmp = ɵɵdefineComponent({
     monthSelected: "monthSelected",
     viewChanged: "viewChanged",
     _userSelection: "_userSelection",
-    _userDragDrop: "_userDragDrop"
+    _userDragDrop: "_userDragDrop",
   },
   exportAs: ["ngxMatCalendar"],
-  features: [ɵɵProvidersFeature([NGX_MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER]), ɵɵNgOnChangesFeature],
+  features: [
+    ɵɵProvidersFeature([NGX_MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER]),
+    ɵɵNgOnChangesFeature,
+  ],
   decls: 5,
   vars: 5,
-  consts: [[3, "cdkPortalOutlet"], ["cdkMonitorSubtreeFocus", "", "tabindex", "-1", 1, "mat-calendar-content", 3, "ngSwitch"], [3, "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass", "comparisonStart", "comparisonEnd", "startDateAccessibleName", "endDateAccessibleName", "activeDrag", "activeDateChange", "_userSelection", "dragStarted", "dragEnded", 4, "ngSwitchCase"], [3, "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass", "activeDateChange", "monthSelected", "selectedChange", 4, "ngSwitchCase"], [3, "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass", "activeDateChange", "yearSelected", "selectedChange", 4, "ngSwitchCase"], [3, "activeDateChange", "_userSelection", "dragStarted", "dragEnded", "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass", "comparisonStart", "comparisonEnd", "startDateAccessibleName", "endDateAccessibleName", "activeDrag"], [3, "activeDateChange", "monthSelected", "selectedChange", "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass"], [3, "activeDateChange", "yearSelected", "selectedChange", "activeDate", "selected", "dateFilter", "maxDate", "minDate", "dateClass"]],
+  consts: [
+    [3, "cdkPortalOutlet"],
+    [
+      "cdkMonitorSubtreeFocus",
+      "",
+      "tabindex",
+      "-1",
+      1,
+      "mat-calendar-content",
+      3,
+      "ngSwitch",
+    ],
+    [
+      3,
+      "activeDate",
+      "selected",
+      "dateFilter",
+      "maxDate",
+      "minDate",
+      "dateClass",
+      "comparisonStart",
+      "comparisonEnd",
+      "startDateAccessibleName",
+      "endDateAccessibleName",
+      "activeDrag",
+      "activeDateChange",
+      "_userSelection",
+      "dragStarted",
+      "dragEnded",
+      4,
+      "ngSwitchCase",
+    ],
+    [
+      3,
+      "activeDate",
+      "selected",
+      "dateFilter",
+      "maxDate",
+      "minDate",
+      "dateClass",
+      "activeDateChange",
+      "monthSelected",
+      "selectedChange",
+      4,
+      "ngSwitchCase",
+    ],
+    [
+      3,
+      "activeDate",
+      "selected",
+      "dateFilter",
+      "maxDate",
+      "minDate",
+      "dateClass",
+      "activeDateChange",
+      "yearSelected",
+      "selectedChange",
+      4,
+      "ngSwitchCase",
+    ],
+    [
+      3,
+      "activeDateChange",
+      "_userSelection",
+      "dragStarted",
+      "dragEnded",
+      "activeDate",
+      "selected",
+      "dateFilter",
+      "maxDate",
+      "minDate",
+      "dateClass",
+      "comparisonStart",
+      "comparisonEnd",
+      "startDateAccessibleName",
+      "endDateAccessibleName",
+      "activeDrag",
+    ],
+    [
+      3,
+      "activeDateChange",
+      "monthSelected",
+      "selectedChange",
+      "activeDate",
+      "selected",
+      "dateFilter",
+      "maxDate",
+      "minDate",
+      "dateClass",
+    ],
+    [
+      3,
+      "activeDateChange",
+      "yearSelected",
+      "selectedChange",
+      "activeDate",
+      "selected",
+      "dateFilter",
+      "maxDate",
+      "minDate",
+      "dateClass",
+    ],
+  ],
   template: function NgxMatCalendar_Template(rf, ctx) {
     if (rf & 1) {
-      ɵɵtemplate(0, NgxMatCalendar_ng_template_0_Template, 0, 0, "ng-template", 0);
+      ɵɵtemplate(
+        0,
+        NgxMatCalendar_ng_template_0_Template,
+        0,
+        0,
+        "ng-template",
+        0,
+      );
       ɵɵelementStart(1, "div", 1);
-      ɵɵtemplate(2, NgxMatCalendar_ngx_mat_month_view_2_Template, 1, 11, "ngx-mat-month-view", 2)(3, NgxMatCalendar_ngx_mat_year_view_3_Template, 1, 6, "ngx-mat-year-view", 3)(4, NgxMatCalendar_ngx_mat_multi_year_view_4_Template, 1, 6, "ngx-mat-multi-year-view", 4);
+      ɵɵtemplate(
+        2,
+        NgxMatCalendar_ngx_mat_month_view_2_Template,
+        1,
+        11,
+        "ngx-mat-month-view",
+        2,
+      )(
+        3,
+        NgxMatCalendar_ngx_mat_year_view_3_Template,
+        1,
+        6,
+        "ngx-mat-year-view",
+        3,
+      )(
+        4,
+        NgxMatCalendar_ngx_mat_multi_year_view_4_Template,
+        1,
+        6,
+        "ngx-mat-multi-year-view",
+        4,
+      );
       ɵɵelementEnd();
     }
     if (rf & 2) {
@@ -3281,24 +4714,39 @@ NgxMatCalendar.ɵcmp = ɵɵdefineComponent({
       ɵɵproperty("ngSwitchCase", "multi-year");
     }
   },
-  dependencies: [NgSwitch, NgSwitchCase, CdkMonitorFocus, CdkPortalOutlet, NgxMatMonthView, NgxMatYearView, NgxMatMultiYearView],
-  styles: ['.mat-calendar{display:block}.mat-calendar-header{padding:8px 8px 0}.mat-calendar-content{padding:0 8px 8px;outline:none}.mat-calendar-controls{display:flex;align-items:center;margin:5% calc(4.7142857143% - 16px)}.mat-calendar-spacer{flex:1 1 auto}.mat-calendar-period-button{min-width:0;margin:0 8px}.mat-calendar-arrow{display:inline-block;width:10px;height:5px;margin:0 0 0 5px;vertical-align:middle}.mat-calendar-arrow.mat-calendar-invert{transform:rotate(180deg)}[dir=rtl] .mat-calendar-arrow{margin:0 5px 0 0}.cdk-high-contrast-active .mat-calendar-arrow{fill:CanvasText}.mat-calendar-previous-button,.mat-calendar-next-button{position:relative}.mat-calendar-previous-button:after,.mat-calendar-next-button:after{top:0;left:0;right:0;bottom:0;position:absolute;content:"";margin:15.5px;border:0 solid currentColor;border-top-width:2px}[dir=rtl] .mat-calendar-previous-button,[dir=rtl] .mat-calendar-next-button{transform:rotate(180deg)}.mat-calendar-previous-button:after{border-left-width:2px;transform:translate(2px) rotate(-45deg)}.mat-calendar-next-button:after{border-right-width:2px;transform:translate(-2px) rotate(45deg)}.mat-calendar-table{border-spacing:0;border-collapse:collapse;width:100%}.mat-calendar-table-header th{text-align:center;padding:0 0 8px}.mat-calendar-table-header-divider{position:relative;height:1px}.mat-calendar-table-header-divider:after{content:"";position:absolute;top:0;left:-8px;right:-8px;height:1px}.mat-calendar-body-cell-content:before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 3px) * -1)}.mat-calendar-body-cell:focus .mat-focus-indicator:before{content:""}.mat-calendar-hidden-label{display:none}\n'],
+  dependencies: [
+    NgSwitch,
+    NgSwitchCase,
+    CdkMonitorFocus,
+    CdkPortalOutlet,
+    NgxMatMonthView,
+    NgxMatYearView,
+    NgxMatMultiYearView,
+  ],
+  styles: [
+    '.mat-calendar{display:block}.mat-calendar-header{padding:8px 8px 0}.mat-calendar-content{padding:0 8px 8px;outline:none}.mat-calendar-controls{display:flex;align-items:center;margin:5% calc(4.7142857143% - 16px)}.mat-calendar-spacer{flex:1 1 auto}.mat-calendar-period-button{min-width:0;margin:0 8px}.mat-calendar-arrow{display:inline-block;width:10px;height:5px;margin:0 0 0 5px;vertical-align:middle}.mat-calendar-arrow.mat-calendar-invert{transform:rotate(180deg)}[dir=rtl] .mat-calendar-arrow{margin:0 5px 0 0}.cdk-high-contrast-active .mat-calendar-arrow{fill:CanvasText}.mat-calendar-previous-button,.mat-calendar-next-button{position:relative}.mat-calendar-previous-button:after,.mat-calendar-next-button:after{top:0;left:0;right:0;bottom:0;position:absolute;content:"";margin:15.5px;border:0 solid currentColor;border-top-width:2px}[dir=rtl] .mat-calendar-previous-button,[dir=rtl] .mat-calendar-next-button{transform:rotate(180deg)}.mat-calendar-previous-button:after{border-left-width:2px;transform:translate(2px) rotate(-45deg)}.mat-calendar-next-button:after{border-right-width:2px;transform:translate(-2px) rotate(45deg)}.mat-calendar-table{border-spacing:0;border-collapse:collapse;width:100%}.mat-calendar-table-header th{text-align:center;padding:0 0 8px}.mat-calendar-table-header-divider{position:relative;height:1px}.mat-calendar-table-header-divider:after{content:"";position:absolute;top:0;left:-8px;right:-8px;height:1px}.mat-calendar-body-cell-content:before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 3px) * -1)}.mat-calendar-body-cell:focus .mat-focus-indicator:before{content:""}.mat-calendar-hidden-label{display:none}\n',
+  ],
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatCalendar, [{
-    type: Component,
-    args: [{
-      selector: "ngx-mat-calendar",
-      host: {
-        "class": "mat-calendar"
-      },
-      exportAs: "ngxMatCalendar",
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      providers: [NGX_MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER],
-      template: `<ng-template [cdkPortalOutlet]="_calendarHeaderPortal"></ng-template>\r
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatCalendar,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "ngx-mat-calendar",
+              host: {
+                class: "mat-calendar",
+              },
+              exportAs: "ngxMatCalendar",
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              providers: [NGX_MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER],
+              template: `<ng-template [cdkPortalOutlet]="_calendarHeaderPortal"></ng-template>\r
 \r
 <div class="mat-calendar-content" [ngSwitch]="currentView" cdkMonitorSubtreeFocus tabindex="-1">\r
   <ngx-mat-month-view\r
@@ -3345,95 +4793,154 @@ NgxMatCalendar.ɵcmp = ɵɵdefineComponent({
   </ngx-mat-multi-year-view>\r
 </div>\r
 `,
-      styles: ['.mat-calendar{display:block}.mat-calendar-header{padding:8px 8px 0}.mat-calendar-content{padding:0 8px 8px;outline:none}.mat-calendar-controls{display:flex;align-items:center;margin:5% calc(4.7142857143% - 16px)}.mat-calendar-spacer{flex:1 1 auto}.mat-calendar-period-button{min-width:0;margin:0 8px}.mat-calendar-arrow{display:inline-block;width:10px;height:5px;margin:0 0 0 5px;vertical-align:middle}.mat-calendar-arrow.mat-calendar-invert{transform:rotate(180deg)}[dir=rtl] .mat-calendar-arrow{margin:0 5px 0 0}.cdk-high-contrast-active .mat-calendar-arrow{fill:CanvasText}.mat-calendar-previous-button,.mat-calendar-next-button{position:relative}.mat-calendar-previous-button:after,.mat-calendar-next-button:after{top:0;left:0;right:0;bottom:0;position:absolute;content:"";margin:15.5px;border:0 solid currentColor;border-top-width:2px}[dir=rtl] .mat-calendar-previous-button,[dir=rtl] .mat-calendar-next-button{transform:rotate(180deg)}.mat-calendar-previous-button:after{border-left-width:2px;transform:translate(2px) rotate(-45deg)}.mat-calendar-next-button:after{border-right-width:2px;transform:translate(-2px) rotate(45deg)}.mat-calendar-table{border-spacing:0;border-collapse:collapse;width:100%}.mat-calendar-table-header th{text-align:center;padding:0 0 8px}.mat-calendar-table-header-divider{position:relative;height:1px}.mat-calendar-table-header-divider:after{content:"";position:absolute;top:0;left:-8px;right:-8px;height:1px}.mat-calendar-body-cell-content:before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 3px) * -1)}.mat-calendar-body-cell:focus .mat-focus-indicator:before{content:""}.mat-calendar-hidden-label{display:none}\n']
-    }]
-  }], function() {
-    return [{
-      type: NgxMatDatepickerIntl
-    }, {
-      type: NgxMatDateAdapter,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Inject,
-        args: [NGX_MAT_DATE_FORMATS]
-      }]
-    }, {
-      type: ChangeDetectorRef
-    }];
-  }, {
-    headerComponent: [{
-      type: Input
-    }],
-    startAt: [{
-      type: Input
-    }],
-    startView: [{
-      type: Input
-    }],
-    selected: [{
-      type: Input
-    }],
-    minDate: [{
-      type: Input
-    }],
-    maxDate: [{
-      type: Input
-    }],
-    dateFilter: [{
-      type: Input
-    }],
-    dateClass: [{
-      type: Input
-    }],
-    comparisonStart: [{
-      type: Input
-    }],
-    comparisonEnd: [{
-      type: Input
-    }],
-    startDateAccessibleName: [{
-      type: Input
-    }],
-    endDateAccessibleName: [{
-      type: Input
-    }],
-    selectedChange: [{
-      type: Output
-    }],
-    yearSelected: [{
-      type: Output
-    }],
-    monthSelected: [{
-      type: Output
-    }],
-    viewChanged: [{
-      type: Output
-    }],
-    _userSelection: [{
-      type: Output
-    }],
-    _userDragDrop: [{
-      type: Output
-    }],
-    monthView: [{
-      type: ViewChild,
-      args: [NgxMatMonthView]
-    }],
-    yearView: [{
-      type: ViewChild,
-      args: [NgxMatYearView]
-    }],
-    multiYearView: [{
-      type: ViewChild,
-      args: [NgxMatMultiYearView]
-    }]
-  });
+              styles: [
+                '.mat-calendar{display:block}.mat-calendar-header{padding:8px 8px 0}.mat-calendar-content{padding:0 8px 8px;outline:none}.mat-calendar-controls{display:flex;align-items:center;margin:5% calc(4.7142857143% - 16px)}.mat-calendar-spacer{flex:1 1 auto}.mat-calendar-period-button{min-width:0;margin:0 8px}.mat-calendar-arrow{display:inline-block;width:10px;height:5px;margin:0 0 0 5px;vertical-align:middle}.mat-calendar-arrow.mat-calendar-invert{transform:rotate(180deg)}[dir=rtl] .mat-calendar-arrow{margin:0 5px 0 0}.cdk-high-contrast-active .mat-calendar-arrow{fill:CanvasText}.mat-calendar-previous-button,.mat-calendar-next-button{position:relative}.mat-calendar-previous-button:after,.mat-calendar-next-button:after{top:0;left:0;right:0;bottom:0;position:absolute;content:"";margin:15.5px;border:0 solid currentColor;border-top-width:2px}[dir=rtl] .mat-calendar-previous-button,[dir=rtl] .mat-calendar-next-button{transform:rotate(180deg)}.mat-calendar-previous-button:after{border-left-width:2px;transform:translate(2px) rotate(-45deg)}.mat-calendar-next-button:after{border-right-width:2px;transform:translate(-2px) rotate(45deg)}.mat-calendar-table{border-spacing:0;border-collapse:collapse;width:100%}.mat-calendar-table-header th{text-align:center;padding:0 0 8px}.mat-calendar-table-header-divider{position:relative;height:1px}.mat-calendar-table-header-divider:after{content:"";position:absolute;top:0;left:-8px;right:-8px;height:1px}.mat-calendar-body-cell-content:before{margin:calc(calc(var(--mat-focus-indicator-border-width, 3px) + 3px) * -1)}.mat-calendar-body-cell:focus .mat-focus-indicator:before{content:""}.mat-calendar-hidden-label{display:none}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: NgxMatDatepickerIntl,
+          },
+          {
+            type: NgxMatDateAdapter,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_FORMATS],
+              },
+            ],
+          },
+          {
+            type: ChangeDetectorRef,
+          },
+        ];
+      },
+      {
+        headerComponent: [
+          {
+            type: Input,
+          },
+        ],
+        startAt: [
+          {
+            type: Input,
+          },
+        ],
+        startView: [
+          {
+            type: Input,
+          },
+        ],
+        selected: [
+          {
+            type: Input,
+          },
+        ],
+        minDate: [
+          {
+            type: Input,
+          },
+        ],
+        maxDate: [
+          {
+            type: Input,
+          },
+        ],
+        dateFilter: [
+          {
+            type: Input,
+          },
+        ],
+        dateClass: [
+          {
+            type: Input,
+          },
+        ],
+        comparisonStart: [
+          {
+            type: Input,
+          },
+        ],
+        comparisonEnd: [
+          {
+            type: Input,
+          },
+        ],
+        startDateAccessibleName: [
+          {
+            type: Input,
+          },
+        ],
+        endDateAccessibleName: [
+          {
+            type: Input,
+          },
+        ],
+        selectedChange: [
+          {
+            type: Output,
+          },
+        ],
+        yearSelected: [
+          {
+            type: Output,
+          },
+        ],
+        monthSelected: [
+          {
+            type: Output,
+          },
+        ],
+        viewChanged: [
+          {
+            type: Output,
+          },
+        ],
+        _userSelection: [
+          {
+            type: Output,
+          },
+        ],
+        _userDragDrop: [
+          {
+            type: Output,
+          },
+        ],
+        monthView: [
+          {
+            type: ViewChild,
+            args: [NgxMatMonthView],
+          },
+        ],
+        yearView: [
+          {
+            type: ViewChild,
+            args: [NgxMatYearView],
+          },
+        ],
+        multiYearView: [
+          {
+            type: ViewChild,
+            args: [NgxMatMultiYearView],
+          },
+        ],
+      },
+    );
 })();
 var SUPPORTS_INTL_API;
 try {
@@ -3442,17 +4949,52 @@ try {
   SUPPORTS_INTL_API = false;
 }
 var DEFAULT_MONTH_NAMES = {
-  "long": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-  "short": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-  "narrow": ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]
+  long: [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ],
+  short: [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ],
+  narrow: ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"],
 };
 var DEFAULT_DATE_NAMES = range(31, (i) => String(i + 1));
 var DEFAULT_DAY_OF_WEEK_NAMES = {
-  "long": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-  "short": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-  "narrow": ["S", "M", "T", "W", "T", "F", "S"]
+  long: [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ],
+  short: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+  narrow: ["S", "M", "T", "W", "T", "F", "S"],
 };
-var ISO_8601_REGEX = /^\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|(?:(?:\+|-)\d{2}:\d{2}))?)?$/;
+var ISO_8601_REGEX =
+  /^\d{4}-\d{2}-\d{2}(?:T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|(?:(?:\+|-)\d{2}:\d{2}))?)?$/;
 function range(length, valueFunction) {
   const valuesArray = Array(length);
   for (let i = 0; i < length; i++) {
@@ -3484,9 +5026,13 @@ var NgxMatNativeDateAdapter = class extends NgxMatDateAdapter {
     if (SUPPORTS_INTL_API) {
       const dtf = new Intl.DateTimeFormat(this.locale, {
         month: style2,
-        timeZone: "utc"
+        timeZone: "utc",
       });
-      return range(12, (i) => this._stripDirectionalityCharacters(this._format(dtf, new Date(2017, i, 1))));
+      return range(12, (i) =>
+        this._stripDirectionalityCharacters(
+          this._format(dtf, new Date(2017, i, 1)),
+        ),
+      );
     }
     return DEFAULT_MONTH_NAMES[style2];
   }
@@ -3494,9 +5040,13 @@ var NgxMatNativeDateAdapter = class extends NgxMatDateAdapter {
     if (SUPPORTS_INTL_API) {
       const dtf = new Intl.DateTimeFormat(this.locale, {
         day: "numeric",
-        timeZone: "utc"
+        timeZone: "utc",
       });
-      return range(31, (i) => this._stripDirectionalityCharacters(this._format(dtf, new Date(2017, 0, i + 1))));
+      return range(31, (i) =>
+        this._stripDirectionalityCharacters(
+          this._format(dtf, new Date(2017, 0, i + 1)),
+        ),
+      );
     }
     return DEFAULT_DATE_NAMES;
   }
@@ -3504,9 +5054,13 @@ var NgxMatNativeDateAdapter = class extends NgxMatDateAdapter {
     if (SUPPORTS_INTL_API) {
       const dtf = new Intl.DateTimeFormat(this.locale, {
         weekday: style2,
-        timeZone: "utc"
+        timeZone: "utc",
       });
-      return range(7, (i) => this._stripDirectionalityCharacters(this._format(dtf, new Date(2017, 0, i + 1))));
+      return range(7, (i) =>
+        this._stripDirectionalityCharacters(
+          this._format(dtf, new Date(2017, 0, i + 1)),
+        ),
+      );
     }
     return DEFAULT_DAY_OF_WEEK_NAMES[style2];
   }
@@ -3514,7 +5068,7 @@ var NgxMatNativeDateAdapter = class extends NgxMatDateAdapter {
     if (SUPPORTS_INTL_API) {
       const dtf = new Intl.DateTimeFormat(this.locale, {
         year: "numeric",
-        timeZone: "utc"
+        timeZone: "utc",
       });
       return this._stripDirectionalityCharacters(this._format(dtf, date));
     }
@@ -3524,14 +5078,22 @@ var NgxMatNativeDateAdapter = class extends NgxMatDateAdapter {
     return 0;
   }
   getNumDaysInMonth(date) {
-    return this.getDate(this._createDateWithOverflow(this.getYear(date), this.getMonth(date) + 1, 0));
+    return this.getDate(
+      this._createDateWithOverflow(
+        this.getYear(date),
+        this.getMonth(date) + 1,
+        0,
+      ),
+    );
   }
   clone(date) {
     return new Date(date.getTime());
   }
   createDate(year, month, date) {
     if (month < 0 || month > 11) {
-      throw Error(`Invalid month index "${month}". Month index has to be between 0 and 11.`);
+      throw Error(
+        `Invalid month index "${month}". Month index has to be between 0 and 11.`,
+      );
     }
     if (date < 1) {
       throw Error(`Invalid date "${date}". Date has to be greater than 0.`);
@@ -3556,12 +5118,15 @@ var NgxMatNativeDateAdapter = class extends NgxMatDateAdapter {
       throw Error("NativeDateAdapter: Cannot format invalid date.");
     }
     if (SUPPORTS_INTL_API) {
-      if (this._clampDate && (date.getFullYear() < 1 || date.getFullYear() > 9999)) {
+      if (
+        this._clampDate &&
+        (date.getFullYear() < 1 || date.getFullYear() > 9999)
+      ) {
         date = this.clone(date);
         date.setFullYear(Math.max(1, Math.min(9999, date.getFullYear())));
       }
       displayFormat = __spreadProps(__spreadValues({}, displayFormat), {
-        timeZone: "utc"
+        timeZone: "utc",
       });
       const dtf = new Intl.DateTimeFormat(this.locale, displayFormat);
       return this._stripDirectionalityCharacters(this._format(dtf, date));
@@ -3572,17 +5137,36 @@ var NgxMatNativeDateAdapter = class extends NgxMatDateAdapter {
     return this.addCalendarMonths(date, years * 12);
   }
   addCalendarMonths(date, months) {
-    let newDate = this._createDateWithOverflow(this.getYear(date), this.getMonth(date) + months, this.getDate(date));
-    if (this.getMonth(newDate) != ((this.getMonth(date) + months) % 12 + 12) % 12) {
-      newDate = this._createDateWithOverflow(this.getYear(newDate), this.getMonth(newDate), 0);
+    let newDate = this._createDateWithOverflow(
+      this.getYear(date),
+      this.getMonth(date) + months,
+      this.getDate(date),
+    );
+    if (
+      this.getMonth(newDate) !=
+      (((this.getMonth(date) + months) % 12) + 12) % 12
+    ) {
+      newDate = this._createDateWithOverflow(
+        this.getYear(newDate),
+        this.getMonth(newDate),
+        0,
+      );
     }
     return newDate;
   }
   addCalendarDays(date, days) {
-    return this._createDateWithOverflow(this.getYear(date), this.getMonth(date), this.getDate(date) + days);
+    return this._createDateWithOverflow(
+      this.getYear(date),
+      this.getMonth(date),
+      this.getDate(date) + days,
+    );
   }
   toIso8601(date) {
-    return [date.getUTCFullYear(), this._2digit(date.getUTCMonth() + 1), this._2digit(date.getUTCDate())].join("-");
+    return [
+      date.getUTCFullYear(),
+      this._2digit(date.getUTCMonth() + 1),
+      this._2digit(date.getUTCDate()),
+    ].join("-");
   }
   /**
    * Returns the given value if given a valid Date or null. Deserializes valid ISO 8601 strings
@@ -3670,33 +5254,55 @@ var NgxMatNativeDateAdapter = class extends NgxMatDateAdapter {
   _format(dtf, date) {
     const d = /* @__PURE__ */ new Date();
     d.setUTCFullYear(date.getFullYear(), date.getMonth(), date.getDate());
-    d.setUTCHours(date.getHours(), date.getMinutes(), date.getSeconds(), date.getMilliseconds());
+    d.setUTCHours(
+      date.getHours(),
+      date.getMinutes(),
+      date.getSeconds(),
+      date.getMilliseconds(),
+    );
     return dtf.format(d);
   }
 };
 NgxMatNativeDateAdapter.ɵfac = function NgxMatNativeDateAdapter_Factory(t) {
-  return new (t || NgxMatNativeDateAdapter)(ɵɵinject(MAT_DATE_LOCALE, 8), ɵɵinject(Platform));
+  return new (t || NgxMatNativeDateAdapter)(
+    ɵɵinject(MAT_DATE_LOCALE, 8),
+    ɵɵinject(Platform),
+  );
 };
 NgxMatNativeDateAdapter.ɵprov = ɵɵdefineInjectable({
   token: NgxMatNativeDateAdapter,
-  factory: NgxMatNativeDateAdapter.ɵfac
+  factory: NgxMatNativeDateAdapter.ɵfac,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatNativeDateAdapter, [{
-    type: Injectable
-  }], function() {
-    return [{
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Inject,
-        args: [MAT_DATE_LOCALE]
-      }]
-    }, {
-      type: Platform
-    }];
-  }, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatNativeDateAdapter,
+      [
+        {
+          type: Injectable,
+        },
+      ],
+      function () {
+        return [
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Inject,
+                args: [MAT_DATE_LOCALE],
+              },
+            ],
+          },
+          {
+            type: Platform,
+          },
+        ];
+      },
+      null,
+    );
 })();
 var DEFAULT_DATE_INPUT = {
   year: "numeric",
@@ -3705,84 +5311,110 @@ var DEFAULT_DATE_INPUT = {
   hour12: false,
   hour: "2-digit",
   minute: "2-digit",
-  second: "2-digit"
+  second: "2-digit",
 };
 var NGX_MAT_NATIVE_DATE_FORMATS = {
   parse: {
-    dateInput: DEFAULT_DATE_INPUT
+    dateInput: DEFAULT_DATE_INPUT,
   },
   display: {
     dateInput: DEFAULT_DATE_INPUT,
     monthYearLabel: {
       year: "numeric",
-      month: "short"
+      month: "short",
     },
     dateA11yLabel: {
       year: "numeric",
       month: "long",
-      day: "numeric"
+      day: "numeric",
     },
     monthYearA11yLabel: {
       year: "numeric",
-      month: "long"
-    }
-  }
+      month: "long",
+    },
+  },
 };
-var NgxNativeDateModule = class {
-};
+var NgxNativeDateModule = class {};
 NgxNativeDateModule.ɵfac = function NgxNativeDateModule_Factory(t) {
   return new (t || NgxNativeDateModule)();
 };
 NgxNativeDateModule.ɵmod = ɵɵdefineNgModule({
   type: NgxNativeDateModule,
-  imports: [PlatformModule]
+  imports: [PlatformModule],
 });
 NgxNativeDateModule.ɵinj = ɵɵdefineInjector({
-  providers: [{
-    provide: NgxMatDateAdapter,
-    useClass: NgxMatNativeDateAdapter
-  }],
-  imports: [PlatformModule]
+  providers: [
+    {
+      provide: NgxMatDateAdapter,
+      useClass: NgxMatNativeDateAdapter,
+    },
+  ],
+  imports: [PlatformModule],
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxNativeDateModule, [{
-    type: NgModule,
-    args: [{
-      imports: [PlatformModule],
-      providers: [{
-        provide: NgxMatDateAdapter,
-        useClass: NgxMatNativeDateAdapter
-      }]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxNativeDateModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [PlatformModule],
+              providers: [
+                {
+                  provide: NgxMatDateAdapter,
+                  useClass: NgxMatNativeDateAdapter,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var NgxMatNativeDateModule = class {
-};
+var NgxMatNativeDateModule = class {};
 NgxMatNativeDateModule.ɵfac = function NgxMatNativeDateModule_Factory(t) {
   return new (t || NgxMatNativeDateModule)();
 };
 NgxMatNativeDateModule.ɵmod = ɵɵdefineNgModule({
   type: NgxMatNativeDateModule,
-  imports: [NgxNativeDateModule]
+  imports: [NgxNativeDateModule],
 });
 NgxMatNativeDateModule.ɵinj = ɵɵdefineInjector({
-  providers: [{
-    provide: NGX_MAT_DATE_FORMATS,
-    useValue: NGX_MAT_NATIVE_DATE_FORMATS
-  }],
-  imports: [NgxNativeDateModule]
+  providers: [
+    {
+      provide: NGX_MAT_DATE_FORMATS,
+      useValue: NGX_MAT_NATIVE_DATE_FORMATS,
+    },
+  ],
+  imports: [NgxNativeDateModule],
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatNativeDateModule, [{
-    type: NgModule,
-    args: [{
-      imports: [NgxNativeDateModule],
-      providers: [{
-        provide: NGX_MAT_DATE_FORMATS,
-        useValue: NGX_MAT_NATIVE_DATE_FORMATS
-      }]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatNativeDateModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [NgxNativeDateModule],
+              providers: [
+                {
+                  provide: NGX_MAT_DATE_FORMATS,
+                  useValue: NGX_MAT_NATIVE_DATE_FORMATS,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 function _computeAriaAccessibleName(element) {
   return _computeAriaAccessibleNameInternal(element, true);
@@ -3798,7 +5430,8 @@ function ssrSafeIsHTMLTextAreaElement(node) {
 }
 function _computeAriaAccessibleNameInternal(currentNode, isDirectlyReferenced) {
   if (ssrSafeIsElement(currentNode) && isDirectlyReferenced) {
-    const labelledbyIds = currentNode.getAttribute?.("aria-labelledby")?.split(/\s+/g) || [];
+    const labelledbyIds =
+      currentNode.getAttribute?.("aria-labelledby")?.split(/\s+/g) || [];
     const validIdRefs = labelledbyIds.reduce((validIds, id) => {
       const elem = document.getElementById(id);
       if (elem) {
@@ -3807,9 +5440,11 @@ function _computeAriaAccessibleNameInternal(currentNode, isDirectlyReferenced) {
       return validIds;
     }, []);
     if (validIdRefs.length) {
-      return validIdRefs.map((idRef) => {
-        return _computeAriaAccessibleNameInternal(idRef, false);
-      }).join(" ");
+      return validIdRefs
+        .map((idRef) => {
+          return _computeAriaAccessibleNameInternal(idRef, false);
+        })
+        .join(" ");
     }
   }
   if (ssrSafeIsElement(currentNode)) {
@@ -3818,9 +5453,14 @@ function _computeAriaAccessibleNameInternal(currentNode, isDirectlyReferenced) {
       return ariaLabel;
     }
   }
-  if (ssrSafeIsHTMLInputElement(currentNode) || ssrSafeIsHTMLTextAreaElement(currentNode)) {
+  if (
+    ssrSafeIsHTMLInputElement(currentNode) ||
+    ssrSafeIsHTMLTextAreaElement(currentNode)
+  ) {
     if (currentNode.labels?.length) {
-      return Array.from(currentNode.labels).map((x) => _computeAriaAccessibleNameInternal(x, false)).join(" ");
+      return Array.from(currentNode.labels)
+        .map((x) => _computeAriaAccessibleNameInternal(x, false))
+        .join(" ");
     }
     const placeholder = currentNode.getAttribute("placeholder")?.trim();
     if (placeholder) {
@@ -3848,46 +5488,61 @@ var NgxMatDatepickerInputBase = class {
     this.dateChange = new EventEmitter();
     this.dateInput = new EventEmitter();
     this.stateChanges = new Subject();
-    this._onTouched = () => {
-    };
-    this._validatorOnChange = () => {
-    };
-    this._cvaOnChange = () => {
-    };
+    this._onTouched = () => {};
+    this._validatorOnChange = () => {};
+    this._cvaOnChange = () => {};
     this._valueChangesSubscription = Subscription.EMPTY;
     this._localeSubscription = Subscription.EMPTY;
     this._parseValidator = () => {
-      return this._lastValueValid ? null : {
-        "matDatepickerParse": {
-          "text": this._elementRef.nativeElement.value
-        }
-      };
+      return this._lastValueValid
+        ? null
+        : {
+            matDatepickerParse: {
+              text: this._elementRef.nativeElement.value,
+            },
+          };
     };
     this._filterValidator = (control) => {
-      const controlValue = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
-      return !controlValue || this._matchesFilter(controlValue) ? null : {
-        "matDatepickerFilter": true
-      };
+      const controlValue = this._dateAdapter.getValidDateOrNull(
+        this._dateAdapter.deserialize(control.value),
+      );
+      return !controlValue || this._matchesFilter(controlValue)
+        ? null
+        : {
+            matDatepickerFilter: true,
+          };
     };
     this._minValidator = (control) => {
-      const controlValue = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
+      const controlValue = this._dateAdapter.getValidDateOrNull(
+        this._dateAdapter.deserialize(control.value),
+      );
       const min = this._getMinDate();
-      return !min || !controlValue || this._dateAdapter.compareDateWithTime(min, controlValue) <= 0 ? null : {
-        "matDatetimePickerMin": {
-          "min": min,
-          "actual": controlValue
-        }
-      };
+      return !min ||
+        !controlValue ||
+        this._dateAdapter.compareDateWithTime(min, controlValue) <= 0
+        ? null
+        : {
+            matDatetimePickerMin: {
+              min: min,
+              actual: controlValue,
+            },
+          };
     };
     this._maxValidator = (control) => {
-      const controlValue = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
+      const controlValue = this._dateAdapter.getValidDateOrNull(
+        this._dateAdapter.deserialize(control.value),
+      );
       const max = this._getMaxDate();
-      return !max || !controlValue || this._dateAdapter.compareDateWithTime(max, controlValue) >= 0 ? null : {
-        "matDatetimePickerMax": {
-          "max": max,
-          "actual": controlValue
-        }
-      };
+      return !max ||
+        !controlValue ||
+        this._dateAdapter.compareDateWithTime(max, controlValue) >= 0
+        ? null
+        : {
+            matDatetimePickerMax: {
+              max: max,
+              actual: controlValue,
+            },
+          };
     };
     this._lastValueValid = false;
     if (!this._dateAdapter) {
@@ -3902,7 +5557,9 @@ var NgxMatDatepickerInputBase = class {
   }
   /** The value of the input. */
   get value() {
-    return this._model ? this._getValueFromModel(this._model.selection) : this._pendingValue;
+    return this._model
+      ? this._getValueFromModel(this._model.selection)
+      : this._pendingValue;
   }
   set value(value) {
     this._assignValueProgrammatically(value);
@@ -3924,7 +5581,12 @@ var NgxMatDatepickerInputBase = class {
   }
   /** Gets the base validator functions. */
   _getValidators() {
-    return [this._parseValidator, this._minValidator, this._maxValidator, this._filterValidator];
+    return [
+      this._parseValidator,
+      this._minValidator,
+      this._maxValidator,
+      this._filterValidator,
+    ];
   }
   /** Registers a date selection model with the input. */
   _registerModel(model) {
@@ -3933,17 +5595,29 @@ var NgxMatDatepickerInputBase = class {
     if (this._pendingValue) {
       this._assignValue(this._pendingValue);
     }
-    this._valueChangesSubscription = this._model.selectionChanged.subscribe((event) => {
-      if (this._shouldHandleChangeEvent(event)) {
-        const value = this._getValueFromModel(event.selection);
-        this._lastValueValid = this._isValidValue(value);
-        this._cvaOnChange(value);
-        this._onTouched();
-        this._formatValue(value);
-        this.dateInput.emit(new NgxMatDatepickerInputEvent(this, this._elementRef.nativeElement));
-        this.dateChange.emit(new NgxMatDatepickerInputEvent(this, this._elementRef.nativeElement));
-      }
-    });
+    this._valueChangesSubscription = this._model.selectionChanged.subscribe(
+      (event) => {
+        if (this._shouldHandleChangeEvent(event)) {
+          const value = this._getValueFromModel(event.selection);
+          this._lastValueValid = this._isValidValue(value);
+          this._cvaOnChange(value);
+          this._onTouched();
+          this._formatValue(value);
+          this.dateInput.emit(
+            new NgxMatDatepickerInputEvent(
+              this,
+              this._elementRef.nativeElement,
+            ),
+          );
+          this.dateChange.emit(
+            new NgxMatDatepickerInputEvent(
+              this,
+              this._elementRef.nativeElement,
+            ),
+          );
+        }
+      },
+    );
   }
   ngAfterViewInit() {
     this._isInitialized = true;
@@ -3984,7 +5658,12 @@ var NgxMatDatepickerInputBase = class {
   }
   _onKeydown(event) {
     const ctrlShiftMetaModifiers = ["ctrlKey", "shiftKey", "metaKey"];
-    const isAltDownArrow = hasModifierKey(event, "altKey") && event.keyCode === DOWN_ARROW && ctrlShiftMetaModifiers.every((modifier) => !hasModifierKey(event, modifier));
+    const isAltDownArrow =
+      hasModifierKey(event, "altKey") &&
+      event.keyCode === DOWN_ARROW &&
+      ctrlShiftMetaModifiers.every(
+        (modifier) => !hasModifierKey(event, modifier),
+      );
     if (isAltDownArrow && !this._elementRef.nativeElement.readOnly) {
       this._openPopup();
       event.preventDefault();
@@ -3992,7 +5671,10 @@ var NgxMatDatepickerInputBase = class {
   }
   _onInput(value) {
     const lastValueWasValid = this._lastValueValid;
-    let date = this._dateAdapter.parse(value, this._dateFormats.parse.dateInput);
+    let date = this._dateAdapter.parse(
+      value,
+      this._dateFormats.parse.dateInput,
+    );
     this._lastValueValid = this._isValidValue(date);
     date = this._dateAdapter.getValidDateOrNull(date);
     const isSameTime = this._dateAdapter.isSameTime(date, this.value);
@@ -4011,11 +5693,15 @@ var NgxMatDatepickerInputBase = class {
     }
     if (hasChanged) {
       this._assignValue(date);
-      this.dateInput.emit(new NgxMatDatepickerInputEvent(this, this._elementRef.nativeElement));
+      this.dateInput.emit(
+        new NgxMatDatepickerInputEvent(this, this._elementRef.nativeElement),
+      );
     }
   }
   _onChange() {
-    this.dateChange.emit(new NgxMatDatepickerInputEvent(this, this._elementRef.nativeElement));
+    this.dateChange.emit(
+      new NgxMatDatepickerInputEvent(this, this._elementRef.nativeElement),
+    );
   }
   /** Handles blur events on the input. */
   _onBlur() {
@@ -4026,7 +5712,10 @@ var NgxMatDatepickerInputBase = class {
   }
   /** Formats a value and sets it on the input element. */
   _formatValue(value) {
-    this._elementRef.nativeElement.value = value != null ? this._dateAdapter.format(value, this._dateFormats.display.dateInput) : "";
+    this._elementRef.nativeElement.value =
+      value != null
+        ? this._dateAdapter.format(value, this._dateFormats.display.dateInput)
+        : "";
   }
   /** Assigns a value to the model. */
   _assignValue(value) {
@@ -4063,63 +5752,92 @@ var NgxMatDatepickerInputBase = class {
   }
 };
 NgxMatDatepickerInputBase.ɵfac = function NgxMatDatepickerInputBase_Factory(t) {
-  return new (t || NgxMatDatepickerInputBase)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgxMatDateAdapter, 8), ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8));
+  return new (t || NgxMatDatepickerInputBase)(
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵdirectiveInject(NgxMatDateAdapter, 8),
+    ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8),
+  );
 };
 NgxMatDatepickerInputBase.ɵdir = ɵɵdefineDirective({
   type: NgxMatDatepickerInputBase,
   inputs: {
     value: "value",
-    disabled: "disabled"
+    disabled: "disabled",
   },
   outputs: {
     dateChange: "dateChange",
-    dateInput: "dateInput"
+    dateInput: "dateInput",
   },
-  features: [ɵɵNgOnChangesFeature]
+  features: [ɵɵNgOnChangesFeature],
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDatepickerInputBase, [{
-    type: Directive
-  }], function() {
-    return [{
-      type: ElementRef
-    }, {
-      type: NgxMatDateAdapter,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Inject,
-        args: [NGX_MAT_DATE_FORMATS]
-      }]
-    }];
-  }, {
-    value: [{
-      type: Input
-    }],
-    disabled: [{
-      type: Input
-    }],
-    dateChange: [{
-      type: Output
-    }],
-    dateInput: [{
-      type: Output
-    }]
-  });
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDatepickerInputBase,
+      [
+        {
+          type: Directive,
+        },
+      ],
+      function () {
+        return [
+          {
+            type: ElementRef,
+          },
+          {
+            type: NgxMatDateAdapter,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_FORMATS],
+              },
+            ],
+          },
+        ];
+      },
+      {
+        value: [
+          {
+            type: Input,
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+          },
+        ],
+        dateChange: [
+          {
+            type: Output,
+          },
+        ],
+        dateInput: [
+          {
+            type: Output,
+          },
+        ],
+      },
+    );
 })();
 function dateInputsHaveChanged(changes, adapter) {
   const keys = Object.keys(changes);
   for (let key of keys) {
-    const {
-      previousValue,
-      currentValue
-    } = changes[key];
-    if (adapter.isDateInstance(previousValue) && adapter.isDateInstance(currentValue)) {
+    const { previousValue, currentValue } = changes[key];
+    if (
+      adapter.isDateInstance(previousValue) &&
+      adapter.isDateInstance(currentValue)
+    ) {
       if (!adapter.sameDate(previousValue, currentValue)) {
         return true;
       }
@@ -4129,9 +5847,20 @@ function dateInputsHaveChanged(changes, adapter) {
   }
   return false;
 }
-var NGX_MAT_DATE_RANGE_INPUT_PARENT = new InjectionToken("NGX_MAT_DATE_RANGE_INPUT_PARENT");
+var NGX_MAT_DATE_RANGE_INPUT_PARENT = new InjectionToken(
+  "NGX_MAT_DATE_RANGE_INPUT_PARENT",
+);
 var NgxMatDateRangeInputPartBase = class extends NgxMatDatepickerInputBase {
-  constructor(_rangeInput, _elementRef, _defaultErrorStateMatcher, _injector, _parentForm, _parentFormGroup, dateAdapter, dateFormats) {
+  constructor(
+    _rangeInput,
+    _elementRef,
+    _defaultErrorStateMatcher,
+    _injector,
+    _parentForm,
+    _parentFormGroup,
+    dateAdapter,
+    dateFormats,
+  ) {
     super(_elementRef, dateAdapter, dateFormats);
     this._rangeInput = _rangeInput;
     this._elementRef = _elementRef;
@@ -4140,13 +5869,13 @@ var NgxMatDateRangeInputPartBase = class extends NgxMatDatepickerInputBase {
     this._parentForm = _parentForm;
     this._parentFormGroup = _parentFormGroup;
     this._dir = inject(Directionality, {
-      optional: true
+      optional: true,
     });
   }
   ngOnInit() {
     const ngControl = this._injector.get(NgControl, null, {
       optional: true,
-      self: true
+      self: true,
     });
     if (ngControl) {
       this.ngControl = ngControl;
@@ -4199,14 +5928,18 @@ var NgxMatDateRangeInputPartBase = class extends NgxMatDatepickerInputBase {
   _parentDisabled() {
     return this._rangeInput._groupDisabled;
   }
-  _shouldHandleChangeEvent({
-    source
-  }) {
-    return source !== this._rangeInput._startInput && source !== this._rangeInput._endInput;
+  _shouldHandleChangeEvent({ source }) {
+    return (
+      source !== this._rangeInput._startInput &&
+      source !== this._rangeInput._endInput
+    );
   }
   _assignValueProgrammatically(value) {
     super._assignValueProgrammatically(value);
-    const opposite = this === this._rangeInput._startInput ? this._rangeInput._endInput : this._rangeInput._startInput;
+    const opposite =
+      this === this._rangeInput._startInput
+        ? this._rangeInput._endInput
+        : this._rangeInput._startInput;
     opposite?._validatorOnChange();
   }
   /** return the ARIA accessible name of the input element */
@@ -4214,70 +5947,133 @@ var NgxMatDateRangeInputPartBase = class extends NgxMatDatepickerInputBase {
     return _computeAriaAccessibleName(this._elementRef.nativeElement);
   }
 };
-NgxMatDateRangeInputPartBase.ɵfac = function NgxMatDateRangeInputPartBase_Factory(t) {
-  return new (t || NgxMatDateRangeInputPartBase)(ɵɵdirectiveInject(NGX_MAT_DATE_RANGE_INPUT_PARENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ErrorStateMatcher), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(NgForm, 8), ɵɵdirectiveInject(FormGroupDirective, 8), ɵɵdirectiveInject(NgxMatDateAdapter, 8), ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8));
-};
+NgxMatDateRangeInputPartBase.ɵfac =
+  function NgxMatDateRangeInputPartBase_Factory(t) {
+    return new (t || NgxMatDateRangeInputPartBase)(
+      ɵɵdirectiveInject(NGX_MAT_DATE_RANGE_INPUT_PARENT),
+      ɵɵdirectiveInject(ElementRef),
+      ɵɵdirectiveInject(ErrorStateMatcher),
+      ɵɵdirectiveInject(Injector),
+      ɵɵdirectiveInject(NgForm, 8),
+      ɵɵdirectiveInject(FormGroupDirective, 8),
+      ɵɵdirectiveInject(NgxMatDateAdapter, 8),
+      ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8),
+    );
+  };
 NgxMatDateRangeInputPartBase.ɵdir = ɵɵdefineDirective({
   type: NgxMatDateRangeInputPartBase,
-  features: [ɵɵInheritDefinitionFeature]
+  features: [ɵɵInheritDefinitionFeature],
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDateRangeInputPartBase, [{
-    type: Directive
-  }], function() {
-    return [{
-      type: void 0,
-      decorators: [{
-        type: Inject,
-        args: [NGX_MAT_DATE_RANGE_INPUT_PARENT]
-      }]
-    }, {
-      type: ElementRef
-    }, {
-      type: ErrorStateMatcher
-    }, {
-      type: Injector
-    }, {
-      type: NgForm,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: FormGroupDirective,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: NgxMatDateAdapter,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Inject,
-        args: [NGX_MAT_DATE_FORMATS]
-      }]
-    }];
-  }, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDateRangeInputPartBase,
+      [
+        {
+          type: Directive,
+        },
+      ],
+      function () {
+        return [
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_RANGE_INPUT_PARENT],
+              },
+            ],
+          },
+          {
+            type: ElementRef,
+          },
+          {
+            type: ErrorStateMatcher,
+          },
+          {
+            type: Injector,
+          },
+          {
+            type: NgForm,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: FormGroupDirective,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: NgxMatDateAdapter,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_FORMATS],
+              },
+            ],
+          },
+        ];
+      },
+      null,
+    );
 })();
 var _NgxMatDateRangeInputBase = mixinErrorState(NgxMatDateRangeInputPartBase);
 var NgxMatStartDate = class extends _NgxMatDateRangeInputBase {
-  constructor(rangeInput, elementRef, defaultErrorStateMatcher, injector, parentForm, parentFormGroup, dateAdapter, dateFormats) {
-    super(rangeInput, elementRef, defaultErrorStateMatcher, injector, parentForm, parentFormGroup, dateAdapter, dateFormats);
+  constructor(
+    rangeInput,
+    elementRef,
+    defaultErrorStateMatcher,
+    injector,
+    parentForm,
+    parentFormGroup,
+    dateAdapter,
+    dateFormats,
+  ) {
+    super(
+      rangeInput,
+      elementRef,
+      defaultErrorStateMatcher,
+      injector,
+      parentForm,
+      parentFormGroup,
+      dateAdapter,
+      dateFormats,
+    );
     this._startValidator = (control) => {
-      const start = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
+      const start = this._dateAdapter.getValidDateOrNull(
+        this._dateAdapter.deserialize(control.value),
+      );
       const end = this._model ? this._model.selection.end : null;
-      return !start || !end || this._dateAdapter.compareDate(start, end) <= 0 ? null : {
-        "matStartDateInvalid": {
-          "end": end,
-          "actual": start
-        }
-      };
+      return !start || !end || this._dateAdapter.compareDate(start, end) <= 0
+        ? null
+        : {
+            matStartDateInvalid: {
+              end: end,
+              actual: start,
+            },
+          };
     };
-    this._validator = Validators.compose([...super._getValidators(), this._startValidator]);
+    this._validator = Validators.compose([
+      ...super._getValidators(),
+      this._startValidator,
+    ]);
   }
   _getValueFromModel(modelValue) {
     return modelValue.start;
@@ -4286,7 +6082,13 @@ var NgxMatStartDate = class extends _NgxMatDateRangeInputBase {
     if (!super._shouldHandleChangeEvent(change)) {
       return false;
     } else {
-      return !change.oldValue?.start ? !!change.selection.start : !change.selection.start || !!this._dateAdapter.compareDate(change.oldValue.start, change.selection.start);
+      return !change.oldValue?.start
+        ? !!change.selection.start
+        : !change.selection.start ||
+            !!this._dateAdapter.compareDate(
+              change.oldValue.start,
+              change.selection.start,
+            );
     }
   }
   _assignValueToModel(value) {
@@ -4303,7 +6105,12 @@ var NgxMatStartDate = class extends _NgxMatDateRangeInputBase {
     const endInput = this._rangeInput._endInput;
     const element = this._elementRef.nativeElement;
     const isLtr = this._dir?.value !== "rtl";
-    if ((event.keyCode === RIGHT_ARROW && isLtr || event.keyCode === LEFT_ARROW && !isLtr) && element.selectionStart === element.value.length && element.selectionEnd === element.value.length) {
+    if (
+      ((event.keyCode === RIGHT_ARROW && isLtr) ||
+        (event.keyCode === LEFT_ARROW && !isLtr)) &&
+      element.selectionStart === element.value.length &&
+      element.selectionEnd === element.value.length
+    ) {
       event.preventDefault();
       endInput._elementRef.nativeElement.setSelectionRange(0, 0);
       endInput.focus();
@@ -4313,132 +6120,241 @@ var NgxMatStartDate = class extends _NgxMatDateRangeInputBase {
   }
 };
 NgxMatStartDate.ɵfac = function NgxMatStartDate_Factory(t) {
-  return new (t || NgxMatStartDate)(ɵɵdirectiveInject(NGX_MAT_DATE_RANGE_INPUT_PARENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ErrorStateMatcher), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(NgForm, 8), ɵɵdirectiveInject(FormGroupDirective, 8), ɵɵdirectiveInject(NgxMatDateAdapter, 8), ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8));
+  return new (t || NgxMatStartDate)(
+    ɵɵdirectiveInject(NGX_MAT_DATE_RANGE_INPUT_PARENT),
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵdirectiveInject(ErrorStateMatcher),
+    ɵɵdirectiveInject(Injector),
+    ɵɵdirectiveInject(NgForm, 8),
+    ɵɵdirectiveInject(FormGroupDirective, 8),
+    ɵɵdirectiveInject(NgxMatDateAdapter, 8),
+    ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8),
+  );
 };
 NgxMatStartDate.ɵdir = ɵɵdefineDirective({
   type: NgxMatStartDate,
   selectors: [["input", "ngxMatStartDate", ""]],
-  hostAttrs: ["type", "text", 1, "mat-start-date", "mat-date-range-input-inner"],
+  hostAttrs: [
+    "type",
+    "text",
+    1,
+    "mat-start-date",
+    "mat-date-range-input-inner",
+  ],
   hostVars: 5,
   hostBindings: function NgxMatStartDate_HostBindings(rf, ctx) {
     if (rf & 1) {
-      ɵɵlistener("input", function NgxMatStartDate_input_HostBindingHandler($event) {
-        return ctx._onInput($event.target.value);
-      })("change", function NgxMatStartDate_change_HostBindingHandler() {
+      ɵɵlistener(
+        "input",
+        function NgxMatStartDate_input_HostBindingHandler($event) {
+          return ctx._onInput($event.target.value);
+        },
+      )("change", function NgxMatStartDate_change_HostBindingHandler() {
         return ctx._onChange();
-      })("keydown", function NgxMatStartDate_keydown_HostBindingHandler($event) {
-        return ctx._onKeydown($event);
-      })("blur", function NgxMatStartDate_blur_HostBindingHandler() {
+      })(
+        "keydown",
+        function NgxMatStartDate_keydown_HostBindingHandler($event) {
+          return ctx._onKeydown($event);
+        },
+      )("blur", function NgxMatStartDate_blur_HostBindingHandler() {
         return ctx._onBlur();
       });
     }
     if (rf & 2) {
       ɵɵhostProperty("disabled", ctx.disabled);
-      ɵɵattribute("aria-haspopup", ctx._rangeInput.rangePicker ? "dialog" : null)("aria-owns", (ctx._rangeInput.rangePicker == null ? null : ctx._rangeInput.rangePicker.opened) && ctx._rangeInput.rangePicker.id || null)("min", ctx._getMinDate() ? ctx._dateAdapter.toIso8601(ctx._getMinDate()) : null)("max", ctx._getMaxDate() ? ctx._dateAdapter.toIso8601(ctx._getMaxDate()) : null);
+      ɵɵattribute(
+        "aria-haspopup",
+        ctx._rangeInput.rangePicker ? "dialog" : null,
+      )(
+        "aria-owns",
+        ((ctx._rangeInput.rangePicker == null
+          ? null
+          : ctx._rangeInput.rangePicker.opened) &&
+          ctx._rangeInput.rangePicker.id) ||
+          null,
+      )(
+        "min",
+        ctx._getMinDate()
+          ? ctx._dateAdapter.toIso8601(ctx._getMinDate())
+          : null,
+      )(
+        "max",
+        ctx._getMaxDate()
+          ? ctx._dateAdapter.toIso8601(ctx._getMaxDate())
+          : null,
+      );
     }
   },
   inputs: {
-    errorStateMatcher: "errorStateMatcher"
+    errorStateMatcher: "errorStateMatcher",
   },
   outputs: {
     dateChange: "dateChange",
-    dateInput: "dateInput"
+    dateInput: "dateInput",
   },
-  features: [ɵɵProvidersFeature([{
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: NgxMatStartDate,
-    multi: true
-  }, {
-    provide: NG_VALIDATORS,
-    useExisting: NgxMatStartDate,
-    multi: true
-  }]), ɵɵInheritDefinitionFeature]
-});
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatStartDate, [{
-    type: Directive,
-    args: [{
-      selector: "input[ngxMatStartDate]",
-      host: {
-        "class": "mat-start-date mat-date-range-input-inner",
-        "[disabled]": "disabled",
-        "(input)": "_onInput($event.target.value)",
-        "(change)": "_onChange()",
-        "(keydown)": "_onKeydown($event)",
-        "[attr.aria-haspopup]": '_rangeInput.rangePicker ? "dialog" : null',
-        "[attr.aria-owns]": "(_rangeInput.rangePicker?.opened && _rangeInput.rangePicker.id) || null",
-        "[attr.min]": "_getMinDate() ? _dateAdapter.toIso8601(_getMinDate()) : null",
-        "[attr.max]": "_getMaxDate() ? _dateAdapter.toIso8601(_getMaxDate()) : null",
-        "(blur)": "_onBlur()",
-        "type": "text"
-      },
-      providers: [{
+  features: [
+    ɵɵProvidersFeature([
+      {
         provide: NG_VALUE_ACCESSOR,
         useExisting: NgxMatStartDate,
-        multi: true
-      }, {
+        multi: true,
+      },
+      {
         provide: NG_VALIDATORS,
         useExisting: NgxMatStartDate,
-        multi: true
-      }],
-      // These need to be specified explicitly, because some tooling doesn't
-      // seem to pick them up from the base class. See #20932.
-      outputs: ["dateChange", "dateInput"],
-      inputs: ["errorStateMatcher"]
-    }]
-  }], function() {
-    return [{
-      type: void 0,
-      decorators: [{
-        type: Inject,
-        args: [NGX_MAT_DATE_RANGE_INPUT_PARENT]
-      }]
-    }, {
-      type: ElementRef
-    }, {
-      type: ErrorStateMatcher
-    }, {
-      type: Injector
-    }, {
-      type: NgForm,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: FormGroupDirective,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: NgxMatDateAdapter,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Inject,
-        args: [NGX_MAT_DATE_FORMATS]
-      }]
-    }];
-  }, null);
+        multi: true,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
+});
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatStartDate,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "input[ngxMatStartDate]",
+              host: {
+                class: "mat-start-date mat-date-range-input-inner",
+                "[disabled]": "disabled",
+                "(input)": "_onInput($event.target.value)",
+                "(change)": "_onChange()",
+                "(keydown)": "_onKeydown($event)",
+                "[attr.aria-haspopup]":
+                  '_rangeInput.rangePicker ? "dialog" : null',
+                "[attr.aria-owns]":
+                  "(_rangeInput.rangePicker?.opened && _rangeInput.rangePicker.id) || null",
+                "[attr.min]":
+                  "_getMinDate() ? _dateAdapter.toIso8601(_getMinDate()) : null",
+                "[attr.max]":
+                  "_getMaxDate() ? _dateAdapter.toIso8601(_getMaxDate()) : null",
+                "(blur)": "_onBlur()",
+                type: "text",
+              },
+              providers: [
+                {
+                  provide: NG_VALUE_ACCESSOR,
+                  useExisting: NgxMatStartDate,
+                  multi: true,
+                },
+                {
+                  provide: NG_VALIDATORS,
+                  useExisting: NgxMatStartDate,
+                  multi: true,
+                },
+              ],
+              // These need to be specified explicitly, because some tooling doesn't
+              // seem to pick them up from the base class. See #20932.
+              outputs: ["dateChange", "dateInput"],
+              inputs: ["errorStateMatcher"],
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_RANGE_INPUT_PARENT],
+              },
+            ],
+          },
+          {
+            type: ElementRef,
+          },
+          {
+            type: ErrorStateMatcher,
+          },
+          {
+            type: Injector,
+          },
+          {
+            type: NgForm,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: FormGroupDirective,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: NgxMatDateAdapter,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_FORMATS],
+              },
+            ],
+          },
+        ];
+      },
+      null,
+    );
 })();
 var NgxMatEndDate = class extends _NgxMatDateRangeInputBase {
-  constructor(rangeInput, elementRef, defaultErrorStateMatcher, injector, parentForm, parentFormGroup, dateAdapter, dateFormats) {
-    super(rangeInput, elementRef, defaultErrorStateMatcher, injector, parentForm, parentFormGroup, dateAdapter, dateFormats);
+  constructor(
+    rangeInput,
+    elementRef,
+    defaultErrorStateMatcher,
+    injector,
+    parentForm,
+    parentFormGroup,
+    dateAdapter,
+    dateFormats,
+  ) {
+    super(
+      rangeInput,
+      elementRef,
+      defaultErrorStateMatcher,
+      injector,
+      parentForm,
+      parentFormGroup,
+      dateAdapter,
+      dateFormats,
+    );
     this._endValidator = (control) => {
-      const end = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(control.value));
+      const end = this._dateAdapter.getValidDateOrNull(
+        this._dateAdapter.deserialize(control.value),
+      );
       const start = this._model ? this._model.selection.start : null;
-      return !end || !start || this._dateAdapter.compareDate(end, start) >= 0 ? null : {
-        "matEndDateInvalid": {
-          "start": start,
-          "actual": end
-        }
-      };
+      return !end || !start || this._dateAdapter.compareDate(end, start) >= 0
+        ? null
+        : {
+            matEndDateInvalid: {
+              start: start,
+              actual: end,
+            },
+          };
     };
-    this._validator = Validators.compose([...super._getValidators(), this._endValidator]);
+    this._validator = Validators.compose([
+      ...super._getValidators(),
+      this._endValidator,
+    ]);
   }
   _getValueFromModel(modelValue) {
     return modelValue.end;
@@ -4447,7 +6363,13 @@ var NgxMatEndDate = class extends _NgxMatDateRangeInputBase {
     if (!super._shouldHandleChangeEvent(change)) {
       return false;
     } else {
-      return !change.oldValue?.end ? !!change.selection.end : !change.selection.end || !!this._dateAdapter.compareDate(change.oldValue.end, change.selection.end);
+      return !change.oldValue?.end
+        ? !!change.selection.end
+        : !change.selection.end ||
+            !!this._dateAdapter.compareDate(
+              change.oldValue.end,
+              change.selection.end,
+            );
     }
   }
   _assignValueToModel(value) {
@@ -4462,10 +6384,18 @@ var NgxMatEndDate = class extends _NgxMatDateRangeInputBase {
     const isLtr = this._dir?.value !== "rtl";
     if (event.keyCode === BACKSPACE && !element.value) {
       startInput.focus();
-    } else if ((event.keyCode === LEFT_ARROW && isLtr || event.keyCode === RIGHT_ARROW && !isLtr) && element.selectionStart === 0 && element.selectionEnd === 0) {
+    } else if (
+      ((event.keyCode === LEFT_ARROW && isLtr) ||
+        (event.keyCode === RIGHT_ARROW && !isLtr)) &&
+      element.selectionStart === 0 &&
+      element.selectionEnd === 0
+    ) {
       event.preventDefault();
       const endPosition = startInput._elementRef.nativeElement.value.length;
-      startInput._elementRef.nativeElement.setSelectionRange(endPosition, endPosition);
+      startInput._elementRef.nativeElement.setSelectionRange(
+        endPosition,
+        endPosition,
+      );
       startInput.focus();
     } else {
       super._onKeydown(event);
@@ -4473,7 +6403,16 @@ var NgxMatEndDate = class extends _NgxMatDateRangeInputBase {
   }
 };
 NgxMatEndDate.ɵfac = function NgxMatEndDate_Factory(t) {
-  return new (t || NgxMatEndDate)(ɵɵdirectiveInject(NGX_MAT_DATE_RANGE_INPUT_PARENT), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ErrorStateMatcher), ɵɵdirectiveInject(Injector), ɵɵdirectiveInject(NgForm, 8), ɵɵdirectiveInject(FormGroupDirective, 8), ɵɵdirectiveInject(NgxMatDateAdapter, 8), ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8));
+  return new (t || NgxMatEndDate)(
+    ɵɵdirectiveInject(NGX_MAT_DATE_RANGE_INPUT_PARENT),
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵdirectiveInject(ErrorStateMatcher),
+    ɵɵdirectiveInject(Injector),
+    ɵɵdirectiveInject(NgForm, 8),
+    ɵɵdirectiveInject(FormGroupDirective, 8),
+    ɵɵdirectiveInject(NgxMatDateAdapter, 8),
+    ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8),
+  );
 };
 NgxMatEndDate.ɵdir = ɵɵdefineDirective({
   type: NgxMatEndDate,
@@ -4482,9 +6421,12 @@ NgxMatEndDate.ɵdir = ɵɵdefineDirective({
   hostVars: 5,
   hostBindings: function NgxMatEndDate_HostBindings(rf, ctx) {
     if (rf & 1) {
-      ɵɵlistener("input", function NgxMatEndDate_input_HostBindingHandler($event) {
-        return ctx._onInput($event.target.value);
-      })("change", function NgxMatEndDate_change_HostBindingHandler() {
+      ɵɵlistener(
+        "input",
+        function NgxMatEndDate_input_HostBindingHandler($event) {
+          return ctx._onInput($event.target.value);
+        },
+      )("change", function NgxMatEndDate_change_HostBindingHandler() {
         return ctx._onChange();
       })("keydown", function NgxMatEndDate_keydown_HostBindingHandler($event) {
         return ctx._onKeydown($event);
@@ -4494,100 +6436,169 @@ NgxMatEndDate.ɵdir = ɵɵdefineDirective({
     }
     if (rf & 2) {
       ɵɵhostProperty("disabled", ctx.disabled);
-      ɵɵattribute("aria-haspopup", ctx._rangeInput.rangePicker ? "dialog" : null)("aria-owns", (ctx._rangeInput.rangePicker == null ? null : ctx._rangeInput.rangePicker.opened) && ctx._rangeInput.rangePicker.id || null)("min", ctx._getMinDate() ? ctx._dateAdapter.toIso8601(ctx._getMinDate()) : null)("max", ctx._getMaxDate() ? ctx._dateAdapter.toIso8601(ctx._getMaxDate()) : null);
+      ɵɵattribute(
+        "aria-haspopup",
+        ctx._rangeInput.rangePicker ? "dialog" : null,
+      )(
+        "aria-owns",
+        ((ctx._rangeInput.rangePicker == null
+          ? null
+          : ctx._rangeInput.rangePicker.opened) &&
+          ctx._rangeInput.rangePicker.id) ||
+          null,
+      )(
+        "min",
+        ctx._getMinDate()
+          ? ctx._dateAdapter.toIso8601(ctx._getMinDate())
+          : null,
+      )(
+        "max",
+        ctx._getMaxDate()
+          ? ctx._dateAdapter.toIso8601(ctx._getMaxDate())
+          : null,
+      );
     }
   },
   inputs: {
-    errorStateMatcher: "errorStateMatcher"
+    errorStateMatcher: "errorStateMatcher",
   },
   outputs: {
     dateChange: "dateChange",
-    dateInput: "dateInput"
+    dateInput: "dateInput",
   },
-  features: [ɵɵProvidersFeature([{
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: NgxMatEndDate,
-    multi: true
-  }, {
-    provide: NG_VALIDATORS,
-    useExisting: NgxMatEndDate,
-    multi: true
-  }]), ɵɵInheritDefinitionFeature]
-});
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatEndDate, [{
-    type: Directive,
-    args: [{
-      selector: "input[ngxMatEndDate]",
-      host: {
-        "class": "mat-end-date mat-date-range-input-inner",
-        "[disabled]": "disabled",
-        "(input)": "_onInput($event.target.value)",
-        "(change)": "_onChange()",
-        "(keydown)": "_onKeydown($event)",
-        "[attr.aria-haspopup]": '_rangeInput.rangePicker ? "dialog" : null',
-        "[attr.aria-owns]": "(_rangeInput.rangePicker?.opened && _rangeInput.rangePicker.id) || null",
-        "[attr.min]": "_getMinDate() ? _dateAdapter.toIso8601(_getMinDate()) : null",
-        "[attr.max]": "_getMaxDate() ? _dateAdapter.toIso8601(_getMaxDate()) : null",
-        "(blur)": "_onBlur()",
-        "type": "text"
-      },
-      providers: [{
+  features: [
+    ɵɵProvidersFeature([
+      {
         provide: NG_VALUE_ACCESSOR,
         useExisting: NgxMatEndDate,
-        multi: true
-      }, {
+        multi: true,
+      },
+      {
         provide: NG_VALIDATORS,
         useExisting: NgxMatEndDate,
-        multi: true
-      }],
-      // These need to be specified explicitly, because some tooling doesn't
-      // seem to pick them up from the base class. See #20932.
-      outputs: ["dateChange", "dateInput"],
-      inputs: ["errorStateMatcher"]
-    }]
-  }], function() {
-    return [{
-      type: void 0,
-      decorators: [{
-        type: Inject,
-        args: [NGX_MAT_DATE_RANGE_INPUT_PARENT]
-      }]
-    }, {
-      type: ElementRef
-    }, {
-      type: ErrorStateMatcher
-    }, {
-      type: Injector
-    }, {
-      type: NgForm,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: FormGroupDirective,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: NgxMatDateAdapter,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Inject,
-        args: [NGX_MAT_DATE_FORMATS]
-      }]
-    }];
-  }, null);
+        multi: true,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
+});
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatEndDate,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "input[ngxMatEndDate]",
+              host: {
+                class: "mat-end-date mat-date-range-input-inner",
+                "[disabled]": "disabled",
+                "(input)": "_onInput($event.target.value)",
+                "(change)": "_onChange()",
+                "(keydown)": "_onKeydown($event)",
+                "[attr.aria-haspopup]":
+                  '_rangeInput.rangePicker ? "dialog" : null',
+                "[attr.aria-owns]":
+                  "(_rangeInput.rangePicker?.opened && _rangeInput.rangePicker.id) || null",
+                "[attr.min]":
+                  "_getMinDate() ? _dateAdapter.toIso8601(_getMinDate()) : null",
+                "[attr.max]":
+                  "_getMaxDate() ? _dateAdapter.toIso8601(_getMaxDate()) : null",
+                "(blur)": "_onBlur()",
+                type: "text",
+              },
+              providers: [
+                {
+                  provide: NG_VALUE_ACCESSOR,
+                  useExisting: NgxMatEndDate,
+                  multi: true,
+                },
+                {
+                  provide: NG_VALIDATORS,
+                  useExisting: NgxMatEndDate,
+                  multi: true,
+                },
+              ],
+              // These need to be specified explicitly, because some tooling doesn't
+              // seem to pick them up from the base class. See #20932.
+              outputs: ["dateChange", "dateInput"],
+              inputs: ["errorStateMatcher"],
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_RANGE_INPUT_PARENT],
+              },
+            ],
+          },
+          {
+            type: ElementRef,
+          },
+          {
+            type: ErrorStateMatcher,
+          },
+          {
+            type: Injector,
+          },
+          {
+            type: NgForm,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: FormGroupDirective,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: NgxMatDateAdapter,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_FORMATS],
+              },
+            ],
+          },
+        ];
+      },
+      null,
+    );
 })();
 var nextUniqueId = 0;
 var NgxMatDateRangeInput = class {
-  constructor(_changeDetectorRef, _elementRef, control, _dateAdapter, _formField) {
+  constructor(
+    _changeDetectorRef,
+    _elementRef,
+    control,
+    _dateAdapter,
+    _formField,
+  ) {
     this._changeDetectorRef = _changeDetectorRef;
     this._elementRef = _elementRef;
     this._dateAdapter = _dateAdapter;
@@ -4605,8 +6616,16 @@ var NgxMatDateRangeInput = class {
     if (!_dateAdapter) {
       throw createMissingDateImplError$1("NgxMatDateAdapter");
     }
-    if (_formField?._elementRef.nativeElement.classList.contains("mat-mdc-form-field")) {
-      _elementRef.nativeElement.classList.add("mat-mdc-input-element", "mat-mdc-form-field-input-control", "mdc-text-field__input");
+    if (
+      _formField?._elementRef.nativeElement.classList.contains(
+        "mat-mdc-form-field",
+      )
+    ) {
+      _elementRef.nativeElement.classList.add(
+        "mat-mdc-input-element",
+        "mat-mdc-form-field-input-control",
+        "mdc-text-field__input",
+      );
     }
     this.ngControl = control;
   }
@@ -4646,7 +6665,13 @@ var NgxMatDateRangeInput = class {
   }
   /** Whether the input is required. */
   get required() {
-    return this._required ?? (this._isTargetRequired(this) || this._isTargetRequired(this._startInput) || this._isTargetRequired(this._endInput)) ?? false;
+    return (
+      this._required ??
+      (this._isTargetRequired(this) ||
+        this._isTargetRequired(this._startInput) ||
+        this._isTargetRequired(this._endInput)) ??
+      false
+    );
   }
   set required(value) {
     this._required = coerceBooleanProperty(value);
@@ -4673,7 +6698,9 @@ var NgxMatDateRangeInput = class {
     return this._min;
   }
   set min(value) {
-    const validValue = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    const validValue = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
     if (!this._dateAdapter.sameDate(validValue, this._min)) {
       this._min = validValue;
       this._revalidate();
@@ -4684,7 +6711,9 @@ var NgxMatDateRangeInput = class {
     return this._max;
   }
   set max(value) {
-    const validValue = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    const validValue = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
     if (!this._dateAdapter.sameDate(validValue, this._max)) {
       this._max = validValue;
       this._revalidate();
@@ -4692,7 +6721,9 @@ var NgxMatDateRangeInput = class {
   }
   /** Whether the input is disabled. */
   get disabled() {
-    return this._startInput && this._endInput ? this._startInput.disabled && this._endInput.disabled : this._groupDisabled;
+    return this._startInput && this._endInput
+      ? this._startInput.disabled && this._endInput.disabled
+      : this._groupDisabled;
   }
   set disabled(value) {
     const newValue = coerceBooleanProperty(value);
@@ -4744,9 +6775,11 @@ var NgxMatDateRangeInput = class {
     if (this._model) {
       this._registerModel(this._model);
     }
-    merge(this._startInput.stateChanges, this._endInput.stateChanges).subscribe(() => {
-      this.stateChanges.next(void 0);
-    });
+    merge(this._startInput.stateChanges, this._endInput.stateChanges).subscribe(
+      () => {
+        this.stateChanges.next(void 0);
+      },
+    );
   }
   ngOnChanges(changes) {
     if (dateInputsHaveChanged(changes, this._dateAdapter)) {
@@ -4767,7 +6800,9 @@ var NgxMatDateRangeInput = class {
   }
   /** Gets the element to which the calendar overlay should be attached. */
   getConnectedOverlayOrigin() {
-    return this._formField ? this._formField.getConnectedOverlayOrigin() : this._elementRef;
+    return this._formField
+      ? this._formField.getConnectedOverlayOrigin()
+      : this._elementRef;
   }
   /** Gets the ID of an element that should be used a description for the calendar overlay. */
   getOverlayLabelId() {
@@ -4795,12 +6830,19 @@ var NgxMatDateRangeInput = class {
   }
   /** Whether the separate text should be hidden. */
   _shouldHideSeparator() {
-    return (!this._formField || this._formField.getLabelId() && !this._formField._shouldLabelFloat()) && this.empty;
+    return (
+      (!this._formField ||
+        (this._formField.getLabelId() &&
+          !this._formField._shouldLabelFloat())) &&
+      this.empty
+    );
   }
   /** Gets the value for the `aria-labelledby` attribute of the inputs. */
   _getAriaLabelledby() {
     const formField = this._formField;
-    return formField && formField._hasFloatingLabel() ? formField._labelId : null;
+    return formField && formField._hasFloatingLabel()
+      ? formField._labelId
+      : null;
   }
   _getStartDateAccessibleName() {
     return this._startInput._getAccessibleName();
@@ -4837,28 +6879,44 @@ var NgxMatDateRangeInput = class {
   }
 };
 NgxMatDateRangeInput.ɵfac = function NgxMatDateRangeInput_Factory(t) {
-  return new (t || NgxMatDateRangeInput)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ControlContainer, 10), ɵɵdirectiveInject(NgxMatDateAdapter, 8), ɵɵdirectiveInject(MAT_FORM_FIELD, 8));
+  return new (t || NgxMatDateRangeInput)(
+    ɵɵdirectiveInject(ChangeDetectorRef),
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵdirectiveInject(ControlContainer, 10),
+    ɵɵdirectiveInject(NgxMatDateAdapter, 8),
+    ɵɵdirectiveInject(MAT_FORM_FIELD, 8),
+  );
 };
 NgxMatDateRangeInput.ɵcmp = ɵɵdefineComponent({
   type: NgxMatDateRangeInput,
   selectors: [["ngx-mat-date-range-input"]],
-  contentQueries: function NgxMatDateRangeInput_ContentQueries(rf, ctx, dirIndex) {
+  contentQueries: function NgxMatDateRangeInput_ContentQueries(
+    rf,
+    ctx,
+    dirIndex,
+  ) {
     if (rf & 1) {
       ɵɵcontentQuery(dirIndex, NgxMatStartDate, 5);
       ɵɵcontentQuery(dirIndex, NgxMatEndDate, 5);
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._startInput = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._endInput = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._startInput = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._endInput = _t.first);
     }
   },
   hostAttrs: ["role", "group", 1, "mat-date-range-input"],
   hostVars: 8,
   hostBindings: function NgxMatDateRangeInput_HostBindings(rf, ctx) {
     if (rf & 2) {
-      ɵɵattribute("id", ctx.id)("aria-labelledby", ctx._getAriaLabelledby())("aria-describedby", ctx._ariaDescribedBy)("data-mat-calendar", ctx.rangePicker ? ctx.rangePicker.id : null);
-      ɵɵclassProp("mat-date-range-input-hide-placeholders", ctx._shouldHidePlaceholders())("mat-date-range-input-required", ctx.required);
+      ɵɵattribute("id", ctx.id)("aria-labelledby", ctx._getAriaLabelledby())(
+        "aria-describedby",
+        ctx._ariaDescribedBy,
+      )("data-mat-calendar", ctx.rangePicker ? ctx.rangePicker.id : null);
+      ɵɵclassProp(
+        "mat-date-range-input-hide-placeholders",
+        ctx._shouldHidePlaceholders(),
+      )("mat-date-range-input-required", ctx.required);
     }
   },
   inputs: {
@@ -4870,27 +6928,51 @@ NgxMatDateRangeInput.ɵcmp = ɵɵdefineComponent({
     disabled: "disabled",
     separator: "separator",
     comparisonStart: "comparisonStart",
-    comparisonEnd: "comparisonEnd"
+    comparisonEnd: "comparisonEnd",
   },
   exportAs: ["ngxMatDateRangeInput"],
-  features: [ɵɵProvidersFeature([{
-    provide: MatFormFieldControl,
-    useExisting: NgxMatDateRangeInput
-  }, {
-    provide: NGX_MAT_DATE_RANGE_INPUT_PARENT,
-    useExisting: NgxMatDateRangeInput
-  }]), ɵɵNgOnChangesFeature],
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: MatFormFieldControl,
+        useExisting: NgxMatDateRangeInput,
+      },
+      {
+        provide: NGX_MAT_DATE_RANGE_INPUT_PARENT,
+        useExisting: NgxMatDateRangeInput,
+      },
+    ]),
+    ɵɵNgOnChangesFeature,
+  ],
   ngContentSelectors: _c3,
   decls: 11,
   vars: 5,
-  consts: [["cdkMonitorSubtreeFocus", "", 1, "mat-date-range-input-container", 3, "cdkFocusChange"], [1, "mat-date-range-input-wrapper"], ["aria-hidden", "true", 1, "mat-date-range-input-mirror"], [1, "mat-date-range-input-separator"], [1, "mat-date-range-input-wrapper", "mat-date-range-input-end-wrapper"]],
+  consts: [
+    [
+      "cdkMonitorSubtreeFocus",
+      "",
+      1,
+      "mat-date-range-input-container",
+      3,
+      "cdkFocusChange",
+    ],
+    [1, "mat-date-range-input-wrapper"],
+    ["aria-hidden", "true", 1, "mat-date-range-input-mirror"],
+    [1, "mat-date-range-input-separator"],
+    [1, "mat-date-range-input-wrapper", "mat-date-range-input-end-wrapper"],
+  ],
   template: function NgxMatDateRangeInput_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵprojectionDef(_c2);
       ɵɵelementStart(0, "div", 0);
-      ɵɵlistener("cdkFocusChange", function NgxMatDateRangeInput_Template_div_cdkFocusChange_0_listener($event) {
-        return ctx._updateFocus($event);
-      });
+      ɵɵlistener(
+        "cdkFocusChange",
+        function NgxMatDateRangeInput_Template_div_cdkFocusChange_0_listener(
+          $event,
+        ) {
+          return ctx._updateFocus($event);
+        },
+      );
       ɵɵelementStart(1, "div", 1);
       ɵɵprojection(2);
       ɵɵelementStart(3, "span", 2);
@@ -4909,7 +6991,10 @@ NgxMatDateRangeInput.ɵcmp = ɵɵdefineComponent({
       ɵɵadvance(4);
       ɵɵtextInterpolate(ctx._getInputMirrorValue("start"));
       ɵɵadvance();
-      ɵɵclassProp("mat-date-range-input-separator-hidden", ctx._shouldHideSeparator());
+      ɵɵclassProp(
+        "mat-date-range-input-separator-hidden",
+        ctx._shouldHideSeparator(),
+      );
       ɵɵadvance();
       ɵɵtextInterpolate(ctx.separator);
       ɵɵadvance(4);
@@ -4917,38 +7002,50 @@ NgxMatDateRangeInput.ɵcmp = ɵɵdefineComponent({
     }
   },
   dependencies: [CdkMonitorFocus],
-  styles: [".mat-date-range-input{display:block;width:100%}.mat-date-range-input-container{display:flex;align-items:center}.mat-date-range-input-separator{transition:opacity .4s .1333333333333s cubic-bezier(.25,.8,.25,1);margin:0 4px}._mat-animation-noopable .mat-date-range-input-separator{transition:none}.mat-date-range-input-separator-hidden{-webkit-user-select:none;-moz-user-select:none;user-select:none;opacity:0;transition:none}.mat-date-range-input-wrapper{position:relative;overflow:hidden;max-width:calc(50% - 4px)}.mat-date-range-input-end-wrapper{flex-grow:1}.mat-date-range-input-inner{position:absolute;top:0;left:0;font:inherit;background:transparent;color:currentColor;border:none;outline:none;padding:0;margin:0;vertical-align:bottom;text-align:inherit;-webkit-appearance:none;width:100%;height:100%}.mat-date-range-input-inner:-moz-ui-invalid{box-shadow:none}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{-webkit-user-select:none;-moz-user-select:none;user-select:none;color:transparent!important;-webkit-text-fill-color:transparent;-moz-transition:none;transition:none}.mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{-webkit-user-select:none;-moz-user-select:none;user-select:none;color:transparent!important;-webkit-text-fill-color:transparent;transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{opacity:0}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{opacity:0}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{-webkit-user-select:none;-moz-user-select:none;user-select:none;color:transparent!important;-webkit-text-fill-color:transparent;-moz-transition:none;transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{opacity:0}._mat-animation-noopable .mat-date-range-input-inner::placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner::-moz-placeholder{-moz-transition:none;transition:none}._mat-animation-noopable .mat-date-range-input-inner::-webkit-input-placeholder{-webkit-transition:none;transition:none}._mat-animation-noopable .mat-date-range-input-inner:-ms-input-placeholder{-ms-transition:none;transition:none}.mat-date-range-input-mirror{-webkit-user-select:none;-moz-user-select:none;user-select:none;visibility:hidden;white-space:nowrap;display:inline-block;min-width:2px}.mat-mdc-form-field-type-mat-date-range-input .mat-mdc-form-field-infix{width:200px}\n"],
+  styles: [
+    ".mat-date-range-input{display:block;width:100%}.mat-date-range-input-container{display:flex;align-items:center}.mat-date-range-input-separator{transition:opacity .4s .1333333333333s cubic-bezier(.25,.8,.25,1);margin:0 4px}._mat-animation-noopable .mat-date-range-input-separator{transition:none}.mat-date-range-input-separator-hidden{-webkit-user-select:none;-moz-user-select:none;user-select:none;opacity:0;transition:none}.mat-date-range-input-wrapper{position:relative;overflow:hidden;max-width:calc(50% - 4px)}.mat-date-range-input-end-wrapper{flex-grow:1}.mat-date-range-input-inner{position:absolute;top:0;left:0;font:inherit;background:transparent;color:currentColor;border:none;outline:none;padding:0;margin:0;vertical-align:bottom;text-align:inherit;-webkit-appearance:none;width:100%;height:100%}.mat-date-range-input-inner:-moz-ui-invalid{box-shadow:none}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{-webkit-user-select:none;-moz-user-select:none;user-select:none;color:transparent!important;-webkit-text-fill-color:transparent;-moz-transition:none;transition:none}.mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{-webkit-user-select:none;-moz-user-select:none;user-select:none;color:transparent!important;-webkit-text-fill-color:transparent;transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{opacity:0}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{opacity:0}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{-webkit-user-select:none;-moz-user-select:none;user-select:none;color:transparent!important;-webkit-text-fill-color:transparent;-moz-transition:none;transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{opacity:0}._mat-animation-noopable .mat-date-range-input-inner::placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner::-moz-placeholder{-moz-transition:none;transition:none}._mat-animation-noopable .mat-date-range-input-inner::-webkit-input-placeholder{-webkit-transition:none;transition:none}._mat-animation-noopable .mat-date-range-input-inner:-ms-input-placeholder{-ms-transition:none;transition:none}.mat-date-range-input-mirror{-webkit-user-select:none;-moz-user-select:none;user-select:none;visibility:hidden;white-space:nowrap;display:inline-block;min-width:2px}.mat-mdc-form-field-type-mat-date-range-input .mat-mdc-form-field-infix{width:200px}\n",
+  ],
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDateRangeInput, [{
-    type: Component,
-    args: [{
-      selector: "ngx-mat-date-range-input",
-      exportAs: "ngxMatDateRangeInput",
-      host: {
-        "class": "mat-date-range-input",
-        "[class.mat-date-range-input-hide-placeholders]": "_shouldHidePlaceholders()",
-        "[class.mat-date-range-input-required]": "required",
-        "[attr.id]": "id",
-        "role": "group",
-        "[attr.aria-labelledby]": "_getAriaLabelledby()",
-        "[attr.aria-describedby]": "_ariaDescribedBy",
-        // Used by the test harness to tie this input to its calendar. We can't depend on
-        // `aria-owns` for this, because it's only defined while the calendar is open.
-        "[attr.data-mat-calendar]": "rangePicker ? rangePicker.id : null"
-      },
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None,
-      providers: [{
-        provide: MatFormFieldControl,
-        useExisting: NgxMatDateRangeInput
-      }, {
-        provide: NGX_MAT_DATE_RANGE_INPUT_PARENT,
-        useExisting: NgxMatDateRangeInput
-      }],
-      template: `<div\r
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDateRangeInput,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "ngx-mat-date-range-input",
+              exportAs: "ngxMatDateRangeInput",
+              host: {
+                class: "mat-date-range-input",
+                "[class.mat-date-range-input-hide-placeholders]":
+                  "_shouldHidePlaceholders()",
+                "[class.mat-date-range-input-required]": "required",
+                "[attr.id]": "id",
+                role: "group",
+                "[attr.aria-labelledby]": "_getAriaLabelledby()",
+                "[attr.aria-describedby]": "_ariaDescribedBy",
+                // Used by the test harness to tie this input to its calendar. We can't depend on
+                // `aria-owns` for this, because it's only defined while the calendar is open.
+                "[attr.data-mat-calendar]":
+                  "rangePicker ? rangePicker.id : null",
+              },
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              encapsulation: ViewEncapsulation$1.None,
+              providers: [
+                {
+                  provide: MatFormFieldControl,
+                  useExisting: NgxMatDateRangeInput,
+                },
+                {
+                  provide: NGX_MAT_DATE_RANGE_INPUT_PARENT,
+                  useExisting: NgxMatDateRangeInput,
+                },
+              ],
+              template: `<div\r
   class="mat-date-range-input-container"\r
   cdkMonitorSubtreeFocus\r
   (cdkFocusChange)="_updateFocus($event)">\r
@@ -4972,101 +7069,181 @@ NgxMatDateRangeInput.ɵcmp = ɵɵdefineComponent({
 </div>\r
 \r
 `,
-      styles: [".mat-date-range-input{display:block;width:100%}.mat-date-range-input-container{display:flex;align-items:center}.mat-date-range-input-separator{transition:opacity .4s .1333333333333s cubic-bezier(.25,.8,.25,1);margin:0 4px}._mat-animation-noopable .mat-date-range-input-separator{transition:none}.mat-date-range-input-separator-hidden{-webkit-user-select:none;-moz-user-select:none;user-select:none;opacity:0;transition:none}.mat-date-range-input-wrapper{position:relative;overflow:hidden;max-width:calc(50% - 4px)}.mat-date-range-input-end-wrapper{flex-grow:1}.mat-date-range-input-inner{position:absolute;top:0;left:0;font:inherit;background:transparent;color:currentColor;border:none;outline:none;padding:0;margin:0;vertical-align:bottom;text-align:inherit;-webkit-appearance:none;width:100%;height:100%}.mat-date-range-input-inner:-moz-ui-invalid{box-shadow:none}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{-webkit-user-select:none;-moz-user-select:none;user-select:none;color:transparent!important;-webkit-text-fill-color:transparent;-moz-transition:none;transition:none}.mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{-webkit-user-select:none;-moz-user-select:none;user-select:none;color:transparent!important;-webkit-text-fill-color:transparent;transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{opacity:0}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{opacity:0}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{-webkit-user-select:none;-moz-user-select:none;user-select:none;color:transparent!important;-webkit-text-fill-color:transparent;-moz-transition:none;transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{opacity:0}._mat-animation-noopable .mat-date-range-input-inner::placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner::-moz-placeholder{-moz-transition:none;transition:none}._mat-animation-noopable .mat-date-range-input-inner::-webkit-input-placeholder{-webkit-transition:none;transition:none}._mat-animation-noopable .mat-date-range-input-inner:-ms-input-placeholder{-ms-transition:none;transition:none}.mat-date-range-input-mirror{-webkit-user-select:none;-moz-user-select:none;user-select:none;visibility:hidden;white-space:nowrap;display:inline-block;min-width:2px}.mat-mdc-form-field-type-mat-date-range-input .mat-mdc-form-field-infix{width:200px}\n"]
-    }]
-  }], function() {
-    return [{
-      type: ChangeDetectorRef
-    }, {
-      type: ElementRef
-    }, {
-      type: ControlContainer,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Self
-      }]
-    }, {
-      type: NgxMatDateAdapter,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Inject,
-        args: [MAT_FORM_FIELD]
-      }]
-    }];
-  }, {
-    rangePicker: [{
-      type: Input
-    }],
-    required: [{
-      type: Input
-    }],
-    dateFilter: [{
-      type: Input
-    }],
-    min: [{
-      type: Input
-    }],
-    max: [{
-      type: Input
-    }],
-    disabled: [{
-      type: Input
-    }],
-    separator: [{
-      type: Input
-    }],
-    comparisonStart: [{
-      type: Input
-    }],
-    comparisonEnd: [{
-      type: Input
-    }],
-    _startInput: [{
-      type: ContentChild,
-      args: [NgxMatStartDate]
-    }],
-    _endInput: [{
-      type: ContentChild,
-      args: [NgxMatEndDate]
-    }]
-  });
+              styles: [
+                ".mat-date-range-input{display:block;width:100%}.mat-date-range-input-container{display:flex;align-items:center}.mat-date-range-input-separator{transition:opacity .4s .1333333333333s cubic-bezier(.25,.8,.25,1);margin:0 4px}._mat-animation-noopable .mat-date-range-input-separator{transition:none}.mat-date-range-input-separator-hidden{-webkit-user-select:none;-moz-user-select:none;user-select:none;opacity:0;transition:none}.mat-date-range-input-wrapper{position:relative;overflow:hidden;max-width:calc(50% - 4px)}.mat-date-range-input-end-wrapper{flex-grow:1}.mat-date-range-input-inner{position:absolute;top:0;left:0;font:inherit;background:transparent;color:currentColor;border:none;outline:none;padding:0;margin:0;vertical-align:bottom;text-align:inherit;-webkit-appearance:none;width:100%;height:100%}.mat-date-range-input-inner:-moz-ui-invalid{box-shadow:none}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{-webkit-user-select:none;-moz-user-select:none;user-select:none;color:transparent!important;-webkit-text-fill-color:transparent;-moz-transition:none;transition:none}.mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{-webkit-user-select:none;-moz-user-select:none;user-select:none;color:transparent!important;-webkit-text-fill-color:transparent;transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{opacity:0}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::placeholder{opacity:0}.mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{-webkit-user-select:none;-moz-user-select:none;user-select:none;color:transparent!important;-webkit-text-fill-color:transparent;-moz-transition:none;transition:none}.cdk-high-contrast-active .mat-form-field-hide-placeholder .mat-date-range-input-inner::-moz-placeholder,.cdk-high-contrast-active .mat-date-range-input-hide-placeholders .mat-date-range-input-inner::-moz-placeholder{opacity:0}._mat-animation-noopable .mat-date-range-input-inner::placeholder{transition:none}._mat-animation-noopable .mat-date-range-input-inner::-moz-placeholder{-moz-transition:none;transition:none}._mat-animation-noopable .mat-date-range-input-inner::-webkit-input-placeholder{-webkit-transition:none;transition:none}._mat-animation-noopable .mat-date-range-input-inner:-ms-input-placeholder{-ms-transition:none;transition:none}.mat-date-range-input-mirror{-webkit-user-select:none;-moz-user-select:none;user-select:none;visibility:hidden;white-space:nowrap;display:inline-block;min-width:2px}.mat-mdc-form-field-type-mat-date-range-input .mat-mdc-form-field-infix{width:200px}\n",
+              ],
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: ChangeDetectorRef,
+          },
+          {
+            type: ElementRef,
+          },
+          {
+            type: ControlContainer,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Self,
+              },
+            ],
+          },
+          {
+            type: NgxMatDateAdapter,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Inject,
+                args: [MAT_FORM_FIELD],
+              },
+            ],
+          },
+        ];
+      },
+      {
+        rangePicker: [
+          {
+            type: Input,
+          },
+        ],
+        required: [
+          {
+            type: Input,
+          },
+        ],
+        dateFilter: [
+          {
+            type: Input,
+          },
+        ],
+        min: [
+          {
+            type: Input,
+          },
+        ],
+        max: [
+          {
+            type: Input,
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+          },
+        ],
+        separator: [
+          {
+            type: Input,
+          },
+        ],
+        comparisonStart: [
+          {
+            type: Input,
+          },
+        ],
+        comparisonEnd: [
+          {
+            type: Input,
+          },
+        ],
+        _startInput: [
+          {
+            type: ContentChild,
+            args: [NgxMatStartDate],
+          },
+        ],
+        _endInput: [
+          {
+            type: ContentChild,
+            args: [NgxMatEndDate],
+          },
+        ],
+      },
+    );
 })();
 var ngxMatDatepickerAnimations = {
   /** Transforms the height of the datepicker's calendar. */
-  transformPanel: trigger("transformPanel", [transition("void => enter-dropdown", animate("120ms cubic-bezier(0, 0, 0.2, 1)", keyframes([style({
-    opacity: 0,
-    transform: "scale(1, 0.8)"
-  }), style({
-    opacity: 1,
-    transform: "scale(1, 1)"
-  })]))), transition("void => enter-dialog", animate("150ms cubic-bezier(0, 0, 0.2, 1)", keyframes([style({
-    opacity: 0,
-    transform: "scale(0.7)"
-  }), style({
-    transform: "none",
-    opacity: 1
-  })]))), transition("* => void", animate("100ms linear", style({
-    opacity: 0
-  })))]),
+  transformPanel: trigger("transformPanel", [
+    transition(
+      "void => enter-dropdown",
+      animate(
+        "120ms cubic-bezier(0, 0, 0.2, 1)",
+        keyframes([
+          style({
+            opacity: 0,
+            transform: "scale(1, 0.8)",
+          }),
+          style({
+            opacity: 1,
+            transform: "scale(1, 1)",
+          }),
+        ]),
+      ),
+    ),
+    transition(
+      "void => enter-dialog",
+      animate(
+        "150ms cubic-bezier(0, 0, 0.2, 1)",
+        keyframes([
+          style({
+            opacity: 0,
+            transform: "scale(0.7)",
+          }),
+          style({
+            transform: "none",
+            opacity: 1,
+          }),
+        ]),
+      ),
+    ),
+    transition(
+      "* => void",
+      animate(
+        "100ms linear",
+        style({
+          opacity: 0,
+        }),
+      ),
+    ),
+  ]),
   /** Fades in the content of the calendar. */
   fadeInCalendar: trigger("fadeInCalendar", [
-    state("void", style({
-      opacity: 0
-    })),
-    state("enter", style({
-      opacity: 1
-    })),
+    state(
+      "void",
+      style({
+        opacity: 0,
+      }),
+    ),
+    state(
+      "enter",
+      style({
+        opacity: 1,
+      }),
+    ),
     // TODO(crisbeto): this animation should be removed since it isn't quite on spec, but we
     // need to keep it until #12440 gets in, otherwise the exit animation will look glitchy.
-    transition("void => *", animate("120ms 100ms cubic-bezier(0.55, 0, 0.55, 0.2)"))
-  ])
+    transition(
+      "void => *",
+      animate("120ms 100ms cubic-bezier(0.55, 0, 0.55, 0.2)"),
+    ),
+  ]),
 };
 var LIMIT_TIMES = {
   minHour: 0,
@@ -5075,11 +7252,11 @@ var LIMIT_TIMES = {
   maxMinute: 60,
   minSecond: 0,
   maxSecond: 60,
-  meridian: 12
+  meridian: 12,
 };
 var MERIDIANS = {
   AM: "AM",
-  PM: "PM"
+  PM: "PM",
 };
 var DEFAULT_STEP = 1;
 var NUMERIC_REGEX = /[^0-9]/g;
@@ -5091,7 +7268,9 @@ function formatTwoDigitTimeValue(val) {
   return txt.length > 1 ? txt : `0${txt}`;
 }
 function createMissingDateImplError(provider) {
-  return Error(`NgxMatDatetimePicker: No provider found for ${provider}. You must import one of the following modules at your application root: NgxMatNativeDateModule, NgxMatMomentModule, or provide a custom implementation.`);
+  return Error(
+    `NgxMatDatetimePicker: No provider found for ${provider}. You must import one of the following modules at your application root: NgxMatNativeDateModule, NgxMatMomentModule, or provide a custom implementation.`,
+  );
 }
 var NgxMatTimepickerComponent = class {
   constructor(_dateAdapter, cd, formBuilder) {
@@ -5108,28 +7287,35 @@ var NgxMatTimepickerComponent = class {
     this.enableMeridian = false;
     this.color = "primary";
     this.meridian = MERIDIANS.AM;
-    this._onChange = () => {
-    };
-    this._onTouched = () => {
-    };
+    this._onChange = () => {};
+    this._onTouched = () => {};
     this._destroyed = new Subject();
     this.pattern = PATTERN_INPUT_HOUR;
     if (!this._dateAdapter) {
       throw createMissingDateImplError("NgxMatDateAdapter");
     }
     this.form = this.formBuilder.group({
-      hour: [{
-        value: null,
-        disabled: this.disabled
-      }, [Validators.required, Validators.pattern(PATTERN_INPUT_HOUR)]],
-      minute: [{
-        value: null,
-        disabled: this.disabled
-      }, [Validators.required, Validators.pattern(PATTERN_INPUT_MINUTE)]],
-      second: [{
-        value: null,
-        disabled: this.disabled
-      }, [Validators.required, Validators.pattern(PATTERN_INPUT_SECOND)]]
+      hour: [
+        {
+          value: null,
+          disabled: this.disabled,
+        },
+        [Validators.required, Validators.pattern(PATTERN_INPUT_HOUR)],
+      ],
+      minute: [
+        {
+          value: null,
+          disabled: this.disabled,
+        },
+        [Validators.required, Validators.pattern(PATTERN_INPUT_MINUTE)],
+      ],
+      second: [
+        {
+          value: null,
+          disabled: this.disabled,
+        },
+        [Validators.required, Validators.pattern(PATTERN_INPUT_SECOND)],
+      ],
     });
   }
   /** Hour */
@@ -5150,9 +7336,11 @@ var NgxMatTimepickerComponent = class {
     return this.form.valid;
   }
   ngOnInit() {
-    this.form.valueChanges.pipe(takeUntil(this._destroyed), debounceTime(400)).subscribe((val) => {
-      this._updateModel();
-    });
+    this.form.valueChanges
+      .pipe(takeUntil(this._destroyed), debounceTime(400))
+      .subscribe((val) => {
+        this._updateModel();
+      });
   }
   ngOnChanges(changes) {
     if (changes.disabled || changes.disableMinute) {
@@ -5197,7 +7385,8 @@ var NgxMatTimepickerComponent = class {
   }
   /** Toggle meridian */
   toggleMeridian() {
-    this.meridian = this.meridian === MERIDIANS.AM ? MERIDIANS.PM : MERIDIANS.AM;
+    this.meridian =
+      this.meridian === MERIDIANS.AM ? MERIDIANS.PM : MERIDIANS.AM;
     this.change("hour");
   }
   /** Change property of time */
@@ -5205,7 +7394,7 @@ var NgxMatTimepickerComponent = class {
     const next = this._getNextValueByProp(prop, up);
     this.form.controls[prop].setValue(formatTwoDigitTimeValue(next), {
       onlySelf: false,
-      emitEvent: false
+      emitEvent: false,
     });
     this._updateModel();
   }
@@ -5225,13 +7414,16 @@ var NgxMatTimepickerComponent = class {
         _hour = LIMIT_TIMES.meridian;
       }
     }
-    this.form.patchValue({
-      hour: formatTwoDigitTimeValue(_hour),
-      minute: formatTwoDigitTimeValue(_minute),
-      second: formatTwoDigitTimeValue(_second)
-    }, {
-      emitEvent: false
-    });
+    this.form.patchValue(
+      {
+        hour: formatTwoDigitTimeValue(_hour),
+        minute: formatTwoDigitTimeValue(_minute),
+        second: formatTwoDigitTimeValue(_second),
+      },
+      {
+        emitEvent: false,
+      },
+    );
   }
   /** Update model */
   _updateModel() {
@@ -5239,7 +7431,10 @@ var NgxMatTimepickerComponent = class {
     if (this.enableMeridian) {
       if (this.meridian === MERIDIANS.AM && _hour === LIMIT_TIMES.meridian) {
         _hour = 0;
-      } else if (this.meridian === MERIDIANS.PM && _hour !== LIMIT_TIMES.meridian) {
+      } else if (
+        this.meridian === MERIDIANS.PM &&
+        _hour !== LIMIT_TIMES.meridian
+      ) {
         _hour = _hour + LIMIT_TIMES.meridian;
       }
     }
@@ -5267,15 +7462,15 @@ var NgxMatTimepickerComponent = class {
     if (up == null) {
       next = this[prop] % max;
       if (prop === "hour" && this.enableMeridian) {
-        if (next === 0)
-          next = max;
+        if (next === 0) next = max;
       }
     } else {
-      next = up ? this[prop] + this[`step${keyProp}`] : this[prop] - this[`step${keyProp}`];
+      next = up
+        ? this[prop] + this[`step${keyProp}`]
+        : this[prop] - this[`step${keyProp}`];
       if (prop === "hour" && this.enableMeridian) {
         next = next % (max + 1);
-        if (next === 0)
-          next = up ? 1 : max;
+        if (next === 0) next = up ? 1 : max;
       } else {
         next = next % max;
       }
@@ -5305,7 +7500,11 @@ var NgxMatTimepickerComponent = class {
   }
 };
 NgxMatTimepickerComponent.ɵfac = function NgxMatTimepickerComponent_Factory(t) {
-  return new (t || NgxMatTimepickerComponent)(ɵɵdirectiveInject(NgxMatDateAdapter, 8), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(FormBuilder));
+  return new (t || NgxMatTimepickerComponent)(
+    ɵɵdirectiveInject(NgxMatDateAdapter, 8),
+    ɵɵdirectiveInject(ChangeDetectorRef),
+    ɵɵdirectiveInject(FormBuilder),
+  );
 };
 NgxMatTimepickerComponent.ɵcmp = ɵɵdefineComponent({
   type: NgxMatTimepickerComponent,
@@ -5321,51 +7520,193 @@ NgxMatTimepickerComponent.ɵcmp = ɵɵdefineComponent({
     disableMinute: "disableMinute",
     enableMeridian: "enableMeridian",
     defaultTime: "defaultTime",
-    color: "color"
+    color: "color",
   },
   exportAs: ["ngxMatTimepicker"],
-  features: [ɵɵProvidersFeature([{
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: forwardRef(() => NgxMatTimepickerComponent),
-    multi: true
-  }]), ɵɵNgOnChangesFeature],
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: NG_VALUE_ACCESSOR,
+        useExisting: forwardRef(() => NgxMatTimepickerComponent),
+        multi: true,
+      },
+    ]),
+    ɵɵNgOnChangesFeature,
+  ],
   decls: 18,
   vars: 9,
-  consts: [[3, "formGroup"], [1, "ngx-mat-timepicker-table"], [1, "ngx-mat-timepicker-tbody"], [4, "ngIf"], ["appearance", "fill", 3, "color"], ["type", "text", "matInput", "", "maxlength", "2", "formControlName", "hour", 3, "input", "keydown.ArrowUp", "keydown.ArrowDown", "blur"], [1, "ngx-mat-timepicker-spacer"], ["type", "text", "matInput", "", "maxlength", "2", "formControlName", "minute", 3, "input", "keydown.ArrowUp", "keydown.ArrowDown", "blur"], ["class", "ngx-mat-timepicker-spacer", 4, "ngIf"], ["class", "ngx-mat-timepicker-meridian", 4, "ngIf"], ["type", "button", "mat-icon-button", "", "aria-label", "expand_less icon", 3, "click", "disabled"], ["type", "text", "matInput", "", "maxlength", "2", "formControlName", "second", 3, "input", "keydown.ArrowUp", "keydown.ArrowDown", "blur"], [1, "ngx-mat-timepicker-meridian"], ["mat-button", "", "mat-stroked-button", "", 3, "click", "color", "disabled"], ["type", "button", "mat-icon-button", "", "aria-label", "expand_more icon", 3, "click", "disabled"]],
+  consts: [
+    [3, "formGroup"],
+    [1, "ngx-mat-timepicker-table"],
+    [1, "ngx-mat-timepicker-tbody"],
+    [4, "ngIf"],
+    ["appearance", "fill", 3, "color"],
+    [
+      "type",
+      "text",
+      "matInput",
+      "",
+      "maxlength",
+      "2",
+      "formControlName",
+      "hour",
+      3,
+      "input",
+      "keydown.ArrowUp",
+      "keydown.ArrowDown",
+      "blur",
+    ],
+    [1, "ngx-mat-timepicker-spacer"],
+    [
+      "type",
+      "text",
+      "matInput",
+      "",
+      "maxlength",
+      "2",
+      "formControlName",
+      "minute",
+      3,
+      "input",
+      "keydown.ArrowUp",
+      "keydown.ArrowDown",
+      "blur",
+    ],
+    ["class", "ngx-mat-timepicker-spacer", 4, "ngIf"],
+    ["class", "ngx-mat-timepicker-meridian", 4, "ngIf"],
+    [
+      "type",
+      "button",
+      "mat-icon-button",
+      "",
+      "aria-label",
+      "expand_less icon",
+      3,
+      "click",
+      "disabled",
+    ],
+    [
+      "type",
+      "text",
+      "matInput",
+      "",
+      "maxlength",
+      "2",
+      "formControlName",
+      "second",
+      3,
+      "input",
+      "keydown.ArrowUp",
+      "keydown.ArrowDown",
+      "blur",
+    ],
+    [1, "ngx-mat-timepicker-meridian"],
+    [
+      "mat-button",
+      "",
+      "mat-stroked-button",
+      "",
+      3,
+      "click",
+      "color",
+      "disabled",
+    ],
+    [
+      "type",
+      "button",
+      "mat-icon-button",
+      "",
+      "aria-label",
+      "expand_more icon",
+      3,
+      "click",
+      "disabled",
+    ],
+  ],
   template: function NgxMatTimepickerComponent_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵelementStart(0, "form", 0)(1, "table", 1)(2, "tbody", 2);
       ɵɵtemplate(3, NgxMatTimepickerComponent_tr_3_Template, 14, 5, "tr", 3);
       ɵɵelementStart(4, "tr")(5, "td")(6, "mat-form-field", 4)(7, "input", 5);
-      ɵɵlistener("input", function NgxMatTimepickerComponent_Template_input_input_7_listener($event) {
-        return ctx.formatInput($event.target);
-      })("keydown.ArrowUp", function NgxMatTimepickerComponent_Template_input_keydown_ArrowUp_7_listener($event) {
-        ctx.change("hour", true);
-        return $event.preventDefault();
-      })("keydown.ArrowDown", function NgxMatTimepickerComponent_Template_input_keydown_ArrowDown_7_listener($event) {
-        ctx.change("hour", false);
-        return $event.preventDefault();
-      })("blur", function NgxMatTimepickerComponent_Template_input_blur_7_listener() {
-        return ctx.change("hour");
-      });
+      ɵɵlistener(
+        "input",
+        function NgxMatTimepickerComponent_Template_input_input_7_listener(
+          $event,
+        ) {
+          return ctx.formatInput($event.target);
+        },
+      )(
+        "keydown.ArrowUp",
+        function NgxMatTimepickerComponent_Template_input_keydown_ArrowUp_7_listener(
+          $event,
+        ) {
+          ctx.change("hour", true);
+          return $event.preventDefault();
+        },
+      )(
+        "keydown.ArrowDown",
+        function NgxMatTimepickerComponent_Template_input_keydown_ArrowDown_7_listener(
+          $event,
+        ) {
+          ctx.change("hour", false);
+          return $event.preventDefault();
+        },
+      )(
+        "blur",
+        function NgxMatTimepickerComponent_Template_input_blur_7_listener() {
+          return ctx.change("hour");
+        },
+      );
       ɵɵelementEnd()()();
       ɵɵelementStart(8, "td", 6);
       ɵɵtext(9, ":");
       ɵɵelementEnd();
       ɵɵelementStart(10, "td")(11, "mat-form-field", 4)(12, "input", 7);
-      ɵɵlistener("input", function NgxMatTimepickerComponent_Template_input_input_12_listener($event) {
-        return ctx.formatInput($event.target);
-      })("keydown.ArrowUp", function NgxMatTimepickerComponent_Template_input_keydown_ArrowUp_12_listener($event) {
-        ctx.change("minute", true);
-        return $event.preventDefault();
-      })("keydown.ArrowDown", function NgxMatTimepickerComponent_Template_input_keydown_ArrowDown_12_listener($event) {
-        ctx.change("minute", false);
-        return $event.preventDefault();
-      })("blur", function NgxMatTimepickerComponent_Template_input_blur_12_listener() {
-        return ctx.change("minute");
-      });
+      ɵɵlistener(
+        "input",
+        function NgxMatTimepickerComponent_Template_input_input_12_listener(
+          $event,
+        ) {
+          return ctx.formatInput($event.target);
+        },
+      )(
+        "keydown.ArrowUp",
+        function NgxMatTimepickerComponent_Template_input_keydown_ArrowUp_12_listener(
+          $event,
+        ) {
+          ctx.change("minute", true);
+          return $event.preventDefault();
+        },
+      )(
+        "keydown.ArrowDown",
+        function NgxMatTimepickerComponent_Template_input_keydown_ArrowDown_12_listener(
+          $event,
+        ) {
+          ctx.change("minute", false);
+          return $event.preventDefault();
+        },
+      )(
+        "blur",
+        function NgxMatTimepickerComponent_Template_input_blur_12_listener() {
+          return ctx.change("minute");
+        },
+      );
       ɵɵelementEnd()()();
-      ɵɵtemplate(13, NgxMatTimepickerComponent_td_13_Template, 2, 0, "td", 8)(14, NgxMatTimepickerComponent_td_14_Template, 3, 1, "td", 3)(15, NgxMatTimepickerComponent_td_15_Template, 1, 0, "td", 8)(16, NgxMatTimepickerComponent_td_16_Template, 3, 3, "td", 9);
+      ɵɵtemplate(13, NgxMatTimepickerComponent_td_13_Template, 2, 0, "td", 8)(
+        14,
+        NgxMatTimepickerComponent_td_14_Template,
+        3,
+        1,
+        "td",
+        3,
+      )(15, NgxMatTimepickerComponent_td_15_Template, 1, 0, "td", 8)(
+        16,
+        NgxMatTimepickerComponent_td_16_Template,
+        3,
+        3,
+        "td",
+        9,
+      );
       ɵɵelementEnd();
       ɵɵtemplate(17, NgxMatTimepickerComponent_tr_17_Template, 14, 6, "tr", 3);
       ɵɵelementEnd()()();
@@ -5390,26 +7731,49 @@ NgxMatTimepickerComponent.ɵcmp = ɵɵdefineComponent({
       ɵɵproperty("ngIf", ctx.showSpinners);
     }
   },
-  dependencies: [NgIf, MatInput, MatFormField, ɵNgNoValidate, DefaultValueAccessor, NgControlStatus, NgControlStatusGroup, MaxLengthValidator, FormGroupDirective, FormControlName, MatIcon, MatButton, MatIconButton],
-  styles: [".ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td{text-align:center}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td.ngx-mat-timepicker-spacer{font-weight:700}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td.ngx-mat-timepicker-meridian .mdc-button{min-width:64px;line-height:36px;min-width:0;border-radius:50%;width:36px;height:36px;padding:0;flex-shrink:0}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-icon-button{height:24px;width:24px;line-height:24px;padding:0}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-icon-button .mat-icon{font-size:24px}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field{width:24px;max-width:24px;text-align:center}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field.mat-focused .mdc-text-field--filled .mat-mdc-form-field-focus-overlay,.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field:hover .mdc-text-field--filled .mat-mdc-form-field-focus-overlay{background-color:transparent}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field .mdc-text-field--filled{background-color:transparent!important;padding:0!important}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field .mdc-text-field--filled .mat-mdc-form-field-infix{padding:4px 0;min-height:1px!important}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field .mdc-text-field--filled .mat-mdc-form-field-infix input{text-align:center;font-size:14px}\n"],
-  encapsulation: 2
+  dependencies: [
+    NgIf,
+    MatInput,
+    MatFormField,
+    ɵNgNoValidate,
+    DefaultValueAccessor,
+    NgControlStatus,
+    NgControlStatusGroup,
+    MaxLengthValidator,
+    FormGroupDirective,
+    FormControlName,
+    MatIcon,
+    MatButton,
+    MatIconButton,
+  ],
+  styles: [
+    ".ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td{text-align:center}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td.ngx-mat-timepicker-spacer{font-weight:700}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td.ngx-mat-timepicker-meridian .mdc-button{min-width:64px;line-height:36px;min-width:0;border-radius:50%;width:36px;height:36px;padding:0;flex-shrink:0}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-icon-button{height:24px;width:24px;line-height:24px;padding:0}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-icon-button .mat-icon{font-size:24px}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field{width:24px;max-width:24px;text-align:center}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field.mat-focused .mdc-text-field--filled .mat-mdc-form-field-focus-overlay,.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field:hover .mdc-text-field--filled .mat-mdc-form-field-focus-overlay{background-color:transparent}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field .mdc-text-field--filled{background-color:transparent!important;padding:0!important}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field .mdc-text-field--filled .mat-mdc-form-field-infix{padding:4px 0;min-height:1px!important}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field .mdc-text-field--filled .mat-mdc-form-field-infix input{text-align:center;font-size:14px}\n",
+  ],
+  encapsulation: 2,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatTimepickerComponent, [{
-    type: Component,
-    args: [{
-      selector: "ngx-mat-timepicker",
-      host: {
-        "class": "ngx-mat-timepicker"
-      },
-      providers: [{
-        provide: NG_VALUE_ACCESSOR,
-        useExisting: forwardRef(() => NgxMatTimepickerComponent),
-        multi: true
-      }],
-      exportAs: "ngxMatTimepicker",
-      encapsulation: ViewEncapsulation$1.None,
-      template: `<form [formGroup]="form">\r
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatTimepickerComponent,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "ngx-mat-timepicker",
+              host: {
+                class: "ngx-mat-timepicker",
+              },
+              providers: [
+                {
+                  provide: NG_VALUE_ACCESSOR,
+                  useExisting: forwardRef(() => NgxMatTimepickerComponent),
+                  multi: true,
+                },
+              ],
+              exportAs: "ngxMatTimepicker",
+              encapsulation: ViewEncapsulation$1.None,
+              template: `<form [formGroup]="form">\r
   <table class="ngx-mat-timepicker-table">\r
     <tbody class="ngx-mat-timepicker-tbody">\r
       <tr *ngIf="showSpinners">\r
@@ -5494,69 +7858,113 @@ NgxMatTimepickerComponent.ɵcmp = ɵɵdefineComponent({
     </tbody>\r
   </table>\r
 </form>`,
-      styles: [".ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td{text-align:center}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td.ngx-mat-timepicker-spacer{font-weight:700}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td.ngx-mat-timepicker-meridian .mdc-button{min-width:64px;line-height:36px;min-width:0;border-radius:50%;width:36px;height:36px;padding:0;flex-shrink:0}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-icon-button{height:24px;width:24px;line-height:24px;padding:0}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-icon-button .mat-icon{font-size:24px}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field{width:24px;max-width:24px;text-align:center}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field.mat-focused .mdc-text-field--filled .mat-mdc-form-field-focus-overlay,.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field:hover .mdc-text-field--filled .mat-mdc-form-field-focus-overlay{background-color:transparent}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field .mdc-text-field--filled{background-color:transparent!important;padding:0!important}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field .mdc-text-field--filled .mat-mdc-form-field-infix{padding:4px 0;min-height:1px!important}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field .mdc-text-field--filled .mat-mdc-form-field-infix input{text-align:center;font-size:14px}\n"]
-    }]
-  }], function() {
-    return [{
-      type: NgxMatDateAdapter,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: ChangeDetectorRef
-    }, {
-      type: FormBuilder
-    }];
-  }, {
-    disabled: [{
-      type: Input
-    }],
-    showSpinners: [{
-      type: Input
-    }],
-    stepHour: [{
-      type: Input
-    }],
-    stepMinute: [{
-      type: Input
-    }],
-    stepSecond: [{
-      type: Input
-    }],
-    showSeconds: [{
-      type: Input
-    }],
-    disableMinute: [{
-      type: Input
-    }],
-    enableMeridian: [{
-      type: Input
-    }],
-    defaultTime: [{
-      type: Input
-    }],
-    color: [{
-      type: Input
-    }]
-  });
+              styles: [
+                ".ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td{text-align:center}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td.ngx-mat-timepicker-spacer{font-weight:700}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td.ngx-mat-timepicker-meridian .mdc-button{min-width:64px;line-height:36px;min-width:0;border-radius:50%;width:36px;height:36px;padding:0;flex-shrink:0}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-icon-button{height:24px;width:24px;line-height:24px;padding:0}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-icon-button .mat-icon{font-size:24px}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field{width:24px;max-width:24px;text-align:center}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field.mat-focused .mdc-text-field--filled .mat-mdc-form-field-focus-overlay,.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field:hover .mdc-text-field--filled .mat-mdc-form-field-focus-overlay{background-color:transparent}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field .mdc-text-field--filled{background-color:transparent!important;padding:0!important}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field .mdc-text-field--filled .mat-mdc-form-field-infix{padding:4px 0;min-height:1px!important}.ngx-mat-timepicker form .ngx-mat-timepicker-table .ngx-mat-timepicker-tbody tr td .mat-mdc-form-field .mdc-text-field--filled .mat-mdc-form-field-infix input{text-align:center;font-size:14px}\n",
+              ],
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: NgxMatDateAdapter,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: ChangeDetectorRef,
+          },
+          {
+            type: FormBuilder,
+          },
+        ];
+      },
+      {
+        disabled: [
+          {
+            type: Input,
+          },
+        ],
+        showSpinners: [
+          {
+            type: Input,
+          },
+        ],
+        stepHour: [
+          {
+            type: Input,
+          },
+        ],
+        stepMinute: [
+          {
+            type: Input,
+          },
+        ],
+        stepSecond: [
+          {
+            type: Input,
+          },
+        ],
+        showSeconds: [
+          {
+            type: Input,
+          },
+        ],
+        disableMinute: [
+          {
+            type: Input,
+          },
+        ],
+        enableMeridian: [
+          {
+            type: Input,
+          },
+        ],
+        defaultTime: [
+          {
+            type: Input,
+          },
+        ],
+        color: [
+          {
+            type: Input,
+          },
+        ],
+      },
+    );
 })();
 var datepickerUid = 0;
-var NGX_MAT_DATEPICKER_SCROLL_STRATEGY = new InjectionToken("ngx-mat-datepicker-scroll-strategy");
+var NGX_MAT_DATEPICKER_SCROLL_STRATEGY = new InjectionToken(
+  "ngx-mat-datepicker-scroll-strategy",
+);
 function NGX_MAT_DATEPICKER_SCROLL_STRATEGY_FACTORY(overlay) {
   return () => overlay.scrollStrategies.reposition();
 }
 var NGX_MAT_DATEPICKER_SCROLL_STRATEGY_FACTORY_PROVIDER = {
   provide: NGX_MAT_DATEPICKER_SCROLL_STRATEGY,
   deps: [Overlay],
-  useFactory: NGX_MAT_DATEPICKER_SCROLL_STRATEGY_FACTORY
+  useFactory: NGX_MAT_DATEPICKER_SCROLL_STRATEGY_FACTORY,
 };
-var _NgxMatDatepickerContentBase = mixinColor(class {
-  constructor(_elementRef) {
-    this._elementRef = _elementRef;
-  }
-});
+var _NgxMatDatepickerContentBase = mixinColor(
+  class {
+    constructor(_elementRef) {
+      this._elementRef = _elementRef;
+    }
+  },
+);
 var NgxMatDatepickerContent = class extends _NgxMatDatepickerContentBase {
-  constructor(elementRef, _changeDetectorRef, _globalModel, _dateAdapter, _rangeSelectionStrategy, intl) {
+  constructor(
+    elementRef,
+    _changeDetectorRef,
+    _globalModel,
+    _dateAdapter,
+    _rangeSelectionStrategy,
+    intl,
+  ) {
     super(elementRef);
     this._changeDetectorRef = _changeDetectorRef;
     this._globalModel = _globalModel;
@@ -5569,17 +7977,20 @@ var NgxMatDatepickerContent = class extends _NgxMatDatepickerContentBase {
     this._closeButtonText = intl.closeCalendarLabel;
   }
   get isViewMonth() {
-    if (!this._calendar || this._calendar.currentView == null)
-      return true;
+    if (!this._calendar || this._calendar.currentView == null) return true;
     return this._calendar.currentView == "month";
   }
   ngOnInit() {
-    this._animationState = this.datepicker.touchUi ? "enter-dialog" : "enter-dropdown";
+    this._animationState = this.datepicker.touchUi
+      ? "enter-dialog"
+      : "enter-dropdown";
   }
   ngAfterViewInit() {
-    this._subscriptions.add(this.datepicker.stateChanges.subscribe(() => {
-      this._changeDetectorRef.markForCheck();
-    }));
+    this._subscriptions.add(
+      this.datepicker.stateChanges.subscribe(() => {
+        this._changeDetectorRef.markForCheck();
+      }),
+    );
     this._calendar.focusActiveCell();
   }
   ngOnDestroy() {
@@ -5589,7 +8000,7 @@ var NgxMatDatepickerContent = class extends _NgxMatDatepickerContentBase {
   onTimeChanged(selectedDateWithTime) {
     const userEvent = {
       value: selectedDateWithTime,
-      event: null
+      event: null,
     };
     this._updateUserSelectionWithCalendarUserEvent(userEvent);
   }
@@ -5606,7 +8017,11 @@ var NgxMatDatepickerContent = class extends _NgxMatDatepickerContentBase {
     const value = event.value;
     const isRange = selection instanceof NgxDateRange;
     if (isRange && this._rangeSelectionStrategy) {
-      const newSelection = this._rangeSelectionStrategy.selectionFinished(value, selection, event.event);
+      const newSelection = this._rangeSelectionStrategy.selectionFinished(
+        value,
+        selection,
+        event.event,
+      );
       this._model.updateSelection(newSelection, this);
     } else {
       const isSameTime = this._dateAdapter.isSameTime(selection, value);
@@ -5656,7 +8071,14 @@ var NgxMatDatepickerContent = class extends _NgxMatDatepickerContentBase {
   }
 };
 NgxMatDatepickerContent.ɵfac = function NgxMatDatepickerContent_Factory(t) {
-  return new (t || NgxMatDatepickerContent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NgxMatDateSelectionModel), ɵɵdirectiveInject(NgxMatDateAdapter), ɵɵdirectiveInject(NGX_MAT_DATE_RANGE_SELECTION_STRATEGY, 8), ɵɵdirectiveInject(NgxMatDatepickerIntl));
+  return new (t || NgxMatDatepickerContent)(
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵdirectiveInject(ChangeDetectorRef),
+    ɵɵdirectiveInject(NgxMatDateSelectionModel),
+    ɵɵdirectiveInject(NgxMatDateAdapter),
+    ɵɵdirectiveInject(NGX_MAT_DATE_RANGE_SELECTION_STRATEGY, 8),
+    ɵɵdirectiveInject(NgxMatDatepickerIntl),
+  );
 };
 NgxMatDatepickerContent.ɵcmp = ɵɵdefineComponent({
   type: NgxMatDatepickerContent,
@@ -5667,65 +8089,217 @@ NgxMatDatepickerContent.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._calendar = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._calendar = _t.first);
     }
   },
   hostAttrs: [1, "mat-datepicker-content"],
   hostVars: 5,
   hostBindings: function NgxMatDatepickerContent_HostBindings(rf, ctx) {
     if (rf & 1) {
-      ɵɵsyntheticHostListener("@transformPanel.start", function NgxMatDatepickerContent_animation_transformPanel_start_HostBindingHandler($event) {
-        return ctx._handleAnimationEvent($event);
-      })("@transformPanel.done", function NgxMatDatepickerContent_animation_transformPanel_done_HostBindingHandler($event) {
-        return ctx._handleAnimationEvent($event);
-      });
+      ɵɵsyntheticHostListener(
+        "@transformPanel.start",
+        function NgxMatDatepickerContent_animation_transformPanel_start_HostBindingHandler(
+          $event,
+        ) {
+          return ctx._handleAnimationEvent($event);
+        },
+      )(
+        "@transformPanel.done",
+        function NgxMatDatepickerContent_animation_transformPanel_done_HostBindingHandler(
+          $event,
+        ) {
+          return ctx._handleAnimationEvent($event);
+        },
+      );
     }
     if (rf & 2) {
       ɵɵsyntheticHostProperty("@transformPanel", ctx._animationState);
-      ɵɵclassProp("mat-datepicker-content-touch", ctx.datepicker.touchUi)("mat-datepicker-content-touch-with-time", !ctx.datepicker.hideTime);
+      ɵɵclassProp("mat-datepicker-content-touch", ctx.datepicker.touchUi)(
+        "mat-datepicker-content-touch-with-time",
+        !ctx.datepicker.hideTime,
+      );
     }
   },
   inputs: {
-    color: "color"
+    color: "color",
   },
   exportAs: ["ngxMatDatepickerContent"],
   features: [ɵɵInheritDefinitionFeature],
   decls: 6,
   vars: 29,
-  consts: [["cdkTrapFocus", "", "role", "dialog", 1, "mat-datepicker-content-container"], [3, "yearSelected", "monthSelected", "viewChanged", "_userSelection", "_userDragDrop", "id", "ngClass", "startAt", "startView", "minDate", "maxDate", "dateFilter", "headerComponent", "selected", "dateClass", "comparisonStart", "comparisonEnd", "startDateAccessibleName", "endDateAccessibleName"], [4, "ngIf"], [3, "cdkPortalOutlet"], ["type", "button", "mat-raised-button", "", 1, "mat-datepicker-close-button", 3, "focus", "blur", "click", "color"], ["class", "time-container", 3, "disable-seconds", 4, "ngIf"], [1, "time-container"], [3, "ngModelChange", "showSpinners", "showSeconds", "disabled", "stepHour", "stepMinute", "stepSecond", "ngModel", "color", "enableMeridian", "disableMinute"]],
+  consts: [
+    [
+      "cdkTrapFocus",
+      "",
+      "role",
+      "dialog",
+      1,
+      "mat-datepicker-content-container",
+    ],
+    [
+      3,
+      "yearSelected",
+      "monthSelected",
+      "viewChanged",
+      "_userSelection",
+      "_userDragDrop",
+      "id",
+      "ngClass",
+      "startAt",
+      "startView",
+      "minDate",
+      "maxDate",
+      "dateFilter",
+      "headerComponent",
+      "selected",
+      "dateClass",
+      "comparisonStart",
+      "comparisonEnd",
+      "startDateAccessibleName",
+      "endDateAccessibleName",
+    ],
+    [4, "ngIf"],
+    [3, "cdkPortalOutlet"],
+    [
+      "type",
+      "button",
+      "mat-raised-button",
+      "",
+      1,
+      "mat-datepicker-close-button",
+      3,
+      "focus",
+      "blur",
+      "click",
+      "color",
+    ],
+    ["class", "time-container", 3, "disable-seconds", 4, "ngIf"],
+    [1, "time-container"],
+    [
+      3,
+      "ngModelChange",
+      "showSpinners",
+      "showSeconds",
+      "disabled",
+      "stepHour",
+      "stepMinute",
+      "stepSecond",
+      "ngModel",
+      "color",
+      "enableMeridian",
+      "disableMinute",
+    ],
+  ],
   template: function NgxMatDatepickerContent_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵelementStart(0, "div", 0)(1, "ngx-mat-calendar", 1);
-      ɵɵlistener("yearSelected", function NgxMatDatepickerContent_Template_ngx_mat_calendar_yearSelected_1_listener($event) {
-        return ctx.datepicker._selectYear($event);
-      })("monthSelected", function NgxMatDatepickerContent_Template_ngx_mat_calendar_monthSelected_1_listener($event) {
-        return ctx.datepicker._selectMonth($event);
-      })("viewChanged", function NgxMatDatepickerContent_Template_ngx_mat_calendar_viewChanged_1_listener($event) {
-        return ctx.datepicker._viewChanged($event);
-      })("_userSelection", function NgxMatDatepickerContent_Template_ngx_mat_calendar__userSelection_1_listener($event) {
-        return ctx._handleUserSelection($event);
-      })("_userDragDrop", function NgxMatDatepickerContent_Template_ngx_mat_calendar__userDragDrop_1_listener($event) {
-        return ctx._handleUserDragDrop($event);
-      });
+      ɵɵlistener(
+        "yearSelected",
+        function NgxMatDatepickerContent_Template_ngx_mat_calendar_yearSelected_1_listener(
+          $event,
+        ) {
+          return ctx.datepicker._selectYear($event);
+        },
+      )(
+        "monthSelected",
+        function NgxMatDatepickerContent_Template_ngx_mat_calendar_monthSelected_1_listener(
+          $event,
+        ) {
+          return ctx.datepicker._selectMonth($event);
+        },
+      )(
+        "viewChanged",
+        function NgxMatDatepickerContent_Template_ngx_mat_calendar_viewChanged_1_listener(
+          $event,
+        ) {
+          return ctx.datepicker._viewChanged($event);
+        },
+      )(
+        "_userSelection",
+        function NgxMatDatepickerContent_Template_ngx_mat_calendar__userSelection_1_listener(
+          $event,
+        ) {
+          return ctx._handleUserSelection($event);
+        },
+      )(
+        "_userDragDrop",
+        function NgxMatDatepickerContent_Template_ngx_mat_calendar__userDragDrop_1_listener(
+          $event,
+        ) {
+          return ctx._handleUserDragDrop($event);
+        },
+      );
       ɵɵelementEnd();
-      ɵɵtemplate(2, NgxMatDatepickerContent_ng_container_2_Template, 2, 1, "ng-container", 2)(3, NgxMatDatepickerContent_ng_template_3_Template, 0, 0, "ng-template", 3);
+      ɵɵtemplate(
+        2,
+        NgxMatDatepickerContent_ng_container_2_Template,
+        2,
+        1,
+        "ng-container",
+        2,
+      )(
+        3,
+        NgxMatDatepickerContent_ng_template_3_Template,
+        0,
+        0,
+        "ng-template",
+        3,
+      );
       ɵɵelementStart(4, "button", 4);
-      ɵɵlistener("focus", function NgxMatDatepickerContent_Template_button_focus_4_listener() {
-        return ctx._closeButtonFocused = true;
-      })("blur", function NgxMatDatepickerContent_Template_button_blur_4_listener() {
-        return ctx._closeButtonFocused = false;
-      })("click", function NgxMatDatepickerContent_Template_button_click_4_listener() {
-        return ctx.datepicker.close();
-      });
+      ɵɵlistener(
+        "focus",
+        function NgxMatDatepickerContent_Template_button_focus_4_listener() {
+          return (ctx._closeButtonFocused = true);
+        },
+      )(
+        "blur",
+        function NgxMatDatepickerContent_Template_button_blur_4_listener() {
+          return (ctx._closeButtonFocused = false);
+        },
+      )(
+        "click",
+        function NgxMatDatepickerContent_Template_button_click_4_listener() {
+          return ctx.datepicker.close();
+        },
+      );
       ɵɵtext(5);
       ɵɵelementEnd()();
     }
     if (rf & 2) {
       let tmp_4_0;
-      ɵɵclassProp("mat-datepicker-content-container-with-custom-header", ctx.datepicker.calendarHeaderComponent)("mat-datepicker-content-container-with-actions", ctx._actionsPortal)("mat-datepicker-content-container-with-time", !ctx.datepicker._hideTime);
-      ɵɵattribute("aria-modal", true)("aria-labelledby", (tmp_4_0 = ctx._dialogLabelId) !== null && tmp_4_0 !== void 0 ? tmp_4_0 : void 0);
+      ɵɵclassProp(
+        "mat-datepicker-content-container-with-custom-header",
+        ctx.datepicker.calendarHeaderComponent,
+      )("mat-datepicker-content-container-with-actions", ctx._actionsPortal)(
+        "mat-datepicker-content-container-with-time",
+        !ctx.datepicker._hideTime,
+      );
+      ɵɵattribute("aria-modal", true)(
+        "aria-labelledby",
+        (tmp_4_0 = ctx._dialogLabelId) !== null && tmp_4_0 !== void 0
+          ? tmp_4_0
+          : void 0,
+      );
       ɵɵadvance();
-      ɵɵproperty("id", ctx.datepicker.id)("ngClass", ctx.datepicker.panelClass)("startAt", ctx.datepicker.startAt)("startView", ctx.datepicker.startView)("minDate", ctx.datepicker._getMinDate())("maxDate", ctx.datepicker._getMaxDate())("dateFilter", ctx.datepicker._getDateFilter())("headerComponent", ctx.datepicker.calendarHeaderComponent)("selected", ctx._getSelected())("dateClass", ctx.datepicker.dateClass)("comparisonStart", ctx.comparisonStart)("comparisonEnd", ctx.comparisonEnd)("@fadeInCalendar", "enter")("startDateAccessibleName", ctx.startDateAccessibleName)("endDateAccessibleName", ctx.endDateAccessibleName);
+      ɵɵproperty("id", ctx.datepicker.id)("ngClass", ctx.datepicker.panelClass)(
+        "startAt",
+        ctx.datepicker.startAt,
+      )("startView", ctx.datepicker.startView)(
+        "minDate",
+        ctx.datepicker._getMinDate(),
+      )("maxDate", ctx.datepicker._getMaxDate())(
+        "dateFilter",
+        ctx.datepicker._getDateFilter(),
+      )("headerComponent", ctx.datepicker.calendarHeaderComponent)(
+        "selected",
+        ctx._getSelected(),
+      )("dateClass", ctx.datepicker.dateClass)(
+        "comparisonStart",
+        ctx.comparisonStart,
+      )("comparisonEnd", ctx.comparisonEnd)("@fadeInCalendar", "enter")(
+        "startDateAccessibleName",
+        ctx.startDateAccessibleName,
+      )("endDateAccessibleName", ctx.endDateAccessibleName);
       ɵɵadvance();
       ɵɵproperty("ngIf", ctx.isViewMonth);
       ɵɵadvance();
@@ -5737,33 +8311,57 @@ NgxMatDatepickerContent.ɵcmp = ɵɵdefineComponent({
       ɵɵtextInterpolate1("", ctx._closeButtonText, " ");
     }
   },
-  dependencies: [NgClass, NgIf, MatButton, CdkTrapFocus, CdkPortalOutlet, NgxMatTimepickerComponent, NgControlStatus, NgModel, NgxMatCalendar],
-  styles: ['.mat-datepicker-content{display:block;border-radius:4px}.mat-datepicker-content .mat-calendar{width:296px;height:354px}.mat-datepicker-content .mat-datepicker-content-container-with-custom-header .mat-calendar{height:auto}.mat-datepicker-content .mat-datepicker-close-button{position:absolute;top:100%;left:0;margin-top:8px}.ng-animating .mat-datepicker-content .mat-datepicker-close-button{display:none}.mat-datepicker-content-container{display:flex;flex-direction:column;justify-content:space-between}.time-container{display:flex;position:relative;padding-top:5px;justify-content:center}.time-container.disable-seconds .ngx-mat-timepicker .table{margin-left:9px}.time-container:before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background-color:#0000001f}.mat-datepicker-content-touch{display:block;max-height:90vh;position:relative;overflow:visible}.mat-datepicker-content-touch .mat-datepicker-content-container{min-height:312px;max-height:815px;min-width:250px;max-width:750px}.mat-datepicker-content-touch .mat-calendar{width:100%;height:auto}@media all and (orientation: landscape){.mat-datepicker-content-touch .mat-datepicker-content-container{width:64vh;height:90vh}.mat-datepicker-content-touch .mat-datepicker-content-container.mat-datepicker-content-container-with-time{height:auto}}@media all and (orientation: portrait){.mat-datepicker-content-touch{max-height:100vh}.mat-datepicker-content-touch .mat-datepicker-content-container{width:80vw;height:100vw}.mat-datepicker-content-touch .mat-datepicker-content-container.mat-datepicker-content-container-with-time{height:auto;max-height:870px}.mat-datepicker-content-touch .mat-datepicker-content-container.mat-datepicker-content-container-with-time.mat-datepicker-content-container-with-actions{max-height:none!important}.mat-datepicker-content-touch .mat-datepicker-content-container-with-actions{height:115vw}}\n'],
+  dependencies: [
+    NgClass,
+    NgIf,
+    MatButton,
+    CdkTrapFocus,
+    CdkPortalOutlet,
+    NgxMatTimepickerComponent,
+    NgControlStatus,
+    NgModel,
+    NgxMatCalendar,
+  ],
+  styles: [
+    '.mat-datepicker-content{display:block;border-radius:4px}.mat-datepicker-content .mat-calendar{width:296px;height:354px}.mat-datepicker-content .mat-datepicker-content-container-with-custom-header .mat-calendar{height:auto}.mat-datepicker-content .mat-datepicker-close-button{position:absolute;top:100%;left:0;margin-top:8px}.ng-animating .mat-datepicker-content .mat-datepicker-close-button{display:none}.mat-datepicker-content-container{display:flex;flex-direction:column;justify-content:space-between}.time-container{display:flex;position:relative;padding-top:5px;justify-content:center}.time-container.disable-seconds .ngx-mat-timepicker .table{margin-left:9px}.time-container:before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background-color:#0000001f}.mat-datepicker-content-touch{display:block;max-height:90vh;position:relative;overflow:visible}.mat-datepicker-content-touch .mat-datepicker-content-container{min-height:312px;max-height:815px;min-width:250px;max-width:750px}.mat-datepicker-content-touch .mat-calendar{width:100%;height:auto}@media all and (orientation: landscape){.mat-datepicker-content-touch .mat-datepicker-content-container{width:64vh;height:90vh}.mat-datepicker-content-touch .mat-datepicker-content-container.mat-datepicker-content-container-with-time{height:auto}}@media all and (orientation: portrait){.mat-datepicker-content-touch{max-height:100vh}.mat-datepicker-content-touch .mat-datepicker-content-container{width:80vw;height:100vw}.mat-datepicker-content-touch .mat-datepicker-content-container.mat-datepicker-content-container-with-time{height:auto;max-height:870px}.mat-datepicker-content-touch .mat-datepicker-content-container.mat-datepicker-content-container-with-time.mat-datepicker-content-container-with-actions{max-height:none!important}.mat-datepicker-content-touch .mat-datepicker-content-container-with-actions{height:115vw}}\n',
+  ],
   encapsulation: 2,
   data: {
-    animation: [ngxMatDatepickerAnimations.transformPanel, ngxMatDatepickerAnimations.fadeInCalendar]
+    animation: [
+      ngxMatDatepickerAnimations.transformPanel,
+      ngxMatDatepickerAnimations.fadeInCalendar,
+    ],
   },
-  changeDetection: 0
+  changeDetection: 0,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDatepickerContent, [{
-    type: Component,
-    args: [{
-      selector: "ngx-mat-datepicker-content",
-      host: {
-        "class": "mat-datepicker-content",
-        "[@transformPanel]": "_animationState",
-        "(@transformPanel.start)": "_handleAnimationEvent($event)",
-        "(@transformPanel.done)": "_handleAnimationEvent($event)",
-        "[class.mat-datepicker-content-touch]": "datepicker.touchUi",
-        "[class.mat-datepicker-content-touch-with-time]": "!datepicker.hideTime"
-      },
-      animations: [ngxMatDatepickerAnimations.transformPanel, ngxMatDatepickerAnimations.fadeInCalendar],
-      exportAs: "ngxMatDatepickerContent",
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      inputs: ["color"],
-      template: `<div cdkTrapFocus role="dialog" [attr.aria-modal]="true" [attr.aria-labelledby]="_dialogLabelId ?? undefined"\r
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDatepickerContent,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "ngx-mat-datepicker-content",
+              host: {
+                class: "mat-datepicker-content",
+                "[@transformPanel]": "_animationState",
+                "(@transformPanel.start)": "_handleAnimationEvent($event)",
+                "(@transformPanel.done)": "_handleAnimationEvent($event)",
+                "[class.mat-datepicker-content-touch]": "datepicker.touchUi",
+                "[class.mat-datepicker-content-touch-with-time]":
+                  "!datepicker.hideTime",
+              },
+              animations: [
+                ngxMatDatepickerAnimations.transformPanel,
+                ngxMatDatepickerAnimations.fadeInCalendar,
+              ],
+              exportAs: "ngxMatDatepickerContent",
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              inputs: ["color"],
+              template: `<div cdkTrapFocus role="dialog" [attr.aria-modal]="true" [attr.aria-labelledby]="_dialogLabelId ?? undefined"\r
   class="mat-datepicker-content-container"\r
   [class.mat-datepicker-content-container-with-custom-header]="datepicker.calendarHeaderComponent"\r
   [class.mat-datepicker-content-container-with-actions]="_actionsPortal"\r
@@ -5797,37 +8395,64 @@ NgxMatDatepickerContent.ɵcmp = ɵɵdefineComponent({
     (blur)="_closeButtonFocused = false" (click)="datepicker.close()">{{ _closeButtonText }}\r
   </button>\r
 </div>`,
-      styles: ['.mat-datepicker-content{display:block;border-radius:4px}.mat-datepicker-content .mat-calendar{width:296px;height:354px}.mat-datepicker-content .mat-datepicker-content-container-with-custom-header .mat-calendar{height:auto}.mat-datepicker-content .mat-datepicker-close-button{position:absolute;top:100%;left:0;margin-top:8px}.ng-animating .mat-datepicker-content .mat-datepicker-close-button{display:none}.mat-datepicker-content-container{display:flex;flex-direction:column;justify-content:space-between}.time-container{display:flex;position:relative;padding-top:5px;justify-content:center}.time-container.disable-seconds .ngx-mat-timepicker .table{margin-left:9px}.time-container:before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background-color:#0000001f}.mat-datepicker-content-touch{display:block;max-height:90vh;position:relative;overflow:visible}.mat-datepicker-content-touch .mat-datepicker-content-container{min-height:312px;max-height:815px;min-width:250px;max-width:750px}.mat-datepicker-content-touch .mat-calendar{width:100%;height:auto}@media all and (orientation: landscape){.mat-datepicker-content-touch .mat-datepicker-content-container{width:64vh;height:90vh}.mat-datepicker-content-touch .mat-datepicker-content-container.mat-datepicker-content-container-with-time{height:auto}}@media all and (orientation: portrait){.mat-datepicker-content-touch{max-height:100vh}.mat-datepicker-content-touch .mat-datepicker-content-container{width:80vw;height:100vw}.mat-datepicker-content-touch .mat-datepicker-content-container.mat-datepicker-content-container-with-time{height:auto;max-height:870px}.mat-datepicker-content-touch .mat-datepicker-content-container.mat-datepicker-content-container-with-time.mat-datepicker-content-container-with-actions{max-height:none!important}.mat-datepicker-content-touch .mat-datepicker-content-container-with-actions{height:115vw}}\n']
-    }]
-  }], function() {
-    return [{
-      type: ElementRef
-    }, {
-      type: ChangeDetectorRef
-    }, {
-      type: NgxMatDateSelectionModel
-    }, {
-      type: NgxMatDateAdapter
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Inject,
-        args: [NGX_MAT_DATE_RANGE_SELECTION_STRATEGY]
-      }]
-    }, {
-      type: NgxMatDatepickerIntl
-    }];
-  }, {
-    _calendar: [{
-      type: ViewChild,
-      args: [NgxMatCalendar]
-    }]
-  });
+              styles: [
+                '.mat-datepicker-content{display:block;border-radius:4px}.mat-datepicker-content .mat-calendar{width:296px;height:354px}.mat-datepicker-content .mat-datepicker-content-container-with-custom-header .mat-calendar{height:auto}.mat-datepicker-content .mat-datepicker-close-button{position:absolute;top:100%;left:0;margin-top:8px}.ng-animating .mat-datepicker-content .mat-datepicker-close-button{display:none}.mat-datepicker-content-container{display:flex;flex-direction:column;justify-content:space-between}.time-container{display:flex;position:relative;padding-top:5px;justify-content:center}.time-container.disable-seconds .ngx-mat-timepicker .table{margin-left:9px}.time-container:before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background-color:#0000001f}.mat-datepicker-content-touch{display:block;max-height:90vh;position:relative;overflow:visible}.mat-datepicker-content-touch .mat-datepicker-content-container{min-height:312px;max-height:815px;min-width:250px;max-width:750px}.mat-datepicker-content-touch .mat-calendar{width:100%;height:auto}@media all and (orientation: landscape){.mat-datepicker-content-touch .mat-datepicker-content-container{width:64vh;height:90vh}.mat-datepicker-content-touch .mat-datepicker-content-container.mat-datepicker-content-container-with-time{height:auto}}@media all and (orientation: portrait){.mat-datepicker-content-touch{max-height:100vh}.mat-datepicker-content-touch .mat-datepicker-content-container{width:80vw;height:100vw}.mat-datepicker-content-touch .mat-datepicker-content-container.mat-datepicker-content-container-with-time{height:auto;max-height:870px}.mat-datepicker-content-touch .mat-datepicker-content-container.mat-datepicker-content-container-with-time.mat-datepicker-content-container-with-actions{max-height:none!important}.mat-datepicker-content-touch .mat-datepicker-content-container-with-actions{height:115vw}}\n',
+              ],
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: ElementRef,
+          },
+          {
+            type: ChangeDetectorRef,
+          },
+          {
+            type: NgxMatDateSelectionModel,
+          },
+          {
+            type: NgxMatDateAdapter,
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_RANGE_SELECTION_STRATEGY],
+              },
+            ],
+          },
+          {
+            type: NgxMatDatepickerIntl,
+          },
+        ];
+      },
+      {
+        _calendar: [
+          {
+            type: ViewChild,
+            args: [NgxMatCalendar],
+          },
+        ],
+      },
+    );
 })();
 var NgxMatDatepickerBase = class {
-  constructor(_overlay, _ngZone, _viewContainerRef, scrollStrategy, _dateAdapter, _dir, _model) {
+  constructor(
+    _overlay,
+    _ngZone,
+    _viewContainerRef,
+    scrollStrategy,
+    _dateAdapter,
+    _dir,
+    _model,
+  ) {
     this._overlay = _overlay;
     this._ngZone = _ngZone;
     this._viewContainerRef = _viewContainerRef;
@@ -5865,14 +8490,22 @@ var NgxMatDatepickerBase = class {
   }
   /** The date to open the calendar to initially. */
   get startAt() {
-    return this._startAt || (this.datepickerInput ? this.datepickerInput.getStartValue() : null);
+    return (
+      this._startAt ||
+      (this.datepickerInput ? this.datepickerInput.getStartValue() : null)
+    );
   }
   set startAt(value) {
-    this._startAt = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    this._startAt = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
   }
   /** Color palette to use on the datepicker's calendar. */
   get color() {
-    return this._color || (this.datepickerInput ? this.datepickerInput.getThemePalette() : void 0);
+    return (
+      this._color ||
+      (this.datepickerInput ? this.datepickerInput.getThemePalette() : void 0)
+    );
   }
   set color(value) {
     this._color = value;
@@ -5895,7 +8528,9 @@ var NgxMatDatepickerBase = class {
   }
   /** Whether the datepicker pop-up should be disabled. */
   get disabled() {
-    return this._disabled === void 0 && this.datepickerInput ? this.datepickerInput.disabled : !!this._disabled;
+    return this._disabled === void 0 && this.datepickerInput
+      ? this.datepickerInput.disabled
+      : !!this._disabled;
   }
   set disabled(value) {
     const newValue = coerceBooleanProperty(value);
@@ -6041,11 +8676,15 @@ var NgxMatDatepickerBase = class {
    */
   registerInput(input) {
     if (this.datepickerInput) {
-      throw Error("A MatDatepicker can only be associated with a single input.");
+      throw Error(
+        "A MatDatepicker can only be associated with a single input.",
+      );
     }
     this._inputStateChanges.unsubscribe();
     this.datepickerInput = input;
-    this._inputStateChanges = input.stateChanges.subscribe(() => this.stateChanges.next(void 0));
+    this._inputStateChanges = input.stateChanges.subscribe(() =>
+      this.stateChanges.next(void 0),
+    );
     return this._model;
   }
   /**
@@ -6054,7 +8693,9 @@ var NgxMatDatepickerBase = class {
    */
   registerActions(portal) {
     if (this._actionsPortal) {
-      throw Error("A MatDatepicker can only be associated with a single actions row.");
+      throw Error(
+        "A MatDatepicker can only be associated with a single actions row.",
+      );
     }
     this._actionsPortal = portal;
     this._componentRef?.instance._assignActions(portal, true);
@@ -6071,11 +8712,17 @@ var NgxMatDatepickerBase = class {
   }
   /** Open the calendar. */
   open() {
-    if (this._opened || this.disabled || this._componentRef?.instance._isAnimating) {
+    if (
+      this._opened ||
+      this.disabled ||
+      this._componentRef?.instance._isAnimating
+    ) {
       return;
     }
     if (!this.datepickerInput) {
-      throw Error("Attempted to open an MatDatepicker with no associated input.");
+      throw Error(
+        "Attempted to open an MatDatepicker with no associated input.",
+      );
     }
     this._focusedElementBeforeOpen = _getFocusedElementPierceShadowDom();
     this._openOverlay();
@@ -6087,7 +8734,10 @@ var NgxMatDatepickerBase = class {
     if (!this._opened || this._componentRef?.instance._isAnimating) {
       return;
     }
-    const canRestoreFocus = this._restoreFocus && this._focusedElementBeforeOpen && typeof this._focusedElementBeforeOpen.focus === "function";
+    const canRestoreFocus =
+      this._restoreFocus &&
+      this._focusedElementBeforeOpen &&
+      typeof this._focusedElementBeforeOpen.focus === "function";
     const completeClose = () => {
       if (this._opened) {
         this._opened = false;
@@ -6095,14 +8745,16 @@ var NgxMatDatepickerBase = class {
       }
     };
     if (this._componentRef) {
-      const {
-        instance,
-        location
-      } = this._componentRef;
+      const { instance, location } = this._componentRef;
       instance._startExitAnimation();
       instance._animationDone.pipe(take(1)).subscribe(() => {
         const activeElement = this._document.activeElement;
-        if (canRestoreFocus && (!activeElement || activeElement === this._document.activeElement || location.nativeElement.contains(activeElement))) {
+        if (
+          canRestoreFocus &&
+          (!activeElement ||
+            activeElement === this._document.activeElement ||
+            location.nativeElement.contains(activeElement))
+        ) {
           this._focusedElementBeforeOpen.focus();
         }
         this._focusedElementBeforeOpen = null;
@@ -6130,15 +8782,29 @@ var NgxMatDatepickerBase = class {
   _openOverlay() {
     this._destroyOverlay();
     const isDialog = this.touchUi;
-    const portal = new ComponentPortal(NgxMatDatepickerContent, this._viewContainerRef);
-    const overlayRef = this._overlayRef = this._overlay.create(new OverlayConfig({
-      positionStrategy: isDialog ? this._getDialogStrategy() : this._getDropdownStrategy(),
-      hasBackdrop: true,
-      backdropClass: [isDialog ? "cdk-overlay-dark-backdrop" : "mat-overlay-transparent-backdrop", this._backdropHarnessClass],
-      direction: this._dir,
-      scrollStrategy: isDialog ? this._overlay.scrollStrategies.block() : this._scrollStrategy(),
-      panelClass: `mat-datepicker-${isDialog ? "dialog" : "popup"}`
-    }));
+    const portal = new ComponentPortal(
+      NgxMatDatepickerContent,
+      this._viewContainerRef,
+    );
+    const overlayRef = (this._overlayRef = this._overlay.create(
+      new OverlayConfig({
+        positionStrategy: isDialog
+          ? this._getDialogStrategy()
+          : this._getDropdownStrategy(),
+        hasBackdrop: true,
+        backdropClass: [
+          isDialog
+            ? "cdk-overlay-dark-backdrop"
+            : "mat-overlay-transparent-backdrop",
+          this._backdropHarnessClass,
+        ],
+        direction: this._dir,
+        scrollStrategy: isDialog
+          ? this._overlay.scrollStrategies.block()
+          : this._scrollStrategy(),
+        panelClass: `mat-datepicker-${isDialog ? "dialog" : "popup"}`,
+      }),
+    ));
     this._getCloseStream(overlayRef).subscribe((event) => {
       if (event) {
         event.preventDefault();
@@ -6147,14 +8813,23 @@ var NgxMatDatepickerBase = class {
     });
     overlayRef.keydownEvents().subscribe((event) => {
       const keyCode = event.keyCode;
-      if (keyCode === UP_ARROW || keyCode === DOWN_ARROW || keyCode === LEFT_ARROW || keyCode === RIGHT_ARROW || keyCode === PAGE_UP || keyCode === PAGE_DOWN) {
+      if (
+        keyCode === UP_ARROW ||
+        keyCode === DOWN_ARROW ||
+        keyCode === LEFT_ARROW ||
+        keyCode === RIGHT_ARROW ||
+        keyCode === PAGE_UP ||
+        keyCode === PAGE_DOWN
+      ) {
         event.preventDefault();
       }
     });
     this._componentRef = overlayRef.attach(portal);
     this._forwardContentValues(this._componentRef.instance);
     if (!isDialog) {
-      this._ngZone.onStable.pipe(take(1)).subscribe(() => overlayRef.updatePosition());
+      this._ngZone.onStable
+        .pipe(take(1))
+        .subscribe(() => overlayRef.updatePosition());
     }
   }
   /** Destroys the current overlay. */
@@ -6166,11 +8841,21 @@ var NgxMatDatepickerBase = class {
   }
   /** Gets a position strategy that will open the calendar as a dropdown. */
   _getDialogStrategy() {
-    return this._overlay.position().global().centerHorizontally().centerVertically();
+    return this._overlay
+      .position()
+      .global()
+      .centerHorizontally()
+      .centerVertically();
   }
   /** Gets a position strategy that will open the calendar as a dropdown. */
   _getDropdownStrategy() {
-    const strategy = this._overlay.position().flexibleConnectedTo(this.datepickerInput.getConnectedOverlayOrigin()).withTransformOriginOn(".mat-datepicker-content").withFlexibleDimensions(false).withViewportMargin(8).withLockedPosition();
+    const strategy = this._overlay
+      .position()
+      .flexibleConnectedTo(this.datepickerInput.getConnectedOverlayOrigin())
+      .withTransformOriginOn(".mat-datepicker-content")
+      .withFlexibleDimensions(false)
+      .withViewportMargin(8)
+      .withLockedPosition();
     return this._setConnectedPositions(strategy);
   }
   /** Sets the positions of the datepicker in dropdown mode based on the current configuration. */
@@ -6179,38 +8864,65 @@ var NgxMatDatepickerBase = class {
     const secondaryX = primaryX === "start" ? "end" : "start";
     const primaryY = this.yPosition === "above" ? "bottom" : "top";
     const secondaryY = primaryY === "top" ? "bottom" : "top";
-    return strategy.withPositions([{
-      originX: primaryX,
-      originY: secondaryY,
-      overlayX: primaryX,
-      overlayY: primaryY
-    }, {
-      originX: primaryX,
-      originY: primaryY,
-      overlayX: primaryX,
-      overlayY: secondaryY
-    }, {
-      originX: secondaryX,
-      originY: secondaryY,
-      overlayX: secondaryX,
-      overlayY: primaryY
-    }, {
-      originX: secondaryX,
-      originY: primaryY,
-      overlayX: secondaryX,
-      overlayY: secondaryY
-    }]);
+    return strategy.withPositions([
+      {
+        originX: primaryX,
+        originY: secondaryY,
+        overlayX: primaryX,
+        overlayY: primaryY,
+      },
+      {
+        originX: primaryX,
+        originY: primaryY,
+        overlayX: primaryX,
+        overlayY: secondaryY,
+      },
+      {
+        originX: secondaryX,
+        originY: secondaryY,
+        overlayX: secondaryX,
+        overlayY: primaryY,
+      },
+      {
+        originX: secondaryX,
+        originY: primaryY,
+        overlayX: secondaryX,
+        overlayY: secondaryY,
+      },
+    ]);
   }
   /** Gets an observable that will emit when the overlay is supposed to be closed. */
   _getCloseStream(overlayRef) {
     const ctrlShiftMetaModifiers = ["ctrlKey", "shiftKey", "metaKey"];
-    return merge(overlayRef.backdropClick(), overlayRef.detachments(), overlayRef.keydownEvents().pipe(filter((event) => {
-      return event.keyCode === ESCAPE && !hasModifierKey(event) || this.datepickerInput && hasModifierKey(event, "altKey") && event.keyCode === UP_ARROW && ctrlShiftMetaModifiers.every((modifier) => !hasModifierKey(event, modifier));
-    })));
+    return merge(
+      overlayRef.backdropClick(),
+      overlayRef.detachments(),
+      overlayRef.keydownEvents().pipe(
+        filter((event) => {
+          return (
+            (event.keyCode === ESCAPE && !hasModifierKey(event)) ||
+            (this.datepickerInput &&
+              hasModifierKey(event, "altKey") &&
+              event.keyCode === UP_ARROW &&
+              ctrlShiftMetaModifiers.every(
+                (modifier) => !hasModifierKey(event, modifier),
+              ))
+          );
+        }),
+      ),
+    );
   }
 };
 NgxMatDatepickerBase.ɵfac = function NgxMatDatepickerBase_Factory(t) {
-  return new (t || NgxMatDatepickerBase)(ɵɵdirectiveInject(Overlay), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(NGX_MAT_DATEPICKER_SCROLL_STRATEGY), ɵɵdirectiveInject(NgxMatDateAdapter, 8), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(NgxMatDateSelectionModel));
+  return new (t || NgxMatDatepickerBase)(
+    ɵɵdirectiveInject(Overlay),
+    ɵɵdirectiveInject(NgZone),
+    ɵɵdirectiveInject(ViewContainerRef),
+    ɵɵdirectiveInject(NGX_MAT_DATEPICKER_SCROLL_STRATEGY),
+    ɵɵdirectiveInject(NgxMatDateAdapter, 8),
+    ɵɵdirectiveInject(Directionality, 8),
+    ɵɵdirectiveInject(NgxMatDateSelectionModel),
+  );
 };
 NgxMatDatepickerBase.ɵdir = ɵɵdefineDirective({
   type: NgxMatDatepickerBase,
@@ -6235,128 +8947,202 @@ NgxMatDatepickerBase.ɵdir = ɵɵdefineDirective({
     stepSecond: "stepSecond",
     enableMeridian: "enableMeridian",
     disableMinute: "disableMinute",
-    defaultTime: "defaultTime"
+    defaultTime: "defaultTime",
   },
   outputs: {
     yearSelected: "yearSelected",
     monthSelected: "monthSelected",
     viewChanged: "viewChanged",
     openedStream: "opened",
-    closedStream: "closed"
+    closedStream: "closed",
   },
-  features: [ɵɵNgOnChangesFeature]
+  features: [ɵɵNgOnChangesFeature],
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDatepickerBase, [{
-    type: Directive
-  }], function() {
-    return [{
-      type: Overlay
-    }, {
-      type: NgZone
-    }, {
-      type: ViewContainerRef
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Inject,
-        args: [NGX_MAT_DATEPICKER_SCROLL_STRATEGY]
-      }]
-    }, {
-      type: NgxMatDateAdapter,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: Directionality,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: NgxMatDateSelectionModel
-    }];
-  }, {
-    calendarHeaderComponent: [{
-      type: Input
-    }],
-    startAt: [{
-      type: Input
-    }],
-    startView: [{
-      type: Input
-    }],
-    color: [{
-      type: Input
-    }],
-    touchUi: [{
-      type: Input
-    }],
-    hideTime: [{
-      type: Input
-    }],
-    disabled: [{
-      type: Input
-    }],
-    xPosition: [{
-      type: Input
-    }],
-    yPosition: [{
-      type: Input
-    }],
-    restoreFocus: [{
-      type: Input
-    }],
-    yearSelected: [{
-      type: Output
-    }],
-    monthSelected: [{
-      type: Output
-    }],
-    viewChanged: [{
-      type: Output
-    }],
-    dateClass: [{
-      type: Input
-    }],
-    openedStream: [{
-      type: Output,
-      args: ["opened"]
-    }],
-    closedStream: [{
-      type: Output,
-      args: ["closed"]
-    }],
-    panelClass: [{
-      type: Input
-    }],
-    opened: [{
-      type: Input
-    }],
-    showSpinners: [{
-      type: Input
-    }],
-    showSeconds: [{
-      type: Input
-    }],
-    stepHour: [{
-      type: Input
-    }],
-    stepMinute: [{
-      type: Input
-    }],
-    stepSecond: [{
-      type: Input
-    }],
-    enableMeridian: [{
-      type: Input
-    }],
-    disableMinute: [{
-      type: Input
-    }],
-    defaultTime: [{
-      type: Input
-    }]
-  });
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDatepickerBase,
+      [
+        {
+          type: Directive,
+        },
+      ],
+      function () {
+        return [
+          {
+            type: Overlay,
+          },
+          {
+            type: NgZone,
+          },
+          {
+            type: ViewContainerRef,
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Inject,
+                args: [NGX_MAT_DATEPICKER_SCROLL_STRATEGY],
+              },
+            ],
+          },
+          {
+            type: NgxMatDateAdapter,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: Directionality,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: NgxMatDateSelectionModel,
+          },
+        ];
+      },
+      {
+        calendarHeaderComponent: [
+          {
+            type: Input,
+          },
+        ],
+        startAt: [
+          {
+            type: Input,
+          },
+        ],
+        startView: [
+          {
+            type: Input,
+          },
+        ],
+        color: [
+          {
+            type: Input,
+          },
+        ],
+        touchUi: [
+          {
+            type: Input,
+          },
+        ],
+        hideTime: [
+          {
+            type: Input,
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+          },
+        ],
+        xPosition: [
+          {
+            type: Input,
+          },
+        ],
+        yPosition: [
+          {
+            type: Input,
+          },
+        ],
+        restoreFocus: [
+          {
+            type: Input,
+          },
+        ],
+        yearSelected: [
+          {
+            type: Output,
+          },
+        ],
+        monthSelected: [
+          {
+            type: Output,
+          },
+        ],
+        viewChanged: [
+          {
+            type: Output,
+          },
+        ],
+        dateClass: [
+          {
+            type: Input,
+          },
+        ],
+        openedStream: [
+          {
+            type: Output,
+            args: ["opened"],
+          },
+        ],
+        closedStream: [
+          {
+            type: Output,
+            args: ["closed"],
+          },
+        ],
+        panelClass: [
+          {
+            type: Input,
+          },
+        ],
+        opened: [
+          {
+            type: Input,
+          },
+        ],
+        showSpinners: [
+          {
+            type: Input,
+          },
+        ],
+        showSeconds: [
+          {
+            type: Input,
+          },
+        ],
+        stepHour: [
+          {
+            type: Input,
+          },
+        ],
+        stepMinute: [
+          {
+            type: Input,
+          },
+        ],
+        stepSecond: [
+          {
+            type: Input,
+          },
+        ],
+        enableMeridian: [
+          {
+            type: Input,
+          },
+        ],
+        disableMinute: [
+          {
+            type: Input,
+          },
+        ],
+        defaultTime: [
+          {
+            type: Input,
+          },
+        ],
+      },
+    );
 })();
 var NgxMatDateRangePicker = class extends NgxMatDatepickerBase {
   _forwardContentValues(instance) {
@@ -6373,78 +9159,124 @@ var NgxMatDateRangePicker = class extends NgxMatDatepickerBase {
 NgxMatDateRangePicker.ɵfac = /* @__PURE__ */ (() => {
   let ɵNgxMatDateRangePicker_BaseFactory;
   return function NgxMatDateRangePicker_Factory(t) {
-    return (ɵNgxMatDateRangePicker_BaseFactory || (ɵNgxMatDateRangePicker_BaseFactory = ɵɵgetInheritedFactory(NgxMatDateRangePicker)))(t || NgxMatDateRangePicker);
+    return (
+      ɵNgxMatDateRangePicker_BaseFactory ||
+      (ɵNgxMatDateRangePicker_BaseFactory = ɵɵgetInheritedFactory(
+        NgxMatDateRangePicker,
+      ))
+    )(t || NgxMatDateRangePicker);
   };
 })();
 NgxMatDateRangePicker.ɵcmp = ɵɵdefineComponent({
   type: NgxMatDateRangePicker,
   selectors: [["ngx-mat-date-range-picker"]],
   exportAs: ["ngxMatDateRangePicker"],
-  features: [ɵɵProvidersFeature([NGX_MAT_RANGE_DATE_SELECTION_MODEL_PROVIDER, NGX_MAT_CALENDAR_RANGE_STRATEGY_PROVIDER, {
-    provide: NgxMatDatepickerBase,
-    useExisting: NgxMatDateRangePicker
-  }]), ɵɵInheritDefinitionFeature],
+  features: [
+    ɵɵProvidersFeature([
+      NGX_MAT_RANGE_DATE_SELECTION_MODEL_PROVIDER,
+      NGX_MAT_CALENDAR_RANGE_STRATEGY_PROVIDER,
+      {
+        provide: NgxMatDatepickerBase,
+        useExisting: NgxMatDateRangePicker,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
   decls: 0,
   vars: 0,
-  template: function NgxMatDateRangePicker_Template(rf, ctx) {
-  },
+  template: function NgxMatDateRangePicker_Template(rf, ctx) {},
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDateRangePicker, [{
-    type: Component,
-    args: [{
-      selector: "ngx-mat-date-range-picker",
-      template: "",
-      exportAs: "ngxMatDateRangePicker",
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None,
-      providers: [NGX_MAT_RANGE_DATE_SELECTION_MODEL_PROVIDER, NGX_MAT_CALENDAR_RANGE_STRATEGY_PROVIDER, {
-        provide: NgxMatDatepickerBase,
-        useExisting: NgxMatDateRangePicker
-      }]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDateRangePicker,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "ngx-mat-date-range-picker",
+              template: "",
+              exportAs: "ngxMatDateRangePicker",
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              encapsulation: ViewEncapsulation$1.None,
+              providers: [
+                NGX_MAT_RANGE_DATE_SELECTION_MODEL_PROVIDER,
+                NGX_MAT_CALENDAR_RANGE_STRATEGY_PROVIDER,
+                {
+                  provide: NgxMatDatepickerBase,
+                  useExisting: NgxMatDateRangePicker,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var NgxMatDatetimepicker = class extends NgxMatDatepickerBase {
-};
+var NgxMatDatetimepicker = class extends NgxMatDatepickerBase {};
 NgxMatDatetimepicker.ɵfac = /* @__PURE__ */ (() => {
   let ɵNgxMatDatetimepicker_BaseFactory;
   return function NgxMatDatetimepicker_Factory(t) {
-    return (ɵNgxMatDatetimepicker_BaseFactory || (ɵNgxMatDatetimepicker_BaseFactory = ɵɵgetInheritedFactory(NgxMatDatetimepicker)))(t || NgxMatDatetimepicker);
+    return (
+      ɵNgxMatDatetimepicker_BaseFactory ||
+      (ɵNgxMatDatetimepicker_BaseFactory =
+        ɵɵgetInheritedFactory(NgxMatDatetimepicker))
+    )(t || NgxMatDatetimepicker);
   };
 })();
 NgxMatDatetimepicker.ɵcmp = ɵɵdefineComponent({
   type: NgxMatDatetimepicker,
   selectors: [["ngx-mat-datetime-picker"]],
   exportAs: ["ngxMatDatetimePicker"],
-  features: [ɵɵProvidersFeature([NGX_MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER, {
-    provide: NgxMatDatepickerBase,
-    useExisting: NgxMatDatetimepicker
-  }]), ɵɵInheritDefinitionFeature],
+  features: [
+    ɵɵProvidersFeature([
+      NGX_MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER,
+      {
+        provide: NgxMatDatepickerBase,
+        useExisting: NgxMatDatetimepicker,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
   decls: 0,
   vars: 0,
-  template: function NgxMatDatetimepicker_Template(rf, ctx) {
-  },
+  template: function NgxMatDatetimepicker_Template(rf, ctx) {},
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDatetimepicker, [{
-    type: Component,
-    args: [{
-      selector: "ngx-mat-datetime-picker",
-      template: "",
-      exportAs: "ngxMatDatetimePicker",
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None,
-      providers: [NGX_MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER, {
-        provide: NgxMatDatepickerBase,
-        useExisting: NgxMatDatetimepicker
-      }]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDatetimepicker,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "ngx-mat-datetime-picker",
+              template: "",
+              exportAs: "ngxMatDatetimePicker",
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              encapsulation: ViewEncapsulation$1.None,
+              providers: [
+                NGX_MAT_SINGLE_DATE_SELECTION_MODEL_PROVIDER,
+                {
+                  provide: NgxMatDatepickerBase,
+                  useExisting: NgxMatDatetimepicker,
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var NgxMatDatepickerApply = class {
   constructor(_datepicker) {
@@ -6456,33 +9288,53 @@ var NgxMatDatepickerApply = class {
   }
 };
 NgxMatDatepickerApply.ɵfac = function NgxMatDatepickerApply_Factory(t) {
-  return new (t || NgxMatDatepickerApply)(ɵɵdirectiveInject(NgxMatDatepickerBase));
+  return new (t || NgxMatDatepickerApply)(
+    ɵɵdirectiveInject(NgxMatDatepickerBase),
+  );
 };
 NgxMatDatepickerApply.ɵdir = ɵɵdefineDirective({
   type: NgxMatDatepickerApply,
-  selectors: [["", "ngxMatDatepickerApply", ""], ["", "ngxMatDateRangePickerApply", ""]],
+  selectors: [
+    ["", "ngxMatDatepickerApply", ""],
+    ["", "ngxMatDateRangePickerApply", ""],
+  ],
   hostBindings: function NgxMatDatepickerApply_HostBindings(rf, ctx) {
     if (rf & 1) {
-      ɵɵlistener("click", function NgxMatDatepickerApply_click_HostBindingHandler() {
-        return ctx._applySelection();
-      });
+      ɵɵlistener(
+        "click",
+        function NgxMatDatepickerApply_click_HostBindingHandler() {
+          return ctx._applySelection();
+        },
+      );
     }
-  }
+  },
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDatepickerApply, [{
-    type: Directive,
-    args: [{
-      selector: "[ngxMatDatepickerApply], [ngxMatDateRangePickerApply]",
-      host: {
-        "(click)": "_applySelection()"
-      }
-    }]
-  }], function() {
-    return [{
-      type: NgxMatDatepickerBase
-    }];
-  }, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDatepickerApply,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[ngxMatDatepickerApply], [ngxMatDateRangePickerApply]",
+              host: {
+                "(click)": "_applySelection()",
+              },
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: NgxMatDatepickerBase,
+          },
+        ];
+      },
+      null,
+    );
 })();
 var NgxMatDatepickerCancel = class {
   constructor(_datepicker) {
@@ -6490,33 +9342,54 @@ var NgxMatDatepickerCancel = class {
   }
 };
 NgxMatDatepickerCancel.ɵfac = function NgxMatDatepickerCancel_Factory(t) {
-  return new (t || NgxMatDatepickerCancel)(ɵɵdirectiveInject(NgxMatDatepickerBase));
+  return new (t || NgxMatDatepickerCancel)(
+    ɵɵdirectiveInject(NgxMatDatepickerBase),
+  );
 };
 NgxMatDatepickerCancel.ɵdir = ɵɵdefineDirective({
   type: NgxMatDatepickerCancel,
-  selectors: [["", "ngxMatDatepickerCancel", ""], ["", "ngxMatDateRangePickerCancel", ""]],
+  selectors: [
+    ["", "ngxMatDatepickerCancel", ""],
+    ["", "ngxMatDateRangePickerCancel", ""],
+  ],
   hostBindings: function NgxMatDatepickerCancel_HostBindings(rf, ctx) {
     if (rf & 1) {
-      ɵɵlistener("click", function NgxMatDatepickerCancel_click_HostBindingHandler() {
-        return ctx._datepicker.close();
-      });
+      ɵɵlistener(
+        "click",
+        function NgxMatDatepickerCancel_click_HostBindingHandler() {
+          return ctx._datepicker.close();
+        },
+      );
     }
-  }
+  },
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDatepickerCancel, [{
-    type: Directive,
-    args: [{
-      selector: "[ngxMatDatepickerCancel], [ngxMatDateRangePickerCancel]",
-      host: {
-        "(click)": "_datepicker.close()"
-      }
-    }]
-  }], function() {
-    return [{
-      type: NgxMatDatepickerBase
-    }];
-  }, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDatepickerCancel,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector:
+                "[ngxMatDatepickerCancel], [ngxMatDateRangePickerCancel]",
+              host: {
+                "(click)": "_datepicker.close()",
+              },
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: NgxMatDatepickerBase,
+          },
+        ];
+      },
+      null,
+    );
 })();
 var NgxMatDatepickerActions = class {
   constructor(_datepicker, _viewContainerRef) {
@@ -6535,18 +9408,24 @@ var NgxMatDatepickerActions = class {
   }
 };
 NgxMatDatepickerActions.ɵfac = function NgxMatDatepickerActions_Factory(t) {
-  return new (t || NgxMatDatepickerActions)(ɵɵdirectiveInject(NgxMatDatepickerBase), ɵɵdirectiveInject(ViewContainerRef));
+  return new (t || NgxMatDatepickerActions)(
+    ɵɵdirectiveInject(NgxMatDatepickerBase),
+    ɵɵdirectiveInject(ViewContainerRef),
+  );
 };
 NgxMatDatepickerActions.ɵcmp = ɵɵdefineComponent({
   type: NgxMatDatepickerActions,
-  selectors: [["ngx-mat-datepicker-actions"], ["ngx-mat-date-range-picker-actions"]],
+  selectors: [
+    ["ngx-mat-datepicker-actions"],
+    ["ngx-mat-date-range-picker-actions"],
+  ],
   viewQuery: function NgxMatDatepickerActions_Query(rf, ctx) {
     if (rf & 1) {
       ɵɵviewQuery(TemplateRef, 5);
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._template = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._template = _t.first);
     }
   },
   ngContentSelectors: _c1,
@@ -6556,51 +9435,77 @@ NgxMatDatepickerActions.ɵcmp = ɵɵdefineComponent({
   template: function NgxMatDatepickerActions_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵprojectionDef();
-      ɵɵtemplate(0, NgxMatDatepickerActions_ng_template_0_Template, 2, 0, "ng-template");
+      ɵɵtemplate(
+        0,
+        NgxMatDatepickerActions_ng_template_0_Template,
+        2,
+        0,
+        "ng-template",
+      );
     }
   },
-  styles: [".mat-datepicker-actions{display:flex;justify-content:flex-end;align-items:center;padding:8px}.mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:8px}[dir=rtl] .mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:0;margin-right:8px}\n"],
+  styles: [
+    ".mat-datepicker-actions{display:flex;justify-content:flex-end;align-items:center;padding:8px}.mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:8px}[dir=rtl] .mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:0;margin-right:8px}\n",
+  ],
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDatepickerActions, [{
-    type: Component,
-    args: [{
-      selector: "ngx-mat-datepicker-actions, ngx-mat-date-range-picker-actions",
-      template: `
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDatepickerActions,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector:
+                "ngx-mat-datepicker-actions, ngx-mat-date-range-picker-actions",
+              template: `
     <ng-template>
       <div class="mat-datepicker-actions">
         <ng-content></ng-content>
       </div>
     </ng-template>
   `,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None,
-      styles: [".mat-datepicker-actions{display:flex;justify-content:flex-end;align-items:center;padding:8px}.mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:8px}[dir=rtl] .mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:0;margin-right:8px}\n"]
-    }]
-  }], function() {
-    return [{
-      type: NgxMatDatepickerBase
-    }, {
-      type: ViewContainerRef
-    }];
-  }, {
-    _template: [{
-      type: ViewChild,
-      args: [TemplateRef]
-    }]
-  });
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              encapsulation: ViewEncapsulation$1.None,
+              styles: [
+                ".mat-datepicker-actions{display:flex;justify-content:flex-end;align-items:center;padding:8px}.mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:8px}[dir=rtl] .mat-datepicker-actions .mat-mdc-button-base+.mat-mdc-button-base{margin-left:0;margin-right:8px}\n",
+              ],
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: NgxMatDatepickerBase,
+          },
+          {
+            type: ViewContainerRef,
+          },
+        ];
+      },
+      {
+        _template: [
+          {
+            type: ViewChild,
+            args: [TemplateRef],
+          },
+        ],
+      },
+    );
 })();
 var NGX_MAT_DATEPICKER_VALUE_ACCESSOR = {
   provide: NG_VALUE_ACCESSOR,
   useExisting: forwardRef(() => NgxMatDatepickerInput),
-  multi: true
+  multi: true,
 };
 var NGX_MAT_DATEPICKER_VALIDATORS = {
   provide: NG_VALIDATORS,
   useExisting: forwardRef(() => NgxMatDatepickerInput),
-  multi: true
+  multi: true,
 };
 var NgxMatDatepickerInput = class extends NgxMatDatepickerInputBase {
   constructor(elementRef, dateAdapter, dateFormats, _formField) {
@@ -6613,7 +9518,9 @@ var NgxMatDatepickerInput = class extends NgxMatDatepickerInputBase {
   set ngxMatDatetimePicker(datepicker) {
     if (datepicker) {
       this._datepicker = datepicker;
-      this._closedSubscription = datepicker.closedStream.subscribe(() => this._onTouched());
+      this._closedSubscription = datepicker.closedStream.subscribe(() =>
+        this._onTouched(),
+      );
       this._registerModel(datepicker.registerInput(this));
     }
   }
@@ -6622,7 +9529,9 @@ var NgxMatDatepickerInput = class extends NgxMatDatepickerInputBase {
     return this._min;
   }
   set min(value) {
-    const validValue = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    const validValue = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
     if (!this._dateAdapter.sameDate(validValue, this._min)) {
       this._min = validValue;
       this._validatorOnChange();
@@ -6633,7 +9542,9 @@ var NgxMatDatepickerInput = class extends NgxMatDatepickerInputBase {
     return this._max;
   }
   set max(value) {
-    const validValue = this._dateAdapter.getValidDateOrNull(this._dateAdapter.deserialize(value));
+    const validValue = this._dateAdapter.getValidDateOrNull(
+      this._dateAdapter.deserialize(value),
+    );
     if (!this._dateAdapter.sameDate(validValue, this._max)) {
       this._max = validValue;
       this._validatorOnChange();
@@ -6655,7 +9566,9 @@ var NgxMatDatepickerInput = class extends NgxMatDatepickerInputBase {
    * @return The element to connect the popup to.
    */
   getConnectedOverlayOrigin() {
-    return this._formField ? this._formField.getConnectedOverlayOrigin() : this._elementRef;
+    return this._formField
+      ? this._formField.getConnectedOverlayOrigin()
+      : this._elementRef;
   }
   /** Gets the ID of an element that should be used a description for the calendar overlay. */
   getOverlayLabelId() {
@@ -6707,7 +9620,12 @@ var NgxMatDatepickerInput = class extends NgxMatDatepickerInputBase {
   }
 };
 NgxMatDatepickerInput.ɵfac = function NgxMatDatepickerInput_Factory(t) {
-  return new (t || NgxMatDatepickerInput)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NgxMatDateAdapter, 8), ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8), ɵɵdirectiveInject(MAT_FORM_FIELD, 8));
+  return new (t || NgxMatDatepickerInput)(
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵdirectiveInject(NgxMatDateAdapter, 8),
+    ɵɵdirectiveInject(NGX_MAT_DATE_FORMATS, 8),
+    ɵɵdirectiveInject(MAT_FORM_FIELD, 8),
+  );
 };
 NgxMatDatepickerInput.ɵdir = ɵɵdefineDirective({
   type: NgxMatDatepickerInput,
@@ -6716,116 +9634,185 @@ NgxMatDatepickerInput.ɵdir = ɵɵdefineDirective({
   hostVars: 6,
   hostBindings: function NgxMatDatepickerInput_HostBindings(rf, ctx) {
     if (rf & 1) {
-      ɵɵlistener("input", function NgxMatDatepickerInput_input_HostBindingHandler($event) {
-        return ctx._onInput($event.target.value);
-      })("change", function NgxMatDatepickerInput_change_HostBindingHandler() {
+      ɵɵlistener(
+        "input",
+        function NgxMatDatepickerInput_input_HostBindingHandler($event) {
+          return ctx._onInput($event.target.value);
+        },
+      )("change", function NgxMatDatepickerInput_change_HostBindingHandler() {
         return ctx._onChange();
       })("blur", function NgxMatDatepickerInput_blur_HostBindingHandler() {
         return ctx._onBlur();
-      })("keydown", function NgxMatDatepickerInput_keydown_HostBindingHandler($event) {
-        return ctx._onKeydown($event);
-      });
+      })(
+        "keydown",
+        function NgxMatDatepickerInput_keydown_HostBindingHandler($event) {
+          return ctx._onKeydown($event);
+        },
+      );
     }
     if (rf & 2) {
       ɵɵhostProperty("disabled", ctx.disabled);
-      ɵɵattribute("aria-haspopup", ctx._datepicker ? "dialog" : null)("aria-owns", (ctx._datepicker == null ? null : ctx._datepicker.opened) && ctx._datepicker.id || null)("min", ctx.min ? ctx._dateAdapter.toIso8601(ctx.min) : null)("max", ctx.max ? ctx._dateAdapter.toIso8601(ctx.max) : null)("data-mat-calendar", ctx._datepicker ? ctx._datepicker.id : null);
+      ɵɵattribute("aria-haspopup", ctx._datepicker ? "dialog" : null)(
+        "aria-owns",
+        ((ctx._datepicker == null ? null : ctx._datepicker.opened) &&
+          ctx._datepicker.id) ||
+          null,
+      )("min", ctx.min ? ctx._dateAdapter.toIso8601(ctx.min) : null)(
+        "max",
+        ctx.max ? ctx._dateAdapter.toIso8601(ctx.max) : null,
+      )("data-mat-calendar", ctx._datepicker ? ctx._datepicker.id : null);
     }
   },
   inputs: {
     ngxMatDatetimePicker: "ngxMatDatetimePicker",
     min: "min",
     max: "max",
-    dateFilter: [InputFlags.None, "matDatepickerFilter", "dateFilter"]
+    dateFilter: [InputFlags.None, "matDatepickerFilter", "dateFilter"],
   },
   exportAs: ["ngxMatDatepickerInput"],
-  features: [ɵɵProvidersFeature([NGX_MAT_DATEPICKER_VALUE_ACCESSOR, NGX_MAT_DATEPICKER_VALIDATORS, {
-    provide: MAT_INPUT_VALUE_ACCESSOR,
-    useExisting: NgxMatDatepickerInput
-  }]), ɵɵInheritDefinitionFeature]
+  features: [
+    ɵɵProvidersFeature([
+      NGX_MAT_DATEPICKER_VALUE_ACCESSOR,
+      NGX_MAT_DATEPICKER_VALIDATORS,
+      {
+        provide: MAT_INPUT_VALUE_ACCESSOR,
+        useExisting: NgxMatDatepickerInput,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDatepickerInput, [{
-    type: Directive,
-    args: [{
-      selector: "input[ngxMatDatetimePicker]",
-      providers: [NGX_MAT_DATEPICKER_VALUE_ACCESSOR, NGX_MAT_DATEPICKER_VALIDATORS, {
-        provide: MAT_INPUT_VALUE_ACCESSOR,
-        useExisting: NgxMatDatepickerInput
-      }],
-      host: {
-        "class": "mat-datepicker-input",
-        "[attr.aria-haspopup]": '_datepicker ? "dialog" : null',
-        "[attr.aria-owns]": "(_datepicker?.opened && _datepicker.id) || null",
-        "[attr.min]": "min ? _dateAdapter.toIso8601(min) : null",
-        "[attr.max]": "max ? _dateAdapter.toIso8601(max) : null",
-        // Used by the test harness to tie this input to its calendar. We can't depend on
-        // `aria-owns` for this, because it's only defined while the calendar is open.
-        "[attr.data-mat-calendar]": "_datepicker ? _datepicker.id : null",
-        "[disabled]": "disabled",
-        "(input)": "_onInput($event.target.value)",
-        "(change)": "_onChange()",
-        "(blur)": "_onBlur()",
-        "(keydown)": "_onKeydown($event)"
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDatepickerInput,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "input[ngxMatDatetimePicker]",
+              providers: [
+                NGX_MAT_DATEPICKER_VALUE_ACCESSOR,
+                NGX_MAT_DATEPICKER_VALIDATORS,
+                {
+                  provide: MAT_INPUT_VALUE_ACCESSOR,
+                  useExisting: NgxMatDatepickerInput,
+                },
+              ],
+              host: {
+                class: "mat-datepicker-input",
+                "[attr.aria-haspopup]": '_datepicker ? "dialog" : null',
+                "[attr.aria-owns]":
+                  "(_datepicker?.opened && _datepicker.id) || null",
+                "[attr.min]": "min ? _dateAdapter.toIso8601(min) : null",
+                "[attr.max]": "max ? _dateAdapter.toIso8601(max) : null",
+                // Used by the test harness to tie this input to its calendar. We can't depend on
+                // `aria-owns` for this, because it's only defined while the calendar is open.
+                "[attr.data-mat-calendar]":
+                  "_datepicker ? _datepicker.id : null",
+                "[disabled]": "disabled",
+                "(input)": "_onInput($event.target.value)",
+                "(change)": "_onChange()",
+                "(blur)": "_onBlur()",
+                "(keydown)": "_onKeydown($event)",
+              },
+              exportAs: "ngxMatDatepickerInput",
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: ElementRef,
+          },
+          {
+            type: NgxMatDateAdapter,
+            decorators: [
+              {
+                type: Optional,
+              },
+            ],
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Inject,
+                args: [NGX_MAT_DATE_FORMATS],
+              },
+            ],
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Optional,
+              },
+              {
+                type: Inject,
+                args: [MAT_FORM_FIELD],
+              },
+            ],
+          },
+        ];
       },
-      exportAs: "ngxMatDatepickerInput"
-    }]
-  }], function() {
-    return [{
-      type: ElementRef
-    }, {
-      type: NgxMatDateAdapter,
-      decorators: [{
-        type: Optional
-      }]
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Inject,
-        args: [NGX_MAT_DATE_FORMATS]
-      }]
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Optional
-      }, {
-        type: Inject,
-        args: [MAT_FORM_FIELD]
-      }]
-    }];
-  }, {
-    ngxMatDatetimePicker: [{
-      type: Input
-    }],
-    min: [{
-      type: Input
-    }],
-    max: [{
-      type: Input
-    }],
-    dateFilter: [{
-      type: Input,
-      args: ["matDatepickerFilter"]
-    }]
-  });
+      {
+        ngxMatDatetimePicker: [
+          {
+            type: Input,
+          },
+        ],
+        min: [
+          {
+            type: Input,
+          },
+        ],
+        max: [
+          {
+            type: Input,
+          },
+        ],
+        dateFilter: [
+          {
+            type: Input,
+            args: ["matDatepickerFilter"],
+          },
+        ],
+      },
+    );
 })();
-var NgxMatDatepickerToggleIcon = class {
-};
-NgxMatDatepickerToggleIcon.ɵfac = function NgxMatDatepickerToggleIcon_Factory(t) {
+var NgxMatDatepickerToggleIcon = class {};
+NgxMatDatepickerToggleIcon.ɵfac = function NgxMatDatepickerToggleIcon_Factory(
+  t,
+) {
   return new (t || NgxMatDatepickerToggleIcon)();
 };
 NgxMatDatepickerToggleIcon.ɵdir = ɵɵdefineDirective({
   type: NgxMatDatepickerToggleIcon,
-  selectors: [["", "ngxMatDatepickerToggleIcon", ""]]
+  selectors: [["", "ngxMatDatepickerToggleIcon", ""]],
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDatepickerToggleIcon, [{
-    type: Directive,
-    args: [{
-      selector: "[ngxMatDatepickerToggleIcon]"
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDatepickerToggleIcon,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[ngxMatDatepickerToggleIcon]",
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 var NgxMatDatepickerToggle = class {
   constructor(_intl, _changeDetectorRef, defaultTabIndex) {
@@ -6833,7 +9820,8 @@ var NgxMatDatepickerToggle = class {
     this._changeDetectorRef = _changeDetectorRef;
     this._stateChanges = Subscription.EMPTY;
     const parsedTabIndex = Number(defaultTabIndex);
-    this.tabIndex = parsedTabIndex || parsedTabIndex === 0 ? parsedTabIndex : null;
+    this.tabIndex =
+      parsedTabIndex || parsedTabIndex === 0 ? parsedTabIndex : null;
   }
   /** Whether the toggle button is disabled. */
   get disabled() {
@@ -6863,26 +9851,46 @@ var NgxMatDatepickerToggle = class {
     }
   }
   _watchStateChanges() {
-    const datepickerStateChanged = this.datepicker ? this.datepicker.stateChanges : of();
-    const inputStateChanged = this.datepicker && this.datepicker.datepickerInput ? this.datepicker.datepickerInput.stateChanges : of();
-    const datepickerToggled = this.datepicker ? merge(this.datepicker.openedStream, this.datepicker.closedStream) : of();
+    const datepickerStateChanged = this.datepicker
+      ? this.datepicker.stateChanges
+      : of();
+    const inputStateChanged =
+      this.datepicker && this.datepicker.datepickerInput
+        ? this.datepicker.datepickerInput.stateChanges
+        : of();
+    const datepickerToggled = this.datepicker
+      ? merge(this.datepicker.openedStream, this.datepicker.closedStream)
+      : of();
     this._stateChanges.unsubscribe();
-    this._stateChanges = merge(this._intl.changes, datepickerStateChanged, inputStateChanged, datepickerToggled).subscribe(() => this._changeDetectorRef.markForCheck());
+    this._stateChanges = merge(
+      this._intl.changes,
+      datepickerStateChanged,
+      inputStateChanged,
+      datepickerToggled,
+    ).subscribe(() => this._changeDetectorRef.markForCheck());
   }
 };
 NgxMatDatepickerToggle.ɵfac = function NgxMatDatepickerToggle_Factory(t) {
-  return new (t || NgxMatDatepickerToggle)(ɵɵdirectiveInject(NgxMatDatepickerIntl), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵinjectAttribute("tabindex"));
+  return new (t || NgxMatDatepickerToggle)(
+    ɵɵdirectiveInject(NgxMatDatepickerIntl),
+    ɵɵdirectiveInject(ChangeDetectorRef),
+    ɵɵinjectAttribute("tabindex"),
+  );
 };
 NgxMatDatepickerToggle.ɵcmp = ɵɵdefineComponent({
   type: NgxMatDatepickerToggle,
   selectors: [["ngx-mat-datepicker-toggle"]],
-  contentQueries: function NgxMatDatepickerToggle_ContentQueries(rf, ctx, dirIndex) {
+  contentQueries: function NgxMatDatepickerToggle_ContentQueries(
+    rf,
+    ctx,
+    dirIndex,
+  ) {
     if (rf & 1) {
       ɵɵcontentQuery(dirIndex, NgxMatDatepickerToggleIcon, 5);
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._customIcon = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._customIcon = _t.first);
     }
   },
   viewQuery: function NgxMatDatepickerToggle_Query(rf, ctx) {
@@ -6891,20 +9899,32 @@ NgxMatDatepickerToggle.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._button = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._button = _t.first);
     }
   },
   hostAttrs: [1, "mat-datepicker-toggle"],
   hostVars: 8,
   hostBindings: function NgxMatDatepickerToggle_HostBindings(rf, ctx) {
     if (rf & 1) {
-      ɵɵlistener("click", function NgxMatDatepickerToggle_click_HostBindingHandler($event) {
-        return ctx._open($event);
-      });
+      ɵɵlistener(
+        "click",
+        function NgxMatDatepickerToggle_click_HostBindingHandler($event) {
+          return ctx._open($event);
+        },
+      );
     }
     if (rf & 2) {
-      ɵɵattribute("tabindex", null)("data-mat-calendar", ctx.datepicker ? ctx.datepicker.id : null);
-      ɵɵclassProp("mat-datepicker-toggle-active", ctx.datepicker && ctx.datepicker.opened)("mat-accent", ctx.datepicker && ctx.datepicker.color === "accent")("mat-warn", ctx.datepicker && ctx.datepicker.color === "warn");
+      ɵɵattribute("tabindex", null)(
+        "data-mat-calendar",
+        ctx.datepicker ? ctx.datepicker.id : null,
+      );
+      ɵɵclassProp(
+        "mat-datepicker-toggle-active",
+        ctx.datepicker && ctx.datepicker.opened,
+      )("mat-accent", ctx.datepicker && ctx.datepicker.color === "accent")(
+        "mat-warn",
+        ctx.datepicker && ctx.datepicker.color === "warn",
+      );
     }
   },
   inputs: {
@@ -6912,14 +9932,51 @@ NgxMatDatepickerToggle.ɵcmp = ɵɵdefineComponent({
     tabIndex: "tabIndex",
     ariaLabel: [InputFlags.None, "aria-label", "ariaLabel"],
     disabled: "disabled",
-    disableRipple: "disableRipple"
+    disableRipple: "disableRipple",
   },
   exportAs: ["ngxMatDatepickerToggle"],
   features: [ɵɵNgOnChangesFeature],
   ngContentSelectors: _c6,
   decls: 4,
   vars: 6,
-  consts: [["button", ""], ["mat-icon-button", "", "type", "button", 3, "disabled", "disableRipple"], ["class", "mat-datepicker-toggle-default-icon", "viewBox", "0 0 24 24", "width", "24px", "height", "24px", "fill", "currentColor", "focusable", "false", 4, "ngIf"], ["viewBox", "0 0 24 24", "width", "24px", "height", "24px", "fill", "currentColor", "focusable", "false", 1, "mat-datepicker-toggle-default-icon"], ["d", "M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"]],
+  consts: [
+    ["button", ""],
+    ["mat-icon-button", "", "type", "button", 3, "disabled", "disableRipple"],
+    [
+      "class",
+      "mat-datepicker-toggle-default-icon",
+      "viewBox",
+      "0 0 24 24",
+      "width",
+      "24px",
+      "height",
+      "24px",
+      "fill",
+      "currentColor",
+      "focusable",
+      "false",
+      4,
+      "ngIf",
+    ],
+    [
+      "viewBox",
+      "0 0 24 24",
+      "width",
+      "24px",
+      "height",
+      "24px",
+      "fill",
+      "currentColor",
+      "focusable",
+      "false",
+      1,
+      "mat-datepicker-toggle-default-icon",
+    ],
+    [
+      "d",
+      "M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z",
+    ],
+  ],
   template: function NgxMatDatepickerToggle_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵprojectionDef(_c5);
@@ -6930,38 +9987,50 @@ NgxMatDatepickerToggle.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       ɵɵproperty("disabled", ctx.disabled)("disableRipple", ctx.disableRipple);
-      ɵɵattribute("aria-haspopup", ctx.datepicker ? "dialog" : null)("aria-label", ctx.ariaLabel || ctx._intl.openCalendarLabel)("tabindex", ctx.disabled ? -1 : ctx.tabIndex);
+      ɵɵattribute("aria-haspopup", ctx.datepicker ? "dialog" : null)(
+        "aria-label",
+        ctx.ariaLabel || ctx._intl.openCalendarLabel,
+      )("tabindex", ctx.disabled ? -1 : ctx.tabIndex);
       ɵɵadvance(2);
       ɵɵproperty("ngIf", !ctx._customIcon);
     }
   },
   dependencies: [NgIf, MatIconButton],
-  styles: [".mat-datepicker-toggle{pointer-events:auto}.cdk-high-contrast-active .mat-datepicker-toggle-default-icon{color:CanvasText}\n"],
+  styles: [
+    ".mat-datepicker-toggle{pointer-events:auto}.cdk-high-contrast-active .mat-datepicker-toggle-default-icon{color:CanvasText}\n",
+  ],
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDatepickerToggle, [{
-    type: Component,
-    args: [{
-      selector: "ngx-mat-datepicker-toggle",
-      host: {
-        "class": "mat-datepicker-toggle",
-        "[attr.tabindex]": "null",
-        "[class.mat-datepicker-toggle-active]": "datepicker && datepicker.opened",
-        "[class.mat-accent]": 'datepicker && datepicker.color === "accent"',
-        "[class.mat-warn]": 'datepicker && datepicker.color === "warn"',
-        // Used by the test harness to tie this toggle to its datepicker.
-        "[attr.data-mat-calendar]": "datepicker ? datepicker.id : null",
-        // Bind the `click` on the host, rather than the inner `button`, so that we can call
-        // `stopPropagation` on it without affecting the user's `click` handlers. We need to stop
-        // it so that the input doesn't get focused automatically by the form field (See #21836).
-        "(click)": "_open($event)"
-      },
-      exportAs: "ngxMatDatepickerToggle",
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      template: `<button\r
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDatepickerToggle,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "ngx-mat-datepicker-toggle",
+              host: {
+                class: "mat-datepicker-toggle",
+                "[attr.tabindex]": "null",
+                "[class.mat-datepicker-toggle-active]":
+                  "datepicker && datepicker.opened",
+                "[class.mat-accent]":
+                  'datepicker && datepicker.color === "accent"',
+                "[class.mat-warn]": 'datepicker && datepicker.color === "warn"',
+                // Used by the test harness to tie this toggle to its datepicker.
+                "[attr.data-mat-calendar]": "datepicker ? datepicker.id : null",
+                // Bind the `click` on the host, rather than the inner `button`, so that we can call
+                // `stopPropagation` on it without affecting the user's `click` handlers. We need to stop
+                // it so that the input doesn't get focused automatically by the form field (See #21836).
+                "(click)": "_open($event)",
+              },
+              exportAs: "ngxMatDatepickerToggle",
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              template: `<button\r
   #button\r
   mat-icon-button\r
   type="button"\r
@@ -6985,97 +10054,280 @@ NgxMatDatepickerToggle.ɵcmp = ɵɵdefineComponent({
   <ng-content select="[ngxMatDatepickerToggleIcon]"></ng-content>\r
 </button>\r
 `,
-      styles: [".mat-datepicker-toggle{pointer-events:auto}.cdk-high-contrast-active .mat-datepicker-toggle-default-icon{color:CanvasText}\n"]
-    }]
-  }], function() {
-    return [{
-      type: NgxMatDatepickerIntl
-    }, {
-      type: ChangeDetectorRef
-    }, {
-      type: void 0,
-      decorators: [{
-        type: Attribute,
-        args: ["tabindex"]
-      }]
-    }];
-  }, {
-    datepicker: [{
-      type: Input,
-      args: ["for"]
-    }],
-    tabIndex: [{
-      type: Input
-    }],
-    ariaLabel: [{
-      type: Input,
-      args: ["aria-label"]
-    }],
-    disabled: [{
-      type: Input
-    }],
-    disableRipple: [{
-      type: Input
-    }],
-    _customIcon: [{
-      type: ContentChild,
-      args: [NgxMatDatepickerToggleIcon]
-    }],
-    _button: [{
-      type: ViewChild,
-      args: ["button"]
-    }]
-  });
+              styles: [
+                ".mat-datepicker-toggle{pointer-events:auto}.cdk-high-contrast-active .mat-datepicker-toggle-default-icon{color:CanvasText}\n",
+              ],
+            },
+          ],
+        },
+      ],
+      function () {
+        return [
+          {
+            type: NgxMatDatepickerIntl,
+          },
+          {
+            type: ChangeDetectorRef,
+          },
+          {
+            type: void 0,
+            decorators: [
+              {
+                type: Attribute,
+                args: ["tabindex"],
+              },
+            ],
+          },
+        ];
+      },
+      {
+        datepicker: [
+          {
+            type: Input,
+            args: ["for"],
+          },
+        ],
+        tabIndex: [
+          {
+            type: Input,
+          },
+        ],
+        ariaLabel: [
+          {
+            type: Input,
+            args: ["aria-label"],
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+          },
+        ],
+        disableRipple: [
+          {
+            type: Input,
+          },
+        ],
+        _customIcon: [
+          {
+            type: ContentChild,
+            args: [NgxMatDatepickerToggleIcon],
+          },
+        ],
+        _button: [
+          {
+            type: ViewChild,
+            args: ["button"],
+          },
+        ],
+      },
+    );
 })();
-var NgxMatTimepickerModule = class {
-};
+var NgxMatTimepickerModule = class {};
 NgxMatTimepickerModule.ɵfac = function NgxMatTimepickerModule_Factory(t) {
   return new (t || NgxMatTimepickerModule)();
 };
 NgxMatTimepickerModule.ɵmod = ɵɵdefineNgModule({
   type: NgxMatTimepickerModule,
   declarations: [NgxMatTimepickerComponent],
-  imports: [CommonModule, MatInputModule, ReactiveFormsModule, FormsModule, MatIconModule, MatButtonModule],
-  exports: [NgxMatTimepickerComponent]
+  imports: [
+    CommonModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatIconModule,
+    MatButtonModule,
+  ],
+  exports: [NgxMatTimepickerComponent],
 });
 NgxMatTimepickerModule.ɵinj = ɵɵdefineInjector({
-  imports: [CommonModule, MatInputModule, ReactiveFormsModule, FormsModule, MatIconModule, MatButtonModule]
+  imports: [
+    CommonModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatIconModule,
+    MatButtonModule,
+  ],
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatTimepickerModule, [{
-    type: NgModule,
-    args: [{
-      imports: [CommonModule, MatInputModule, ReactiveFormsModule, FormsModule, MatIconModule, MatButtonModule],
-      exports: [NgxMatTimepickerComponent],
-      declarations: [NgxMatTimepickerComponent]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatTimepickerModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [
+                CommonModule,
+                MatInputModule,
+                ReactiveFormsModule,
+                FormsModule,
+                MatIconModule,
+                MatButtonModule,
+              ],
+              exports: [NgxMatTimepickerComponent],
+              declarations: [NgxMatTimepickerComponent],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
-var NgxMatDatetimePickerModule = class {
-};
-NgxMatDatetimePickerModule.ɵfac = function NgxMatDatetimePickerModule_Factory(t) {
+var NgxMatDatetimePickerModule = class {};
+NgxMatDatetimePickerModule.ɵfac = function NgxMatDatetimePickerModule_Factory(
+  t,
+) {
   return new (t || NgxMatDatetimePickerModule)();
 };
 NgxMatDatetimePickerModule.ɵmod = ɵɵdefineNgModule({
   type: NgxMatDatetimePickerModule,
-  declarations: [NgxMatCalendar, NgxMatCalendarBody, NgxMatDatetimepicker, NgxMatDatepickerContent, NgxMatDatepickerInput, NgxMatDatepickerToggle, NgxMatDatepickerToggleIcon, NgxMatMonthView, NgxMatYearView, NgxMatMultiYearView, NgxMatCalendarHeader, NgxMatDateRangeInput, NgxMatStartDate, NgxMatEndDate, NgxMatDateRangePicker, NgxMatDatepickerActions, NgxMatDatepickerCancel, NgxMatDatepickerApply],
-  imports: [CommonModule, MatButtonModule, OverlayModule, A11yModule, PortalModule, MatCommonModule, NgxMatTimepickerModule, FormsModule, ReactiveFormsModule],
-  exports: [CdkScrollableModule, NgxMatCalendar, NgxMatCalendarBody, NgxMatDatetimepicker, NgxMatDatepickerContent, NgxMatDatepickerInput, NgxMatDatepickerToggle, NgxMatDatepickerToggleIcon, NgxMatMonthView, NgxMatYearView, NgxMatMultiYearView, NgxMatCalendarHeader, NgxMatDateRangeInput, NgxMatStartDate, NgxMatEndDate, NgxMatDateRangePicker, NgxMatDatepickerActions, NgxMatDatepickerCancel, NgxMatDatepickerApply]
+  declarations: [
+    NgxMatCalendar,
+    NgxMatCalendarBody,
+    NgxMatDatetimepicker,
+    NgxMatDatepickerContent,
+    NgxMatDatepickerInput,
+    NgxMatDatepickerToggle,
+    NgxMatDatepickerToggleIcon,
+    NgxMatMonthView,
+    NgxMatYearView,
+    NgxMatMultiYearView,
+    NgxMatCalendarHeader,
+    NgxMatDateRangeInput,
+    NgxMatStartDate,
+    NgxMatEndDate,
+    NgxMatDateRangePicker,
+    NgxMatDatepickerActions,
+    NgxMatDatepickerCancel,
+    NgxMatDatepickerApply,
+  ],
+  imports: [
+    CommonModule,
+    MatButtonModule,
+    OverlayModule,
+    A11yModule,
+    PortalModule,
+    MatCommonModule,
+    NgxMatTimepickerModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
+  exports: [
+    CdkScrollableModule,
+    NgxMatCalendar,
+    NgxMatCalendarBody,
+    NgxMatDatetimepicker,
+    NgxMatDatepickerContent,
+    NgxMatDatepickerInput,
+    NgxMatDatepickerToggle,
+    NgxMatDatepickerToggleIcon,
+    NgxMatMonthView,
+    NgxMatYearView,
+    NgxMatMultiYearView,
+    NgxMatCalendarHeader,
+    NgxMatDateRangeInput,
+    NgxMatStartDate,
+    NgxMatEndDate,
+    NgxMatDateRangePicker,
+    NgxMatDatepickerActions,
+    NgxMatDatepickerCancel,
+    NgxMatDatepickerApply,
+  ],
 });
 NgxMatDatetimePickerModule.ɵinj = ɵɵdefineInjector({
-  providers: [NgxMatDatepickerIntl, NGX_MAT_DATEPICKER_SCROLL_STRATEGY_FACTORY_PROVIDER],
-  imports: [CommonModule, MatButtonModule, OverlayModule, A11yModule, PortalModule, MatCommonModule, NgxMatTimepickerModule, FormsModule, ReactiveFormsModule, CdkScrollableModule]
+  providers: [
+    NgxMatDatepickerIntl,
+    NGX_MAT_DATEPICKER_SCROLL_STRATEGY_FACTORY_PROVIDER,
+  ],
+  imports: [
+    CommonModule,
+    MatButtonModule,
+    OverlayModule,
+    A11yModule,
+    PortalModule,
+    MatCommonModule,
+    NgxMatTimepickerModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CdkScrollableModule,
+  ],
 });
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(NgxMatDatetimePickerModule, [{
-    type: NgModule,
-    args: [{
-      imports: [CommonModule, MatButtonModule, OverlayModule, A11yModule, PortalModule, MatCommonModule, NgxMatTimepickerModule, FormsModule, ReactiveFormsModule],
-      exports: [CdkScrollableModule, NgxMatCalendar, NgxMatCalendarBody, NgxMatDatetimepicker, NgxMatDatepickerContent, NgxMatDatepickerInput, NgxMatDatepickerToggle, NgxMatDatepickerToggleIcon, NgxMatMonthView, NgxMatYearView, NgxMatMultiYearView, NgxMatCalendarHeader, NgxMatDateRangeInput, NgxMatStartDate, NgxMatEndDate, NgxMatDateRangePicker, NgxMatDatepickerActions, NgxMatDatepickerCancel, NgxMatDatepickerApply],
-      declarations: [NgxMatCalendar, NgxMatCalendarBody, NgxMatDatetimepicker, NgxMatDatepickerContent, NgxMatDatepickerInput, NgxMatDatepickerToggle, NgxMatDatepickerToggleIcon, NgxMatMonthView, NgxMatYearView, NgxMatMultiYearView, NgxMatCalendarHeader, NgxMatDateRangeInput, NgxMatStartDate, NgxMatEndDate, NgxMatDateRangePicker, NgxMatDatepickerActions, NgxMatDatepickerCancel, NgxMatDatepickerApply],
-      providers: [NgxMatDatepickerIntl, NGX_MAT_DATEPICKER_SCROLL_STRATEGY_FACTORY_PROVIDER]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      NgxMatDatetimePickerModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [
+                CommonModule,
+                MatButtonModule,
+                OverlayModule,
+                A11yModule,
+                PortalModule,
+                MatCommonModule,
+                NgxMatTimepickerModule,
+                FormsModule,
+                ReactiveFormsModule,
+              ],
+              exports: [
+                CdkScrollableModule,
+                NgxMatCalendar,
+                NgxMatCalendarBody,
+                NgxMatDatetimepicker,
+                NgxMatDatepickerContent,
+                NgxMatDatepickerInput,
+                NgxMatDatepickerToggle,
+                NgxMatDatepickerToggleIcon,
+                NgxMatMonthView,
+                NgxMatYearView,
+                NgxMatMultiYearView,
+                NgxMatCalendarHeader,
+                NgxMatDateRangeInput,
+                NgxMatStartDate,
+                NgxMatEndDate,
+                NgxMatDateRangePicker,
+                NgxMatDatepickerActions,
+                NgxMatDatepickerCancel,
+                NgxMatDatepickerApply,
+              ],
+              declarations: [
+                NgxMatCalendar,
+                NgxMatCalendarBody,
+                NgxMatDatetimepicker,
+                NgxMatDatepickerContent,
+                NgxMatDatepickerInput,
+                NgxMatDatepickerToggle,
+                NgxMatDatepickerToggleIcon,
+                NgxMatMonthView,
+                NgxMatYearView,
+                NgxMatMultiYearView,
+                NgxMatCalendarHeader,
+                NgxMatDateRangeInput,
+                NgxMatStartDate,
+                NgxMatEndDate,
+                NgxMatDateRangePicker,
+                NgxMatDatepickerActions,
+                NgxMatDatepickerCancel,
+                NgxMatDatepickerApply,
+              ],
+              providers: [
+                NgxMatDatepickerIntl,
+                NGX_MAT_DATEPICKER_SCROLL_STRATEGY_FACTORY_PROVIDER,
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 export {
   DefaultNgxMatCalendarRangeStrategy,
@@ -7120,6 +10372,6 @@ export {
   getActiveOffset,
   isSameMultiYearView,
   yearsPerPage,
-  yearsPerRow
+  yearsPerRow,
 };
 //# sourceMappingURL=@angular-material-components_datetime-picker.js.map

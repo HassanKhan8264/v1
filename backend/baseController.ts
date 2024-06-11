@@ -6,7 +6,7 @@ export abstract class BaseController {
     code: number,
     status: boolean,
     message?: string,
-    data?: any
+    data?: any,
   ) {
     if (!message) {
       message = status ? "Success" : "Failed";

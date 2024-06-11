@@ -10,7 +10,7 @@ import {
   getMatIconFailedToSanitizeLiteralError,
   getMatIconFailedToSanitizeUrlError,
   getMatIconNameNotFoundError,
-  getMatIconNoHttpProviderError
+  getMatIconNoHttpProviderError,
 } from "./chunk-XEELRTDS.js";
 import "./chunk-BQD3D3FD.js";
 import "./chunk-EIV36KLU.js";
@@ -33,6 +33,6 @@ export {
   getMatIconFailedToSanitizeLiteralError,
   getMatIconFailedToSanitizeUrlError,
   getMatIconNameNotFoundError,
-  getMatIconNoHttpProviderError
+  getMatIconNoHttpProviderError,
 };
 //# sourceMappingURL=@angular_material_icon.js.map

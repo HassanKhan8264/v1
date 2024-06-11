@@ -1,6 +1,9 @@
+import { AuthGuard } from "./core/guards/auth.guard";
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule, PreloadAllModules } from "@angular/router";
 import { MainLayoutComponent } from "./layout/main-layout/main-layout/main-layout.component";
+import { LoginComponent } from "./shared/components/login/login.component";
+import { SignupComponent } from "./shared/components/signup/signup.component";
 // import { environment } from "../environments/environment";
 // import { MainLayoutComponent } from "./layout/main-layout/main-layout.component";
 // import { PageNotFoundComponent } from "./shared/views/page-not-found/page-not-found.component";
@@ -19,135 +22,36 @@ const routes: Routes = [
     path: "",
     component: MainLayoutComponent,
     children: [
-    //   {
-    //     path: "",
-    //     canActivate: [OnBoardGuard],
-    //     // data: { welcomePage: true },
-    //     children: [],
-    //   },
-    //   {
-    //     path: "welcome",
-    //     pathMatch: "full",
-    //     redirectTo:
-    //       "publish/settings/manage-social-accounts/add-social-account",
-    //     // canActivate: [],
-    //     // data: { welcomePage: true },
-    //     // loadChildren: () =>
-    //     //   import("./modules/onboarding/onboarding.module").then(
-    //     //     (m) => m.OnboardingModule,
-    //     //   ),
-    //   },
+      {
+        path: "",
+        redirectTo: "/publish",
+        pathMatch: "full",
+      },
+      {
+        path: "login",
+        component: LoginComponent,
+      },
+      {
+        path: "signup",
+        component: SignupComponent,
+      },
       {
         path: "publish",
         // data: { feature: "PUBLISH" },
-        // canActivate: [AuthenticationGuard],
+        canActivate: [AuthGuard],
         loadChildren: () =>
           import("./modules/publish/publish.module").then(
             (m) => m.PublishModule,
           ),
       },
-    //   {
-    //     path: "analytics",
-    //     canActivate: [AuthenticationGuard, FeatureGuard],
-    //     resolve: { permission: PermissionResolver },
-    //     data: {
-    //       featureAllowed: Constants.FEATURES_ALLOWED.Analytics,
-    //       checkCount: true,
-    //     },
-    //     loadChildren: () =>
-    //       import("./modules/analytics-v2/analytics-v2.module").then(
-    //         (m) => m.AnalyticsV2Module,
-    //       ),
-    //   },
-    //   {
-    //     path: "calendar",
-    //     canActivate: [AuthenticationGuard, FeatureGuard],
-    //     resolve: { permission: PermissionResolver },
-    //     data: {
-    //       featureAllowed: Constants.FEATURES_ALLOWED.AllInOneCalendar,
-    //       checkCount: true,
-    //     },
-    //     loadChildren: () =>
-    //       import("./modules/calendar/calendar.module").then(
-    //         (m) => m.CalendarModule,
-    //       ),
-    //   },
-    //   {
-    //     path: "engage",
-    //     canActivate: [AuthenticationGuard, TeamMemberGuard],
-    //     resolve: { permission: PermissionResolver },
-    //     data: {
-    //       feature: "ENGAGE",
-    //       permissions: [Constants.PERMISSIONS.MANAGE_ENGAGE],
-    //     },
-    //     loadChildren: () =>
-    //       import("./modules/engage/engage.module").then((m) => m.EngageModule),
-    //   },
-    //   // {
-    //   //   path: "sc-components",
-    //   //   canActivate: [AuthenticationGuard],
-    //   //   component: ComponentsViewComponent,
-    //   // },
-    //   {
-    //     path: "team",
-    //     canActivate: [TeamMemberGuard, FeatureGuard],
-    //     data: {
-    //       feature: "TEAM",
-    //       featureAllowed: Constants.FEATURES_ALLOWED.Team,
-    //       permissions: [Constants.PERMISSIONS.MANAGE_TEAM],
-    //     },
-    //     resolve: { url: ExternalAppResolver },
-    //     component: DefaultViewComponent,
-    //   },
-    //   {
-    //     path: "login",
-    //     data: { feature: "LOGIN" },
-    //     resolve: { url: ExternalAppResolver },
-    //     component: DefaultViewComponent,
-    //   },
-    //   {
-    //     path: "pricing",
-    //     canActivate: [TeamMemberGuard],
-    //     data: {
-    //       feature: "PRICING",
-    //       changeAccountMessage: true,
-    //       permissions: ["DUMMY"],
-    //     },
-    //     resolve: { url: ExternalAppResolver },
-    //     component: DefaultViewComponent,
-    //   },
-    //   {
-    //     path: "settings-account",
-    //     canActivate: [TeamMemberGuard],
-    //     data: {
-    //       feature: "ACCOUNT_SETTINGS",
-    //       changeAccountMessage: true,
-    //       permissions: ["DUMMY"],
-    //     },
-    //     resolve: { url: ExternalAppResolver },
-    //     component: DefaultViewComponent,
-    //   },
-    //   {
-    //     path: "settings-billing",
-    //     canActivate: [TeamMemberGuard],
-    //     data: {
-    //       feature: "BILLING_SETTINGS",
-    //       changeAccountMessage: true,
-    //       permissions: ["DUMMY"],
-    //     },
-    //     resolve: { url: ExternalAppResolver },
-    //     component: DefaultViewComponent,
-    //   },
-    //   {
-    //     path: "settings-notification",
-    //     data: { feature: "NOTIFICATIONS_SETTINGS" },
-    //     resolve: { url: ExternalAppResolver },
-    //     component: DefaultViewComponent,
-    //   },
-    //   {
-    //     path: "**",
-    //     component: PageNotFoundComponent,
-    //   },
+      {
+        path: "calender",
+        loadChildren: () =>
+          import("./modules/calender/calender.module").then(
+            (m) => m.CalenderModule,
+          ),
+      },
+      // Other routes...
     ],
   },
 ];

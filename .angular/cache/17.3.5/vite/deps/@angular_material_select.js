@@ -8,7 +8,7 @@ import {
   MatSelectChange,
   MatSelectModule,
   MatSelectTrigger,
-  matSelectAnimations
+  matSelectAnimations,
 } from "./chunk-DVJYUEJE.js";
 import {
   MatError,
@@ -16,14 +16,11 @@ import {
   MatHint,
   MatLabel,
   MatPrefix,
-  MatSuffix
+  MatSuffix,
 } from "./chunk-ABUN6SR6.js";
 import "./chunk-TFPBYGKK.js";
 import "./chunk-ZGLNX5QT.js";
-import {
-  MatOptgroup,
-  MatOption
-} from "./chunk-ETKHRJO3.js";
+import { MatOptgroup, MatOption } from "./chunk-ETKHRJO3.js";
 import "./chunk-CM65KMUF.js";
 import "./chunk-J37YNQGY.js";
 import "./chunk-BJSKPAN7.js";
@@ -51,6 +48,6 @@ export {
   MatSelectModule,
   MatSelectTrigger,
   MatSuffix,
-  matSelectAnimations
+  matSelectAnimations,
 };
 //# sourceMappingURL=@angular_material_select.js.map

@@ -54,7 +54,7 @@ import {
   isFormRecord,
   ɵInternalFormsSharedModule,
   ɵNgNoValidate,
-  ɵNgSelectMultipleOption
+  ɵNgSelectMultipleOption,
 } from "./chunk-LJ4YP55G.js";
 import "./chunk-DNIPCOIB.js";
 import "./chunk-UC6QHQD3.js";
@@ -115,6 +115,6 @@ export {
   isFormRecord,
   ɵInternalFormsSharedModule,
   ɵNgNoValidate,
-  ɵNgSelectMultipleOption
+  ɵNgSelectMultipleOption,
 };
 //# sourceMappingURL=@angular_forms.js.map

@@ -2,7 +2,7 @@ import {
   MAT_INPUT_VALUE_ACCESSOR,
   MatInput,
   MatInputModule,
-  getMatInputUnsupportedTypeError
+  getMatInputUnsupportedTypeError,
 } from "./chunk-T3VY56FC.js";
 import {
   MatError,
@@ -10,7 +10,7 @@ import {
   MatHint,
   MatLabel,
   MatPrefix,
-  MatSuffix
+  MatSuffix,
 } from "./chunk-XHBAGFMQ.js";
 import "./chunk-D5VDYUOU.js";
 import "./chunk-Z5DUCAAR.js";
@@ -31,6 +31,6 @@ export {
   MatLabel,
   MatPrefix,
   MatSuffix,
-  getMatInputUnsupportedTypeError
+  getMatInputUnsupportedTypeError,
 };
 //# sourceMappingURL=@angular_material_input.js.map

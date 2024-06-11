@@ -3,42 +3,33 @@ import {
   state,
   style,
   transition,
-  trigger
+  trigger,
 } from "./chunk-ZGLNX5QT.js";
 import {
   MAT_RIPPLE_GLOBAL_OPTIONS,
   MatCommonModule,
-  MatRipple
+  MatRipple,
 } from "./chunk-ETKHRJO3.js";
 import {
   CdkPortal,
   CdkPortalOutlet,
-  TemplatePortal
+  TemplatePortal,
 } from "./chunk-J37YNQGY.js";
 import {
   CdkMonitorFocus,
   CdkObserveContent,
   FocusKeyManager,
-  FocusMonitor
+  FocusMonitor,
 } from "./chunk-BJSKPAN7.js";
-import {
-  ENTER,
-  SPACE,
-  hasModifierKey
-} from "./chunk-237XUEJ5.js";
-import {
-  CdkScrollable,
-  ViewportRuler
-} from "./chunk-QFVG6FFE.js";
+import { ENTER, SPACE, hasModifierKey } from "./chunk-237XUEJ5.js";
+import { CdkScrollable, ViewportRuler } from "./chunk-QFVG6FFE.js";
 import "./chunk-5IGO7ZVJ.js";
 import {
   Directionality,
   Platform,
-  normalizePassiveListenerOptions
+  normalizePassiveListenerOptions,
 } from "./chunk-YI6EFZ52.js";
-import {
-  DOCUMENT
-} from "./chunk-NKF7BGZJ.js";
+import { DOCUMENT } from "./chunk-NKF7BGZJ.js";
 import {
   ANIMATION_MODULE_TYPE,
   Attribute,
@@ -125,7 +116,7 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate,
-  ɵɵviewQuery
+  ɵɵviewQuery,
 } from "./chunk-LBXCMUWC.js";
 
 // node_modules/@angular/material/fesm2022/tabs.mjs
@@ -141,21 +132,26 @@ var _c3 = ["tabListInner"];
 var _c4 = ["nextPaginator"];
 var _c5 = ["previousPaginator"];
 var _c6 = (a0) => ({
-  animationDuration: a0
+  animationDuration: a0,
 });
 var _c7 = (a0, a1) => ({
   value: a0,
-  params: a1
+  params: a1,
 });
-function MatTabBody_ng_template_2_Template(rf, ctx) {
-}
+function MatTabBody_ng_template_2_Template(rf, ctx) {}
 var _c8 = ["tabBodyWrapper"];
 var _c9 = ["tabHeader"];
-function MatTabGroup_For_3_Conditional_6_ng_template_0_Template(rf, ctx) {
-}
+function MatTabGroup_For_3_Conditional_6_ng_template_0_Template(rf, ctx) {}
 function MatTabGroup_For_3_Conditional_6_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵtemplate(0, MatTabGroup_For_3_Conditional_6_ng_template_0_Template, 0, 0, "ng-template", 12);
+    ɵɵtemplate(
+      0,
+      MatTabGroup_For_3_Conditional_6_ng_template_0_Template,
+      0,
+      0,
+      "ng-template",
+      12,
+    );
   }
   if (rf & 2) {
     const tab_r4 = ɵɵnextContext().$implicit;
@@ -175,21 +171,36 @@ function MatTabGroup_For_3_Template(rf, ctx) {
   if (rf & 1) {
     const _r2 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "div", 7, 2);
-    ɵɵlistener("click", function MatTabGroup_For_3_Template_div_click_0_listener() {
-      const ctx_r2 = ɵɵrestoreView(_r2);
-      const tab_r4 = ctx_r2.$implicit;
-      const i_r5 = ctx_r2.$index;
-      const ctx_r5 = ɵɵnextContext();
-      const tabHeader_r7 = ɵɵreference(1);
-      return ɵɵresetView(ctx_r5._handleClick(tab_r4, tabHeader_r7, i_r5));
-    })("cdkFocusChange", function MatTabGroup_For_3_Template_div_cdkFocusChange_0_listener($event) {
-      const i_r5 = ɵɵrestoreView(_r2).$index;
-      const ctx_r5 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r5._tabFocusChanged($event, i_r5));
-    });
+    ɵɵlistener(
+      "click",
+      function MatTabGroup_For_3_Template_div_click_0_listener() {
+        const ctx_r2 = ɵɵrestoreView(_r2);
+        const tab_r4 = ctx_r2.$implicit;
+        const i_r5 = ctx_r2.$index;
+        const ctx_r5 = ɵɵnextContext();
+        const tabHeader_r7 = ɵɵreference(1);
+        return ɵɵresetView(ctx_r5._handleClick(tab_r4, tabHeader_r7, i_r5));
+      },
+    )(
+      "cdkFocusChange",
+      function MatTabGroup_For_3_Template_div_cdkFocusChange_0_listener(
+        $event,
+      ) {
+        const i_r5 = ɵɵrestoreView(_r2).$index;
+        const ctx_r5 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r5._tabFocusChanged($event, i_r5));
+      },
+    );
     ɵɵelement(2, "span", 8)(3, "div", 9);
     ɵɵelementStart(4, "span", 10)(5, "span", 11);
-    ɵɵtemplate(6, MatTabGroup_For_3_Conditional_6_Template, 1, 1, null, 12)(7, MatTabGroup_For_3_Conditional_7_Template, 1, 1);
+    ɵɵtemplate(
+      6,
+      MatTabGroup_For_3_Conditional_6_Template,
+      1,
+      1,
+      null,
+      12,
+    )(7, MatTabGroup_For_3_Conditional_7_Template, 1, 1);
     ɵɵelementEnd()()();
   }
   if (rf & 2) {
@@ -199,10 +210,28 @@ function MatTabGroup_For_3_Template(rf, ctx) {
     const ctx_r5 = ɵɵnextContext();
     ɵɵclassMap(tab_r4.labelClass);
     ɵɵclassProp("mdc-tab--active", ctx_r5.selectedIndex === i_r5);
-    ɵɵproperty("id", ctx_r5._getTabLabelId(i_r5))("disabled", tab_r4.disabled)("fitInkBarToContent", ctx_r5.fitInkBarToContent);
-    ɵɵattribute("tabIndex", ctx_r5._getTabIndex(i_r5))("aria-posinset", i_r5 + 1)("aria-setsize", ctx_r5._tabs.length)("aria-controls", ctx_r5._getTabContentId(i_r5))("aria-selected", ctx_r5.selectedIndex === i_r5)("aria-label", tab_r4.ariaLabel || null)("aria-labelledby", !tab_r4.ariaLabel && tab_r4.ariaLabelledby ? tab_r4.ariaLabelledby : null);
+    ɵɵproperty("id", ctx_r5._getTabLabelId(i_r5))("disabled", tab_r4.disabled)(
+      "fitInkBarToContent",
+      ctx_r5.fitInkBarToContent,
+    );
+    ɵɵattribute("tabIndex", ctx_r5._getTabIndex(i_r5))(
+      "aria-posinset",
+      i_r5 + 1,
+    )("aria-setsize", ctx_r5._tabs.length)(
+      "aria-controls",
+      ctx_r5._getTabContentId(i_r5),
+    )("aria-selected", ctx_r5.selectedIndex === i_r5)(
+      "aria-label",
+      tab_r4.ariaLabel || null,
+    )(
+      "aria-labelledby",
+      !tab_r4.ariaLabel && tab_r4.ariaLabelledby ? tab_r4.ariaLabelledby : null,
+    );
     ɵɵadvance(3);
-    ɵɵproperty("matRippleTrigger", tabNode_r8)("matRippleDisabled", tab_r4.disabled || ctx_r5.disableRipple);
+    ɵɵproperty("matRippleTrigger", tabNode_r8)(
+      "matRippleDisabled",
+      tab_r4.disabled || ctx_r5.disableRipple,
+    );
     ɵɵadvance(3);
     ɵɵconditional(6, tab_r4.templateLabel ? 6 : 7);
   }
@@ -216,15 +245,23 @@ function MatTabGroup_For_8_Template(rf, ctx) {
   if (rf & 1) {
     const _r9 = ɵɵgetCurrentView();
     ɵɵelementStart(0, "mat-tab-body", 13);
-    ɵɵlistener("_onCentered", function MatTabGroup_For_8_Template_mat_tab_body__onCentered_0_listener() {
-      ɵɵrestoreView(_r9);
-      const ctx_r5 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r5._removeTabBodyWrapperHeight());
-    })("_onCentering", function MatTabGroup_For_8_Template_mat_tab_body__onCentering_0_listener($event) {
-      ɵɵrestoreView(_r9);
-      const ctx_r5 = ɵɵnextContext();
-      return ɵɵresetView(ctx_r5._setTabBodyWrapperHeight($event));
-    });
+    ɵɵlistener(
+      "_onCentered",
+      function MatTabGroup_For_8_Template_mat_tab_body__onCentered_0_listener() {
+        ɵɵrestoreView(_r9);
+        const ctx_r5 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r5._removeTabBodyWrapperHeight());
+      },
+    )(
+      "_onCentering",
+      function MatTabGroup_For_8_Template_mat_tab_body__onCentering_0_listener(
+        $event,
+      ) {
+        ɵɵrestoreView(_r9);
+        const ctx_r5 = ɵɵnextContext();
+        return ɵɵresetView(ctx_r5._setTabBodyWrapperHeight($event));
+      },
+    );
     ɵɵelementEnd();
   }
   if (rf & 2) {
@@ -233,8 +270,22 @@ function MatTabGroup_For_8_Template(rf, ctx) {
     const ctx_r5 = ɵɵnextContext();
     ɵɵclassMap(tab_r10.bodyClass);
     ɵɵclassProp("mat-mdc-tab-body-active", ctx_r5.selectedIndex === i_r11);
-    ɵɵproperty("id", ctx_r5._getTabContentId(i_r11))("content", tab_r10.content)("position", tab_r10.position)("origin", tab_r10.origin)("animationDuration", ctx_r5.animationDuration)("preserveContent", ctx_r5.preserveContent);
-    ɵɵattribute("tabindex", ctx_r5.contentTabIndex != null && ctx_r5.selectedIndex === i_r11 ? ctx_r5.contentTabIndex : null)("aria-labelledby", ctx_r5._getTabLabelId(i_r11))("aria-hidden", ctx_r5.selectedIndex !== i_r11);
+    ɵɵproperty("id", ctx_r5._getTabContentId(i_r11))(
+      "content",
+      tab_r10.content,
+    )("position", tab_r10.position)("origin", tab_r10.origin)(
+      "animationDuration",
+      ctx_r5.animationDuration,
+    )("preserveContent", ctx_r5.preserveContent);
+    ɵɵattribute(
+      "tabindex",
+      ctx_r5.contentTabIndex != null && ctx_r5.selectedIndex === i_r11
+        ? ctx_r5.contentTabIndex
+        : null,
+    )("aria-labelledby", ctx_r5._getTabLabelId(i_r11))(
+      "aria-hidden",
+      ctx_r5.selectedIndex !== i_r11,
+    );
   }
 }
 var _c10 = ["mat-tab-nav-bar", ""];
@@ -252,26 +303,44 @@ _MatTabContent.ɵdir = ɵɵdefineDirective({
   type: _MatTabContent,
   selectors: [["", "matTabContent", ""]],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: MAT_TAB_CONTENT,
-    useExisting: _MatTabContent
-  }])]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: MAT_TAB_CONTENT,
+        useExisting: _MatTabContent,
+      },
+    ]),
+  ],
 });
 var MatTabContent = _MatTabContent;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTabContent, [{
-    type: Directive,
-    args: [{
-      selector: "[matTabContent]",
-      providers: [{
-        provide: MAT_TAB_CONTENT,
-        useExisting: MatTabContent
-      }],
-      standalone: true
-    }]
-  }], () => [{
-    type: TemplateRef
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTabContent,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[matTabContent]",
+              providers: [
+                {
+                  provide: MAT_TAB_CONTENT,
+                  useExisting: MatTabContent,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: TemplateRef,
+        },
+      ],
+      null,
+    );
 })();
 var MAT_TAB_LABEL = new InjectionToken("MatTabLabel");
 var MAT_TAB = new InjectionToken("MAT_TAB");
@@ -282,42 +351,73 @@ var _MatTabLabel = class _MatTabLabel extends CdkPortal {
   }
 };
 _MatTabLabel.ɵfac = function MatTabLabel_Factory(t) {
-  return new (t || _MatTabLabel)(ɵɵdirectiveInject(TemplateRef), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(MAT_TAB, 8));
+  return new (t || _MatTabLabel)(
+    ɵɵdirectiveInject(TemplateRef),
+    ɵɵdirectiveInject(ViewContainerRef),
+    ɵɵdirectiveInject(MAT_TAB, 8),
+  );
 };
 _MatTabLabel.ɵdir = ɵɵdefineDirective({
   type: _MatTabLabel,
-  selectors: [["", "mat-tab-label", ""], ["", "matTabLabel", ""]],
+  selectors: [
+    ["", "mat-tab-label", ""],
+    ["", "matTabLabel", ""],
+  ],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: MAT_TAB_LABEL,
-    useExisting: _MatTabLabel
-  }]), ɵɵInheritDefinitionFeature]
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: MAT_TAB_LABEL,
+        useExisting: _MatTabLabel,
+      },
+    ]),
+    ɵɵInheritDefinitionFeature,
+  ],
 });
 var MatTabLabel = _MatTabLabel;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTabLabel, [{
-    type: Directive,
-    args: [{
-      selector: "[mat-tab-label], [matTabLabel]",
-      providers: [{
-        provide: MAT_TAB_LABEL,
-        useExisting: MatTabLabel
-      }],
-      standalone: true
-    }]
-  }], () => [{
-    type: TemplateRef
-  }, {
-    type: ViewContainerRef
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [MAT_TAB]
-    }, {
-      type: Optional
-    }]
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTabLabel,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[mat-tab-label], [matTabLabel]",
+              providers: [
+                {
+                  provide: MAT_TAB_LABEL,
+                  useExisting: MatTabLabel,
+                },
+              ],
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: TemplateRef,
+        },
+        {
+          type: ViewContainerRef,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [MAT_TAB],
+            },
+            {
+              type: Optional,
+            },
+          ],
+        },
+      ],
+      null,
+    );
 })();
 var MAT_TAB_GROUP = new InjectionToken("MAT_TAB_GROUP");
 var _MatTab = class _MatTab {
@@ -345,7 +445,10 @@ var _MatTab = class _MatTab {
     this.isActive = false;
   }
   ngOnChanges(changes) {
-    if (changes.hasOwnProperty("textLabel") || changes.hasOwnProperty("disabled")) {
+    if (
+      changes.hasOwnProperty("textLabel") ||
+      changes.hasOwnProperty("disabled")
+    ) {
       this._stateChanges.next();
     }
   }
@@ -353,7 +456,10 @@ var _MatTab = class _MatTab {
     this._stateChanges.complete();
   }
   ngOnInit() {
-    this._contentPortal = new TemplatePortal(this._explicitContent || this._implicitContent, this._viewContainerRef);
+    this._contentPortal = new TemplatePortal(
+      this._explicitContent || this._implicitContent,
+      this._viewContainerRef,
+    );
   }
   /**
    * This has been extracted to a util because of TS 4 and VE.
@@ -368,7 +474,10 @@ var _MatTab = class _MatTab {
   }
 };
 _MatTab.ɵfac = function MatTab_Factory(t) {
-  return new (t || _MatTab)(ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(MAT_TAB_GROUP, 8));
+  return new (t || _MatTab)(
+    ɵɵdirectiveInject(ViewContainerRef),
+    ɵɵdirectiveInject(MAT_TAB_GROUP, 8),
+  );
 };
 _MatTab.ɵcmp = ɵɵdefineComponent({
   type: _MatTab,
@@ -380,8 +489,8 @@ _MatTab.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.templateLabel = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._explicitContent = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx.templateLabel = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._explicitContent = _t.first);
     }
   },
   viewQuery: function MatTab_Query(rf, ctx) {
@@ -390,24 +499,36 @@ _MatTab.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._implicitContent = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._implicitContent = _t.first);
     }
   },
   hostAttrs: ["hidden", ""],
   inputs: {
-    disabled: [InputFlags.HasDecoratorInputTransform, "disabled", "disabled", booleanAttribute],
+    disabled: [
+      InputFlags.HasDecoratorInputTransform,
+      "disabled",
+      "disabled",
+      booleanAttribute,
+    ],
     textLabel: [InputFlags.None, "label", "textLabel"],
     ariaLabel: [InputFlags.None, "aria-label", "ariaLabel"],
     ariaLabelledby: [InputFlags.None, "aria-labelledby", "ariaLabelledby"],
     labelClass: "labelClass",
-    bodyClass: "bodyClass"
+    bodyClass: "bodyClass",
   },
   exportAs: ["matTab"],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: MAT_TAB,
-    useExisting: _MatTab
-  }]), ɵɵInputTransformsFeature, ɵɵNgOnChangesFeature, ɵɵStandaloneFeature],
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: MAT_TAB,
+        useExisting: _MatTab,
+      },
+    ]),
+    ɵɵInputTransformsFeature,
+    ɵɵNgOnChangesFeature,
+    ɵɵStandaloneFeature,
+  ],
   ngContentSelectors: _c0,
   decls: 1,
   vars: 0,
@@ -417,82 +538,127 @@ _MatTab.ɵcmp = ɵɵdefineComponent({
       ɵɵtemplate(0, MatTab_ng_template_0_Template, 1, 0, "ng-template");
     }
   },
-  encapsulation: 2
+  encapsulation: 2,
 });
 var MatTab = _MatTab;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTab, [{
-    type: Component,
-    args: [{
-      selector: "mat-tab",
-      changeDetection: ChangeDetectionStrategy.Default,
-      encapsulation: ViewEncapsulation$1.None,
-      exportAs: "matTab",
-      providers: [{
-        provide: MAT_TAB,
-        useExisting: MatTab
-      }],
-      standalone: true,
-      host: {
-        // This element will be rendered on the server in order to support hydration.
-        // Hide it so it doesn't cause a layout shift when it's removed on the client.
-        "hidden": ""
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTab,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "mat-tab",
+              changeDetection: ChangeDetectionStrategy.Default,
+              encapsulation: ViewEncapsulation$1.None,
+              exportAs: "matTab",
+              providers: [
+                {
+                  provide: MAT_TAB,
+                  useExisting: MatTab,
+                },
+              ],
+              standalone: true,
+              host: {
+                // This element will be rendered on the server in order to support hydration.
+                // Hide it so it doesn't cause a layout shift when it's removed on the client.
+                hidden: "",
+              },
+              template:
+                "<!-- Create a template for the content of the <mat-tab> so that we can grab a reference to this\n    TemplateRef and use it in a Portal to render the tab content in the appropriate place in the\n    tab-group. -->\n<ng-template><ng-content></ng-content></ng-template>\n",
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ViewContainerRef,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [MAT_TAB_GROUP],
+            },
+            {
+              type: Optional,
+            },
+          ],
+        },
+      ],
+      {
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        templateLabel: [
+          {
+            type: ContentChild,
+            args: [MatTabLabel],
+          },
+        ],
+        _explicitContent: [
+          {
+            type: ContentChild,
+            args: [
+              MatTabContent,
+              {
+                read: TemplateRef,
+                static: true,
+              },
+            ],
+          },
+        ],
+        _implicitContent: [
+          {
+            type: ViewChild,
+            args: [
+              TemplateRef,
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
+        textLabel: [
+          {
+            type: Input,
+            args: ["label"],
+          },
+        ],
+        ariaLabel: [
+          {
+            type: Input,
+            args: ["aria-label"],
+          },
+        ],
+        ariaLabelledby: [
+          {
+            type: Input,
+            args: ["aria-labelledby"],
+          },
+        ],
+        labelClass: [
+          {
+            type: Input,
+          },
+        ],
+        bodyClass: [
+          {
+            type: Input,
+          },
+        ],
       },
-      template: "<!-- Create a template for the content of the <mat-tab> so that we can grab a reference to this\n    TemplateRef and use it in a Portal to render the tab content in the appropriate place in the\n    tab-group. -->\n<ng-template><ng-content></ng-content></ng-template>\n"
-    }]
-  }], () => [{
-    type: ViewContainerRef
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [MAT_TAB_GROUP]
-    }, {
-      type: Optional
-    }]
-  }], {
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    templateLabel: [{
-      type: ContentChild,
-      args: [MatTabLabel]
-    }],
-    _explicitContent: [{
-      type: ContentChild,
-      args: [MatTabContent, {
-        read: TemplateRef,
-        static: true
-      }]
-    }],
-    _implicitContent: [{
-      type: ViewChild,
-      args: [TemplateRef, {
-        static: true
-      }]
-    }],
-    textLabel: [{
-      type: Input,
-      args: ["label"]
-    }],
-    ariaLabel: [{
-      type: Input,
-      args: ["aria-label"]
-    }],
-    ariaLabelledby: [{
-      type: Input,
-      args: ["aria-labelledby"]
-    }],
-    labelClass: [{
-      type: Input
-    }],
-    bodyClass: [{
-      type: Input
-    }]
-  });
+    );
 })();
 var ACTIVE_CLASS = "mdc-tab-indicator--active";
 var NO_TRANSITION_CLASS = "mdc-tab-indicator--no-transition";
@@ -506,14 +672,17 @@ var MatInkBar = class {
   }
   /** Aligns the ink bar to a DOM node. */
   alignToElement(element) {
-    const correspondingItem = this._items.find((item) => item.elementRef.nativeElement === element);
+    const correspondingItem = this._items.find(
+      (item) => item.elementRef.nativeElement === element,
+    );
     const currentItem = this._currentItem;
     if (correspondingItem === currentItem) {
       return;
     }
     currentItem?.deactivateInkBar();
     if (correspondingItem) {
-      const domRect = currentItem?.elementRef.nativeElement.getBoundingClientRect?.();
+      const domRect =
+        currentItem?.elementRef.nativeElement.getBoundingClientRect?.();
       correspondingItem.activateInkBar(domRect);
       this._currentItem = correspondingItem;
     }
@@ -539,15 +708,23 @@ var _InkBarItem = class _InkBarItem {
   /** Aligns the ink bar to the current item. */
   activateInkBar(previousIndicatorClientRect) {
     const element = this._elementRef.nativeElement;
-    if (!previousIndicatorClientRect || !element.getBoundingClientRect || !this._inkBarContentElement) {
+    if (
+      !previousIndicatorClientRect ||
+      !element.getBoundingClientRect ||
+      !this._inkBarContentElement
+    ) {
       element.classList.add(ACTIVE_CLASS);
       return;
     }
     const currentClientRect = element.getBoundingClientRect();
-    const widthDelta = previousIndicatorClientRect.width / currentClientRect.width;
+    const widthDelta =
+      previousIndicatorClientRect.width / currentClientRect.width;
     const xPosition = previousIndicatorClientRect.left - currentClientRect.left;
     element.classList.add(NO_TRANSITION_CLASS);
-    this._inkBarContentElement.style.setProperty("transform", `translateX(${xPosition}px) scaleX(${widthDelta})`);
+    this._inkBarContentElement.style.setProperty(
+      "transform",
+      `translateX(${xPosition}px) scaleX(${widthDelta})`,
+    );
     element.getBoundingClientRect();
     element.classList.remove(NO_TRANSITION_CLASS);
     element.classList.add(ACTIVE_CLASS);
@@ -568,11 +745,15 @@ var _InkBarItem = class _InkBarItem {
   }
   /** Creates and appends the ink bar element. */
   _createInkBarElement() {
-    const documentNode = this._elementRef.nativeElement.ownerDocument || document;
-    const inkBarElement = this._inkBarElement = documentNode.createElement("span");
-    const inkBarContentElement = this._inkBarContentElement = documentNode.createElement("span");
+    const documentNode =
+      this._elementRef.nativeElement.ownerDocument || document;
+    const inkBarElement = (this._inkBarElement =
+      documentNode.createElement("span"));
+    const inkBarContentElement = (this._inkBarContentElement =
+      documentNode.createElement("span"));
     inkBarElement.className = "mdc-tab-indicator";
-    inkBarContentElement.className = "mdc-tab-indicator__content mdc-tab-indicator__content--underline";
+    inkBarContentElement.className =
+      "mdc-tab-indicator__content mdc-tab-indicator__content--underline";
     inkBarElement.appendChild(this._inkBarContentElement);
     this._appendInkBarElement();
   }
@@ -581,10 +762,17 @@ var _InkBarItem = class _InkBarItem {
    * the ink bar should fit to content.
    */
   _appendInkBarElement() {
-    if (!this._inkBarElement && (typeof ngDevMode === "undefined" || ngDevMode)) {
-      throw Error("Ink bar element has not been created and cannot be appended");
+    if (
+      !this._inkBarElement &&
+      (typeof ngDevMode === "undefined" || ngDevMode)
+    ) {
+      throw Error(
+        "Ink bar element has not been created and cannot be appended",
+      );
     }
-    const parentElement = this._fitToContent ? this._elementRef.nativeElement.querySelector(".mdc-tab__content") : this._elementRef.nativeElement;
+    const parentElement = this._fitToContent
+      ? this._elementRef.nativeElement.querySelector(".mdc-tab__content")
+      : this._elementRef.nativeElement;
     if (!parentElement && (typeof ngDevMode === "undefined" || ngDevMode)) {
       throw Error("Missing element to host the ink bar");
     }
@@ -597,33 +785,50 @@ _InkBarItem.ɵfac = function InkBarItem_Factory(t) {
 _InkBarItem.ɵdir = ɵɵdefineDirective({
   type: _InkBarItem,
   inputs: {
-    fitInkBarToContent: [InputFlags.HasDecoratorInputTransform, "fitInkBarToContent", "fitInkBarToContent", booleanAttribute]
+    fitInkBarToContent: [
+      InputFlags.HasDecoratorInputTransform,
+      "fitInkBarToContent",
+      "fitInkBarToContent",
+      booleanAttribute,
+    ],
   },
-  features: [ɵɵInputTransformsFeature]
+  features: [ɵɵInputTransformsFeature],
 });
 var InkBarItem = _InkBarItem;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(InkBarItem, [{
-    type: Directive
-  }], null, {
-    fitInkBarToContent: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }]
-  });
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      InkBarItem,
+      [
+        {
+          type: Directive,
+        },
+      ],
+      null,
+      {
+        fitInkBarToContent: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+      },
+    );
 })();
 function _MAT_INK_BAR_POSITIONER_FACTORY() {
   const method = (element) => ({
     left: element ? (element.offsetLeft || 0) + "px" : "0",
-    width: element ? (element.offsetWidth || 0) + "px" : "0"
+    width: element ? (element.offsetWidth || 0) + "px" : "0",
   });
   return method;
 }
 var _MAT_INK_BAR_POSITIONER = new InjectionToken("MatInkBarPositioner", {
   providedIn: "root",
-  factory: _MAT_INK_BAR_POSITIONER_FACTORY
+  factory: _MAT_INK_BAR_POSITIONER_FACTORY,
 });
 var _MatTabLabelWrapper = class _MatTabLabelWrapper extends InkBarItem {
   constructor(elementRef) {
@@ -656,36 +861,57 @@ _MatTabLabelWrapper.ɵdir = ɵɵdefineDirective({
     }
   },
   inputs: {
-    disabled: [InputFlags.HasDecoratorInputTransform, "disabled", "disabled", booleanAttribute]
+    disabled: [
+      InputFlags.HasDecoratorInputTransform,
+      "disabled",
+      "disabled",
+      booleanAttribute,
+    ],
   },
   standalone: true,
-  features: [ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature]
+  features: [ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature],
 });
 var MatTabLabelWrapper = _MatTabLabelWrapper;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTabLabelWrapper, [{
-    type: Directive,
-    args: [{
-      selector: "[matTabLabelWrapper]",
-      host: {
-        "[class.mat-mdc-tab-disabled]": "disabled",
-        "[attr.aria-disabled]": "!!disabled"
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTabLabelWrapper,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[matTabLabelWrapper]",
+              host: {
+                "[class.mat-mdc-tab-disabled]": "disabled",
+                "[attr.aria-disabled]": "!!disabled",
+              },
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ElementRef,
+        },
+      ],
+      {
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
       },
-      standalone: true
-    }]
-  }], () => [{
-    type: ElementRef
-  }], {
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }]
-  });
+    );
 })();
 var passiveEventListenerOptions = normalizePassiveListenerOptions({
-  passive: true
+  passive: true,
 });
 var HEADER_SCROLL_DELAY = 650;
 var HEADER_SCROLL_INTERVAL = 100;
@@ -704,7 +930,15 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
       }
     }
   }
-  constructor(_elementRef, _changeDetectorRef, _viewportRuler, _dir, _ngZone, _platform, _animationMode) {
+  constructor(
+    _elementRef,
+    _changeDetectorRef,
+    _viewportRuler,
+    _dir,
+    _ngZone,
+    _platform,
+    _animationMode,
+  ) {
     this._elementRef = _elementRef;
     this._changeDetectorRef = _changeDetectorRef;
     this._viewportRuler = _viewportRuler;
@@ -724,18 +958,32 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
     this.selectFocusedIndex = new EventEmitter();
     this.indexFocused = new EventEmitter();
     _ngZone.runOutsideAngular(() => {
-      fromEvent(_elementRef.nativeElement, "mouseleave").pipe(takeUntil(this._destroyed)).subscribe(() => {
-        this._stopInterval();
-      });
+      fromEvent(_elementRef.nativeElement, "mouseleave")
+        .pipe(takeUntil(this._destroyed))
+        .subscribe(() => {
+          this._stopInterval();
+        });
     });
   }
   ngAfterViewInit() {
-    fromEvent(this._previousPaginator.nativeElement, "touchstart", passiveEventListenerOptions).pipe(takeUntil(this._destroyed)).subscribe(() => {
-      this._handlePaginatorPress("before");
-    });
-    fromEvent(this._nextPaginator.nativeElement, "touchstart", passiveEventListenerOptions).pipe(takeUntil(this._destroyed)).subscribe(() => {
-      this._handlePaginatorPress("after");
-    });
+    fromEvent(
+      this._previousPaginator.nativeElement,
+      "touchstart",
+      passiveEventListenerOptions,
+    )
+      .pipe(takeUntil(this._destroyed))
+      .subscribe(() => {
+        this._handlePaginatorPress("before");
+      });
+    fromEvent(
+      this._nextPaginator.nativeElement,
+      "touchstart",
+      passiveEventListenerOptions,
+    )
+      .pipe(takeUntil(this._destroyed))
+      .subscribe(() => {
+        this._handlePaginatorPress("after");
+      });
   }
   ngAfterContentInit() {
     const dirChange = this._dir ? this._dir.change : of("ltr");
@@ -744,18 +992,27 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
       this.updatePagination();
       this._alignInkBarToSelectedTab();
     };
-    this._keyManager = new FocusKeyManager(this._items).withHorizontalOrientation(this._getLayoutDirection()).withHomeAndEnd().withWrap().skipPredicate(() => false);
+    this._keyManager = new FocusKeyManager(this._items)
+      .withHorizontalOrientation(this._getLayoutDirection())
+      .withHomeAndEnd()
+      .withWrap()
+      .skipPredicate(() => false);
     this._keyManager.updateActiveItem(this._selectedIndex);
     this._ngZone.onStable.pipe(take(1)).subscribe(realign);
-    merge(dirChange, resize, this._items.changes, this._itemsResized()).pipe(takeUntil(this._destroyed)).subscribe(() => {
-      this._ngZone.run(() => {
-        Promise.resolve().then(() => {
-          this._scrollDistance = Math.max(0, Math.min(this._getMaxScrollDistance(), this._scrollDistance));
-          realign();
+    merge(dirChange, resize, this._items.changes, this._itemsResized())
+      .pipe(takeUntil(this._destroyed))
+      .subscribe(() => {
+        this._ngZone.run(() => {
+          Promise.resolve().then(() => {
+            this._scrollDistance = Math.max(
+              0,
+              Math.min(this._getMaxScrollDistance(), this._scrollDistance),
+            );
+            realign();
+          });
         });
+        this._keyManager.withHorizontalOrientation(this._getLayoutDirection());
       });
-      this._keyManager.withHorizontalOrientation(this._getLayoutDirection());
-    });
     this._keyManager.change.subscribe((newFocusIndex) => {
       this.indexFocused.emit(newFocusIndex);
       this._setTabFocus(newFocusIndex);
@@ -768,19 +1025,32 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
     }
     return this._items.changes.pipe(
       startWith(this._items),
-      switchMap((tabItems) => new Observable((observer) => this._ngZone.runOutsideAngular(() => {
-        const resizeObserver = new ResizeObserver((entries) => observer.next(entries));
-        tabItems.forEach((item) => resizeObserver.observe(item.elementRef.nativeElement));
-        return () => {
-          resizeObserver.disconnect();
-        };
-      }))),
+      switchMap(
+        (tabItems) =>
+          new Observable((observer) =>
+            this._ngZone.runOutsideAngular(() => {
+              const resizeObserver = new ResizeObserver((entries) =>
+                observer.next(entries),
+              );
+              tabItems.forEach((item) =>
+                resizeObserver.observe(item.elementRef.nativeElement),
+              );
+              return () => {
+                resizeObserver.disconnect();
+              };
+            }),
+          ),
+      ),
       // Skip the first emit since the resize observer emits when an item
       // is observed for new items when the tab is already inserted
       skip(1),
       // Skip emissions where all the elements are invisible since we don't want
       // the header to try and re-render with invalid measurements. See #25574.
-      filter((entries) => entries.some((e) => e.contentRect.width > 0 && e.contentRect.height > 0))
+      filter((entries) =>
+        entries.some(
+          (e) => e.contentRect.width > 0 && e.contentRect.height > 0,
+        ),
+      ),
     );
   }
   ngAfterContentChecked() {
@@ -860,7 +1130,11 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
   }
   /** When the focus index is set, we must manually send focus to the correct label */
   set focusIndex(value) {
-    if (!this._isValidIndex(value) || this.focusIndex === value || !this._keyManager) {
+    if (
+      !this._isValidIndex(value) ||
+      this.focusIndex === value ||
+      !this._keyManager
+    ) {
       return;
     }
     this._keyManager.setActiveItem(value);
@@ -887,7 +1161,8 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
       if (dir == "ltr") {
         containerEl.scrollLeft = 0;
       } else {
-        containerEl.scrollLeft = containerEl.scrollWidth - containerEl.offsetWidth;
+        containerEl.scrollLeft =
+          containerEl.scrollWidth - containerEl.offsetWidth;
       }
     }
   }
@@ -901,7 +1176,8 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
       return;
     }
     const scrollDistance = this.scrollDistance;
-    const translateX = this._getLayoutDirection() === "ltr" ? -scrollDistance : scrollDistance;
+    const translateX =
+      this._getLayoutDirection() === "ltr" ? -scrollDistance : scrollDistance;
     this._tabList.nativeElement.style.transform = `translateX(${Math.round(translateX)}px)`;
     if (this._platform.TRIDENT || this._platform.EDGE) {
       this._tabListContainer.nativeElement.scrollLeft = 0;
@@ -924,7 +1200,7 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
    */
   _scrollHeader(direction) {
     const viewLength = this._tabListContainer.nativeElement.offsetWidth;
-    const scrollAmount = (direction == "before" ? -1 : 1) * viewLength / 3;
+    const scrollAmount = ((direction == "before" ? -1 : 1) * viewLength) / 3;
     return this._scrollTo(this._scrollDistance + scrollAmount);
   }
   /** Handles click events on the pagination arrows. */
@@ -942,15 +1218,14 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
     if (this.disablePagination) {
       return;
     }
-    const selectedLabel = this._items ? this._items.toArray()[labelIndex] : null;
+    const selectedLabel = this._items
+      ? this._items.toArray()[labelIndex]
+      : null;
     if (!selectedLabel) {
       return;
     }
     const viewLength = this._tabListContainer.nativeElement.offsetWidth;
-    const {
-      offsetLeft,
-      offsetWidth
-    } = selectedLabel.elementRef.nativeElement;
+    const { offsetLeft, offsetWidth } = selectedLabel.elementRef.nativeElement;
     let labelBeforePos, labelAfterPos;
     if (this._getLayoutDirection() == "ltr") {
       labelBeforePos = offsetLeft;
@@ -964,7 +1239,10 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
     if (labelBeforePos < beforeVisiblePos) {
       this.scrollDistance -= beforeVisiblePos - labelBeforePos;
     } else if (labelAfterPos > afterVisiblePos) {
-      this.scrollDistance += Math.min(labelAfterPos - afterVisiblePos, labelBeforePos - beforeVisiblePos);
+      this.scrollDistance += Math.min(
+        labelAfterPos - afterVisiblePos,
+        labelBeforePos - beforeVisiblePos,
+      );
     }
   }
   /**
@@ -979,7 +1257,9 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
     if (this.disablePagination) {
       this._showPaginationControls = false;
     } else {
-      const isEnabled = this._tabListInner.nativeElement.scrollWidth > this._elementRef.nativeElement.offsetWidth;
+      const isEnabled =
+        this._tabListInner.nativeElement.scrollWidth >
+        this._elementRef.nativeElement.offsetWidth;
       if (!isEnabled) {
         this.scrollDistance = 0;
       }
@@ -1003,7 +1283,8 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
       this._disableScrollAfter = this._disableScrollBefore = true;
     } else {
       this._disableScrollBefore = this.scrollDistance == 0;
-      this._disableScrollAfter = this.scrollDistance == this._getMaxScrollDistance();
+      this._disableScrollAfter =
+        this.scrollDistance == this._getMaxScrollDistance();
       this._changeDetectorRef.markForCheck();
     }
   }
@@ -1021,8 +1302,13 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
   }
   /** Tells the ink-bar to align itself to the current label wrapper */
   _alignInkBarToSelectedTab() {
-    const selectedItem = this._items && this._items.length ? this._items.toArray()[this.selectedIndex] : null;
-    const selectedLabelWrapper = selectedItem ? selectedItem.elementRef.nativeElement : null;
+    const selectedItem =
+      this._items && this._items.length
+        ? this._items.toArray()[this.selectedIndex]
+        : null;
+    const selectedLabelWrapper = selectedItem
+      ? selectedItem.elementRef.nativeElement
+      : null;
     if (selectedLabelWrapper) {
       this._inkBar.alignToElement(selectedLabelWrapper);
     } else {
@@ -1043,15 +1329,14 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
       return;
     }
     this._stopInterval();
-    timer(HEADER_SCROLL_DELAY, HEADER_SCROLL_INTERVAL).pipe(takeUntil(merge(this._stopScrolling, this._destroyed))).subscribe(() => {
-      const {
-        maxScrollDistance,
-        distance
-      } = this._scrollHeader(direction);
-      if (distance === 0 || distance >= maxScrollDistance) {
-        this._stopInterval();
-      }
-    });
+    timer(HEADER_SCROLL_DELAY, HEADER_SCROLL_INTERVAL)
+      .pipe(takeUntil(merge(this._stopScrolling, this._destroyed)))
+      .subscribe(() => {
+        const { maxScrollDistance, distance } = this._scrollHeader(direction);
+        if (distance === 0 || distance >= maxScrollDistance) {
+          this._stopInterval();
+        }
+      });
   }
   /**
    * Scrolls the header to a given position.
@@ -1062,7 +1347,7 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
     if (this.disablePagination) {
       return {
         maxScrollDistance: 0,
-        distance: 0
+        distance: 0,
       };
     }
     const maxScrollDistance = this._getMaxScrollDistance();
@@ -1071,76 +1356,143 @@ var _MatPaginatedTabHeader = class _MatPaginatedTabHeader {
     this._checkScrollingControls();
     return {
       maxScrollDistance,
-      distance: this._scrollDistance
+      distance: this._scrollDistance,
     };
   }
 };
 _MatPaginatedTabHeader.ɵfac = function MatPaginatedTabHeader_Factory(t) {
-  return new (t || _MatPaginatedTabHeader)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ViewportRuler), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8));
+  return new (t || _MatPaginatedTabHeader)(
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵdirectiveInject(ChangeDetectorRef),
+    ɵɵdirectiveInject(ViewportRuler),
+    ɵɵdirectiveInject(Directionality, 8),
+    ɵɵdirectiveInject(NgZone),
+    ɵɵdirectiveInject(Platform),
+    ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8),
+  );
 };
 _MatPaginatedTabHeader.ɵdir = ɵɵdefineDirective({
   type: _MatPaginatedTabHeader,
   inputs: {
-    disablePagination: [InputFlags.HasDecoratorInputTransform, "disablePagination", "disablePagination", booleanAttribute],
-    selectedIndex: [InputFlags.HasDecoratorInputTransform, "selectedIndex", "selectedIndex", numberAttribute]
+    disablePagination: [
+      InputFlags.HasDecoratorInputTransform,
+      "disablePagination",
+      "disablePagination",
+      booleanAttribute,
+    ],
+    selectedIndex: [
+      InputFlags.HasDecoratorInputTransform,
+      "selectedIndex",
+      "selectedIndex",
+      numberAttribute,
+    ],
   },
   outputs: {
     selectFocusedIndex: "selectFocusedIndex",
-    indexFocused: "indexFocused"
+    indexFocused: "indexFocused",
   },
-  features: [ɵɵInputTransformsFeature]
+  features: [ɵɵInputTransformsFeature],
 });
 var MatPaginatedTabHeader = _MatPaginatedTabHeader;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatPaginatedTabHeader, [{
-    type: Directive
-  }], () => [{
-    type: ElementRef
-  }, {
-    type: ChangeDetectorRef
-  }, {
-    type: ViewportRuler
-  }, {
-    type: Directionality,
-    decorators: [{
-      type: Optional
-    }]
-  }, {
-    type: NgZone
-  }, {
-    type: Platform
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [ANIMATION_MODULE_TYPE]
-    }]
-  }], {
-    disablePagination: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    selectedIndex: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    selectFocusedIndex: [{
-      type: Output
-    }],
-    indexFocused: [{
-      type: Output
-    }]
-  });
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatPaginatedTabHeader,
+      [
+        {
+          type: Directive,
+        },
+      ],
+      () => [
+        {
+          type: ElementRef,
+        },
+        {
+          type: ChangeDetectorRef,
+        },
+        {
+          type: ViewportRuler,
+        },
+        {
+          type: Directionality,
+          decorators: [
+            {
+              type: Optional,
+            },
+          ],
+        },
+        {
+          type: NgZone,
+        },
+        {
+          type: Platform,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Optional,
+            },
+            {
+              type: Inject,
+              args: [ANIMATION_MODULE_TYPE],
+            },
+          ],
+        },
+      ],
+      {
+        disablePagination: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        selectedIndex: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: numberAttribute,
+              },
+            ],
+          },
+        ],
+        selectFocusedIndex: [
+          {
+            type: Output,
+          },
+        ],
+        indexFocused: [
+          {
+            type: Output,
+          },
+        ],
+      },
+    );
 })();
 var _MatTabHeader = class _MatTabHeader extends MatPaginatedTabHeader {
-  constructor(elementRef, changeDetectorRef, viewportRuler, dir, ngZone, platform, animationMode) {
-    super(elementRef, changeDetectorRef, viewportRuler, dir, ngZone, platform, animationMode);
+  constructor(
+    elementRef,
+    changeDetectorRef,
+    viewportRuler,
+    dir,
+    ngZone,
+    platform,
+    animationMode,
+  ) {
+    super(
+      elementRef,
+      changeDetectorRef,
+      viewportRuler,
+      dir,
+      ngZone,
+      platform,
+      animationMode,
+    );
     this.disableRipple = false;
   }
   ngAfterContentInit() {
@@ -1152,7 +1504,15 @@ var _MatTabHeader = class _MatTabHeader extends MatPaginatedTabHeader {
   }
 };
 _MatTabHeader.ɵfac = function MatTabHeader_Factory(t) {
-  return new (t || _MatTabHeader)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ViewportRuler), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8));
+  return new (t || _MatTabHeader)(
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵdirectiveInject(ChangeDetectorRef),
+    ɵɵdirectiveInject(ViewportRuler),
+    ɵɵdirectiveInject(Directionality, 8),
+    ɵɵdirectiveInject(NgZone),
+    ɵɵdirectiveInject(Platform),
+    ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8),
+  );
 };
 _MatTabHeader.ɵcmp = ɵɵdefineComponent({
   type: _MatTabHeader,
@@ -1163,7 +1523,7 @@ _MatTabHeader.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._items = _t);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._items = _t);
     }
   },
   viewQuery: function MatTabHeader_Query(rf, ctx) {
@@ -1176,103 +1536,210 @@ _MatTabHeader.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._tabListContainer = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._tabList = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._tabListInner = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._nextPaginator = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._previousPaginator = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) &&
+        (ctx._tabListContainer = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._tabList = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._tabListInner = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._nextPaginator = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) &&
+        (ctx._previousPaginator = _t.first);
     }
   },
   hostAttrs: [1, "mat-mdc-tab-header"],
   hostVars: 4,
   hostBindings: function MatTabHeader_HostBindings(rf, ctx) {
     if (rf & 2) {
-      ɵɵclassProp("mat-mdc-tab-header-pagination-controls-enabled", ctx._showPaginationControls)("mat-mdc-tab-header-rtl", ctx._getLayoutDirection() == "rtl");
+      ɵɵclassProp(
+        "mat-mdc-tab-header-pagination-controls-enabled",
+        ctx._showPaginationControls,
+      )("mat-mdc-tab-header-rtl", ctx._getLayoutDirection() == "rtl");
     }
   },
   inputs: {
-    disableRipple: [InputFlags.HasDecoratorInputTransform, "disableRipple", "disableRipple", booleanAttribute]
+    disableRipple: [
+      InputFlags.HasDecoratorInputTransform,
+      "disableRipple",
+      "disableRipple",
+      booleanAttribute,
+    ],
   },
   standalone: true,
-  features: [ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+  features: [
+    ɵɵInputTransformsFeature,
+    ɵɵInheritDefinitionFeature,
+    ɵɵStandaloneFeature,
+  ],
   ngContentSelectors: _c0,
   decls: 13,
   vars: 10,
-  consts: [["previousPaginator", ""], ["tabListContainer", ""], ["tabList", ""], ["tabListInner", ""], ["nextPaginator", ""], ["aria-hidden", "true", "type", "button", "mat-ripple", "", "tabindex", "-1", 1, "mat-mdc-tab-header-pagination", "mat-mdc-tab-header-pagination-before", 3, "click", "mousedown", "touchend", "matRippleDisabled", "disabled"], [1, "mat-mdc-tab-header-pagination-chevron"], [1, "mat-mdc-tab-label-container", 3, "keydown"], ["role", "tablist", 1, "mat-mdc-tab-list", 3, "cdkObserveContent"], [1, "mat-mdc-tab-labels"], ["aria-hidden", "true", "type", "button", "mat-ripple", "", "tabindex", "-1", 1, "mat-mdc-tab-header-pagination", "mat-mdc-tab-header-pagination-after", 3, "mousedown", "click", "touchend", "matRippleDisabled", "disabled"]],
+  consts: [
+    ["previousPaginator", ""],
+    ["tabListContainer", ""],
+    ["tabList", ""],
+    ["tabListInner", ""],
+    ["nextPaginator", ""],
+    [
+      "aria-hidden",
+      "true",
+      "type",
+      "button",
+      "mat-ripple",
+      "",
+      "tabindex",
+      "-1",
+      1,
+      "mat-mdc-tab-header-pagination",
+      "mat-mdc-tab-header-pagination-before",
+      3,
+      "click",
+      "mousedown",
+      "touchend",
+      "matRippleDisabled",
+      "disabled",
+    ],
+    [1, "mat-mdc-tab-header-pagination-chevron"],
+    [1, "mat-mdc-tab-label-container", 3, "keydown"],
+    ["role", "tablist", 1, "mat-mdc-tab-list", 3, "cdkObserveContent"],
+    [1, "mat-mdc-tab-labels"],
+    [
+      "aria-hidden",
+      "true",
+      "type",
+      "button",
+      "mat-ripple",
+      "",
+      "tabindex",
+      "-1",
+      1,
+      "mat-mdc-tab-header-pagination",
+      "mat-mdc-tab-header-pagination-after",
+      3,
+      "mousedown",
+      "click",
+      "touchend",
+      "matRippleDisabled",
+      "disabled",
+    ],
+  ],
   template: function MatTabHeader_Template(rf, ctx) {
     if (rf & 1) {
       const _r1 = ɵɵgetCurrentView();
       ɵɵprojectionDef();
       ɵɵelementStart(0, "button", 5, 0);
-      ɵɵlistener("click", function MatTabHeader_Template_button_click_0_listener() {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._handlePaginatorClick("before"));
-      })("mousedown", function MatTabHeader_Template_button_mousedown_0_listener($event) {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._handlePaginatorPress("before", $event));
-      })("touchend", function MatTabHeader_Template_button_touchend_0_listener() {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._stopInterval());
-      });
+      ɵɵlistener(
+        "click",
+        function MatTabHeader_Template_button_click_0_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._handlePaginatorClick("before"));
+        },
+      )(
+        "mousedown",
+        function MatTabHeader_Template_button_mousedown_0_listener($event) {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._handlePaginatorPress("before", $event));
+        },
+      )(
+        "touchend",
+        function MatTabHeader_Template_button_touchend_0_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._stopInterval());
+        },
+      );
       ɵɵelement(2, "div", 6);
       ɵɵelementEnd();
       ɵɵelementStart(3, "div", 7, 1);
-      ɵɵlistener("keydown", function MatTabHeader_Template_div_keydown_3_listener($event) {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._handleKeydown($event));
-      });
+      ɵɵlistener(
+        "keydown",
+        function MatTabHeader_Template_div_keydown_3_listener($event) {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._handleKeydown($event));
+        },
+      );
       ɵɵelementStart(5, "div", 8, 2);
-      ɵɵlistener("cdkObserveContent", function MatTabHeader_Template_div_cdkObserveContent_5_listener() {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._onContentChanges());
-      });
+      ɵɵlistener(
+        "cdkObserveContent",
+        function MatTabHeader_Template_div_cdkObserveContent_5_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._onContentChanges());
+        },
+      );
       ɵɵelementStart(7, "div", 9, 3);
       ɵɵprojection(9);
       ɵɵelementEnd()()();
       ɵɵelementStart(10, "button", 10, 4);
-      ɵɵlistener("mousedown", function MatTabHeader_Template_button_mousedown_10_listener($event) {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._handlePaginatorPress("after", $event));
-      })("click", function MatTabHeader_Template_button_click_10_listener() {
+      ɵɵlistener(
+        "mousedown",
+        function MatTabHeader_Template_button_mousedown_10_listener($event) {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._handlePaginatorPress("after", $event));
+        },
+      )("click", function MatTabHeader_Template_button_click_10_listener() {
         ɵɵrestoreView(_r1);
         return ɵɵresetView(ctx._handlePaginatorClick("after"));
-      })("touchend", function MatTabHeader_Template_button_touchend_10_listener() {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._stopInterval());
-      });
+      })(
+        "touchend",
+        function MatTabHeader_Template_button_touchend_10_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._stopInterval());
+        },
+      );
       ɵɵelement(12, "div", 6);
       ɵɵelementEnd();
     }
     if (rf & 2) {
-      ɵɵclassProp("mat-mdc-tab-header-pagination-disabled", ctx._disableScrollBefore);
-      ɵɵproperty("matRippleDisabled", ctx._disableScrollBefore || ctx.disableRipple)("disabled", ctx._disableScrollBefore || null);
+      ɵɵclassProp(
+        "mat-mdc-tab-header-pagination-disabled",
+        ctx._disableScrollBefore,
+      );
+      ɵɵproperty(
+        "matRippleDisabled",
+        ctx._disableScrollBefore || ctx.disableRipple,
+      )("disabled", ctx._disableScrollBefore || null);
       ɵɵadvance(3);
-      ɵɵclassProp("_mat-animation-noopable", ctx._animationMode === "NoopAnimations");
+      ɵɵclassProp(
+        "_mat-animation-noopable",
+        ctx._animationMode === "NoopAnimations",
+      );
       ɵɵadvance(7);
-      ɵɵclassProp("mat-mdc-tab-header-pagination-disabled", ctx._disableScrollAfter);
-      ɵɵproperty("matRippleDisabled", ctx._disableScrollAfter || ctx.disableRipple)("disabled", ctx._disableScrollAfter || null);
+      ɵɵclassProp(
+        "mat-mdc-tab-header-pagination-disabled",
+        ctx._disableScrollAfter,
+      );
+      ɵɵproperty(
+        "matRippleDisabled",
+        ctx._disableScrollAfter || ctx.disableRipple,
+      )("disabled", ctx._disableScrollAfter || null);
     }
   },
   dependencies: [MatRipple, CdkObserveContent],
-  styles: [".mat-mdc-tab-header{display:flex;overflow:hidden;position:relative;flex-shrink:0}.mdc-tab-indicator .mdc-tab-indicator__content{transition-duration:var(--mat-tab-animation-duration, 250ms)}.mat-mdc-tab-header-pagination{-webkit-user-select:none;user-select:none;position:relative;display:none;justify-content:center;align-items:center;min-width:32px;cursor:pointer;z-index:2;-webkit-tap-highlight-color:rgba(0,0,0,0);touch-action:none;box-sizing:content-box;background:none;border:none;outline:0;padding:0}.mat-mdc-tab-header-pagination::-moz-focus-inner{border:0}.mat-mdc-tab-header-pagination .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-header-pagination-controls-enabled .mat-mdc-tab-header-pagination{display:flex}.mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after{padding-left:4px}.mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(-135deg)}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-pagination-after{padding-right:4px}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(45deg)}.mat-mdc-tab-header-pagination-chevron{border-style:solid;border-width:2px 2px 0 0;height:8px;width:8px;border-color:var(--mat-tab-header-pagination-icon-color)}.mat-mdc-tab-header-pagination-disabled{box-shadow:none;cursor:default;pointer-events:none}.mat-mdc-tab-header-pagination-disabled .mat-mdc-tab-header-pagination-chevron{opacity:.4}.mat-mdc-tab-list{flex-grow:1;position:relative;transition:transform 500ms cubic-bezier(0.35, 0, 0.25, 1)}._mat-animation-noopable .mat-mdc-tab-list{transition:none}._mat-animation-noopable span.mdc-tab-indicator__content,._mat-animation-noopable span.mdc-tab__text-label{transition:none}.mat-mdc-tab-label-container{display:flex;flex-grow:1;overflow:hidden;z-index:1;border-bottom-style:solid;border-bottom-width:var(--mat-tab-header-divider-height);border-bottom-color:var(--mat-tab-header-divider-color)}.mat-mdc-tab-group-inverted-header .mat-mdc-tab-label-container{border-bottom:none;border-top-style:solid;border-top-width:var(--mat-tab-header-divider-height);border-top-color:var(--mat-tab-header-divider-color)}.mat-mdc-tab-labels{display:flex;flex:1 0 auto}[mat-align-tabs=center]>.mat-mdc-tab-header .mat-mdc-tab-labels{justify-content:center}[mat-align-tabs=end]>.mat-mdc-tab-header .mat-mdc-tab-labels{justify-content:flex-end}.mat-mdc-tab::before{margin:5px}.cdk-high-contrast-active .mat-mdc-tab[aria-disabled=true]{color:GrayText}"],
-  encapsulation: 2
+  styles: [
+    ".mat-mdc-tab-header{display:flex;overflow:hidden;position:relative;flex-shrink:0}.mdc-tab-indicator .mdc-tab-indicator__content{transition-duration:var(--mat-tab-animation-duration, 250ms)}.mat-mdc-tab-header-pagination{-webkit-user-select:none;user-select:none;position:relative;display:none;justify-content:center;align-items:center;min-width:32px;cursor:pointer;z-index:2;-webkit-tap-highlight-color:rgba(0,0,0,0);touch-action:none;box-sizing:content-box;background:none;border:none;outline:0;padding:0}.mat-mdc-tab-header-pagination::-moz-focus-inner{border:0}.mat-mdc-tab-header-pagination .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-header-pagination-controls-enabled .mat-mdc-tab-header-pagination{display:flex}.mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after{padding-left:4px}.mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(-135deg)}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-pagination-after{padding-right:4px}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(45deg)}.mat-mdc-tab-header-pagination-chevron{border-style:solid;border-width:2px 2px 0 0;height:8px;width:8px;border-color:var(--mat-tab-header-pagination-icon-color)}.mat-mdc-tab-header-pagination-disabled{box-shadow:none;cursor:default;pointer-events:none}.mat-mdc-tab-header-pagination-disabled .mat-mdc-tab-header-pagination-chevron{opacity:.4}.mat-mdc-tab-list{flex-grow:1;position:relative;transition:transform 500ms cubic-bezier(0.35, 0, 0.25, 1)}._mat-animation-noopable .mat-mdc-tab-list{transition:none}._mat-animation-noopable span.mdc-tab-indicator__content,._mat-animation-noopable span.mdc-tab__text-label{transition:none}.mat-mdc-tab-label-container{display:flex;flex-grow:1;overflow:hidden;z-index:1;border-bottom-style:solid;border-bottom-width:var(--mat-tab-header-divider-height);border-bottom-color:var(--mat-tab-header-divider-color)}.mat-mdc-tab-group-inverted-header .mat-mdc-tab-label-container{border-bottom:none;border-top-style:solid;border-top-width:var(--mat-tab-header-divider-height);border-top-color:var(--mat-tab-header-divider-color)}.mat-mdc-tab-labels{display:flex;flex:1 0 auto}[mat-align-tabs=center]>.mat-mdc-tab-header .mat-mdc-tab-labels{justify-content:center}[mat-align-tabs=end]>.mat-mdc-tab-header .mat-mdc-tab-labels{justify-content:flex-end}.mat-mdc-tab::before{margin:5px}.cdk-high-contrast-active .mat-mdc-tab[aria-disabled=true]{color:GrayText}",
+  ],
+  encapsulation: 2,
 });
 var MatTabHeader = _MatTabHeader;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTabHeader, [{
-    type: Component,
-    args: [{
-      selector: "mat-tab-header",
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.Default,
-      host: {
-        "class": "mat-mdc-tab-header",
-        "[class.mat-mdc-tab-header-pagination-controls-enabled]": "_showPaginationControls",
-        "[class.mat-mdc-tab-header-rtl]": "_getLayoutDirection() == 'rtl'"
-      },
-      standalone: true,
-      imports: [MatRipple, CdkObserveContent],
-      template: `<!-- TODO: this also had \`mat-elevation-z4\`. Figure out what we should do with it. -->
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTabHeader,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "mat-tab-header",
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.Default,
+              host: {
+                class: "mat-mdc-tab-header",
+                "[class.mat-mdc-tab-header-pagination-controls-enabled]":
+                  "_showPaginationControls",
+                "[class.mat-mdc-tab-header-rtl]":
+                  "_getLayoutDirection() == 'rtl'",
+              },
+              standalone: true,
+              imports: [MatRipple, CdkObserveContent],
+              template: `<!-- TODO: this also had \`mat-elevation-z4\`. Figure out what we should do with it. -->
 <button class="mat-mdc-tab-header-pagination mat-mdc-tab-header-pagination-before"
      #previousPaginator
      aria-hidden="true"
@@ -1320,106 +1787,172 @@ var MatTabHeader = _MatTabHeader;
   <div class="mat-mdc-tab-header-pagination-chevron"></div>
 </button>
 `,
-      styles: [".mat-mdc-tab-header{display:flex;overflow:hidden;position:relative;flex-shrink:0}.mdc-tab-indicator .mdc-tab-indicator__content{transition-duration:var(--mat-tab-animation-duration, 250ms)}.mat-mdc-tab-header-pagination{-webkit-user-select:none;user-select:none;position:relative;display:none;justify-content:center;align-items:center;min-width:32px;cursor:pointer;z-index:2;-webkit-tap-highlight-color:rgba(0,0,0,0);touch-action:none;box-sizing:content-box;background:none;border:none;outline:0;padding:0}.mat-mdc-tab-header-pagination::-moz-focus-inner{border:0}.mat-mdc-tab-header-pagination .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-header-pagination-controls-enabled .mat-mdc-tab-header-pagination{display:flex}.mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after{padding-left:4px}.mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(-135deg)}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-pagination-after{padding-right:4px}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(45deg)}.mat-mdc-tab-header-pagination-chevron{border-style:solid;border-width:2px 2px 0 0;height:8px;width:8px;border-color:var(--mat-tab-header-pagination-icon-color)}.mat-mdc-tab-header-pagination-disabled{box-shadow:none;cursor:default;pointer-events:none}.mat-mdc-tab-header-pagination-disabled .mat-mdc-tab-header-pagination-chevron{opacity:.4}.mat-mdc-tab-list{flex-grow:1;position:relative;transition:transform 500ms cubic-bezier(0.35, 0, 0.25, 1)}._mat-animation-noopable .mat-mdc-tab-list{transition:none}._mat-animation-noopable span.mdc-tab-indicator__content,._mat-animation-noopable span.mdc-tab__text-label{transition:none}.mat-mdc-tab-label-container{display:flex;flex-grow:1;overflow:hidden;z-index:1;border-bottom-style:solid;border-bottom-width:var(--mat-tab-header-divider-height);border-bottom-color:var(--mat-tab-header-divider-color)}.mat-mdc-tab-group-inverted-header .mat-mdc-tab-label-container{border-bottom:none;border-top-style:solid;border-top-width:var(--mat-tab-header-divider-height);border-top-color:var(--mat-tab-header-divider-color)}.mat-mdc-tab-labels{display:flex;flex:1 0 auto}[mat-align-tabs=center]>.mat-mdc-tab-header .mat-mdc-tab-labels{justify-content:center}[mat-align-tabs=end]>.mat-mdc-tab-header .mat-mdc-tab-labels{justify-content:flex-end}.mat-mdc-tab::before{margin:5px}.cdk-high-contrast-active .mat-mdc-tab[aria-disabled=true]{color:GrayText}"]
-    }]
-  }], () => [{
-    type: ElementRef
-  }, {
-    type: ChangeDetectorRef
-  }, {
-    type: ViewportRuler
-  }, {
-    type: Directionality,
-    decorators: [{
-      type: Optional
-    }]
-  }, {
-    type: NgZone
-  }, {
-    type: Platform
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [ANIMATION_MODULE_TYPE]
-    }]
-  }], {
-    _items: [{
-      type: ContentChildren,
-      args: [MatTabLabelWrapper, {
-        descendants: false
-      }]
-    }],
-    _tabListContainer: [{
-      type: ViewChild,
-      args: ["tabListContainer", {
-        static: true
-      }]
-    }],
-    _tabList: [{
-      type: ViewChild,
-      args: ["tabList", {
-        static: true
-      }]
-    }],
-    _tabListInner: [{
-      type: ViewChild,
-      args: ["tabListInner", {
-        static: true
-      }]
-    }],
-    _nextPaginator: [{
-      type: ViewChild,
-      args: ["nextPaginator"]
-    }],
-    _previousPaginator: [{
-      type: ViewChild,
-      args: ["previousPaginator"]
-    }],
-    disableRipple: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }]
-  });
+              styles: [
+                ".mat-mdc-tab-header{display:flex;overflow:hidden;position:relative;flex-shrink:0}.mdc-tab-indicator .mdc-tab-indicator__content{transition-duration:var(--mat-tab-animation-duration, 250ms)}.mat-mdc-tab-header-pagination{-webkit-user-select:none;user-select:none;position:relative;display:none;justify-content:center;align-items:center;min-width:32px;cursor:pointer;z-index:2;-webkit-tap-highlight-color:rgba(0,0,0,0);touch-action:none;box-sizing:content-box;background:none;border:none;outline:0;padding:0}.mat-mdc-tab-header-pagination::-moz-focus-inner{border:0}.mat-mdc-tab-header-pagination .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-header-pagination-controls-enabled .mat-mdc-tab-header-pagination{display:flex}.mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after{padding-left:4px}.mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(-135deg)}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-pagination-after{padding-right:4px}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(45deg)}.mat-mdc-tab-header-pagination-chevron{border-style:solid;border-width:2px 2px 0 0;height:8px;width:8px;border-color:var(--mat-tab-header-pagination-icon-color)}.mat-mdc-tab-header-pagination-disabled{box-shadow:none;cursor:default;pointer-events:none}.mat-mdc-tab-header-pagination-disabled .mat-mdc-tab-header-pagination-chevron{opacity:.4}.mat-mdc-tab-list{flex-grow:1;position:relative;transition:transform 500ms cubic-bezier(0.35, 0, 0.25, 1)}._mat-animation-noopable .mat-mdc-tab-list{transition:none}._mat-animation-noopable span.mdc-tab-indicator__content,._mat-animation-noopable span.mdc-tab__text-label{transition:none}.mat-mdc-tab-label-container{display:flex;flex-grow:1;overflow:hidden;z-index:1;border-bottom-style:solid;border-bottom-width:var(--mat-tab-header-divider-height);border-bottom-color:var(--mat-tab-header-divider-color)}.mat-mdc-tab-group-inverted-header .mat-mdc-tab-label-container{border-bottom:none;border-top-style:solid;border-top-width:var(--mat-tab-header-divider-height);border-top-color:var(--mat-tab-header-divider-color)}.mat-mdc-tab-labels{display:flex;flex:1 0 auto}[mat-align-tabs=center]>.mat-mdc-tab-header .mat-mdc-tab-labels{justify-content:center}[mat-align-tabs=end]>.mat-mdc-tab-header .mat-mdc-tab-labels{justify-content:flex-end}.mat-mdc-tab::before{margin:5px}.cdk-high-contrast-active .mat-mdc-tab[aria-disabled=true]{color:GrayText}",
+              ],
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ElementRef,
+        },
+        {
+          type: ChangeDetectorRef,
+        },
+        {
+          type: ViewportRuler,
+        },
+        {
+          type: Directionality,
+          decorators: [
+            {
+              type: Optional,
+            },
+          ],
+        },
+        {
+          type: NgZone,
+        },
+        {
+          type: Platform,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Optional,
+            },
+            {
+              type: Inject,
+              args: [ANIMATION_MODULE_TYPE],
+            },
+          ],
+        },
+      ],
+      {
+        _items: [
+          {
+            type: ContentChildren,
+            args: [
+              MatTabLabelWrapper,
+              {
+                descendants: false,
+              },
+            ],
+          },
+        ],
+        _tabListContainer: [
+          {
+            type: ViewChild,
+            args: [
+              "tabListContainer",
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
+        _tabList: [
+          {
+            type: ViewChild,
+            args: [
+              "tabList",
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
+        _tabListInner: [
+          {
+            type: ViewChild,
+            args: [
+              "tabListInner",
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
+        _nextPaginator: [
+          {
+            type: ViewChild,
+            args: ["nextPaginator"],
+          },
+        ],
+        _previousPaginator: [
+          {
+            type: ViewChild,
+            args: ["previousPaginator"],
+          },
+        ],
+        disableRipple: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+      },
+    );
 })();
 var MAT_TABS_CONFIG = new InjectionToken("MAT_TABS_CONFIG");
 var matTabsAnimations = {
   /** Animation translates a tab along the X axis. */
   translateTab: trigger("translateTab", [
     // Transitions to `none` instead of 0, because some browsers might blur the content.
-    state("center, void, left-origin-center, right-origin-center", style({
-      transform: "none"
-    })),
+    state(
+      "center, void, left-origin-center, right-origin-center",
+      style({
+        transform: "none",
+      }),
+    ),
     // If the tab is either on the left or right, we additionally add a `min-height` of 1px
     // in order to ensure that the element has a height before its state changes. This is
     // necessary because Chrome does seem to skip the transition in RTL mode if the element does
     // not have a static height and is not rendered. See related issue: #9465
-    state("left", style({
-      transform: "translate3d(-100%, 0, 0)",
-      minHeight: "1px",
-      // Normally this is redundant since we detach the content from the DOM, but if the user
-      // opted into keeping the content in the DOM, we have to hide it so it isn't focusable.
-      visibility: "hidden"
-    })),
-    state("right", style({
-      transform: "translate3d(100%, 0, 0)",
-      minHeight: "1px",
-      visibility: "hidden"
-    })),
-    transition("* => left, * => right, left => center, right => center", animate("{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)")),
-    transition("void => left-origin-center", [style({
-      transform: "translate3d(-100%, 0, 0)",
-      visibility: "hidden"
-    }), animate("{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)")]),
-    transition("void => right-origin-center", [style({
-      transform: "translate3d(100%, 0, 0)",
-      visibility: "hidden"
-    }), animate("{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)")])
-  ])
+    state(
+      "left",
+      style({
+        transform: "translate3d(-100%, 0, 0)",
+        minHeight: "1px",
+        // Normally this is redundant since we detach the content from the DOM, but if the user
+        // opted into keeping the content in the DOM, we have to hide it so it isn't focusable.
+        visibility: "hidden",
+      }),
+    ),
+    state(
+      "right",
+      style({
+        transform: "translate3d(100%, 0, 0)",
+        minHeight: "1px",
+        visibility: "hidden",
+      }),
+    ),
+    transition(
+      "* => left, * => right, left => center, right => center",
+      animate("{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)"),
+    ),
+    transition("void => left-origin-center", [
+      style({
+        transform: "translate3d(-100%, 0, 0)",
+        visibility: "hidden",
+      }),
+      animate("{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)"),
+    ]),
+    transition("void => right-origin-center", [
+      style({
+        transform: "translate3d(100%, 0, 0)",
+        visibility: "hidden",
+      }),
+      animate("{{animationDuration}} cubic-bezier(0.35, 0, 0.25, 1)"),
+    ]),
+  ]),
 };
 var _MatTabBodyPortal = class _MatTabBodyPortal extends CdkPortalOutlet {
   constructor(componentFactoryResolver, viewContainerRef, _host, _document) {
@@ -1431,11 +1964,13 @@ var _MatTabBodyPortal = class _MatTabBodyPortal extends CdkPortalOutlet {
   /** Set initial visibility or set up subscription for changing visibility. */
   ngOnInit() {
     super.ngOnInit();
-    this._centeringSub = this._host._beforeCentering.pipe(startWith(this._host._isCenterPosition(this._host._position))).subscribe((isCentering) => {
-      if (isCentering && !this.hasAttached()) {
-        this.attach(this._host._content);
-      }
-    });
+    this._centeringSub = this._host._beforeCentering
+      .pipe(startWith(this._host._isCenterPosition(this._host._position)))
+      .subscribe((isCentering) => {
+        if (isCentering && !this.hasAttached()) {
+          this.attach(this._host._content);
+        }
+      });
     this._leavingSub = this._host._afterLeavingCenter.subscribe(() => {
       if (!this._host.preserveContent) {
         this.detach();
@@ -1450,39 +1985,63 @@ var _MatTabBodyPortal = class _MatTabBodyPortal extends CdkPortalOutlet {
   }
 };
 _MatTabBodyPortal.ɵfac = function MatTabBodyPortal_Factory(t) {
-  return new (t || _MatTabBodyPortal)(ɵɵdirectiveInject(ComponentFactoryResolver$1), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(forwardRef(() => MatTabBody)), ɵɵdirectiveInject(DOCUMENT));
+  return new (t || _MatTabBodyPortal)(
+    ɵɵdirectiveInject(ComponentFactoryResolver$1),
+    ɵɵdirectiveInject(ViewContainerRef),
+    ɵɵdirectiveInject(forwardRef(() => MatTabBody)),
+    ɵɵdirectiveInject(DOCUMENT),
+  );
 };
 _MatTabBodyPortal.ɵdir = ɵɵdefineDirective({
   type: _MatTabBodyPortal,
   selectors: [["", "matTabBodyHost", ""]],
   standalone: true,
-  features: [ɵɵInheritDefinitionFeature]
+  features: [ɵɵInheritDefinitionFeature],
 });
 var MatTabBodyPortal = _MatTabBodyPortal;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTabBodyPortal, [{
-    type: Directive,
-    args: [{
-      selector: "[matTabBodyHost]",
-      standalone: true
-    }]
-  }], () => [{
-    type: ComponentFactoryResolver$1
-  }, {
-    type: ViewContainerRef
-  }, {
-    type: MatTabBody,
-    decorators: [{
-      type: Inject,
-      args: [forwardRef(() => MatTabBody)]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [DOCUMENT]
-    }]
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTabBodyPortal,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[matTabBodyHost]",
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ComponentFactoryResolver$1,
+        },
+        {
+          type: ViewContainerRef,
+        },
+        {
+          type: MatTabBody,
+          decorators: [
+            {
+              type: Inject,
+              args: [forwardRef(() => MatTabBody)],
+            },
+          ],
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [DOCUMENT],
+            },
+          ],
+        },
+      ],
+      null,
+    );
 })();
 var _MatTabBody = class _MatTabBody {
   /** The shifted index position of the tab body, where zero represents the active center tab. */
@@ -1507,16 +2066,26 @@ var _MatTabBody = class _MatTabBody {
         changeDetectorRef.markForCheck();
       });
     }
-    this._translateTabComplete.pipe(distinctUntilChanged((x, y) => {
-      return x.fromState === y.fromState && x.toState === y.toState;
-    })).subscribe((event) => {
-      if (this._isCenterPosition(event.toState) && this._isCenterPosition(this._position)) {
-        this._onCentered.emit();
-      }
-      if (this._isCenterPosition(event.fromState) && !this._isCenterPosition(this._position)) {
-        this._afterLeavingCenter.emit();
-      }
-    });
+    this._translateTabComplete
+      .pipe(
+        distinctUntilChanged((x, y) => {
+          return x.fromState === y.fromState && x.toState === y.toState;
+        }),
+      )
+      .subscribe((event) => {
+        if (
+          this._isCenterPosition(event.toState) &&
+          this._isCenterPosition(this._position)
+        ) {
+          this._onCentered.emit();
+        }
+        if (
+          this._isCenterPosition(event.fromState) &&
+          !this._isCenterPosition(this._position)
+        ) {
+          this._afterLeavingCenter.emit();
+        }
+      });
   }
   /**
    * After initialized, check if the content is centered and has an origin. If so, set the
@@ -1544,7 +2113,11 @@ var _MatTabBody = class _MatTabBody {
   }
   /** Whether the provided position state is considered center, regardless of origin. */
   _isCenterPosition(position) {
-    return position == "center" || position == "left-origin-center" || position == "right-origin-center";
+    return (
+      position == "center" ||
+      position == "left-origin-center" ||
+      position == "right-origin-center"
+    );
   }
   /** Computes the position state that will be used for the tab-body animation trigger. */
   _computePositionAnimationState(dir = this._getLayoutDirection()) {
@@ -1562,14 +2135,18 @@ var _MatTabBody = class _MatTabBody {
    */
   _computePositionFromOrigin(origin) {
     const dir = this._getLayoutDirection();
-    if (dir == "ltr" && origin <= 0 || dir == "rtl" && origin > 0) {
+    if ((dir == "ltr" && origin <= 0) || (dir == "rtl" && origin > 0)) {
       return "left-origin-center";
     }
     return "right-origin-center";
   }
 };
 _MatTabBody.ɵfac = function MatTabBody_Factory(t) {
-  return new (t || _MatTabBody)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(ChangeDetectorRef));
+  return new (t || _MatTabBody)(
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵdirectiveInject(Directionality, 8),
+    ɵɵdirectiveInject(ChangeDetectorRef),
+  );
 };
 _MatTabBody.ɵcmp = ɵɵdefineComponent({
   type: _MatTabBody,
@@ -1580,7 +2157,7 @@ _MatTabBody.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._portalHost = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._portalHost = _t.first);
     }
   },
   hostAttrs: [1, "mat-mdc-tab-body"],
@@ -1589,104 +2166,167 @@ _MatTabBody.ɵcmp = ɵɵdefineComponent({
     origin: "origin",
     animationDuration: "animationDuration",
     preserveContent: "preserveContent",
-    position: "position"
+    position: "position",
   },
   outputs: {
     _onCentering: "_onCentering",
     _beforeCentering: "_beforeCentering",
     _afterLeavingCenter: "_afterLeavingCenter",
-    _onCentered: "_onCentered"
+    _onCentered: "_onCentered",
   },
   standalone: true,
   features: [ɵɵStandaloneFeature],
   decls: 3,
   vars: 6,
-  consts: [["content", ""], ["cdkScrollable", "", 1, "mat-mdc-tab-body-content"], ["matTabBodyHost", ""]],
+  consts: [
+    ["content", ""],
+    ["cdkScrollable", "", 1, "mat-mdc-tab-body-content"],
+    ["matTabBodyHost", ""],
+  ],
   template: function MatTabBody_Template(rf, ctx) {
     if (rf & 1) {
       const _r1 = ɵɵgetCurrentView();
       ɵɵelementStart(0, "div", 1, 0);
-      ɵɵlistener("@translateTab.start", function MatTabBody_Template_div_animation_translateTab_start_0_listener($event) {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._onTranslateTabStarted($event));
-      })("@translateTab.done", function MatTabBody_Template_div_animation_translateTab_done_0_listener($event) {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._translateTabComplete.next($event));
-      });
+      ɵɵlistener(
+        "@translateTab.start",
+        function MatTabBody_Template_div_animation_translateTab_start_0_listener(
+          $event,
+        ) {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._onTranslateTabStarted($event));
+        },
+      )(
+        "@translateTab.done",
+        function MatTabBody_Template_div_animation_translateTab_done_0_listener(
+          $event,
+        ) {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._translateTabComplete.next($event));
+        },
+      );
       ɵɵtemplate(2, MatTabBody_ng_template_2_Template, 0, 0, "ng-template", 2);
       ɵɵelementEnd();
     }
     if (rf & 2) {
-      ɵɵproperty("@translateTab", ɵɵpureFunction2(3, _c7, ctx._position, ɵɵpureFunction1(1, _c6, ctx.animationDuration)));
+      ɵɵproperty(
+        "@translateTab",
+        ɵɵpureFunction2(
+          3,
+          _c7,
+          ctx._position,
+          ɵɵpureFunction1(1, _c6, ctx.animationDuration),
+        ),
+      );
     }
   },
   dependencies: [MatTabBodyPortal, CdkScrollable],
-  styles: ['.mat-mdc-tab-body{top:0;left:0;right:0;bottom:0;position:absolute;display:block;overflow:hidden;outline:0;flex-basis:100%}.mat-mdc-tab-body.mat-mdc-tab-body-active{position:relative;overflow-x:hidden;overflow-y:auto;z-index:1;flex-grow:1}.mat-mdc-tab-group.mat-mdc-tab-group-dynamic-height .mat-mdc-tab-body.mat-mdc-tab-body-active{overflow-y:hidden}.mat-mdc-tab-body-content{height:100%;overflow:auto}.mat-mdc-tab-group-dynamic-height .mat-mdc-tab-body-content{overflow:hidden}.mat-mdc-tab-body-content[style*="visibility: hidden"]{display:none}'],
+  styles: [
+    '.mat-mdc-tab-body{top:0;left:0;right:0;bottom:0;position:absolute;display:block;overflow:hidden;outline:0;flex-basis:100%}.mat-mdc-tab-body.mat-mdc-tab-body-active{position:relative;overflow-x:hidden;overflow-y:auto;z-index:1;flex-grow:1}.mat-mdc-tab-group.mat-mdc-tab-group-dynamic-height .mat-mdc-tab-body.mat-mdc-tab-body-active{overflow-y:hidden}.mat-mdc-tab-body-content{height:100%;overflow:auto}.mat-mdc-tab-group-dynamic-height .mat-mdc-tab-body-content{overflow:hidden}.mat-mdc-tab-body-content[style*="visibility: hidden"]{display:none}',
+  ],
   encapsulation: 2,
   data: {
-    animation: [matTabsAnimations.translateTab]
-  }
+    animation: [matTabsAnimations.translateTab],
+  },
 });
 var MatTabBody = _MatTabBody;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTabBody, [{
-    type: Component,
-    args: [{
-      selector: "mat-tab-body",
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.Default,
-      animations: [matTabsAnimations.translateTab],
-      host: {
-        "class": "mat-mdc-tab-body"
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTabBody,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "mat-tab-body",
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.Default,
+              animations: [matTabsAnimations.translateTab],
+              host: {
+                class: "mat-mdc-tab-body",
+              },
+              standalone: true,
+              imports: [MatTabBodyPortal, CdkScrollable],
+              template:
+                '<div class="mat-mdc-tab-body-content" #content\n     [@translateTab]="{\n        value: _position,\n        params: {animationDuration: animationDuration}\n     }"\n     (@translateTab.start)="_onTranslateTabStarted($event)"\n     (@translateTab.done)="_translateTabComplete.next($event)"\n     cdkScrollable>\n  <ng-template matTabBodyHost></ng-template>\n</div>\n',
+              styles: [
+                '.mat-mdc-tab-body{top:0;left:0;right:0;bottom:0;position:absolute;display:block;overflow:hidden;outline:0;flex-basis:100%}.mat-mdc-tab-body.mat-mdc-tab-body-active{position:relative;overflow-x:hidden;overflow-y:auto;z-index:1;flex-grow:1}.mat-mdc-tab-group.mat-mdc-tab-group-dynamic-height .mat-mdc-tab-body.mat-mdc-tab-body-active{overflow-y:hidden}.mat-mdc-tab-body-content{height:100%;overflow:auto}.mat-mdc-tab-group-dynamic-height .mat-mdc-tab-body-content{overflow:hidden}.mat-mdc-tab-body-content[style*="visibility: hidden"]{display:none}',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ElementRef,
+        },
+        {
+          type: Directionality,
+          decorators: [
+            {
+              type: Optional,
+            },
+          ],
+        },
+        {
+          type: ChangeDetectorRef,
+        },
+      ],
+      {
+        _onCentering: [
+          {
+            type: Output,
+          },
+        ],
+        _beforeCentering: [
+          {
+            type: Output,
+          },
+        ],
+        _afterLeavingCenter: [
+          {
+            type: Output,
+          },
+        ],
+        _onCentered: [
+          {
+            type: Output,
+          },
+        ],
+        _portalHost: [
+          {
+            type: ViewChild,
+            args: [CdkPortalOutlet],
+          },
+        ],
+        _content: [
+          {
+            type: Input,
+            args: ["content"],
+          },
+        ],
+        origin: [
+          {
+            type: Input,
+          },
+        ],
+        animationDuration: [
+          {
+            type: Input,
+          },
+        ],
+        preserveContent: [
+          {
+            type: Input,
+          },
+        ],
+        position: [
+          {
+            type: Input,
+          },
+        ],
       },
-      standalone: true,
-      imports: [MatTabBodyPortal, CdkScrollable],
-      template: '<div class="mat-mdc-tab-body-content" #content\n     [@translateTab]="{\n        value: _position,\n        params: {animationDuration: animationDuration}\n     }"\n     (@translateTab.start)="_onTranslateTabStarted($event)"\n     (@translateTab.done)="_translateTabComplete.next($event)"\n     cdkScrollable>\n  <ng-template matTabBodyHost></ng-template>\n</div>\n',
-      styles: ['.mat-mdc-tab-body{top:0;left:0;right:0;bottom:0;position:absolute;display:block;overflow:hidden;outline:0;flex-basis:100%}.mat-mdc-tab-body.mat-mdc-tab-body-active{position:relative;overflow-x:hidden;overflow-y:auto;z-index:1;flex-grow:1}.mat-mdc-tab-group.mat-mdc-tab-group-dynamic-height .mat-mdc-tab-body.mat-mdc-tab-body-active{overflow-y:hidden}.mat-mdc-tab-body-content{height:100%;overflow:auto}.mat-mdc-tab-group-dynamic-height .mat-mdc-tab-body-content{overflow:hidden}.mat-mdc-tab-body-content[style*="visibility: hidden"]{display:none}']
-    }]
-  }], () => [{
-    type: ElementRef
-  }, {
-    type: Directionality,
-    decorators: [{
-      type: Optional
-    }]
-  }, {
-    type: ChangeDetectorRef
-  }], {
-    _onCentering: [{
-      type: Output
-    }],
-    _beforeCentering: [{
-      type: Output
-    }],
-    _afterLeavingCenter: [{
-      type: Output
-    }],
-    _onCentered: [{
-      type: Output
-    }],
-    _portalHost: [{
-      type: ViewChild,
-      args: [CdkPortalOutlet]
-    }],
-    _content: [{
-      type: Input,
-      args: ["content"]
-    }],
-    origin: [{
-      type: Input
-    }],
-    animationDuration: [{
-      type: Input
-    }],
-    preserveContent: [{
-      type: Input
-    }],
-    position: [{
-      type: Input
-    }]
-  });
+    );
 })();
 var nextId = 0;
 var ENABLE_BACKGROUND_INPUT = true;
@@ -1712,7 +2352,9 @@ var _MatTabGroup = class _MatTabGroup {
   }
   set animationDuration(value) {
     const stringValue = value + "";
-    this._animationDuration = /^\d+$/.test(stringValue) ? value + "ms" : stringValue;
+    this._animationDuration = /^\d+$/.test(stringValue)
+      ? value + "ms"
+      : stringValue;
   }
   /**
    * `tabindex` to be set on the inner element that wraps the tab content. Can be used for improved
@@ -1736,10 +2378,15 @@ var _MatTabGroup = class _MatTabGroup {
   }
   set backgroundColor(value) {
     if (!ENABLE_BACKGROUND_INPUT) {
-      throw new Error(`mat-tab-group background color must be set through the Sass theming API`);
+      throw new Error(
+        `mat-tab-group background color must be set through the Sass theming API`,
+      );
     }
     const classList = this._elementRef.nativeElement.classList;
-    classList.remove("mat-tabs-with-background", `mat-background-${this.backgroundColor}`);
+    classList.remove(
+      "mat-tabs-with-background",
+      `mat-background-${this.backgroundColor}`,
+    );
     if (value) {
       classList.add("mat-tabs-with-background", `mat-background-${value}`);
     }
@@ -1769,15 +2416,30 @@ var _MatTabGroup = class _MatTabGroup {
     this.selectedTabChange = new EventEmitter(true);
     this._isServer = !inject(Platform).isBrowser;
     this._groupId = nextId++;
-    this.animationDuration = defaultConfig && defaultConfig.animationDuration ? defaultConfig.animationDuration : "500ms";
-    this.disablePagination = defaultConfig && defaultConfig.disablePagination != null ? defaultConfig.disablePagination : false;
-    this.dynamicHeight = defaultConfig && defaultConfig.dynamicHeight != null ? defaultConfig.dynamicHeight : false;
+    this.animationDuration =
+      defaultConfig && defaultConfig.animationDuration
+        ? defaultConfig.animationDuration
+        : "500ms";
+    this.disablePagination =
+      defaultConfig && defaultConfig.disablePagination != null
+        ? defaultConfig.disablePagination
+        : false;
+    this.dynamicHeight =
+      defaultConfig && defaultConfig.dynamicHeight != null
+        ? defaultConfig.dynamicHeight
+        : false;
     if (defaultConfig?.contentTabIndex != null) {
       this.contentTabIndex = defaultConfig.contentTabIndex;
     }
     this.preserveContent = !!defaultConfig?.preserveContent;
-    this.fitInkBarToContent = defaultConfig && defaultConfig.fitInkBarToContent != null ? defaultConfig.fitInkBarToContent : false;
-    this.stretchTabs = defaultConfig && defaultConfig.stretchTabs != null ? defaultConfig.stretchTabs : true;
+    this.fitInkBarToContent =
+      defaultConfig && defaultConfig.fitInkBarToContent != null
+        ? defaultConfig.fitInkBarToContent
+        : false;
+    this.stretchTabs =
+      defaultConfig && defaultConfig.stretchTabs != null
+        ? defaultConfig.stretchTabs
+        : true;
   }
   /**
    * After the content is checked, this component knows what tabs have been defined
@@ -1786,7 +2448,9 @@ var _MatTabGroup = class _MatTabGroup {
    * a new selected tab should transition in (from the left or right).
    */
   ngAfterContentChecked() {
-    const indexToSelect = this._indexToSelect = this._clampTabIndex(this._indexToSelect);
+    const indexToSelect = (this._indexToSelect = this._clampTabIndex(
+      this._indexToSelect,
+    ));
     if (this._selectedIndex != indexToSelect) {
       const isFirstRun = this._selectedIndex == null;
       if (!isFirstRun) {
@@ -1795,7 +2459,9 @@ var _MatTabGroup = class _MatTabGroup {
         wrapper.style.minHeight = wrapper.clientHeight + "px";
       }
       Promise.resolve().then(() => {
-        this._tabs.forEach((tab, index) => tab.isActive = index === indexToSelect);
+        this._tabs.forEach(
+          (tab, index) => (tab.isActive = index === indexToSelect),
+        );
         if (!isFirstRun) {
           this.selectedIndexChange.emit(indexToSelect);
           this._tabBodyWrapper.nativeElement.style.minHeight = "";
@@ -1843,9 +2509,11 @@ var _MatTabGroup = class _MatTabGroup {
   /** Listens to changes in all of the tabs. */
   _subscribeToAllTabChanges() {
     this._allTabs.changes.pipe(startWith(this._allTabs)).subscribe((tabs) => {
-      this._tabs.reset(tabs.filter((tab) => {
-        return tab._closestTabGroup === this || !tab._closestTabGroup;
-      }));
+      this._tabs.reset(
+        tabs.filter((tab) => {
+          return tab._closestTabGroup === this || !tab._closestTabGroup;
+        }),
+      );
       this._tabs.notifyOnChanges();
     });
   }
@@ -1904,7 +2572,9 @@ var _MatTabGroup = class _MatTabGroup {
     if (this._tabLabelSubscription) {
       this._tabLabelSubscription.unsubscribe();
     }
-    this._tabLabelSubscription = merge(...this._tabs.map((tab) => tab._stateChanges)).subscribe(() => this._changeDetectorRef.markForCheck());
+    this._tabLabelSubscription = merge(
+      ...this._tabs.map((tab) => tab._stateChanges),
+    ).subscribe(() => this._changeDetectorRef.markForCheck());
   }
   /** Clamps the given index to the bounds of 0 and the tabs length. */
   _clampTabIndex(index) {
@@ -1959,7 +2629,12 @@ var _MatTabGroup = class _MatTabGroup {
   }
 };
 _MatTabGroup.ɵfac = function MatTabGroup_Factory(t) {
-  return new (t || _MatTabGroup)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(MAT_TABS_CONFIG, 8), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8));
+  return new (t || _MatTabGroup)(
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵdirectiveInject(ChangeDetectorRef),
+    ɵɵdirectiveInject(MAT_TABS_CONFIG, 8),
+    ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8),
+  );
 };
 _MatTabGroup.ɵcmp = ɵɵdefineComponent({
   type: _MatTabGroup,
@@ -1970,7 +2645,7 @@ _MatTabGroup.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._allTabs = _t);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._allTabs = _t);
     }
   },
   viewQuery: function MatTabGroup_Query(rf, ctx) {
@@ -1980,8 +2655,8 @@ _MatTabGroup.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._tabBodyWrapper = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._tabHeader = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._tabBodyWrapper = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._tabHeader = _t.first);
     }
   },
   hostAttrs: [1, "mat-mdc-tab-group"],
@@ -1990,212 +2665,480 @@ _MatTabGroup.ɵcmp = ɵɵdefineComponent({
     if (rf & 2) {
       ɵɵclassMap("mat-" + (ctx.color || "primary"));
       ɵɵstyleProp("--mat-tab-animation-duration", ctx.animationDuration);
-      ɵɵclassProp("mat-mdc-tab-group-dynamic-height", ctx.dynamicHeight)("mat-mdc-tab-group-inverted-header", ctx.headerPosition === "below")("mat-mdc-tab-group-stretch-tabs", ctx.stretchTabs);
+      ɵɵclassProp("mat-mdc-tab-group-dynamic-height", ctx.dynamicHeight)(
+        "mat-mdc-tab-group-inverted-header",
+        ctx.headerPosition === "below",
+      )("mat-mdc-tab-group-stretch-tabs", ctx.stretchTabs);
     }
   },
   inputs: {
     color: "color",
-    fitInkBarToContent: [InputFlags.HasDecoratorInputTransform, "fitInkBarToContent", "fitInkBarToContent", booleanAttribute],
-    stretchTabs: [InputFlags.HasDecoratorInputTransform, "mat-stretch-tabs", "stretchTabs", booleanAttribute],
-    dynamicHeight: [InputFlags.HasDecoratorInputTransform, "dynamicHeight", "dynamicHeight", booleanAttribute],
-    selectedIndex: [InputFlags.HasDecoratorInputTransform, "selectedIndex", "selectedIndex", numberAttribute],
+    fitInkBarToContent: [
+      InputFlags.HasDecoratorInputTransform,
+      "fitInkBarToContent",
+      "fitInkBarToContent",
+      booleanAttribute,
+    ],
+    stretchTabs: [
+      InputFlags.HasDecoratorInputTransform,
+      "mat-stretch-tabs",
+      "stretchTabs",
+      booleanAttribute,
+    ],
+    dynamicHeight: [
+      InputFlags.HasDecoratorInputTransform,
+      "dynamicHeight",
+      "dynamicHeight",
+      booleanAttribute,
+    ],
+    selectedIndex: [
+      InputFlags.HasDecoratorInputTransform,
+      "selectedIndex",
+      "selectedIndex",
+      numberAttribute,
+    ],
     headerPosition: "headerPosition",
     animationDuration: "animationDuration",
-    contentTabIndex: [InputFlags.HasDecoratorInputTransform, "contentTabIndex", "contentTabIndex", numberAttribute],
-    disablePagination: [InputFlags.HasDecoratorInputTransform, "disablePagination", "disablePagination", booleanAttribute],
-    disableRipple: [InputFlags.HasDecoratorInputTransform, "disableRipple", "disableRipple", booleanAttribute],
-    preserveContent: [InputFlags.HasDecoratorInputTransform, "preserveContent", "preserveContent", booleanAttribute],
-    backgroundColor: "backgroundColor"
+    contentTabIndex: [
+      InputFlags.HasDecoratorInputTransform,
+      "contentTabIndex",
+      "contentTabIndex",
+      numberAttribute,
+    ],
+    disablePagination: [
+      InputFlags.HasDecoratorInputTransform,
+      "disablePagination",
+      "disablePagination",
+      booleanAttribute,
+    ],
+    disableRipple: [
+      InputFlags.HasDecoratorInputTransform,
+      "disableRipple",
+      "disableRipple",
+      booleanAttribute,
+    ],
+    preserveContent: [
+      InputFlags.HasDecoratorInputTransform,
+      "preserveContent",
+      "preserveContent",
+      booleanAttribute,
+    ],
+    backgroundColor: "backgroundColor",
   },
   outputs: {
     selectedIndexChange: "selectedIndexChange",
     focusChange: "focusChange",
     animationDone: "animationDone",
-    selectedTabChange: "selectedTabChange"
+    selectedTabChange: "selectedTabChange",
   },
   exportAs: ["matTabGroup"],
   standalone: true,
-  features: [ɵɵProvidersFeature([{
-    provide: MAT_TAB_GROUP,
-    useExisting: _MatTabGroup
-  }]), ɵɵInputTransformsFeature, ɵɵStandaloneFeature],
+  features: [
+    ɵɵProvidersFeature([
+      {
+        provide: MAT_TAB_GROUP,
+        useExisting: _MatTabGroup,
+      },
+    ]),
+    ɵɵInputTransformsFeature,
+    ɵɵStandaloneFeature,
+  ],
   ngContentSelectors: _c0,
   decls: 9,
   vars: 6,
-  consts: [["tabHeader", ""], ["tabBodyWrapper", ""], ["tabNode", ""], [3, "indexFocused", "selectFocusedIndex", "selectedIndex", "disableRipple", "disablePagination"], ["role", "tab", "matTabLabelWrapper", "", "cdkMonitorElementFocus", "", 1, "mdc-tab", "mat-mdc-tab", "mat-mdc-focus-indicator", 3, "id", "mdc-tab--active", "class", "disabled", "fitInkBarToContent"], [1, "mat-mdc-tab-body-wrapper"], ["role", "tabpanel", 3, "id", "mat-mdc-tab-body-active", "class", "content", "position", "origin", "animationDuration", "preserveContent"], ["role", "tab", "matTabLabelWrapper", "", "cdkMonitorElementFocus", "", 1, "mdc-tab", "mat-mdc-tab", "mat-mdc-focus-indicator", 3, "click", "cdkFocusChange", "id", "disabled", "fitInkBarToContent"], [1, "mdc-tab__ripple"], ["mat-ripple", "", 1, "mat-mdc-tab-ripple", 3, "matRippleTrigger", "matRippleDisabled"], [1, "mdc-tab__content"], [1, "mdc-tab__text-label"], [3, "cdkPortalOutlet"], ["role", "tabpanel", 3, "_onCentered", "_onCentering", "id", "content", "position", "origin", "animationDuration", "preserveContent"]],
+  consts: [
+    ["tabHeader", ""],
+    ["tabBodyWrapper", ""],
+    ["tabNode", ""],
+    [
+      3,
+      "indexFocused",
+      "selectFocusedIndex",
+      "selectedIndex",
+      "disableRipple",
+      "disablePagination",
+    ],
+    [
+      "role",
+      "tab",
+      "matTabLabelWrapper",
+      "",
+      "cdkMonitorElementFocus",
+      "",
+      1,
+      "mdc-tab",
+      "mat-mdc-tab",
+      "mat-mdc-focus-indicator",
+      3,
+      "id",
+      "mdc-tab--active",
+      "class",
+      "disabled",
+      "fitInkBarToContent",
+    ],
+    [1, "mat-mdc-tab-body-wrapper"],
+    [
+      "role",
+      "tabpanel",
+      3,
+      "id",
+      "mat-mdc-tab-body-active",
+      "class",
+      "content",
+      "position",
+      "origin",
+      "animationDuration",
+      "preserveContent",
+    ],
+    [
+      "role",
+      "tab",
+      "matTabLabelWrapper",
+      "",
+      "cdkMonitorElementFocus",
+      "",
+      1,
+      "mdc-tab",
+      "mat-mdc-tab",
+      "mat-mdc-focus-indicator",
+      3,
+      "click",
+      "cdkFocusChange",
+      "id",
+      "disabled",
+      "fitInkBarToContent",
+    ],
+    [1, "mdc-tab__ripple"],
+    [
+      "mat-ripple",
+      "",
+      1,
+      "mat-mdc-tab-ripple",
+      3,
+      "matRippleTrigger",
+      "matRippleDisabled",
+    ],
+    [1, "mdc-tab__content"],
+    [1, "mdc-tab__text-label"],
+    [3, "cdkPortalOutlet"],
+    [
+      "role",
+      "tabpanel",
+      3,
+      "_onCentered",
+      "_onCentering",
+      "id",
+      "content",
+      "position",
+      "origin",
+      "animationDuration",
+      "preserveContent",
+    ],
+  ],
   template: function MatTabGroup_Template(rf, ctx) {
     if (rf & 1) {
       const _r1 = ɵɵgetCurrentView();
       ɵɵprojectionDef();
       ɵɵelementStart(0, "mat-tab-header", 3, 0);
-      ɵɵlistener("indexFocused", function MatTabGroup_Template_mat_tab_header_indexFocused_0_listener($event) {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._focusChanged($event));
-      })("selectFocusedIndex", function MatTabGroup_Template_mat_tab_header_selectFocusedIndex_0_listener($event) {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx.selectedIndex = $event);
-      });
-      ɵɵrepeaterCreate(2, MatTabGroup_For_3_Template, 8, 17, "div", 4, ɵɵrepeaterTrackByIdentity);
+      ɵɵlistener(
+        "indexFocused",
+        function MatTabGroup_Template_mat_tab_header_indexFocused_0_listener(
+          $event,
+        ) {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._focusChanged($event));
+        },
+      )(
+        "selectFocusedIndex",
+        function MatTabGroup_Template_mat_tab_header_selectFocusedIndex_0_listener(
+          $event,
+        ) {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView((ctx.selectedIndex = $event));
+        },
+      );
+      ɵɵrepeaterCreate(
+        2,
+        MatTabGroup_For_3_Template,
+        8,
+        17,
+        "div",
+        4,
+        ɵɵrepeaterTrackByIdentity,
+      );
       ɵɵelementEnd();
       ɵɵtemplate(4, MatTabGroup_Conditional_4_Template, 1, 0);
       ɵɵelementStart(5, "div", 5, 1);
-      ɵɵrepeaterCreate(7, MatTabGroup_For_8_Template, 1, 13, "mat-tab-body", 6, ɵɵrepeaterTrackByIdentity);
+      ɵɵrepeaterCreate(
+        7,
+        MatTabGroup_For_8_Template,
+        1,
+        13,
+        "mat-tab-body",
+        6,
+        ɵɵrepeaterTrackByIdentity,
+      );
       ɵɵelementEnd();
     }
     if (rf & 2) {
-      ɵɵproperty("selectedIndex", ctx.selectedIndex || 0)("disableRipple", ctx.disableRipple)("disablePagination", ctx.disablePagination);
+      ɵɵproperty("selectedIndex", ctx.selectedIndex || 0)(
+        "disableRipple",
+        ctx.disableRipple,
+      )("disablePagination", ctx.disablePagination);
       ɵɵadvance(2);
       ɵɵrepeater(ctx._tabs);
       ɵɵadvance(2);
       ɵɵconditional(4, ctx._isServer ? 4 : -1);
       ɵɵadvance();
-      ɵɵclassProp("_mat-animation-noopable", ctx._animationMode === "NoopAnimations");
+      ɵɵclassProp(
+        "_mat-animation-noopable",
+        ctx._animationMode === "NoopAnimations",
+      );
       ɵɵadvance(2);
       ɵɵrepeater(ctx._tabs);
     }
   },
-  dependencies: [MatTabHeader, MatTabLabelWrapper, CdkMonitorFocus, MatRipple, CdkPortalOutlet, MatTabBody],
-  styles: ['.mdc-tab{min-width:90px;padding-right:24px;padding-left:24px;display:flex;flex:1 0 auto;justify-content:center;box-sizing:border-box;margin:0;padding-top:0;padding-bottom:0;border:none;outline:none;text-align:center;white-space:nowrap;cursor:pointer;-webkit-appearance:none;z-index:1}.mdc-tab::-moz-focus-inner{padding:0;border:0}.mdc-tab[hidden]{display:none}.mdc-tab--min-width{flex:0 1 auto}.mdc-tab__content{display:flex;align-items:center;justify-content:center;height:inherit;pointer-events:none}.mdc-tab__text-label{transition:150ms color linear;display:inline-block;line-height:1;z-index:2}.mdc-tab__icon{transition:150ms color linear;z-index:2}.mdc-tab--stacked .mdc-tab__content{flex-direction:column;align-items:center;justify-content:center}.mdc-tab--stacked .mdc-tab__text-label{padding-top:6px;padding-bottom:4px}.mdc-tab--active .mdc-tab__text-label,.mdc-tab--active .mdc-tab__icon{transition-delay:100ms}.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label{padding-left:8px;padding-right:0}[dir=rtl] .mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label,.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label[dir=rtl]{padding-left:0;padding-right:8px}.mdc-tab-indicator{display:flex;position:absolute;top:0;left:0;justify-content:center;width:100%;height:100%;pointer-events:none;z-index:1}.mdc-tab-indicator__content{transform-origin:left;opacity:0}.mdc-tab-indicator__content--underline{align-self:flex-end;box-sizing:border-box;width:100%;border-top-style:solid}.mdc-tab-indicator__content--icon{align-self:center;margin:0 auto}.mdc-tab-indicator--active .mdc-tab-indicator__content{opacity:1}.mdc-tab-indicator .mdc-tab-indicator__content{transition:250ms transform cubic-bezier(0.4, 0, 0.2, 1)}.mdc-tab-indicator--no-transition .mdc-tab-indicator__content{transition:none}.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition:150ms opacity linear}.mdc-tab-indicator--active.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition-delay:100ms}.mat-mdc-tab-ripple{position:absolute;top:0;left:0;bottom:0;right:0;pointer-events:none}.mat-mdc-tab{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-decoration:none;background:none;font-family:var(--mat-tab-header-label-text-font);font-size:var(--mat-tab-header-label-text-size);letter-spacing:var(--mat-tab-header-label-text-tracking);line-height:var(--mat-tab-header-label-text-line-height);font-weight:var(--mat-tab-header-label-text-weight)}.mat-mdc-tab .mdc-tab-indicator__content--underline{border-color:var(--mdc-tab-indicator-active-indicator-color)}.mat-mdc-tab .mdc-tab-indicator__content--underline{border-top-width:var(--mdc-tab-indicator-active-indicator-height)}.mat-mdc-tab .mdc-tab-indicator__content--underline{border-radius:var(--mdc-tab-indicator-active-indicator-shape)}.mat-mdc-tab:not(.mdc-tab--stacked){height:var(--mdc-secondary-navigation-tab-container-height)}.mat-mdc-tab:not(:disabled).mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):hover.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):focus.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):active.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:disabled.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):hover:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):focus:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):active:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:disabled:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab.mdc-tab{flex-grow:0}.mat-mdc-tab:hover .mdc-tab__text-label{color:var(--mat-tab-header-inactive-hover-label-text-color)}.mat-mdc-tab:focus .mdc-tab__text-label{color:var(--mat-tab-header-inactive-focus-label-text-color)}.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{color:var(--mat-tab-header-active-label-text-color)}.mat-mdc-tab.mdc-tab--active .mdc-tab__ripple::before,.mat-mdc-tab.mdc-tab--active .mat-ripple-element{background-color:var(--mat-tab-header-active-ripple-color)}.mat-mdc-tab.mdc-tab--active:hover .mdc-tab__text-label{color:var(--mat-tab-header-active-hover-label-text-color)}.mat-mdc-tab.mdc-tab--active:hover .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-hover-indicator-color)}.mat-mdc-tab.mdc-tab--active:focus .mdc-tab__text-label{color:var(--mat-tab-header-active-focus-label-text-color)}.mat-mdc-tab.mdc-tab--active:focus .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-focus-indicator-color)}.mat-mdc-tab.mat-mdc-tab-disabled{opacity:.4;pointer-events:none}.mat-mdc-tab.mat-mdc-tab-disabled .mdc-tab__content{pointer-events:none}.mat-mdc-tab.mat-mdc-tab-disabled .mdc-tab__ripple::before,.mat-mdc-tab.mat-mdc-tab-disabled .mat-ripple-element{background-color:var(--mat-tab-header-disabled-ripple-color)}.mat-mdc-tab .mdc-tab__ripple::before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;opacity:0;pointer-events:none;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab .mdc-tab__text-label{color:var(--mat-tab-header-inactive-label-text-color);display:inline-flex;align-items:center}.mat-mdc-tab .mdc-tab__content{position:relative;pointer-events:auto}.mat-mdc-tab:hover .mdc-tab__ripple::before{opacity:.04}.mat-mdc-tab.cdk-program-focused .mdc-tab__ripple::before,.mat-mdc-tab.cdk-keyboard-focused .mdc-tab__ripple::before{opacity:.12}.mat-mdc-tab .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab{flex-grow:1}.mat-mdc-tab-group{display:flex;flex-direction:column;max-width:100%}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination{background-color:var(--mat-tab-header-with-background-background-color)}.mat-mdc-tab-group.mat-tabs-with-background.mat-primary>.mat-mdc-tab-header .mat-mdc-tab .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background.mat-primary>.mat-mdc-tab-header .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-header .mat-mdc-tab:not(.mdc-tab--active) .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-header .mat-mdc-tab:not(.mdc-tab--active) .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-focus-indicator::before,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-focus-indicator::before{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-ripple-element,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mdc-tab__ripple::before,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-ripple-element,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mdc-tab__ripple::before{background-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-mdc-tab-group-inverted-header{flex-direction:column-reverse}.mat-mdc-tab-group.mat-mdc-tab-group-inverted-header .mdc-tab-indicator__content--underline{align-self:flex-start}.mat-mdc-tab-body-wrapper{position:relative;overflow:hidden;display:flex;transition:height 500ms cubic-bezier(0.35, 0, 0.25, 1)}.mat-mdc-tab-body-wrapper._mat-animation-noopable{transition:none !important;animation:none !important}'],
-  encapsulation: 2
+  dependencies: [
+    MatTabHeader,
+    MatTabLabelWrapper,
+    CdkMonitorFocus,
+    MatRipple,
+    CdkPortalOutlet,
+    MatTabBody,
+  ],
+  styles: [
+    '.mdc-tab{min-width:90px;padding-right:24px;padding-left:24px;display:flex;flex:1 0 auto;justify-content:center;box-sizing:border-box;margin:0;padding-top:0;padding-bottom:0;border:none;outline:none;text-align:center;white-space:nowrap;cursor:pointer;-webkit-appearance:none;z-index:1}.mdc-tab::-moz-focus-inner{padding:0;border:0}.mdc-tab[hidden]{display:none}.mdc-tab--min-width{flex:0 1 auto}.mdc-tab__content{display:flex;align-items:center;justify-content:center;height:inherit;pointer-events:none}.mdc-tab__text-label{transition:150ms color linear;display:inline-block;line-height:1;z-index:2}.mdc-tab__icon{transition:150ms color linear;z-index:2}.mdc-tab--stacked .mdc-tab__content{flex-direction:column;align-items:center;justify-content:center}.mdc-tab--stacked .mdc-tab__text-label{padding-top:6px;padding-bottom:4px}.mdc-tab--active .mdc-tab__text-label,.mdc-tab--active .mdc-tab__icon{transition-delay:100ms}.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label{padding-left:8px;padding-right:0}[dir=rtl] .mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label,.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label[dir=rtl]{padding-left:0;padding-right:8px}.mdc-tab-indicator{display:flex;position:absolute;top:0;left:0;justify-content:center;width:100%;height:100%;pointer-events:none;z-index:1}.mdc-tab-indicator__content{transform-origin:left;opacity:0}.mdc-tab-indicator__content--underline{align-self:flex-end;box-sizing:border-box;width:100%;border-top-style:solid}.mdc-tab-indicator__content--icon{align-self:center;margin:0 auto}.mdc-tab-indicator--active .mdc-tab-indicator__content{opacity:1}.mdc-tab-indicator .mdc-tab-indicator__content{transition:250ms transform cubic-bezier(0.4, 0, 0.2, 1)}.mdc-tab-indicator--no-transition .mdc-tab-indicator__content{transition:none}.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition:150ms opacity linear}.mdc-tab-indicator--active.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition-delay:100ms}.mat-mdc-tab-ripple{position:absolute;top:0;left:0;bottom:0;right:0;pointer-events:none}.mat-mdc-tab{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-decoration:none;background:none;font-family:var(--mat-tab-header-label-text-font);font-size:var(--mat-tab-header-label-text-size);letter-spacing:var(--mat-tab-header-label-text-tracking);line-height:var(--mat-tab-header-label-text-line-height);font-weight:var(--mat-tab-header-label-text-weight)}.mat-mdc-tab .mdc-tab-indicator__content--underline{border-color:var(--mdc-tab-indicator-active-indicator-color)}.mat-mdc-tab .mdc-tab-indicator__content--underline{border-top-width:var(--mdc-tab-indicator-active-indicator-height)}.mat-mdc-tab .mdc-tab-indicator__content--underline{border-radius:var(--mdc-tab-indicator-active-indicator-shape)}.mat-mdc-tab:not(.mdc-tab--stacked){height:var(--mdc-secondary-navigation-tab-container-height)}.mat-mdc-tab:not(:disabled).mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):hover.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):focus.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):active.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:disabled.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):hover:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):focus:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):active:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:disabled:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab.mdc-tab{flex-grow:0}.mat-mdc-tab:hover .mdc-tab__text-label{color:var(--mat-tab-header-inactive-hover-label-text-color)}.mat-mdc-tab:focus .mdc-tab__text-label{color:var(--mat-tab-header-inactive-focus-label-text-color)}.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{color:var(--mat-tab-header-active-label-text-color)}.mat-mdc-tab.mdc-tab--active .mdc-tab__ripple::before,.mat-mdc-tab.mdc-tab--active .mat-ripple-element{background-color:var(--mat-tab-header-active-ripple-color)}.mat-mdc-tab.mdc-tab--active:hover .mdc-tab__text-label{color:var(--mat-tab-header-active-hover-label-text-color)}.mat-mdc-tab.mdc-tab--active:hover .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-hover-indicator-color)}.mat-mdc-tab.mdc-tab--active:focus .mdc-tab__text-label{color:var(--mat-tab-header-active-focus-label-text-color)}.mat-mdc-tab.mdc-tab--active:focus .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-focus-indicator-color)}.mat-mdc-tab.mat-mdc-tab-disabled{opacity:.4;pointer-events:none}.mat-mdc-tab.mat-mdc-tab-disabled .mdc-tab__content{pointer-events:none}.mat-mdc-tab.mat-mdc-tab-disabled .mdc-tab__ripple::before,.mat-mdc-tab.mat-mdc-tab-disabled .mat-ripple-element{background-color:var(--mat-tab-header-disabled-ripple-color)}.mat-mdc-tab .mdc-tab__ripple::before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;opacity:0;pointer-events:none;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab .mdc-tab__text-label{color:var(--mat-tab-header-inactive-label-text-color);display:inline-flex;align-items:center}.mat-mdc-tab .mdc-tab__content{position:relative;pointer-events:auto}.mat-mdc-tab:hover .mdc-tab__ripple::before{opacity:.04}.mat-mdc-tab.cdk-program-focused .mdc-tab__ripple::before,.mat-mdc-tab.cdk-keyboard-focused .mdc-tab__ripple::before{opacity:.12}.mat-mdc-tab .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab{flex-grow:1}.mat-mdc-tab-group{display:flex;flex-direction:column;max-width:100%}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination{background-color:var(--mat-tab-header-with-background-background-color)}.mat-mdc-tab-group.mat-tabs-with-background.mat-primary>.mat-mdc-tab-header .mat-mdc-tab .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background.mat-primary>.mat-mdc-tab-header .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-header .mat-mdc-tab:not(.mdc-tab--active) .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-header .mat-mdc-tab:not(.mdc-tab--active) .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-focus-indicator::before,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-focus-indicator::before{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-ripple-element,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mdc-tab__ripple::before,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-ripple-element,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mdc-tab__ripple::before{background-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-mdc-tab-group-inverted-header{flex-direction:column-reverse}.mat-mdc-tab-group.mat-mdc-tab-group-inverted-header .mdc-tab-indicator__content--underline{align-self:flex-start}.mat-mdc-tab-body-wrapper{position:relative;overflow:hidden;display:flex;transition:height 500ms cubic-bezier(0.35, 0, 0.25, 1)}.mat-mdc-tab-body-wrapper._mat-animation-noopable{transition:none !important;animation:none !important}',
+  ],
+  encapsulation: 2,
 });
 var MatTabGroup = _MatTabGroup;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTabGroup, [{
-    type: Component,
-    args: [{
-      selector: "mat-tab-group",
-      exportAs: "matTabGroup",
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.Default,
-      providers: [{
-        provide: MAT_TAB_GROUP,
-        useExisting: MatTabGroup
-      }],
-      host: {
-        "class": "mat-mdc-tab-group",
-        "[class]": '"mat-" + (color || "primary")',
-        "[class.mat-mdc-tab-group-dynamic-height]": "dynamicHeight",
-        "[class.mat-mdc-tab-group-inverted-header]": 'headerPosition === "below"',
-        "[class.mat-mdc-tab-group-stretch-tabs]": "stretchTabs",
-        "[style.--mat-tab-animation-duration]": "animationDuration"
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTabGroup,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "mat-tab-group",
+              exportAs: "matTabGroup",
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.Default,
+              providers: [
+                {
+                  provide: MAT_TAB_GROUP,
+                  useExisting: MatTabGroup,
+                },
+              ],
+              host: {
+                class: "mat-mdc-tab-group",
+                "[class]": '"mat-" + (color || "primary")',
+                "[class.mat-mdc-tab-group-dynamic-height]": "dynamicHeight",
+                "[class.mat-mdc-tab-group-inverted-header]":
+                  'headerPosition === "below"',
+                "[class.mat-mdc-tab-group-stretch-tabs]": "stretchTabs",
+                "[style.--mat-tab-animation-duration]": "animationDuration",
+              },
+              standalone: true,
+              imports: [
+                MatTabHeader,
+                MatTabLabelWrapper,
+                CdkMonitorFocus,
+                MatRipple,
+                CdkPortalOutlet,
+                MatTabBody,
+              ],
+              template:
+                '<mat-tab-header #tabHeader\n                [selectedIndex]="selectedIndex || 0"\n                [disableRipple]="disableRipple"\n                [disablePagination]="disablePagination"\n                (indexFocused)="_focusChanged($event)"\n                (selectFocusedIndex)="selectedIndex = $event">\n\n  @for (tab of _tabs; track tab; let i = $index) {\n    <div class="mdc-tab mat-mdc-tab mat-mdc-focus-indicator"\n        #tabNode\n        role="tab"\n        matTabLabelWrapper\n        cdkMonitorElementFocus\n        [id]="_getTabLabelId(i)"\n        [attr.tabIndex]="_getTabIndex(i)"\n        [attr.aria-posinset]="i + 1"\n        [attr.aria-setsize]="_tabs.length"\n        [attr.aria-controls]="_getTabContentId(i)"\n        [attr.aria-selected]="selectedIndex === i"\n        [attr.aria-label]="tab.ariaLabel || null"\n        [attr.aria-labelledby]="(!tab.ariaLabel && tab.ariaLabelledby) ? tab.ariaLabelledby : null"\n        [class.mdc-tab--active]="selectedIndex === i"\n        [class]="tab.labelClass"\n        [disabled]="tab.disabled"\n        [fitInkBarToContent]="fitInkBarToContent"\n        (click)="_handleClick(tab, tabHeader, i)"\n        (cdkFocusChange)="_tabFocusChanged($event, i)">\n      <span class="mdc-tab__ripple"></span>\n\n      <!-- Needs to be a separate element, because we can\'t put\n          `overflow: hidden` on tab due to the ink bar. -->\n      <div\n        class="mat-mdc-tab-ripple"\n        mat-ripple\n        [matRippleTrigger]="tabNode"\n        [matRippleDisabled]="tab.disabled || disableRipple"></div>\n\n      <span class="mdc-tab__content">\n        <span class="mdc-tab__text-label">\n          <!--\n            If there is a label template, use it, otherwise fall back to the text label.\n            Note that we don\'t have indentation around the text label, because it adds\n            whitespace around the text which breaks some internal tests.\n          -->\n          @if (tab.templateLabel) {\n            <ng-template [cdkPortalOutlet]="tab.templateLabel"></ng-template>\n          } @else {{{tab.textLabel}}}\n        </span>\n      </span>\n    </div>\n  }\n</mat-tab-header>\n\n<!--\n  We need to project the content somewhere to avoid hydration errors. Some observations:\n  1. This is only necessary on the server.\n  2. We get a hydration error if there aren\'t any nodes after the `ng-content`.\n  3. We get a hydration error if `ng-content` is wrapped in another element.\n-->\n@if (_isServer) {\n  <ng-content/>\n}\n\n<div\n  class="mat-mdc-tab-body-wrapper"\n  [class._mat-animation-noopable]="_animationMode === \'NoopAnimations\'"\n  #tabBodyWrapper>\n  @for (tab of _tabs; track tab; let i = $index) {\n    <mat-tab-body role="tabpanel"\n                 [id]="_getTabContentId(i)"\n                 [attr.tabindex]="(contentTabIndex != null && selectedIndex === i) ? contentTabIndex : null"\n                 [attr.aria-labelledby]="_getTabLabelId(i)"\n                 [attr.aria-hidden]="selectedIndex !== i"\n                 [class.mat-mdc-tab-body-active]="selectedIndex === i"\n                 [class]="tab.bodyClass"\n                 [content]="tab.content!"\n                 [position]="tab.position!"\n                 [origin]="tab.origin"\n                 [animationDuration]="animationDuration"\n                 [preserveContent]="preserveContent"\n                 (_onCentered)="_removeTabBodyWrapperHeight()"\n                 (_onCentering)="_setTabBodyWrapperHeight($event)">\n    </mat-tab-body>\n  }\n</div>\n',
+              styles: [
+                '.mdc-tab{min-width:90px;padding-right:24px;padding-left:24px;display:flex;flex:1 0 auto;justify-content:center;box-sizing:border-box;margin:0;padding-top:0;padding-bottom:0;border:none;outline:none;text-align:center;white-space:nowrap;cursor:pointer;-webkit-appearance:none;z-index:1}.mdc-tab::-moz-focus-inner{padding:0;border:0}.mdc-tab[hidden]{display:none}.mdc-tab--min-width{flex:0 1 auto}.mdc-tab__content{display:flex;align-items:center;justify-content:center;height:inherit;pointer-events:none}.mdc-tab__text-label{transition:150ms color linear;display:inline-block;line-height:1;z-index:2}.mdc-tab__icon{transition:150ms color linear;z-index:2}.mdc-tab--stacked .mdc-tab__content{flex-direction:column;align-items:center;justify-content:center}.mdc-tab--stacked .mdc-tab__text-label{padding-top:6px;padding-bottom:4px}.mdc-tab--active .mdc-tab__text-label,.mdc-tab--active .mdc-tab__icon{transition-delay:100ms}.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label{padding-left:8px;padding-right:0}[dir=rtl] .mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label,.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label[dir=rtl]{padding-left:0;padding-right:8px}.mdc-tab-indicator{display:flex;position:absolute;top:0;left:0;justify-content:center;width:100%;height:100%;pointer-events:none;z-index:1}.mdc-tab-indicator__content{transform-origin:left;opacity:0}.mdc-tab-indicator__content--underline{align-self:flex-end;box-sizing:border-box;width:100%;border-top-style:solid}.mdc-tab-indicator__content--icon{align-self:center;margin:0 auto}.mdc-tab-indicator--active .mdc-tab-indicator__content{opacity:1}.mdc-tab-indicator .mdc-tab-indicator__content{transition:250ms transform cubic-bezier(0.4, 0, 0.2, 1)}.mdc-tab-indicator--no-transition .mdc-tab-indicator__content{transition:none}.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition:150ms opacity linear}.mdc-tab-indicator--active.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition-delay:100ms}.mat-mdc-tab-ripple{position:absolute;top:0;left:0;bottom:0;right:0;pointer-events:none}.mat-mdc-tab{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-decoration:none;background:none;font-family:var(--mat-tab-header-label-text-font);font-size:var(--mat-tab-header-label-text-size);letter-spacing:var(--mat-tab-header-label-text-tracking);line-height:var(--mat-tab-header-label-text-line-height);font-weight:var(--mat-tab-header-label-text-weight)}.mat-mdc-tab .mdc-tab-indicator__content--underline{border-color:var(--mdc-tab-indicator-active-indicator-color)}.mat-mdc-tab .mdc-tab-indicator__content--underline{border-top-width:var(--mdc-tab-indicator-active-indicator-height)}.mat-mdc-tab .mdc-tab-indicator__content--underline{border-radius:var(--mdc-tab-indicator-active-indicator-shape)}.mat-mdc-tab:not(.mdc-tab--stacked){height:var(--mdc-secondary-navigation-tab-container-height)}.mat-mdc-tab:not(:disabled).mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):hover.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):focus.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):active.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:disabled.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):hover:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):focus:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):active:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:disabled:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab.mdc-tab{flex-grow:0}.mat-mdc-tab:hover .mdc-tab__text-label{color:var(--mat-tab-header-inactive-hover-label-text-color)}.mat-mdc-tab:focus .mdc-tab__text-label{color:var(--mat-tab-header-inactive-focus-label-text-color)}.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{color:var(--mat-tab-header-active-label-text-color)}.mat-mdc-tab.mdc-tab--active .mdc-tab__ripple::before,.mat-mdc-tab.mdc-tab--active .mat-ripple-element{background-color:var(--mat-tab-header-active-ripple-color)}.mat-mdc-tab.mdc-tab--active:hover .mdc-tab__text-label{color:var(--mat-tab-header-active-hover-label-text-color)}.mat-mdc-tab.mdc-tab--active:hover .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-hover-indicator-color)}.mat-mdc-tab.mdc-tab--active:focus .mdc-tab__text-label{color:var(--mat-tab-header-active-focus-label-text-color)}.mat-mdc-tab.mdc-tab--active:focus .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-focus-indicator-color)}.mat-mdc-tab.mat-mdc-tab-disabled{opacity:.4;pointer-events:none}.mat-mdc-tab.mat-mdc-tab-disabled .mdc-tab__content{pointer-events:none}.mat-mdc-tab.mat-mdc-tab-disabled .mdc-tab__ripple::before,.mat-mdc-tab.mat-mdc-tab-disabled .mat-ripple-element{background-color:var(--mat-tab-header-disabled-ripple-color)}.mat-mdc-tab .mdc-tab__ripple::before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;opacity:0;pointer-events:none;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab .mdc-tab__text-label{color:var(--mat-tab-header-inactive-label-text-color);display:inline-flex;align-items:center}.mat-mdc-tab .mdc-tab__content{position:relative;pointer-events:auto}.mat-mdc-tab:hover .mdc-tab__ripple::before{opacity:.04}.mat-mdc-tab.cdk-program-focused .mdc-tab__ripple::before,.mat-mdc-tab.cdk-keyboard-focused .mdc-tab__ripple::before{opacity:.12}.mat-mdc-tab .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab{flex-grow:1}.mat-mdc-tab-group{display:flex;flex-direction:column;max-width:100%}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination{background-color:var(--mat-tab-header-with-background-background-color)}.mat-mdc-tab-group.mat-tabs-with-background.mat-primary>.mat-mdc-tab-header .mat-mdc-tab .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background.mat-primary>.mat-mdc-tab-header .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-header .mat-mdc-tab:not(.mdc-tab--active) .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-header .mat-mdc-tab:not(.mdc-tab--active) .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-focus-indicator::before,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-focus-indicator::before{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-ripple-element,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mdc-tab__ripple::before,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-ripple-element,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mdc-tab__ripple::before{background-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-mdc-tab-group-inverted-header{flex-direction:column-reverse}.mat-mdc-tab-group.mat-mdc-tab-group-inverted-header .mdc-tab-indicator__content--underline{align-self:flex-start}.mat-mdc-tab-body-wrapper{position:relative;overflow:hidden;display:flex;transition:height 500ms cubic-bezier(0.35, 0, 0.25, 1)}.mat-mdc-tab-body-wrapper._mat-animation-noopable{transition:none !important;animation:none !important}',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ElementRef,
+        },
+        {
+          type: ChangeDetectorRef,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [MAT_TABS_CONFIG],
+            },
+            {
+              type: Optional,
+            },
+          ],
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Optional,
+            },
+            {
+              type: Inject,
+              args: [ANIMATION_MODULE_TYPE],
+            },
+          ],
+        },
+      ],
+      {
+        _allTabs: [
+          {
+            type: ContentChildren,
+            args: [
+              MatTab,
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        _tabBodyWrapper: [
+          {
+            type: ViewChild,
+            args: ["tabBodyWrapper"],
+          },
+        ],
+        _tabHeader: [
+          {
+            type: ViewChild,
+            args: ["tabHeader"],
+          },
+        ],
+        color: [
+          {
+            type: Input,
+          },
+        ],
+        fitInkBarToContent: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        stretchTabs: [
+          {
+            type: Input,
+            args: [
+              {
+                alias: "mat-stretch-tabs",
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        dynamicHeight: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        selectedIndex: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: numberAttribute,
+              },
+            ],
+          },
+        ],
+        headerPosition: [
+          {
+            type: Input,
+          },
+        ],
+        animationDuration: [
+          {
+            type: Input,
+          },
+        ],
+        contentTabIndex: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: numberAttribute,
+              },
+            ],
+          },
+        ],
+        disablePagination: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        disableRipple: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        preserveContent: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        backgroundColor: [
+          {
+            type: Input,
+          },
+        ],
+        selectedIndexChange: [
+          {
+            type: Output,
+          },
+        ],
+        focusChange: [
+          {
+            type: Output,
+          },
+        ],
+        animationDone: [
+          {
+            type: Output,
+          },
+        ],
+        selectedTabChange: [
+          {
+            type: Output,
+          },
+        ],
       },
-      standalone: true,
-      imports: [MatTabHeader, MatTabLabelWrapper, CdkMonitorFocus, MatRipple, CdkPortalOutlet, MatTabBody],
-      template: '<mat-tab-header #tabHeader\n                [selectedIndex]="selectedIndex || 0"\n                [disableRipple]="disableRipple"\n                [disablePagination]="disablePagination"\n                (indexFocused)="_focusChanged($event)"\n                (selectFocusedIndex)="selectedIndex = $event">\n\n  @for (tab of _tabs; track tab; let i = $index) {\n    <div class="mdc-tab mat-mdc-tab mat-mdc-focus-indicator"\n        #tabNode\n        role="tab"\n        matTabLabelWrapper\n        cdkMonitorElementFocus\n        [id]="_getTabLabelId(i)"\n        [attr.tabIndex]="_getTabIndex(i)"\n        [attr.aria-posinset]="i + 1"\n        [attr.aria-setsize]="_tabs.length"\n        [attr.aria-controls]="_getTabContentId(i)"\n        [attr.aria-selected]="selectedIndex === i"\n        [attr.aria-label]="tab.ariaLabel || null"\n        [attr.aria-labelledby]="(!tab.ariaLabel && tab.ariaLabelledby) ? tab.ariaLabelledby : null"\n        [class.mdc-tab--active]="selectedIndex === i"\n        [class]="tab.labelClass"\n        [disabled]="tab.disabled"\n        [fitInkBarToContent]="fitInkBarToContent"\n        (click)="_handleClick(tab, tabHeader, i)"\n        (cdkFocusChange)="_tabFocusChanged($event, i)">\n      <span class="mdc-tab__ripple"></span>\n\n      <!-- Needs to be a separate element, because we can\'t put\n          `overflow: hidden` on tab due to the ink bar. -->\n      <div\n        class="mat-mdc-tab-ripple"\n        mat-ripple\n        [matRippleTrigger]="tabNode"\n        [matRippleDisabled]="tab.disabled || disableRipple"></div>\n\n      <span class="mdc-tab__content">\n        <span class="mdc-tab__text-label">\n          <!--\n            If there is a label template, use it, otherwise fall back to the text label.\n            Note that we don\'t have indentation around the text label, because it adds\n            whitespace around the text which breaks some internal tests.\n          -->\n          @if (tab.templateLabel) {\n            <ng-template [cdkPortalOutlet]="tab.templateLabel"></ng-template>\n          } @else {{{tab.textLabel}}}\n        </span>\n      </span>\n    </div>\n  }\n</mat-tab-header>\n\n<!--\n  We need to project the content somewhere to avoid hydration errors. Some observations:\n  1. This is only necessary on the server.\n  2. We get a hydration error if there aren\'t any nodes after the `ng-content`.\n  3. We get a hydration error if `ng-content` is wrapped in another element.\n-->\n@if (_isServer) {\n  <ng-content/>\n}\n\n<div\n  class="mat-mdc-tab-body-wrapper"\n  [class._mat-animation-noopable]="_animationMode === \'NoopAnimations\'"\n  #tabBodyWrapper>\n  @for (tab of _tabs; track tab; let i = $index) {\n    <mat-tab-body role="tabpanel"\n                 [id]="_getTabContentId(i)"\n                 [attr.tabindex]="(contentTabIndex != null && selectedIndex === i) ? contentTabIndex : null"\n                 [attr.aria-labelledby]="_getTabLabelId(i)"\n                 [attr.aria-hidden]="selectedIndex !== i"\n                 [class.mat-mdc-tab-body-active]="selectedIndex === i"\n                 [class]="tab.bodyClass"\n                 [content]="tab.content!"\n                 [position]="tab.position!"\n                 [origin]="tab.origin"\n                 [animationDuration]="animationDuration"\n                 [preserveContent]="preserveContent"\n                 (_onCentered)="_removeTabBodyWrapperHeight()"\n                 (_onCentering)="_setTabBodyWrapperHeight($event)">\n    </mat-tab-body>\n  }\n</div>\n',
-      styles: ['.mdc-tab{min-width:90px;padding-right:24px;padding-left:24px;display:flex;flex:1 0 auto;justify-content:center;box-sizing:border-box;margin:0;padding-top:0;padding-bottom:0;border:none;outline:none;text-align:center;white-space:nowrap;cursor:pointer;-webkit-appearance:none;z-index:1}.mdc-tab::-moz-focus-inner{padding:0;border:0}.mdc-tab[hidden]{display:none}.mdc-tab--min-width{flex:0 1 auto}.mdc-tab__content{display:flex;align-items:center;justify-content:center;height:inherit;pointer-events:none}.mdc-tab__text-label{transition:150ms color linear;display:inline-block;line-height:1;z-index:2}.mdc-tab__icon{transition:150ms color linear;z-index:2}.mdc-tab--stacked .mdc-tab__content{flex-direction:column;align-items:center;justify-content:center}.mdc-tab--stacked .mdc-tab__text-label{padding-top:6px;padding-bottom:4px}.mdc-tab--active .mdc-tab__text-label,.mdc-tab--active .mdc-tab__icon{transition-delay:100ms}.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label{padding-left:8px;padding-right:0}[dir=rtl] .mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label,.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label[dir=rtl]{padding-left:0;padding-right:8px}.mdc-tab-indicator{display:flex;position:absolute;top:0;left:0;justify-content:center;width:100%;height:100%;pointer-events:none;z-index:1}.mdc-tab-indicator__content{transform-origin:left;opacity:0}.mdc-tab-indicator__content--underline{align-self:flex-end;box-sizing:border-box;width:100%;border-top-style:solid}.mdc-tab-indicator__content--icon{align-self:center;margin:0 auto}.mdc-tab-indicator--active .mdc-tab-indicator__content{opacity:1}.mdc-tab-indicator .mdc-tab-indicator__content{transition:250ms transform cubic-bezier(0.4, 0, 0.2, 1)}.mdc-tab-indicator--no-transition .mdc-tab-indicator__content{transition:none}.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition:150ms opacity linear}.mdc-tab-indicator--active.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition-delay:100ms}.mat-mdc-tab-ripple{position:absolute;top:0;left:0;bottom:0;right:0;pointer-events:none}.mat-mdc-tab{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-decoration:none;background:none;font-family:var(--mat-tab-header-label-text-font);font-size:var(--mat-tab-header-label-text-size);letter-spacing:var(--mat-tab-header-label-text-tracking);line-height:var(--mat-tab-header-label-text-line-height);font-weight:var(--mat-tab-header-label-text-weight)}.mat-mdc-tab .mdc-tab-indicator__content--underline{border-color:var(--mdc-tab-indicator-active-indicator-color)}.mat-mdc-tab .mdc-tab-indicator__content--underline{border-top-width:var(--mdc-tab-indicator-active-indicator-height)}.mat-mdc-tab .mdc-tab-indicator__content--underline{border-radius:var(--mdc-tab-indicator-active-indicator-shape)}.mat-mdc-tab:not(.mdc-tab--stacked){height:var(--mdc-secondary-navigation-tab-container-height)}.mat-mdc-tab:not(:disabled).mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):hover.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):focus.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):active.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:disabled.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):hover:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):focus:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:not(:disabled):active:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab:disabled:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab.mdc-tab{flex-grow:0}.mat-mdc-tab:hover .mdc-tab__text-label{color:var(--mat-tab-header-inactive-hover-label-text-color)}.mat-mdc-tab:focus .mdc-tab__text-label{color:var(--mat-tab-header-inactive-focus-label-text-color)}.mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{color:var(--mat-tab-header-active-label-text-color)}.mat-mdc-tab.mdc-tab--active .mdc-tab__ripple::before,.mat-mdc-tab.mdc-tab--active .mat-ripple-element{background-color:var(--mat-tab-header-active-ripple-color)}.mat-mdc-tab.mdc-tab--active:hover .mdc-tab__text-label{color:var(--mat-tab-header-active-hover-label-text-color)}.mat-mdc-tab.mdc-tab--active:hover .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-hover-indicator-color)}.mat-mdc-tab.mdc-tab--active:focus .mdc-tab__text-label{color:var(--mat-tab-header-active-focus-label-text-color)}.mat-mdc-tab.mdc-tab--active:focus .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-focus-indicator-color)}.mat-mdc-tab.mat-mdc-tab-disabled{opacity:.4;pointer-events:none}.mat-mdc-tab.mat-mdc-tab-disabled .mdc-tab__content{pointer-events:none}.mat-mdc-tab.mat-mdc-tab-disabled .mdc-tab__ripple::before,.mat-mdc-tab.mat-mdc-tab-disabled .mat-ripple-element{background-color:var(--mat-tab-header-disabled-ripple-color)}.mat-mdc-tab .mdc-tab__ripple::before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;opacity:0;pointer-events:none;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab .mdc-tab__text-label{color:var(--mat-tab-header-inactive-label-text-color);display:inline-flex;align-items:center}.mat-mdc-tab .mdc-tab__content{position:relative;pointer-events:auto}.mat-mdc-tab:hover .mdc-tab__ripple::before{opacity:.04}.mat-mdc-tab.cdk-program-focused .mdc-tab__ripple::before,.mat-mdc-tab.cdk-keyboard-focused .mdc-tab__ripple::before{opacity:.12}.mat-mdc-tab .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab{flex-grow:1}.mat-mdc-tab-group{display:flex;flex-direction:column;max-width:100%}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination{background-color:var(--mat-tab-header-with-background-background-color)}.mat-mdc-tab-group.mat-tabs-with-background.mat-primary>.mat-mdc-tab-header .mat-mdc-tab .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background.mat-primary>.mat-mdc-tab-header .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-header .mat-mdc-tab:not(.mdc-tab--active) .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-header .mat-mdc-tab:not(.mdc-tab--active) .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-focus-indicator::before,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-focus-indicator::before{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-ripple-element,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mdc-tab__ripple::before,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-ripple-element,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mdc-tab__ripple::before{background-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-group.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-group.mat-mdc-tab-group-inverted-header{flex-direction:column-reverse}.mat-mdc-tab-group.mat-mdc-tab-group-inverted-header .mdc-tab-indicator__content--underline{align-self:flex-start}.mat-mdc-tab-body-wrapper{position:relative;overflow:hidden;display:flex;transition:height 500ms cubic-bezier(0.35, 0, 0.25, 1)}.mat-mdc-tab-body-wrapper._mat-animation-noopable{transition:none !important;animation:none !important}']
-    }]
-  }], () => [{
-    type: ElementRef
-  }, {
-    type: ChangeDetectorRef
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [MAT_TABS_CONFIG]
-    }, {
-      type: Optional
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [ANIMATION_MODULE_TYPE]
-    }]
-  }], {
-    _allTabs: [{
-      type: ContentChildren,
-      args: [MatTab, {
-        descendants: true
-      }]
-    }],
-    _tabBodyWrapper: [{
-      type: ViewChild,
-      args: ["tabBodyWrapper"]
-    }],
-    _tabHeader: [{
-      type: ViewChild,
-      args: ["tabHeader"]
-    }],
-    color: [{
-      type: Input
-    }],
-    fitInkBarToContent: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    stretchTabs: [{
-      type: Input,
-      args: [{
-        alias: "mat-stretch-tabs",
-        transform: booleanAttribute
-      }]
-    }],
-    dynamicHeight: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    selectedIndex: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    headerPosition: [{
-      type: Input
-    }],
-    animationDuration: [{
-      type: Input
-    }],
-    contentTabIndex: [{
-      type: Input,
-      args: [{
-        transform: numberAttribute
-      }]
-    }],
-    disablePagination: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    disableRipple: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    preserveContent: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    backgroundColor: [{
-      type: Input
-    }],
-    selectedIndexChange: [{
-      type: Output
-    }],
-    focusChange: [{
-      type: Output
-    }],
-    animationDone: [{
-      type: Output
-    }],
-    selectedTabChange: [{
-      type: Output
-    }]
-  });
+    );
 })();
-var MatTabChangeEvent = class {
-};
+var MatTabChangeEvent = class {};
 var nextUniqueId = 0;
 var _MatTabNav = class _MatTabNav extends MatPaginatedTabHeader {
   /** Whether the ink bar should fit its width to the size of the tab label content. */
@@ -2211,7 +3154,9 @@ var _MatTabNav = class _MatTabNav extends MatPaginatedTabHeader {
   }
   set animationDuration(value) {
     const stringValue = value + "";
-    this._animationDuration = /^\d+$/.test(stringValue) ? value + "ms" : stringValue;
+    this._animationDuration = /^\d+$/.test(stringValue)
+      ? value + "ms"
+      : stringValue;
   }
   /** Background color of the tab nav. */
   get backgroundColor() {
@@ -2219,29 +3164,59 @@ var _MatTabNav = class _MatTabNav extends MatPaginatedTabHeader {
   }
   set backgroundColor(value) {
     const classList = this._elementRef.nativeElement.classList;
-    classList.remove("mat-tabs-with-background", `mat-background-${this.backgroundColor}`);
+    classList.remove(
+      "mat-tabs-with-background",
+      `mat-background-${this.backgroundColor}`,
+    );
     if (value) {
       classList.add("mat-tabs-with-background", `mat-background-${value}`);
     }
     this._backgroundColor = value;
   }
-  constructor(elementRef, dir, ngZone, changeDetectorRef, viewportRuler, platform, animationMode, defaultConfig) {
-    super(elementRef, changeDetectorRef, viewportRuler, dir, ngZone, platform, animationMode);
+  constructor(
+    elementRef,
+    dir,
+    ngZone,
+    changeDetectorRef,
+    viewportRuler,
+    platform,
+    animationMode,
+    defaultConfig,
+  ) {
+    super(
+      elementRef,
+      changeDetectorRef,
+      viewportRuler,
+      dir,
+      ngZone,
+      platform,
+      animationMode,
+    );
     this._fitInkBarToContent = new BehaviorSubject(false);
     this.stretchTabs = true;
     this.disableRipple = false;
     this.color = "primary";
-    this.disablePagination = defaultConfig && defaultConfig.disablePagination != null ? defaultConfig.disablePagination : false;
-    this.fitInkBarToContent = defaultConfig && defaultConfig.fitInkBarToContent != null ? defaultConfig.fitInkBarToContent : false;
-    this.stretchTabs = defaultConfig && defaultConfig.stretchTabs != null ? defaultConfig.stretchTabs : true;
+    this.disablePagination =
+      defaultConfig && defaultConfig.disablePagination != null
+        ? defaultConfig.disablePagination
+        : false;
+    this.fitInkBarToContent =
+      defaultConfig && defaultConfig.fitInkBarToContent != null
+        ? defaultConfig.fitInkBarToContent
+        : false;
+    this.stretchTabs =
+      defaultConfig && defaultConfig.stretchTabs != null
+        ? defaultConfig.stretchTabs
+        : true;
   }
-  _itemSelected() {
-  }
+  _itemSelected() {}
   ngAfterContentInit() {
     this._inkBar = new MatInkBar(this._items);
-    this._items.changes.pipe(startWith(null), takeUntil(this._destroyed)).subscribe(() => {
-      this.updateActiveLink();
-    });
+    this._items.changes
+      .pipe(startWith(null), takeUntil(this._destroyed))
+      .subscribe(() => {
+        this.updateActiveLink();
+      });
     super.ngAfterContentInit();
   }
   ngAfterViewInit() {
@@ -2270,11 +3245,22 @@ var _MatTabNav = class _MatTabNav extends MatPaginatedTabHeader {
     this._inkBar.hide();
   }
   _getRole() {
-    return this.tabPanel ? "tablist" : this._elementRef.nativeElement.getAttribute("role");
+    return this.tabPanel
+      ? "tablist"
+      : this._elementRef.nativeElement.getAttribute("role");
   }
 };
 _MatTabNav.ɵfac = function MatTabNav_Factory(t) {
-  return new (t || _MatTabNav)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Directionality, 8), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(ViewportRuler), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8), ɵɵdirectiveInject(MAT_TABS_CONFIG, 8));
+  return new (t || _MatTabNav)(
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵdirectiveInject(Directionality, 8),
+    ɵɵdirectiveInject(NgZone),
+    ɵɵdirectiveInject(ChangeDetectorRef),
+    ɵɵdirectiveInject(ViewportRuler),
+    ɵɵdirectiveInject(Platform),
+    ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8),
+    ɵɵdirectiveInject(MAT_TABS_CONFIG, 8),
+  );
 };
 _MatTabNav.ɵcmp = ɵɵdefineComponent({
   type: _MatTabNav,
@@ -2285,7 +3271,7 @@ _MatTabNav.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._items = _t);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._items = _t);
     }
   },
   viewQuery: function MatTabNav_Query(rf, ctx) {
@@ -2298,11 +3284,13 @@ _MatTabNav.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       let _t;
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._tabListContainer = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._tabList = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._tabListInner = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._nextPaginator = _t.first);
-      ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._previousPaginator = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) &&
+        (ctx._tabListContainer = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._tabList = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._tabListInner = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) && (ctx._nextPaginator = _t.first);
+      ɵɵqueryRefresh((_t = ɵɵloadQuery())) &&
+        (ctx._previousPaginator = _t.first);
     }
   },
   hostAttrs: [1, "mat-mdc-tab-nav-bar", "mat-mdc-tab-header"],
@@ -2311,61 +3299,155 @@ _MatTabNav.ɵcmp = ɵɵdefineComponent({
     if (rf & 2) {
       ɵɵattribute("role", ctx._getRole());
       ɵɵstyleProp("--mat-tab-animation-duration", ctx.animationDuration);
-      ɵɵclassProp("mat-mdc-tab-header-pagination-controls-enabled", ctx._showPaginationControls)("mat-mdc-tab-header-rtl", ctx._getLayoutDirection() == "rtl")("mat-mdc-tab-nav-bar-stretch-tabs", ctx.stretchTabs)("mat-primary", ctx.color !== "warn" && ctx.color !== "accent")("mat-accent", ctx.color === "accent")("mat-warn", ctx.color === "warn")("_mat-animation-noopable", ctx._animationMode === "NoopAnimations");
+      ɵɵclassProp(
+        "mat-mdc-tab-header-pagination-controls-enabled",
+        ctx._showPaginationControls,
+      )("mat-mdc-tab-header-rtl", ctx._getLayoutDirection() == "rtl")(
+        "mat-mdc-tab-nav-bar-stretch-tabs",
+        ctx.stretchTabs,
+      )("mat-primary", ctx.color !== "warn" && ctx.color !== "accent")(
+        "mat-accent",
+        ctx.color === "accent",
+      )("mat-warn", ctx.color === "warn")(
+        "_mat-animation-noopable",
+        ctx._animationMode === "NoopAnimations",
+      );
     }
   },
   inputs: {
-    fitInkBarToContent: [InputFlags.HasDecoratorInputTransform, "fitInkBarToContent", "fitInkBarToContent", booleanAttribute],
-    stretchTabs: [InputFlags.HasDecoratorInputTransform, "mat-stretch-tabs", "stretchTabs", booleanAttribute],
+    fitInkBarToContent: [
+      InputFlags.HasDecoratorInputTransform,
+      "fitInkBarToContent",
+      "fitInkBarToContent",
+      booleanAttribute,
+    ],
+    stretchTabs: [
+      InputFlags.HasDecoratorInputTransform,
+      "mat-stretch-tabs",
+      "stretchTabs",
+      booleanAttribute,
+    ],
     animationDuration: "animationDuration",
     backgroundColor: "backgroundColor",
-    disableRipple: [InputFlags.HasDecoratorInputTransform, "disableRipple", "disableRipple", booleanAttribute],
+    disableRipple: [
+      InputFlags.HasDecoratorInputTransform,
+      "disableRipple",
+      "disableRipple",
+      booleanAttribute,
+    ],
     color: "color",
-    tabPanel: "tabPanel"
+    tabPanel: "tabPanel",
   },
   exportAs: ["matTabNavBar", "matTabNav"],
   standalone: true,
-  features: [ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+  features: [
+    ɵɵInputTransformsFeature,
+    ɵɵInheritDefinitionFeature,
+    ɵɵStandaloneFeature,
+  ],
   attrs: _c10,
   ngContentSelectors: _c0,
   decls: 13,
   vars: 8,
-  consts: [["previousPaginator", ""], ["tabListContainer", ""], ["tabList", ""], ["tabListInner", ""], ["nextPaginator", ""], ["aria-hidden", "true", "type", "button", "mat-ripple", "", "tabindex", "-1", 1, "mat-mdc-tab-header-pagination", "mat-mdc-tab-header-pagination-before", 3, "click", "mousedown", "touchend", "matRippleDisabled", "disabled"], [1, "mat-mdc-tab-header-pagination-chevron"], [1, "mat-mdc-tab-link-container", 3, "keydown"], [1, "mat-mdc-tab-list", 3, "cdkObserveContent"], [1, "mat-mdc-tab-links"], ["aria-hidden", "true", "type", "button", "mat-ripple", "", "tabindex", "-1", 1, "mat-mdc-tab-header-pagination", "mat-mdc-tab-header-pagination-after", 3, "mousedown", "click", "touchend", "matRippleDisabled", "disabled"]],
+  consts: [
+    ["previousPaginator", ""],
+    ["tabListContainer", ""],
+    ["tabList", ""],
+    ["tabListInner", ""],
+    ["nextPaginator", ""],
+    [
+      "aria-hidden",
+      "true",
+      "type",
+      "button",
+      "mat-ripple",
+      "",
+      "tabindex",
+      "-1",
+      1,
+      "mat-mdc-tab-header-pagination",
+      "mat-mdc-tab-header-pagination-before",
+      3,
+      "click",
+      "mousedown",
+      "touchend",
+      "matRippleDisabled",
+      "disabled",
+    ],
+    [1, "mat-mdc-tab-header-pagination-chevron"],
+    [1, "mat-mdc-tab-link-container", 3, "keydown"],
+    [1, "mat-mdc-tab-list", 3, "cdkObserveContent"],
+    [1, "mat-mdc-tab-links"],
+    [
+      "aria-hidden",
+      "true",
+      "type",
+      "button",
+      "mat-ripple",
+      "",
+      "tabindex",
+      "-1",
+      1,
+      "mat-mdc-tab-header-pagination",
+      "mat-mdc-tab-header-pagination-after",
+      3,
+      "mousedown",
+      "click",
+      "touchend",
+      "matRippleDisabled",
+      "disabled",
+    ],
+  ],
   template: function MatTabNav_Template(rf, ctx) {
     if (rf & 1) {
       const _r1 = ɵɵgetCurrentView();
       ɵɵprojectionDef();
       ɵɵelementStart(0, "button", 5, 0);
-      ɵɵlistener("click", function MatTabNav_Template_button_click_0_listener() {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._handlePaginatorClick("before"));
-      })("mousedown", function MatTabNav_Template_button_mousedown_0_listener($event) {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._handlePaginatorPress("before", $event));
-      })("touchend", function MatTabNav_Template_button_touchend_0_listener() {
+      ɵɵlistener(
+        "click",
+        function MatTabNav_Template_button_click_0_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._handlePaginatorClick("before"));
+        },
+      )(
+        "mousedown",
+        function MatTabNav_Template_button_mousedown_0_listener($event) {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._handlePaginatorPress("before", $event));
+        },
+      )("touchend", function MatTabNav_Template_button_touchend_0_listener() {
         ɵɵrestoreView(_r1);
         return ɵɵresetView(ctx._stopInterval());
       });
       ɵɵelement(2, "div", 6);
       ɵɵelementEnd();
       ɵɵelementStart(3, "div", 7, 1);
-      ɵɵlistener("keydown", function MatTabNav_Template_div_keydown_3_listener($event) {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._handleKeydown($event));
-      });
+      ɵɵlistener(
+        "keydown",
+        function MatTabNav_Template_div_keydown_3_listener($event) {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._handleKeydown($event));
+        },
+      );
       ɵɵelementStart(5, "div", 8, 2);
-      ɵɵlistener("cdkObserveContent", function MatTabNav_Template_div_cdkObserveContent_5_listener() {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._onContentChanges());
-      });
+      ɵɵlistener(
+        "cdkObserveContent",
+        function MatTabNav_Template_div_cdkObserveContent_5_listener() {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._onContentChanges());
+        },
+      );
       ɵɵelementStart(7, "div", 9, 3);
       ɵɵprojection(9);
       ɵɵelementEnd()()();
       ɵɵelementStart(10, "button", 10, 4);
-      ɵɵlistener("mousedown", function MatTabNav_Template_button_mousedown_10_listener($event) {
-        ɵɵrestoreView(_r1);
-        return ɵɵresetView(ctx._handlePaginatorPress("after", $event));
-      })("click", function MatTabNav_Template_button_click_10_listener() {
+      ɵɵlistener(
+        "mousedown",
+        function MatTabNav_Template_button_mousedown_10_listener($event) {
+          ɵɵrestoreView(_r1);
+          return ɵɵresetView(ctx._handlePaginatorPress("after", $event));
+        },
+      )("click", function MatTabNav_Template_button_click_10_listener() {
         ɵɵrestoreView(_r1);
         return ɵɵresetView(ctx._handlePaginatorClick("after"));
       })("touchend", function MatTabNav_Template_button_touchend_10_listener() {
@@ -2376,41 +3458,63 @@ _MatTabNav.ɵcmp = ɵɵdefineComponent({
       ɵɵelementEnd();
     }
     if (rf & 2) {
-      ɵɵclassProp("mat-mdc-tab-header-pagination-disabled", ctx._disableScrollBefore);
-      ɵɵproperty("matRippleDisabled", ctx._disableScrollBefore || ctx.disableRipple)("disabled", ctx._disableScrollBefore || null);
+      ɵɵclassProp(
+        "mat-mdc-tab-header-pagination-disabled",
+        ctx._disableScrollBefore,
+      );
+      ɵɵproperty(
+        "matRippleDisabled",
+        ctx._disableScrollBefore || ctx.disableRipple,
+      )("disabled", ctx._disableScrollBefore || null);
       ɵɵadvance(10);
-      ɵɵclassProp("mat-mdc-tab-header-pagination-disabled", ctx._disableScrollAfter);
-      ɵɵproperty("matRippleDisabled", ctx._disableScrollAfter || ctx.disableRipple)("disabled", ctx._disableScrollAfter || null);
+      ɵɵclassProp(
+        "mat-mdc-tab-header-pagination-disabled",
+        ctx._disableScrollAfter,
+      );
+      ɵɵproperty(
+        "matRippleDisabled",
+        ctx._disableScrollAfter || ctx.disableRipple,
+      )("disabled", ctx._disableScrollAfter || null);
     }
   },
   dependencies: [MatRipple, CdkObserveContent],
-  styles: [".mdc-tab{min-width:90px;padding-right:24px;padding-left:24px;display:flex;flex:1 0 auto;justify-content:center;box-sizing:border-box;margin:0;padding-top:0;padding-bottom:0;border:none;outline:none;text-align:center;white-space:nowrap;cursor:pointer;-webkit-appearance:none;z-index:1}.mdc-tab::-moz-focus-inner{padding:0;border:0}.mdc-tab[hidden]{display:none}.mdc-tab--min-width{flex:0 1 auto}.mdc-tab__content{display:flex;align-items:center;justify-content:center;height:inherit;pointer-events:none}.mdc-tab__text-label{transition:150ms color linear;display:inline-block;line-height:1;z-index:2}.mdc-tab__icon{transition:150ms color linear;z-index:2}.mdc-tab--stacked .mdc-tab__content{flex-direction:column;align-items:center;justify-content:center}.mdc-tab--stacked .mdc-tab__text-label{padding-top:6px;padding-bottom:4px}.mdc-tab--active .mdc-tab__text-label,.mdc-tab--active .mdc-tab__icon{transition-delay:100ms}.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label{padding-left:8px;padding-right:0}[dir=rtl] .mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label,.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label[dir=rtl]{padding-left:0;padding-right:8px}.mdc-tab-indicator{display:flex;position:absolute;top:0;left:0;justify-content:center;width:100%;height:100%;pointer-events:none;z-index:1}.mdc-tab-indicator__content{transform-origin:left;opacity:0}.mdc-tab-indicator__content--underline{align-self:flex-end;box-sizing:border-box;width:100%;border-top-style:solid}.mdc-tab-indicator__content--icon{align-self:center;margin:0 auto}.mdc-tab-indicator--active .mdc-tab-indicator__content{opacity:1}.mdc-tab-indicator .mdc-tab-indicator__content{transition:250ms transform cubic-bezier(0.4, 0, 0.2, 1)}.mdc-tab-indicator--no-transition .mdc-tab-indicator__content{transition:none}.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition:150ms opacity linear}.mdc-tab-indicator--active.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition-delay:100ms}.mat-mdc-tab-ripple{position:absolute;top:0;left:0;bottom:0;right:0;pointer-events:none}.mat-mdc-tab-header{display:flex;overflow:hidden;position:relative;flex-shrink:0}.mdc-tab-indicator .mdc-tab-indicator__content{transition-duration:var(--mat-tab-animation-duration, 250ms)}.mat-mdc-tab-header-pagination{-webkit-user-select:none;user-select:none;position:relative;display:none;justify-content:center;align-items:center;min-width:32px;cursor:pointer;z-index:2;-webkit-tap-highlight-color:rgba(0,0,0,0);touch-action:none;box-sizing:content-box;background:none;border:none;outline:0;padding:0}.mat-mdc-tab-header-pagination::-moz-focus-inner{border:0}.mat-mdc-tab-header-pagination .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-header-pagination-controls-enabled .mat-mdc-tab-header-pagination{display:flex}.mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after{padding-left:4px}.mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(-135deg)}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-pagination-after{padding-right:4px}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(45deg)}.mat-mdc-tab-header-pagination-chevron{border-style:solid;border-width:2px 2px 0 0;height:8px;width:8px;border-color:var(--mat-tab-header-pagination-icon-color)}.mat-mdc-tab-header-pagination-disabled{box-shadow:none;cursor:default;pointer-events:none}.mat-mdc-tab-header-pagination-disabled .mat-mdc-tab-header-pagination-chevron{opacity:.4}.mat-mdc-tab-list{flex-grow:1;position:relative;transition:transform 500ms cubic-bezier(0.35, 0, 0.25, 1)}._mat-animation-noopable .mat-mdc-tab-list{transition:none}._mat-animation-noopable span.mdc-tab-indicator__content,._mat-animation-noopable span.mdc-tab__text-label{transition:none}.mat-mdc-tab-links{display:flex;flex:1 0 auto}[mat-align-tabs=center]>.mat-mdc-tab-link-container .mat-mdc-tab-links{justify-content:center}[mat-align-tabs=end]>.mat-mdc-tab-link-container .mat-mdc-tab-links{justify-content:flex-end}.mat-mdc-tab-link-container{display:flex;flex-grow:1;overflow:hidden;z-index:1;border-bottom-style:solid;border-bottom-width:var(--mat-tab-header-divider-height);border-bottom-color:var(--mat-tab-header-divider-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination{background-color:var(--mat-tab-header-with-background-background-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background.mat-primary>.mat-mdc-tab-link-container .mat-mdc-tab-link .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background.mat-primary>.mat-mdc-tab-link-container .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-link-container .mat-mdc-tab-link:not(.mdc-tab--active) .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-link-container .mat-mdc-tab-link:not(.mdc-tab--active) .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-mdc-focus-indicator::before,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-focus-indicator::before{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-ripple-element,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mdc-tab__ripple::before,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-ripple-element,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mdc-tab__ripple::before{background-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron{color:var(--mat-tab-header-with-background-foreground-color)}"],
-  encapsulation: 2
+  styles: [
+    ".mdc-tab{min-width:90px;padding-right:24px;padding-left:24px;display:flex;flex:1 0 auto;justify-content:center;box-sizing:border-box;margin:0;padding-top:0;padding-bottom:0;border:none;outline:none;text-align:center;white-space:nowrap;cursor:pointer;-webkit-appearance:none;z-index:1}.mdc-tab::-moz-focus-inner{padding:0;border:0}.mdc-tab[hidden]{display:none}.mdc-tab--min-width{flex:0 1 auto}.mdc-tab__content{display:flex;align-items:center;justify-content:center;height:inherit;pointer-events:none}.mdc-tab__text-label{transition:150ms color linear;display:inline-block;line-height:1;z-index:2}.mdc-tab__icon{transition:150ms color linear;z-index:2}.mdc-tab--stacked .mdc-tab__content{flex-direction:column;align-items:center;justify-content:center}.mdc-tab--stacked .mdc-tab__text-label{padding-top:6px;padding-bottom:4px}.mdc-tab--active .mdc-tab__text-label,.mdc-tab--active .mdc-tab__icon{transition-delay:100ms}.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label{padding-left:8px;padding-right:0}[dir=rtl] .mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label,.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label[dir=rtl]{padding-left:0;padding-right:8px}.mdc-tab-indicator{display:flex;position:absolute;top:0;left:0;justify-content:center;width:100%;height:100%;pointer-events:none;z-index:1}.mdc-tab-indicator__content{transform-origin:left;opacity:0}.mdc-tab-indicator__content--underline{align-self:flex-end;box-sizing:border-box;width:100%;border-top-style:solid}.mdc-tab-indicator__content--icon{align-self:center;margin:0 auto}.mdc-tab-indicator--active .mdc-tab-indicator__content{opacity:1}.mdc-tab-indicator .mdc-tab-indicator__content{transition:250ms transform cubic-bezier(0.4, 0, 0.2, 1)}.mdc-tab-indicator--no-transition .mdc-tab-indicator__content{transition:none}.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition:150ms opacity linear}.mdc-tab-indicator--active.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition-delay:100ms}.mat-mdc-tab-ripple{position:absolute;top:0;left:0;bottom:0;right:0;pointer-events:none}.mat-mdc-tab-header{display:flex;overflow:hidden;position:relative;flex-shrink:0}.mdc-tab-indicator .mdc-tab-indicator__content{transition-duration:var(--mat-tab-animation-duration, 250ms)}.mat-mdc-tab-header-pagination{-webkit-user-select:none;user-select:none;position:relative;display:none;justify-content:center;align-items:center;min-width:32px;cursor:pointer;z-index:2;-webkit-tap-highlight-color:rgba(0,0,0,0);touch-action:none;box-sizing:content-box;background:none;border:none;outline:0;padding:0}.mat-mdc-tab-header-pagination::-moz-focus-inner{border:0}.mat-mdc-tab-header-pagination .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-header-pagination-controls-enabled .mat-mdc-tab-header-pagination{display:flex}.mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after{padding-left:4px}.mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(-135deg)}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-pagination-after{padding-right:4px}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(45deg)}.mat-mdc-tab-header-pagination-chevron{border-style:solid;border-width:2px 2px 0 0;height:8px;width:8px;border-color:var(--mat-tab-header-pagination-icon-color)}.mat-mdc-tab-header-pagination-disabled{box-shadow:none;cursor:default;pointer-events:none}.mat-mdc-tab-header-pagination-disabled .mat-mdc-tab-header-pagination-chevron{opacity:.4}.mat-mdc-tab-list{flex-grow:1;position:relative;transition:transform 500ms cubic-bezier(0.35, 0, 0.25, 1)}._mat-animation-noopable .mat-mdc-tab-list{transition:none}._mat-animation-noopable span.mdc-tab-indicator__content,._mat-animation-noopable span.mdc-tab__text-label{transition:none}.mat-mdc-tab-links{display:flex;flex:1 0 auto}[mat-align-tabs=center]>.mat-mdc-tab-link-container .mat-mdc-tab-links{justify-content:center}[mat-align-tabs=end]>.mat-mdc-tab-link-container .mat-mdc-tab-links{justify-content:flex-end}.mat-mdc-tab-link-container{display:flex;flex-grow:1;overflow:hidden;z-index:1;border-bottom-style:solid;border-bottom-width:var(--mat-tab-header-divider-height);border-bottom-color:var(--mat-tab-header-divider-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination{background-color:var(--mat-tab-header-with-background-background-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background.mat-primary>.mat-mdc-tab-link-container .mat-mdc-tab-link .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background.mat-primary>.mat-mdc-tab-link-container .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-link-container .mat-mdc-tab-link:not(.mdc-tab--active) .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-link-container .mat-mdc-tab-link:not(.mdc-tab--active) .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-mdc-focus-indicator::before,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-focus-indicator::before{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-ripple-element,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mdc-tab__ripple::before,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-ripple-element,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mdc-tab__ripple::before{background-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron{color:var(--mat-tab-header-with-background-foreground-color)}",
+  ],
+  encapsulation: 2,
 });
 var MatTabNav = _MatTabNav;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTabNav, [{
-    type: Component,
-    args: [{
-      selector: "[mat-tab-nav-bar]",
-      exportAs: "matTabNavBar, matTabNav",
-      host: {
-        "[attr.role]": "_getRole()",
-        "class": "mat-mdc-tab-nav-bar mat-mdc-tab-header",
-        "[class.mat-mdc-tab-header-pagination-controls-enabled]": "_showPaginationControls",
-        "[class.mat-mdc-tab-header-rtl]": "_getLayoutDirection() == 'rtl'",
-        "[class.mat-mdc-tab-nav-bar-stretch-tabs]": "stretchTabs",
-        "[class.mat-primary]": 'color !== "warn" && color !== "accent"',
-        "[class.mat-accent]": 'color === "accent"',
-        "[class.mat-warn]": 'color === "warn"',
-        "[class._mat-animation-noopable]": '_animationMode === "NoopAnimations"',
-        "[style.--mat-tab-animation-duration]": "animationDuration"
-      },
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.Default,
-      standalone: true,
-      imports: [MatRipple, CdkObserveContent],
-      template: `<!-- TODO: this also had \`mat-elevation-z4\`. Figure out what we should do with it. -->
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTabNav,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "[mat-tab-nav-bar]",
+              exportAs: "matTabNavBar, matTabNav",
+              host: {
+                "[attr.role]": "_getRole()",
+                class: "mat-mdc-tab-nav-bar mat-mdc-tab-header",
+                "[class.mat-mdc-tab-header-pagination-controls-enabled]":
+                  "_showPaginationControls",
+                "[class.mat-mdc-tab-header-rtl]":
+                  "_getLayoutDirection() == 'rtl'",
+                "[class.mat-mdc-tab-nav-bar-stretch-tabs]": "stretchTabs",
+                "[class.mat-primary]": 'color !== "warn" && color !== "accent"',
+                "[class.mat-accent]": 'color === "accent"',
+                "[class.mat-warn]": 'color === "warn"',
+                "[class._mat-animation-noopable]":
+                  '_animationMode === "NoopAnimations"',
+                "[style.--mat-tab-animation-duration]": "animationDuration",
+              },
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.Default,
+              standalone: true,
+              imports: [MatRipple, CdkObserveContent],
+              template: `<!-- TODO: this also had \`mat-elevation-z4\`. Figure out what we should do with it. -->
 <button class="mat-mdc-tab-header-pagination mat-mdc-tab-header-pagination-before"
      #previousPaginator
      aria-hidden="true"
@@ -2450,104 +3554,172 @@ var MatTabNav = _MatTabNav;
   <div class="mat-mdc-tab-header-pagination-chevron"></div>
 </button>
 `,
-      styles: [".mdc-tab{min-width:90px;padding-right:24px;padding-left:24px;display:flex;flex:1 0 auto;justify-content:center;box-sizing:border-box;margin:0;padding-top:0;padding-bottom:0;border:none;outline:none;text-align:center;white-space:nowrap;cursor:pointer;-webkit-appearance:none;z-index:1}.mdc-tab::-moz-focus-inner{padding:0;border:0}.mdc-tab[hidden]{display:none}.mdc-tab--min-width{flex:0 1 auto}.mdc-tab__content{display:flex;align-items:center;justify-content:center;height:inherit;pointer-events:none}.mdc-tab__text-label{transition:150ms color linear;display:inline-block;line-height:1;z-index:2}.mdc-tab__icon{transition:150ms color linear;z-index:2}.mdc-tab--stacked .mdc-tab__content{flex-direction:column;align-items:center;justify-content:center}.mdc-tab--stacked .mdc-tab__text-label{padding-top:6px;padding-bottom:4px}.mdc-tab--active .mdc-tab__text-label,.mdc-tab--active .mdc-tab__icon{transition-delay:100ms}.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label{padding-left:8px;padding-right:0}[dir=rtl] .mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label,.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label[dir=rtl]{padding-left:0;padding-right:8px}.mdc-tab-indicator{display:flex;position:absolute;top:0;left:0;justify-content:center;width:100%;height:100%;pointer-events:none;z-index:1}.mdc-tab-indicator__content{transform-origin:left;opacity:0}.mdc-tab-indicator__content--underline{align-self:flex-end;box-sizing:border-box;width:100%;border-top-style:solid}.mdc-tab-indicator__content--icon{align-self:center;margin:0 auto}.mdc-tab-indicator--active .mdc-tab-indicator__content{opacity:1}.mdc-tab-indicator .mdc-tab-indicator__content{transition:250ms transform cubic-bezier(0.4, 0, 0.2, 1)}.mdc-tab-indicator--no-transition .mdc-tab-indicator__content{transition:none}.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition:150ms opacity linear}.mdc-tab-indicator--active.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition-delay:100ms}.mat-mdc-tab-ripple{position:absolute;top:0;left:0;bottom:0;right:0;pointer-events:none}.mat-mdc-tab-header{display:flex;overflow:hidden;position:relative;flex-shrink:0}.mdc-tab-indicator .mdc-tab-indicator__content{transition-duration:var(--mat-tab-animation-duration, 250ms)}.mat-mdc-tab-header-pagination{-webkit-user-select:none;user-select:none;position:relative;display:none;justify-content:center;align-items:center;min-width:32px;cursor:pointer;z-index:2;-webkit-tap-highlight-color:rgba(0,0,0,0);touch-action:none;box-sizing:content-box;background:none;border:none;outline:0;padding:0}.mat-mdc-tab-header-pagination::-moz-focus-inner{border:0}.mat-mdc-tab-header-pagination .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-header-pagination-controls-enabled .mat-mdc-tab-header-pagination{display:flex}.mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after{padding-left:4px}.mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(-135deg)}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-pagination-after{padding-right:4px}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(45deg)}.mat-mdc-tab-header-pagination-chevron{border-style:solid;border-width:2px 2px 0 0;height:8px;width:8px;border-color:var(--mat-tab-header-pagination-icon-color)}.mat-mdc-tab-header-pagination-disabled{box-shadow:none;cursor:default;pointer-events:none}.mat-mdc-tab-header-pagination-disabled .mat-mdc-tab-header-pagination-chevron{opacity:.4}.mat-mdc-tab-list{flex-grow:1;position:relative;transition:transform 500ms cubic-bezier(0.35, 0, 0.25, 1)}._mat-animation-noopable .mat-mdc-tab-list{transition:none}._mat-animation-noopable span.mdc-tab-indicator__content,._mat-animation-noopable span.mdc-tab__text-label{transition:none}.mat-mdc-tab-links{display:flex;flex:1 0 auto}[mat-align-tabs=center]>.mat-mdc-tab-link-container .mat-mdc-tab-links{justify-content:center}[mat-align-tabs=end]>.mat-mdc-tab-link-container .mat-mdc-tab-links{justify-content:flex-end}.mat-mdc-tab-link-container{display:flex;flex-grow:1;overflow:hidden;z-index:1;border-bottom-style:solid;border-bottom-width:var(--mat-tab-header-divider-height);border-bottom-color:var(--mat-tab-header-divider-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination{background-color:var(--mat-tab-header-with-background-background-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background.mat-primary>.mat-mdc-tab-link-container .mat-mdc-tab-link .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background.mat-primary>.mat-mdc-tab-link-container .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-link-container .mat-mdc-tab-link:not(.mdc-tab--active) .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-link-container .mat-mdc-tab-link:not(.mdc-tab--active) .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-mdc-focus-indicator::before,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-focus-indicator::before{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-ripple-element,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mdc-tab__ripple::before,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-ripple-element,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mdc-tab__ripple::before{background-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron{color:var(--mat-tab-header-with-background-foreground-color)}"]
-    }]
-  }], () => [{
-    type: ElementRef
-  }, {
-    type: Directionality,
-    decorators: [{
-      type: Optional
-    }]
-  }, {
-    type: NgZone
-  }, {
-    type: ChangeDetectorRef
-  }, {
-    type: ViewportRuler
-  }, {
-    type: Platform
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [ANIMATION_MODULE_TYPE]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [MAT_TABS_CONFIG]
-    }]
-  }], {
-    fitInkBarToContent: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    stretchTabs: [{
-      type: Input,
-      args: [{
-        alias: "mat-stretch-tabs",
-        transform: booleanAttribute
-      }]
-    }],
-    animationDuration: [{
-      type: Input
-    }],
-    _items: [{
-      type: ContentChildren,
-      args: [forwardRef(() => MatTabLink), {
-        descendants: true
-      }]
-    }],
-    backgroundColor: [{
-      type: Input
-    }],
-    disableRipple: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    color: [{
-      type: Input
-    }],
-    tabPanel: [{
-      type: Input
-    }],
-    _tabListContainer: [{
-      type: ViewChild,
-      args: ["tabListContainer", {
-        static: true
-      }]
-    }],
-    _tabList: [{
-      type: ViewChild,
-      args: ["tabList", {
-        static: true
-      }]
-    }],
-    _tabListInner: [{
-      type: ViewChild,
-      args: ["tabListInner", {
-        static: true
-      }]
-    }],
-    _nextPaginator: [{
-      type: ViewChild,
-      args: ["nextPaginator"]
-    }],
-    _previousPaginator: [{
-      type: ViewChild,
-      args: ["previousPaginator"]
-    }]
-  });
+              styles: [
+                ".mdc-tab{min-width:90px;padding-right:24px;padding-left:24px;display:flex;flex:1 0 auto;justify-content:center;box-sizing:border-box;margin:0;padding-top:0;padding-bottom:0;border:none;outline:none;text-align:center;white-space:nowrap;cursor:pointer;-webkit-appearance:none;z-index:1}.mdc-tab::-moz-focus-inner{padding:0;border:0}.mdc-tab[hidden]{display:none}.mdc-tab--min-width{flex:0 1 auto}.mdc-tab__content{display:flex;align-items:center;justify-content:center;height:inherit;pointer-events:none}.mdc-tab__text-label{transition:150ms color linear;display:inline-block;line-height:1;z-index:2}.mdc-tab__icon{transition:150ms color linear;z-index:2}.mdc-tab--stacked .mdc-tab__content{flex-direction:column;align-items:center;justify-content:center}.mdc-tab--stacked .mdc-tab__text-label{padding-top:6px;padding-bottom:4px}.mdc-tab--active .mdc-tab__text-label,.mdc-tab--active .mdc-tab__icon{transition-delay:100ms}.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label{padding-left:8px;padding-right:0}[dir=rtl] .mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label,.mdc-tab:not(.mdc-tab--stacked) .mdc-tab__icon+.mdc-tab__text-label[dir=rtl]{padding-left:0;padding-right:8px}.mdc-tab-indicator{display:flex;position:absolute;top:0;left:0;justify-content:center;width:100%;height:100%;pointer-events:none;z-index:1}.mdc-tab-indicator__content{transform-origin:left;opacity:0}.mdc-tab-indicator__content--underline{align-self:flex-end;box-sizing:border-box;width:100%;border-top-style:solid}.mdc-tab-indicator__content--icon{align-self:center;margin:0 auto}.mdc-tab-indicator--active .mdc-tab-indicator__content{opacity:1}.mdc-tab-indicator .mdc-tab-indicator__content{transition:250ms transform cubic-bezier(0.4, 0, 0.2, 1)}.mdc-tab-indicator--no-transition .mdc-tab-indicator__content{transition:none}.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition:150ms opacity linear}.mdc-tab-indicator--active.mdc-tab-indicator--fade .mdc-tab-indicator__content{transition-delay:100ms}.mat-mdc-tab-ripple{position:absolute;top:0;left:0;bottom:0;right:0;pointer-events:none}.mat-mdc-tab-header{display:flex;overflow:hidden;position:relative;flex-shrink:0}.mdc-tab-indicator .mdc-tab-indicator__content{transition-duration:var(--mat-tab-animation-duration, 250ms)}.mat-mdc-tab-header-pagination{-webkit-user-select:none;user-select:none;position:relative;display:none;justify-content:center;align-items:center;min-width:32px;cursor:pointer;z-index:2;-webkit-tap-highlight-color:rgba(0,0,0,0);touch-action:none;box-sizing:content-box;background:none;border:none;outline:0;padding:0}.mat-mdc-tab-header-pagination::-moz-focus-inner{border:0}.mat-mdc-tab-header-pagination .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-header-pagination-controls-enabled .mat-mdc-tab-header-pagination{display:flex}.mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after{padding-left:4px}.mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(-135deg)}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before,.mat-mdc-tab-header-pagination-after{padding-right:4px}.mat-mdc-tab-header-rtl .mat-mdc-tab-header-pagination-before .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-header-pagination-after .mat-mdc-tab-header-pagination-chevron{transform:rotate(45deg)}.mat-mdc-tab-header-pagination-chevron{border-style:solid;border-width:2px 2px 0 0;height:8px;width:8px;border-color:var(--mat-tab-header-pagination-icon-color)}.mat-mdc-tab-header-pagination-disabled{box-shadow:none;cursor:default;pointer-events:none}.mat-mdc-tab-header-pagination-disabled .mat-mdc-tab-header-pagination-chevron{opacity:.4}.mat-mdc-tab-list{flex-grow:1;position:relative;transition:transform 500ms cubic-bezier(0.35, 0, 0.25, 1)}._mat-animation-noopable .mat-mdc-tab-list{transition:none}._mat-animation-noopable span.mdc-tab-indicator__content,._mat-animation-noopable span.mdc-tab__text-label{transition:none}.mat-mdc-tab-links{display:flex;flex:1 0 auto}[mat-align-tabs=center]>.mat-mdc-tab-link-container .mat-mdc-tab-links{justify-content:center}[mat-align-tabs=end]>.mat-mdc-tab-link-container .mat-mdc-tab-links{justify-content:flex-end}.mat-mdc-tab-link-container{display:flex;flex-grow:1;overflow:hidden;z-index:1;border-bottom-style:solid;border-bottom-width:var(--mat-tab-header-divider-height);border-bottom-color:var(--mat-tab-header-divider-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination{background-color:var(--mat-tab-header-with-background-background-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background.mat-primary>.mat-mdc-tab-link-container .mat-mdc-tab-link .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background.mat-primary>.mat-mdc-tab-link-container .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-link-container .mat-mdc-tab-link:not(.mdc-tab--active) .mdc-tab__text-label{color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background:not(.mat-primary)>.mat-mdc-tab-link-container .mat-mdc-tab-link:not(.mdc-tab--active) .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-mdc-focus-indicator::before,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-focus-indicator::before{border-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-ripple-element,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mdc-tab__ripple::before,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-ripple-element,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mdc-tab__ripple::before{background-color:var(--mat-tab-header-with-background-foreground-color)}.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-link-container .mat-mdc-tab-header-pagination-chevron,.mat-mdc-tab-nav-bar.mat-tabs-with-background>.mat-mdc-tab-header-pagination .mat-mdc-tab-header-pagination-chevron{color:var(--mat-tab-header-with-background-foreground-color)}",
+              ],
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: ElementRef,
+        },
+        {
+          type: Directionality,
+          decorators: [
+            {
+              type: Optional,
+            },
+          ],
+        },
+        {
+          type: NgZone,
+        },
+        {
+          type: ChangeDetectorRef,
+        },
+        {
+          type: ViewportRuler,
+        },
+        {
+          type: Platform,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Optional,
+            },
+            {
+              type: Inject,
+              args: [ANIMATION_MODULE_TYPE],
+            },
+          ],
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Optional,
+            },
+            {
+              type: Inject,
+              args: [MAT_TABS_CONFIG],
+            },
+          ],
+        },
+      ],
+      {
+        fitInkBarToContent: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        stretchTabs: [
+          {
+            type: Input,
+            args: [
+              {
+                alias: "mat-stretch-tabs",
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        animationDuration: [
+          {
+            type: Input,
+          },
+        ],
+        _items: [
+          {
+            type: ContentChildren,
+            args: [
+              forwardRef(() => MatTabLink),
+              {
+                descendants: true,
+              },
+            ],
+          },
+        ],
+        backgroundColor: [
+          {
+            type: Input,
+          },
+        ],
+        disableRipple: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        color: [
+          {
+            type: Input,
+          },
+        ],
+        tabPanel: [
+          {
+            type: Input,
+          },
+        ],
+        _tabListContainer: [
+          {
+            type: ViewChild,
+            args: [
+              "tabListContainer",
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
+        _tabList: [
+          {
+            type: ViewChild,
+            args: [
+              "tabList",
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
+        _tabListInner: [
+          {
+            type: ViewChild,
+            args: [
+              "tabListInner",
+              {
+                static: true,
+              },
+            ],
+          },
+        ],
+        _nextPaginator: [
+          {
+            type: ViewChild,
+            args: ["nextPaginator"],
+          },
+        ],
+        _previousPaginator: [
+          {
+            type: ViewChild,
+            args: ["previousPaginator"],
+          },
+        ],
+      },
+    );
 })();
 var _MatTabLink = class _MatTabLink extends InkBarItem {
   /** Whether the link is active. */
@@ -2565,9 +3737,21 @@ var _MatTabLink = class _MatTabLink extends InkBarItem {
    * @docs-private
    */
   get rippleDisabled() {
-    return this.disabled || this.disableRipple || this._tabNavBar.disableRipple || !!this.rippleConfig.disabled;
+    return (
+      this.disabled ||
+      this.disableRipple ||
+      this._tabNavBar.disableRipple ||
+      !!this.rippleConfig.disabled
+    );
   }
-  constructor(_tabNavBar, elementRef, globalRippleOptions, tabIndex, _focusMonitor, animationMode) {
+  constructor(
+    _tabNavBar,
+    elementRef,
+    globalRippleOptions,
+    tabIndex,
+    _focusMonitor,
+    animationMode,
+  ) {
     super();
     this._tabNavBar = _tabNavBar;
     this.elementRef = elementRef;
@@ -2583,12 +3767,14 @@ var _MatTabLink = class _MatTabLink extends InkBarItem {
     if (animationMode === "NoopAnimations") {
       this.rippleConfig.animation = {
         enterDuration: 0,
-        exitDuration: 0
+        exitDuration: 0,
       };
     }
-    _tabNavBar._fitInkBarToContent.pipe(takeUntil(this._destroyed)).subscribe((fitInkBarToContent) => {
-      this.fitInkBarToContent = fitInkBarToContent;
-    });
+    _tabNavBar._fitInkBarToContent
+      .pipe(takeUntil(this._destroyed))
+      .subscribe((fitInkBarToContent) => {
+        this.fitInkBarToContent = fitInkBarToContent;
+      });
   }
   /** Focuses the tab link. */
   focus() {
@@ -2619,7 +3805,9 @@ var _MatTabLink = class _MatTabLink extends InkBarItem {
     }
   }
   _getAriaControls() {
-    return this._tabNavBar.tabPanel ? this._tabNavBar.tabPanel?.id : this.elementRef.nativeElement.getAttribute("aria-controls");
+    return this._tabNavBar.tabPanel
+      ? this._tabNavBar.tabPanel?.id
+      : this.elementRef.nativeElement.getAttribute("aria-controls");
   }
   _getAriaSelected() {
     if (this._tabNavBar.tabPanel) {
@@ -2632,7 +3820,9 @@ var _MatTabLink = class _MatTabLink extends InkBarItem {
     return this.active && !this._tabNavBar.tabPanel ? "page" : null;
   }
   _getRole() {
-    return this._tabNavBar.tabPanel ? "tab" : this.elementRef.nativeElement.getAttribute("role");
+    return this._tabNavBar.tabPanel
+      ? "tab"
+      : this.elementRef.nativeElement.getAttribute("role");
   }
   _getTabIndex() {
     if (this._tabNavBar.tabPanel) {
@@ -2643,11 +3833,21 @@ var _MatTabLink = class _MatTabLink extends InkBarItem {
   }
 };
 _MatTabLink.ɵfac = function MatTabLink_Factory(t) {
-  return new (t || _MatTabLink)(ɵɵdirectiveInject(MatTabNav), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(MAT_RIPPLE_GLOBAL_OPTIONS, 8), ɵɵinjectAttribute("tabindex"), ɵɵdirectiveInject(FocusMonitor), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8));
+  return new (t || _MatTabLink)(
+    ɵɵdirectiveInject(MatTabNav),
+    ɵɵdirectiveInject(ElementRef),
+    ɵɵdirectiveInject(MAT_RIPPLE_GLOBAL_OPTIONS, 8),
+    ɵɵinjectAttribute("tabindex"),
+    ɵɵdirectiveInject(FocusMonitor),
+    ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8),
+  );
 };
 _MatTabLink.ɵcmp = ɵɵdefineComponent({
   type: _MatTabLink,
-  selectors: [["", "mat-tab-link", ""], ["", "matTabLink", ""]],
+  selectors: [
+    ["", "mat-tab-link", ""],
+    ["", "matTabLink", ""],
+  ],
   hostAttrs: [1, "mdc-tab", "mat-mdc-tab-link", "mat-mdc-focus-indicator"],
   hostVars: 11,
   hostBindings: function MatTabLink_HostBindings(rf, ctx) {
@@ -2659,25 +3859,71 @@ _MatTabLink.ɵcmp = ɵɵdefineComponent({
       });
     }
     if (rf & 2) {
-      ɵɵattribute("aria-controls", ctx._getAriaControls())("aria-current", ctx._getAriaCurrent())("aria-disabled", ctx.disabled)("aria-selected", ctx._getAriaSelected())("id", ctx.id)("tabIndex", ctx._getTabIndex())("role", ctx._getRole());
-      ɵɵclassProp("mat-mdc-tab-disabled", ctx.disabled)("mdc-tab--active", ctx.active);
+      ɵɵattribute("aria-controls", ctx._getAriaControls())(
+        "aria-current",
+        ctx._getAriaCurrent(),
+      )("aria-disabled", ctx.disabled)("aria-selected", ctx._getAriaSelected())(
+        "id",
+        ctx.id,
+      )("tabIndex", ctx._getTabIndex())("role", ctx._getRole());
+      ɵɵclassProp("mat-mdc-tab-disabled", ctx.disabled)(
+        "mdc-tab--active",
+        ctx.active,
+      );
     }
   },
   inputs: {
-    active: [InputFlags.HasDecoratorInputTransform, "active", "active", booleanAttribute],
-    disabled: [InputFlags.HasDecoratorInputTransform, "disabled", "disabled", booleanAttribute],
-    disableRipple: [InputFlags.HasDecoratorInputTransform, "disableRipple", "disableRipple", booleanAttribute],
-    tabIndex: [InputFlags.HasDecoratorInputTransform, "tabIndex", "tabIndex", (value) => value == null ? 0 : numberAttribute(value)],
-    id: "id"
+    active: [
+      InputFlags.HasDecoratorInputTransform,
+      "active",
+      "active",
+      booleanAttribute,
+    ],
+    disabled: [
+      InputFlags.HasDecoratorInputTransform,
+      "disabled",
+      "disabled",
+      booleanAttribute,
+    ],
+    disableRipple: [
+      InputFlags.HasDecoratorInputTransform,
+      "disableRipple",
+      "disableRipple",
+      booleanAttribute,
+    ],
+    tabIndex: [
+      InputFlags.HasDecoratorInputTransform,
+      "tabIndex",
+      "tabIndex",
+      (value) => (value == null ? 0 : numberAttribute(value)),
+    ],
+    id: "id",
   },
   exportAs: ["matTabLink"],
   standalone: true,
-  features: [ɵɵInputTransformsFeature, ɵɵInheritDefinitionFeature, ɵɵStandaloneFeature],
+  features: [
+    ɵɵInputTransformsFeature,
+    ɵɵInheritDefinitionFeature,
+    ɵɵStandaloneFeature,
+  ],
   attrs: _c11,
   ngContentSelectors: _c0,
   decls: 5,
   vars: 2,
-  consts: [[1, "mdc-tab__ripple"], ["mat-ripple", "", 1, "mat-mdc-tab-ripple", 3, "matRippleTrigger", "matRippleDisabled"], [1, "mdc-tab__content"], [1, "mdc-tab__text-label"]],
+  consts: [
+    [1, "mdc-tab__ripple"],
+    [
+      "mat-ripple",
+      "",
+      1,
+      "mat-mdc-tab-ripple",
+      3,
+      "matRippleTrigger",
+      "matRippleDisabled",
+    ],
+    [1, "mdc-tab__content"],
+    [1, "mdc-tab__text-label"],
+  ],
   template: function MatTabLink_Template(rf, ctx) {
     if (rf & 1) {
       ɵɵprojectionDef();
@@ -2688,99 +3934,151 @@ _MatTabLink.ɵcmp = ɵɵdefineComponent({
     }
     if (rf & 2) {
       ɵɵadvance();
-      ɵɵproperty("matRippleTrigger", ctx.elementRef.nativeElement)("matRippleDisabled", ctx.rippleDisabled);
+      ɵɵproperty("matRippleTrigger", ctx.elementRef.nativeElement)(
+        "matRippleDisabled",
+        ctx.rippleDisabled,
+      );
     }
   },
   dependencies: [MatRipple],
-  styles: ['.mat-mdc-tab-link{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-decoration:none;background:none;font-family:var(--mat-tab-header-label-text-font);font-size:var(--mat-tab-header-label-text-size);letter-spacing:var(--mat-tab-header-label-text-tracking);line-height:var(--mat-tab-header-label-text-line-height);font-weight:var(--mat-tab-header-label-text-weight)}.mat-mdc-tab-link .mdc-tab-indicator__content--underline{border-color:var(--mdc-tab-indicator-active-indicator-color)}.mat-mdc-tab-link .mdc-tab-indicator__content--underline{border-top-width:var(--mdc-tab-indicator-active-indicator-height)}.mat-mdc-tab-link .mdc-tab-indicator__content--underline{border-radius:var(--mdc-tab-indicator-active-indicator-shape)}.mat-mdc-tab-link:not(.mdc-tab--stacked){height:var(--mdc-secondary-navigation-tab-container-height)}.mat-mdc-tab-link:not(:disabled).mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):hover.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):focus.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):active.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:disabled.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):hover:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):focus:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):active:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:disabled:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link.mdc-tab{flex-grow:0}.mat-mdc-tab-link:hover .mdc-tab__text-label{color:var(--mat-tab-header-inactive-hover-label-text-color)}.mat-mdc-tab-link:focus .mdc-tab__text-label{color:var(--mat-tab-header-inactive-focus-label-text-color)}.mat-mdc-tab-link.mdc-tab--active .mdc-tab__text-label{color:var(--mat-tab-header-active-label-text-color)}.mat-mdc-tab-link.mdc-tab--active .mdc-tab__ripple::before,.mat-mdc-tab-link.mdc-tab--active .mat-ripple-element{background-color:var(--mat-tab-header-active-ripple-color)}.mat-mdc-tab-link.mdc-tab--active:hover .mdc-tab__text-label{color:var(--mat-tab-header-active-hover-label-text-color)}.mat-mdc-tab-link.mdc-tab--active:hover .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-hover-indicator-color)}.mat-mdc-tab-link.mdc-tab--active:focus .mdc-tab__text-label{color:var(--mat-tab-header-active-focus-label-text-color)}.mat-mdc-tab-link.mdc-tab--active:focus .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-focus-indicator-color)}.mat-mdc-tab-link.mat-mdc-tab-disabled{opacity:.4;pointer-events:none}.mat-mdc-tab-link.mat-mdc-tab-disabled .mdc-tab__content{pointer-events:none}.mat-mdc-tab-link.mat-mdc-tab-disabled .mdc-tab__ripple::before,.mat-mdc-tab-link.mat-mdc-tab-disabled .mat-ripple-element{background-color:var(--mat-tab-header-disabled-ripple-color)}.mat-mdc-tab-link .mdc-tab__ripple::before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;opacity:0;pointer-events:none;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-link .mdc-tab__text-label{color:var(--mat-tab-header-inactive-label-text-color);display:inline-flex;align-items:center}.mat-mdc-tab-link .mdc-tab__content{position:relative;pointer-events:auto}.mat-mdc-tab-link:hover .mdc-tab__ripple::before{opacity:.04}.mat-mdc-tab-link.cdk-program-focused .mdc-tab__ripple::before,.mat-mdc-tab-link.cdk-keyboard-focused .mdc-tab__ripple::before{opacity:.12}.mat-mdc-tab-link .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-header.mat-mdc-tab-nav-bar-stretch-tabs .mat-mdc-tab-link{flex-grow:1}.mat-mdc-tab-link::before{margin:5px}@media(max-width: 599px){.mat-mdc-tab-link{min-width:72px}}'],
+  styles: [
+    '.mat-mdc-tab-link{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-decoration:none;background:none;font-family:var(--mat-tab-header-label-text-font);font-size:var(--mat-tab-header-label-text-size);letter-spacing:var(--mat-tab-header-label-text-tracking);line-height:var(--mat-tab-header-label-text-line-height);font-weight:var(--mat-tab-header-label-text-weight)}.mat-mdc-tab-link .mdc-tab-indicator__content--underline{border-color:var(--mdc-tab-indicator-active-indicator-color)}.mat-mdc-tab-link .mdc-tab-indicator__content--underline{border-top-width:var(--mdc-tab-indicator-active-indicator-height)}.mat-mdc-tab-link .mdc-tab-indicator__content--underline{border-radius:var(--mdc-tab-indicator-active-indicator-shape)}.mat-mdc-tab-link:not(.mdc-tab--stacked){height:var(--mdc-secondary-navigation-tab-container-height)}.mat-mdc-tab-link:not(:disabled).mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):hover.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):focus.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):active.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:disabled.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):hover:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):focus:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):active:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:disabled:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link.mdc-tab{flex-grow:0}.mat-mdc-tab-link:hover .mdc-tab__text-label{color:var(--mat-tab-header-inactive-hover-label-text-color)}.mat-mdc-tab-link:focus .mdc-tab__text-label{color:var(--mat-tab-header-inactive-focus-label-text-color)}.mat-mdc-tab-link.mdc-tab--active .mdc-tab__text-label{color:var(--mat-tab-header-active-label-text-color)}.mat-mdc-tab-link.mdc-tab--active .mdc-tab__ripple::before,.mat-mdc-tab-link.mdc-tab--active .mat-ripple-element{background-color:var(--mat-tab-header-active-ripple-color)}.mat-mdc-tab-link.mdc-tab--active:hover .mdc-tab__text-label{color:var(--mat-tab-header-active-hover-label-text-color)}.mat-mdc-tab-link.mdc-tab--active:hover .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-hover-indicator-color)}.mat-mdc-tab-link.mdc-tab--active:focus .mdc-tab__text-label{color:var(--mat-tab-header-active-focus-label-text-color)}.mat-mdc-tab-link.mdc-tab--active:focus .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-focus-indicator-color)}.mat-mdc-tab-link.mat-mdc-tab-disabled{opacity:.4;pointer-events:none}.mat-mdc-tab-link.mat-mdc-tab-disabled .mdc-tab__content{pointer-events:none}.mat-mdc-tab-link.mat-mdc-tab-disabled .mdc-tab__ripple::before,.mat-mdc-tab-link.mat-mdc-tab-disabled .mat-ripple-element{background-color:var(--mat-tab-header-disabled-ripple-color)}.mat-mdc-tab-link .mdc-tab__ripple::before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;opacity:0;pointer-events:none;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-link .mdc-tab__text-label{color:var(--mat-tab-header-inactive-label-text-color);display:inline-flex;align-items:center}.mat-mdc-tab-link .mdc-tab__content{position:relative;pointer-events:auto}.mat-mdc-tab-link:hover .mdc-tab__ripple::before{opacity:.04}.mat-mdc-tab-link.cdk-program-focused .mdc-tab__ripple::before,.mat-mdc-tab-link.cdk-keyboard-focused .mdc-tab__ripple::before{opacity:.12}.mat-mdc-tab-link .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-header.mat-mdc-tab-nav-bar-stretch-tabs .mat-mdc-tab-link{flex-grow:1}.mat-mdc-tab-link::before{margin:5px}@media(max-width: 599px){.mat-mdc-tab-link{min-width:72px}}',
+  ],
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 var MatTabLink = _MatTabLink;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTabLink, [{
-    type: Component,
-    args: [{
-      selector: "[mat-tab-link], [matTabLink]",
-      exportAs: "matTabLink",
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      encapsulation: ViewEncapsulation$1.None,
-      host: {
-        "class": "mdc-tab mat-mdc-tab-link mat-mdc-focus-indicator",
-        "[attr.aria-controls]": "_getAriaControls()",
-        "[attr.aria-current]": "_getAriaCurrent()",
-        "[attr.aria-disabled]": "disabled",
-        "[attr.aria-selected]": "_getAriaSelected()",
-        "[attr.id]": "id",
-        "[attr.tabIndex]": "_getTabIndex()",
-        "[attr.role]": "_getRole()",
-        "[class.mat-mdc-tab-disabled]": "disabled",
-        "[class.mdc-tab--active]": "active",
-        "(focus)": "_handleFocus()",
-        "(keydown)": "_handleKeydown($event)"
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTabLink,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "[mat-tab-link], [matTabLink]",
+              exportAs: "matTabLink",
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              encapsulation: ViewEncapsulation$1.None,
+              host: {
+                class: "mdc-tab mat-mdc-tab-link mat-mdc-focus-indicator",
+                "[attr.aria-controls]": "_getAriaControls()",
+                "[attr.aria-current]": "_getAriaCurrent()",
+                "[attr.aria-disabled]": "disabled",
+                "[attr.aria-selected]": "_getAriaSelected()",
+                "[attr.id]": "id",
+                "[attr.tabIndex]": "_getTabIndex()",
+                "[attr.role]": "_getRole()",
+                "[class.mat-mdc-tab-disabled]": "disabled",
+                "[class.mdc-tab--active]": "active",
+                "(focus)": "_handleFocus()",
+                "(keydown)": "_handleKeydown($event)",
+              },
+              standalone: true,
+              imports: [MatRipple],
+              template:
+                '<span class="mdc-tab__ripple"></span>\n\n<div\n  class="mat-mdc-tab-ripple"\n  mat-ripple\n  [matRippleTrigger]="elementRef.nativeElement"\n  [matRippleDisabled]="rippleDisabled"></div>\n\n<span class="mdc-tab__content">\n  <span class="mdc-tab__text-label">\n    <ng-content></ng-content>\n  </span>\n</span>\n\n',
+              styles: [
+                '.mat-mdc-tab-link{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-decoration:none;background:none;font-family:var(--mat-tab-header-label-text-font);font-size:var(--mat-tab-header-label-text-size);letter-spacing:var(--mat-tab-header-label-text-tracking);line-height:var(--mat-tab-header-label-text-line-height);font-weight:var(--mat-tab-header-label-text-weight)}.mat-mdc-tab-link .mdc-tab-indicator__content--underline{border-color:var(--mdc-tab-indicator-active-indicator-color)}.mat-mdc-tab-link .mdc-tab-indicator__content--underline{border-top-width:var(--mdc-tab-indicator-active-indicator-height)}.mat-mdc-tab-link .mdc-tab-indicator__content--underline{border-radius:var(--mdc-tab-indicator-active-indicator-shape)}.mat-mdc-tab-link:not(.mdc-tab--stacked){height:var(--mdc-secondary-navigation-tab-container-height)}.mat-mdc-tab-link:not(:disabled).mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):hover.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):focus.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):active.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:disabled.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):hover:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):focus:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):active:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:disabled:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link.mdc-tab{flex-grow:0}.mat-mdc-tab-link:hover .mdc-tab__text-label{color:var(--mat-tab-header-inactive-hover-label-text-color)}.mat-mdc-tab-link:focus .mdc-tab__text-label{color:var(--mat-tab-header-inactive-focus-label-text-color)}.mat-mdc-tab-link.mdc-tab--active .mdc-tab__text-label{color:var(--mat-tab-header-active-label-text-color)}.mat-mdc-tab-link.mdc-tab--active .mdc-tab__ripple::before,.mat-mdc-tab-link.mdc-tab--active .mat-ripple-element{background-color:var(--mat-tab-header-active-ripple-color)}.mat-mdc-tab-link.mdc-tab--active:hover .mdc-tab__text-label{color:var(--mat-tab-header-active-hover-label-text-color)}.mat-mdc-tab-link.mdc-tab--active:hover .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-hover-indicator-color)}.mat-mdc-tab-link.mdc-tab--active:focus .mdc-tab__text-label{color:var(--mat-tab-header-active-focus-label-text-color)}.mat-mdc-tab-link.mdc-tab--active:focus .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-focus-indicator-color)}.mat-mdc-tab-link.mat-mdc-tab-disabled{opacity:.4;pointer-events:none}.mat-mdc-tab-link.mat-mdc-tab-disabled .mdc-tab__content{pointer-events:none}.mat-mdc-tab-link.mat-mdc-tab-disabled .mdc-tab__ripple::before,.mat-mdc-tab-link.mat-mdc-tab-disabled .mat-ripple-element{background-color:var(--mat-tab-header-disabled-ripple-color)}.mat-mdc-tab-link .mdc-tab__ripple::before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;opacity:0;pointer-events:none;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-link .mdc-tab__text-label{color:var(--mat-tab-header-inactive-label-text-color);display:inline-flex;align-items:center}.mat-mdc-tab-link .mdc-tab__content{position:relative;pointer-events:auto}.mat-mdc-tab-link:hover .mdc-tab__ripple::before{opacity:.04}.mat-mdc-tab-link.cdk-program-focused .mdc-tab__ripple::before,.mat-mdc-tab-link.cdk-keyboard-focused .mdc-tab__ripple::before{opacity:.12}.mat-mdc-tab-link .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-header.mat-mdc-tab-nav-bar-stretch-tabs .mat-mdc-tab-link{flex-grow:1}.mat-mdc-tab-link::before{margin:5px}@media(max-width: 599px){.mat-mdc-tab-link{min-width:72px}}',
+              ],
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: MatTabNav,
+        },
+        {
+          type: ElementRef,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Optional,
+            },
+            {
+              type: Inject,
+              args: [MAT_RIPPLE_GLOBAL_OPTIONS],
+            },
+          ],
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Attribute,
+              args: ["tabindex"],
+            },
+          ],
+        },
+        {
+          type: FocusMonitor,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Optional,
+            },
+            {
+              type: Inject,
+              args: [ANIMATION_MODULE_TYPE],
+            },
+          ],
+        },
+      ],
+      {
+        active: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        disabled: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        disableRipple: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: booleanAttribute,
+              },
+            ],
+          },
+        ],
+        tabIndex: [
+          {
+            type: Input,
+            args: [
+              {
+                transform: (value) =>
+                  value == null ? 0 : numberAttribute(value),
+              },
+            ],
+          },
+        ],
+        id: [
+          {
+            type: Input,
+          },
+        ],
       },
-      standalone: true,
-      imports: [MatRipple],
-      template: '<span class="mdc-tab__ripple"></span>\n\n<div\n  class="mat-mdc-tab-ripple"\n  mat-ripple\n  [matRippleTrigger]="elementRef.nativeElement"\n  [matRippleDisabled]="rippleDisabled"></div>\n\n<span class="mdc-tab__content">\n  <span class="mdc-tab__text-label">\n    <ng-content></ng-content>\n  </span>\n</span>\n\n',
-      styles: ['.mat-mdc-tab-link{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-decoration:none;background:none;font-family:var(--mat-tab-header-label-text-font);font-size:var(--mat-tab-header-label-text-size);letter-spacing:var(--mat-tab-header-label-text-tracking);line-height:var(--mat-tab-header-label-text-line-height);font-weight:var(--mat-tab-header-label-text-weight)}.mat-mdc-tab-link .mdc-tab-indicator__content--underline{border-color:var(--mdc-tab-indicator-active-indicator-color)}.mat-mdc-tab-link .mdc-tab-indicator__content--underline{border-top-width:var(--mdc-tab-indicator-active-indicator-height)}.mat-mdc-tab-link .mdc-tab-indicator__content--underline{border-radius:var(--mdc-tab-indicator-active-indicator-shape)}.mat-mdc-tab-link:not(.mdc-tab--stacked){height:var(--mdc-secondary-navigation-tab-container-height)}.mat-mdc-tab-link:not(:disabled).mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):hover.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):focus.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):active.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:disabled.mdc-tab--active .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):hover:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):focus:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:not(:disabled):active:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link:disabled:not(.mdc-tab--active) .mdc-tab__icon{fill:currentColor}.mat-mdc-tab-link.mdc-tab{flex-grow:0}.mat-mdc-tab-link:hover .mdc-tab__text-label{color:var(--mat-tab-header-inactive-hover-label-text-color)}.mat-mdc-tab-link:focus .mdc-tab__text-label{color:var(--mat-tab-header-inactive-focus-label-text-color)}.mat-mdc-tab-link.mdc-tab--active .mdc-tab__text-label{color:var(--mat-tab-header-active-label-text-color)}.mat-mdc-tab-link.mdc-tab--active .mdc-tab__ripple::before,.mat-mdc-tab-link.mdc-tab--active .mat-ripple-element{background-color:var(--mat-tab-header-active-ripple-color)}.mat-mdc-tab-link.mdc-tab--active:hover .mdc-tab__text-label{color:var(--mat-tab-header-active-hover-label-text-color)}.mat-mdc-tab-link.mdc-tab--active:hover .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-hover-indicator-color)}.mat-mdc-tab-link.mdc-tab--active:focus .mdc-tab__text-label{color:var(--mat-tab-header-active-focus-label-text-color)}.mat-mdc-tab-link.mdc-tab--active:focus .mdc-tab-indicator__content--underline{border-color:var(--mat-tab-header-active-focus-indicator-color)}.mat-mdc-tab-link.mat-mdc-tab-disabled{opacity:.4;pointer-events:none}.mat-mdc-tab-link.mat-mdc-tab-disabled .mdc-tab__content{pointer-events:none}.mat-mdc-tab-link.mat-mdc-tab-disabled .mdc-tab__ripple::before,.mat-mdc-tab-link.mat-mdc-tab-disabled .mat-ripple-element{background-color:var(--mat-tab-header-disabled-ripple-color)}.mat-mdc-tab-link .mdc-tab__ripple::before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;opacity:0;pointer-events:none;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-link .mdc-tab__text-label{color:var(--mat-tab-header-inactive-label-text-color);display:inline-flex;align-items:center}.mat-mdc-tab-link .mdc-tab__content{position:relative;pointer-events:auto}.mat-mdc-tab-link:hover .mdc-tab__ripple::before{opacity:.04}.mat-mdc-tab-link.cdk-program-focused .mdc-tab__ripple::before,.mat-mdc-tab-link.cdk-keyboard-focused .mdc-tab__ripple::before{opacity:.12}.mat-mdc-tab-link .mat-ripple-element{opacity:.12;background-color:var(--mat-tab-header-inactive-ripple-color)}.mat-mdc-tab-header.mat-mdc-tab-nav-bar-stretch-tabs .mat-mdc-tab-link{flex-grow:1}.mat-mdc-tab-link::before{margin:5px}@media(max-width: 599px){.mat-mdc-tab-link{min-width:72px}}']
-    }]
-  }], () => [{
-    type: MatTabNav
-  }, {
-    type: ElementRef
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [MAT_RIPPLE_GLOBAL_OPTIONS]
-    }]
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Attribute,
-      args: ["tabindex"]
-    }]
-  }, {
-    type: FocusMonitor
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [ANIMATION_MODULE_TYPE]
-    }]
-  }], {
-    active: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    disabled: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    disableRipple: [{
-      type: Input,
-      args: [{
-        transform: booleanAttribute
-      }]
-    }],
-    tabIndex: [{
-      type: Input,
-      args: [{
-        transform: (value) => value == null ? 0 : numberAttribute(value)
-      }]
-    }],
-    id: [{
-      type: Input
-    }]
-  });
+    );
 })();
 var _MatTabNavPanel = class _MatTabNavPanel {
   constructor() {
@@ -2801,7 +4099,7 @@ _MatTabNavPanel.ɵcmp = ɵɵdefineComponent({
     }
   },
   inputs: {
-    id: "id"
+    id: "id",
   },
   exportAs: ["matTabNavPanel"],
   standalone: true,
@@ -2816,54 +4114,111 @@ _MatTabNavPanel.ɵcmp = ɵɵdefineComponent({
     }
   },
   encapsulation: 2,
-  changeDetection: 0
+  changeDetection: 0,
 });
 var MatTabNavPanel = _MatTabNavPanel;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTabNavPanel, [{
-    type: Component,
-    args: [{
-      selector: "mat-tab-nav-panel",
-      exportAs: "matTabNavPanel",
-      template: "<ng-content></ng-content>",
-      host: {
-        "[attr.aria-labelledby]": "_activeTabId",
-        "[attr.id]": "id",
-        "class": "mat-mdc-tab-nav-panel",
-        "role": "tabpanel"
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTabNavPanel,
+      [
+        {
+          type: Component,
+          args: [
+            {
+              selector: "mat-tab-nav-panel",
+              exportAs: "matTabNavPanel",
+              template: "<ng-content></ng-content>",
+              host: {
+                "[attr.aria-labelledby]": "_activeTabId",
+                "[attr.id]": "id",
+                class: "mat-mdc-tab-nav-panel",
+                role: "tabpanel",
+              },
+              encapsulation: ViewEncapsulation$1.None,
+              changeDetection: ChangeDetectionStrategy.OnPush,
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      null,
+      {
+        id: [
+          {
+            type: Input,
+          },
+        ],
       },
-      encapsulation: ViewEncapsulation$1.None,
-      changeDetection: ChangeDetectionStrategy.OnPush,
-      standalone: true
-    }]
-  }], null, {
-    id: [{
-      type: Input
-    }]
-  });
+    );
 })();
-var _MatTabsModule = class _MatTabsModule {
-};
+var _MatTabsModule = class _MatTabsModule {};
 _MatTabsModule.ɵfac = function MatTabsModule_Factory(t) {
   return new (t || _MatTabsModule)();
 };
 _MatTabsModule.ɵmod = ɵɵdefineNgModule({
   type: _MatTabsModule,
-  imports: [MatCommonModule, MatTabContent, MatTabLabel, MatTab, MatTabGroup, MatTabNav, MatTabNavPanel, MatTabLink],
-  exports: [MatCommonModule, MatTabContent, MatTabLabel, MatTab, MatTabGroup, MatTabNav, MatTabNavPanel, MatTabLink]
+  imports: [
+    MatCommonModule,
+    MatTabContent,
+    MatTabLabel,
+    MatTab,
+    MatTabGroup,
+    MatTabNav,
+    MatTabNavPanel,
+    MatTabLink,
+  ],
+  exports: [
+    MatCommonModule,
+    MatTabContent,
+    MatTabLabel,
+    MatTab,
+    MatTabGroup,
+    MatTabNav,
+    MatTabNavPanel,
+    MatTabLink,
+  ],
 });
 _MatTabsModule.ɵinj = ɵɵdefineInjector({
-  imports: [MatCommonModule, MatCommonModule]
+  imports: [MatCommonModule, MatCommonModule],
 });
 var MatTabsModule = _MatTabsModule;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(MatTabsModule, [{
-    type: NgModule,
-    args: [{
-      imports: [MatCommonModule, MatTabContent, MatTabLabel, MatTab, MatTabGroup, MatTabNav, MatTabNavPanel, MatTabLink],
-      exports: [MatCommonModule, MatTabContent, MatTabLabel, MatTab, MatTabGroup, MatTabNav, MatTabNavPanel, MatTabLink]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      MatTabsModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [
+                MatCommonModule,
+                MatTabContent,
+                MatTabLabel,
+                MatTab,
+                MatTabGroup,
+                MatTabNav,
+                MatTabNavPanel,
+                MatTabLink,
+              ],
+              exports: [
+                MatCommonModule,
+                MatTabContent,
+                MatTabLabel,
+                MatTab,
+                MatTabGroup,
+                MatTabNav,
+                MatTabNavPanel,
+                MatTabLink,
+              ],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 export {
   MAT_TAB,
@@ -2888,6 +4243,6 @@ export {
   MatTabsModule,
   _MAT_INK_BAR_POSITIONER,
   _MAT_INK_BAR_POSITIONER_FACTORY,
-  matTabsAnimations
+  matTabsAnimations,
 };
 //# sourceMappingURL=@angular_material_tabs.js.map

@@ -53,6 +53,6 @@ export {
   Z,
   META,
   MAC_META,
-  hasModifierKey
+  hasModifierKey,
 };
 //# sourceMappingURL=chunk-237XUEJ5.js.map

@@ -10,7 +10,7 @@ import {
   getMatIconFailedToSanitizeLiteralError,
   getMatIconFailedToSanitizeUrlError,
   getMatIconNameNotFoundError,
-  getMatIconNoHttpProviderError
+  getMatIconNoHttpProviderError,
 } from "./chunk-E2PFONTR.js";
 import "./chunk-Q2N6UVGS.js";
 import "./chunk-V74BEASD.js";
@@ -32,6 +32,6 @@ export {
   getMatIconFailedToSanitizeLiteralError,
   getMatIconFailedToSanitizeUrlError,
   getMatIconNameNotFoundError,
-  getMatIconNoHttpProviderError
+  getMatIconNoHttpProviderError,
 };
 //# sourceMappingURL=@angular_material_icon.js.map

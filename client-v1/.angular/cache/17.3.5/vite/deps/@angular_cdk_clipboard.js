@@ -1,6 +1,4 @@
-import {
-  DOCUMENT
-} from "./chunk-DNIPCOIB.js";
+import { DOCUMENT } from "./chunk-DNIPCOIB.js";
 import {
   Directive,
   EventEmitter,
@@ -20,7 +18,7 @@ import {
   ɵɵdefineNgModule,
   ɵɵdirectiveInject,
   ɵɵinject,
-  ɵɵlistener
+  ɵɵlistener,
 } from "./chunk-UC6QHQD3.js";
 import "./chunk-SXIXOCJ4.js";
 
@@ -28,7 +26,8 @@ import "./chunk-SXIXOCJ4.js";
 var PendingCopy = class {
   constructor(text, _document) {
     this._document = _document;
-    const textarea = this._textarea = this._document.createElement("textarea");
+    const textarea = (this._textarea =
+      this._document.createElement("textarea"));
     const styles = textarea.style;
     styles.position = "fixed";
     styles.top = styles.opacity = "0";
@@ -36,7 +35,9 @@ var PendingCopy = class {
     textarea.setAttribute("aria-hidden", "true");
     textarea.value = text;
     textarea.readOnly = true;
-    (this._document.fullscreenElement || this._document.body).appendChild(textarea);
+    (this._document.fullscreenElement || this._document.body).appendChild(
+      textarea,
+    );
   }
   /** Finishes copying the text. */
   copy() {
@@ -52,8 +53,7 @@ var PendingCopy = class {
           currentFocus.focus();
         }
       }
-    } catch {
-    }
+    } catch {}
     return successful;
   }
   /** Cleans up DOM changes used to perform the copy operation. */
@@ -100,24 +100,40 @@ _Clipboard.ɵfac = function Clipboard_Factory(t) {
 _Clipboard.ɵprov = ɵɵdefineInjectable({
   token: _Clipboard,
   factory: _Clipboard.ɵfac,
-  providedIn: "root"
+  providedIn: "root",
 });
 var Clipboard = _Clipboard;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(Clipboard, [{
-    type: Injectable,
-    args: [{
-      providedIn: "root"
-    }]
-  }], () => [{
-    type: void 0,
-    decorators: [{
-      type: Inject,
-      args: [DOCUMENT]
-    }]
-  }], null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      Clipboard,
+      [
+        {
+          type: Injectable,
+          args: [
+            {
+              providedIn: "root",
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Inject,
+              args: [DOCUMENT],
+            },
+          ],
+        },
+      ],
+      null,
+    );
 })();
-var CDK_COPY_TO_CLIPBOARD_CONFIG = new InjectionToken("CDK_COPY_TO_CLIPBOARD_CONFIG");
+var CDK_COPY_TO_CLIPBOARD_CONFIG = new InjectionToken(
+  "CDK_COPY_TO_CLIPBOARD_CONFIG",
+);
 var _CdkCopyToClipboard = class _CdkCopyToClipboard {
   constructor(_clipboard, _ngZone, config) {
     this._clipboard = _clipboard;
@@ -139,7 +155,9 @@ var _CdkCopyToClipboard = class _CdkCopyToClipboard {
       const attempt = () => {
         const successful = pending.copy();
         if (!successful && --remainingAttempts && !this._destroyed) {
-          this._currentTimeout = this._ngZone.runOutsideAngular(() => setTimeout(attempt, 1));
+          this._currentTimeout = this._ngZone.runOutsideAngular(() =>
+            setTimeout(attempt, 1),
+          );
         } else {
           this._currentTimeout = null;
           this._pending.delete(pending);
@@ -162,91 +180,130 @@ var _CdkCopyToClipboard = class _CdkCopyToClipboard {
   }
 };
 _CdkCopyToClipboard.ɵfac = function CdkCopyToClipboard_Factory(t) {
-  return new (t || _CdkCopyToClipboard)(ɵɵdirectiveInject(Clipboard), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(CDK_COPY_TO_CLIPBOARD_CONFIG, 8));
+  return new (t || _CdkCopyToClipboard)(
+    ɵɵdirectiveInject(Clipboard),
+    ɵɵdirectiveInject(NgZone),
+    ɵɵdirectiveInject(CDK_COPY_TO_CLIPBOARD_CONFIG, 8),
+  );
 };
 _CdkCopyToClipboard.ɵdir = ɵɵdefineDirective({
   type: _CdkCopyToClipboard,
   selectors: [["", "cdkCopyToClipboard", ""]],
   hostBindings: function CdkCopyToClipboard_HostBindings(rf, ctx) {
     if (rf & 1) {
-      ɵɵlistener("click", function CdkCopyToClipboard_click_HostBindingHandler() {
-        return ctx.copy();
-      });
+      ɵɵlistener(
+        "click",
+        function CdkCopyToClipboard_click_HostBindingHandler() {
+          return ctx.copy();
+        },
+      );
     }
   },
   inputs: {
     text: [InputFlags.None, "cdkCopyToClipboard", "text"],
-    attempts: [InputFlags.None, "cdkCopyToClipboardAttempts", "attempts"]
+    attempts: [InputFlags.None, "cdkCopyToClipboardAttempts", "attempts"],
   },
   outputs: {
-    copied: "cdkCopyToClipboardCopied"
+    copied: "cdkCopyToClipboardCopied",
   },
-  standalone: true
+  standalone: true,
 });
 var CdkCopyToClipboard = _CdkCopyToClipboard;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(CdkCopyToClipboard, [{
-    type: Directive,
-    args: [{
-      selector: "[cdkCopyToClipboard]",
-      host: {
-        "(click)": "copy()"
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      CdkCopyToClipboard,
+      [
+        {
+          type: Directive,
+          args: [
+            {
+              selector: "[cdkCopyToClipboard]",
+              host: {
+                "(click)": "copy()",
+              },
+              standalone: true,
+            },
+          ],
+        },
+      ],
+      () => [
+        {
+          type: Clipboard,
+        },
+        {
+          type: NgZone,
+        },
+        {
+          type: void 0,
+          decorators: [
+            {
+              type: Optional,
+            },
+            {
+              type: Inject,
+              args: [CDK_COPY_TO_CLIPBOARD_CONFIG],
+            },
+          ],
+        },
+      ],
+      {
+        text: [
+          {
+            type: Input,
+            args: ["cdkCopyToClipboard"],
+          },
+        ],
+        attempts: [
+          {
+            type: Input,
+            args: ["cdkCopyToClipboardAttempts"],
+          },
+        ],
+        copied: [
+          {
+            type: Output,
+            args: ["cdkCopyToClipboardCopied"],
+          },
+        ],
       },
-      standalone: true
-    }]
-  }], () => [{
-    type: Clipboard
-  }, {
-    type: NgZone
-  }, {
-    type: void 0,
-    decorators: [{
-      type: Optional
-    }, {
-      type: Inject,
-      args: [CDK_COPY_TO_CLIPBOARD_CONFIG]
-    }]
-  }], {
-    text: [{
-      type: Input,
-      args: ["cdkCopyToClipboard"]
-    }],
-    attempts: [{
-      type: Input,
-      args: ["cdkCopyToClipboardAttempts"]
-    }],
-    copied: [{
-      type: Output,
-      args: ["cdkCopyToClipboardCopied"]
-    }]
-  });
+    );
 })();
-var _ClipboardModule = class _ClipboardModule {
-};
+var _ClipboardModule = class _ClipboardModule {};
 _ClipboardModule.ɵfac = function ClipboardModule_Factory(t) {
   return new (t || _ClipboardModule)();
 };
 _ClipboardModule.ɵmod = ɵɵdefineNgModule({
   type: _ClipboardModule,
   imports: [CdkCopyToClipboard],
-  exports: [CdkCopyToClipboard]
+  exports: [CdkCopyToClipboard],
 });
 _ClipboardModule.ɵinj = ɵɵdefineInjector({});
 var ClipboardModule = _ClipboardModule;
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ClipboardModule, [{
-    type: NgModule,
-    args: [{
-      imports: [CdkCopyToClipboard],
-      exports: [CdkCopyToClipboard]
-    }]
-  }], null, null);
+  (typeof ngDevMode === "undefined" || ngDevMode) &&
+    setClassMetadata(
+      ClipboardModule,
+      [
+        {
+          type: NgModule,
+          args: [
+            {
+              imports: [CdkCopyToClipboard],
+              exports: [CdkCopyToClipboard],
+            },
+          ],
+        },
+      ],
+      null,
+      null,
+    );
 })();
 export {
   CDK_COPY_TO_CLIPBOARD_CONFIG,
   CdkCopyToClipboard,
   Clipboard,
   ClipboardModule,
-  PendingCopy
+  PendingCopy,
 };
 //# sourceMappingURL=@angular_cdk_clipboard.js.map
