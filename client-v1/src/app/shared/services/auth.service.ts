@@ -4,6 +4,7 @@ import { Injectable } from "@angular/core";
 import { environment } from "../../../environments/environment";
 import { map } from "rxjs";
 import { Router } from "@angular/router";
+import { ProfileService } from "../../core/http/profile.service";
 
 @Injectable({
   providedIn: "root",
@@ -14,12 +15,13 @@ export class AuthService {
     private _http: HttpClient,
     private endpoint: EndpointService,
     private router: Router,
+    private user: ProfileService,
   ) {
-    this.URL = environment.server.getUrl();
+    this.URL = environment.server.self.getUrl();
     console.log(this.URL);
   }
   isAuthenticated() {
-    return this.endpoint.loggedIn().pipe(
+    return this.user.loggedIn().pipe(
       map((isAuth) => {
         if (!isAuth) {
           return isAuth;

@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { HttpClient } from "@angular/common/http";
 import { Router } from "@angular/router";
+import { EndpointService } from "../../../core/http/endpoint.service";
 
 @Component({
   selector: "app-signup",
@@ -15,6 +16,7 @@ export class SignupComponent implements OnInit {
     private formBuilder: FormBuilder,
     private http: HttpClient,
     private router: Router,
+    private endpoint: EndpointService,
   ) {}
 
   ngOnInit(): void {
@@ -26,20 +28,18 @@ export class SignupComponent implements OnInit {
     });
   }
 
-  signUp() {
-    this.http
-      .post<any>("http://localhost:5001/api/signup", this.signUpForm.value)
-      .subscribe(
-        (res) => {
-          alert("Signup Successful");
-          console.log("user", res);
-
-          this.signUpForm.reset();
-          this.router.navigate(["login"]);
+  registerUser() {
+    let body = this.signUpForm.value;
+    return this.endpoint
+      .user()
+      .register(body)
+      .subscribe({
+        next: (res: any) => {
+          console.log("res", res);
         },
-        (err) => {
-          alert("Something went wrong");
+        error: (error) => {
+          console.log("err", error);
         },
-      );
+      });
   }
 }

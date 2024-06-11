@@ -13,6 +13,7 @@ import { SharedModule } from "./shared/shared.module";
 import { LayoutModule } from "./layout/layout.module";
 import { RouterModule } from "@angular/router";
 import { TokenInterceptorService } from "./core/interceptors/token-interceptor.service";
+import { CoreModule } from "./core/core.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,17 +25,11 @@ import { TokenInterceptorService } from "./core/interceptors/token-interceptor.s
     AppRoutingModule,
     BrowserAnimationsModule,
 
+    CoreModule,
     SharedModule.forRoot(),
     LayoutModule,
   ],
-  providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: TokenInterceptorService,
-      multi: true,
-    },
-  ],
-  // providers: [{ provide: ErrorHandler, useClass: GlobalErrorHandler }],
+  providers: [],
   exports: [],
   bootstrap: [AppComponent],
 })

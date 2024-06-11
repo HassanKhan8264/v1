@@ -1,7 +1,6 @@
 import { Injectable } from "@angular/core";
 import { environment } from "../../../environments/environment";
 import { HttpClient } from "@angular/common/http";
-import { Observable, catchError, map, of } from "rxjs";
 
 @Injectable({
   providedIn: "root",
@@ -10,24 +9,28 @@ export class EndpointService {
   private readonly URL: string;
 
   constructor(private _http: HttpClient) {
-    this.URL = environment.server.getUrl();
+    this.URL = environment.server.self.getUrl();
     console.log(this.URL);
   }
-
-  getAll() {
-    return this._http.get(`${this.URL}/api/v1/getAllUsers`);
+  authentication() {
+    return {
+      checkTokenStatus() {
+        return this._http.get(`${this.URL}api/v1/verifyUserToken`);
+      },
+    };
   }
-  checkTokenStatus() {
-    return this._http.get(`${this.URL}api/v1/verifyUserToken`);
-  }
 
-  loggedIn() {
-    return this.checkTokenStatus().pipe(
-      map((response) => response),
-      catchError((error) => {
-        console.error("Error checking authentication status:", error);
-        return of(false);
-      }),
-    );
+  user() {
+    return {
+      login: (body) => {
+        return this._http.post(`${this.URL}auth/login`, body);
+      },
+      register: (body: any) => {
+        return this._http.post(`${this.URL}/auth.register`, body);
+      },
+      getAll() {
+        return this._http.get(`${this.URL}/api/v1/getAllUsers`);
+      },
+    };
   }
 }

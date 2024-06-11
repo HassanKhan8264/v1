@@ -5,8 +5,6 @@ import { CommonModule } from "@angular/common";
 
 import { PublishRoutingModule } from "./publish-routing.module";
 // import { SharedModule } from "../shared/shared.module";
-import { PublishSidebarComponent } from "./publish-sidebar/publish-sidebar/publish-sidebar.component";
-import { PublishLayoutComponent } from "./publish-layout/publish-layout/publish-layout.component";
 import { SharedModule } from "../../shared/shared.module";
 import { MaterialModule } from "../../shared/modules/material.module";
 // import { PublishLayoutComponent } from "./publish-layout/publish-layout.component";
@@ -25,7 +23,6 @@ import { MaterialModule } from "../../shared/modules/material.module";
 // };
 
 @NgModule({
-  declarations: [PublishLayoutComponent, PublishSidebarComponent],
   imports: [CommonModule, PublishRoutingModule, SharedModule, MaterialModule],
   // providers: [...services, { provide: CDK_DRAG_CONFIG, useValue: DragConfig }],
   // providers: [...services, { provide: CDK_DRAG_CONFIG, useValue: DragConfig }],

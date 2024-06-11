@@ -1,10 +1,10 @@
-// src/environments/environment.ts
+// src/environments/environment.prod.ts
 export const environment = {
   appName: "version-one",
-  production: false,
+  production: true,
   server: {
     self: {
-      HOST: "http://localhost:5001", // Example local backend URL
+      HOST: "https://example.com",
       getUrl() {
         return `${this.HOST}`;
       },

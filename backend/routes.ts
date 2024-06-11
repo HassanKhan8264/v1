@@ -7,9 +7,9 @@ const userController = new UserCtrl();
 const authControler = new authController();
 
 // authentication
-router.post("/signUp", authControler.signUp);
-router.post("/login", authControler.login);
-router.post("/logout", authControler.logout);
+router.post("auth/signUp", authControler.signUp);
+router.post("auth/login", authControler.login);
+router.post("auth/logout", authControler.logout);
 
 // userAuthentication
 router.get("/verifyUserToken", authenticateToken);
