@@ -1,32 +1,60 @@
 .app-viewport {
+  height: 100vh;
   position: relative;
-  height: 100%;
-  .main-layout-position {
+
+  .app-content-wrap {
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    .main-layout-sidebar {
-      z-index: 10 !important;
-      background: #303c6c 0% 0% no-repeat padding-box;
+
+    .app-content-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    .app-content-wrap {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      .app-content-header {
-        position: relative;
-        .app-progress-bar {
-          position: absolute;
-          // top: 68px;
-          z-index: 1000;
-          width: 100%;
-        }
-        .app-notification-wrap {
-          z-index: 11;
-        }
-      }
-      .router-layout {
-        overflow: hidden;
-        flex: 1;
-      }
+
+    .app-subnav-bar {
+      position: sticky;
+      top: 44px;
+      z-index: 1000;
     }
+  }
+
+  .whatsapp-bottom {
+    position: fixed;
+    bottom: 0px;
+    left: 22px;
+    height: 75px;
+    width: 75px;
+    z-index: 100;
+  }
+
+  @keyframes dance {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(10px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .whatsapp-bottom {
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .whatsapp-bottom:hover.whatsapp-bottom {
+    animation: dance 1s infinite;
+  }
+
+  .router-outlet {
+    flex-grow: 1;
+    overflow-y: auto;
   }
 }

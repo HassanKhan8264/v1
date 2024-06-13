@@ -6,8 +6,9 @@ import { MaterialModule } from "./modules/material.module";
 import { SignupComponent } from "./components/signup/signup.component";
 import { LoginComponent } from "./components/login/login.component";
 import { AuthService } from "./services/auth.service";
+import { SplashComponent } from "./components/splash/splash.component";
 
-const components = [SignupComponent, LoginComponent];
+const components = [SignupComponent, LoginComponent, SplashComponent];
 
 const services = [AuthService];
 

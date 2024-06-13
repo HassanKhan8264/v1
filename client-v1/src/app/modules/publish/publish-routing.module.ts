@@ -1,10 +1,28 @@
 import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+import { RouterModule, Routes } from "@angular/router";
+import { PublishLayoutComponent } from "./publish-layout/publish-layout.component";
+import { WelcomeComponent } from "./welcome/welcome.component";
+import { ContentComponent } from "./content/content.component";
 
 const routes: Routes = [
   {
     path: "",
-    children: [],
+    component: PublishLayoutComponent,
+    children: [
+      {
+        path: "",
+        pathMatch: "full",
+        redirectTo: "content",
+      },
+      {
+        path: "content",
+        component: ContentComponent,
+      },
+      {
+        path: "welcome",
+        component: WelcomeComponent,
+      },
+    ],
   },
 ];
 

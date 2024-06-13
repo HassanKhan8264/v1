@@ -1,9 +1,6 @@
-import { EndpointService } from "./../../core/http/endpoint.service";
-import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { environment } from "../../../environments/environment";
 import { map } from "rxjs";
-import { Router } from "@angular/router";
 import { ProfileService } from "../../core/http/profile.service";
 
 @Injectable({
@@ -11,27 +8,18 @@ import { ProfileService } from "../../core/http/profile.service";
 })
 export class AuthService {
   private readonly URL: string;
-  constructor(
-    private _http: HttpClient,
-    private endpoint: EndpointService,
-    private router: Router,
-    private user: ProfileService,
-  ) {
-    this.URL = environment.server.self.getUrl();
+  constructor(private profile: ProfileService) {
+    this.URL = environment.getUrl();
     console.log(this.URL);
   }
   isAuthenticated() {
-    return this.user.loggedIn().pipe(
-      map((isAuth) => {
-        if (!isAuth) {
-          return isAuth;
+    return this.profile.loggedIn().pipe(
+      map((authenticated) => {
+        if (!authenticated) {
+          return authenticated;
         }
-        return isAuth;
-      }),
+        return authenticated;
+      })
     );
   }
-  getToken() {}
-  // signup(payload: any) {
-  //   this._http.post(`${this.URL}/signup`, payload);
-  // }
 }

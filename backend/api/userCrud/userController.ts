@@ -45,7 +45,7 @@ export class UserCtrl extends BaseController {
   getAll = async (req, res) => {
     try {
       let allUser = await userModel.find();
-      res.json({ data: allUser, mes: "all user are here" });
+      res.json(allUser);
     } catch (err) {
       return super.response(res, 500, true, "Internal Server Error");
     }
@@ -80,7 +80,7 @@ export class UserCtrl extends BaseController {
           res,
           400,
           false,
-          "Both name and email are required"
+          "Both name and email are required",
         );
       } else {
         user.name = name || user.name;

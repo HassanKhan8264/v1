@@ -2,12 +2,8 @@
 export const environment = {
   appName: "version-one",
   production: false,
-  server: {
-    self: {
-      HOST: "http://localhost:5001", // Example local backend URL
-      getUrl() {
-        return `${this.HOST}`;
-      },
-    },
+  HOST: "http://127.0.0.1:5001/", // Example local backend URL
+  getUrl() {
+    return `${this.HOST}`;
   },
 };

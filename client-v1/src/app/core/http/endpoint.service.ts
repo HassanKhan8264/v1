@@ -9,13 +9,12 @@ export class EndpointService {
   private readonly URL: string;
 
   constructor(private _http: HttpClient) {
-    this.URL = environment.server.self.getUrl();
-    console.log(this.URL);
+    this.URL = environment.getUrl();
   }
   authentication() {
     return {
-      checkTokenStatus() {
-        return this._http.get(`${this.URL}api/v1/verifyUserToken`);
+      checkTokenStatus: () => {
+        return this._http.get(`${this.URL}api/v1/check`);
       },
     };
   }
@@ -23,13 +22,13 @@ export class EndpointService {
   user() {
     return {
       login: (body) => {
-        return this._http.post(`${this.URL}auth/login`, body);
+        return this._http.post(`${this.URL}api/v1/auth/login`, body);
       },
       register: (body: any) => {
-        return this._http.post(`${this.URL}/auth.register`, body);
+        return this._http.post(`${this.URL}api/v1/auth/register`, body);
       },
-      getAll() {
-        return this._http.get(`${this.URL}/api/v1/getAllUsers`);
+      getAll: () => {
+        return this._http.get(`${this.URL}api/v1/getAllUsers`);
       },
     };
   }

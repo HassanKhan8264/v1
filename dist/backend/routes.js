@@ -10,10 +10,12 @@ const middleware_1 = require("./middleware");
 const router = express_1.default.Router();
 const userController = new userController_1.UserCtrl();
 const authControler = new authControler_1.authController();
-router.post("auth/signUp", authControler.signUp);
-router.post("auth/login", authControler.login);
-router.post("auth/logout", authControler.logout);
-router.get("/verifyUserToken", middleware_1.authenticateToken);
+router.post("/auth/register", authControler.signUp);
+router.post("/auth/login", authControler.login);
+router.post("/auth/logout", authControler.logout);
+router.get("/check", middleware_1.authenticateToken, (req, res) => {
+    res.json({ authenticated: true, user: req.user });
+});
 router.post("/addUser", userController.addUser);
 router.put("/user", userController.updateUser);
 router.get("/getUserByUsername", userController.getOneByUsername);

@@ -7,12 +7,16 @@ const userController = new UserCtrl();
 const authControler = new authController();
 
 // authentication
-router.post("auth/signUp", authControler.signUp);
-router.post("auth/login", authControler.login);
-router.post("auth/logout", authControler.logout);
+router.post("/auth/register", authControler.signUp);
+router.post("/auth/login", authControler.login);
+router.post("/auth/logout", authControler.logout);
 
 // userAuthentication
-router.get("/verifyUserToken", authenticateToken);
+// router.get(authenticateToken);
+router.get("/check", authenticateToken, (req, res) => {
+  // If middleware passed, user is authenticated
+  res.json({ authenticated: true, user: req.user }); // Respond with authenticated status and user info
+});
 
 // Crud Operation
 router.post("/addUser", userController.addUser);

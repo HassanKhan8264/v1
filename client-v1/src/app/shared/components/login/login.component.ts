@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
     private formBuilder: FormBuilder,
     private http: HttpClient,
     private router: Router,
-    private endpoint: EndpointService,
+    private endpoint: EndpointService
   ) {}
 
   ngOnInit(): void {
@@ -29,14 +29,17 @@ export class LoginComponent implements OnInit {
 
   userLogin() {
     let body = this.loginForm.value;
-    return this.endpoint
+    this.endpoint
       .user()
       .login(body)
       .subscribe({
         next: (res: any) => {
-          console.log("res", res);
+          console.log("Login successful", res);
+          // Navigate to '/main/publish' after successful login
+          this.router.navigate(["/main/publish"]);
         },
         error: (error) => {
+          alert("User does not exist."); // Handle errors appropriately
           console.log("err", error);
         },
       });

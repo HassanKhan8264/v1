@@ -53,7 +53,7 @@ class UserCtrl extends baseController_1.BaseController {
         this.getAll = async (req, res) => {
             try {
                 let allUser = await userCrudSchema_1.userModel.find();
-                res.json({ data: allUser, mes: "all user are here" });
+                res.json(allUser);
             }
             catch (err) {
                 return super.response(res, 500, true, "Internal Server Error");
