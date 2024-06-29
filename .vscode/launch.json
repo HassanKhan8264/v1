@@ -2,28 +2,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Backend: Node.js",
       "type": "node",
       "request": "launch",
-      "program": "${workspaceFolder}/backend/index.ts",
-      "skipFiles": ["<node_internals>/**"]
-      // "env": {
-      //   "NODE_ENV": "development"
-      // }
-    },
-    {
-      "name": "Frontend: Angular",
-      "type": "chrome",
-      "request": "launch",
-      "url": "http://localhost:4200",
-      "webRoot": "${workspaceFolder}/client-v1"
-    },
-    {
-      "name": "Frontend: Angular Tests",
-      "type": "chrome",
-      "request": "launch",
-      "url": "http://localhost:9876",
-      "webRoot": "${workspaceFolder}/client-v1"
+      "name": "Debug Node.js App",
+      "program": "${workspaceFolder}\\dist\\index.js", // Adjust as per your Node.js entry file
+      "runtimeExecutable": "node",
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"]
     }
   ]
 }

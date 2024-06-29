@@ -1,18 +1,4 @@
-# Dependency directories
-node_modules/
-.cache/
-npm-debug.log
-yarn-error.log
-
-# Environment variables
+node_modules
+dist
 .env.local
 .env.production
-
-# Build artifacts
-/build
-
-# Ignore dist folder in the client directory
-client-v1/dist/
-
-# Ignore dist folder in the root directory
-# /dist/

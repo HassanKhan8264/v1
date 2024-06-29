@@ -1,0 +1,11 @@
+<form [formGroup]="addDataForm" (ngSubmit)="onSubmit()">
+  <label for="data">Data:</label>
+  <input id="data" formControlName="data" />
+  <button type="submit">Submit</button>
+</form>
+
+<div *ngIf="data.length > 0">
+  <div *ngFor="let item of data">
+    <div class="dib">{{ item.data }}</div>
+  </div>
+</div>

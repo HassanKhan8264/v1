@@ -70,7 +70,7 @@ class authController extends baseController_1.BaseController {
                     exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24,
                 }, config_1.default.Jwt_Secret);
                 res.cookie("Token", token, {
-                    maxAge: 86_400_000,
+                    maxAge: 86400000,
                     httpOnly: true,
                     sameSite: "none",
                     secure: true,

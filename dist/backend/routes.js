@@ -13,7 +13,7 @@ const authControler = new authControler_1.authController();
 router.post("/auth/register", authControler.signUp);
 router.post("/auth/login", authControler.login);
 router.post("/auth/logout", authControler.logout);
-router.get("/check", middleware_1.authenticateToken, (req, res) => {
+router.get("/verifyTokenStatus", middleware_1.authenticateToken, (req, res) => {
     res.json({ authenticated: true, user: req.user });
 });
 router.post("/addUser", userController.addUser);
