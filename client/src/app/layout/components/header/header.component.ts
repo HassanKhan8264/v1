@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
       .logout()
       .subscribe({
         next: () => {
-          this.router.navigate(["splash"]);
+          this.router.navigate(["/pages/login"]);
         },
         error: (err) => {
           console.log(err);

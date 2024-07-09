@@ -15,6 +15,7 @@ export class SignupComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private endpoint: EndpointService,
+    private router: Router,
   ) {}
 
   ngOnInit(): void {
@@ -34,6 +35,7 @@ export class SignupComponent implements OnInit {
       .subscribe({
         next: (res: any) => {
           console.log("res", res);
+          this.router.navigate(["/pages/login"]);
         },
         error: (error) => {
           console.log("err", error);

@@ -14,12 +14,12 @@ export class PublishSideMenuComponent implements OnInit {
     let account = "facebook account";
     let item = localStorage.setItem("account", account);
   }
-  onClick() {
-    this.endpoint
-      .user()
-      .getAll()
-      .subscribe((data) => {
-        console.log(data);
-      });
-  }
+  // onClick() {
+  //   this.endpoint
+  //     .user()
+  //     .getAll()
+  //     .subscribe((data) => {
+  //       console.log(data);
+  //     });
+  // }
 }

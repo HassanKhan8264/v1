@@ -20,27 +20,27 @@ export class ContentComponent {
     this.addDataForm = new FormGroup({
       data: new FormControl(""),
     });
-    this.onClick();
+    // this.onClick();
   }
-  onClick() {
-    this.endpoint
-      .user()
-      .getAllTest()
-      .subscribe((data: any) => {
-        console.log(data);
-        this.data = data;
-      });
-  }
-  onSubmit() {
-    const formData = this.addDataForm.value;
-    this.endpoint.testData(this.addDataForm.value).subscribe(
-      (response: any) => {
-        console.log("Data submitted", response);
-        this.onClick();
-      },
-      (error) => {
-        console.error("Error submitting data", error);
-      },
-    );
-  }
+  // onClick() {
+  //   this.endpoint
+  //     .user()
+  //     .getAll()
+  //     .subscribe((data: any) => {
+  //       console.log(data);
+  //       this.data = data;
+  //     });
+  // }
+  // onSubmit() {
+  //   const formData = this.addDataForm.value;
+  //   this.endpoint.testData(this.addDataForm.value).subscribe(
+  //     (response: any) => {
+  //       console.log("Data submitted", response);
+  //       this.onClick();
+  //     },
+  //     (error) => {
+  //       console.error("Error submitting data", error);
+  //     }
+  //   );
+  // }
 }
