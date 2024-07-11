@@ -5,8 +5,8 @@ const { Schema } = mongoose;
 const { Types } = Schema;
 
 export interface IUserModel extends mongoose.Document {
-  owner: string;
   isDelete: Boolean;
+  text: String;
 }
 
 const TweetSchema = new Schema({
