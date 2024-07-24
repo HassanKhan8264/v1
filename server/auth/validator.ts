@@ -25,11 +25,7 @@ export const userSchema = Joi.object({
     "string.empty": "Phone number cannot be empty.",
     "string.pattern.base": "Phone number is invalid.",
   }),
-  password: Joi.string()
-    .pattern(new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$"))
-    .required()
-    .messages({
-      "string.pattern.base": `Password must contain at least one lowercase letter, one uppercase letter, one digit, and be at least 8 characters long.`,
-      "any.required": `A password is required.`,
-    }),
+  password: Joi.string().required().messages({
+    "any.required": `A password is required.`,
+  }),
 });

@@ -20,5 +20,5 @@ const TweetSchema = new Schema({
 export const TweetModellName = "tweet";
 export const tweetModel = db.model<IUserModel>(
   TweetModellName,
-  TweetSchema as any
+  TweetSchema as any,
 );

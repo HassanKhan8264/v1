@@ -37,7 +37,7 @@ export class TweetCtrl extends BaseController {
       let allTweets = await tweetModel.find(
         { onwer: userId, isDelete: false },
         {},
-        { sort: { _id: -1 }, skip: 0, limit: 100 }
+        { sort: { _id: -1 }, skip: 0, limit: 100 },
       );
       return super.response(res, 200, true, "all user geted of this user", {
         data: allTweets,
@@ -102,7 +102,7 @@ export class TweetCtrl extends BaseController {
           {
             text: body.text,
           },
-          { new: true }
+          { new: true },
         )
         .exec();
 
