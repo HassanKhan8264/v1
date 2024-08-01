@@ -27,7 +27,7 @@ export class EndpointService {
       register: (body: any) => {
         return this._http.post(`${this.URL}api/v1/auth/register`, body);
       },
-      login: (body) => {
+      login: (body: any) => {
         return this._http.post(`${this.URL}api/v1/auth/login`, body);
       },
       logout: () => {

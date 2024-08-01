@@ -34,7 +34,6 @@ const routes: Routes = [
       },
       {
         path: "login",
-
         component: LoginComponent,
       },
       {
@@ -45,7 +44,7 @@ const routes: Routes = [
         path: "publish",
         loadChildren: () =>
           import("./modules/publish/publish.module").then(
-            (m) => m.PublishModule,
+            (m) => m.PublishModule
           ),
       },
       {
