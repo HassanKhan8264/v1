@@ -12,7 +12,7 @@ const service = [];
   imports: [
     CommonModule,
     SharedModule,
-    StoreModule.forFeature("counter", counterReducer),
+    StoreModule.forFeature({ name: "counter", reducer: counterReducer }),
   ],
   providers: [
     ...service,

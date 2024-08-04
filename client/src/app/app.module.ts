@@ -12,6 +12,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { SharedModule } from "./shared/shared.module";
 import { LayoutModule } from "./layout/layout.module";
 import { CoreModule } from "./core/core.module";
+import { StoreModule } from "@ngrx/store";
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +24,7 @@ import { CoreModule } from "./core/core.module";
     AppRoutingModule,
     BrowserAnimationsModule,
 
+    StoreModule.forRoot({}),
     CoreModule,
     SharedModule.forRoot(),
     LayoutModule,
