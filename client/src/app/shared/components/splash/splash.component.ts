@@ -8,7 +8,10 @@ import { Router } from "@angular/router";
 })
 export class SplashComponent implements OnInit {
   showLogo = false;
-  constructor(private profile: ProfileService, private router: Router) {}
+  constructor(
+    private profile: ProfileService,
+    private router: Router,
+  ) {}
   ngOnInit() {
     this.initialize();
   }

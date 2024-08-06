@@ -31,7 +31,7 @@ export class ContentComponent {
   constructor(
     private store: Store<AppState>,
     private fb: FormBuilder,
-    private endpoint: EndpointService
+    private endpoint: EndpointService,
   ) {
     this.count$ = this.store.select(selectCount);
   }
