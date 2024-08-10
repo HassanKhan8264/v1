@@ -25,7 +25,7 @@ router.get(
 // Crud Operation
 router.post("/addTweet", authenticateToken, tweetCtrl.addTweet);
 router.get("/getOneByTweetText", tweetCtrl.getOneByTweetText);
-router.get("/getAllTweets", tweetCtrl.getAll);
+router.get("/getAllTweets", authenticateToken, tweetCtrl.getAll);
 router.get("/findById", tweetCtrl.findById);
 router.put("/tweet", tweetCtrl.updateTweet);
 router.delete("/tweet", tweetCtrl.deleteTweet);

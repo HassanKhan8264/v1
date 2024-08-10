@@ -6,42 +6,58 @@ import { BaseController } from "../../baseController";
 export class TweetCtrl extends BaseController {
   addTweet = async (req: Request, res: Response) => {
     try {
+      console.log("Request body:", req.body);
+
       const userId = new mongoose.Types.ObjectId(req.body.token._id);
-      const { text } = req.body;
-      if (!text) {
+      const { tweet } = req.body;
+
+      if (!tweet) {
+        console.error("Tweet text is missing");
         return super.response(res, 400, false, "Tweet text is required");
       }
+
       const userData = await tweetModel.create({
         owner: userId,
-        text: text,
+        tweet: tweet,
       });
+
+      console.log("Tweet saved successfully:", userData);
       return super.response(res, 200, true, null, userData);
     } catch (err) {
+      console.error("Error saving tweet:", err);
       return super.response(res, 500, true, "Internal Server Error");
     }
   };
+
   deleteAllTweets = async (req, res) => {
     try {
-      let allTweets = await tweetModel.deleteMany({});
+      const ownerId = new mongoose.Types.ObjectId(req.body.token._id);
+      let allTweets = await tweetModel.deleteMany({ owner: ownerId });
       if (allTweets.deletedCount === 0) {
         return super.response(res, 400, false, "Tweets  not found");
       }
-      super.response(res, 200, true, "Tweets deleted successfully");
+      super.response(res, 200, true, "all Tweets deleted successfully");
     } catch (err) {
       return super.response(res, 500, true, "Internal Server Error");
     }
   };
-  getAll = async (req, res) => {
+  getAll = async (req: Request, res: Response) => {
     try {
-      const userId = new mongoose.Types.ObjectId(req.body.token_id);
+      const userId = new mongoose.Types.ObjectId(req.body.token._id);
       let allTweets = await tweetModel.find(
-        { onwer: userId, isDelete: false },
+        { owner: userId, isDelete: false },
         {},
         { sort: { _id: -1 }, skip: 0, limit: 100 },
       );
-      return super.response(res, 200, true, "all user geted of this user", {
-        data: allTweets,
-      });
+      console.log("All tweets fetched:", allTweets);
+
+      return super.response(
+        res,
+        200,
+        true,
+        "all user geted of this user",
+        allTweets,
+      );
     } catch (err) {
       return super.response(res, 500, true, "Internal Server Error");
     }

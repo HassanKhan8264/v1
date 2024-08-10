@@ -6,14 +6,14 @@ const { Types } = Schema;
 
 export interface IUserModel extends mongoose.Document {
   isDelete: Boolean;
-  text: String;
+  tweet: String;
+  // owner: mongoose.ObjectId;
 }
 
 const TweetSchema = new Schema({
-  text: { type: String, require: true },
+  tweet: { type: String, required: true },
   owner: { type: Schema.Types.ObjectId, required: true },
-  isDelete: { typeof: Boolean, default: false },
-  image: { type: String, require: true },
+  isDelete: { type: Boolean, default: false },
   createOn: { type: Date, default: Date.now },
 });
 
