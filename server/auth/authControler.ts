@@ -8,7 +8,7 @@ import { resolve } from "path";
 import config from "../config";
 
 export class authController extends BaseController {
-  signUp = async (req: Request, res: Response) => {
+  register = async (req: Request, res: Response) => {
     try {
       let { name, email, password, phone } = req.body;
       const { error } = userSchema.validate(req.body);

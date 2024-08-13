@@ -1,0 +1,30 @@
+<div class="flex justify-center items-center flex-wrap gap-4 p-4">
+  <div
+    *ngFor="let item of tweets"
+    class="card max-w-sm w-100 h-100 rounded overflow-hidden shadow-lg bg-white flex flex-col"
+  >
+    <img
+      class="w-full h-48 object-cover"
+      src="../../../../../assets/oo-verthing-FkGSo3k3yAg-unsplash.jpg"
+      alt="Sunset in the mountains"
+    />
+    <div class="p-4 flex flex-col flex-grow">
+      <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+      <p class="text-gray-700 text-base mb-4 flex-grow">
+        {{ text.text.substring(0,100) }}...
+      </p>
+      <div class="px-6 pt-4 pb-2">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          add to cart
+        </button>
+        <button
+          class="bg-yellow-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          view product
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

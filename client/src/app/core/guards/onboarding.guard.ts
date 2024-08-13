@@ -30,7 +30,7 @@ export class OnboardingGuard implements CanActivate {
     if (!toWelcomePage) {
       return this.router.createUrlTree(["/pages/welcome"]);
     } else {
-      return this.router.createUrlTree(["/pages/publish/addTask"]);
+      return this.router.createUrlTree(["/pages/publish/content"]);
     }
   }
 }

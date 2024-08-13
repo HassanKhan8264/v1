@@ -12,6 +12,11 @@ import { AppRoutingModule } from "./app-routing.module";
 import { SharedModule } from "./shared/shared.module";
 import { LayoutModule } from "./layout/layout.module";
 import { CoreModule } from "./core/core.module";
+import { StoreModule } from "@ngrx/store";
+import { StoreDevtoolsModule } from "@ngrx/store-devtools";
+import { environment } from "src/environments/environment.prod";
+// import { metaReducers, reducers } from "./app.store";
+import { counterReducer } from "./core/store/states/counter/counter.reducer";
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +28,9 @@ import { CoreModule } from "./core/core.module";
     AppRoutingModule,
     BrowserAnimationsModule,
 
+    StoreModule.forRoot(counterReducer, {}),
+    // Conditionally include StoreDevtoolsModule
+    StoreDevtoolsModule.instrument(),
     CoreModule,
     SharedModule.forRoot(),
     LayoutModule,

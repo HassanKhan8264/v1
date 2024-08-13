@@ -13,6 +13,8 @@ import { MainLayoutComponent } from "../layout/main-layout/main-layout.component
 import { HeaderComponent } from "../layout/components/header/header.component";
 import { EngagementComponent } from "../modules/engage/engagement/engagement.component";
 import { ContentComponent } from "../modules/publish/components/content-comp/content.component";
+import { ProductCardComponent } from "../modules/publish/components/product-card/product-card.component";
+import { CartComponent } from "../modules/publish/components/cart/cart.component";
 
 const components = [
   SignupComponent,
@@ -25,6 +27,8 @@ const components = [
   HeaderComponent,
   EngagementComponent,
   ContentComponent,
+  ProductCardComponent,
+  CartComponent,
 ];
 
 // const services = [];

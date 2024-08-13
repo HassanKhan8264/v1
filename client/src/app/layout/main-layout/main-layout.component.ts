@@ -16,8 +16,19 @@ export class MainLayoutComponent {
       if (event instanceof NavigationEnd) {
         // List of routes where the header should be hidden
         const noHeaderRoutes = ["/pages/login", "/pages/signup"];
-        this.showHeader = !noHeaderRoutes.includes(event.url);
+        // Normalize the URL
+        const currentUrl = event.urlAfterRedirects.split("?")[0];
+        this.showHeader = !noHeaderRoutes.includes(currentUrl);
       }
     });
+
+    // Initial check
+    this.checkInitialRoute();
+  }
+
+  private checkInitialRoute(): void {
+    const noHeaderRoutes = ["/pages/login", "/pages/signup"];
+    const currentUrl = this.router.url.split("?")[0];
+    this.showHeader = !noHeaderRoutes.includes(currentUrl);
   }
 }

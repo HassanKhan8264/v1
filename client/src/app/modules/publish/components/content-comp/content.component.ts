@@ -1,6 +1,15 @@
 import { EndpointService } from "./../../../../core/http/endpoint.service";
 import { Component } from "@angular/core";
 import { FormBuilder, FormControl, FormGroup } from "@angular/forms";
+import { Store } from "@ngrx/store";
+import { Observable } from "rxjs";
+import { AppState } from "src/app/core/store/app.state";
+import {
+  decrement,
+  increment,
+  reset,
+} from "src/app/core/store/states/counter/counter.action";
+import { selectCount } from "src/app/core/store/states/counter/counter.selector";
 
 @Component({
   selector: "v1-content",
@@ -11,36 +20,52 @@ export class ContentComponent {
   addDataForm: FormGroup;
   data: any[] = [];
 
-  constructor(
-    private fb: FormBuilder,
-    private endpoint: EndpointService,
-  ) {}
+  count$: Observable<number>;
 
   ngOnInit() {
     this.addDataForm = new FormGroup({
       data: new FormControl(""),
     });
-    this.onClick();
+    // this.onClick();
   }
-  onClick() {
-    this.endpoint
-      .user()
-      .getAllTest()
-      .subscribe((data: any) => {
-        console.log(data);
-        this.data = data;
-      });
+  constructor(
+    private store: Store<AppState>,
+    private fb: FormBuilder,
+    private endpoint: EndpointService,
+  ) {
+    this.count$ = this.store.select(selectCount);
   }
-  onSubmit() {
-    const formData = this.addDataForm.value;
-    this.endpoint.testData(this.addDataForm.value).subscribe(
-      (response: any) => {
-        console.log("Data submitted", response);
-        this.onClick();
-      },
-      (error) => {
-        console.error("Error submitting data", error);
-      },
-    );
+
+  increment() {
+    this.store.dispatch(increment());
   }
+
+  decrement() {
+    this.store.dispatch(decrement());
+  }
+
+  reset() {
+    this.store.dispatch(reset());
+  }
+  // onClick() {
+  //   this.endpoint
+  //     .user()
+  //     .getAll()
+  //     .subscribe((data: any) => {
+  //       console.log(data);
+  //       this.data = data;
+  //     });
+  // }
+  // onSubmit() {
+  //   const formData = this.addDataForm.value;
+  //   this.endpoint.testData(this.addDataForm.value).subscribe(
+  //     (response: any) => {
+  //       console.log("Data submitted", response);
+  //       this.onClick();
+  //     },
+  //     (error) => {
+  //       console.error("Error submitting data", error);
+  //     }
+  //   );
+  // }
 }

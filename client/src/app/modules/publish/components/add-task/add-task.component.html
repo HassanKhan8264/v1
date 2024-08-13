@@ -1,1 +1,7 @@
 <button mat-button (click)="addccount()">add task</button>
+<form [formGroup]="tweetForm" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="tweet" />
+  <button type="submit">add tweet</button>
+</form>
+<!-- Assuming this is inside a parent component template -->
+<v1-product-card [tweets]="tweets"> </v1-product-card>
