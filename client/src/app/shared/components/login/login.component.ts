@@ -3,6 +3,10 @@ import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { HttpClient } from "@angular/common/http";
 import { Router } from "@angular/router";
 import { EndpointService } from "../../../core/http/endpoint.service";
+import { Observable } from "rxjs";
+import { AuthState } from "src/app/core/store/states/auth/auth.reducer";
+import { Store } from "@ngrx/store";
+import { AuthActions } from "src/app/core/store/states/auth/auth.actions";
 
 @Component({
   selector: "v1-login",
@@ -11,13 +15,17 @@ import { EndpointService } from "../../../core/http/endpoint.service";
 })
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
+  error$: Observable<string | null>;
 
   constructor(
     private formBuilder: FormBuilder,
     private http: HttpClient,
     private router: Router,
     private endpoint: EndpointService,
-  ) {}
+    private store: Store<{ auth: AuthState }>,
+  ) {
+    this.error$ = store.select((state) => state.auth.error);
+  }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -27,18 +35,13 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    this.endpoint
-      .user()
-      .login(this.loginForm.value)
-      .subscribe({
-        next: (res: any) => {
-          console.log("Login successful", res);
-          this.router.navigate(["/pages"]);
-        },
-        error: (error) => {
-          alert("User does not exist.");
-          console.log("err", error);
-        },
-      });
+    let body = {
+      email: this.loginForm.get("email").value,
+      password: this.loginForm.get("password").value,
+    };
+    if (body.email && body.password) {
+      this.store.dispatch(AuthActions.login({ body }));
+      this.router.navigate(["/pages"]);
+    }
   }
 }

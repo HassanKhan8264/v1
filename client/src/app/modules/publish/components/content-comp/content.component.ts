@@ -3,12 +3,12 @@ import { Component } from "@angular/core";
 import { FormBuilder, FormControl, FormGroup } from "@angular/forms";
 import { Store } from "@ngrx/store";
 import { Observable } from "rxjs";
-import { AppState } from "src/app/core/store/app.state";
 import {
   decrement,
   increment,
   reset,
 } from "src/app/core/store/states/counter/counter.action";
+import { CounterState } from "src/app/core/store/states/counter/counter.reducer";
 import { selectCount } from "src/app/core/store/states/counter/counter.selector";
 
 @Component({
@@ -29,7 +29,7 @@ export class ContentComponent {
     // this.onClick();
   }
   constructor(
-    private store: Store<AppState>,
+    private store: Store<CounterState>,
     private fb: FormBuilder,
     private endpoint: EndpointService,
   ) {

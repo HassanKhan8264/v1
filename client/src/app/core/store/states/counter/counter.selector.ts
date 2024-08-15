@@ -1,9 +1,9 @@
 import { createFeatureSelector, createSelector } from "@ngrx/store";
-import { AppState } from "../../app.state";
+import { AuthState } from "../auth/auth.reducer";
+import { CounterState } from "./counter.reducer";
 
-export const selectCounterState = (state: AppState) => state.counter;
-
-// export const selectCounterStates = createFeatureSelector<AppState>('counter');
+export const selectCounterState =
+  createFeatureSelector<CounterState>("counter");
 
 export const selectCount = createSelector(
   selectCounterState,

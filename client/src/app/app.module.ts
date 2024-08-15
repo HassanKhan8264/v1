@@ -17,7 +17,8 @@ import { StoreDevtoolsModule } from "@ngrx/store-devtools";
 import { environment } from "src/environments/environment.prod";
 // import { metaReducers, reducers } from "./app.store";
 import { counterReducer } from "./core/store/states/counter/counter.reducer";
-
+import { EffectsModule } from "@ngrx/effects";
+import { metaReducers, reducers } from "./app.store";
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -28,7 +29,15 @@ import { counterReducer } from "./core/store/states/counter/counter.reducer";
     AppRoutingModule,
     BrowserAnimationsModule,
 
-    StoreModule.forRoot(counterReducer, {}),
+    StoreModule.forRoot(reducers, {
+      metaReducers,
+      runtimeChecks: {
+        strictStateImmutability: true,
+        strictActionImmutability: true,
+      },
+    }),
+    EffectsModule.forRoot([]),
+
     // Conditionally include StoreDevtoolsModule
     StoreDevtoolsModule.instrument(),
     CoreModule,

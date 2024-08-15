@@ -5,6 +5,10 @@ import { AuthInterceptor } from "./interceptor/auth.interceptor";
 import { SharedModule } from "../shared/shared.module";
 import { StoreModule, Store } from "@ngrx/store";
 import { counterReducer } from "./store/states/counter/counter.reducer";
+import { AuthReducer } from "./store/states/auth/auth.reducer";
+import { AuthEffects } from "./store/states/auth/auth.effects";
+import { EffectsModule } from "@ngrx/effects";
+import { AUTHENTICATION } from "./store/states/auth/auth.selector";
 const service = [];
 
 @NgModule({
@@ -13,6 +17,8 @@ const service = [];
     CommonModule,
     SharedModule,
     StoreModule.forFeature({ name: "counter", reducer: counterReducer }),
+    StoreModule.forFeature(AUTHENTICATION, AuthReducer),
+    EffectsModule.forFeature([AuthEffects]),
   ],
   providers: [
     ...service,

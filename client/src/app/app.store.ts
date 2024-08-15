@@ -1,7 +1,10 @@
-// import { ActionReducerMap, MetaReducer } from "@ngrx/store";
-// import { AppState } from "./core/store/app.state";
+import { ActionReducerMap, MetaReducer } from "@ngrx/store";
+import { environment } from "../environments/environment";
 
-// export const reducers: ActionReducerMap<AppState> = {
-//   AppState: AppReducer,
-// };
-// export const metaReducers: MetaReducer<AppState>[] = [];
+export interface State {}
+
+export const reducers: ActionReducerMap<any> = {};
+
+export const metaReducers: MetaReducer<State>[] = !environment.production
+  ? []
+  : [];

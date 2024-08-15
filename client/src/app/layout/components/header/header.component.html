@@ -4,5 +4,16 @@
   <button mat-button routerLink="/pages/engage">engage</button>
   <button mat-button>analytics</button>
   <button mat-button (click)="logout()">logout</button>
-  <button mat-button routerLink="/pages/publish/cart">cart</button>
 </div>
+<!-- src/app/header.component.html -->
+<div *ngIf="isAuthenticated$ | async; else loginForm">
+  Welcome, {{ (user$ | async)?.data.user.name }}!
+</div>
+<ng-template #loginForm>
+  <div *ngIf="error$ | async as error">
+    <p>Error: {{ error }}</p>
+  </div>
+  <form>
+    <!-- Login form fields -->
+  </form>
+</ng-template>
