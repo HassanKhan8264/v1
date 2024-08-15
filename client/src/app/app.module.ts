@@ -36,8 +36,8 @@ import { metaReducers, reducers } from "./app.store";
         strictActionImmutability: true,
       },
     }),
+    !environment.production ? StoreDevtoolsModule.instrument() : [],
     EffectsModule.forRoot([]),
-
     // Conditionally include StoreDevtoolsModule
     StoreDevtoolsModule.instrument(),
     CoreModule,
