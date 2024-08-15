@@ -47,7 +47,7 @@ export class TweetCtrl extends BaseController {
       let allTweets = await tweetModel.find(
         { owner: userId, isDelete: false },
         {},
-        { sort: { _id: -1 }, skip: 0, limit: 100 },
+        { sort: { _id: -1 }, skip: 0, limit: 100 }
       );
       console.log("All tweets fetched:", allTweets);
 
@@ -56,12 +56,34 @@ export class TweetCtrl extends BaseController {
         200,
         true,
         "all user geted of this user",
-        allTweets,
+        allTweets
       );
     } catch (err) {
       return super.response(res, 500, true, "Internal Server Error");
     }
   };
+
+  getAllFeedTweets = async (req: Request, res: Response) => {
+    try {
+      let allTweets = await tweetModel.find(
+        { isDelete: false },
+        {},
+        { sort: { _id: -1 }, skip: 0, limit: 100 }
+      );
+      console.log("All tweets fetched:", allTweets);
+
+      return super.response(
+        res,
+        200,
+        true,
+        "all tweets succesfully fetched",
+        allTweets
+      );
+    } catch (err) {
+      return super.response(res, 500, true, "Internal Server Error");
+    }
+  };
+
   getOneByTweetText = async (req, res) => {
     try {
       let { text } = req.body;
@@ -118,7 +140,7 @@ export class TweetCtrl extends BaseController {
           {
             text: body.text,
           },
-          { new: true },
+          { new: true }
         )
         .exec();
 

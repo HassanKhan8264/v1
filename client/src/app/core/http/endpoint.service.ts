@@ -48,6 +48,9 @@ export class EndpointService {
       getAll: () => {
         return this._http.get(`${this.URL}api/v1/getAllTweets`);
       },
+      getAllFeedTweets: () => {
+        return this._http.get(`${this.URL}api/v1/getAllFeedTweets`);
+      },
     };
   }
 }

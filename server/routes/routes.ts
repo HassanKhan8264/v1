@@ -19,13 +19,14 @@ router.get(
   authenticateToken,
   (req: Request, res: Response) => {
     res.json({ authenticated: true, user: req.user });
-  },
+  }
 );
 
 // Crud Operation
 router.post("/addTweet", authenticateToken, tweetCtrl.addTweet);
 router.get("/getOneByTweetText", tweetCtrl.getOneByTweetText);
 router.get("/getAllTweets", authenticateToken, tweetCtrl.getAll);
+router.get("/getAllFeedTweets", authenticateToken, tweetCtrl.getAllFeedTweets);
 router.get("/findById", tweetCtrl.findById);
 router.put("/tweet", tweetCtrl.updateTweet);
 router.delete("/tweet", tweetCtrl.deleteTweet);
