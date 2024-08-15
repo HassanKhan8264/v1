@@ -76,7 +76,7 @@ export class authController extends BaseController {
           email: user.email,
           exp: Math.floor(Date.now() / 1000) + 60 * 60 * 24, // Token expires after 24 hours
         },
-        config.Jwt_Secret,
+        config.Jwt_Secret
       );
 
       // Set cookie with the token
@@ -88,13 +88,7 @@ export class authController extends BaseController {
       });
 
       // Send successful login response
-      return super.response(res, 200, true, "Login successful", {
-        user: {
-          name: user.name,
-          phone: user.phone,
-          email: user.email,
-        },
-      });
+      return super.response(res, 200, true, "Login successful", user);
     } catch (error) {
       console.error(error);
       return super.response(res, 500, false, "Internal Server Error");

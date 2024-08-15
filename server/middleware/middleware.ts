@@ -5,7 +5,7 @@ import config from "../config";
 export function authenticateToken(
   req: Request,
   res: Response,
-  next: NextFunction,
+  next: NextFunction
 ) {
   try {
     if (!req?.cookies?.Token) {
@@ -14,26 +14,24 @@ export function authenticateToken(
       });
       return;
     }
-    jwt.verify(
-      req.cookies.Token,
-      config.Jwt_Secret,
-      function (err, decodedData) {
-        let nowDate = new Date().getTime() / 1000;
-        if (decodedData.exp < nowDate) {
-          res.cookie("Token", "", {
-            maxAge: 1,
-            httpOnly: true,
-            sameSite: "none",
-            secure: true,
-          });
-          return res.status(401).send({ message: "Token expired" });
-        } else {
-          req.body.token = decodedData;
-
-          next();
-        }
-      },
-    );
+    jwt.verify(req.cookies.Token, config.Jwt_Secret, function (
+      err,
+      decodedData
+    ) {
+      let nowDate = new Date().getTime() / 1000;
+      if (decodedData.exp < nowDate) {
+        res.cookie("Token", "", {
+          maxAge: 1,
+          httpOnly: true,
+          sameSite: "none",
+          secure: true,
+        });
+        return res.status(401).send({ message: "Token expired" });
+      } else {
+        req.body.token = decodedData;
+        next();
+      }
+    });
   } catch (err) {
     res.status(401).send("invalid token");
   }

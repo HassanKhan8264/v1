@@ -6,7 +6,7 @@ export abstract class BaseController {
     code: number,
     status: boolean,
     message?: string,
-    data?: any,
+    data?: any
   ) {
     if (!message) {
       message = status ? "Success" : "Failed";
@@ -20,6 +20,6 @@ export abstract class BaseController {
         json.error = data;
       }
     }
-    res.status(code).json({ status, message, data });
+    return res.status(code).json(json);
   }
 }

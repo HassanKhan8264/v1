@@ -7,7 +7,7 @@
 </div>
 <!-- src/app/header.component.html -->
 <div *ngIf="isAuthenticated$ | async; else loginForm">
-  Welcome, {{ (user$ | async)?.data.user.name }}!
+  Welcome, {{ (user$ | async)?.data.name }}!
 </div>
 <ng-template #loginForm>
   <div *ngIf="error$ | async as error">
