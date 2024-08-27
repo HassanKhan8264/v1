@@ -12,13 +12,20 @@ import { AppRoutingModule } from "./app-routing.module";
 import { SharedModule } from "./shared/shared.module";
 import { LayoutModule } from "./layout/layout.module";
 import { CoreModule } from "./core/core.module";
-import { StoreModule } from "@ngrx/store";
+import { MetaReducer, StoreModule } from "@ngrx/store";
 import { StoreDevtoolsModule } from "@ngrx/store-devtools";
 import { environment } from "src/environments/environment.prod";
 // import { metaReducers, reducers } from "./app.store";
 import { counterReducer } from "./core/store/states/counter/counter.reducer";
 import { EffectsModule } from "@ngrx/effects";
-import { metaReducers, reducers } from "./app.store";
+// import { metaReducers, reducers } from "./app.store";
+import { hydrationMetaReducer } from "./core/store/states/hyderationAuth.reducer";
+import { hydrationCounterMetaReducer } from "./core/store/states/hyderationCounter.reducer";
+export const metaReducers: MetaReducer[] = [
+  hydrationMetaReducer,
+  hydrationCounterMetaReducer,
+];
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -29,14 +36,8 @@ import { metaReducers, reducers } from "./app.store";
     AppRoutingModule,
     BrowserAnimationsModule,
 
-    StoreModule.forRoot(reducers, {
-      metaReducers,
-      runtimeChecks: {
-        strictStateImmutability: true,
-        strictActionImmutability: true,
-      },
-    }),
-    !environment.production ? StoreDevtoolsModule.instrument() : [],
+    StoreModule.forRoot({}, { metaReducers }),
+    // !environment.production ? StoreDevtoolsModule.instrument() : [],
     EffectsModule.forRoot([]),
     // Conditionally include StoreDevtoolsModule
     StoreDevtoolsModule.instrument(),
